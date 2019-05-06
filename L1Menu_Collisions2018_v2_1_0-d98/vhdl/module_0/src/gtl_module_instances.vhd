@@ -10,7 +10,7 @@
 -- e36612e2-bee8-45eb-a685-f6cea687ce3d
 
 -- Unique ID of firmware implementation:
--- 68dace93-ab6a-4a27-924b-74a7054dda12
+-- 87336cbd-6996-4a2d-be22-fb59411377d3
 
 -- Scale set:
 -- scales_2017_05_23
@@ -1414,7 +1414,7 @@ muon_muon_correlation_i267_i: entity work.muon_muon_correlation_condition
 
 -- 10 L1_SingleMu5 : MU5[MU-QLTY_SNGL]
 l1_single_mu5 <= single_mu_i15;
-algo(20) <= l1_single_mu5;
+algo(19) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i16;
@@ -1470,7 +1470,7 @@ algo(17) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i16 and single_eg_i126;
-algo(19) <= l1_mu7_eg23er2p5;
+algo(20) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i15 and single_eg_i127;

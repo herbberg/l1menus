@@ -10,7 +10,7 @@
 -- e36612e2-bee8-45eb-a685-f6cea687ce3d
 
 -- Unique ID of firmware implementation:
--- 68dace93-ab6a-4a27-924b-74a7054dda12
+-- 87336cbd-6996-4a2d-be22-fb59411377d3
 
 -- Scale set:
 -- scales_2017_05_23
@@ -40,8 +40,8 @@ constant global_index: global_index_array := (
         102, -- module_index: 16, name: L1_Mu7_LooseIsoEG23er2p5
          97, -- module_index: 17, name: L1_Mu7_EG20er2p5
          12, -- module_index: 18, name: L1_SingleMu7
-         98, -- module_index: 19, name: L1_Mu7_EG23er2p5
-         10, -- module_index: 20, name: L1_SingleMu5
+         10, -- module_index: 19, name: L1_SingleMu5
+         98, -- module_index: 20, name: L1_Mu7_EG23er2p5
          33, -- module_index: 21, name: L1_SingleMu18er1p5
          23, -- module_index: 22, name: L1_SingleMu25
          28, -- module_index: 23, name: L1_SingleMu9er1p5
