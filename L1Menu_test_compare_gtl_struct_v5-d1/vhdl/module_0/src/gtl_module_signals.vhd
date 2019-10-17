@@ -10,13 +10,13 @@
 -- 7980afa2-2223-470a-a8cd-d79883406ff9
 
 -- Unique ID of firmware implementation:
--- b73191c2-b016-4684-be31-cd40e5e1e44c
+-- 4dc2529c-0eb6-49ca-9e72-4e873742ee98
 
 -- Scale set:
 -- scales_2018_08_07
 
 -- VHDL producer version
--- v2.7.1
+-- v2.7.2
 
 -- Signal definition of pt, eta and phi for correlation conditions.
 -- Insert "signal_correlation_conditions_pt_eta_phi_cos_sin_phi.vhd.j2" as often as an ObjectType at a certain Bx is used in a correlation condition.

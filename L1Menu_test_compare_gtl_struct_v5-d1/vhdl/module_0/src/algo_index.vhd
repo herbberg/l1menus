@@ -10,13 +10,13 @@
 -- 7980afa2-2223-470a-a8cd-d79883406ff9
 
 -- Unique ID of firmware implementation:
--- b73191c2-b016-4684-be31-cd40e5e1e44c
+-- 4dc2529c-0eb6-49ca-9e72-4e873742ee98
 
 -- Scale set:
 -- scales_2018_08_07
 
 -- VHDL producer version
--- v2.7.1
+-- v2.7.2
 
 -- HB 2016-09-16: constants for algo_mapping_rop.
 type global_index_array is array (0 to NR_ALGOS-1) of integer;

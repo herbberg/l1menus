@@ -10,13 +10,13 @@
 -- 7980afa2-2223-470a-a8cd-d79883406ff9
 
 -- Unique ID of firmware implementation:
--- b73191c2-b016-4684-be31-cd40e5e1e44c
+-- 4dc2529c-0eb6-49ca-9e72-4e873742ee98
 
 -- Scale set:
 -- scales_2018_08_07
 
 -- VHDL producer version
--- v2.7.1
+-- v2.7.2
 
 -- External condition assignment
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
@@ -70,18 +70,56 @@
 double_jet_ov_rm_i0_i: entity work.calo_conditions_orm
     generic map(
         false, false, true,
-        0, 11, 0, 11,
+        0, 11, 0, 11, 0, 11, 0, 0,
         2, true, JET_TYPE,
-        (X"003C", X"003C", X"0000", X"0000"),
-        (0, 0, false, false),
+        (X"003C", X"003C", X"005A", X"0000"),
+        (0, 0, 0, 0),
         (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
         (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
         (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
         (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
         (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
-        (true, true, false, false),
+        (true, true, true, true),
         (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
-        (true, true, false, false),
+        (true, true, true, true),
+        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
+        (X"F", X"F", X"F", X"F"),
+        0, 0, true, UNDEFINED_TYPE,
+        X"0000",
+        0, 
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        true, X"0000", X"0000",
+        true, X"0000", X"0000",
+        X"F",
+        X"00000000", X"00000000",
+        X"00000000", X"00000000",
+        X"000000000000A028", X"0000000000000000",
+        false
+    )
+    port map(lhc_clk, jet_bx_0, undefined_bx_0(0 to 0),
+        diff_jet_undefined_bx_0_bx_0_eta_vector, diff_jet_undefined_bx_0_bx_0_phi_vector,
+        double_jet_ov_rm_i0);
+
+
+quad_jet_ov_rm_i3_i: entity work.calo_conditions_orm
+    generic map(
+        false, false, true,
+        0, 11, 0, 11, 0, 11, 0, 11,
+        4, true, JET_TYPE,
+        (X"003C", X"003C", X"003C", X"003C"),
+        (0, 0, 0, 0),
+        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
+        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
+        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
+        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
+        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
+        (true, true, true, true),
+        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
+        (true, true, true, true),
         (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
         (X"F", X"F", X"F", X"F"),
         0, 11, true, TAU_TYPE,
@@ -102,36 +140,34 @@ double_jet_ov_rm_i0_i: entity work.calo_conditions_orm
     )
     port map(lhc_clk, jet_bx_0, tau_bx_0(0 to 11),
         diff_jet_tau_bx_0_bx_0_eta_vector, diff_jet_tau_bx_0_bx_0_phi_vector,
-        double_jet_ov_rm_i0);
+        quad_jet_ov_rm_i3);
 
 
-
-
-single_jet_ov_rm_i1_i: entity work.calo_conditions_orm_v4_single_double
+single_jet_ov_rm_i1_i: entity work.calo_conditions_orm
     generic map(
         false, false, true,
-        0, 11, 0, 11,
+        0, 11, 0, 11, 0, 0, 0, 0,
         1, true, JET_TYPE,
-        (X"003C", X"0000", X"0000", X"0000"),
-        (0, false, false, false),
+        (X"003C", X"005A", X"0000", X"0000"),
+        (0, 0, 0, 0),
         (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
         (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
         (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
         (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
         (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
-        (true, false, false, false),
+        (true, true, true, true),
         (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
-        (true, false, false, false),
+        (true, true, true, true),
         (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
         (X"F", X"F", X"F", X"F"),
-        0, 11, true, TAU_TYPE,
-        X"005A",
-        (0, false, false, false),
-        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
-        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
-        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
-        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
-        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
+        0, 0, true, UNDEFINED_TYPE,
+        X"0000",
+        0, 
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
@@ -140,11 +176,47 @@ single_jet_ov_rm_i1_i: entity work.calo_conditions_orm_v4_single_double
         X"000000000000A028", X"0000000000000000",
         false
     )
-    port map(lhc_clk, jet_bx_0, tau_bx_0(0 to 11),
-        diff_jet_tau_bx_0_bx_0_eta_vector, diff_jet_tau_bx_0_bx_0_phi_vector,
+    port map(lhc_clk, jet_bx_0, undefined_bx_0(0 to 0),
+        diff_jet_undefined_bx_0_bx_0_eta_vector, diff_jet_undefined_bx_0_bx_0_phi_vector,
         single_jet_ov_rm_i1);
 
 
+triple_jet_ov_rm_i2_i: entity work.calo_conditions_orm
+    generic map(
+        false, false, true,
+        0, 11, 0, 11, 0, 11, 0, 11,
+        3, true, JET_TYPE,
+        (X"003C", X"003C", X"003C", X"005A"),
+        (0, 0, 0, 0),
+        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
+        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
+        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
+        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
+        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
+        (true, true, true, true),
+        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
+        (true, true, true, true),
+        (X"0000", X"0000", X"0000", X"0000"), (X"0000", X"0000", X"0000", X"0000"),
+        (X"F", X"F", X"F", X"F"),
+        0, 0, true, UNDEFINED_TYPE,
+        X"0000",
+        0, 
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        true, X"0000", X"0000",
+        true, X"0000", X"0000",
+        X"F",
+        X"00000000", X"00000000",
+        X"00000000", X"00000000",
+        X"000000000000A028", X"0000000000000000",
+        false
+    )
+    port map(lhc_clk, jet_bx_0, undefined_bx_0(0 to 0),
+        diff_jet_undefined_bx_0_bx_0_eta_vector, diff_jet_undefined_bx_0_bx_0_phi_vector,
+        triple_jet_ov_rm_i2);
 
 
 -- Instantiations of algorithms
