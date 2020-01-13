@@ -10,7 +10,7 @@
 -- dfda5134-41bb-44ca-b09b-2ec83164a685
 
 -- Unique ID of firmware implementation:
--- 531068c1-3534-4dc2-b46d-a3b06e0771eb
+-- b3fd9103-ee54-4a7a-8cc8-001b83118a69
 
 -- Scale set:
 -- scales_2017_05_23
@@ -21,16 +21,16 @@
 -- External condition assignment
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
-    muon_charge_correlations_bx_m1_bx_p2_i: entity work.muon_charge_correlations
-        port map(mu_bx_m1, mu_bx_p2,
-            ls_charcorr_double_bx_m1_bx_p2, os_charcorr_double_bx_m1_bx_p2,
-            ls_charcorr_triple_bx_m1_bx_p2, os_charcorr_triple_bx_m1_bx_p2,
-            ls_charcorr_quad_bx_m1_bx_p2, os_charcorr_quad_bx_m1_bx_p2);
     muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
         port map(mu_bx_m1, mu_bx_0,
             ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
             ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
             ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
+    muon_charge_correlations_bx_m1_bx_p2_i: entity work.muon_charge_correlations
+        port map(mu_bx_m1, mu_bx_p2,
+            ls_charcorr_double_bx_m1_bx_p2, os_charcorr_double_bx_m1_bx_p2,
+            ls_charcorr_triple_bx_m1_bx_p2, os_charcorr_triple_bx_m1_bx_p2,
+            ls_charcorr_quad_bx_m1_bx_p2, os_charcorr_quad_bx_m1_bx_p2);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo ObjectType in certain Bx used in correlation conditions
     jet_conv_2_muon_bx_m1_l: for i in 0 to NR_JET_OBJECTS-1 generate
@@ -362,10 +362,10 @@ calo_calo_correlation_ov_rm_i28_i: entity work.calo_calo_calo_correlation_orm_co
     )
     port map(lhc_clk, tau_bx_m1, jet_bx_p2,
         diff_tau_jet_bx_m1_bx_p2_eta_vector, diff_tau_jet_bx_m1_bx_p2_phi_vector,
-        diff_tau_tau_bx_m1_bx_m1_eta_vector, diff_tau_tau_bx_m1_bx_m1_phi_vector,
-        tau_pt_vector_bx_m1, tau_pt_vector_bx_m1,
-        tau_tau_bx_m1_bx_m1_cosh_deta_vector, tau_tau_bx_m1_bx_m1_cos_dphi_vector,
-        tau_cos_phi_bx_m1, tau_cos_phi_bx_m1, tau_sin_phi_bx_m1, tau_sin_phi_bx_m1,
+        diff_tau_tau_bx_m1_bx_m2_eta_vector, diff_tau_tau_bx_m1_bx_m2_phi_vector,
+        tau_pt_vector_bx_m1, tau_pt_vector_bx_m2,
+        tau_tau_bx_m1_bx_m2_cosh_deta_vector, tau_tau_bx_m1_bx_m2_cos_dphi_vector,
+        tau_cos_phi_bx_m1, tau_cos_phi_bx_m2, tau_sin_phi_bx_m1, tau_sin_phi_bx_m2,
         calo_calo_correlation_ov_rm_i28);
 
 invariant_mass_i1_i: entity work.calo_muon_correlation_condition
