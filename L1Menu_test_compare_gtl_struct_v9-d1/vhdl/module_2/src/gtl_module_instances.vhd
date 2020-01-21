@@ -10,7 +10,7 @@
 -- d0ac5f69-0ce0-4345-9031-a966e72e5b78
 
 -- Unique ID of firmware implementation:
--- 9bc36077-fa2a-4e3d-936f-334808ceeff7
+-- bab2203e-6165-407b-8d97-5f97e8ce48f4
 
 -- Scale set:
 -- scales_2017_05_23
@@ -230,12 +230,12 @@ calo_calo_correlation_ov_rm_i24_i: entity work.calo_calo_calo_correlation_orm_co
         TAU_PT_VECTOR_WIDTH, TAU_PT_VECTOR_WIDTH, TAU_TAU_COSH_COS_PRECISION, TAU_TAU_COSH_COS_VECTOR_WIDTH,
         X"0000000253734D80", CALO_SIN_COS_VECTOR_WIDTH, TAU_TAU_SIN_COS_PRECISION
     )
-    port map(lhc_clk, tau_bx_m1, jet_bx_0,
+    port map(lhc_clk, tau_bx_m1, tau_bx_0, jet_bx_0,
         diff_tau_jet_bx_m1_bx_0_eta_vector, diff_tau_jet_bx_m1_bx_0_phi_vector,
-        diff_tau_tau_bx_m1_bx_m1_eta_vector, diff_tau_tau_bx_m1_bx_m1_phi_vector,
-        tau_pt_vector_bx_m1, tau_pt_vector_bx_m1,
-        tau_tau_bx_m1_bx_m1_cosh_deta_vector, tau_tau_bx_m1_bx_m1_cos_dphi_vector,
-        tau_cos_phi_bx_m1, tau_cos_phi_bx_m1, tau_sin_phi_bx_m1, tau_sin_phi_bx_m1,
+        diff_tau_tau_bx_m1_bx_0_eta_vector, diff_tau_tau_bx_m1_bx_0_phi_vector,
+        tau_pt_vector_bx_m1, tau_pt_vector_bx_0,
+        tau_tau_bx_m1_bx_0_cosh_deta_vector, tau_tau_bx_m1_bx_0_cos_dphi_vector,
+        tau_cos_phi_bx_m1, tau_cos_phi_bx_0, tau_sin_phi_bx_m1, tau_sin_phi_bx_0,
         calo_calo_correlation_ov_rm_i24);
 
 invariant_mass_ov_rm_i18_i: entity work.calo_calo_calo_correlation_orm_condition
@@ -286,7 +286,7 @@ invariant_mass_ov_rm_i18_i: entity work.calo_calo_calo_correlation_orm_condition
         EG_PT_VECTOR_WIDTH, EG_PT_VECTOR_WIDTH, EG_EG_COSH_COS_PRECISION, EG_EG_COSH_COS_VECTOR_WIDTH,
         X"0000000253734D80", CALO_SIN_COS_VECTOR_WIDTH, EG_EG_SIN_COS_PRECISION
     )
-    port map(lhc_clk, eg_bx_0, tau_bx_0,
+    port map(lhc_clk, eg_bx_0, eg_bx_0, tau_bx_0,
         diff_eg_tau_bx_0_bx_0_eta_vector, diff_eg_tau_bx_0_bx_0_phi_vector,
         diff_eg_eg_bx_0_bx_0_eta_vector, diff_eg_eg_bx_0_bx_0_phi_vector,
         eg_pt_vector_bx_0, eg_pt_vector_bx_0,
