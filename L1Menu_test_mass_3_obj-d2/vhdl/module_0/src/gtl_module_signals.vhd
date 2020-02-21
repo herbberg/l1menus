@@ -18,6 +18,12 @@
 -- VHDL producer version
 -- v2.7.3
 
+-- ********************************************************
+-- REMARKS:
+-- All instances and declarations for mass_3_obj are done manually!!!
+-- Actually mass_3_obj is not in TME and VHDL Producer.
+-- ********************************************************
+
 -- Signal definition of pt, eta and phi for correlation conditions.
 -- Insert "signal_correlation_conditions_pt_eta_phi_cos_sin_phi.vhd.j2" as often as an ObjectType at a certain Bx is used in a correlation condition.
     signal mu_pt_vector_bx_0: diff_inputs_array(0 to NR_MU_OBJECTS-1) := (others => (others => '0'));
@@ -43,6 +49,7 @@
     signal ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0 : muon_charcorr_quad_array;
 
 -- Signal definition for conditions names
+    signal mass_3_obj_i0 : std_logic;
     signal invariant_mass_i0 : std_logic;
 
 -- Signal definition for algorithms names
