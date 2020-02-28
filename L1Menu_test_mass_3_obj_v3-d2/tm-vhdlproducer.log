@@ -1,170 +1,170 @@
-2020-02-28 11:25:00 INFO : distributing menu...
-2020-02-28 11:25:00 INFO : loading resource information from JSON: /home/bergauer/github/cms-l1-globaltrigger/tm-vhdlproducer/tmVhdlProducer/config/resource_default.json
-2020-02-28 11:25:00 INFO : :: listing resources...
-2020-02-28 11:25:00 INFO : thresholds:
-2020-02-28 11:25:00 INFO :  * floor: sliceLUTs=17.00%, processors=0.00%
-2020-02-28 11:25:00 INFO :  * ceiling: sliceLUTs=90.00%, processors=100.00%
-2020-02-28 11:25:00 INFO : instances:
-2020-02-28 11:25:00 INFO :  * MuonCondition[ muon ]: sliceLUTs=0.01%, processors=0.00%
-2020-02-28 11:25:00 INFO :  * MuonCondition[ muon, muon ]: sliceLUTs=0.01%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * tbpt: sliceLUTs=0.08%, processors=0.33%: 
-2020-02-28 11:25:00 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :  * MuonCondition[ muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :  * MuonCondition[ muon, muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :  * CaloCondition[ calo ]: sliceLUTs=0.00%, processors=0.00%
-2020-02-28 11:25:00 INFO :  * CaloCondition[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.33%: 
-2020-02-28 11:25:00 INFO :  * CaloCondition[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
-2020-02-28 11:25:00 INFO :  * CaloCondition[ calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
-2020-02-28 11:25:00 INFO :  * CaloConditionOvRm[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
-2020-02-28 11:25:00 INFO :  * CaloConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
-2020-02-28 11:25:00 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.33%: 
-2020-02-28 11:25:00 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
-2020-02-28 11:25:00 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
-2020-02-28 11:25:00 INFO :  * CorrelationCondition[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
-2020-02-28 11:25:00 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
-2020-02-28 11:25:00 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
-2020-02-28 11:25:00 INFO :  * CorrelationCondition[ calo, muon ]: sliceLUTs=0.05%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * deta: sliceLUTs=0.01%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dr: sliceLUTs=0.05%, processors=0.06%: 
-2020-02-28 11:25:00 INFO :    * tbpt: sliceLUTs=0.00%, processors=0.39%: 
-2020-02-28 11:25:00 INFO :    * mass: sliceLUTs=0.12%, processors=0.14%: 
-2020-02-28 11:25:00 INFO :  * CorrelationCondition[ calo, esum ]: sliceLUTs=0.02%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * tbpt: sliceLUTs=0.04%, processors=0.41%: 
-2020-02-28 11:25:00 INFO :    * mass: sliceLUTs=0.01%, processors=0.08%: 
-2020-02-28 11:25:00 INFO :  * CorrelationCondition[ muon, esum ]: sliceLUTs=0.08%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.61%: 
-2020-02-28 11:25:00 INFO :    * mass: sliceLUTs=0.02%, processors=0.14%: 
-2020-02-28 11:25:00 INFO :  * CorrelationCondition[ muon, muon ]: sliceLUTs=0.04%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dphi: sliceLUTs=0.01%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dr: sliceLUTs=0.04%, processors=0.06%: 
-2020-02-28 11:25:00 INFO :    * tbpt: sliceLUTs=0.03%, processors=0.33%: 
-2020-02-28 11:25:00 INFO :    * mass: sliceLUTs=0.07%, processors=0.08%: 
-2020-02-28 11:25:00 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :  * InvariantMassThreeObjCondition[ calo, calo, calo ]: sliceLUTs=0.10%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
-2020-02-28 11:25:00 INFO :  * InvariantMassThreeObjCondition[ muon, muon, muon ]: sliceLUTs=0.10%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
-2020-02-28 11:25:00 INFO :  * CorrelationConditionOvRm[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
-2020-02-28 11:25:00 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
-2020-02-28 11:25:00 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
-2020-02-28 11:25:00 INFO :  * CorrelationConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.10%, processors=0.00%
-2020-02-28 11:25:00 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-02-28 11:25:00 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
-2020-02-28 11:25:00 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
-2020-02-28 11:25:00 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
-2020-02-28 11:25:00 INFO :  * EsumsCondition[ esum ]: sliceLUTs=0.00%, processors=0.00%
-2020-02-28 11:25:00 INFO :  * MinBiasCondition[ bias ]: sliceLUTs=0.00%, processors=0.00%
-2020-02-28 11:25:00 INFO :  * ExternalCondition[ ext ]: sliceLUTs=0.00%, processors=0.00%
-2020-02-28 11:25:00 INFO :  * TowerCountCondition[ count ]: sliceLUTs=0.00%, processors=0.00%
-2020-02-28 11:25:00 INFO :  * SignalCondition[ signal ]: sliceLUTs=0.00%, processors=0.00%
-2020-02-28 11:25:00 INFO : |-----------------------------------------------------------------------------|
-2020-02-28 11:25:00 INFO : |                                                                             |
-2020-02-28 11:25:00 INFO : | Algorithms sorted by payload (descending)                                   |
-2020-02-28 11:25:00 INFO : |                                                                             |
-2020-02-28 11:25:00 INFO : |-----------------------------------------------------------------------------|
-2020-02-28 11:25:00 INFO : |-------|-----------|---------|-----------------------------------------------|
-2020-02-28 11:25:00 INFO : | Index | SliceLUTs | DSPs    | Name                                          |
-2020-02-28 11:25:00 INFO : |-------|-----------|---------|-----------------------------------------------|
-2020-02-28 11:25:00 INFO : |     3 |    0.133% |  0.083% | L1_eg_mass_3_obj                              |
-2020-02-28 11:25:00 INFO : |     0 |    0.133% |  0.083% | L1_jet_mass_3_obj                             |
-2020-02-28 11:25:00 INFO : |     2 |    0.133% |  0.083% | L1_mu_mass_3_obj_cc                           |
-2020-02-28 11:25:00 INFO : |     1 |    3.080% |  2.324% | L1_mu_mass_2_obj                              |
-2020-02-28 11:25:00 INFO : |     4 |    4.158% |  5.478% | L1_eg_mass_2_obj                              |
-2020-02-28 11:25:00 INFO : |     5 |    4.158% |  5.478% | L1_jet_mass_2_obj                             |
-2020-02-28 11:25:00 INFO : |-------|-----------|---------|-----------------------------------------------|
-2020-02-28 11:25:00 INFO : |-----------------------------------------------------------------------------|
-2020-02-28 11:25:00 INFO : distributing algorithms, shadow ratio: 0.0
-2020-02-28 11:25:00 INFO : starting algorithm distribution for 6 algorithms on 1 modules using shadow ratio of 0.0
-2020-02-28 11:25:00 INFO :  . adding L1_eg_mass_3_obj (3) to module 0
-2020-02-28 11:25:00 INFO :  . adding L1_jet_mass_3_obj (0) to module 0
-2020-02-28 11:25:00 INFO :  . adding L1_mu_mass_3_obj_cc (2) to module 0
-2020-02-28 11:25:00 INFO :  . adding L1_mu_mass_2_obj (1) to module 0
-2020-02-28 11:25:00 INFO :  . adding L1_eg_mass_2_obj (4) to module 0
-2020-02-28 11:25:00 INFO :  . adding L1_jet_mass_2_obj (5) to module 0
-2020-02-28 11:25:00 INFO : |-----------------------------------------------------------------------------|
-2020-02-28 11:25:00 INFO : |                                                                             |
-2020-02-28 11:25:00 INFO : | Detailed distribition on 1 modules, shadow ratio: 0.0                       |
-2020-02-28 11:25:00 INFO : |                                                                             |
-2020-02-28 11:25:00 INFO : |------------|----------------------------------------------------------------|
-2020-02-28 11:25:00 INFO : | Module     | Algorithm                                                      |
-2020-02-28 11:25:00 INFO : | ID | Index | Index | Name                                                   |
-2020-02-28 11:25:00 INFO : |----|-------|-------|--------------------------------------------------------|
-2020-02-28 11:25:00 INFO : |  0 |     0 |     3 | L1_eg_mass_3_obj                                       |
-2020-02-28 11:25:00 INFO : |  0 |     1 |     0 | L1_jet_mass_3_obj                                      |
-2020-02-28 11:25:00 INFO : |  0 |     2 |     2 | L1_mu_mass_3_obj_cc                                    |
-2020-02-28 11:25:00 INFO : |  0 |     3 |     1 | L1_mu_mass_2_obj                                       |
-2020-02-28 11:25:00 INFO : |  0 |     4 |     4 | L1_eg_mass_2_obj                                       |
-2020-02-28 11:25:00 INFO : |  0 |     5 |     5 | L1_jet_mass_2_obj                                      |
-2020-02-28 11:25:00 INFO : |----|-------|-------|--------------------------------------------------------|
-2020-02-28 11:25:00 INFO : |-----------------------------------------------------------------------------|
-2020-02-28 11:25:00 INFO : |                                                                             |
-2020-02-28 11:25:00 INFO : | Condition distribution, sorted by weight (ascending)                        |
-2020-02-28 11:25:00 INFO : |                                                                             |
-2020-02-28 11:25:00 INFO : |-----------------------------------------------------------------------------|
-2020-02-28 11:25:00 INFO : | Name                                             | Modules                  |
-2020-02-28 11:25:00 INFO : |--------------------------------------------------|--------------------------|
-2020-02-28 11:25:00 INFO : | InvariantMassThreeObj_i1                         | 0                        |
-2020-02-28 11:25:00 INFO : | InvariantMassThreeObj_i2                         | 0                        |
-2020-02-28 11:25:00 INFO : | InvariantMassThreeObj_i3                         | 0                        |
-2020-02-28 11:25:00 INFO : | InvariantMass_i0                                 | 0                        |
-2020-02-28 11:25:00 INFO : | InvariantMass_i4                                 | 0                        |
-2020-02-28 11:25:00 INFO : | InvariantMass_i5                                 | 0                        |
-2020-02-28 11:25:00 INFO : |--------------------------------------------------|--------------------------|
-2020-02-28 11:25:00 INFO : |-----------------------------------------------------------------------------|
-2020-02-28 11:25:00 INFO : |                                                                             |
-2020-02-28 11:25:00 INFO : | Summary for distribution on 1 modules, shadow ratio: 0.0                    |
-2020-02-28 11:25:00 INFO : |                                                                             |
-2020-02-28 11:25:00 INFO : |-------------------------------------|---------------------------------------|
-2020-02-28 11:25:00 INFO : | Module                              | Payload                               |
-2020-02-28 11:25:00 INFO : | ID | Algorithms | Conditions | Rel. | SliceLUTs | DSPs    |                 |
-2020-02-28 11:25:00 INFO : |----|------------|------------|------|-----------|---------|-----------------|
-2020-02-28 11:25:00 INFO : |  0 |          6 |          6 | 1.00 |    28.79% |  13.53% |                 |
-2020-02-28 11:25:00 INFO : |----|------------|------------|------|-----------|---------|-----------------|
-2020-02-28 11:25:00 INFO : writing VHDL modules...
-2020-02-28 11:25:00 INFO : writing 6 algorithms to 1 module(s)
-2020-02-28 11:25:00 INFO : writing output for module: 0
-2020-02-28 11:25:00 INFO : algo_index.vhd          : /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/vhdl/module_0/src/algo_index.vhd
-2020-02-28 11:25:00 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/vhdl/module_0/src/gtl_module_signals.vhd
-2020-02-28 11:25:01 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/vhdl/module_0/src/gtl_module_instances.vhd
-2020-02-28 11:25:01 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/vhdl/module_0/src/ugt_constants.vhd
-2020-02-28 11:25:01 INFO : writing updated XML file /home/bergauer/L1Menu_test_mass_3_obj_v3.xml
-2020-02-28 11:25:01 INFO : reading source XML menu file /home/bergauer/L1Menu_test_mass_3_obj_v3.xml
-2020-02-28 11:25:01 INFO : processing menu "L1Menu_test_mass_3_obj_v3" ... 
-2020-02-28 11:25:01 INFO : updating menu information...
-2020-02-28 11:25:01 INFO : uuid_menu     : 821d31a5-e544-47d3-85d1-ce2181a9ac94
-2020-02-28 11:25:01 INFO : uuid_firmware : 648b5fa4-bc72-46f8-9d58-479fdbad726a
-2020-02-28 11:25:01 INFO : n_modules     : 1
-2020-02-28 11:25:01 INFO : writing target XML menu file /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/xml/L1Menu_test_mass_3_obj_v3-d2.xml
-2020-02-28 11:25:01 INFO : generating menu documentation...
-2020-02-28 11:25:01 INFO : writing HTML documentation /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/xml/L1Menu_test_mass_3_obj_v3-d2.xml
-2020-02-28 11:25:02 INFO : writing TWIKI page template /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/xml/L1Menu_test_mass_3_obj_v3-d2.xml
-2020-02-28 11:25:02 INFO : patching filenames...
-2020-02-28 11:25:02 INFO : /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/doc/L1Menu_test_mass_3_obj_v3.html --> /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/doc/L1Menu_test_mass_3_obj_v3-d2.html
-2020-02-28 11:25:02 INFO : /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/doc/L1Menu_test_mass_3_obj_v3.twiki --> /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/doc/L1Menu_test_mass_3_obj_v3-d2.twiki
-2020-02-28 11:25:02 INFO : done.
+2020-02-28 11:54:25 INFO : distributing menu...
+2020-02-28 11:54:25 INFO : loading resource information from JSON: /home/bergauer/github/cms-l1-globaltrigger/tm-vhdlproducer/tmVhdlProducer/config/resource_default.json
+2020-02-28 11:54:25 INFO : :: listing resources...
+2020-02-28 11:54:25 INFO : thresholds:
+2020-02-28 11:54:25 INFO :  * floor: sliceLUTs=17.00%, processors=0.00%
+2020-02-28 11:54:25 INFO :  * ceiling: sliceLUTs=90.00%, processors=100.00%
+2020-02-28 11:54:25 INFO : instances:
+2020-02-28 11:54:25 INFO :  * MuonCondition[ muon ]: sliceLUTs=0.01%, processors=0.00%
+2020-02-28 11:54:25 INFO :  * MuonCondition[ muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * tbpt: sliceLUTs=0.08%, processors=0.33%: 
+2020-02-28 11:54:25 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :  * MuonCondition[ muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :  * MuonCondition[ muon, muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :  * CaloCondition[ calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-28 11:54:25 INFO :  * CaloCondition[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.33%: 
+2020-02-28 11:54:25 INFO :  * CaloCondition[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-28 11:54:25 INFO :  * CaloCondition[ calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
+2020-02-28 11:54:25 INFO :  * CaloConditionOvRm[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-02-28 11:54:25 INFO :  * CaloConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-02-28 11:54:25 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.33%: 
+2020-02-28 11:54:25 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-02-28 11:54:25 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-02-28 11:54:25 INFO :  * CorrelationCondition[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-02-28 11:54:25 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2020-02-28 11:54:25 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2020-02-28 11:54:25 INFO :  * CorrelationCondition[ calo, muon ]: sliceLUTs=0.05%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * deta: sliceLUTs=0.01%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dr: sliceLUTs=0.05%, processors=0.06%: 
+2020-02-28 11:54:25 INFO :    * tbpt: sliceLUTs=0.00%, processors=0.39%: 
+2020-02-28 11:54:25 INFO :    * mass: sliceLUTs=0.12%, processors=0.14%: 
+2020-02-28 11:54:25 INFO :  * CorrelationCondition[ calo, esum ]: sliceLUTs=0.02%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * tbpt: sliceLUTs=0.04%, processors=0.41%: 
+2020-02-28 11:54:25 INFO :    * mass: sliceLUTs=0.01%, processors=0.08%: 
+2020-02-28 11:54:25 INFO :  * CorrelationCondition[ muon, esum ]: sliceLUTs=0.08%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.61%: 
+2020-02-28 11:54:25 INFO :    * mass: sliceLUTs=0.02%, processors=0.14%: 
+2020-02-28 11:54:25 INFO :  * CorrelationCondition[ muon, muon ]: sliceLUTs=0.04%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dphi: sliceLUTs=0.01%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dr: sliceLUTs=0.04%, processors=0.06%: 
+2020-02-28 11:54:25 INFO :    * tbpt: sliceLUTs=0.03%, processors=0.33%: 
+2020-02-28 11:54:25 INFO :    * mass: sliceLUTs=0.07%, processors=0.08%: 
+2020-02-28 11:54:25 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :  * InvariantMassThreeObjCondition[ calo, calo, calo ]: sliceLUTs=0.10%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2020-02-28 11:54:25 INFO :  * InvariantMassThreeObjCondition[ muon, muon, muon ]: sliceLUTs=0.10%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2020-02-28 11:54:25 INFO :  * CorrelationConditionOvRm[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
+2020-02-28 11:54:25 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2020-02-28 11:54:25 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2020-02-28 11:54:25 INFO :  * CorrelationConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.10%, processors=0.00%
+2020-02-28 11:54:25 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-28 11:54:25 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
+2020-02-28 11:54:25 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2020-02-28 11:54:25 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2020-02-28 11:54:25 INFO :  * EsumsCondition[ esum ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-28 11:54:25 INFO :  * MinBiasCondition[ bias ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-28 11:54:25 INFO :  * ExternalCondition[ ext ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-28 11:54:25 INFO :  * TowerCountCondition[ count ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-28 11:54:25 INFO :  * SignalCondition[ signal ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-28 11:54:25 INFO : |-----------------------------------------------------------------------------|
+2020-02-28 11:54:25 INFO : |                                                                             |
+2020-02-28 11:54:25 INFO : | Algorithms sorted by payload (descending)                                   |
+2020-02-28 11:54:25 INFO : |                                                                             |
+2020-02-28 11:54:25 INFO : |-----------------------------------------------------------------------------|
+2020-02-28 11:54:25 INFO : |-------|-----------|---------|-----------------------------------------------|
+2020-02-28 11:54:25 INFO : | Index | SliceLUTs | DSPs    | Name                                          |
+2020-02-28 11:54:25 INFO : |-------|-----------|---------|-----------------------------------------------|
+2020-02-28 11:54:25 INFO : |     3 |    0.133% |  0.083% | L1_eg_mass_3_obj                              |
+2020-02-28 11:54:25 INFO : |     0 |    0.133% |  0.083% | L1_jet_mass_3_obj                             |
+2020-02-28 11:54:25 INFO : |     2 |    0.133% |  0.083% | L1_mu_mass_3_obj_cc                           |
+2020-02-28 11:54:25 INFO : |     1 |    3.080% |  2.324% | L1_mu_mass_2_obj                              |
+2020-02-28 11:54:25 INFO : |     4 |    4.158% |  5.478% | L1_eg_mass_2_obj                              |
+2020-02-28 11:54:25 INFO : |     5 |    4.158% |  5.478% | L1_jet_mass_2_obj                             |
+2020-02-28 11:54:25 INFO : |-------|-----------|---------|-----------------------------------------------|
+2020-02-28 11:54:25 INFO : |-----------------------------------------------------------------------------|
+2020-02-28 11:54:25 INFO : distributing algorithms, shadow ratio: 0.0
+2020-02-28 11:54:25 INFO : starting algorithm distribution for 6 algorithms on 1 modules using shadow ratio of 0.0
+2020-02-28 11:54:25 INFO :  . adding L1_eg_mass_3_obj (3) to module 0
+2020-02-28 11:54:25 INFO :  . adding L1_jet_mass_3_obj (0) to module 0
+2020-02-28 11:54:25 INFO :  . adding L1_mu_mass_3_obj_cc (2) to module 0
+2020-02-28 11:54:25 INFO :  . adding L1_mu_mass_2_obj (1) to module 0
+2020-02-28 11:54:25 INFO :  . adding L1_eg_mass_2_obj (4) to module 0
+2020-02-28 11:54:25 INFO :  . adding L1_jet_mass_2_obj (5) to module 0
+2020-02-28 11:54:25 INFO : |-----------------------------------------------------------------------------|
+2020-02-28 11:54:25 INFO : |                                                                             |
+2020-02-28 11:54:25 INFO : | Detailed distribition on 1 modules, shadow ratio: 0.0                       |
+2020-02-28 11:54:25 INFO : |                                                                             |
+2020-02-28 11:54:25 INFO : |------------|----------------------------------------------------------------|
+2020-02-28 11:54:25 INFO : | Module     | Algorithm                                                      |
+2020-02-28 11:54:25 INFO : | ID | Index | Index | Name                                                   |
+2020-02-28 11:54:25 INFO : |----|-------|-------|--------------------------------------------------------|
+2020-02-28 11:54:25 INFO : |  0 |     0 |     3 | L1_eg_mass_3_obj                                       |
+2020-02-28 11:54:25 INFO : |  0 |     1 |     0 | L1_jet_mass_3_obj                                      |
+2020-02-28 11:54:25 INFO : |  0 |     2 |     2 | L1_mu_mass_3_obj_cc                                    |
+2020-02-28 11:54:25 INFO : |  0 |     3 |     1 | L1_mu_mass_2_obj                                       |
+2020-02-28 11:54:25 INFO : |  0 |     4 |     4 | L1_eg_mass_2_obj                                       |
+2020-02-28 11:54:25 INFO : |  0 |     5 |     5 | L1_jet_mass_2_obj                                      |
+2020-02-28 11:54:25 INFO : |----|-------|-------|--------------------------------------------------------|
+2020-02-28 11:54:25 INFO : |-----------------------------------------------------------------------------|
+2020-02-28 11:54:25 INFO : |                                                                             |
+2020-02-28 11:54:25 INFO : | Condition distribution, sorted by weight (ascending)                        |
+2020-02-28 11:54:25 INFO : |                                                                             |
+2020-02-28 11:54:25 INFO : |-----------------------------------------------------------------------------|
+2020-02-28 11:54:25 INFO : | Name                                             | Modules                  |
+2020-02-28 11:54:25 INFO : |--------------------------------------------------|--------------------------|
+2020-02-28 11:54:25 INFO : | InvariantMassThreeObj_i1                         | 0                        |
+2020-02-28 11:54:25 INFO : | InvariantMassThreeObj_i2                         | 0                        |
+2020-02-28 11:54:25 INFO : | InvariantMassThreeObj_i3                         | 0                        |
+2020-02-28 11:54:25 INFO : | InvariantMass_i0                                 | 0                        |
+2020-02-28 11:54:25 INFO : | InvariantMass_i4                                 | 0                        |
+2020-02-28 11:54:25 INFO : | InvariantMass_i5                                 | 0                        |
+2020-02-28 11:54:25 INFO : |--------------------------------------------------|--------------------------|
+2020-02-28 11:54:25 INFO : |-----------------------------------------------------------------------------|
+2020-02-28 11:54:25 INFO : |                                                                             |
+2020-02-28 11:54:25 INFO : | Summary for distribution on 1 modules, shadow ratio: 0.0                    |
+2020-02-28 11:54:25 INFO : |                                                                             |
+2020-02-28 11:54:25 INFO : |-------------------------------------|---------------------------------------|
+2020-02-28 11:54:25 INFO : | Module                              | Payload                               |
+2020-02-28 11:54:25 INFO : | ID | Algorithms | Conditions | Rel. | SliceLUTs | DSPs    |                 |
+2020-02-28 11:54:25 INFO : |----|------------|------------|------|-----------|---------|-----------------|
+2020-02-28 11:54:25 INFO : |  0 |          6 |          6 | 1.00 |    28.79% |  13.53% |                 |
+2020-02-28 11:54:25 INFO : |----|------------|------------|------|-----------|---------|-----------------|
+2020-02-28 11:54:25 INFO : writing VHDL modules...
+2020-02-28 11:54:25 INFO : writing 6 algorithms to 1 module(s)
+2020-02-28 11:54:25 INFO : writing output for module: 0
+2020-02-28 11:54:25 INFO : algo_index.vhd          : /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/vhdl/module_0/src/algo_index.vhd
+2020-02-28 11:54:25 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/vhdl/module_0/src/gtl_module_signals.vhd
+2020-02-28 11:54:25 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/vhdl/module_0/src/gtl_module_instances.vhd
+2020-02-28 11:54:25 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/vhdl/module_0/src/ugt_constants.vhd
+2020-02-28 11:54:25 INFO : writing updated XML file /home/bergauer/L1Menu_test_mass_3_obj_v3.xml
+2020-02-28 11:54:25 INFO : reading source XML menu file /home/bergauer/L1Menu_test_mass_3_obj_v3.xml
+2020-02-28 11:54:25 INFO : processing menu "L1Menu_test_mass_3_obj_v3" ... 
+2020-02-28 11:54:25 INFO : updating menu information...
+2020-02-28 11:54:25 INFO : uuid_menu     : 821d31a5-e544-47d3-85d1-ce2181a9ac94
+2020-02-28 11:54:25 INFO : uuid_firmware : bb190d5b-daac-4823-a8cb-d9a446ae5187
+2020-02-28 11:54:25 INFO : n_modules     : 1
+2020-02-28 11:54:25 INFO : writing target XML menu file /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/xml/L1Menu_test_mass_3_obj_v3-d2.xml
+2020-02-28 11:54:25 INFO : generating menu documentation...
+2020-02-28 11:54:25 INFO : writing HTML documentation /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/xml/L1Menu_test_mass_3_obj_v3-d2.xml
+2020-02-28 11:54:26 INFO : writing TWIKI page template /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/xml/L1Menu_test_mass_3_obj_v3-d2.xml
+2020-02-28 11:54:27 INFO : patching filenames...
+2020-02-28 11:54:27 INFO : /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/doc/L1Menu_test_mass_3_obj_v3.html --> /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/doc/L1Menu_test_mass_3_obj_v3-d2.html
+2020-02-28 11:54:27 INFO : /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/doc/L1Menu_test_mass_3_obj_v3.twiki --> /home/bergauer/L1Menu_test_mass_3_obj_v3-d2/doc/L1Menu_test_mass_3_obj_v3-d2.twiki
+2020-02-28 11:54:27 INFO : done.
