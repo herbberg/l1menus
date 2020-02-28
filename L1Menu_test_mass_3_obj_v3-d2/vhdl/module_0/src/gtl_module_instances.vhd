@@ -10,7 +10,7 @@
 -- 821d31a5-e544-47d3-85d1-ce2181a9ac94
 
 -- Unique ID of firmware implementation:
--- abd30b78-e7aa-41b5-8101-646c9aa9413c
+-- 648b5fa4-bc72-46f8-9d58-479fdbad726a
 
 -- Scale set:
 -- scales_2018_08_07
@@ -276,8 +276,7 @@ invariant_mass_three_obj_i2_i: entity work.calo_mass_3_obj_condition
         X"0000000000F73140", X"0000000000256250",
         JET_PT_VECTOR_WIDTH, JET_JET_COSH_COS_PRECISION, JET_JET_COSH_COS_VECTOR_WIDTH
     )
-    port map(lhc_clk, jet_bx_0,
-        jet_pt_vector_bx_0
+    port map(lhc_clk, jet_bx_0, jet_pt_vector_bx_0,
         jet_jet_bx_0_bx_0_cosh_deta_vector, jet_jet_bx_0_bx_0_cos_dphi_vector,
         invariant_mass_three_obj_i2);
 
@@ -320,8 +319,7 @@ invariant_mass_three_obj_i3_i: entity work.calo_mass_3_obj_condition
         X"000000001DCD6500", X"0000000007735940",
         EG_PT_VECTOR_WIDTH, EG_EG_COSH_COS_PRECISION, EG_EG_COSH_COS_VECTOR_WIDTH
     )
-    port map(lhc_clk, eg_bx_0,
-        eg_pt_vector_bx_0
+    port map(lhc_clk, eg_bx_0, eg_pt_vector_bx_0,
         eg_eg_bx_0_bx_0_cosh_deta_vector, eg_eg_bx_0_bx_0_cos_dphi_vector,
         invariant_mass_three_obj_i3);
 
@@ -364,9 +362,9 @@ invariant_mass_three_obj_i1_i: entity work.muon_mass_3_obj_condition
         X"000000012A05F200", X"000000004A817C80",
         MU_PT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH
     )
-    port map(lhc_clk, mu_bx_0
+    port map(lhc_clk, mu_bx_0,
         ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-        mu_pt_vector_bx_0, mu_pt_vector_bx_0,
+        mu_pt_vector_bx_0
         mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
         invariant_mass_three_obj_i1);
 
