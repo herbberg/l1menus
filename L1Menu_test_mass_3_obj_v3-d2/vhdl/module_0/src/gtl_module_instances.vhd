@@ -10,7 +10,7 @@
 -- 821d31a5-e544-47d3-85d1-ce2181a9ac94
 
 -- Unique ID of firmware implementation:
--- bb190d5b-daac-4823-a8cb-d9a446ae5187
+-- ec87b470-d76c-42e6-8645-0927533289bc
 
 -- Scale set:
 -- scales_2018_08_07
@@ -240,7 +240,7 @@ invariant_mass_i0_i: entity work.muon_muon_correlation_condition
 invariant_mass_three_obj_i2_i: entity work.calo_mass_3_obj_condition
     generic map(
         NR_JET_OBJECTS, JET_TYPE,        
-        0, 11, true
+        0, 11, true,
         X"0014",
         0, 
         X"0000", X"0000",
@@ -251,7 +251,7 @@ invariant_mass_three_obj_i2_i: entity work.calo_mass_3_obj_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
-        0, 11, true
+        0, 11, true,
         X"0028",
         0, 
         X"0000", X"0000",
@@ -262,7 +262,7 @@ invariant_mass_three_obj_i2_i: entity work.calo_mass_3_obj_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
-        0, 11, true
+        0, 11, true,
         X"003C",
         0, 
         X"0000", X"0000",
@@ -283,7 +283,7 @@ invariant_mass_three_obj_i2_i: entity work.calo_mass_3_obj_condition
 invariant_mass_three_obj_i3_i: entity work.calo_mass_3_obj_condition
     generic map(
         NR_EG_OBJECTS, EG_TYPE,        
-        0, 11, true
+        0, 11, true,
         X"0028",
         0, 
         X"0000", X"0000",
@@ -294,7 +294,7 @@ invariant_mass_three_obj_i3_i: entity work.calo_mass_3_obj_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
-        0, 11, true
+        0, 11, true,
         X"0032",
         0, 
         X"0000", X"0000",
@@ -305,7 +305,7 @@ invariant_mass_three_obj_i3_i: entity work.calo_mass_3_obj_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
-        0, 11, true
+        0, 11, true,
         X"003E",
         0, 
         X"0000", X"0000",
