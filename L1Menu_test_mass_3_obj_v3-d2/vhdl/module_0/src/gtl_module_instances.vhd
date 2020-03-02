@@ -237,6 +237,51 @@ invariant_mass_i0_i: entity work.muon_muon_correlation_condition
         mu_cos_phi_bx_0, mu_cos_phi_bx_0, mu_sin_phi_bx_0, mu_sin_phi_bx_0,
         invariant_mass_i0);
 
+invariant_mass_three_obj_i1_i: entity work.muon_mass_3_obj_condition
+    generic map(
+        0, 7, true,
+        X"0019",
+        0, 
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        true, X"0000", X"0000",
+        true, X"0000", X"0000",
+        "ign", X"FFFF", X"F",
+        0, 7, true,
+        X"002D",
+        0, 
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        true, X"0000", X"0000",
+        true, X"0000", X"0000",
+        "ign", X"FFFF", X"F",
+        0, 7, true,
+        X"0041",
+        0, 
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        true, X"0000", X"0000",
+        true, X"0000", X"0000",
+        "ign", X"FFFF", X"F",
+        "os",
+        X"000000012A05F200", X"000000004A817C80",
+        MU_PT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH
+    )
+    port map(lhc_clk, mu_bx_0,
+        ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
+        mu_pt_vector_bx_0
+        mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
+        invariant_mass_three_obj_i1);
+
 invariant_mass_three_obj_i2_i: entity work.calo_mass_3_obj_condition
     generic map(
         NR_JET_OBJECTS, JET_TYPE,        
@@ -322,51 +367,6 @@ invariant_mass_three_obj_i3_i: entity work.calo_mass_3_obj_condition
     port map(lhc_clk, eg_bx_0, eg_pt_vector_bx_0,
         eg_eg_bx_0_bx_0_cosh_deta_vector, eg_eg_bx_0_bx_0_cos_dphi_vector,
         invariant_mass_three_obj_i3);
-
-invariant_mass_three_obj_i1_i: entity work.muon_mass_3_obj_condition
-    generic map(
-        0, 7, true,
-        X"0019",
-        0, 
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        true, X"0000", X"0000",
-        true, X"0000", X"0000",
-        "ign", X"FFFF", X"F",
-        0, 7, true,
-        X"002D",
-        0, 
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        true, X"0000", X"0000",
-        true, X"0000", X"0000",
-        "ign", X"FFFF", X"F",
-        0, 7, true,
-        X"0041",
-        0, 
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        true, X"0000", X"0000",
-        true, X"0000", X"0000",
-        "ign", X"FFFF", X"F",
-        "os",
-        X"000000012A05F200", X"000000004A817C80",
-        MU_PT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH
-    )
-    port map(lhc_clk, mu_bx_0,
-        ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-        mu_pt_vector_bx_0
-        mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_three_obj_i1);
 
 -- Instantiations of algorithms
 
