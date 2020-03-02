@@ -10,7 +10,7 @@
 -- 821d31a5-e544-47d3-85d1-ce2181a9ac94
 
 -- Unique ID of firmware implementation:
--- dc250a71-8ea2-4486-8c95-d556e44b2a5a
+-- 8749d58c-7b9d-4958-9e45-21446963a604
 
 -- Scale set:
 -- scales_2018_08_07
@@ -240,9 +240,7 @@ invariant_mass_i0_i: entity work.muon_muon_correlation_condition
 invariant_mass_three_obj_i2_i: entity work.calo_mass_3_obj_condition
     generic map(
         NR_JET_OBJECTS, JET_TYPE,
-        0, 11, true,
-        X"0014",
-        0, 
+        0, 11, true, X"0014", 0, 
         X"0000", X"0000",
         X"0000", X"0000",
         X"0000", X"0000",
@@ -251,9 +249,7 @@ invariant_mass_three_obj_i2_i: entity work.calo_mass_3_obj_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
-        0, 11, true,
-        X"0028",
-        0, 
+        0, 11, true, X"0028", 0, 
         X"0000", X"0000",
         X"0000", X"0000",
         X"0000", X"0000",
@@ -262,9 +258,7 @@ invariant_mass_three_obj_i2_i: entity work.calo_mass_3_obj_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
-        0, 11, true,
-        X"003C",
-        0, 
+        0, 11, true, X"003C", 0, 
         X"0000", X"0000",
         X"0000", X"0000",
         X"0000", X"0000",
@@ -283,9 +277,7 @@ invariant_mass_three_obj_i2_i: entity work.calo_mass_3_obj_condition
 invariant_mass_three_obj_i3_i: entity work.calo_mass_3_obj_condition
     generic map(
         NR_EG_OBJECTS, EG_TYPE,
-        0, 11, true,
-        X"0028",
-        0, 
+        0, 11, true, X"0028", 0, 
         X"0000", X"0000",
         X"0000", X"0000",
         X"0000", X"0000",
@@ -294,9 +286,7 @@ invariant_mass_three_obj_i3_i: entity work.calo_mass_3_obj_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
-        0, 11, true,
-        X"0032",
-        0, 
+        0, 11, true, X"0032", 0, 
         X"0000", X"0000",
         X"0000", X"0000",
         X"0000", X"0000",
@@ -305,9 +295,7 @@ invariant_mass_three_obj_i3_i: entity work.calo_mass_3_obj_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
-        0, 11, true,
-        X"003E",
-        0, 
+        0, 11, true, X"003E", 0, 
         X"0000", X"0000",
         X"0000", X"0000",
         X"0000", X"0000",
@@ -325,9 +313,7 @@ invariant_mass_three_obj_i3_i: entity work.calo_mass_3_obj_condition
 
 invariant_mass_three_obj_i1_i: entity work.muon_mass_3_obj_condition
     generic map(
-        0, 7, true,
-        X"0019",
-        0, 
+        0, 7, true, X"0019", 0, 
         X"0000", X"0000",
         X"0000", X"0000",
         X"0000", X"0000",
@@ -336,9 +322,7 @@ invariant_mass_three_obj_i1_i: entity work.muon_mass_3_obj_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"FFFF", X"F",
-        0, 7, true,
-        X"002D",
-        0, 
+        0, 7, true, X"002D", 0, 
         X"0000", X"0000",
         X"0000", X"0000",
         X"0000", X"0000",
@@ -347,9 +331,7 @@ invariant_mass_three_obj_i1_i: entity work.muon_mass_3_obj_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"FFFF", X"F",
-        0, 7, true,
-        X"0041",
-        0, 
+        0, 7, true, X"0041", 0, 
         X"0000", X"0000",
         X"0000", X"0000",
         X"0000", X"0000",
