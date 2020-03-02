@@ -10,7 +10,7 @@
 -- 821d31a5-e544-47d3-85d1-ce2181a9ac94
 
 -- Unique ID of firmware implementation:
--- a5eca92b-47ea-4834-951f-8981615aa57a
+-- 55215206-94c0-4a97-a45c-c6e6ad63df78
 
 -- Scale set:
 -- scales_2018_08_07
@@ -237,7 +237,7 @@ invariant_mass_i0_i: entity work.muon_muon_correlation_condition
         mu_cos_phi_bx_0, mu_cos_phi_bx_0, mu_sin_phi_bx_0, mu_sin_phi_bx_0,
         invariant_mass_i0);
 
-invariant_mass_three_obj_i2_i: entity work.muon_mass_3_obj_condition
+invariant_mass_three_obj_i2_i: entity work.calo_mass_3_obj_condition
     generic map(
         0, 11, true, X"0014", 0, 
         X"0000", X"0000",
@@ -274,7 +274,7 @@ invariant_mass_three_obj_i2_i: entity work.muon_mass_3_obj_condition
         jet_jet_bx_0_bx_0_cosh_deta_vector, jet_jet_bx_0_bx_0_cos_dphi_vector,
         invariant_mass_three_obj_i2);
 
-invariant_mass_three_obj_i3_i: entity work.muon_mass_3_obj_condition
+invariant_mass_three_obj_i3_i: entity work.calo_mass_3_obj_condition
     generic map(
         0, 11, true, X"0028", 0, 
         X"0000", X"0000",
@@ -313,7 +313,9 @@ invariant_mass_three_obj_i3_i: entity work.muon_mass_3_obj_condition
 
 invariant_mass_three_obj_i1_i: entity work.muon_mass_3_obj_condition
     generic map(
-        0, 7, true, X"0019", 0, 
+        0, 7, true,
+        X"0019",
+        0, 
         X"0000", X"0000",
         X"0000", X"0000",
         X"0000", X"0000",
@@ -322,7 +324,9 @@ invariant_mass_three_obj_i1_i: entity work.muon_mass_3_obj_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"FFFF", X"F",
-        0, 7, true, X"002D", 0, 
+        0, 7, true,
+        X"002D",
+        0, 
         X"0000", X"0000",
         X"0000", X"0000",
         X"0000", X"0000",
@@ -331,7 +335,9 @@ invariant_mass_three_obj_i1_i: entity work.muon_mass_3_obj_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"FFFF", X"F",
-        0, 7, true, X"0041", 0, 
+        0, 7, true,
+        X"0041",
+        0, 
         X"0000", X"0000",
         X"0000", X"0000",
         X"0000", X"0000",
@@ -346,7 +352,7 @@ invariant_mass_three_obj_i1_i: entity work.muon_mass_3_obj_condition
     )
     port map(lhc_clk, mu_bx_0,
         ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-        mu_pt_vector_bx_0,
+        mu_pt_vector_bx_0
         mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
         invariant_mass_three_obj_i1);
 
