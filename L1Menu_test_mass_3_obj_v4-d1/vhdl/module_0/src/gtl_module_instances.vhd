@@ -10,7 +10,7 @@
 -- 1616a562-3d24-4c5c-91e5-51cbcd3e538c
 
 -- Unique ID of firmware implementation:
--- 71f4b521-d71b-4e80-85a5-c4d778e60712
+-- 221f9470-d49f-4fdb-b742-63720bbf365c
 
 -- Scale set:
 -- scales_2018_08_07
@@ -211,7 +211,7 @@ invariant_mass_three_obj_i1_i: entity work.muon_mass_3_obj_condition
     )
     port map(lhc_clk, mu_bx_0,
         ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-        mu_pt_vector_bx_0
+        mu_pt_vector_bx_0,
         mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
         invariant_mass_three_obj_i1);
 
