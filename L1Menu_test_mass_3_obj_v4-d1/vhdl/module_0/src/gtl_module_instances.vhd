@@ -170,43 +170,6 @@ invariant_mass_i0_i: entity work.muon_muon_correlation_condition
         mu_cos_phi_bx_0, mu_cos_phi_bx_0, mu_sin_phi_bx_0, mu_sin_phi_bx_0,
         invariant_mass_i0);
 
-invariant_mass_three_obj_i2_i: entity work.calo_mass_3_obj_condition
-    generic map(
-        0, 11, true, X"0028", 0, 
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        true, X"0000", X"0000",
-        true, X"0000", X"0000",
-        X"F",
-        0, 11, true, X"0032", 0, 
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        true, X"0000", X"0000",
-        true, X"0000", X"0000",
-        X"F",
-        0, 11, true, X"003E", 0, 
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        true, X"0000", X"0000",
-        true, X"0000", X"0000",
-        X"F",
-        X"000000001DCD6500", X"0000000007735940",
-        EG_PT_VECTOR_WIDTH, EG_EG_COSH_COS_PRECISION, EG_EG_COSH_COS_VECTOR_WIDTH,
-        NR_EG_OBJECTS, EG_TYPE
-    )
-    port map(lhc_clk, eg_bx_0, eg_pt_vector_bx_0,
-        eg_eg_bx_0_bx_0_cosh_deta_vector, eg_eg_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_three_obj_i2);
-
 invariant_mass_three_obj_i1_i: entity work.muon_mass_3_obj_condition
     generic map(
         0, 7, true,
@@ -251,6 +214,43 @@ invariant_mass_three_obj_i1_i: entity work.muon_mass_3_obj_condition
         mu_pt_vector_bx_0
         mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
         invariant_mass_three_obj_i1);
+
+invariant_mass_three_obj_i2_i: entity work.calo_mass_3_obj_condition
+    generic map(
+        0, 11, true, X"0028", 0, 
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        true, X"0000", X"0000",
+        true, X"0000", X"0000",
+        X"F",
+        0, 11, true, X"0032", 0, 
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        true, X"0000", X"0000",
+        true, X"0000", X"0000",
+        X"F",
+        0, 11, true, X"003E", 0, 
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        true, X"0000", X"0000",
+        true, X"0000", X"0000",
+        X"F",
+        X"000000001DCD6500", X"0000000007735940",
+        EG_PT_VECTOR_WIDTH, EG_EG_COSH_COS_PRECISION, EG_EG_COSH_COS_VECTOR_WIDTH,
+        NR_EG_OBJECTS, EG_TYPE
+    )
+    port map(lhc_clk, eg_bx_0, eg_pt_vector_bx_0,
+        eg_eg_bx_0_bx_0_cosh_deta_vector, eg_eg_bx_0_bx_0_cos_dphi_vector,
+        invariant_mass_three_obj_i2);
 
 -- Instantiations of algorithms
 
