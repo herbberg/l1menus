@@ -1,0 +1,14 @@
+{
+  "firmware_uuid" : "71905c8e-4c17-49ad-909d-69b6c72c90f7",
+  "menu_uuid"     : "e97bd860-e30f-400c-b0cd-793a950259f4",
+  "n_modules"     : 1,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_jet_mass_3_obj", 0, 0, 5],
+    ["L1_mu_mass_2_obj", 1, 0, 2],
+    ["L1_mu_mass_3_obj_cc", 2, 0, 0],
+    ["L1_eg_mass_3_obj_slice_0to7", 3, 0, 1],
+    ["L1_eg_mass_2_obj", 4, 0, 3],
+    ["L1_jet_mass_2_obj", 5, 0, 4]
+  ]
+}
