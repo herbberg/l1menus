@@ -54,7 +54,9 @@
         port map(jet_phi_integer_bx_0, jet_phi_integer_bx_0, diff_jet_jet_bx_0_bx_0_phi_integer);
     jet_jet_bx_0_bx_0_l1: for i in 0 to NR_JET_OBJECTS-1 generate
         jet_jet_bx_0_bx_0_l2: for j in 0 to NR_JET_OBJECTS-1 generate
+            diff_jet_jet_bx_0_bx_0_eta_integer_lut(i,j) <= JET_JET_DIFF_ETA_LUT(diff_jet_jet_bx_0_bx_0_eta_integer(i,j));
             diff_jet_jet_bx_0_bx_0_eta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_JET_DIFF_ETA_LUT(diff_jet_jet_bx_0_bx_0_eta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
+            diff_jet_jet_bx_0_bx_0_phi_integer_lut(i,j) <= JET_JET_DIFF_PHI_LUT(diff_jet_jet_bx_0_bx_0_phi_integer(i,j));
             diff_jet_jet_bx_0_bx_0_phi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_JET_DIFF_PHI_LUT(diff_jet_jet_bx_0_bx_0_phi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
         end generate jet_jet_bx_0_bx_0_l2;
     end generate jet_jet_bx_0_bx_0_l1;
@@ -98,7 +100,7 @@ invariant_mass_i0_i: entity work.calo_calo_invmass_div_dr_condition
         X"0000000000F73140", X"0000000000256250"
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
-        diff_jet_jet_bx_0_bx_0_eta_integer, diff_jet_jet_bx_0_bx_0_phi_integer,
+        diff_jet_jet_bx_0_bx_0_eta_integer_lut, diff_jet_jet_bx_0_bx_0_phi_integer_lut,
         jet_pt_integer_bx_0, jet_pt_integer_bx_0,
         jet_jet_bx_0_bx_0_cosh_deta_integer, jet_jet_bx_0_bx_0_cos_dphi_integer,
         invariant_mass_i0);
