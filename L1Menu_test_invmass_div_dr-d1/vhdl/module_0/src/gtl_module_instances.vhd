@@ -18,6 +18,10 @@
 -- VHDL producer version
 -- v2.8.0
 
+-- ********************************************************************
+-- Changed manually for calo_calo_invmass_div_dr_condition
+-- ********************************************************************
+
 -- External condition assignment
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
@@ -30,7 +34,7 @@
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo ObjectType in certain Bx used in correlation conditions
 
 -- Instantiations of pt, eta, phi, cos-phi and sin-phi for correlation conditions (used for DETA, DPHI, DR, mass, overlap_remover and b_tagging) - once for every ObjectType in certain Bx used in correlation conditions
-    jet_data_bx_0_l: for i in 0 to NR_JET_OBJECTS-1 generate
+        jet_data_bx_0_l: for i in 0 to NR_JET_OBJECTS-1 generate
         jet_pt_integer_bx_0(i)(JET_PT_VECTOR_WIDTH-1 downto 0) <= JET_PT_LUT(CONV_INTEGER(jet_bx_0(i)(D_S_I_JET_V2.et_high downto D_S_I_JET_V2.et_low)));
         jet_pt_vector_bx_0(i)(JET_PT_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(JET_PT_LUT(CONV_INTEGER(jet_bx_0(i)(D_S_I_JET_V2.et_high downto D_S_I_JET_V2.et_low))), JET_PT_VECTOR_WIDTH);
         jet_eta_integer_bx_0(i) <= CONV_INTEGER(signed(jet_bx_0(i)(D_S_I_JET_V2.eta_high downto D_S_I_JET_V2.eta_low)));

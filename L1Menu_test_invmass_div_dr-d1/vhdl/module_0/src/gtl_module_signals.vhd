@@ -18,6 +18,10 @@
 -- VHDL producer version
 -- v2.8.0
 
+-- ********************************************************************
+-- Changed manually for calo_calo_invmass_div_dr_condition
+-- ********************************************************************
+
 -- Signal definition of pt, eta and phi for correlation conditions.
 -- Insert "signal_correlation_conditions_pt_eta_phi_cos_sin_phi.vhd.j2" as often as an ObjectType at a certain Bx is used in a correlation condition.
     signal jet_pt_integer_bx_0: diff_integer_inputs_array(0 to NR_JET_OBJECTS-1) := (others => 0);
