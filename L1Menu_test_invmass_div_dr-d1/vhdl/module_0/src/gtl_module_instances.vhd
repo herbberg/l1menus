@@ -69,9 +69,10 @@
 -- Instantiations of conditions
 invariant_mass_i0_i: entity work.calo_mass_div_dr_condition
     generic map(
+        NR_JET_OBJECTS,
         JET_PT_PRECISION, JET_JET_DETA_DPHI_PRECISION, JET_JET_COSH_COS_PRECISION,
         JET_PT_INT_DIGITS, JET_DETA_INT_DIGITS, JET_DPHI_INT_DIGITS, JET_COSH_DETA_INT_DIGITS, FRACT_DIGITS,
-        
+        JET_PT_MAX_VALUE, JET_COSH_DETA_MAX_VALUE,        
         0, 11, true, JET_TYPE,
         X"0014",
         0, 
