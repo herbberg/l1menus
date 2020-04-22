@@ -68,7 +68,7 @@
 
     jet_jet_bx_0_bx_0_inv_dr_sq_l1: for i in 0 to NR_JET_OBJECTS-1 generate
         jet_jet_bx_0_bx_0_inv_dr_sq_l2: for j in 0 to NR_JET_OBJECTS-1 generate
-            jet_jet_bx_0_bx_0_inv_dr_sq_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_JET_INV_DR_SQ_LUT(diff_jet_jet_eta_integer(i,j), diff_jet_jet_phi_integer(i,j)), JET_JET_INV_DR_SQ_VECTOR_WIDTH);
+            jet_jet_bx_0_bx_0_inv_dr_sq_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_JET_INV_DR_SQ_LUT(jet_jet_bx_0_bx_0_diff_eta_integer(i,j), jet_jet_bx_0_bx_0_diff_phi_integer(i,j)), JET_JET_INV_DR_SQ_VECTOR_WIDTH);
         end generate jet_jet_bx_0_bx_0_inv_dr_sq_l2;
     end generate jet_jet_bx_0_bx_0_inv_dr_sq_l1;
 
