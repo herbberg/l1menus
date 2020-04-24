@@ -107,7 +107,7 @@ invariant_mass_i0_i: entity work.calo_calo_correlation_condition
         X"0000000000000000", CALO_SIN_COS_VECTOR_WIDTH, JET_JET_SIN_COS_PRECISION
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
-        diff_jet_jet_bx_0_bx_0_eta_vector, diff_jet_jet_bx_0_bx_0_phi_vector,
+        jet_jet_bx_0_bx_0_diff_eta_vector, jet_jet_bx_0_bx_0_diff_phi_vector,
         jet_pt_vector_bx_0, jet_pt_vector_bx_0,
         jet_jet_bx_0_bx_0_cosh_deta_vector, jet_jet_bx_0_bx_0_cos_dphi_vector,
         jet_jet_bx_0_bx_0_inv_dr_sq_vector,
