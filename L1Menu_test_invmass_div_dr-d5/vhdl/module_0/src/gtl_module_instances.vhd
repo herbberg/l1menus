@@ -73,8 +73,9 @@
                 port map (
                     clka => lhc_clk,
                     addra => addr_rom_lut_calo_inv_dr_sq(i,j),
-                    douta => jet_jet_bx_0_bx_0_inv_dr_sq_vector(i,j)
+                    douta => jet_jet_bx_0_bx_0_inv_dr_sq_vector_t(i,j)
                 );
+            jet_jet_bx_0_bx_0_inv_dr_sq_vector(i,j) <= jet_jet_bx_0_bx_0_inv_dr_sq_vector_t(i,j)(JET_JET_INV_DR_SQ_VECTOR_WIDTH-1 downto 0);
         end generate jet_jet_bx_0_bx_0_inv_dr_sq_l2;
     end generate jet_jet_bx_0_bx_0_inv_dr_sq_l1;
 
