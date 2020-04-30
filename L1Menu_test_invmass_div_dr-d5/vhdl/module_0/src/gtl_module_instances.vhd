@@ -72,7 +72,7 @@
             rom_lut_i : rom_lut_calo_inv_dr_sq
                 port map (
                     clka => lhc_clk,
-                    addra => addr_rom_lut_calo_inv_dr_sq,
+                    addra => addr_rom_lut_calo_inv_dr_sq(i,j),
                     douta => jet_jet_bx_0_bx_0_inv_dr_sq_vector(i,j)
                 );
         end generate jet_jet_bx_0_bx_0_inv_dr_sq_l2;
