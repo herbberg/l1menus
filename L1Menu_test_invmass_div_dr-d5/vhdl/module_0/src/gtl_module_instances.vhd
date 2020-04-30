@@ -68,7 +68,7 @@
 
     jet_jet_bx_0_bx_0_inv_dr_sq_l1: for i in 0 to NR_JET_OBJECTS-1 generate
         jet_jet_bx_0_bx_0_inv_dr_sq_l2: for j in 0 to NR_JET_OBJECTS-1 generate
-            addr_rom_lut_calo_inv_dr_sq <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_diff_eta_integer(i,j),8) &       CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_diff_phi_integer(i,j),8);
+            addr_rom_lut_calo_inv_dr_sq(i,j) <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_diff_eta_integer(i,j),8) &       CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_diff_phi_integer(i,j),8);
             rom_lut_i : rom_lut_calo_inv_dr_sq
                 port map (
                     clka => lhc_clk,
