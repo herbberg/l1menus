@@ -48,13 +48,6 @@
     signal jet_jet_bx_0_bx_0_cos_dphi_integer : diff_2dim_integer_array(0 to NR_JET_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => 0));
     signal jet_jet_bx_0_bx_0_cos_dphi_vector : calo_cosh_cos_vector_array(0 to NR_JET_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => (others => '0')));
 
--- Signals for address of ROM (LUT) for inverse DR squared for calos
-    signal addr_rom_lut_calo_inv_dr_sq : addr_rom_lut_calo_inv_dr_sq_array(0 to NR_JET_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => (others => '0')));
-
--- Signals for inverse DR squared (for inv. mass div. by DR sq.)
-    signal jet_jet_bx_0_bx_0_inv_dr_sq_vector_t : max_inv_dr_sq_vector_array(0 to NR_JET_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => (others => '0')));
-    signal jet_jet_bx_0_bx_0_inv_dr_sq_vector : calo_inv_dr_sq_vector_array(0 to NR_JET_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => (others => '0')));
-
 -- Signal definition for muon charge correlations.
 -- Insert "signal_muon_charge_correlations.vhd.j2" only once for a certain Bx combination,
 -- if there is at least one muon condition or one muon-muon correlation condition.

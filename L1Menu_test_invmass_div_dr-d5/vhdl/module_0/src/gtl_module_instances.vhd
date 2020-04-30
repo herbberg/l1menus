@@ -66,19 +66,6 @@
         end generate jet_jet_bx_0_bx_0_cosh_cos_l2;
     end generate jet_jet_bx_0_bx_0_cosh_cos_l1;
 
-    jet_jet_bx_0_bx_0_inv_dr_sq_l1: for i in 0 to NR_JET_OBJECTS-1 generate
-        jet_jet_bx_0_bx_0_inv_dr_sq_l2: for j in 0 to NR_JET_OBJECTS-1 generate
-            addr_rom_lut_calo_inv_dr_sq(i,j) <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_diff_eta_integer(i,j),8) &       CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_diff_phi_integer(i,j),8);
-            rom_lut_i : rom_lut_calo_inv_dr_sq
-                port map (
-                    clka => lhc_clk,
-                    addra => addr_rom_lut_calo_inv_dr_sq(i,j),
-                    douta => jet_jet_bx_0_bx_0_inv_dr_sq_vector_t(i,j)
-                );
-            jet_jet_bx_0_bx_0_inv_dr_sq_vector(i,j) <= jet_jet_bx_0_bx_0_inv_dr_sq_vector_t(i,j)(JET_JET_INV_DR_SQ_VECTOR_WIDTH-1 downto 0);
-        end generate jet_jet_bx_0_bx_0_inv_dr_sq_l2;
-    end generate jet_jet_bx_0_bx_0_inv_dr_sq_l1;
-
 -- Instantiations of conditions
 invariant_mass_i0_i: entity work.calo_calo_correlation_condition
     generic map(
