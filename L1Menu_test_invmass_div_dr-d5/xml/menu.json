@@ -1,0 +1,9 @@
+{
+  "firmware_uuid" : "9b489ec0-fbf4-4941-985c-52e06058d80c",
+  "menu_uuid"     : "3c0c7341-bcb2-4f71-9732-a11cb177c360",
+  "n_modules"     : 1,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_jet_invmass_div_dr", 0, 0, 0]
+  ]
+}
