@@ -66,6 +66,13 @@
         end generate jet_jet_bx_0_bx_0_cosh_cos_l2;
     end generate jet_jet_bx_0_bx_0_cosh_cos_l1;
 
+    jet_jet_bx_0_bx_0_l1: for i in 0 to NR_JET_OBJECTS-1 generate
+        jet_jet_bx_0_bx_0_l2: for j in 0 to NR_JET_OBJECTS-1 generate
+            jet_jet_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_diff_eta_integer(i,j),CALO_DETA_BINS_WIDTH);
+            jet_jet_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_diff_phi_integer(i,j),CALO_DPHI_BINS_WIDTH);
+        end generate jet_jet_bx_0_bx_0_l2;
+    end generate jet_jet_bx_0_bx_0_l1;
+
 -- Instantiations of conditions
 invariant_mass_i0_i: entity work.calo_calo_correlation_condition
     generic map(
@@ -102,6 +109,7 @@ invariant_mass_i0_i: entity work.calo_calo_correlation_condition
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         jet_jet_bx_0_bx_0_diff_eta_vector, jet_jet_bx_0_bx_0_diff_phi_vector,
+        jet_jet_bx_0_bx_0_deta_bin_vector, jet_jet_bx_0_bx_0_dphi_bin_vector,
         jet_pt_vector_bx_0, jet_pt_vector_bx_0,
         jet_jet_bx_0_bx_0_cosh_deta_vector, jet_jet_bx_0_bx_0_cos_dphi_vector,
         jet_jet_bx_0_bx_0_inv_dr_sq_vector,
