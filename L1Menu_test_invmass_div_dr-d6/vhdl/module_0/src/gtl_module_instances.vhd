@@ -107,7 +107,7 @@ invariant_mass_i0_i: entity work.calo_calo_correlation_condition
         jet_jet_bx_0_bx_0_deta_bin_vector, jet_jet_bx_0_bx_0_dphi_bin_vector,
         jet_pt_vector_bx_0, jet_pt_vector_bx_0,
         jet_jet_bx_0_bx_0_cosh_deta_vector, jet_jet_bx_0_bx_0_cos_dphi_vector,
-        jet_jet_bx_0_bx_0_inv_dr_sq_vector,
+--         jet_jet_bx_0_bx_0_inv_dr_sq_vector,
         jet_cos_phi_bx_0, jet_cos_phi_bx_0, jet_sin_phi_bx_0, jet_sin_phi_bx_0,
         invariant_mass_i0);
 
