@@ -53,6 +53,8 @@
             jet_jet_bx_0_bx_0_diff_eta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_JET_DIFF_ETA_LUT(jet_jet_bx_0_bx_0_diff_eta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
             jet_jet_bx_0_bx_0_diff_phi_integer_lut(i,j) <= JET_JET_DIFF_PHI_LUT(jet_jet_bx_0_bx_0_diff_phi_integer(i,j));
             jet_jet_bx_0_bx_0_diff_phi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_JET_DIFF_PHI_LUT(jet_jet_bx_0_bx_0_diff_phi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
+            jet_jet_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_diff_eta_integer(i,j),CALO_DETA_BINS_WIDTH);
+            jet_jet_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_diff_phi_integer(i,j),CALO_DPHI_BINS_WIDTH);
         end generate jet_jet_bx_0_bx_0_l2;
     end generate jet_jet_bx_0_bx_0_l1;
 
@@ -65,13 +67,6 @@
             jet_jet_bx_0_bx_0_cos_dphi_integer(i,j) <= JET_JET_COS_DPHI_LUT(jet_jet_bx_0_bx_0_diff_phi_integer(i,j));
         end generate jet_jet_bx_0_bx_0_cosh_cos_l2;
     end generate jet_jet_bx_0_bx_0_cosh_cos_l1;
-
-    jet_jet_bx_0_bx_0_l1: for i in 0 to NR_JET_OBJECTS-1 generate
-        jet_jet_bx_0_bx_0_l2: for j in 0 to NR_JET_OBJECTS-1 generate
-            jet_jet_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_diff_eta_integer(i,j),CALO_DETA_BINS_WIDTH);
-            jet_jet_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_diff_phi_integer(i,j),CALO_DPHI_BINS_WIDTH);
-        end generate jet_jet_bx_0_bx_0_l2;
-    end generate jet_jet_bx_0_bx_0_l1;
 
 -- Instantiations of conditions
 invariant_mass_i0_i: entity work.calo_calo_correlation_condition
