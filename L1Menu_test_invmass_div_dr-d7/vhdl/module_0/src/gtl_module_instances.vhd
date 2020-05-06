@@ -73,7 +73,7 @@ invariant_mass_i0_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
         false, false, false, true, 2, false,
-        0, 5, true, JET_TYPE,
+        0, 4, true, JET_TYPE,
         X"0014",
         0, 
         X"0000", X"0000",
@@ -84,7 +84,7 @@ invariant_mass_i0_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
-        0, 5, true, JET_TYPE,
+        0, 4, true, JET_TYPE,
         X"0028",
         0, 
         X"0000", X"0000",
