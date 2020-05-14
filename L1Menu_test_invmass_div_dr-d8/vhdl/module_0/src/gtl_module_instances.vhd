@@ -73,7 +73,7 @@ invariant_mass_i0_i: entity work.calo_calo_mass_div_dr_condition
     generic map(
         JET_PT_VECTOR_WIDTH, JET_PT_VECTOR_WIDTH,
         JET_JET_COSH_COS_VECTOR_WIDTH, JET_JET_INV_DR_SQ_VECTOR_WIDTH,
-        0, 4, true, JET_TYPE,
+        0, 7, true, JET_TYPE,
         X"0014",
         0, 
         X"0000", X"0000",
@@ -84,7 +84,7 @@ invariant_mass_i0_i: entity work.calo_calo_mass_div_dr_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
-        0, 4, true, JET_TYPE,
+        0, 7, true, JET_TYPE,
         X"0028",
         0, 
         X"0000", X"0000",
