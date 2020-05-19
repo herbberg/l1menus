@@ -71,7 +71,7 @@ invariant_mass_i0_i: entity work.muon_muon_mass_div_dr_condition
     generic map(
         true,
         MUON_PT_VECTOR_WIDTH, MUON_MUON_COSH_COS_VECTOR_WIDTH, MUON_MUON_INV_DR_SQ_VECTOR_WIDTH,
-        0, 9, true,
+        0, 7, true,
         X"0014",
         0, 
         X"0000", X"0000",
@@ -82,7 +82,7 @@ invariant_mass_i0_i: entity work.muon_muon_mass_div_dr_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"FF00", X"F",
-        0, 9, true,
+        0, 7, true,
         X"0028",
         0, 
         X"0000", X"0000",

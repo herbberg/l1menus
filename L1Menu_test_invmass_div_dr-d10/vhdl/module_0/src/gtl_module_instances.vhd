@@ -71,7 +71,7 @@
 -- Instantiations of conditions
 invariant_mass_i0_i: entity work.calo_calo_mass_div_dr_condition
     generic map(
-        true
+        true,
         JET_PT_VECTOR_WIDTH, JET_PT_VECTOR_WIDTH,
         JET_JET_COSH_COS_VECTOR_WIDTH, JET_JET_INV_DR_SQ_VECTOR_WIDTH,
         NR_JET_OBJECTS, 0, 9, true, JET_TYPE,
