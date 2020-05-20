@@ -93,7 +93,7 @@ invariant_mass_i0_i: entity work.muon_muon_mass_div_dr_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"FF00", X"F",     
-        X"00000000800000000000", X"00000000000000008000"
+        X"000000000800000000000", X"000000000000000008000"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         mu_mu_bx_0_bx_0_deta_bin_vector, mu_mu_bx_0_bx_0_dphi_bin_vector,
