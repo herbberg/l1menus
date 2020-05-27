@@ -1737,7 +1737,7 @@ mass_div_dr_i5_i: entity work.calo_calo_mass_div_dr_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",        
-        X"00000000800000000000", X"00000000000000008000"
+        X"000000000800000000000", X"000000000000000008000"
     )
     port map(lhc_clk, eg_bx_0, eg_bx_0,
         eg_eg_bx_0_bx_0_deta_bin_vector, eg_eg_bx_0_bx_0_dphi_bin_vector,

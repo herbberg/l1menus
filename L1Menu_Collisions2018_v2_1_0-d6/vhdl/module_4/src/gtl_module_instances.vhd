@@ -1905,7 +1905,7 @@ mass_div_dr_i4_i: entity work.muon_muon_mass_div_dr_condition
         true, X"0000", X"0000",
         "ign", X"FF00", X"F",
         "ig", 
-        X"000000000800000000000", X"000000000000000008000"
+        X"0000000000800000000000", X"0000000000000000008000"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,        
