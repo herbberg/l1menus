@@ -177,8 +177,8 @@ single_ext_i5 <= ext_cond_bx_0(43); -- single_ext_i5
         eg_eg_bx_0_bx_0_l2: for j in 0 to NR_EG_OBJECTS-1 generate
             diff_eg_eg_bx_0_bx_0_eta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_EG_DIFF_ETA_LUT(diff_eg_eg_bx_0_bx_0_eta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
             diff_eg_eg_bx_0_bx_0_phi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_EG_DIFF_PHI_LUT(diff_eg_eg_bx_0_bx_0_phi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
-            eg_eg_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(eg_eg_bx_0_bx_0_diff_eta_integer(i,j),CALO_DETA_BINS_WIDTH);
-            eg_eg_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(eg_eg_bx_0_bx_0_diff_phi_integer(i,j),CALO_DPHI_BINS_WIDTH);
+            eg_eg_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(diff_eg_eg_bx_0_bx_0_eta_integer(i,j),CALO_DETA_BINS_WIDTH);
+            eg_eg_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(diff_eg_eg_bx_0_bx_0_phi_integer(i,j),CALO_DPHI_BINS_WIDTH);
         end generate eg_eg_bx_0_bx_0_l2;
     end generate eg_eg_bx_0_bx_0_l1;
     diff_tau_tau_eta_bx_0_bx_0_i: entity work.sub_eta_integer_obj_vs_obj
