@@ -2153,7 +2153,7 @@ l1_etmhf150 <= single_etmhf_i311;
 algo(0) <= l1_etmhf150;
 
 -- 37 L1_mu_invmass_div_dr_1 : mass_inv{MU10,MU20}[MASS_MASS_7to18]
-L1_mu_invmass_div_dr <= mass_div_dr_i4;
-algo(59) <= L1_mu_invmass_div_dr;
+L1_mu_invmass_div_dr_1 <= mass_div_dr_i4;
+algo(59) <= L1_mu_invmass_div_dr_1;
 
 -- ========================================================
