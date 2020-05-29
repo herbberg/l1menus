@@ -127,7 +127,7 @@ invariant_mass_i0_i: entity work.muon_muon_mass_div_dr_condition
         mu_mu_bx_0_bx_0_mass_div_dr,
         invariant_mass_i0);
 
-invariant_mass_i0_i: entity work.muon_muon_mass_div_dr_condition
+invariant_mass_i1_i: entity work.muon_muon_mass_div_dr_condition
     generic map(
         true,
         0, 7, true,
@@ -158,7 +158,7 @@ invariant_mass_i0_i: entity work.muon_muon_mass_div_dr_condition
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,        
         mu_mu_bx_0_bx_0_mass_div_dr,
-        invariant_mass_i0);
+        invariant_mass_i1);
 
 -- Instantiations of algorithms
 
