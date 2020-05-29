@@ -82,8 +82,8 @@
                 )
                 port map(
                     lhc_clk,
-                    mu_mu_bx_0_bx_0_deta_bin_vector(i,j), 
-                    mu_mu_bx_0_bx_0_dphi_bin_vector(i,j),
+                    mu_mu_bx_0_bx_0_deta_bin_vector(i,j)(MU_DETA_BINS_WIDTH-1 downto MU_DETA_BINS_WIDTH-MU_DETA_BINS_WIDTH_ROM), 
+                    mu_mu_bx_0_bx_0_dphi_bin_vector(i,j)(MU_DPHI_BINS_WIDTH-1 downto MU_DPHI_BINS_WIDTH-MU_DPHI_BINS_WIDTH_ROM),
                     mu_pt_vector_bx_0(i)(MU_PT_VECTOR_WIDTH-1 downto 0), 
                     mu_pt_vector_bx_0(i)(MU_PT_VECTOR_WIDTH-1 downto 0),
                     mu_mu_bx_0_bx_0_cosh_deta_vector(i,j), 
