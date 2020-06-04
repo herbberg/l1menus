@@ -128,9 +128,7 @@ invariant_mass_i0_i: entity work.muon_muon_corr_cond
         X"0000000000000000", X"0000000000000000",
         X"0000000000000000", X"0000000000000000",
         X"000000000000009A7EC80", X"00000000000000175D720",
-        X"0000000000000000",
-        MU_MU_MASS_INV_VECTOR_WIDTH, MU_MU_MASS_DIV_DR_VECTOR_WIDTH,
-        MU_MU_TBPT_VECTOR_WIDTH
+        X"0000000000000000"
     )
     port map(
         lhc_clk => lhc_clk, 
@@ -142,7 +140,7 @@ invariant_mass_i0_i: entity work.muon_muon_corr_cond
         condition_o => invariant_mass_i0
     );
 
-invariant_mass_i1_i: entity work.muon_muon_mass_div_dr_condition
+invariant_mass_i1_i: entity work.muon_muon_corr_cond
     generic map(
         true,
         false, false, false, true, INVARIANT_MASS_DIV_DR_TYPE, false,
@@ -174,9 +172,7 @@ invariant_mass_i1_i: entity work.muon_muon_mass_div_dr_condition
         X"0000000000000000", X"0000000000000000",
         X"0000000000000000", X"0000000000000000",
         X"00000000000000269FB20", X"000000000000000000000"
-        X"0000000000000000",
-        MU_MU_MASS_INV_VECTOR_WIDTH, MU_MU_MASS_DIV_DR_VECTOR_WIDTH,
-        MU_MU_TBPT_VECTOR_WIDTH
+        X"0000000000000000"
     )
     port map(
         lhc_clk => lhc_clk, 
