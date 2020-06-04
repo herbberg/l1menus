@@ -19,7 +19,7 @@
 -- v2.8.0
 
 -- ********************************************************************
--- Changed manually for muon_muon_mass_div_dr_condition
+-- Created manually for muon_muon_corr_cond (mass_div_dr)
 -- ********************************************************************
 
 -- Algorithms
