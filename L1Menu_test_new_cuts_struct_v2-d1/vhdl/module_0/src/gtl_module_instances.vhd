@@ -91,7 +91,6 @@
                     JET_JET_COSH_COS_VECTOR_WIDTH
                 )
                 port map(
-                    lhc_clk,
                     jet_pt_vector_bx_0(i)(JET_PT_VECTOR_WIDTH-1 downto 0), 
                     jet_pt_vector_bx_0(i)(JET_PT_VECTOR_WIDTH-1 downto 0),
                     jet_jet_bx_0_bx_0_cosh_deta_vector(i,j), 
@@ -110,7 +109,6 @@
                     MU_MU_COSH_COS_VECTOR_WIDTH
                 )
                 port map(
-                    lhc_clk,
                     mu_pt_vector_bx_0(i)(MU_PT_VECTOR_WIDTH-1 downto 0), 
                     mu_pt_vector_bx_0(i)(MU_PT_VECTOR_WIDTH-1 downto 0),
                     mu_mu_bx_0_bx_0_cosh_deta_vector(i,j), 
@@ -168,9 +166,7 @@ invariant_mass_i0_i: entity work.muon_muon_corr_cond
         X"0000000000000000", X"0000000000000000",
         X"0000000000000000", X"0000000000000000",
         X"000000000000009A7EC80", X"00000000000000175D720",
-        X"0000000000000000",
-        MU_MU_MASS_INV_VECTOR_WIDTH, MU_MU_MASS_DIV_DR_VECTOR_WIDTH,
-        MU_MU_TBPT_VECTOR_WIDTH
+        X"0000000000000000"
     )
     port map(
         lhc_clk => lhc_clk, 
@@ -213,10 +209,8 @@ invariant_mass_i1_i: entity work.muon_muon_corr_cond
         X"00000000", X"00000000",
         X"0000000000000000", X"0000000000000000",
         X"0000000000000000", X"0000000000000000",
-        X"00000000000000269FB20", X"000000000000000000000"
-        X"0000000000000000",
-        MU_MU_MASS_INV_VECTOR_WIDTH, MU_MU_MASS_DIV_DR_VECTOR_WIDTH,
-        MU_MU_TBPT_VECTOR_WIDTH
+        X"00000000000000269FB20", X"000000000000000000000",
+        X"0000000000000000"
     )
     port map(
         lhc_clk => lhc_clk, 

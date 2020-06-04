@@ -70,7 +70,6 @@
                     MU_MU_COSH_COS_VECTOR_WIDTH
                 )
                 port map(
-                    lhc_clk,
                     mu_pt_vector_bx_0(i)(MU_PT_VECTOR_WIDTH-1 downto 0), 
                     mu_pt_vector_bx_0(i)(MU_PT_VECTOR_WIDTH-1 downto 0),
                     mu_mu_bx_0_bx_0_cosh_deta_vector(i,j), 
@@ -171,7 +170,7 @@ invariant_mass_i1_i: entity work.muon_muon_corr_cond
         X"00000000", X"00000000",
         X"0000000000000000", X"0000000000000000",
         X"0000000000000000", X"0000000000000000",
-        X"00000000000000269FB20", X"000000000000000000000"
+        X"00000000000000269FB20", X"000000000000000000000",
         X"0000000000000000"
     )
     port map(
