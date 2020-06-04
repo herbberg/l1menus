@@ -89,7 +89,7 @@
                     lhc_clk,
                     mu_mu_bx_0_bx_0_deta_bin_vector(i,j)(MU_DETA_BINS_WIDTH-1 downto MU_DETA_BINS_WIDTH-MU_DETA_BINS_WIDTH_ROM), 
                     mu_mu_bx_0_bx_0_dphi_bin_vector(i,j)(MU_DPHI_BINS_WIDTH-1 downto MU_DPHI_BINS_WIDTH-MU_DPHI_BINS_WIDTH_ROM),
-                    mu_mu_bx_0_bx_0_mass_inv_vector(i,j)
+                    mu_mu_bx_0_bx_0_mass_inv_vector(i,j),
                     mu_mu_bx_0_bx_0_mass_div_dr_vector(i,j)
                 );
         end generate mu_mu_bx_0_bx_0_mass_l2;
