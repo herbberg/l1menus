@@ -10,7 +10,7 @@
 -- e36612e2-bee8-45eb-a685-f6cea687ce3d
 
 -- Unique ID of firmware implementation:
--- 07a26584-a62b-4875-8382-9b6838d2e7d7
+-- 39a3c3cf-906a-46ff-a35f-29f4758572a4
 
 -- Scale set:
 -- scales_2017_05_23
@@ -35,10 +35,10 @@ constant global_index: global_index_array := (
         316, -- module_index: 11, name: L1_SingleJet35er2p5
         318, -- module_index: 12, name: L1_SingleJet90er2p5
         179, -- module_index: 13, name: L1_SingleLooseIsoEG28er2p1
-        238, -- module_index: 14, name: L1_LooseIsoEG24er2p1_HTT100er
-        240, -- module_index: 15, name: L1_LooseIsoEG28er2p1_HTT100er
-        239, -- module_index: 16, name: L1_LooseIsoEG26er2p1_HTT100er
-        241, -- module_index: 17, name: L1_LooseIsoEG30er2p1_HTT100er
+        241, -- module_index: 14, name: L1_LooseIsoEG30er2p1_HTT100er
+        238, -- module_index: 15, name: L1_LooseIsoEG24er2p1_HTT100er
+        240, -- module_index: 16, name: L1_LooseIsoEG28er2p1_HTT100er
+        239, -- module_index: 17, name: L1_LooseIsoEG26er2p1_HTT100er
         210, -- module_index: 18, name: L1_DoubleEG_27_14_er2p5
         215, -- module_index: 19, name: L1_DoubleEG_LooseIso25_12_er2p5
         272, -- module_index: 20, name: L1_DoubleIsoTau34er2p1
