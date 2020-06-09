@@ -10,7 +10,7 @@
 -- e36612e2-bee8-45eb-a685-f6cea687ce3d
 
 -- Unique ID of firmware implementation:
--- 3d3ed2c1-7a1d-4904-9a4c-2eca1120a085
+-- 07a26584-a62b-4875-8382-9b6838d2e7d7
 
 -- Scale set:
 -- scales_2017_05_23
@@ -808,7 +808,7 @@ calo_muon_correlation_i254_i: entity work.calo_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
-        false, X"0000", X"0000",
+        false, X"0000", X"0000", X"F",
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"00000000000274E8", X"0000000000000000",
