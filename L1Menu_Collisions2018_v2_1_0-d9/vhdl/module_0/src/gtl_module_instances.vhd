@@ -10,7 +10,7 @@
 -- e36612e2-bee8-45eb-a685-f6cea687ce3d
 
 -- Unique ID of firmware implementation:
--- 6f7efb0f-efd3-4289-be3d-8be4e5d29fb5
+-- 3d3ed2c1-7a1d-4904-9a4c-2eca1120a085
 
 -- Scale set:
 -- scales_2017_05_23
@@ -761,9 +761,8 @@ double_mu_i165_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"F000", X"F000", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -791,9 +790,8 @@ single_mu_i106_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"FFF0", X"FFFF", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -818,9 +816,8 @@ single_mu_i109_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"FFF0", X"FFFF", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -845,9 +842,8 @@ single_mu_i141_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"F000", X"FFFF", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -872,9 +868,8 @@ single_mu_i162_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"F000", X"FFFF", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -899,9 +894,8 @@ single_mu_i249_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"F000", X"FFFF", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -926,9 +920,8 @@ single_mu_i7_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"FFF0", X"FFFF", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -953,9 +946,8 @@ triple_mu_i204_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"FFF0", X"FFF0", X"FFF0", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -1378,8 +1370,7 @@ calo_muon_correlation_i274_i: entity work.calo_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
-        false,
-        X"0000", X"0000",
+        false, X"0000", X"0000",
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"00000000000274E8", X"0000000000000000",
@@ -1419,8 +1410,7 @@ calo_muon_correlation_i276_i: entity work.calo_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
-        false,
-        X"0000", X"0000",
+        false, X"0000", X"0000",
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"00000000000274E8", X"0000000000000000",
@@ -1450,8 +1440,7 @@ invariant_mass_i205_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"FFF0", X"F",
-        false,
-        X"0000", X"0000",
+        false, X"0000", X"0000",
         0, 7, true,
         X"0006",
         0, 
@@ -1463,9 +1452,8 @@ invariant_mass_i205_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"FFF0", X"F",
-        false,
-        X"0000", X"0000",
-        "os",
+        false,X"0000", X"0000",
+         "os",
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"0000000000000000", X"0000000000000000",
@@ -1495,7 +1483,7 @@ single_mbt0_hfp_i215_i: entity work.min_bias_hf_conditions
 
 -- 4 L1_SingleMuOpen : MU0[MU-QLTY_OPEN]
 l1_single_mu_open <= single_mu_i7;
-algo(13) <= l1_single_mu_open;
+algo(12) <= l1_single_mu_open;
 
 -- 82 L1_TripleMu_5_3p5_2p5_OQ_DoubleMu_5_2p5_OQ_OS_Mass_5to17 : comb{MU5[MU-QLTY_OPEN],MU3p5[MU-QLTY_OPEN],MU2p5[MU-QLTY_OPEN]} AND mass_inv{MU5[MU-QLTY_OPEN],MU2p5[MU-QLTY_OPEN]}[MASS_MASS_5to17,CHGCOR_OS]
 l1_triple_mu_5_3p5_2p5_oq_double_mu_5_2p5_oq_os_mass_5to17 <= triple_mu_i204 and invariant_mass_i205;
@@ -1575,7 +1563,7 @@ algo(79) <= l1_loose_iso_eg26er2p1_jet34er2p5_d_r_min0p3;
 
 -- 247 L1_DoubleEG8er2p5_HTT260er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT260
 l1_double_eg8er2p5_htt260er <= double_eg_i173 and single_htt_i174;
-algo(49) <= l1_double_eg8er2p5_htt260er;
+algo(50) <= l1_double_eg8er2p5_htt260er;
 
 -- 248 L1_DoubleEG8er2p5_HTT280er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT280
 l1_double_eg8er2p5_htt280er <= double_eg_i173 and single_htt_i96;
@@ -1723,7 +1711,7 @@ algo(11) <= l1_etmhf90_htt60er;
 
 -- 429 L1_ETMHF100_HTT60er : ETMHF100 AND HTT60
 l1_etmhf100_htt60er <= single_etmhf_i101 and single_htt_i179;
-algo(50) <= l1_etmhf100_htt60er;
+algo(49) <= l1_etmhf100_htt60er;
 
 -- 430 L1_ETMHF110_HTT60er : ETMHF110 AND HTT60
 l1_etmhf110_htt60er <= single_etmhf_i102 and single_htt_i179;
@@ -1783,7 +1771,7 @@ algo(7) <= l1_zero_bias;
 
 -- 460 L1_ZeroBias_copy : EXT_ZeroBias_BPTX_AND_VME
 l1_zero_bias_copy <= single_ext_i208;
-algo(12) <= l1_zero_bias_copy;
+algo(13) <= l1_zero_bias_copy;
 
 -- 461 L1_MinimumBiasHF0_AND_BptxAND : (MBT0HFP1 AND MBT0HFM1) AND EXT_ZeroBias_BPTX_AND_VME
 l1_minimum_bias_hf0_and_bptx_and <= ( single_mbt0_hfp_i215 and single_mbt0_hfm_i216 ) and single_ext_i208;

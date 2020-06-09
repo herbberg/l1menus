@@ -10,7 +10,7 @@
 -- e36612e2-bee8-45eb-a685-f6cea687ce3d
 
 -- Unique ID of firmware implementation:
--- 6f7efb0f-efd3-4289-be3d-8be4e5d29fb5
+-- 3d3ed2c1-7a1d-4904-9a4c-2eca1120a085
 
 -- Scale set:
 -- scales_2017_05_23
@@ -800,9 +800,8 @@ quad_mu_i284_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"FFF0", X"FFF0", X"FFF0", X"FFF0"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -830,9 +829,8 @@ quad_mu_i285_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"F000", X"F000", X"F000", X"F000"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -860,9 +858,8 @@ quad_mu_i36_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"FF00", X"FF00", X"FF00", X"FF00"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -890,9 +887,8 @@ single_mu_i18_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"FF00", X"FFFF", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -917,9 +913,8 @@ single_mu_i22_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"F000", X"FFFF", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -944,9 +939,8 @@ single_mu_i25_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"F000", X"FFFF", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -971,9 +965,8 @@ single_mu_i252_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"FF00", X"FFFF", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -998,9 +991,8 @@ single_mu_i293_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"F000", X"FFFF", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -1025,9 +1017,8 @@ single_mu_i295_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"F000", X"FFFF", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -1052,9 +1043,8 @@ single_mu_i299_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"F000", X"FFFF", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -1079,9 +1069,8 @@ single_mu_i301_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"F000", X"FFFF", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -1106,9 +1095,8 @@ single_mu_i6_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"FFFF", X"FFFF", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -1133,9 +1121,8 @@ single_mu_i9_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"FFFF", X"FFFF", X"FFFF", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -1160,9 +1147,8 @@ triple_mu_i35_i: entity work.muon_conditions
         ("ign", "ign", "ign", "ign"),
         (X"FF00", X"FF00", X"FF00", X"FFFF"),
         (X"F", X"F", X"F", X"F"),
-        false, false, false, false,
-        X"0000", X"0000", "0000", X"0000",
-        X"0000", X"0000", "0000", X"0000",
+        (false, false, false, false),
+        (X"0000", X"0000", "0000", X"0000"), (X"0000", X"0000", "0000", X"0000"),
         "ig",
         false
     )
@@ -1456,8 +1442,7 @@ calo_muon_correlation_i275_i: entity work.calo_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
-        false,
-        X"0000", X"0000",
+        false, X"0000", X"0000",
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"00000000000274E8", X"0000000000000000",
@@ -1497,8 +1482,7 @@ calo_muon_correlation_i305_i: entity work.calo_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"FF00", X"F",
-        false,
-        X"0000", X"0000",
+        false, X"0000", X"0000",
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"000000000009C7E8", X"0000000000000000",
@@ -1528,8 +1512,7 @@ invariant_mass_i171_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"FFFF", X"F",
-        false,
-        X"0000", X"0000",
+        false, X"0000", X"0000",
         0, 7, true,
         X"000F",
         0, 
@@ -1541,9 +1524,8 @@ invariant_mass_i171_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"FFFF", X"F",
-        false,
-        X"0000", X"0000",
-        "ig",
+        false,X"0000", X"0000",
+         "ig",
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"0000000000000000", X"0000000000000000",
@@ -1574,8 +1556,7 @@ invariant_mass_i202_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"FF00", X"F",
-        false,
-        X"0000", X"0000",
+        false, X"0000", X"0000",
         0, 7, true,
         X"0007",
         1, 
@@ -1587,9 +1568,8 @@ invariant_mass_i202_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"FF00", X"F",
-        false,
-        X"0000", X"0000",
-        "os",
+        false,X"0000", X"0000",
+         "os",
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"0000000000000000", X"0000000000000000",
@@ -1620,8 +1600,7 @@ muon_muon_correlation_i118_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
-        false,
-        X"0000", X"0000",
+        false, X"0000", X"0000",
         0, 7, true,
         X"0001",
         1, 
@@ -1633,9 +1612,8 @@ muon_muon_correlation_i118_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
-        false,
-        X"0000", X"0000",
-        "ig",
+        false,X"0000", X"0000",
+         "ig",
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"00000000001DEC28", X"0000000000000000",
@@ -1666,8 +1644,7 @@ muon_muon_correlation_i185_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
-        false,
-        X"0000", X"0000",
+        false, X"0000", X"0000",
         0, 7, true,
         X"000A",
         0, 
@@ -1679,9 +1656,8 @@ muon_muon_correlation_i185_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
-        false,
-        X"0000", X"0000",
-        "os",
+        false,X"0000", X"0000",
+         "os",
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"000000000015FCE8", X"0000000000000000",
@@ -1712,8 +1688,7 @@ muon_muon_correlation_i304_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"FF00", X"F",
-        false,
-        X"0000", X"0000",
+        false, X"0000", X"0000",
         0, 7, true,
         X"0001",
         0, 
@@ -1725,9 +1700,8 @@ muon_muon_correlation_i304_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         "ign", X"FF00", X"F",
-        false,
-        X"0000", X"0000",
-        "ig",
+        false,X"0000", X"0000",
+         "ig",
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"00000000002713E8", X"0000000000000000",

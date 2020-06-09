@@ -10,7 +10,7 @@
 -- e36612e2-bee8-45eb-a685-f6cea687ce3d
 
 -- Unique ID of firmware implementation:
--- 6f7efb0f-efd3-4289-be3d-8be4e5d29fb5
+-- 3d3ed2c1-7a1d-4904-9a4c-2eca1120a085
 
 -- Scale set:
 -- scales_2017_05_23
@@ -33,8 +33,8 @@ constant global_index: global_index_array := (
         147, -- module_index: 9, name: L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5
         461, -- module_index: 10, name: L1_MinimumBiasHF0_AND_BptxAND
         428, -- module_index: 11, name: L1_ETMHF90_HTT60er
-        460, -- module_index: 12, name: L1_ZeroBias_copy
-          4, -- module_index: 13, name: L1_SingleMuOpen
+          4, -- module_index: 12, name: L1_SingleMuOpen
+        460, -- module_index: 13, name: L1_ZeroBias_copy
         146, -- module_index: 14, name: L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5
         294, -- module_index: 15, name: L1_IsoTau40er2p1_ETMHF110
         148, -- module_index: 16, name: L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5
@@ -70,8 +70,8 @@ constant global_index: global_index_array := (
         317, -- module_index: 46, name: L1_SingleJet60er2p5
         249, -- module_index: 47, name: L1_DoubleEG8er2p5_HTT300er
         106, -- module_index: 48, name: L1_Mu6_DoubleEG15er2p5
-        247, -- module_index: 49, name: L1_DoubleEG8er2p5_HTT260er
-        429, -- module_index: 50, name: L1_ETMHF100_HTT60er
+        429, -- module_index: 49, name: L1_ETMHF100_HTT60er
+        247, -- module_index: 50, name: L1_DoubleEG8er2p5_HTT260er
         475, -- module_index: 51, name: L1_SecondLastBunchInTrain
         284, -- module_index: 52, name: L1_Mu22er2p1_IsoTau32er2p1
         421, -- module_index: 53, name: L1_ETMHF100
