@@ -1800,12 +1800,12 @@ invariant_mass_i190_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
         false, X"0000", X"0000", X"F",
-         "os",
+        "os",
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"0000000000000000", X"0000000000000000",
         X"000000000269FB20", X"0000000000000000",
-        MU_PT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
+        MU_PT_VECTOR_WIDTH, MU_UPT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
         X"0000000000000000", MUON_SIN_COS_VECTOR_WIDTH, MU_MU_SIN_COS_PRECISION
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
@@ -1844,12 +1844,12 @@ invariant_mass_i338_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
         false, X"0000", X"0000", X"F",
-         "os",
+        "os",
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"0000000000000000", X"0000000000000000",
         X"0000000009A7EC80", X"000000000175D720",
-        MU_PT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
+        MU_PT_VECTOR_WIDTH, MU_UPT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
         X"0000000000000000", MUON_SIN_COS_VECTOR_WIDTH, MU_MU_SIN_COS_PRECISION
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
@@ -1888,12 +1888,12 @@ muon_muon_correlation_i117_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
         false, X"0000", X"0000", X"F",
-         "ig",
+        "ig",
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"00000000001DEC28", X"0000000000000000",
         X"0000000000000000", X"0000000000000000",
-        MU_PT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
+        MU_PT_VECTOR_WIDTH, MU_UPT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
         X"0000000000000000", MUON_SIN_COS_VECTOR_WIDTH, MU_MU_SIN_COS_PRECISION
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
@@ -1932,12 +1932,12 @@ muon_muon_correlation_i184_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
         false, X"0000", X"0000", X"F",
-         "os",
+        "os",
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"00000000001DEC28", X"0000000000000000",
         X"0000000000000000", X"0000000000000000",
-        MU_PT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
+        MU_PT_VECTOR_WIDTH, MU_UPT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
         X"0000000000000000", MUON_SIN_COS_VECTOR_WIDTH, MU_MU_SIN_COS_PRECISION
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,

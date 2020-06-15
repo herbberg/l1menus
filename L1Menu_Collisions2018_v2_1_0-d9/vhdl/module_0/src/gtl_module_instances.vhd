@@ -1461,12 +1461,12 @@ invariant_mass_i205_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         "ign", X"FFF0", X"F",
         false, X"0000", X"0000", X"F",
-         "os",
+        "os",
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"0000000000000000", X"0000000000000000",
         X"00000000089CE520", X"0000000000BEBC20",
-        MU_PT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
+        MU_PT_VECTOR_WIDTH, MU_UPT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
         X"0000000000000000", MUON_SIN_COS_VECTOR_WIDTH, MU_MU_SIN_COS_PRECISION
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
