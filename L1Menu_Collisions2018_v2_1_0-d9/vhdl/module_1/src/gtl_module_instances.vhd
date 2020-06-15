@@ -1606,6 +1606,7 @@ invariant_mass_i200_i: entity work.muon_muon_correlation_condition
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
         diff_mu_mu_bx_0_bx_0_eta_vector, diff_mu_mu_bx_0_bx_0_phi_vector,
         mu_pt_vector_bx_0, mu_pt_vector_bx_0,
+        mu_upt_vector_bx_0, mu_upt_vector_bx_0,
         mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
         mu_cos_phi_bx_0, mu_cos_phi_bx_0, mu_sin_phi_bx_0, mu_sin_phi_bx_0,
         invariant_mass_i200);
