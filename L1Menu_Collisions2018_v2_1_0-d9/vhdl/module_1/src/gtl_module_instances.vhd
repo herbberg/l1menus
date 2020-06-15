@@ -97,6 +97,7 @@ single_ext_i5 <= ext_cond_bx_0(43); -- single_ext_i5
     end generate tau_data_bx_0_l;
     mu_data_bx_0_l: for i in 0 to NR_MU_OBJECTS-1 generate
         mu_pt_vector_bx_0(i)(MU_PT_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(MU_PT_LUT(CONV_INTEGER(mu_bx_0(i)(D_S_I_MU_V2.pt_high downto D_S_I_MU_V2.pt_low))), MU_PT_VECTOR_WIDTH);
+        mu_upt_vector_bx_0(i)(MU_UPT_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(MU_PT_LUT(CONV_INTEGER(mu_bx_0(i)(D_S_I_MU_V2.upt_high downto D_S_I_MU_V2.upt_low))), MU_UPT_VECTOR_WIDTH); -- dummy with MU_PT_LUT !!! MU_UPT_LUT not done yet 
         mu_eta_integer_bx_0(i) <= CONV_INTEGER(signed(mu_bx_0(i)(D_S_I_MU_V2.eta_high downto D_S_I_MU_V2.eta_low)));
         mu_phi_integer_bx_0(i) <= CONV_INTEGER(mu_bx_0(i)(D_S_I_MU_V2.phi_high downto D_S_I_MU_V2.phi_low));
         mu_cos_phi_bx_0(i) <= MUON_COS_PHI_LUT(CONV_INTEGER(mu_bx_0(i)(D_S_I_MU_V2.phi_high downto D_S_I_MU_V2.phi_low)));
@@ -1560,6 +1561,7 @@ invariant_mass_i175_i: entity work.muon_muon_correlation_condition
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
         diff_mu_mu_bx_0_bx_0_eta_vector, diff_mu_mu_bx_0_bx_0_phi_vector,
         mu_pt_vector_bx_0, mu_pt_vector_bx_0,
+        mu_upt_vector_bx_0, mu_upt_vector_bx_0,
         mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
         mu_cos_phi_bx_0, mu_cos_phi_bx_0, mu_sin_phi_bx_0, mu_sin_phi_bx_0,
         invariant_mass_i175);
@@ -1648,6 +1650,7 @@ muon_muon_correlation_i235_i: entity work.muon_muon_correlation_condition
         ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
         diff_mu_mu_bx_m1_bx_0_eta_vector, diff_mu_mu_bx_m1_bx_0_phi_vector,
         mu_pt_vector_bx_m1, mu_pt_vector_bx_0,
+        mu_upt_vector_bx_0, mu_upt_vector_bx_0,
         mu_mu_bx_m1_bx_0_cosh_deta_vector, mu_mu_bx_m1_bx_0_cos_dphi_vector,
         mu_cos_phi_bx_m1, mu_cos_phi_bx_0, mu_sin_phi_bx_m1, mu_sin_phi_bx_0,
         muon_muon_correlation_i235);
@@ -1692,6 +1695,7 @@ muon_muon_correlation_i267_i: entity work.muon_muon_correlation_condition
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
         diff_mu_mu_bx_0_bx_0_eta_vector, diff_mu_mu_bx_0_bx_0_phi_vector,
         mu_pt_vector_bx_0, mu_pt_vector_bx_0,
+        mu_upt_vector_bx_0, mu_upt_vector_bx_0,
         mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
         mu_cos_phi_bx_0, mu_cos_phi_bx_0, mu_sin_phi_bx_0, mu_sin_phi_bx_0,
         muon_muon_correlation_i267);
@@ -1736,6 +1740,7 @@ muon_muon_correlation_i302_i: entity work.muon_muon_correlation_condition
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
         diff_mu_mu_bx_0_bx_0_eta_vector, diff_mu_mu_bx_0_bx_0_phi_vector,
         mu_pt_vector_bx_0, mu_pt_vector_bx_0,
+        mu_upt_vector_bx_0, mu_upt_vector_bx_0,
         mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
         mu_cos_phi_bx_0, mu_cos_phi_bx_0, mu_sin_phi_bx_0, mu_sin_phi_bx_0,
         muon_muon_correlation_i302);
