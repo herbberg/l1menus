@@ -10,7 +10,7 @@
 -- a558f37c-b14f-4496-966b-427487d5c8b6
 
 -- Unique ID of firmware implementation:
--- b429360e-75ba-46b9-8552-1141b6e23ab0
+-- d3a353e9-61fa-47e3-95bf-e8b50f6ca46b
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1917,7 +1917,7 @@ invariant_mass_i59_i: entity work.muon_muon_correlation_condition
         X"00000000", X"00000000",
         X"0000000000000000", X"0000000000000000",
         X"002907FE9BCB0C80", X"000000000175D720",
-        MU_PT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
+        MU_PT_VECTOR_WIDTH, MU_UPT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
         X"0000000000000000", MUON_SIN_COS_VECTOR_WIDTH, MU_MU_SIN_COS_PRECISION
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
@@ -1962,7 +1962,7 @@ invariant_mass_i73_i: entity work.muon_muon_correlation_condition
         X"00000000", X"00000000",
         X"0000000000000000", X"0000000000000000",
         X"00000000089CE520", X"0000000000BEBC20",
-        MU_PT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
+        MU_PT_VECTOR_WIDTH, MU_UPT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
         X"0000000000000000", MUON_SIN_COS_VECTOR_WIDTH, MU_MU_SIN_COS_PRECISION
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
@@ -2007,7 +2007,7 @@ muon_muon_correlation_i52_i: entity work.muon_muon_correlation_condition
         X"00000000", X"00000000",
         X"00000000001DEC28", X"0000000000000000",
         X"0000000000000000", X"0000000000000000",
-        MU_PT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
+        MU_PT_VECTOR_WIDTH, MU_UPT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
         X"0000000000000000", MUON_SIN_COS_VECTOR_WIDTH, MU_MU_SIN_COS_PRECISION
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
@@ -2052,7 +2052,7 @@ muon_muon_correlation_i55_i: entity work.muon_muon_correlation_condition
         X"00000000", X"00000000",
         X"000000000015FCE8", X"0000000000000000",
         X"0000000000000000", X"0000000000000000",
-        MU_PT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
+        MU_PT_VECTOR_WIDTH, MU_UPT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
         X"0000000000000000", MUON_SIN_COS_VECTOR_WIDTH, MU_MU_SIN_COS_PRECISION
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
@@ -2252,7 +2252,7 @@ algo(62) <= l1_loose_iso_eg28er2p1_jet34er2p5_d_r_min0p3;
 
 -- 238 L1_LooseIsoEG24er2p1_HTT100er : EG24[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg24er2p1_htt100er <= single_eg_i190 and single_htt_i191;
-algo(17) <= l1_loose_iso_eg24er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i192 and single_htt_i191;
@@ -2260,7 +2260,7 @@ algo(14) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i148 and single_htt_i191;
-algo(16) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(17) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i193 and single_htt_i191;
