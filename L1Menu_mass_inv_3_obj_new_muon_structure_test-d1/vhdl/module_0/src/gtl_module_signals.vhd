@@ -10,7 +10,7 @@
 -- d67a467b-c934-44b6-80b5-bf2f788eb265
 
 -- Unique ID of firmware implementation:
--- 6b8f0854-8ece-4226-8e5d-96e5ea9b4d6f
+-- 787e4f78-7ccc-46c5-9dc6-251722aa8bf8
 
 -- Scale set:
 -- scales_2020_06_16
@@ -108,12 +108,12 @@
 -- Signal definition for muon charge correlations.
 -- Insert "signal_muon_charge_correlations.vhd.j2" only once for a certain Bx combination,
 -- if there is at least one muon condition or one muon-muon correlation condition.
-    signal ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0 : muon_charcorr_double_array;
-    signal ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0 : muon_charcorr_triple_array;
-    signal ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0 : muon_charcorr_quad_array;
     signal ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0 : muon_charcorr_double_array;
     signal ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0 : muon_charcorr_triple_array;
     signal ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0 : muon_charcorr_quad_array;
+    signal ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0 : muon_charcorr_double_array;
+    signal ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0 : muon_charcorr_triple_array;
+    signal ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0 : muon_charcorr_quad_array;
 
 -- Signal definition for conditions names
     signal single_ext_i321 : std_logic;

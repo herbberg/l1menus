@@ -10,7 +10,7 @@
 -- d67a467b-c934-44b6-80b5-bf2f788eb265
 
 -- Unique ID of firmware implementation:
--- 6b8f0854-8ece-4226-8e5d-96e5ea9b4d6f
+-- 787e4f78-7ccc-46c5-9dc6-251722aa8bf8
 
 -- Scale set:
 -- scales_2020_06_16
@@ -2036,7 +2036,7 @@ algo(30) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i13;
-algo(35) <= l1_single_mu7;
+algo(32) <= l1_single_mu7;
 
 -- 17 L1_SingleMu18 : MU18[MU-QLTY_SNGL]
 l1_single_mu18 <= single_mu_i18;
@@ -2132,11 +2132,11 @@ algo(53) <= l1_triple_mu_5_4_2p5_double_mu_5_2p5_os_mass_5to17;
 
 -- 96 L1_Mu5_EG23er2p5 : MU5[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu5_eg23er2p5 <= single_mu_i11 and single_eg_i80;
-algo(34) <= l1_mu5_eg23er2p5;
+algo(35) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i13 and single_eg_i81;
-algo(33) <= l1_mu7_eg20er2p5;
+algo(34) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i13 and single_eg_i80;
@@ -2152,7 +2152,7 @@ algo(37) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i13 and single_eg_i84;
-algo(32) <= l1_mu7_loose_iso_eg23er2p5;
+algo(33) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 124 L1_Mu3_Jet80er2p5_dR_Max0p4 : dist{MU3[MU-QLTY_SNGL],JET80[JET-ETA_2p52]}[DR_MAX_0p4]
 l1_mu3_jet80er2p5_d_r_max0p4 <= calo_muon_correlation_i101;
