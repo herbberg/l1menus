@@ -10,7 +10,7 @@
 -- 0d3bf9d5-50bb-4c1e-aa0f-ed0adfa68121
 
 -- Unique ID of firmware implementation:
--- 80f501c0-6d85-4242-bccc-8b5a432fb092
+-- 67acbbe0-8426-4eca-a980-4c8a4cf95f49
 
 -- Scale set:
 -- scales_2020_06_16
@@ -67,8 +67,8 @@ constant global_index: global_index_array := (
          71, -- module_index: 43, name: L1_TripleMu0_OQ
          74, -- module_index: 44, name: L1_TripleMu3
          76, -- module_index: 45, name: L1_TripleMu_5SQ_3SQ_0OQ
-         86, -- module_index: 46, name: L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9
-         85, -- module_index: 47, name: L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9
+         85, -- module_index: 46, name: L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9
+         86, -- module_index: 47, name: L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9
         346, -- module_index: 48, name: L1_DoubleJet112er2p3_dEta_Max1p6
          54, -- module_index: 49, name: L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4
         508, -- module_index: 50, name: L1_DoubleMu0Upt10_20MassDivDrMin7

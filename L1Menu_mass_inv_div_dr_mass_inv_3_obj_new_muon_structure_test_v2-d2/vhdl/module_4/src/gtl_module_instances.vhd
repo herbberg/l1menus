@@ -10,7 +10,7 @@
 -- 0d3bf9d5-50bb-4c1e-aa0f-ed0adfa68121
 
 -- Unique ID of firmware implementation:
--- 80f501c0-6d85-4242-bccc-8b5a432fb092
+-- 67acbbe0-8426-4eca-a980-4c8a4cf95f49
 
 -- Scale set:
 -- scales_2020_06_16
@@ -166,7 +166,7 @@
                     jet_jet_bx_0_bx_0_deta_bin_vector(i,j)(JET_JET_DETA_BINS_WIDTH-1 downto JET_JET_DETA_BINS_WIDTH-JET_JET_DETA_BINS_WIDTH_ROM), 
                     jet_jet_bx_0_bx_0_dphi_bin_vector(i,j)(JET_JET_DPHI_BINS_WIDTH-1 downto JET_JET_DPHI_BINS_WIDTH-JET_JET_DPHI_BINS_WIDTH_ROM),
                     jet_pt_vector_bx_0(i)(JET_PT_VECTOR_WIDTH-1 downto 0), 
-                    jet_pt_vector_bx_0(i)(JET_PT_VECTOR_WIDTH-1 downto 0),
+                    jet_pt_vector_bx_0(j)(JET_PT_VECTOR_WIDTH-1 downto 0),
                     jet_jet_bx_0_bx_0_cosh_deta_vector(i,j), 
                     jet_jet_bx_0_bx_0_cos_dphi_vector(i,j),
                     jet_jet_bx_0_bx_0_mass_div_dr(i,j)
@@ -193,7 +193,7 @@
                     eg_jet_bx_0_bx_0_deta_bin_vector(i,j)(EG_JET_DETA_BINS_WIDTH-1 downto EG_JET_DETA_BINS_WIDTH-EG_JET_DETA_BINS_WIDTH_ROM), 
                     eg_jet_bx_0_bx_0_dphi_bin_vector(i,j)(EG_JET_DPHI_BINS_WIDTH-1 downto EG_JET_DPHI_BINS_WIDTH-EG_JET_DPHI_BINS_WIDTH_ROM),
                     eg_pt_vector_bx_0(i)(EG_PT_VECTOR_WIDTH-1 downto 0), 
-                    jet_pt_vector_bx_0(i)(JET_PT_VECTOR_WIDTH-1 downto 0),
+                    jet_pt_vector_bx_0(j)(JET_PT_VECTOR_WIDTH-1 downto 0),
                     eg_jet_bx_0_bx_0_cosh_deta_vector(i,j), 
                     eg_jet_bx_0_bx_0_cos_dphi_vector(i,j),
                     eg_jet_bx_0_bx_0_mass_div_dr(i,j)
@@ -220,7 +220,7 @@
                     jet_mu_bx_0_bx_0_deta_bin_vector(i,j)(JET_MU_DETA_BINS_WIDTH-1 downto JET_MU_DETA_BINS_WIDTH-JET_MU_DETA_BINS_WIDTH_ROM), 
                     jet_mu_bx_0_bx_0_dphi_bin_vector(i,j)(JET_MU_DPHI_BINS_WIDTH-1 downto JET_MU_DPHI_BINS_WIDTH-JET_MU_DPHI_BINS_WIDTH_ROM),
                     jet_pt_vector_bx_0(i)(JET_PT_VECTOR_WIDTH-1 downto 0), 
-                    mu_pt_vector_bx_0(i)(MU_PT_VECTOR_WIDTH-1 downto 0),
+                    mu_pt_vector_bx_0(j)(MU_PT_VECTOR_WIDTH-1 downto 0),
                     jet_mu_bx_0_bx_0_cosh_deta_vector(i,j), 
                     jet_mu_bx_0_bx_0_cos_dphi_vector(i,j),
                     jet_mu_bx_0_bx_0_mass_div_dr(i,j)
@@ -247,7 +247,7 @@
                     tau_tau_bx_0_bx_0_deta_bin_vector(i,j)(TAU_TAU_DETA_BINS_WIDTH-1 downto TAU_TAU_DETA_BINS_WIDTH-TAU_TAU_DETA_BINS_WIDTH_ROM), 
                     tau_tau_bx_0_bx_0_dphi_bin_vector(i,j)(TAU_TAU_DPHI_BINS_WIDTH-1 downto TAU_TAU_DPHI_BINS_WIDTH-TAU_TAU_DPHI_BINS_WIDTH_ROM),
                     tau_pt_vector_bx_0(i)(TAU_PT_VECTOR_WIDTH-1 downto 0), 
-                    tau_pt_vector_bx_0(i)(TAU_PT_VECTOR_WIDTH-1 downto 0),
+                    tau_pt_vector_bx_0(j)(TAU_PT_VECTOR_WIDTH-1 downto 0),
                     tau_tau_bx_0_bx_0_cosh_deta_vector(i,j), 
                     tau_tau_bx_0_bx_0_cos_dphi_vector(i,j),
                     tau_tau_bx_0_bx_0_mass_div_dr(i,j)
@@ -274,7 +274,7 @@
                     mu_mu_bx_0_bx_0_deta_bin_vector(i,j)(MU_MU_DETA_BINS_WIDTH-1 downto MU_MU_DETA_BINS_WIDTH-MU_MU_DETA_BINS_WIDTH_ROM), 
                     mu_mu_bx_0_bx_0_dphi_bin_vector(i,j)(MU_MU_DPHI_BINS_WIDTH-1 downto MU_MU_DPHI_BINS_WIDTH-MU_MU_DPHI_BINS_WIDTH_ROM),
                     mu_pt_vector_bx_0(i)(MU_PT_VECTOR_WIDTH-1 downto 0), 
-                    mu_pt_vector_bx_0(i)(MU_PT_VECTOR_WIDTH-1 downto 0),
+                    mu_pt_vector_bx_0(j)(MU_PT_VECTOR_WIDTH-1 downto 0),
                     mu_mu_bx_0_bx_0_cosh_deta_vector(i,j), 
                     mu_mu_bx_0_bx_0_cos_dphi_vector(i,j),
                     mu_mu_bx_0_bx_0_mass_div_dr(i,j)
@@ -301,7 +301,7 @@
                     jet_tau_bx_0_bx_0_deta_bin_vector(i,j)(JET_TAU_DETA_BINS_WIDTH-1 downto JET_TAU_DETA_BINS_WIDTH-JET_TAU_DETA_BINS_WIDTH_ROM), 
                     jet_tau_bx_0_bx_0_dphi_bin_vector(i,j)(JET_TAU_DPHI_BINS_WIDTH-1 downto JET_TAU_DPHI_BINS_WIDTH-JET_TAU_DPHI_BINS_WIDTH_ROM),
                     jet_pt_vector_bx_0(i)(JET_PT_VECTOR_WIDTH-1 downto 0), 
-                    tau_pt_vector_bx_0(i)(TAU_PT_VECTOR_WIDTH-1 downto 0),
+                    tau_pt_vector_bx_0(j)(TAU_PT_VECTOR_WIDTH-1 downto 0),
                     jet_tau_bx_0_bx_0_cosh_deta_vector(i,j), 
                     jet_tau_bx_0_bx_0_cos_dphi_vector(i,j),
                     jet_tau_bx_0_bx_0_mass_div_dr(i,j)
@@ -2209,11 +2209,11 @@ algo(45) <= l1_triple_mu_5_sq_3_sq_0_oq;
 
 -- 85 L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9 : comb{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL],MU0[MU-QLTY_OPEN]} AND mass_inv{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}[MASS_MASS_0to9,CHGCOR_OS]
 l1_triple_mu_5_sq_3_sq_0_oq_double_mu_5_3_sq_os_mass_max9 <= triple_mu_i66 and invariant_mass_i75;
-algo(47) <= l1_triple_mu_5_sq_3_sq_0_oq_double_mu_5_3_sq_os_mass_max9;
+algo(46) <= l1_triple_mu_5_sq_3_sq_0_oq_double_mu_5_3_sq_os_mass_max9;
 
 -- 86 L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9 : comb{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL],MU0[MU-QLTY_DBLE]} AND mass_inv{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}[MASS_MASS_0to9,CHGCOR_OS]
 l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9 <= triple_mu_i76 and invariant_mass_i75;
-algo(46) <= l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9;
+algo(47) <= l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9;
 
 -- 109 L1_DoubleMu4_SQ_EG9er2p5 : comb{MU4[MU-QLTY_SNGL],MU4[MU-QLTY_SNGL]} AND EG9[EG-ETA_2p52]
 l1_double_mu4_sq_eg9er2p5 <= double_mu_i90 and single_eg_i91;

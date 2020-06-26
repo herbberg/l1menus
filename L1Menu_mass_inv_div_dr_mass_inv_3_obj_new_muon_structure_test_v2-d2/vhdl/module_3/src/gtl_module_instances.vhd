@@ -10,7 +10,7 @@
 -- 0d3bf9d5-50bb-4c1e-aa0f-ed0adfa68121
 
 -- Unique ID of firmware implementation:
--- 80f501c0-6d85-4242-bccc-8b5a432fb092
+-- 67acbbe0-8426-4eca-a980-4c8a4cf95f49
 
 -- Scale set:
 -- scales_2020_06_16
@@ -121,7 +121,7 @@
                     jet_mu_bx_0_bx_0_deta_bin_vector(i,j)(JET_MU_DETA_BINS_WIDTH-1 downto JET_MU_DETA_BINS_WIDTH-JET_MU_DETA_BINS_WIDTH_ROM), 
                     jet_mu_bx_0_bx_0_dphi_bin_vector(i,j)(JET_MU_DPHI_BINS_WIDTH-1 downto JET_MU_DPHI_BINS_WIDTH-JET_MU_DPHI_BINS_WIDTH_ROM),
                     jet_pt_vector_bx_0(i)(JET_PT_VECTOR_WIDTH-1 downto 0), 
-                    mu_pt_vector_bx_0(i)(MU_PT_VECTOR_WIDTH-1 downto 0),
+                    mu_pt_vector_bx_0(j)(MU_PT_VECTOR_WIDTH-1 downto 0),
                     jet_mu_bx_0_bx_0_cosh_deta_vector(i,j), 
                     jet_mu_bx_0_bx_0_cos_dphi_vector(i,j),
                     jet_mu_bx_0_bx_0_mass_div_dr(i,j)
@@ -148,7 +148,7 @@
                     jet_jet_bx_0_bx_0_deta_bin_vector(i,j)(JET_JET_DETA_BINS_WIDTH-1 downto JET_JET_DETA_BINS_WIDTH-JET_JET_DETA_BINS_WIDTH_ROM), 
                     jet_jet_bx_0_bx_0_dphi_bin_vector(i,j)(JET_JET_DPHI_BINS_WIDTH-1 downto JET_JET_DPHI_BINS_WIDTH-JET_JET_DPHI_BINS_WIDTH_ROM),
                     jet_pt_vector_bx_0(i)(JET_PT_VECTOR_WIDTH-1 downto 0), 
-                    jet_pt_vector_bx_0(i)(JET_PT_VECTOR_WIDTH-1 downto 0),
+                    jet_pt_vector_bx_0(j)(JET_PT_VECTOR_WIDTH-1 downto 0),
                     jet_jet_bx_0_bx_0_cosh_deta_vector(i,j), 
                     jet_jet_bx_0_bx_0_cos_dphi_vector(i,j),
                     jet_jet_bx_0_bx_0_mass_div_dr(i,j)
@@ -175,7 +175,7 @@
                     jet_tau_bx_0_bx_0_deta_bin_vector(i,j)(JET_TAU_DETA_BINS_WIDTH-1 downto JET_TAU_DETA_BINS_WIDTH-JET_TAU_DETA_BINS_WIDTH_ROM), 
                     jet_tau_bx_0_bx_0_dphi_bin_vector(i,j)(JET_TAU_DPHI_BINS_WIDTH-1 downto JET_TAU_DPHI_BINS_WIDTH-JET_TAU_DPHI_BINS_WIDTH_ROM),
                     jet_pt_vector_bx_0(i)(JET_PT_VECTOR_WIDTH-1 downto 0), 
-                    tau_pt_vector_bx_0(i)(TAU_PT_VECTOR_WIDTH-1 downto 0),
+                    tau_pt_vector_bx_0(j)(TAU_PT_VECTOR_WIDTH-1 downto 0),
                     jet_tau_bx_0_bx_0_cosh_deta_vector(i,j), 
                     jet_tau_bx_0_bx_0_cos_dphi_vector(i,j),
                     jet_tau_bx_0_bx_0_mass_div_dr(i,j)
@@ -967,11 +967,11 @@ algo(9) <= l1_single_jet120;
 
 -- 360 L1_DoubleJet_115_40_DoubleJet40_Mass_Min620_Jet60TT28 : JET115 AND (mass_inv{JET40[JET-ETA_CEN_2p70],JET40[JET-ETA_CEN_2p70]}[MASS_MIN_620] OR mass_inv{JET60,JET60}[MASS_MIN_620] OR mass_inv{JET60,JET40[JET-ETA_FWD_3p00_NEG,JET-ETA_FWD_3p00_POS]}[MASS_MIN_620] OR mass_inv{JET60,JET40[JET-ETA_CEN_2p70]}[MASS_MIN_620] OR mass_inv{JET40[JET-ETA_FWD_3p00_NEG,JET-ETA_FWD_3p00_POS],JET40[JET-ETA_CEN_2p70]}[MASS_MIN_620] OR mass_inv{JET40[JET-ETA_FWD_3p00_NEG,JET-ETA_FWD_3p00_POS],JET40[JET-ETA_FWD_3p00_NEG,JET-ETA_FWD_3p00_POS]}[MASS_MIN_620])
 l1_double_jet_115_40_double_jet40_mass_min620_jet60_tt28 <= single_jet_i275 and ( invariant_mass_i276 or invariant_mass_i277 or invariant_mass_i278 or invariant_mass_i279 or invariant_mass_i280 or invariant_mass_i281 );
-algo(11) <= l1_double_jet_115_40_double_jet40_mass_min620_jet60_tt28;
+algo(10) <= l1_double_jet_115_40_double_jet40_mass_min620_jet60_tt28;
 
 -- 361 L1_DoubleJet_120_45_DoubleJet45_Mass_Min620_Jet60TT28 : JET120 AND (mass_inv{JET45[JET-ETA_CEN_2p70],JET45[JET-ETA_CEN_2p70]}[MASS_MIN_620] OR mass_inv{JET60,JET60}[MASS_MIN_620] OR mass_inv{JET60,JET45[JET-ETA_FWD_3p00_NEG,JET-ETA_FWD_3p00_POS]}[MASS_MIN_620] OR mass_inv{JET60,JET45[JET-ETA_CEN_2p70]}[MASS_MIN_620] OR mass_inv{JET45[JET-ETA_FWD_3p00_NEG,JET-ETA_FWD_3p00_POS],JET45[JET-ETA_CEN_2p70]}[MASS_MIN_620] OR mass_inv{JET45[JET-ETA_FWD_3p00_NEG,JET-ETA_FWD_3p00_POS],JET45[JET-ETA_FWD_3p00_NEG,JET-ETA_FWD_3p00_POS]}[MASS_MIN_620])
 l1_double_jet_120_45_double_jet45_mass_min620_jet60_tt28 <= single_jet_i234 and ( invariant_mass_i282 or invariant_mass_i277 or invariant_mass_i283 or invariant_mass_i284 or invariant_mass_i285 or invariant_mass_i286 );
-algo(10) <= l1_double_jet_120_45_double_jet45_mass_min620_jet60_tt28;
+algo(11) <= l1_double_jet_120_45_double_jet45_mass_min620_jet60_tt28;
 
 -- 363 L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp : mass_inv_orm{JET35,JET35,TAU45[TAU-ISO_0xE]}[MASS_MIN_450,ORMDR_0p2]
 l1_double_jet35_mass_min450_iso_tau45_rm_ovlp <= invariant_mass_ov_rm_i287;
