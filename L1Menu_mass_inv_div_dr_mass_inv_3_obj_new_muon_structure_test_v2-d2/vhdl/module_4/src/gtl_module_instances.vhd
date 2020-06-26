@@ -10,7 +10,7 @@
 -- 0d3bf9d5-50bb-4c1e-aa0f-ed0adfa68121
 
 -- Unique ID of firmware implementation:
--- c19c7ad2-4f5d-4b39-9176-5dc63d7f5cf0
+-- 7cc1ac23-da26-4837-9c6a-97aa5ac94604
 
 -- Scale set:
 -- scales_2020_06_16
@@ -2037,12 +2037,7 @@ invariant_mass_div_delta_r_i365_i: entity work.muon_muon_mass_div_dr_condition
         "ign", X"FFFF", X"F",
         true, X"0014", X"000A", X"F",
          "ig",
-        X"00000000", X"00000000",
-        X"00000000", X"00000000",
-        X"0000000000000000", X"0000000000000000",
-        X"002907FE9BCB0C80", X"000000000175D720",
-        MU_PT_VECTOR_WIDTH, MU_UPT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH,
-        X"0000000000000000", MUON_SIN_COS_VECTOR_WIDTH, MU_MU_SIN_COS_PRECISION
+        X"002907FE9BCB0C80", X"000000000175D720"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
