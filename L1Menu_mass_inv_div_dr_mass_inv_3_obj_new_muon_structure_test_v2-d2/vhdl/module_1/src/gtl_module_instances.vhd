@@ -10,7 +10,7 @@
 -- 0d3bf9d5-50bb-4c1e-aa0f-ed0adfa68121
 
 -- Unique ID of firmware implementation:
--- 6d64bd60-71ad-433d-bbaf-294da78f2cb8
+-- d2cee1c5-1d06-42db-9ee2-91356dd7a7b0
 
 -- Scale set:
 -- scales_2020_06_16
@@ -2131,11 +2131,11 @@ algo(25) <= l1_etm120;
 
 -- 465 L1_BptxXOR : (EXT_BPTX_B1_VME AND ( NOT EXT_BPTX_B2_VME)) OR (EXT_BPTX_B2_VME AND ( NOT EXT_BPTX_B1_VME))
 l1_bptx_xor <= ( single_ext_i336 and ( not single_ext_i337 ) ) or ( single_ext_i337 and ( not single_ext_i336 ) );
-algo(13) <= l1_bptx_xor;
+algo(12) <= l1_bptx_xor;
 
 -- 466 L1_BptxPlus : EXT_BPTX_B1_VME
 l1_bptx_plus <= single_ext_i336;
-algo(12) <= l1_bptx_plus;
+algo(13) <= l1_bptx_plus;
 
 -- 467 L1_BptxMinus : EXT_BPTX_B2_VME
 l1_bptx_minus <= single_ext_i337;
