@@ -10,7 +10,7 @@
 -- 0d3bf9d5-50bb-4c1e-aa0f-ed0adfa68121
 
 -- Unique ID of firmware implementation:
--- 8575a421-ac7f-4e58-aef5-ad3d938c2029
+-- 80f501c0-6d85-4242-bccc-8b5a432fb092
 
 -- Scale set:
 -- scales_2020_06_16
@@ -36,9 +36,9 @@ constant global_index: global_index_array := (
         318, -- module_index: 12, name: L1_SingleJet90er2p5
         179, -- module_index: 13, name: L1_SingleLooseIsoEG28er2p1
         238, -- module_index: 14, name: L1_LooseIsoEG24er2p1_HTT100er
-        241, -- module_index: 15, name: L1_LooseIsoEG30er2p1_HTT100er
-        240, -- module_index: 16, name: L1_LooseIsoEG28er2p1_HTT100er
-        239, -- module_index: 17, name: L1_LooseIsoEG26er2p1_HTT100er
+        240, -- module_index: 15, name: L1_LooseIsoEG28er2p1_HTT100er
+        239, -- module_index: 16, name: L1_LooseIsoEG26er2p1_HTT100er
+        241, -- module_index: 17, name: L1_LooseIsoEG30er2p1_HTT100er
         210, -- module_index: 18, name: L1_DoubleEG_27_14_er2p5
         215, -- module_index: 19, name: L1_DoubleEG_LooseIso25_12_er2p5
         272, -- module_index: 20, name: L1_DoubleIsoTau34er2p1
@@ -52,13 +52,13 @@ constant global_index: global_index_array := (
          17, -- module_index: 28, name: L1_SingleMu18
          22, -- module_index: 29, name: L1_SingleMu22_EMTF
          10, -- module_index: 30, name: L1_SingleMu5
-        102, -- module_index: 31, name: L1_Mu7_LooseIsoEG23er2p5
-         97, -- module_index: 32, name: L1_Mu7_EG20er2p5
-         96, -- module_index: 33, name: L1_Mu5_EG23er2p5
-         98, -- module_index: 34, name: L1_Mu7_EG23er2p5
-         12, -- module_index: 35, name: L1_SingleMu7
-        101, -- module_index: 36, name: L1_Mu7_LooseIsoEG20er2p5
-        100, -- module_index: 37, name: L1_Mu5_LooseIsoEG20er2p5
+        101, -- module_index: 31, name: L1_Mu7_LooseIsoEG20er2p5
+        100, -- module_index: 32, name: L1_Mu5_LooseIsoEG20er2p5
+        102, -- module_index: 33, name: L1_Mu7_LooseIsoEG23er2p5
+         97, -- module_index: 34, name: L1_Mu7_EG20er2p5
+         96, -- module_index: 35, name: L1_Mu5_EG23er2p5
+         98, -- module_index: 36, name: L1_Mu7_EG23er2p5
+         12, -- module_index: 37, name: L1_SingleMu7
         373, -- module_index: 38, name: L1_TripleJet_100_80_70_DoubleJet_80_70_er2p5
          40, -- module_index: 39, name: L1_DoubleMu0
          42, -- module_index: 40, name: L1_DoubleMu0_SQ_OS
