@@ -10,7 +10,7 @@
 -- 0d3bf9d5-50bb-4c1e-aa0f-ed0adfa68121
 
 -- Unique ID of firmware implementation:
--- 74e653e3-d779-4a1d-80f8-706431e7ebe4
+-- 6d64bd60-71ad-433d-bbaf-294da78f2cb8
 
 -- Scale set:
 -- scales_2020_06_16
@@ -110,7 +110,7 @@
     end generate jet_mu_bx_0_bx_0_cosh_cos_l1;
 
     jet_mu_bx_0_bx_0_calc_l1: for i in 0 to NR_JET_OBJECTS-1 generate
-        jet_mu_bx_0_bx_0_calc_l2: for j in 0 to NR_MU-1 generate
+        jet_mu_bx_0_bx_0_calc_l2: for j in 0 to NR_MU_OBJECTS-1 generate
             calculator_i: entity work.mass_div_dr_calculator
                 generic map(
                     JET_MU_ROM, JET_MU_DETA_BINS_WIDTH_ROM, JET_MU_DPHI_BINS_WIDTH_ROM,
@@ -137,7 +137,7 @@
     end generate jet_jet_bx_0_bx_0_cosh_cos_l1;
 
     jet_jet_bx_0_bx_0_calc_l1: for i in 0 to NR_JET_OBJECTS-1 generate
-        jet_jet_bx_0_bx_0_calc_l2: for j in 0 to NR_JET-1 generate
+        jet_jet_bx_0_bx_0_calc_l2: for j in 0 to NR_JET_OBJECTS-1 generate
             calculator_i: entity work.mass_div_dr_calculator
                 generic map(
                     JET_JET_ROM, JET_JET_DETA_BINS_WIDTH_ROM, JET_JET_DPHI_BINS_WIDTH_ROM,
@@ -164,7 +164,7 @@
     end generate jet_tau_bx_0_bx_0_cosh_cos_l1;
 
     jet_tau_bx_0_bx_0_calc_l1: for i in 0 to NR_JET_OBJECTS-1 generate
-        jet_tau_bx_0_bx_0_calc_l2: for j in 0 to NR_TAU-1 generate
+        jet_tau_bx_0_bx_0_calc_l2: for j in 0 to NR_TAU_OBJECTS-1 generate
             calculator_i: entity work.mass_div_dr_calculator
                 generic map(
                     JET_TAU_ROM, JET_TAU_DETA_BINS_WIDTH_ROM, JET_TAU_DPHI_BINS_WIDTH_ROM,

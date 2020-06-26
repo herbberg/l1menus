@@ -10,7 +10,7 @@
 -- 0d3bf9d5-50bb-4c1e-aa0f-ed0adfa68121
 
 -- Unique ID of firmware implementation:
--- 74e653e3-d779-4a1d-80f8-706431e7ebe4
+-- 6d64bd60-71ad-433d-bbaf-294da78f2cb8
 
 -- Scale set:
 -- scales_2020_06_16
@@ -21,16 +21,16 @@
 -- External condition assignment
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
-    muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
-        port map(mu_bx_m1, mu_bx_0,
-            ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
-            ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
-            ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
     muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
         port map(mu_bx_0, mu_bx_0,
             ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
             ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
             ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
+    muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
+        port map(mu_bx_m1, mu_bx_0,
+            ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
+            ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
+            ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo ObjectType in certain Bx used in correlation conditions
     jet_conv_2_muon_bx_0_l: for i in 0 to NR_JET_OBJECTS-1 generate
@@ -180,7 +180,7 @@
     end generate jet_jet_bx_0_bx_0_cosh_cos_l1;
 
     jet_jet_bx_0_bx_0_calc_l1: for i in 0 to NR_JET_OBJECTS-1 generate
-        jet_jet_bx_0_bx_0_calc_l2: for j in 0 to NR_JET-1 generate
+        jet_jet_bx_0_bx_0_calc_l2: for j in 0 to NR_JET_OBJECTS-1 generate
             calculator_i: entity work.mass_div_dr_calculator
                 generic map(
                     JET_JET_ROM, JET_JET_DETA_BINS_WIDTH_ROM, JET_JET_DPHI_BINS_WIDTH_ROM,
@@ -207,7 +207,7 @@
     end generate eg_tau_bx_0_bx_0_cosh_cos_l1;
 
     eg_tau_bx_0_bx_0_calc_l1: for i in 0 to NR_EG_OBJECTS-1 generate
-        eg_tau_bx_0_bx_0_calc_l2: for j in 0 to NR_TAU-1 generate
+        eg_tau_bx_0_bx_0_calc_l2: for j in 0 to NR_TAU_OBJECTS-1 generate
             calculator_i: entity work.mass_div_dr_calculator
                 generic map(
                     EG_TAU_ROM, EG_TAU_DETA_BINS_WIDTH_ROM, EG_TAU_DPHI_BINS_WIDTH_ROM,
@@ -234,7 +234,7 @@
     end generate jet_mu_bx_0_bx_0_cosh_cos_l1;
 
     jet_mu_bx_0_bx_0_calc_l1: for i in 0 to NR_JET_OBJECTS-1 generate
-        jet_mu_bx_0_bx_0_calc_l2: for j in 0 to NR_MU-1 generate
+        jet_mu_bx_0_bx_0_calc_l2: for j in 0 to NR_MU_OBJECTS-1 generate
             calculator_i: entity work.mass_div_dr_calculator
                 generic map(
                     JET_MU_ROM, JET_MU_DETA_BINS_WIDTH_ROM, JET_MU_DPHI_BINS_WIDTH_ROM,
@@ -261,7 +261,7 @@
     end generate tau_tau_bx_0_bx_0_cosh_cos_l1;
 
     tau_tau_bx_0_bx_0_calc_l1: for i in 0 to NR_TAU_OBJECTS-1 generate
-        tau_tau_bx_0_bx_0_calc_l2: for j in 0 to NR_TAU-1 generate
+        tau_tau_bx_0_bx_0_calc_l2: for j in 0 to NR_TAU_OBJECTS-1 generate
             calculator_i: entity work.mass_div_dr_calculator
                 generic map(
                     TAU_TAU_ROM, TAU_TAU_DETA_BINS_WIDTH_ROM, TAU_TAU_DPHI_BINS_WIDTH_ROM,
@@ -288,7 +288,7 @@
     end generate mu_mu_bx_0_bx_0_cosh_cos_l1;
 
     mu_mu_bx_0_bx_0_calc_l1: for i in 0 to NR_MU_OBJECTS-1 generate
-        mu_mu_bx_0_bx_0_calc_l2: for j in 0 to NR_MU-1 generate
+        mu_mu_bx_0_bx_0_calc_l2: for j in 0 to NR_MU_OBJECTS-1 generate
             calculator_i: entity work.mass_div_dr_calculator
                 generic map(
                     MU_MU_ROM, MU_MU_DETA_BINS_WIDTH_ROM, MU_MU_DPHI_BINS_WIDTH_ROM,
@@ -315,7 +315,7 @@
     end generate mu_mu_bx_m1_bx_0_cosh_cos_l1;
 
     mu_mu_bx_m1_bx_0_calc_l1: for i in 0 to NR_MU_OBJECTS-1 generate
-        mu_mu_bx_m1_bx_0_calc_l2: for j in 0 to NR_MU-1 generate
+        mu_mu_bx_m1_bx_0_calc_l2: for j in 0 to NR_MU_OBJECTS-1 generate
             calculator_i: entity work.mass_div_dr_calculator
                 generic map(
                     MU_MU_ROM, MU_MU_DETA_BINS_WIDTH_ROM, MU_MU_DPHI_BINS_WIDTH_ROM,
@@ -342,7 +342,7 @@
     end generate eg_eg_bx_0_bx_0_cosh_cos_l1;
 
     eg_eg_bx_0_bx_0_calc_l1: for i in 0 to NR_EG_OBJECTS-1 generate
-        eg_eg_bx_0_bx_0_calc_l2: for j in 0 to NR_EG-1 generate
+        eg_eg_bx_0_bx_0_calc_l2: for j in 0 to NR_EG_OBJECTS-1 generate
             calculator_i: entity work.mass_div_dr_calculator
                 generic map(
                     EG_EG_ROM, EG_EG_DETA_BINS_WIDTH_ROM, EG_EG_DPHI_BINS_WIDTH_ROM,
@@ -2281,7 +2281,7 @@ algo(30) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i13;
-algo(35) <= l1_single_mu7;
+algo(34) <= l1_single_mu7;
 
 -- 17 L1_SingleMu18 : MU18[MU-QLTY_SNGL]
 l1_single_mu18 <= single_mu_i18;
@@ -2377,27 +2377,27 @@ algo(54) <= l1_triple_mu_5_4_2p5_double_mu_5_2p5_os_mass_5to17;
 
 -- 96 L1_Mu5_EG23er2p5 : MU5[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu5_eg23er2p5 <= single_mu_i11 and single_eg_i80;
-algo(33) <= l1_mu5_eg23er2p5;
+algo(32) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i13 and single_eg_i81;
-algo(32) <= l1_mu7_eg20er2p5;
+algo(31) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i13 and single_eg_i80;
-algo(34) <= l1_mu7_eg23er2p5;
+algo(33) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i11 and single_eg_i83;
-algo(37) <= l1_mu5_loose_iso_eg20er2p5;
+algo(36) <= l1_mu5_loose_iso_eg20er2p5;
 
 -- 101 L1_Mu7_LooseIsoEG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg20er2p5 <= single_mu_i13 and single_eg_i83;
-algo(36) <= l1_mu7_loose_iso_eg20er2p5;
+algo(35) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i13 and single_eg_i84;
-algo(31) <= l1_mu7_loose_iso_eg23er2p5;
+algo(37) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 121 L1_Mu3_Jet16er2p5_dR_Max0p4 : dist{MU3[MU-QLTY_SNGL],JET16[JET-ETA_2p52]}[DR_MAX_0p4]
 l1_mu3_jet16er2p5_d_r_max0p4 <= calo_muon_correlation_i98;
@@ -2453,19 +2453,19 @@ algo(24) <= l1_triple_eg_16_12_8_er2p5;
 
 -- 238 L1_LooseIsoEG24er2p1_HTT100er : EG24[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg24er2p1_htt100er <= single_eg_i190 and single_htt_i191;
-algo(14) <= l1_loose_iso_eg24er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i192 and single_htt_i191;
-algo(17) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(14) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i148 and single_htt_i191;
-algo(16) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(17) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i193 and single_htt_i191;
-algo(15) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 259 L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3 : dist{EG22[EG-ETA_2p13,EG-ISO_0xC],TAU70[TAU-ETA_2p13]}[DR_MIN_0p3]
 l1_loose_iso_eg22er2p1_tau70er2p1_d_r_min0p3 <= calo_calo_correlation_i201;
