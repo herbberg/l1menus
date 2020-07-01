@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 4e68f6b0-545b-4ac7-b86b-a708d6f30bbc
+-- 01dcddea-4616-46a7-9bdc-f0ba312869e2
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1452,7 +1452,7 @@ calo_calo_correlation_i199_i: entity work.calo_calo_corr_cond
     )
     port map(lhc_clk, eg_bx_0, tau_bx_0,    
         dr => eg_tau_bx_0_bx_0_delta_r_vector,
-        calo_calo_correlation_i199);
+        condition_o => calo_calo_correlation_i199);
 
 calo_calo_correlation_i258_i: entity work.calo_calo_corr_cond
     generic map(
@@ -1493,8 +1493,8 @@ calo_calo_correlation_i258_i: entity work.calo_calo_corr_cond
         JET_JET_TBPT_VECTOR_WIDTH
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
-        deta => djet_jet_bx_0_bx_0_deta_vector,
-        calo_calo_correlation_i258);
+        deta => jet_jet_bx_0_bx_0_deta_vector,
+        condition_o => calo_calo_correlation_i258);
 
 invariant_mass_i209_i: entity work.calo_calo_corr_cond
     generic map(
@@ -1536,7 +1536,7 @@ invariant_mass_i209_i: entity work.calo_calo_corr_cond
     )
     port map(lhc_clk, tau_bx_0, tau_bx_0,    
         mass_inv => tau_tau_bx_0_bx_0_mass_inv_vector,
-        invariant_mass_i209);
+        condition_o => invariant_mass_i209);
 
 invariant_mass_i262_i: entity work.calo_calo_corr_cond
     generic map(
@@ -1577,9 +1577,9 @@ invariant_mass_i262_i: entity work.calo_calo_corr_cond
         JET_JET_TBPT_VECTOR_WIDTH
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
-        deta => djet_jet_bx_0_bx_0_deta_vector,    
+        deta => jet_jet_bx_0_bx_0_deta_vector,    
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
-        invariant_mass_i262);
+        condition_o => invariant_mass_i262);
 
 invariant_mass_i271_i: entity work.calo_calo_corr_cond
     generic map(
@@ -1621,7 +1621,7 @@ invariant_mass_i271_i: entity work.calo_calo_corr_cond
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,    
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
-        invariant_mass_i271);
+        condition_o => invariant_mass_i271);
 
 invariant_mass_i288_i: entity work.calo_calo_corr_cond
     generic map(
@@ -1663,7 +1663,7 @@ invariant_mass_i288_i: entity work.calo_calo_corr_cond
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,    
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
-        invariant_mass_i288);
+        condition_o => invariant_mass_i288);
 
 invariant_mass_i95_i: entity work.calo_calo_corr_cond
     generic map(
@@ -1705,7 +1705,7 @@ invariant_mass_i95_i: entity work.calo_calo_corr_cond
     )
     port map(lhc_clk, eg_bx_0, eg_bx_0,    
         mass_inv => eg_eg_bx_0_bx_0_mass_inv_vector,
-        invariant_mass_i95);
+        condition_o => invariant_mass_i95);
 
 calo_muon_correlation_i118_i: entity work.calo_muon_correlation_condition
     generic map(
@@ -1803,7 +1803,7 @@ invariant_mass_i37_i: entity work.muon_muon_corr_cond
         true, X"0000", X"0000",
         "ign", X"FFFF", X"F",
         false, X"0000", X"0000", X"F",
-        0, 7, true
+        0, 7, true,
         X"0001",
         0, 
         X"0000", X"0000",
@@ -1826,7 +1826,7 @@ invariant_mass_i37_i: entity work.muon_muon_corr_cond
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,    
         mass_inv => mu_mu_bx_0_bx_0_mass_inv_vector,
-        invariant_mass_i37);
+        condition_o => invariant_mass_i37);
 
 invariant_mass_i94_i: entity work.muon_muon_corr_cond
     generic map(
@@ -1844,7 +1844,7 @@ invariant_mass_i94_i: entity work.muon_muon_corr_cond
         true, X"0000", X"0000",
         "ign", X"FF00", X"F",
         false, X"0000", X"0000", X"F",
-        0, 7, true
+        0, 7, true,
         X"000B",
         1, 
         X"00D3", X"012D",
@@ -1867,7 +1867,7 @@ invariant_mass_i94_i: entity work.muon_muon_corr_cond
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,    
         mass_inv => mu_mu_bx_0_bx_0_mass_inv_vector,
-        invariant_mass_i94);
+        condition_o => invariant_mass_i94);
 
 muon_muon_correlation_i117_i: entity work.muon_muon_corr_cond
     generic map(
@@ -1885,7 +1885,7 @@ muon_muon_correlation_i117_i: entity work.muon_muon_corr_cond
         true, X"0000", X"0000",
         "ign", X"FF00", X"F",
         false, X"0000", X"0000", X"F",
-        0, 7, true
+        0, 7, true,
         X"0007",
         0, 
         X"0000", X"0000",
@@ -1908,7 +1908,7 @@ muon_muon_correlation_i117_i: entity work.muon_muon_corr_cond
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,    
         dr => mu_mu_bx_0_bx_0_delta_r_vector,
-        muon_muon_correlation_i117);
+        condition_o => muon_muon_correlation_i117);
 
 muon_muon_correlation_i355_i: entity work.muon_muon_corr_cond
     generic map(
@@ -1926,7 +1926,7 @@ muon_muon_correlation_i355_i: entity work.muon_muon_corr_cond
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
         false, X"0000", X"0000", X"F",
-        0, 7, true
+        0, 7, true,
         X"0007",
         1, 
         X"006E", X"0192",
@@ -1949,7 +1949,7 @@ muon_muon_correlation_i355_i: entity work.muon_muon_corr_cond
     port map(lhc_clk, mu_bx_m1, mu_bx_0,
         ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,    
         dphi => mu_mu_bx_m1_bx_0_dphi_vector,
-        muon_muon_correlation_i355);
+        condition_o => muon_muon_correlation_i355);
 
 muon_muon_correlation_i47_i: entity work.muon_muon_corr_cond
     generic map(
@@ -1967,7 +1967,7 @@ muon_muon_correlation_i47_i: entity work.muon_muon_corr_cond
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
         false, X"0000", X"0000", X"F",
-        0, 7, true
+        0, 7, true,
         X"0001",
         1, 
         X"00B8", X"0148",
@@ -1990,7 +1990,7 @@ muon_muon_correlation_i47_i: entity work.muon_muon_corr_cond
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,    
         dr => mu_mu_bx_0_bx_0_delta_r_vector,
-        muon_muon_correlation_i47);
+        condition_o => muon_muon_correlation_i47);
 
 transverse_mass_i166_i: entity work.calo_esums_correlation_condition
     generic map(
