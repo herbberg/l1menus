@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 46904973-baad-4e11-91f6-abf014159b2b
+-- 95aa9d80-8103-4377-a99a-c89ae886696d
 
 -- Scale set:
 -- scales_2020_06_16
@@ -103,7 +103,7 @@
                 )
                 port map(
                     jet_pt_vector_bx_0(i)(JET_PT_VECTOR_WIDTH-1 downto 0), 
-                    jet_pt_vector_bx_0(i)(JET_PT_VECTOR_WIDTH-1 downto 0),
+                    jet_pt_vector_bx_0(j)(JET_PT_VECTOR_WIDTH-1 downto 0),
                     jet_jet_bx_0_bx_0_cosh_deta_vector(i,j), 
                     jet_jet_bx_0_bx_0_cos_dphi_vector(i,j),
                     jet_jet_bx_0_bx_0_mass_inv_vector(i,j)
@@ -137,7 +137,7 @@
                 )
                 port map(
                     jet_pt_vector_bx_0(i)(JET_PT_VECTOR_WIDTH-1 downto 0), 
-                    mu_pt_vector_bx_0(i)(MU_PT_VECTOR_WIDTH-1 downto 0),
+                    mu_pt_vector_bx_0(j)(MU_PT_VECTOR_WIDTH-1 downto 0),
                     jet_mu_bx_0_bx_0_cosh_deta_vector(i,j), 
                     jet_mu_bx_0_bx_0_cos_dphi_vector(i,j),
                     jet_mu_bx_0_bx_0_mass_inv_vector(i,j)
