@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 490a20c9-7238-4563-8e1f-9c944c2a9619
+-- 4e68f6b0-545b-4ac7-b86b-a708d6f30bbc
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1489,7 +1489,7 @@ calo_calo_correlation_i257_i: entity work.calo_calo_corr_cond
         JET_JET_TBPT_VECTOR_WIDTH
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
-        deta => diff_jet_jet_bx_0_bx_0_eta_vector,
+        deta => djet_jet_bx_0_bx_0_deta_vector,
         calo_calo_correlation_i257);
 
 invariant_mass_i210_i: entity work.calo_calo_corr_cond
@@ -1573,7 +1573,7 @@ invariant_mass_i261_i: entity work.calo_calo_corr_cond
         JET_JET_TBPT_VECTOR_WIDTH
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
-        deta => diff_jet_jet_bx_0_bx_0_eta_vector,    
+        deta => djet_jet_bx_0_bx_0_deta_vector,    
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
         invariant_mass_i261);
 
@@ -1695,7 +1695,7 @@ calo_muon_correlation_i116_i: entity work.calo_muon_correlation_condition
         X"0000000000000000", MUON_SIN_COS_VECTOR_WIDTH, JET_MU_SIN_COS_PRECISION
     )
     port map(lhc_clk, jet_bx_0(0 to 11), mu_bx_0(0 to 7),
-        diff_jet_mu_bx_0_bx_0_eta_vector, diff_jet_mu_bx_0_bx_0_phi_vector,
+        jet_mu_bx_0_bx_0_deta_vector, jet_mu_bx_0_bx_0_dphi_vector,
         jet_pt_vector_bx_0, mu_pt_vector_bx_0,
         jet_mu_bx_0_bx_0_cosh_deta_vector, jet_mu_bx_0_bx_0_cos_dphi_vector,
         conv_jet_cos_phi_bx_0, mu_cos_phi_bx_0, conv_jet_sin_phi_bx_0, mu_sin_phi_bx_0,
@@ -1735,7 +1735,7 @@ calo_muon_correlation_i98_i: entity work.calo_muon_correlation_condition
         X"0000000000000000", MUON_SIN_COS_VECTOR_WIDTH, JET_MU_SIN_COS_PRECISION
     )
     port map(lhc_clk, jet_bx_0(0 to 11), mu_bx_0(0 to 7),
-        diff_jet_mu_bx_0_bx_0_eta_vector, diff_jet_mu_bx_0_bx_0_phi_vector,
+        jet_mu_bx_0_bx_0_deta_vector, jet_mu_bx_0_bx_0_dphi_vector,
         jet_pt_vector_bx_0, mu_pt_vector_bx_0,
         jet_mu_bx_0_bx_0_cosh_deta_vector, jet_mu_bx_0_bx_0_cos_dphi_vector,
         conv_jet_cos_phi_bx_0, mu_cos_phi_bx_0, conv_jet_sin_phi_bx_0, mu_sin_phi_bx_0,
@@ -1745,7 +1745,7 @@ invariant_mass_i44_i: entity work.muon_muon_corr_cond
     generic map(
         true,
         false, false, false, true, 0, false,
-        0, 7, true, MU_TYPE,
+        0, 7, true,
         X"001F",
         0, 
         X"0000", X"0000",
@@ -1757,7 +1757,7 @@ invariant_mass_i44_i: entity work.muon_muon_corr_cond
         true, X"0000", X"0000",
         "ign", X"FFFF", X"F",
         false, X"0000", X"0000", X"F",
-        0, 7, true, MU_TYPE,
+        0, 7, true
         X"000F",
         0, 
         X"0000", X"0000",
@@ -1775,10 +1775,7 @@ invariant_mass_i44_i: entity work.muon_muon_corr_cond
         X"0000000000000000", X"0000000000000000",
         X"002907FE9BCB0C80", X"000000000007A120",
         X"000000000000000000000", X"000000000000000000000",
-        X"0000000000000000", 
-        MU_MU_MASS_VECTOR_WIDTH,
-        MU_MU_MASS_DIV_DR_VECTOR_WIDTH, 
-        MU_MU_TBPT_VECTOR_WIDTH
+        X"0000000000000000" 
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,    
@@ -1789,7 +1786,7 @@ invariant_mass_i92_i: entity work.muon_muon_corr_cond
     generic map(
         true,
         false, false, false, true, 0, false,
-        0, 7, true, MU_TYPE,
+        0, 7, true,
         X"0007",
         1, 
         X"00D3", X"012D",
@@ -1801,7 +1798,7 @@ invariant_mass_i92_i: entity work.muon_muon_corr_cond
         true, X"0000", X"0000",
         "ign", X"FF00", X"F",
         false, X"0000", X"0000", X"F",
-        0, 7, true, MU_TYPE,
+        0, 7, true
         X"0007",
         1, 
         X"00D3", X"012D",
@@ -1819,10 +1816,7 @@ invariant_mass_i92_i: entity work.muon_muon_corr_cond
         X"0000000000000000", X"0000000000000000",
         X"0000000005D75C80", X"0000000000000000",
         X"000000000000000000000", X"000000000000000000000",
-        X"0000000000000000", 
-        MU_MU_MASS_VECTOR_WIDTH,
-        MU_MU_MASS_DIV_DR_VECTOR_WIDTH, 
-        MU_MU_TBPT_VECTOR_WIDTH
+        X"0000000000000000" 
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,    
@@ -1833,7 +1827,7 @@ muon_muon_correlation_i115_i: entity work.muon_muon_corr_cond
     generic map(
         true,
         false, false, true, false, 0, false,
-        0, 7, true, MU_TYPE,
+        0, 7, true,
         X"0001",
         0, 
         X"0000", X"0000",
@@ -1845,7 +1839,7 @@ muon_muon_correlation_i115_i: entity work.muon_muon_corr_cond
         true, X"0000", X"0000",
         "ign", X"FF00", X"F",
         false, X"0000", X"0000", X"F",
-        0, 7, true, MU_TYPE,
+        0, 7, true
         X"0001",
         0, 
         X"0000", X"0000",
@@ -1863,10 +1857,7 @@ muon_muon_correlation_i115_i: entity work.muon_muon_corr_cond
         X"00000000002713E8", X"0000000000000000",
         X"0000000000000000", X"0000000000000000",
         X"000000000000000000000", X"000000000000000000000",
-        X"0000000000000000", 
-        MU_MU_MASS_VECTOR_WIDTH,
-        MU_MU_MASS_DIV_DR_VECTOR_WIDTH, 
-        MU_MU_TBPT_VECTOR_WIDTH
+        X"0000000000000000" 
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,    
@@ -1877,7 +1868,7 @@ muon_muon_correlation_i50_i: entity work.muon_muon_corr_cond
     generic map(
         true,
         false, false, true, false, 0, false,
-        0, 7, true, MU_TYPE,
+        0, 7, true,
         X"0001",
         1, 
         X"008A", X"0176",
@@ -1889,7 +1880,7 @@ muon_muon_correlation_i50_i: entity work.muon_muon_corr_cond
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
         false, X"0000", X"0000", X"F",
-        0, 7, true, MU_TYPE,
+        0, 7, true
         X"0001",
         1, 
         X"008A", X"0176",
@@ -1907,10 +1898,7 @@ muon_muon_correlation_i50_i: entity work.muon_muon_corr_cond
         X"00000000001DEC28", X"0000000000000000",
         X"0000000000000000", X"0000000000000000",
         X"000000000000000000000", X"000000000000000000000",
-        X"0000000000000000", 
-        MU_MU_MASS_VECTOR_WIDTH,
-        MU_MU_MASS_DIV_DR_VECTOR_WIDTH, 
-        MU_MU_TBPT_VECTOR_WIDTH
+        X"0000000000000000" 
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,    
@@ -1921,7 +1909,7 @@ muon_muon_correlation_i56_i: entity work.muon_muon_corr_cond
     generic map(
         true,
         false, false, true, false, 0, false,
-        0, 7, true, MU_TYPE,
+        0, 7, true,
         X"000A",
         0, 
         X"0000", X"0000",
@@ -1933,7 +1921,7 @@ muon_muon_correlation_i56_i: entity work.muon_muon_corr_cond
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
         false, X"0000", X"0000", X"F",
-        0, 7, true, MU_TYPE,
+        0, 7, true
         X"000A",
         0, 
         X"0000", X"0000",
@@ -1951,10 +1939,7 @@ muon_muon_correlation_i56_i: entity work.muon_muon_corr_cond
         X"000000000015FCE8", X"0000000000000000",
         X"0000000000000000", X"0000000000000000",
         X"000000000000000000000", X"000000000000000000000",
-        X"0000000000000000", 
-        MU_MU_MASS_VECTOR_WIDTH,
-        MU_MU_MASS_DIV_DR_VECTOR_WIDTH, 
-        MU_MU_TBPT_VECTOR_WIDTH
+        X"0000000000000000" 
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,    
@@ -1985,7 +1970,7 @@ transverse_mass_i167_i: entity work.calo_esums_correlation_condition
         X"0000000000000000", CALO_SIN_COS_VECTOR_WIDTH, EG_ETM_SIN_COS_PRECISION
    )
     port map(lhc_clk, eg_bx_0(0 to 11), etm_bx_0,
-        diff_eg_etm_bx_0_bx_0_phi_vector,
+        deg_etm_bx_0_bx_0_dphi_vector,
         eg_pt_vector_bx_0, etm_pt_vector_bx_0,
         eg_etm_bx_0_bx_0_cos_dphi_vector,
         eg_cos_phi_bx_0, etm_cos_phi_bx_0, eg_sin_phi_bx_0, etm_sin_phi_bx_0,
