@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- ae5df3a0-9a90-420f-9efd-9e95dadbad47
+-- 88dc8508-34c8-4c1e-90c1-40e12d215f30
 
 -- Scale set:
 -- scales_2020_06_16
@@ -106,7 +106,7 @@
                     jet_pt_vector_bx_0(j)(JET_PT_VECTOR_WIDTH-1 downto 0),
                     jet_jet_bx_0_bx_0_cosh_deta_vector(i,j), 
                     jet_jet_bx_0_bx_0_cos_dphi_vector(i,j),
-                    jet_jet_bx_0_bx_0_mass_inv_vector(i,j)(JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+JET_JET_COSH_COS_VECTOR_WIDTH-1 downto 0)
+                    jet_jet_bx_0_bx_0_mass_inv_vector(i,j)(JET_JET_MASS_VECTOR_WIDTH-1 downto 0)
                 );
             jet_jet_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_deta_integer(i,j), JET_JET_DETA_BINS_WIDTH);
             jet_jet_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_dphi_integer(i,j), JET_JET_DPHI_BINS_WIDTH);
@@ -120,8 +120,8 @@
                     lhc_clk,
                     jet_jet_bx_0_bx_0_deta_bin_vector(i,j)(JET_JET_DETA_BINS_WIDTH-1 downto JET_JET_DETA_BINS_WIDTH-JET_JET_DETA_BINS_WIDTH_ROM), 
                     jet_jet_bx_0_bx_0_dphi_bin_vector(i,j)(JET_JET_DPHI_BINS_WIDTH-1 downto JET_JET_DPHI_BINS_WIDTH-JET_JET_DPHI_BINS_WIDTH_ROM),
-                    jet_jet_bx_0_bx_0_mass_inv_vector(i,j)(JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+JET_JET_COSH_COS_VECTOR_WIDTH-1 downto 0),
-                    jet_jet_bx_0_bx_0_mass_div_dr_vector(i,j)(JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+JET_JET_COSH_COS_VECTOR_WIDTH+JET_JET_INV_DR_SQ_VECTOR_WIDTH-1 downto 0)
+                    jet_jet_bx_0_bx_0_mass_inv_vector(i,j)(JET_JET_MASS_VECTOR_WIDTH-1 downto 0),
+                    jet_jet_bx_0_bx_0_mass_div_dr_vector(i,j)(JET_JET_MASS_DIV_DR_VECTOR_WIDTH-1 downto 0)
                 );
         end generate jet_jet_bx_0_bx_0_calc_l2;
     end generate jet_jet_bx_0_bx_0_calc_l1;
@@ -140,7 +140,7 @@
                     mu_pt_vector_bx_0(j)(MU_PT_VECTOR_WIDTH-1 downto 0),
                     jet_mu_bx_0_bx_0_cosh_deta_vector(i,j), 
                     jet_mu_bx_0_bx_0_cos_dphi_vector(i,j),
-                    jet_mu_bx_0_bx_0_mass_inv_vector(i,j)(JET_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+JET_MU_COSH_COS_VECTOR_WIDTH-1 downto 0)
+                    jet_mu_bx_0_bx_0_mass_inv_vector(i,j)(JET_MU_MASS_VECTOR_WIDTH-1 downto 0)
                 );
             jet_mu_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_mu_bx_0_bx_0_deta_integer(i,j), JET_MU_DETA_BINS_WIDTH);
             jet_mu_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_mu_bx_0_bx_0_dphi_integer(i,j), JET_MU_DPHI_BINS_WIDTH);
@@ -154,8 +154,8 @@
                     lhc_clk,
                     jet_mu_bx_0_bx_0_deta_bin_vector(i,j)(JET_MU_DETA_BINS_WIDTH-1 downto JET_MU_DETA_BINS_WIDTH-JET_MU_DETA_BINS_WIDTH_ROM), 
                     jet_mu_bx_0_bx_0_dphi_bin_vector(i,j)(JET_MU_DPHI_BINS_WIDTH-1 downto JET_MU_DPHI_BINS_WIDTH-JET_MU_DPHI_BINS_WIDTH_ROM),
-                    jet_mu_bx_0_bx_0_mass_inv_vector(i,j)(JET_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+JET_MU_COSH_COS_VECTOR_WIDTH-1 downto 0),
-                    jet_mu_bx_0_bx_0_mass_div_dr_vector(i,j)(JET_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+JET_MU_COSH_COS_VECTOR_WIDTH+JET_MU_INV_DR_SQ_VECTOR_WIDTH-1 downto 0)
+                    jet_mu_bx_0_bx_0_mass_inv_vector(i,j)(JET_MU_MASS_VECTOR_WIDTH-1 downto 0),
+                    jet_mu_bx_0_bx_0_mass_div_dr_vector(i,j)(JET_MU_MASS_DIV_DR_VECTOR_WIDTH-1 downto 0)
                 );
         end generate jet_mu_bx_0_bx_0_calc_l2;
     end generate jet_mu_bx_0_bx_0_calc_l1;
