@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 01dcddea-4616-46a7-9bdc-f0ba312869e2
+-- 46904973-baad-4e11-91f6-abf014159b2b
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1902,8 +1902,8 @@ invariant_mass_ov_rm_i287_i: entity work.calo_calo_calo_correlation_orm_conditio
         X"0000000000000000", CALO_SIN_COS_VECTOR_WIDTH, JET_JET_SIN_COS_PRECISION
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0, tau_bx_0,
-        diff_jet_tau_bx_0_bx_0_eta_vector, diff_jet_tau_bx_0_bx_0_phi_vector,
-        diff_jet_jet_bx_0_bx_0_eta_vector, diff_jet_jet_bx_0_bx_0_phi_vector,
+        jet_tau_bx_0_bx_0_deta_vector, jet_tau_bx_0_bx_0_dphi_vector,
+        jet_jet_bx_0_bx_0_deta_vector, jet_jet_bx_0_bx_0_dphi_vector,
         jet_pt_vector_bx_0, jet_pt_vector_bx_0,
         jet_jet_bx_0_bx_0_cosh_deta_vector, jet_jet_bx_0_bx_0_cos_dphi_vector,
         jet_cos_phi_bx_0, jet_cos_phi_bx_0, jet_sin_phi_bx_0, jet_sin_phi_bx_0,
