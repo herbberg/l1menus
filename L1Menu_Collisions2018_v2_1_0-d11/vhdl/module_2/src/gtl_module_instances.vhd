@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- e0e3c68c-7dc8-495d-a2c7-6166ada96e30
+-- ca4432f1-7b58-4ffd-8cfd-72952cc21b26
 
 -- Scale set:
 -- scales_2020_06_16
@@ -166,8 +166,8 @@
 
     jet_jet_bx_0_bx_0_calc_l1: for i in 0 to NR_JET_OBJECTS-1 generate
         jet_jet_bx_0_bx_0_calc_l2: for j in 0 to NR_JET_OBJECTS-1 generate
-            jet_jet_bx_0_bx_0_cosh_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_JET_COSH_DETA_LUT(diff_jet_jet_bx_0_bx_0_eta_integer(i,j)), JET_JET_COSH_COS_VECTOR_WIDTH);
-            jet_jet_bx_0_bx_0_cos_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_JET_COS_DPHI_LUT(diff_jet_jet_bx_0_bx_0_phi_integer(i,j)), JET_JET_COSH_COS_VECTOR_WIDTH);
+            jet_jet_bx_0_bx_0_cosh_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_JET_COSH_DETA_LUT(jet_jet_bx_0_bx_0_deta_integer(i,j)), JET_JET_COSH_COS_VECTOR_WIDTH);
+            jet_jet_bx_0_bx_0_cos_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_JET_COS_DPHI_LUT(jet_jet_bx_0_bx_0_dphi_integer(i,j)), JET_JET_COSH_COS_VECTOR_WIDTH);
             mass_inv_i: entity work.mass_invariant_calc
                 generic map(
                     JET_PT_VECTOR_WIDTH, JET_PT_VECTOR_WIDTH, 
@@ -180,8 +180,8 @@
                     jet_jet_bx_0_bx_0_cos_dphi_vector(i,j),
                     jet_jet_bx_0_bx_0_mass_inv_vector(i,j)
                 );
-            jet_jet_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_diff_eta_integer(i,j), JET_JET_DETA_BINS_WIDTH);
-            jet_jet_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_diff_phi_integer(i,j), JET_JET_DPHI_BINS_WIDTH);
+            jet_jet_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_deta_integer(i,j), JET_JET_DETA_BINS_WIDTH);
+            jet_jet_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_dphi_integer(i,j), JET_JET_DPHI_BINS_WIDTH);
             mass_div_dr_i: entity work.mass_invariant_div_dr_calc
                 generic map(
                     JET_JET_ROM, JET_JET_DETA_BINS_WIDTH_ROM, JET_JET_DPHI_BINS_WIDTH_ROM,
@@ -200,8 +200,8 @@
 
     eg_jet_bx_0_bx_0_calc_l1: for i in 0 to NR_EG_OBJECTS-1 generate
         eg_jet_bx_0_bx_0_calc_l2: for j in 0 to NR_JET_OBJECTS-1 generate
-            eg_jet_bx_0_bx_0_cosh_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_JET_COSH_DETA_LUT(diff_eg_jet_bx_0_bx_0_eta_integer(i,j)), EG_JET_COSH_COS_VECTOR_WIDTH);
-            eg_jet_bx_0_bx_0_cos_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_JET_COS_DPHI_LUT(diff_eg_jet_bx_0_bx_0_phi_integer(i,j)), EG_JET_COSH_COS_VECTOR_WIDTH);
+            eg_jet_bx_0_bx_0_cosh_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_JET_COSH_DETA_LUT(eg_jet_bx_0_bx_0_deta_integer(i,j)), EG_JET_COSH_COS_VECTOR_WIDTH);
+            eg_jet_bx_0_bx_0_cos_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_JET_COS_DPHI_LUT(eg_jet_bx_0_bx_0_dphi_integer(i,j)), EG_JET_COSH_COS_VECTOR_WIDTH);
             mass_inv_i: entity work.mass_invariant_calc
                 generic map(
                     EG_PT_VECTOR_WIDTH, JET_PT_VECTOR_WIDTH, 
@@ -214,8 +214,8 @@
                     eg_jet_bx_0_bx_0_cos_dphi_vector(i,j),
                     eg_jet_bx_0_bx_0_mass_inv_vector(i,j)
                 );
-            eg_jet_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(eg_jet_bx_0_bx_0_diff_eta_integer(i,j), EG_JET_DETA_BINS_WIDTH);
-            eg_jet_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(eg_jet_bx_0_bx_0_diff_phi_integer(i,j), EG_JET_DPHI_BINS_WIDTH);
+            eg_jet_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(eg_jet_bx_0_bx_0_deta_integer(i,j), EG_JET_DETA_BINS_WIDTH);
+            eg_jet_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(eg_jet_bx_0_bx_0_dphi_integer(i,j), EG_JET_DPHI_BINS_WIDTH);
             mass_div_dr_i: entity work.mass_invariant_div_dr_calc
                 generic map(
                     EG_JET_ROM, EG_JET_DETA_BINS_WIDTH_ROM, EG_JET_DPHI_BINS_WIDTH_ROM,
@@ -234,8 +234,8 @@
 
     eg_tau_bx_0_bx_0_calc_l1: for i in 0 to NR_EG_OBJECTS-1 generate
         eg_tau_bx_0_bx_0_calc_l2: for j in 0 to NR_TAU_OBJECTS-1 generate
-            eg_tau_bx_0_bx_0_cosh_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_TAU_COSH_DETA_LUT(diff_eg_tau_bx_0_bx_0_eta_integer(i,j)), EG_TAU_COSH_COS_VECTOR_WIDTH);
-            eg_tau_bx_0_bx_0_cos_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_TAU_COS_DPHI_LUT(diff_eg_tau_bx_0_bx_0_phi_integer(i,j)), EG_TAU_COSH_COS_VECTOR_WIDTH);
+            eg_tau_bx_0_bx_0_cosh_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_TAU_COSH_DETA_LUT(eg_tau_bx_0_bx_0_deta_integer(i,j)), EG_TAU_COSH_COS_VECTOR_WIDTH);
+            eg_tau_bx_0_bx_0_cos_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_TAU_COS_DPHI_LUT(eg_tau_bx_0_bx_0_dphi_integer(i,j)), EG_TAU_COSH_COS_VECTOR_WIDTH);
             mass_inv_i: entity work.mass_invariant_calc
                 generic map(
                     EG_PT_VECTOR_WIDTH, TAU_PT_VECTOR_WIDTH, 
@@ -248,8 +248,8 @@
                     eg_tau_bx_0_bx_0_cos_dphi_vector(i,j),
                     eg_tau_bx_0_bx_0_mass_inv_vector(i,j)
                 );
-            eg_tau_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(eg_tau_bx_0_bx_0_diff_eta_integer(i,j), EG_TAU_DETA_BINS_WIDTH);
-            eg_tau_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(eg_tau_bx_0_bx_0_diff_phi_integer(i,j), EG_TAU_DPHI_BINS_WIDTH);
+            eg_tau_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(eg_tau_bx_0_bx_0_deta_integer(i,j), EG_TAU_DETA_BINS_WIDTH);
+            eg_tau_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(eg_tau_bx_0_bx_0_dphi_integer(i,j), EG_TAU_DPHI_BINS_WIDTH);
             mass_div_dr_i: entity work.mass_invariant_div_dr_calc
                 generic map(
                     EG_TAU_ROM, EG_TAU_DETA_BINS_WIDTH_ROM, EG_TAU_DPHI_BINS_WIDTH_ROM,
@@ -268,8 +268,8 @@
 
     jet_mu_bx_0_bx_0_calc_l1: for i in 0 to NR_JET_OBJECTS-1 generate
         jet_mu_bx_0_bx_0_calc_l2: for j in 0 to NR_MU_OBJECTS-1 generate
-            jet_mu_bx_0_bx_0_cosh_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_MU_COSH_DETA_LUT(diff_jet_mu_bx_0_bx_0_eta_integer(i,j)), JET_MU_COSH_COS_VECTOR_WIDTH);
-            jet_mu_bx_0_bx_0_cos_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_MU_COS_DPHI_LUT(diff_jet_mu_bx_0_bx_0_phi_integer(i,j)), JET_MU_COSH_COS_VECTOR_WIDTH);
+            jet_mu_bx_0_bx_0_cosh_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_MU_COSH_DETA_LUT(jet_mu_bx_0_bx_0_deta_integer(i,j)), JET_MU_COSH_COS_VECTOR_WIDTH);
+            jet_mu_bx_0_bx_0_cos_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_MU_COS_DPHI_LUT(jet_mu_bx_0_bx_0_dphi_integer(i,j)), JET_MU_COSH_COS_VECTOR_WIDTH);
             mass_inv_i: entity work.mass_invariant_calc
                 generic map(
                     JET_PT_VECTOR_WIDTH, MU_PT_VECTOR_WIDTH, 
@@ -282,8 +282,8 @@
                     jet_mu_bx_0_bx_0_cos_dphi_vector(i,j),
                     jet_mu_bx_0_bx_0_mass_inv_vector(i,j)
                 );
-            jet_mu_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_mu_bx_0_bx_0_diff_eta_integer(i,j), JET_MU_DETA_BINS_WIDTH);
-            jet_mu_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_mu_bx_0_bx_0_diff_phi_integer(i,j), JET_MU_DPHI_BINS_WIDTH);
+            jet_mu_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_mu_bx_0_bx_0_deta_integer(i,j), JET_MU_DETA_BINS_WIDTH);
+            jet_mu_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(jet_mu_bx_0_bx_0_dphi_integer(i,j), JET_MU_DPHI_BINS_WIDTH);
             mass_div_dr_i: entity work.mass_invariant_div_dr_calc
                 generic map(
                     JET_MU_ROM, JET_MU_DETA_BINS_WIDTH_ROM, JET_MU_DPHI_BINS_WIDTH_ROM,
@@ -302,8 +302,8 @@
 
     mu_mu_bx_0_bx_0_calc_l1: for i in 0 to NR_MU_OBJECTS-1 generate
         mu_mu_bx_0_bx_0_calc_l2: for j in 0 to NR_MU_OBJECTS-1 generate
-            mu_mu_bx_0_bx_0_cosh_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(MU_MU_COSH_DETA_LUT(diff_mu_mu_bx_0_bx_0_eta_integer(i,j)), MU_MU_COSH_COS_VECTOR_WIDTH);
-            mu_mu_bx_0_bx_0_cos_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(MU_MU_COS_DPHI_LUT(diff_mu_mu_bx_0_bx_0_phi_integer(i,j)), MU_MU_COSH_COS_VECTOR_WIDTH);
+            mu_mu_bx_0_bx_0_cosh_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(MU_MU_COSH_DETA_LUT(mu_mu_bx_0_bx_0_deta_integer(i,j)), MU_MU_COSH_COS_VECTOR_WIDTH);
+            mu_mu_bx_0_bx_0_cos_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(MU_MU_COS_DPHI_LUT(mu_mu_bx_0_bx_0_dphi_integer(i,j)), MU_MU_COSH_COS_VECTOR_WIDTH);
             mass_inv_i: entity work.mass_invariant_calc
                 generic map(
                     MU_PT_VECTOR_WIDTH, MU_PT_VECTOR_WIDTH, 
@@ -316,8 +316,8 @@
                     mu_mu_bx_0_bx_0_cos_dphi_vector(i,j),
                     mu_mu_bx_0_bx_0_mass_inv_vector(i,j)
                 );
-            mu_mu_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(mu_mu_bx_0_bx_0_diff_eta_integer(i,j), MU_MU_DETA_BINS_WIDTH);
-            mu_mu_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(mu_mu_bx_0_bx_0_diff_phi_integer(i,j), MU_MU_DPHI_BINS_WIDTH);
+            mu_mu_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(mu_mu_bx_0_bx_0_deta_integer(i,j), MU_MU_DETA_BINS_WIDTH);
+            mu_mu_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(mu_mu_bx_0_bx_0_dphi_integer(i,j), MU_MU_DPHI_BINS_WIDTH);
             mass_div_dr_i: entity work.mass_invariant_div_dr_calc
                 generic map(
                     MU_MU_ROM, MU_MU_DETA_BINS_WIDTH_ROM, MU_MU_DPHI_BINS_WIDTH_ROM,
