@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- ca4432f1-7b58-4ffd-8cfd-72952cc21b26
+-- 490a20c9-7238-4563-8e1f-9c944c2a9619
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1447,7 +1447,7 @@ calo_calo_correlation_i200_i: entity work.calo_calo_corr_cond
         EG_TAU_TBPT_VECTOR_WIDTH
     )
     port map(lhc_clk, eg_bx_0, tau_bx_0,    
-        dr => eg_tau_bx_0_bx_0_dr_vector,
+        dr => eg_tau_bx_0_bx_0_delta_r_vector,
         calo_calo_correlation_i200);
 
 calo_calo_correlation_i257_i: entity work.calo_calo_corr_cond
@@ -1870,7 +1870,7 @@ muon_muon_correlation_i115_i: entity work.muon_muon_corr_cond
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,    
-        dr => mu_mu_bx_0_bx_0_dr_vector,
+        dr => mu_mu_bx_0_bx_0_delta_r_vector,
         muon_muon_correlation_i115);
 
 muon_muon_correlation_i50_i: entity work.muon_muon_corr_cond
@@ -1914,7 +1914,7 @@ muon_muon_correlation_i50_i: entity work.muon_muon_corr_cond
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,    
-        dr => mu_mu_bx_0_bx_0_dr_vector,
+        dr => mu_mu_bx_0_bx_0_delta_r_vector,
         muon_muon_correlation_i50);
 
 muon_muon_correlation_i56_i: entity work.muon_muon_corr_cond
@@ -1958,7 +1958,7 @@ muon_muon_correlation_i56_i: entity work.muon_muon_corr_cond
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,    
-        dr => mu_mu_bx_0_bx_0_dr_vector,
+        dr => mu_mu_bx_0_bx_0_delta_r_vector,
         muon_muon_correlation_i56);
 
 transverse_mass_i167_i: entity work.calo_esums_correlation_condition
