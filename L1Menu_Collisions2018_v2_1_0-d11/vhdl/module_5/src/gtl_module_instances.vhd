@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- b51129a5-026d-40fe-930d-680cae1ce6e9
+-- c01a83a4-0c2d-4739-8457-2c886bef7b79
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1408,7 +1408,7 @@ single_htt_i306_i: entity work.esums_conditions
     port map(lhc_clk, htt_bx_0, single_htt_i306);
 
 
-calo_calo_correlation_i200_i: entity work.calo_calo_corr_cond
+calo_calo_correlation_i200_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
         false, false, true, false, 0, false,
@@ -1450,7 +1450,7 @@ calo_calo_correlation_i200_i: entity work.calo_calo_corr_cond
         dr => eg_tau_bx_0_bx_0_delta_r_vector,
         condition_o => calo_calo_correlation_i200);
 
-calo_calo_correlation_i257_i: entity work.calo_calo_corr_cond
+calo_calo_correlation_i257_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
         true, false, false, false, 0, false,
@@ -1492,7 +1492,7 @@ calo_calo_correlation_i257_i: entity work.calo_calo_corr_cond
         deta => jet_jet_bx_0_bx_0_deta_vector,
         condition_o => calo_calo_correlation_i257);
 
-invariant_mass_i210_i: entity work.calo_calo_corr_cond
+invariant_mass_i210_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
         false, false, false, true, 0, false,
@@ -1534,7 +1534,7 @@ invariant_mass_i210_i: entity work.calo_calo_corr_cond
         mass_inv => tau_tau_bx_0_bx_0_mass_inv_vector,
         condition_o => invariant_mass_i210);
 
-invariant_mass_i261_i: entity work.calo_calo_corr_cond
+invariant_mass_i261_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
         true, false, false, true, 0, false,
@@ -1577,7 +1577,7 @@ invariant_mass_i261_i: entity work.calo_calo_corr_cond
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
         condition_o => invariant_mass_i261);
 
-invariant_mass_i269_i: entity work.calo_calo_corr_cond
+invariant_mass_i269_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
         false, false, false, true, 0, false,
@@ -1619,7 +1619,7 @@ invariant_mass_i269_i: entity work.calo_calo_corr_cond
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
         condition_o => invariant_mass_i269);
 
-invariant_mass_i93_i: entity work.calo_calo_corr_cond
+invariant_mass_i93_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
         false, false, false, true, 0, false,
@@ -1663,7 +1663,9 @@ invariant_mass_i93_i: entity work.calo_calo_corr_cond
 
 calo_muon_correlation_i116_i: entity work.calo_muon_correlation_condition
     generic map(
+        true,
         false, false, true, false, 0, false,
+        NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"00B4",
         1, 
@@ -1691,19 +1693,21 @@ calo_muon_correlation_i116_i: entity work.calo_muon_correlation_condition
         X"00000000", X"00000000",
         X"000000000009C7E8", X"0000000000000000",
         X"0000000000000000", X"0000000000000000",
-        JET_PT_VECTOR_WIDTH, MU_PT_VECTOR_WIDTH, JET_MU_COSH_COS_PRECISION, JET_MU_COSH_COS_VECTOR_WIDTH,
-        X"0000000000000000", MUON_SIN_COS_VECTOR_WIDTH, JET_MU_SIN_COS_PRECISION
+        X"000000000000000000000", X"000000000000000000000",
+        X"0000000000000000", 
+        JET_MU_MASS_VECTOR_WIDTH,
+        JET_MU_MASS_DIV_DR_VECTOR_WIDTH, 
+        JET_MU_TBPT_VECTOR_WIDTH
     )
-    port map(lhc_clk, jet_bx_0(0 to 11), mu_bx_0(0 to 7),
-        jet_mu_bx_0_bx_0_deta_vector, jet_mu_bx_0_bx_0_dphi_vector,
-        jet_pt_vector_bx_0, mu_pt_vector_bx_0,
-        jet_mu_bx_0_bx_0_cosh_deta_vector, jet_mu_bx_0_bx_0_cos_dphi_vector,
-        conv_jet_cos_phi_bx_0, mu_cos_phi_bx_0, conv_jet_sin_phi_bx_0, mu_sin_phi_bx_0,
-        calo_muon_correlation_i116);
+    port map(lhc_clk, jet_bx_0, mu_bx_0,    
+        dr => jet_mu_bx_0_bx_0_delta_r_vector,
+        condition_o => calo_muon_correlation_i116);
 
 calo_muon_correlation_i98_i: entity work.calo_muon_correlation_condition
     generic map(
+        true,
         false, false, true, false, 0, false,
+        NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"0046",
         1, 
@@ -1731,17 +1735,17 @@ calo_muon_correlation_i98_i: entity work.calo_muon_correlation_condition
         X"00000000", X"00000000",
         X"00000000000274E8", X"0000000000000000",
         X"0000000000000000", X"0000000000000000",
-        JET_PT_VECTOR_WIDTH, MU_PT_VECTOR_WIDTH, JET_MU_COSH_COS_PRECISION, JET_MU_COSH_COS_VECTOR_WIDTH,
-        X"0000000000000000", MUON_SIN_COS_VECTOR_WIDTH, JET_MU_SIN_COS_PRECISION
+        X"000000000000000000000", X"000000000000000000000",
+        X"0000000000000000", 
+        JET_MU_MASS_VECTOR_WIDTH,
+        JET_MU_MASS_DIV_DR_VECTOR_WIDTH, 
+        JET_MU_TBPT_VECTOR_WIDTH
     )
-    port map(lhc_clk, jet_bx_0(0 to 11), mu_bx_0(0 to 7),
-        jet_mu_bx_0_bx_0_deta_vector, jet_mu_bx_0_bx_0_dphi_vector,
-        jet_pt_vector_bx_0, mu_pt_vector_bx_0,
-        jet_mu_bx_0_bx_0_cosh_deta_vector, jet_mu_bx_0_bx_0_cos_dphi_vector,
-        conv_jet_cos_phi_bx_0, mu_cos_phi_bx_0, conv_jet_sin_phi_bx_0, mu_sin_phi_bx_0,
-        calo_muon_correlation_i98);
+    port map(lhc_clk, jet_bx_0, mu_bx_0,    
+        dr => jet_mu_bx_0_bx_0_delta_r_vector,
+        condition_o => calo_muon_correlation_i98);
 
-invariant_mass_i44_i: entity work.muon_muon_corr_cond
+invariant_mass_i44_i: entity work.muon_muon_correlation_condition
     generic map(
         true,
         false, false, false, true, 0, false,
@@ -1782,7 +1786,7 @@ invariant_mass_i44_i: entity work.muon_muon_corr_cond
         mass_inv => mu_mu_bx_0_bx_0_mass_inv_vector,
         condition_o => invariant_mass_i44);
 
-invariant_mass_i92_i: entity work.muon_muon_corr_cond
+invariant_mass_i92_i: entity work.muon_muon_correlation_condition
     generic map(
         true,
         false, false, false, true, 0, false,
@@ -1823,7 +1827,7 @@ invariant_mass_i92_i: entity work.muon_muon_corr_cond
         mass_inv => mu_mu_bx_0_bx_0_mass_inv_vector,
         condition_o => invariant_mass_i92);
 
-muon_muon_correlation_i115_i: entity work.muon_muon_corr_cond
+muon_muon_correlation_i115_i: entity work.muon_muon_correlation_condition
     generic map(
         true,
         false, false, true, false, 0, false,
@@ -1864,7 +1868,7 @@ muon_muon_correlation_i115_i: entity work.muon_muon_corr_cond
         dr => mu_mu_bx_0_bx_0_delta_r_vector,
         condition_o => muon_muon_correlation_i115);
 
-muon_muon_correlation_i50_i: entity work.muon_muon_corr_cond
+muon_muon_correlation_i50_i: entity work.muon_muon_correlation_condition
     generic map(
         true,
         false, false, true, false, 0, false,
@@ -1905,7 +1909,7 @@ muon_muon_correlation_i50_i: entity work.muon_muon_corr_cond
         dr => mu_mu_bx_0_bx_0_delta_r_vector,
         condition_o => muon_muon_correlation_i50);
 
-muon_muon_correlation_i56_i: entity work.muon_muon_corr_cond
+muon_muon_correlation_i56_i: entity work.muon_muon_correlation_condition
     generic map(
         true,
         false, false, true, false, 0, false,
