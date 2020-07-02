@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- c01a83a4-0c2d-4739-8457-2c886bef7b79
+-- 0423710e-d02e-498a-8621-355a46d02f20
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1663,7 +1663,6 @@ invariant_mass_i93_i: entity work.calo_calo_correlation_condition
 
 calo_muon_correlation_i116_i: entity work.calo_muon_correlation_condition
     generic map(
-        true,
         false, false, true, false, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
@@ -1705,7 +1704,6 @@ calo_muon_correlation_i116_i: entity work.calo_muon_correlation_condition
 
 calo_muon_correlation_i98_i: entity work.calo_muon_correlation_condition
     generic map(
-        true,
         false, false, true, false, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
