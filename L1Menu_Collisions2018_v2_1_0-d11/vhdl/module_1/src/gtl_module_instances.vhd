@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 57f7c253-783f-4943-a7df-88942e73b834
+-- 0546d873-29f3-49dd-b50c-c6ebc3d228f9
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1996,7 +1996,7 @@ muon_muon_correlation_i47_i: entity work.muon_muon_correlation_condition
 
 transverse_mass_i166_i: entity work.calo_esums_correlation_condition
     generic map(
-        false, true, TRANSVERSE_MASS_TYPE, false,
+        false, true, false,
         0, 11, true, EG_TYPE,
         X"0040",
         1, 
@@ -2014,19 +2014,17 @@ transverse_mass_i166_i: entity work.calo_esums_correlation_condition
         true, X"0000", X"0000",
         X"00000000", X"00000000",
         X"00041A6642C78140", X"0000000004C4B400",
-        EG_PT_VECTOR_WIDTH, ETM_PT_VECTOR_WIDTH, EG_ETM_COSH_COS_PRECISION, EG_ETM_COSH_COS_VECTOR_WIDTH,
-        X"0000000000000000", CALO_SIN_COS_VECTOR_WIDTH, EG_ETM_SIN_COS_PRECISION
+        X"0000000000000000",
+        EG_ETM_MASS_VECTOR_WIDTH,
+        EG_ETM_TBPT_VECTOR_WIDTH
    )
-    port map(lhc_clk, eg_bx_0(0 to 11), etm_bx_0,
-        eg_etm_bx_0_bx_0_dphi_vector,
-        eg_pt_vector_bx_0, etm_pt_vector_bx_0,
-        eg_etm_bx_0_bx_0_cos_dphi_vector,
-        eg_cos_phi_bx_0, etm_cos_phi_bx_0, eg_sin_phi_bx_0, etm_sin_phi_bx_0,
-        transverse_mass_i166);
+    port map(lhc_clk, eg_bx_0(0 to 11), etm_bx_0,    
+        mass_trv => eg_etm_bx_0_bx_0_mass_trv_vector,
+        condition_o => transverse_mass_i166);
 
 transverse_mass_i168_i: entity work.calo_esums_correlation_condition
     generic map(
-        false, true, TRANSVERSE_MASS_TYPE, false,
+        false, true, false,
         0, 11, true, EG_TYPE,
         X"0040",
         1, 
@@ -2044,15 +2042,13 @@ transverse_mass_i168_i: entity work.calo_esums_correlation_condition
         true, X"0000", X"0000",
         X"00000000", X"00000000",
         X"00041A6642C78140", X"0000000006DDD000",
-        EG_PT_VECTOR_WIDTH, ETM_PT_VECTOR_WIDTH, EG_ETM_COSH_COS_PRECISION, EG_ETM_COSH_COS_VECTOR_WIDTH,
-        X"0000000000000000", CALO_SIN_COS_VECTOR_WIDTH, EG_ETM_SIN_COS_PRECISION
+        X"0000000000000000",
+        EG_ETM_MASS_VECTOR_WIDTH,
+        EG_ETM_TBPT_VECTOR_WIDTH
    )
-    port map(lhc_clk, eg_bx_0(0 to 11), etm_bx_0,
-        eg_etm_bx_0_bx_0_dphi_vector,
-        eg_pt_vector_bx_0, etm_pt_vector_bx_0,
-        eg_etm_bx_0_bx_0_cos_dphi_vector,
-        eg_cos_phi_bx_0, etm_cos_phi_bx_0, eg_sin_phi_bx_0, etm_sin_phi_bx_0,
-        transverse_mass_i168);
+    port map(lhc_clk, eg_bx_0(0 to 11), etm_bx_0,    
+        mass_trv => eg_etm_bx_0_bx_0_mass_trv_vector,
+        condition_o => transverse_mass_i168);
 
 -- Instantiations of algorithms
 
