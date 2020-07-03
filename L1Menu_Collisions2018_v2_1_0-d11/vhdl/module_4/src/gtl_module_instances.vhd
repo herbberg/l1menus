@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 83b8445b-b567-4ff5-b62e-fe696ad1095a
+-- 30c8606c-a99d-4c62-a636-786c62d612d7
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1858,6 +1858,7 @@ invariant_mass_ov_rm_i287_i: entity work.calo_calo_calo_correlation_orm_conditio
         true,
         false, false, true,
         false, false, false, true, 0, false,
+        NR_JET_OBJECTS,        
         0, 11, true, JET_TYPE,
         X"00A0",
         0,
@@ -1869,17 +1870,7 @@ invariant_mass_ov_rm_i287_i: entity work.calo_calo_calo_correlation_orm_conditio
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
-        0, 11, true, JET_TYPE,
-        X"003C",
-        0, 
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        true, X"0000", X"0000",
-        true, X"0000", X"0000",
-        X"F",
+        NR_TAU_OBJECTS,        
         0, 11, true, TAU_TYPE,
         X"0050",
         0, 
@@ -1898,16 +1889,26 @@ invariant_mass_ov_rm_i287_i: entity work.calo_calo_calo_correlation_orm_conditio
         X"00000000", X"00000000",
         X"0000000000000000", X"0000000000000000",
         X"00041A6642C78140", X"000000020DB68500",
-        JET_PT_VECTOR_WIDTH, JET_PT_VECTOR_WIDTH, JET_JET_COSH_COS_PRECISION, JET_JET_COSH_COS_VECTOR_WIDTH,
-        X"0000000000000000", CALO_SIN_COS_VECTOR_WIDTH, JET_JET_SIN_COS_PRECISION
+        X"0000000000000000",        
+        JET_JET_MASS_VECTOR_WIDTH,
+        calo2_object_low => 0, calo2_object_high => 11, et_ge_mode_calo2 => true, obj_type_calo2 => JET_TYPE,
+        et_threshold_calo2 => X"003C",
+        nr_eta_windows_calo2 => 0, 
+        eta_w1_upper_limit_calo2 => X"0000", eta_w1_lower_limit_calo2 => X"0000",
+        eta_w2_upper_limit_calo2 => X"0000", eta_w2_lower_limit_calo2 => X"0000",
+        eta_w3_upper_limit_calo2 => X"0000", eta_w3_lower_limit_calo2 => X"0000",
+        eta_w4_upper_limit_calo2 => X"0000", eta_w4_lower_limit_calo2 => X"0000",
+        eta_w5_upper_limit_calo2 => X"0000", eta_w5_lower_limit_calo2 => X"0000",
+        phi_full_range_calo2 => true, 
+        phi_w1_upper_limit_calo2 => X"0000", phi_w1_lower_limit_calo2 => X"0000",
+        phi_w2_ignore_calo2 => true, 
+        phi_w2_upper_limit_calo2 => X"0000", phi_w2_lower_limit_calo2 => X"0000",
+        iso_lut_calo2 => X"F"
     )
-    port map(lhc_clk, jet_bx_0, jet_bx_0, tau_bx_0,
-        jet_tau_bx_0_bx_0_deta_vector, jet_tau_bx_0_bx_0_dphi_vector,
-        jet_jet_bx_0_bx_0_deta_vector, jet_jet_bx_0_bx_0_dphi_vector,
-        jet_pt_vector_bx_0, jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, jet_jet_bx_0_bx_0_cos_dphi_vector,
-        jet_cos_phi_bx_0, jet_cos_phi_bx_0, jet_sin_phi_bx_0, jet_sin_phi_bx_0,
-        invariant_mass_ov_rm_i287);
+    port map(lhc_clk, jet_bx_0, jet_bx_0, tau_bx_0,    
+        dr_orm => jet_tau_bx_0_bx_0_delta_r_vector,    
+        mass_inv_12 => jet_jet_bx_0_bx_0_mass_inv_vector,
+        condition_o => invariant_mass_ov_rm_i287);
 
 calo_muon_correlation_i101_i: entity work.calo_muon_correlation_condition
     generic map(

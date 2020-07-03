@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 83b8445b-b567-4ff5-b62e-fe696ad1095a
+-- 30c8606c-a99d-4c62-a636-786c62d612d7
 
 -- Scale set:
 -- scales_2020_06_16
@@ -407,8 +407,8 @@
         end generate eg_eg_bx_0_bx_0_calc_l2;
     end generate eg_eg_bx_0_bx_0_calc_l1;
 
-    eg_etm_bx_0_bx_0_cos_dphi_l1: for i in 0 to NR_EG_OBJECTS-1 generate
-        eg_etm_bx_0_bx_0_cos_dphi_l2: for j in 0 to NR_ETM_OBJECTS-1 generate
+    eg_etm_bx_0_bx_0_calc_l1: for i in 0 to NR_EG_OBJECTS-1 generate
+        eg_etm_bx_0_bx_0_calc_l2: for j in 0 to NR_ETM_OBJECTS-1 generate
             eg_etm_bx_0_bx_0_cos_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_ETM_COS_DPHI_LUT(eg_etm_bx_0_bx_0_dphi_integer(i,j)), EG_ETM_COSH_COS_VECTOR_WIDTH);
             mass_inv_i: entity work.mass_transverse_calc
                 generic map(
@@ -421,8 +421,8 @@
                     eg_etm_bx_0_bx_0_cos_dphi_vector(i,j),
                     eg_etm_bx_0_bx_0_mass_trv_vector(i,j)
                 );
-        end generate eg_etm_bx_0_bx_0_cos_dphi_l2;
-    end generate eg_etm_bx_0_bx_0_cos_dphi_l1;
+        end generate eg_etm_bx_0_bx_0_calc_l2;
+    end generate eg_etm_bx_0_bx_0_calc_l1;
 
 -- Instantiations of conditions
   
