@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 30c8606c-a99d-4c62-a636-786c62d612d7
+-- fa856184-6bc0-4c9f-a0b7-b70c5d3990ee
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1891,6 +1891,7 @@ invariant_mass_ov_rm_i287_i: entity work.calo_calo_calo_correlation_orm_conditio
         X"00041A6642C78140", X"000000020DB68500",
         X"0000000000000000",        
         JET_JET_MASS_VECTOR_WIDTH,
+        nr_obj_calo2 => NR_JET_OBJECTS,        
         calo2_object_low => 0, calo2_object_high => 11, et_ge_mode_calo2 => true, obj_type_calo2 => JET_TYPE,
         et_threshold_calo2 => X"003C",
         nr_eta_windows_calo2 => 0, 
