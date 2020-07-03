@@ -1549,7 +1549,7 @@ invariant_mass_ov_rm_i286_i: entity work.calo_calo_calo_correlation_orm_conditio
         X"00041A6642C78140", X"000000025B7F3D40",
         X"0000000000000000",        
         JET_JET_MASS_VECTOR_WIDTH,
-        nr_obj_calo2 => nr_obj_calo2,
+        nr_obj_calo2 => NR_JET_OBJECTS,
         calo2_object_low => 0, calo2_object_high => 11, et_ge_mode_calo2 => true, obj_type_calo2 => JET_TYPE,
         et_threshold_calo2 => X"0046",
         nr_eta_windows_calo2 => 0, 
