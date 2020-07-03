@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 0546d873-29f3-49dd-b50c-c6ebc3d228f9
+-- 83b8445b-b567-4ff5-b62e-fe696ad1095a
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1951,6 +1951,7 @@ muon_muon_correlation_i56_i: entity work.muon_muon_correlation_condition
 transverse_mass_i167_i: entity work.calo_esums_correlation_condition
     generic map(
         false, true, false,
+        NR_EG_OBJECTS,
         0, 11, true, EG_TYPE,
         X"0040",
         1, 
