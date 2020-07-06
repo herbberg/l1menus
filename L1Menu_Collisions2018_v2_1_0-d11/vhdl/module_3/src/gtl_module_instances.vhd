@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 3a58cfca-b3af-4578-abaf-eee7611e9f82
+-- cdeb0226-420a-4683-be54-9902c37d9162
 
 -- Scale set:
 -- scales_2020_06_16
@@ -123,6 +123,20 @@
                     jet_jet_bx_0_bx_0_mass_inv_vector(i,j),
                     jet_jet_bx_0_bx_0_mass_div_dr_vector(i,j)
                 );
+            tbpt_i: entity work.tbpt_calc
+                generic map(
+                    JET_PT_VECTOR_WIDTH, JET_PT_VECTOR_WIDTH, 
+                    JET_JET_COSH_COS_VECTOR_WIDTH
+                )
+                port map(
+                    jet_pt_vector_bx_0(i), 
+                    jet_pt_vector_bx_0(j),
+                    jet_cos_phi_bx_0(i)                    
+                    jet_cos_phi_bx_0(j)                    
+                    jet_sin_phi_bx_0(i)                    
+                    jet_sin_phi_bx_0(j)                    
+                    jet_jet_bx_0_bx_0_tbpt_vector(i,j)
+                );
         end generate jet_jet_bx_0_bx_0_calc_l2;
     end generate jet_jet_bx_0_bx_0_calc_l1;
 
@@ -156,6 +170,20 @@
                     jet_mu_bx_0_bx_0_dphi_bin_vector(i,j)(JET_MU_DPHI_BINS_WIDTH-1 downto JET_MU_DPHI_BINS_WIDTH-JET_MU_DPHI_BINS_WIDTH_ROM),
                     jet_mu_bx_0_bx_0_mass_inv_vector(i,j),
                     jet_mu_bx_0_bx_0_mass_div_dr_vector(i,j)
+                );
+            tbpt_i: entity work.tbpt_calc
+                generic map(
+                    JET_PT_VECTOR_WIDTH, MU_PT_VECTOR_WIDTH, 
+                    JET_MU_COSH_COS_VECTOR_WIDTH
+                )
+                port map(
+                    jet_pt_vector_bx_0(i), 
+                    mu_pt_vector_bx_0(j),
+                    jet_cos_phi_bx_0(i)                    
+                    mu_cos_phi_bx_0(j)                    
+                    jet_sin_phi_bx_0(i)                    
+                    mu_sin_phi_bx_0(j)                    
+                    jet_mu_bx_0_bx_0_tbpt_vector(i,j)
                 );
         end generate jet_mu_bx_0_bx_0_calc_l2;
     end generate jet_mu_bx_0_bx_0_calc_l1;

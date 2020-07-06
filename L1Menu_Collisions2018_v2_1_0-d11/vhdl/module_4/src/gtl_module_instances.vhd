@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 3a58cfca-b3af-4578-abaf-eee7611e9f82
+-- cdeb0226-420a-4683-be54-9902c37d9162
 
 -- Scale set:
 -- scales_2020_06_16
@@ -213,6 +213,20 @@
                     jet_jet_bx_0_bx_0_mass_inv_vector(i,j),
                     jet_jet_bx_0_bx_0_mass_div_dr_vector(i,j)
                 );
+            tbpt_i: entity work.tbpt_calc
+                generic map(
+                    JET_PT_VECTOR_WIDTH, JET_PT_VECTOR_WIDTH, 
+                    JET_JET_COSH_COS_VECTOR_WIDTH
+                )
+                port map(
+                    jet_pt_vector_bx_0(i), 
+                    jet_pt_vector_bx_0(j),
+                    jet_cos_phi_bx_0(i)                    
+                    jet_cos_phi_bx_0(j)                    
+                    jet_sin_phi_bx_0(i)                    
+                    jet_sin_phi_bx_0(j)                    
+                    jet_jet_bx_0_bx_0_tbpt_vector(i,j)
+                );
         end generate jet_jet_bx_0_bx_0_calc_l2;
     end generate jet_jet_bx_0_bx_0_calc_l1;
 
@@ -246,6 +260,20 @@
                     eg_jet_bx_0_bx_0_dphi_bin_vector(i,j)(EG_JET_DPHI_BINS_WIDTH-1 downto EG_JET_DPHI_BINS_WIDTH-EG_JET_DPHI_BINS_WIDTH_ROM),
                     eg_jet_bx_0_bx_0_mass_inv_vector(i,j),
                     eg_jet_bx_0_bx_0_mass_div_dr_vector(i,j)
+                );
+            tbpt_i: entity work.tbpt_calc
+                generic map(
+                    EG_PT_VECTOR_WIDTH, JET_PT_VECTOR_WIDTH, 
+                    EG_JET_COSH_COS_VECTOR_WIDTH
+                )
+                port map(
+                    eg_pt_vector_bx_0(i), 
+                    jet_pt_vector_bx_0(j),
+                    eg_cos_phi_bx_0(i)                    
+                    jet_cos_phi_bx_0(j)                    
+                    eg_sin_phi_bx_0(i)                    
+                    jet_sin_phi_bx_0(j)                    
+                    eg_jet_bx_0_bx_0_tbpt_vector(i,j)
                 );
         end generate eg_jet_bx_0_bx_0_calc_l2;
     end generate eg_jet_bx_0_bx_0_calc_l1;
@@ -281,6 +309,20 @@
                     jet_mu_bx_0_bx_0_mass_inv_vector(i,j),
                     jet_mu_bx_0_bx_0_mass_div_dr_vector(i,j)
                 );
+            tbpt_i: entity work.tbpt_calc
+                generic map(
+                    JET_PT_VECTOR_WIDTH, MU_PT_VECTOR_WIDTH, 
+                    JET_MU_COSH_COS_VECTOR_WIDTH
+                )
+                port map(
+                    jet_pt_vector_bx_0(i), 
+                    mu_pt_vector_bx_0(j),
+                    jet_cos_phi_bx_0(i)                    
+                    mu_cos_phi_bx_0(j)                    
+                    jet_sin_phi_bx_0(i)                    
+                    mu_sin_phi_bx_0(j)                    
+                    jet_mu_bx_0_bx_0_tbpt_vector(i,j)
+                );
         end generate jet_mu_bx_0_bx_0_calc_l2;
     end generate jet_mu_bx_0_bx_0_calc_l1;
 
@@ -314,6 +356,20 @@
                     tau_tau_bx_0_bx_0_dphi_bin_vector(i,j)(TAU_TAU_DPHI_BINS_WIDTH-1 downto TAU_TAU_DPHI_BINS_WIDTH-TAU_TAU_DPHI_BINS_WIDTH_ROM),
                     tau_tau_bx_0_bx_0_mass_inv_vector(i,j),
                     tau_tau_bx_0_bx_0_mass_div_dr_vector(i,j)
+                );
+            tbpt_i: entity work.tbpt_calc
+                generic map(
+                    TAU_PT_VECTOR_WIDTH, TAU_PT_VECTOR_WIDTH, 
+                    TAU_TAU_COSH_COS_VECTOR_WIDTH
+                )
+                port map(
+                    tau_pt_vector_bx_0(i), 
+                    tau_pt_vector_bx_0(j),
+                    tau_cos_phi_bx_0(i)                    
+                    tau_cos_phi_bx_0(j)                    
+                    tau_sin_phi_bx_0(i)                    
+                    tau_sin_phi_bx_0(j)                    
+                    tau_tau_bx_0_bx_0_tbpt_vector(i,j)
                 );
         end generate tau_tau_bx_0_bx_0_calc_l2;
     end generate tau_tau_bx_0_bx_0_calc_l1;
@@ -349,6 +405,20 @@
                     mu_mu_bx_0_bx_0_mass_inv_vector(i,j),
                     mu_mu_bx_0_bx_0_mass_div_dr_vector(i,j)
                 );
+            tbpt_i: entity work.tbpt_calc
+                generic map(
+                    MU_PT_VECTOR_WIDTH, MU_PT_VECTOR_WIDTH, 
+                    MU_MU_COSH_COS_VECTOR_WIDTH
+                )
+                port map(
+                    mu_pt_vector_bx_0(i), 
+                    mu_pt_vector_bx_0(j),
+                    mu_cos_phi_bx_0(i)                    
+                    mu_cos_phi_bx_0(j)                    
+                    mu_sin_phi_bx_0(i)                    
+                    mu_sin_phi_bx_0(j)                    
+                    mu_mu_bx_0_bx_0_tbpt_vector(i,j)
+                );
         end generate mu_mu_bx_0_bx_0_calc_l2;
     end generate mu_mu_bx_0_bx_0_calc_l1;
 
@@ -382,6 +452,20 @@
                     jet_tau_bx_0_bx_0_dphi_bin_vector(i,j)(JET_TAU_DPHI_BINS_WIDTH-1 downto JET_TAU_DPHI_BINS_WIDTH-JET_TAU_DPHI_BINS_WIDTH_ROM),
                     jet_tau_bx_0_bx_0_mass_inv_vector(i,j),
                     jet_tau_bx_0_bx_0_mass_div_dr_vector(i,j)
+                );
+            tbpt_i: entity work.tbpt_calc
+                generic map(
+                    JET_PT_VECTOR_WIDTH, TAU_PT_VECTOR_WIDTH, 
+                    JET_TAU_COSH_COS_VECTOR_WIDTH
+                )
+                port map(
+                    jet_pt_vector_bx_0(i), 
+                    tau_pt_vector_bx_0(j),
+                    jet_cos_phi_bx_0(i)                    
+                    tau_cos_phi_bx_0(j)                    
+                    jet_sin_phi_bx_0(i)                    
+                    tau_sin_phi_bx_0(j)                    
+                    jet_tau_bx_0_bx_0_tbpt_vector(i,j)
                 );
         end generate jet_tau_bx_0_bx_0_calc_l2;
     end generate jet_tau_bx_0_bx_0_calc_l1;
