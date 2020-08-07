@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- de2834e5-5e57-4058-9405-34887f6d3917
+-- 0b0313f8-d121-40b8-9024-08ad12bab998
 
 -- Scale set:
 -- scales_2020_06_16
@@ -211,11 +211,6 @@
             eg_eg_bx_0_bx_0_cosh_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_EG_COSH_DETA_LUT(eg_eg_bx_0_bx_0_deta_integer(i,j)), EG_EG_COSH_COS_VECTOR_WIDTH);
         end generate eg_eg_bx_0_bx_0_coshdeta_l2;
     end generate eg_eg_bx_0_bx_0_coshdeta_l1;
-    eg_etm_bx_0_bx_0_coshdeta_l1: for i in 0 to NR_EG_OBJECTS-1 generate
-        eg_etm_bx_0_bx_0_coshdeta_l2: for j in 0 to NR_ETM_OBJECTS-1 generate
-            eg_etm_bx_0_bx_0_cosh_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_ETM_COSH_DETA_LUT(eg_etm_bx_0_bx_0_deta_integer(i,j)), EG_ETM_COSH_COS_VECTOR_WIDTH);
-        end generate eg_etm_bx_0_bx_0_coshdeta_l2;
-    end generate eg_etm_bx_0_bx_0_coshdeta_l1;
     eg_tau_bx_0_bx_0_dr_l1: for i in 0 to NR_EG_OBJECTS-1 generate
         eg_tau_bx_0_bx_0_dr_l2: for j in 0 to NR_TAU_OBJECTS-1 generate
             delta_r_calc_i: entity work.delta_r_calc
@@ -1898,7 +1893,7 @@ algo(22) <= l1_single_mu12_dq_bmtf;
 
 -- 18 L1_SingleMu20 : MU20[MU-QLTY_SNGL]
 l1_single_mu20 <= single_mu_i18;
-algo(4) <= l1_single_mu20;
+algo(3) <= l1_single_mu20;
 
 -- 21 L1_SingleMu22_OMTF : MU22[MU-QLTY_SNGL,MU-ETA_OMTF_POS,MU-ETA_OMTF_NEG]
 l1_single_mu22_omtf <= single_mu_i21;
@@ -1950,7 +1945,7 @@ algo(35) <= l1_quad_mu0_sq;
 
 -- 99 L1_Mu20_EG10er2p5 : MU20[MU-QLTY_SNGL] AND EG10[EG-ETA_2p52]
 l1_mu20_eg10er2p5 <= single_mu_i18 and single_eg_i81;
-algo(3) <= l1_mu20_eg10er2p5;
+algo(4) <= l1_mu20_eg10er2p5;
 
 -- 112 L1_DoubleMu3_OS_DoubleEG7p5Upsilon : mass_inv{MU3[MU-QLTY_DBLE,MU-ETA_2p3],MU3[MU-QLTY_DBLE,MU-ETA_2p3]}[MASS_MASS_0to14,CHGCOR_OS] AND mass_inv{EG7p5[EG-ETA_2p13],EG7p5[EG-ETA_2p13]}[MASS_MASS_0to20]
 l1_double_mu3_os_double_eg7p5_upsilon <= invariant_mass_i92 and invariant_mass_i93;
