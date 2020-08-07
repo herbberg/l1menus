@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 20ad9802-979c-4608-babd-39b469858ea2
+-- de2834e5-5e57-4058-9405-34887f6d3917
 
 -- Scale set:
 -- scales_2020_06_16
@@ -45,16 +45,16 @@ single_ext_i360 <= ext_cond_bx_0(42); -- single_ext_i360
 single_ext_i361 <= ext_cond_bx_0(43); -- single_ext_i361
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
-    muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
-        port map(mu_bx_0, mu_bx_0,
-            ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-            ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-            ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
     muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
         port map(mu_bx_m1, mu_bx_0,
             ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
             ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
             ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
+    muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
+        port map(mu_bx_0, mu_bx_0,
+            ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+            ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
+            ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo ObjectType in certain Bx used in correlation conditions
     jet_conv_2_muon_bx_0_l: for i in 0 to NR_JET_OBJECTS-1 generate
@@ -1276,7 +1276,7 @@ single_htt_i307_i: entity work.esums_conditions
 calo_calo_correlation_i199_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, true, false, None, false,
+        false, false, true, false, 0, false,
         NR_EG_OBJECTS,
         0, 11, true, EG_TYPE,
         X"0030",
@@ -1318,7 +1318,7 @@ calo_calo_correlation_i199_i: entity work.calo_calo_correlation_condition
 calo_calo_correlation_i258_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        true, false, false, false, None, false,
+        true, false, false, false, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"00E0",
@@ -1570,7 +1570,7 @@ invariant_mass_i95_i: entity work.calo_calo_correlation_condition
 
 calo_muon_correlation_i118_i: entity work.calo_muon_correlation_condition
     generic map(
-        false, false, true, false, None, false,
+        false, false, true, false, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"00B4",
@@ -1611,7 +1611,7 @@ calo_muon_correlation_i118_i: entity work.calo_muon_correlation_condition
 
 calo_muon_correlation_i99_i: entity work.calo_muon_correlation_condition
     generic map(
-        false, false, true, false, None, false,
+        false, false, true, false, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"0078",
@@ -1735,7 +1735,7 @@ invariant_mass_i94_i: entity work.muon_muon_correlation_condition
 muon_muon_correlation_i117_i: entity work.muon_muon_correlation_condition
     generic map(
         true,
-        false, false, true, false, None, false,
+        false, false, true, false, 0, false,
         0, 7, true,
         X"0007",
         0,
@@ -1776,7 +1776,7 @@ muon_muon_correlation_i117_i: entity work.muon_muon_correlation_condition
 muon_muon_correlation_i355_i: entity work.muon_muon_correlation_condition
     generic map(
         false,
-        false, true, false, false, None, false,
+        false, true, false, false, 0, false,
         0, 7, true,
         X"0007",
         1,
@@ -1817,7 +1817,7 @@ muon_muon_correlation_i355_i: entity work.muon_muon_correlation_condition
 muon_muon_correlation_i47_i: entity work.muon_muon_correlation_condition
     generic map(
         true,
-        false, false, true, false, None, false,
+        false, false, true, false, 0, false,
         0, 7, true,
         X"0001",
         1,

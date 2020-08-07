@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 20ad9802-979c-4608-babd-39b469858ea2
+-- de2834e5-5e57-4058-9405-34887f6d3917
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1312,7 +1312,7 @@ single_htt_i306_i: entity work.esums_conditions
 calo_calo_correlation_i200_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, true, false, None, false,
+        false, false, true, false, 0, false,
         NR_EG_OBJECTS,
         0, 11, true, EG_TYPE,
         X"002C",
@@ -1354,7 +1354,7 @@ calo_calo_correlation_i200_i: entity work.calo_calo_correlation_condition
 calo_calo_correlation_i257_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        true, false, false, false, None, false,
+        true, false, false, false, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"00C8",
@@ -1564,7 +1564,7 @@ invariant_mass_i93_i: entity work.calo_calo_correlation_condition
 
 calo_muon_correlation_i116_i: entity work.calo_muon_correlation_condition
     generic map(
-        false, false, true, false, None, false,
+        false, false, true, false, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"00B4",
@@ -1605,7 +1605,7 @@ calo_muon_correlation_i116_i: entity work.calo_muon_correlation_condition
 
 calo_muon_correlation_i98_i: entity work.calo_muon_correlation_condition
     generic map(
-        false, false, true, false, None, false,
+        false, false, true, false, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"0046",
@@ -1729,7 +1729,7 @@ invariant_mass_i92_i: entity work.muon_muon_correlation_condition
 muon_muon_correlation_i115_i: entity work.muon_muon_correlation_condition
     generic map(
         true,
-        false, false, true, false, None, false,
+        false, false, true, false, 0, false,
         0, 7, true,
         X"0001",
         0,
@@ -1770,7 +1770,7 @@ muon_muon_correlation_i115_i: entity work.muon_muon_correlation_condition
 muon_muon_correlation_i50_i: entity work.muon_muon_correlation_condition
     generic map(
         true,
-        false, false, true, false, None, false,
+        false, false, true, false, 0, false,
         0, 7, true,
         X"0001",
         1,
@@ -1811,7 +1811,7 @@ muon_muon_correlation_i50_i: entity work.muon_muon_correlation_condition
 muon_muon_correlation_i56_i: entity work.muon_muon_correlation_condition
     generic map(
         true,
-        false, false, true, false, None, false,
+        false, false, true, false, 0, false,
         0, 7, true,
         X"000A",
         0,
@@ -1898,7 +1898,7 @@ algo(22) <= l1_single_mu12_dq_bmtf;
 
 -- 18 L1_SingleMu20 : MU20[MU-QLTY_SNGL]
 l1_single_mu20 <= single_mu_i18;
-algo(3) <= l1_single_mu20;
+algo(4) <= l1_single_mu20;
 
 -- 21 L1_SingleMu22_OMTF : MU22[MU-QLTY_SNGL,MU-ETA_OMTF_POS,MU-ETA_OMTF_NEG]
 l1_single_mu22_omtf <= single_mu_i21;
@@ -1950,7 +1950,7 @@ algo(35) <= l1_quad_mu0_sq;
 
 -- 99 L1_Mu20_EG10er2p5 : MU20[MU-QLTY_SNGL] AND EG10[EG-ETA_2p52]
 l1_mu20_eg10er2p5 <= single_mu_i18 and single_eg_i81;
-algo(4) <= l1_mu20_eg10er2p5;
+algo(3) <= l1_mu20_eg10er2p5;
 
 -- 112 L1_DoubleMu3_OS_DoubleEG7p5Upsilon : mass_inv{MU3[MU-QLTY_DBLE,MU-ETA_2p3],MU3[MU-QLTY_DBLE,MU-ETA_2p3]}[MASS_MASS_0to14,CHGCOR_OS] AND mass_inv{EG7p5[EG-ETA_2p13],EG7p5[EG-ETA_2p13]}[MASS_MASS_0to20]
 l1_double_mu3_os_double_eg7p5_upsilon <= invariant_mass_i92 and invariant_mass_i93;
