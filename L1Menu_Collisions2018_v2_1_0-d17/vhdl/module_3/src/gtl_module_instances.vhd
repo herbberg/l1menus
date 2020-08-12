@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 76b964a8-fcc9-426b-9e9f-8cd5eeb786c7
+-- cfe25473-deed-4a0f-bf6d-c0cbae1be2c2
 
 -- Scale set:
 -- scales_2020_06_16
@@ -330,7 +330,6 @@ single_htt_i309_i: entity work.esums_conditions
 calo_calo_correlation_i114_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        true, false, false, false, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"0050",
@@ -355,9 +354,10 @@ calo_calo_correlation_i114_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        deta_cut => true,
         deta_upper_limit => X"00000640", 
         deta_lower_limit => X"00000000",
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         deta => jet_jet_bx_0_bx_0_deta_vector,
@@ -366,7 +366,6 @@ calo_calo_correlation_i114_i: entity work.calo_calo_correlation_condition
 invariant_mass_i275_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, false, true, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"0050",
@@ -391,10 +390,11 @@ invariant_mass_i275_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => JET_JET_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",
-        mass_width => JET_JET_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
@@ -403,7 +403,6 @@ invariant_mass_i275_i: entity work.calo_calo_correlation_condition
 invariant_mass_i276_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, false, true, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"0078",
@@ -428,10 +427,11 @@ invariant_mass_i276_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => JET_JET_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",
-        mass_width => JET_JET_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
@@ -440,7 +440,6 @@ invariant_mass_i276_i: entity work.calo_calo_correlation_condition
 invariant_mass_i277_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, false, true, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"0078",
@@ -465,10 +464,11 @@ invariant_mass_i277_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => JET_JET_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",
-        mass_width => JET_JET_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
@@ -477,7 +477,6 @@ invariant_mass_i277_i: entity work.calo_calo_correlation_condition
 invariant_mass_i278_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, false, true, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"0078",
@@ -502,10 +501,11 @@ invariant_mass_i278_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => JET_JET_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",
-        mass_width => JET_JET_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
@@ -514,7 +514,6 @@ invariant_mass_i278_i: entity work.calo_calo_correlation_condition
 invariant_mass_i279_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, false, true, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"0050",
@@ -539,10 +538,11 @@ invariant_mass_i279_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => JET_JET_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",
-        mass_width => JET_JET_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
@@ -551,7 +551,6 @@ invariant_mass_i279_i: entity work.calo_calo_correlation_condition
 invariant_mass_i280_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, false, true, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"0050",
@@ -576,10 +575,11 @@ invariant_mass_i280_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => JET_JET_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",
-        mass_width => JET_JET_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
@@ -588,7 +588,6 @@ invariant_mass_i280_i: entity work.calo_calo_correlation_condition
 invariant_mass_i281_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, false, true, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"005A",
@@ -613,10 +612,11 @@ invariant_mass_i281_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => JET_JET_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",
-        mass_width => JET_JET_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
@@ -625,7 +625,6 @@ invariant_mass_i281_i: entity work.calo_calo_correlation_condition
 invariant_mass_i282_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, false, true, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"0078",
@@ -650,10 +649,11 @@ invariant_mass_i282_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => JET_JET_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",
-        mass_width => JET_JET_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
@@ -662,7 +662,6 @@ invariant_mass_i282_i: entity work.calo_calo_correlation_condition
 invariant_mass_i283_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, false, true, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"0078",
@@ -687,10 +686,11 @@ invariant_mass_i283_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => JET_JET_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",
-        mass_width => JET_JET_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
@@ -699,7 +699,6 @@ invariant_mass_i283_i: entity work.calo_calo_correlation_condition
 invariant_mass_i284_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, false, true, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"005A",
@@ -724,10 +723,11 @@ invariant_mass_i284_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => JET_JET_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",
-        mass_width => JET_JET_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
@@ -736,7 +736,6 @@ invariant_mass_i284_i: entity work.calo_calo_correlation_condition
 invariant_mass_i285_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, false, true, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"005A",
@@ -761,10 +760,11 @@ invariant_mass_i285_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => JET_JET_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",
-        mass_width => JET_JET_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,

@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 76b964a8-fcc9-426b-9e9f-8cd5eeb786c7
+-- cfe25473-deed-4a0f-bf6d-c0cbae1be2c2
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1289,7 +1289,6 @@ single_htt_i306_i: entity work.esums_conditions
 calo_calo_correlation_i200_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, true, false, 0, false,
         NR_EG_OBJECTS,
         0, 11, true, EG_TYPE,
         X"002C",
@@ -1314,9 +1313,10 @@ calo_calo_correlation_i200_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
-        dr_upper_limit => X"084CA240", 
-        dr_lower_limit => X"00015F90",
-        tbpt_width => 0
+        dr_cut => true,
+        dr_upper_limit => X"00000000084CA240", 
+        dr_lower_limit => X"0000000000015F90",
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, eg_bx_0, tau_bx_0,
         dr => eg_tau_bx_0_bx_0_delta_r_vector,
@@ -1325,7 +1325,6 @@ calo_calo_correlation_i200_i: entity work.calo_calo_correlation_condition
 calo_calo_correlation_i257_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        true, false, false, false, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"00C8",
@@ -1350,9 +1349,10 @@ calo_calo_correlation_i257_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        deta_cut => true,
         deta_upper_limit => X"00000640", 
         deta_lower_limit => X"00000000",
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         deta => jet_jet_bx_0_bx_0_deta_vector,
@@ -1361,7 +1361,6 @@ calo_calo_correlation_i257_i: entity work.calo_calo_correlation_condition
 invariant_mass_i210_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, false, true, 0, false,
         NR_TAU_OBJECTS,
         0, 11, true, TAU_TYPE,
         X"0038",
@@ -1386,10 +1385,11 @@ invariant_mass_i210_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"E",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => TAU_TAU_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"000000001312D000",
         mass_lower_limit => X"0000000000000000",
-        mass_width => TAU_TAU_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, tau_bx_0, tau_bx_0,
         mass_inv => tau_tau_bx_0_bx_0_mass_inv_vector,
@@ -1398,7 +1398,6 @@ invariant_mass_i210_i: entity work.calo_calo_correlation_condition
 invariant_mass_i261_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        true, false, false, true, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"003C",
@@ -1423,12 +1422,14 @@ invariant_mass_i261_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        deta_cut => true,
         deta_upper_limit => X"000005DC", 
         deta_lower_limit => X"00000000",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => JET_JET_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"00000000BA43B740",
-        mass_width => JET_JET_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         deta => jet_jet_bx_0_bx_0_deta_vector,
@@ -1438,7 +1439,6 @@ invariant_mass_i261_i: entity work.calo_calo_correlation_condition
 invariant_mass_i269_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, false, true, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"0046",
@@ -1463,10 +1463,11 @@ invariant_mass_i269_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => JET_JET_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",
-        mass_width => JET_JET_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
@@ -1475,7 +1476,6 @@ invariant_mass_i269_i: entity work.calo_calo_correlation_condition
 invariant_mass_i93_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, false, true, 0, false,
         NR_EG_OBJECTS,
         0, 11, true, EG_TYPE,
         X"000F",
@@ -1500,10 +1500,11 @@ invariant_mass_i93_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => EG_EG_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"0000000001312D00",
         mass_lower_limit => X"0000000000000000",
-        mass_width => EG_EG_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, eg_bx_0, eg_bx_0,
         mass_inv => eg_eg_bx_0_bx_0_mass_inv_vector,
@@ -1693,8 +1694,8 @@ muon_muon_correlation_i115_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         "ign", X"FF00", X"F",
         false, X"0000", X"0000", X"F",
-        dr_upper_limit => X"002713E8", 
-        dr_lower_limit => X"00000000",
+        dr_upper_limit => X"00000000002713E8", 
+        dr_lower_limit => X"0000000000000000",
         requested_charge_correlation => "ig"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
@@ -1730,8 +1731,8 @@ muon_muon_correlation_i50_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
         false, X"0000", X"0000", X"F",
-        dr_upper_limit => X"001DEC28", 
-        dr_lower_limit => X"00000000",
+        dr_upper_limit => X"00000000001DEC28", 
+        dr_lower_limit => X"0000000000000000",
         requested_charge_correlation => "ig"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
@@ -1767,8 +1768,8 @@ muon_muon_correlation_i56_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
         false, X"0000", X"0000", X"F",
-        dr_upper_limit => X"0015FCE8", 
-        dr_lower_limit => X"00000000",
+        dr_upper_limit => X"000000000015FCE8", 
+        dr_lower_limit => X"0000000000000000",
         requested_charge_correlation => "os"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,

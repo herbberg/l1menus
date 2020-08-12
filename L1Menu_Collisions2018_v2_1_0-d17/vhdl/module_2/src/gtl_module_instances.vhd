@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 76b964a8-fcc9-426b-9e9f-8cd5eeb786c7
+-- cfe25473-deed-4a0f-bf6d-c0cbae1be2c2
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1626,7 +1626,6 @@ single_htt_i308_i: entity work.esums_conditions
 calo_calo_correlation_i112_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        true, false, false, false, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"0050",
@@ -1651,9 +1650,10 @@ calo_calo_correlation_i112_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        deta_cut => true,
         deta_upper_limit => X"00000640", 
         deta_lower_limit => X"00000000",
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         deta => jet_jet_bx_0_bx_0_deta_vector,
@@ -1662,7 +1662,6 @@ calo_calo_correlation_i112_i: entity work.calo_calo_correlation_condition
 calo_calo_correlation_i188_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, true, false, 0, false,
         NR_EG_OBJECTS,
         0, 11, true, EG_TYPE,
         X"003C",
@@ -1687,9 +1686,10 @@ calo_calo_correlation_i188_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
-        dr_upper_limit => X"084CA240", 
-        dr_lower_limit => X"00015F90",
-        tbpt_width => 0
+        dr_cut => true,
+        dr_upper_limit => X"00000000084CA240", 
+        dr_lower_limit => X"0000000000015F90",
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, eg_bx_0, jet_bx_0,
         dr => eg_jet_bx_0_bx_0_delta_r_vector,
@@ -1698,7 +1698,6 @@ calo_calo_correlation_i188_i: entity work.calo_calo_correlation_condition
 calo_calo_correlation_i198_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, true, false, 0, false,
         NR_EG_OBJECTS,
         0, 11, true, EG_TYPE,
         X"002C",
@@ -1723,9 +1722,10 @@ calo_calo_correlation_i198_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"E",
-        dr_upper_limit => X"084CA240", 
-        dr_lower_limit => X"00015F90",
-        tbpt_width => 0
+        dr_cut => true,
+        dr_upper_limit => X"00000000084CA240", 
+        dr_lower_limit => X"0000000000015F90",
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, eg_bx_0, tau_bx_0,
         dr => eg_tau_bx_0_bx_0_delta_r_vector,
@@ -1734,7 +1734,6 @@ calo_calo_correlation_i198_i: entity work.calo_calo_correlation_condition
 invariant_mass_i260_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        true, false, false, true, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"003C",
@@ -1759,12 +1758,14 @@ invariant_mass_i260_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        deta_cut => true,
         deta_upper_limit => X"000005DC", 
         deta_lower_limit => X"00000000",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => JET_JET_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"0000000077359400",
-        mass_width => JET_JET_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         deta => jet_jet_bx_0_bx_0_deta_vector,
@@ -1774,7 +1775,6 @@ invariant_mass_i260_i: entity work.calo_calo_correlation_condition
 invariant_mass_i266_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, false, true, 0, false,
         NR_JET_OBJECTS,
         0, 11, true, JET_TYPE,
         X"003C",
@@ -1799,10 +1799,11 @@ invariant_mass_i266_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+        mass_width => JET_JET_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",
-        mass_width => JET_JET_MASS_VECTOR_WIDTH,
-        tbpt_width => 0
+        twobody_pt_cut => false    
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
@@ -1992,8 +1993,8 @@ muon_muon_correlation_i51_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
         false, X"0000", X"0000", X"F",
-        dr_upper_limit => X"001DEC28", 
-        dr_lower_limit => X"00000000",
+        dr_upper_limit => X"00000000001DEC28", 
+        dr_lower_limit => X"0000000000000000",
         requested_charge_correlation => "os"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
@@ -2029,8 +2030,8 @@ muon_muon_correlation_i54_i: entity work.muon_muon_correlation_condition
         true, X"0000", X"0000",
         "ign", X"F000", X"F",
         false, X"0000", X"0000", X"F",
-        dr_upper_limit => X"0015FCE8", 
-        dr_lower_limit => X"00000000",
+        dr_upper_limit => X"000000000015FCE8", 
+        dr_lower_limit => X"0000000000000000",
         requested_charge_correlation => "os"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
@@ -2230,15 +2231,15 @@ algo(14) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(17) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(17) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 257 L1_LooseIsoEG22er2p1_IsoTau26er2p1_dR_Min0p3 : dist{EG22[EG-ETA_2p13,EG-ISO_0xC],TAU26[TAU-ETA_2p13,TAU-ISO_0xE]}[DR_MIN_0p3]
 l1_loose_iso_eg22er2p1_iso_tau26er2p1_d_r_min0p3 <= calo_calo_correlation_i198;
