@@ -1,0 +1,14 @@
+{
+  "firmware_uuid" : "77e96942-b281-4e45-9dfc-1f81a65c4548",
+  "menu_uuid"     : "1ae9dee9-6017-461b-a3e4-a221e19d28a2",
+  "n_modules"     : 6,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_QuadMu10_CHGCOR_OS", 0, 5, 0],
+    ["L1_TripleMu10_CHGCOR_OS", 1, 3, 0],
+    ["L1_DoubleMu10_CHGCOR_OS", 2, 1, 0],
+    ["L1_QuadMu10_CHGCOR_LS", 3, 4, 0],
+    ["L1_TripleMu10_CHGCOR_LS", 4, 2, 0],
+    ["L1_DoubleMu10_CHGCOR_LS", 5, 0, 0]
+  ]
+}
