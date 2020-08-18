@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 7388dd38-257a-4092-b977-68205eb03749
+-- 2d725ac0-ef88-4ef8-82d9-8ee875b9a623
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1596,8 +1596,8 @@ transverse_mass_i167_i: entity work.calo_esums_correlation_condition
         -- no phi cuts for esums object
         mass_cut => true,       
         mass_width => EG_ETM_MASS_VECTOR_WIDTH,
-        mass_upper_limit => X"0000000041A6642C78140", 
-        mass_lower_limit => X"000000000000005C50D00",
+        mass_upper_limit => X"00041A6642C78140", 
+        mass_lower_limit => X"0000000005C50D00",
         twobody_pt_cut => false    
     )
     port map(lhc_clk, eg_bx_0(0 to 11), etm_bx_0,    
