@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- c9a7b441-c95d-43ae-9798-4f8aea684707
+-- 1d900cd1-b553-4980-9b57-66b2fff8b58c
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1413,6 +1413,7 @@ calo_muon_correlation_i98_i: entity work.calo_muon_correlation_condition
         condition_o => calo_muon_correlation_i98);
 
 invariant_mass_i44_i: entity work.muon_muon_correlation_condition
+        same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
         pt_threshold_muon1 => X"001F",
@@ -1443,6 +1444,7 @@ invariant_mass_i44_i: entity work.muon_muon_correlation_condition
         condition_o => invariant_mass_i44);
 
 invariant_mass_i92_i: entity work.muon_muon_correlation_condition
+        same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
         pt_threshold_muon1 => X"0007",
@@ -1479,6 +1481,7 @@ invariant_mass_i92_i: entity work.muon_muon_correlation_condition
         condition_o => invariant_mass_i92);
 
 muon_muon_correlation_i115_i: entity work.muon_muon_correlation_condition
+        same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
         pt_threshold_muon1 => X"0001",
@@ -1508,6 +1511,7 @@ muon_muon_correlation_i115_i: entity work.muon_muon_correlation_condition
         condition_o => muon_muon_correlation_i115);
 
 muon_muon_correlation_i50_i: entity work.muon_muon_correlation_condition
+        same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
         pt_threshold_muon1 => X"0001",
@@ -1541,6 +1545,7 @@ muon_muon_correlation_i50_i: entity work.muon_muon_correlation_condition
         condition_o => muon_muon_correlation_i50);
 
 muon_muon_correlation_i56_i: entity work.muon_muon_correlation_condition
+        same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
         pt_threshold_muon1 => X"000A",

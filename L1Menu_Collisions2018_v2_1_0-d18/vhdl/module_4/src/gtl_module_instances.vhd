@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- c9a7b441-c95d-43ae-9798-4f8aea684707
+-- 1d900cd1-b553-4980-9b57-66b2fff8b58c
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1582,6 +1582,7 @@ calo_muon_correlation_i109_i: entity work.calo_muon_correlation_condition
         condition_o => calo_muon_correlation_i109);
 
 invariant_mass_i59_i: entity work.muon_muon_correlation_condition
+        same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
         pt_threshold_muon1 => X"000A",
@@ -1618,6 +1619,7 @@ invariant_mass_i59_i: entity work.muon_muon_correlation_condition
         condition_o => invariant_mass_i59);
 
 invariant_mass_i74_i: entity work.muon_muon_correlation_condition
+        same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
         pt_threshold_muon1 => X"000B",
@@ -1650,6 +1652,7 @@ invariant_mass_i74_i: entity work.muon_muon_correlation_condition
         condition_o => invariant_mass_i74);
 
 muon_muon_correlation_i46_i: entity work.muon_muon_correlation_condition
+        same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
         pt_threshold_muon1 => X"0001",
@@ -1683,6 +1686,7 @@ muon_muon_correlation_i46_i: entity work.muon_muon_correlation_condition
         condition_o => muon_muon_correlation_i46);
 
 muon_muon_correlation_i52_i: entity work.muon_muon_correlation_condition
+        same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
         pt_threshold_muon1 => X"0001",
