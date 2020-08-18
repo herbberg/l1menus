@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 50ac861d-d844-49bf-b740-07b2ae4fdf50
+-- c9a7b441-c95d-43ae-9798-4f8aea684707
 
 -- Scale set:
 -- scales_2020_06_16
@@ -125,7 +125,7 @@ single_eg_i133_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"0038", X"0000", X"0000", X"0000"),
-        nr_eta_windows => (1, 1, 1, 1),
+        nr_eta_windows => (1, 0, 0, 0),
         eta_w1_upper_limits => (X"0022", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00DD", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -145,7 +145,7 @@ single_eg_i135_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"0048", X"0000", X"0000", X"0000"),
-        nr_eta_windows => (1, 1, 1, 1),
+        nr_eta_windows => (1, 0, 0, 0),
         eta_w1_upper_limits => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -165,7 +165,7 @@ single_eg_i139_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"005A", X"0000", X"0000", X"0000"),
-        nr_eta_windows => (1, 1, 1, 1),
+        nr_eta_windows => (1, 0, 0, 0),
         eta_w1_upper_limits => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -185,7 +185,7 @@ single_eg_i152_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"0030", X"0000", X"0000", X"0000"),
-        nr_eta_windows => (1, 1, 1, 1),
+        nr_eta_windows => (1, 0, 0, 0),
         eta_w1_upper_limits => (X"0022", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00DD", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -205,7 +205,7 @@ single_eg_i153_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"0034", X"0000", X"0000", X"0000"),
-        nr_eta_windows => (1, 1, 1, 1),
+        nr_eta_windows => (1, 0, 0, 0),
         eta_w1_upper_limits => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -225,7 +225,7 @@ single_eg_i161_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"003C", X"0000", X"0000", X"0000"),
-        nr_eta_windows => (1, 1, 1, 1),
+        nr_eta_windows => (1, 0, 0, 0),
         eta_w1_upper_limits => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"0000", X"0000", X"0000"),
         -- no phi cuts
