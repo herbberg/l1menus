@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 1d900cd1-b553-4980-9b57-66b2fff8b58c
+-- 7388dd38-257a-4092-b977-68205eb03749
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1415,6 +1415,7 @@ calo_muon_correlation_i99_i: entity work.calo_muon_correlation_condition
         condition_o => calo_muon_correlation_i99);
 
 invariant_mass_i37_i: entity work.muon_muon_correlation_condition
+    generic map(
         same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
@@ -1446,6 +1447,7 @@ invariant_mass_i37_i: entity work.muon_muon_correlation_condition
         condition_o => invariant_mass_i37);
 
 invariant_mass_i94_i: entity work.muon_muon_correlation_condition
+    generic map(
         same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
@@ -1483,6 +1485,7 @@ invariant_mass_i94_i: entity work.muon_muon_correlation_condition
         condition_o => invariant_mass_i94);
 
 muon_muon_correlation_i117_i: entity work.muon_muon_correlation_condition
+    generic map(
         same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
@@ -1513,6 +1516,7 @@ muon_muon_correlation_i117_i: entity work.muon_muon_correlation_condition
         condition_o => muon_muon_correlation_i117);
 
 muon_muon_correlation_i355_i: entity work.muon_muon_correlation_condition
+    generic map(
         same_bx => false,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
@@ -1551,6 +1555,7 @@ muon_muon_correlation_i355_i: entity work.muon_muon_correlation_condition
         condition_o => muon_muon_correlation_i355);
 
 muon_muon_correlation_i47_i: entity work.muon_muon_correlation_condition
+    generic map(
         same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,

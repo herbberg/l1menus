@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- 1d900cd1-b553-4980-9b57-66b2fff8b58c
+-- 7388dd38-257a-4092-b977-68205eb03749
 
 -- Scale set:
 -- scales_2020_06_16
@@ -1503,8 +1503,8 @@ invariant_mass_ov_rm_i287_i: entity work.calo_calo_calo_correlation_orm_conditio
         iso_lut_calo3 => X"E",    
 -- correlation cuts for overlap removal
         dr_orm_cut => true,
-        dr_orm_upper_limit => X"0000A028", 
-        dr_orm_lower_limit => X"00000000",
+        dr_orm_upper_limit => X"000000000000A028", 
+        dr_orm_lower_limit => X"0000000000000000",
 -- correlation cuts
         mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
         mass_width => JET_JET_MASS_VECTOR_WIDTH,
@@ -1582,6 +1582,7 @@ calo_muon_correlation_i109_i: entity work.calo_muon_correlation_condition
         condition_o => calo_muon_correlation_i109);
 
 invariant_mass_i59_i: entity work.muon_muon_correlation_condition
+    generic map(
         same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
@@ -1619,6 +1620,7 @@ invariant_mass_i59_i: entity work.muon_muon_correlation_condition
         condition_o => invariant_mass_i59);
 
 invariant_mass_i74_i: entity work.muon_muon_correlation_condition
+    generic map(
         same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
@@ -1652,6 +1654,7 @@ invariant_mass_i74_i: entity work.muon_muon_correlation_condition
         condition_o => invariant_mass_i74);
 
 muon_muon_correlation_i46_i: entity work.muon_muon_correlation_condition
+    generic map(
         same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
@@ -1686,6 +1689,7 @@ muon_muon_correlation_i46_i: entity work.muon_muon_correlation_condition
         condition_o => muon_muon_correlation_i46);
 
 muon_muon_correlation_i52_i: entity work.muon_muon_correlation_condition
+    generic map(
         same_bx => true,        
 -- parameter for object 1
         muon1_object_low => 0, muon1_object_high => 7,
