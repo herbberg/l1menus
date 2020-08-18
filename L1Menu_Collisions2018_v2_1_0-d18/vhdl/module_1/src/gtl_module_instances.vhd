@@ -10,7 +10,7 @@
 -- 8ebe92b7-28fd-4707-8bfb-ee7113a44883
 
 -- Unique ID of firmware implementation:
--- f9cfb1df-e817-41d3-a758-b6ab41d64243
+-- 50ac861d-d844-49bf-b740-07b2ae4fdf50
 
 -- Scale set:
 -- scales_2020_06_16
@@ -380,7 +380,7 @@ double_eg_i169_i: entity work.calo_conditions
         calo_object_slice_2_low => 0, calo_object_slice_2_high => 11,    
         nr_templates => 2,
         pt_thresholds => (X"001E", X"0014", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"00C6", X"0000", X"0000"),
         -- no phi cuts
@@ -401,7 +401,7 @@ double_eg_i172_i: entity work.calo_conditions
         calo_object_slice_2_low => 0, calo_object_slice_2_high => 11,    
         nr_templates => 2,
         pt_thresholds => (X"0032", X"0018", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"00C6", X"0000", X"0000"),
         -- no phi cuts
@@ -422,7 +422,7 @@ double_eg_i176_i: entity work.calo_conditions
         calo_object_slice_2_low => 0, calo_object_slice_2_high => 11,    
         nr_templates => 2,
         pt_thresholds => (X"002C", X"0014", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"00C6", X"0000", X"0000"),
         -- no phi cuts
@@ -443,7 +443,7 @@ double_eg_i180_i: entity work.calo_conditions
         calo_object_slice_2_low => 0, calo_object_slice_2_high => 11,    
         nr_templates => 2,
         pt_thresholds => (X"0030", X"0030", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0030", X"0030", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00CF", X"00CF", X"0000", X"0000"),
         -- no phi cuts
@@ -464,7 +464,7 @@ double_jet_i254_i: entity work.calo_conditions
         calo_object_slice_2_low => 0, calo_object_slice_2_high => 11,    
         nr_templates => 2,
         pt_thresholds => (X"00C8", X"00C8", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"00C6", X"0000", X"0000"),
         -- no phi cuts
@@ -504,7 +504,7 @@ double_jet_i295_i: entity work.calo_conditions
         calo_object_slice_2_low => 0, calo_object_slice_2_high => 11,    
         nr_templates => 2,
         pt_thresholds => (X"00AA", X"0096", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"00C6", X"0000", X"0000"),
         -- no phi cuts
@@ -525,7 +525,7 @@ double_tau_i205_i: entity work.calo_conditions
         calo_object_slice_2_low => 0, calo_object_slice_2_high => 11,    
         nr_templates => 2,
         pt_thresholds => (X"003C", X"003C", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0030", X"0030", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00CF", X"00CF", X"0000", X"0000"),
         -- no phi cuts
@@ -545,7 +545,7 @@ single_eg_i127_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"001E", X"0000", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -565,7 +565,7 @@ single_eg_i131_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"0038", X"0000", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -585,7 +585,7 @@ single_eg_i137_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"0050", X"0000", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -623,7 +623,7 @@ single_eg_i144_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"0038", X"0000", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0072", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"003A", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -643,7 +643,7 @@ single_eg_i145_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"0038", X"0000", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"00C5", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"008D", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -663,7 +663,7 @@ single_eg_i148_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"0038", X"0000", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0022", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00DD", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -683,7 +683,7 @@ single_eg_i149_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"003C", X"0000", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -703,7 +703,7 @@ single_eg_i155_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"0034", X"0000", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0022", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00DD", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -723,7 +723,7 @@ single_eg_i158_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"0038", X"0000", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -743,7 +743,7 @@ single_eg_i165_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"0044", X"0000", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -799,7 +799,7 @@ single_jet_i240_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"0140", X"0000", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -819,7 +819,7 @@ single_jet_i248_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"00F0", X"0000", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"00BA", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"008D", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -839,7 +839,7 @@ single_jet_i249_i: entity work.calo_conditions
         calo_object_slice_1_low => 0, calo_object_slice_1_high => 11,    
         nr_templates => 1,
         pt_thresholds => (X"00F0", X"0000", X"0000", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0072", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits => (X"0045", X"0000", X"0000", X"0000"),
         -- no phi cuts
@@ -861,7 +861,7 @@ triple_eg_i183_i: entity work.calo_conditions
         calo_object_slice_3_low => 0, calo_object_slice_3_high => 11,    
         nr_templates => 3,
         pt_thresholds => (X"0024", X"0022", X"0010", X"0000"),
-        nr_eta_windows => 1,
+        nr_eta_windows => (1, 1, 1, 1),
         eta_w1_upper_limits => (X"0039", X"0039", X"0039", X"0000"), 
         eta_w1_lower_limits => (X"00C6", X"00C6", X"00C6", X"0000"),
         -- no phi cuts
