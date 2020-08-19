@@ -1354,7 +1354,6 @@ invariant_mass_i269_i: entity work.calo_calo_correlation_condition
 invariant_mass_i93_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
-        false, false, false, true, 0, false,
         NR_EG_OBJECTS,
         0, 11, true, EG_TYPE,
         X"000F",
