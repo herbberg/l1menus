@@ -1379,15 +1379,19 @@ invariant_mass_i93_i: entity work.calo_calo_correlation_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
+        false,
         X"00000000", X"00000000",
+        false,
         X"00000000", X"00000000",
+        false,
         X"0000000000000000", X"0000000000000000",
+        true, 0, EG_EG_MASS_VECTOR_WIDTH,
         X"0000000001312D00", X"0000000000000000",
-        X"000000000000000000000", X"000000000000000000000",
-        X"0000000000000000", 
-        EG_EG_MASS_VECTOR_WIDTH,
         EG_EG_MASS_DIV_DR_VECTOR_WIDTH, 
-        EG_EG_TBPT_VECTOR_WIDTH
+        X"000000000000000000000", X"000000000000000000000",
+        false, EG_EG_TBPT_VECTOR_WIDTH,
+        X"0000000000000000" 
+        
     )
     port map(lhc_clk, eg_bx_0, eg_bx_0,    
         mass_inv => eg_eg_bx_0_bx_0_mass_inv_vector,
