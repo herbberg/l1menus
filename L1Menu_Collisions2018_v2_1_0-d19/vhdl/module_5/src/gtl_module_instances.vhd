@@ -1316,37 +1316,80 @@ invariant_mass_i269_i: entity work.calo_calo_correlation_condition
         mass_inv => jet_jet_bx_0_bx_0_mass_inv_vector,
         condition_o => invariant_mass_i269);
 
+-- invariant_mass_i93_i: entity work.calo_calo_correlation_condition
+--     generic map(
+--         same_bx => true,        
+-- -- parameter for object 1
+--         nr_obj_calo1 => NR_EG_OBJECTS,
+--         obj_type_calo1 => EG_TYPE,
+--         calo1_object_low => 0, calo1_object_high => 11,
+--         et_threshold_calo1 => X"000F",
+--         nr_eta_windows_calo1 => 1,
+--         eta_w1_upper_limit_calo1 => X"0030", 
+--         eta_w1_lower_limit_calo1 => X"00CF",
+--         -- no phi cuts for object 1
+--         -- no isolation cut for object 1    
+-- -- parameter for object 2
+--         nr_obj_calo2 => NR_EG_OBJECTS,
+--         obj_type_calo2 => EG_TYPE,
+--         calo2_object_low => 0, calo2_object_high => 11,
+--         et_threshold_calo2 => X"000F",
+--         nr_eta_windows_calo2 => 1,
+--         eta_w1_upper_limit_calo2 => X"0030", 
+--         eta_w1_lower_limit_calo2 => X"00CF",
+--         -- no phi cuts for object 2
+--         -- no isolation cut for object 2    
+-- -- correlation cuts
+--         mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
+--         mass_width => EG_EG_MASS_VECTOR_WIDTH,
+--         mass_upper_limit => X"0000000001312D00",
+--         mass_lower_limit => X"0000000000000000",
+--         twobody_pt_cut => false    
+--     )
+--     port map(lhc_clk, eg_bx_0, eg_bx_0,
+--         mass_inv => eg_eg_bx_0_bx_0_mass_inv_vector,
+--         condition_o => invariant_mass_i93);
+
+-- HB 2020-08-19: test
 invariant_mass_i93_i: entity work.calo_calo_correlation_condition
     generic map(
-        same_bx => true,        
--- parameter for object 1
-        nr_obj_calo1 => NR_EG_OBJECTS,
-        obj_type_calo1 => EG_TYPE,
-        calo1_object_low => 0, calo1_object_high => 11,
-        et_threshold_calo1 => X"000F",
-        nr_eta_windows_calo1 => 1,
-        eta_w1_upper_limit_calo1 => X"0030", 
-        eta_w1_lower_limit_calo1 => X"00CF",
-        -- no phi cuts for object 1
-        -- no isolation cut for object 1    
--- parameter for object 2
-        nr_obj_calo2 => NR_EG_OBJECTS,
-        obj_type_calo2 => EG_TYPE,
-        calo2_object_low => 0, calo2_object_high => 11,
-        et_threshold_calo2 => X"000F",
-        nr_eta_windows_calo2 => 1,
-        eta_w1_upper_limit_calo2 => X"0030", 
-        eta_w1_lower_limit_calo2 => X"00CF",
-        -- no phi cuts for object 2
-        -- no isolation cut for object 2    
--- correlation cuts
-        mass_cut => true, mass_type => INVARIANT_MASS_TYPE,       
-        mass_width => EG_EG_MASS_VECTOR_WIDTH,
-        mass_upper_limit => X"0000000001312D00",
-        mass_lower_limit => X"0000000000000000",
-        twobody_pt_cut => false    
+        true,
+        false, false, false, true, 0, false,
+        NR_EG_OBJECTS,
+        0, 11, true, EG_TYPE,
+        X"000F",
+        1, 
+        X"0030", X"00CF",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        true, X"0000", X"0000",
+        true, X"0000", X"0000",
+        X"F",
+        NR_EG_OBJECTS,
+        0, 11, true, EG_TYPE,
+        X"000F",
+        1, 
+        X"0030", X"00CF",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        X"0000", X"0000",
+        true, X"0000", X"0000",
+        true, X"0000", X"0000",
+        X"F",
+        X"00000000", X"00000000",
+        X"00000000", X"00000000",
+        X"0000000000000000", X"0000000000000000",
+        X"0000000001312D00", X"0000000000000000",
+        X"000000000000000000000", X"000000000000000000000",
+        X"0000000000000000", 
+        EG_EG_MASS_VECTOR_WIDTH,
+        EG_EG_MASS_DIV_DR_VECTOR_WIDTH, 
+        EG_EG_TBPT_VECTOR_WIDTH
     )
-    port map(lhc_clk, eg_bx_0, eg_bx_0,
+    port map(lhc_clk, eg_bx_0, eg_bx_0,    
         mass_inv => eg_eg_bx_0_bx_0_mass_inv_vector,
         condition_o => invariant_mass_i93);
 
