@@ -10,7 +10,7 @@
 -- b10f1a3a-fae1-45cc-bcc8-671273cee1b2
 
 -- Unique ID of firmware implementation:
--- 838bde8a-5d8a-4756-b463-88a3f0ccd50c
+-- 464eaa72-a642-4986-93ca-d61b07b8d0bf
 
 -- Scale set:
 -- scales_2020_07_20
@@ -37,14 +37,14 @@ constant global_index: global_index_array := (
         428, -- module_index: 13, name: L1_ETMHF90_HTT60er
           4, -- module_index: 14, name: L1_SingleMuOpen
         460, -- module_index: 15, name: L1_ZeroBias_copy
-        146, -- module_index: 16, name: L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5
-        294, -- module_index: 17, name: L1_IsoTau40er2p1_ETMHF110
+        294, -- module_index: 16, name: L1_IsoTau40er2p1_ETMHF110
+        146, -- module_index: 17, name: L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5
         464, -- module_index: 18, name: L1_BptxOR
         148, -- module_index: 19, name: L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5
-        451, -- module_index: 20, name: L1_SingleJet20er2p5_NotBptxOR_3BX
-        443, -- module_index: 21, name: L1_ETMHF120_NotSecondBunchInTrain
-        291, -- module_index: 22, name: L1_IsoTau40er2p1_ETMHF80
-        446, -- module_index: 23, name: L1_SingleMuOpen_NotBptxOR
+        443, -- module_index: 20, name: L1_ETMHF120_NotSecondBunchInTrain
+        451, -- module_index: 21, name: L1_SingleJet20er2p5_NotBptxOR_3BX
+        446, -- module_index: 22, name: L1_SingleMuOpen_NotBptxOR
+        291, -- module_index: 23, name: L1_IsoTau40er2p1_ETMHF80
         128, -- module_index: 24, name: L1_Mu3er1p5_Jet100er2p5_ETMHF40
         292, -- module_index: 25, name: L1_IsoTau40er2p1_ETMHF90
         151, -- module_index: 26, name: L1_DoubleMu3_SQ_HTT240er
