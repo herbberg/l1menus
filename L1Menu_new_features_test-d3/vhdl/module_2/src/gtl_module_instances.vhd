@@ -10,7 +10,7 @@
 -- cb154e4d-ac3d-4906-9155-0b6881069753
 
 -- Unique ID of firmware implementation:
--- f83e25d8-30b8-4fc4-bd86-7840c861ff83
+-- 72c355c6-b5fa-41b8-8050-779fcadd2302
 
 -- Scale set:
 -- scales_2020_07_20
@@ -128,85 +128,75 @@
         end generate jet_jet_bx_0_bx_0_invmass_l2;
     end generate jet_jet_bx_0_bx_0_invmass_l1;
 -- Instantiations of conditions
-invariant_mass3_i7_i: entity work.calo_mass_3_obj_condition
+invariant_mass3_i7_i: entity work.calo_calo_mass_3_obj_condition
     generic map(
-        NR_JET_OBJECTS, JET_TYPE,
-        0, 11, true, X"0028", 0,
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        true, X"0000", X"0000",
-        true, X"0000", X"0000",
-        X"F",
-        0, 11, true, X"0028", 0,
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        true, X"0000", X"0000",
-        true, X"0000", X"0000",
-        X"F",
-        0, 11, true, X"0028", 0,
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        true, X"0000", X"0000",
-        true, X"0000", X"0000",
-        X"F",
-        X"00041A6642C78140", X"0000000077359400",
-        JET_PT_VECTOR_WIDTH, JET_JET_COSH_COS_PRECISION, JET_JET_COSH_COS_VECTOR_WIDTH
+-- parameter for object 1
+        nr_obj => NR_JET_OBJECTS,
+        obj_type => JET_TYPE,
+        calo1_object_low => 0, calo1_object_high => 11,
+        pt_threshold_calo1 => X"0028",
+        -- no eta cuts for object 1
+        -- no phi cuts for object 1
+        -- no isolation cut for object 1    
+-- parameter for object 2
+        calo2_object_low => 0, calo2_object_high => 11,
+        pt_threshold_calo2 => X"0028",
+        -- no eta cuts for object 2
+        -- no phi cuts for object 2
+        -- no isolation cut for object 2    
+-- parameter for object 3
+        calo3_object_low => 0, calo3_object_high => 11,
+        pt_threshold_calo3 => X"0028",
+        -- no eta cuts for object 3
+        -- no phi cuts for object 3
+        -- no isolation cut for object 3    
+-- correlation cut
+        mass_upper_limit_vector => X"00041A6642C78140", 
+        mass_lower_limit_vector => X"0000000077359400",
+        mass_width => JET_JET_MASS_VECTOR_WIDTH
     )
-    port map(lhc_clk, jet_bx_0, jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, jet_jet_bx_0_bx_0_cos_dphi_vector,
+    port map(lhc_clk, jet_bx_0,
+        jet_jet_bx_0_bx_0_mass_inv_vector,
         invariant_mass3_i7);
 
-invariant_mass3_i3_i: entity work.muon_mass_3_obj_condition
+invariant_mass3_i3_i: entity work.muon_muon_mass_3_obj_condition
     generic map(
-        0, 7, true, X"0015", 0,
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        true, X"0000", X"0000",
-        true, X"0000", X"0000",
-        "ign", X"FFFF", X"F",
-        false, X"0000", X"0000", X"F",
-        0, 7, true, X"0015", 0,
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        true, X"0000", X"0000",
-        true, X"0000", X"0000",
-        "ign", X"FFFF", X"F",
-        false, X"0000", X"0000", X"F",
-        0, 7, true, X"0015", 0,
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        X"0000", X"0000",
-        true, X"0000", X"0000",
-        true, X"0000", X"0000",
-        "ign", X"FFFF", X"F",
-        false, X"0000", X"0000", X"F",
-        "ig",
-        X"002907FE9BCB0C80", X"00000004A817C800",
-        MU_PT_VECTOR_WIDTH, MU_UPT_VECTOR_WIDTH, MU_MU_COSH_COS_PRECISION, MU_MU_COSH_COS_VECTOR_WIDTH
+-- parameter for object 1
+        muon1_object_low => 0, muon1_object_high => 7,
+        pt_threshold_muon1 => X"0015",
+        -- no eta cuts for object 1
+        -- no phi cuts for object 1
+        -- no charge cut for object 1
+        -- no quality cut for object 1
+        -- no isolation cut for object 1
+        -- no unconstraint pt cut for object 1    
+-- parameter for object 2
+        muon2_object_low => 0, muon2_object_high => 7,
+        pt_threshold_muon2 => X"0015",
+        -- no eta cuts for object 2
+        -- no phi cuts for object 2
+        -- no charge cut for object 2
+        -- no quality cut for object 2
+        -- no isolation cut for object 2
+        -- no unconstraint pt cut for object 2    
+-- parameter for object 3
+        muon3_object_low => 0, muon3_object_high => 7,
+        pt_threshold_muon3 => X"0015",
+        -- no eta cuts for object 3
+        -- no phi cuts for object 3
+        -- no charge cut for object 3
+        -- no quality cut for object 3
+        -- no isolation cut for object 3
+        -- no unconstraint pt cut for object 3    
+-- correlation cuts
+        -- no charge correlation for this condition    
+        mass_upper_limit_vector => X"002907FE9BCB0C80", 
+        mass_lower_limit_vector => X"00000004A817C800",
+        mass_width => MU_MU_MASS_VECTOR_WIDTH
     )
-    port map(lhc_clk, mu_bx_0,
-        ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-        mu_pt_vector_bx_0,
-        mu_upt_vector_bx_0,
-        mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass3_i3);
+    port map(lhc_clk, mu_bx_0,    
+        mass_inv => mu_mu_bx_0_bx_0_mass_inv_vector,
+        condition_o => invariant_mass3_i3);
 
 -- Instantiations of algorithms
 
