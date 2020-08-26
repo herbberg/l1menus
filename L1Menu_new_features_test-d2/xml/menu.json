@@ -1,0 +1,17 @@
+{
+  "firmware_uuid" : "c96bf330-41f9-4dc3-b6d5-05e076215bbc",
+  "menu_uuid"     : "cb154e4d-ac3d-4906-9155-0b6881069753",
+  "n_modules"     : 6,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_DoubleMu10_20MassUpt_40to100", 0, 0, 0],
+    ["L1_DoubleEg10_20MASSDR_20DETA_MAX_1p5", 1, 0, 1],
+    ["L1_TripleJet20Mass3Obj_min_150", 2, 1, 1],
+    ["L1_TripleMu10Mass3Obj_min_200", 3, 2, 0],
+    ["L1_DoubleMu30MASSUPT_min_100", 4, 3, 0],
+    ["L1_DounleMu40_50MASSDR_200DR_MAX_0p4", 5, 4, 0],
+    ["L1_DoubleEg10_20MASSDR_20", 6, 5, 0],
+    ["L1_TripleJet20Mass3Obj_min_200", 7, 2, 1],
+    ["L1_TripleMu10Mass3Obj_min_150", 8, 1, 0]
+  ]
+}
