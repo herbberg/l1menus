@@ -10,13 +10,13 @@
 -- cb154e4d-ac3d-4906-9155-0b6881069753
 
 -- Unique ID of firmware implementation:
--- c96bf330-41f9-4dc3-b6d5-05e076215bbc
+-- 3285a6dd-72ae-4223-beb5-e049dc7cc44f
 
 -- Scale set:
 -- scales_2020_07_20
 
 -- VHDL producer version
--- v2.8.0
+-- v2.8.1
 
 -- External condition assignment
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
