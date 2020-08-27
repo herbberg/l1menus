@@ -10,13 +10,13 @@
 -- cb154e4d-ac3d-4906-9155-0b6881069753
 
 -- Unique ID of firmware implementation:
--- 3285a6dd-72ae-4223-beb5-e049dc7cc44f
+-- 5ef9ee19-ae79-4d17-a69d-7f1c87446e73
 
 -- Scale set:
 -- scales_2020_07_20
 
 -- VHDL producer version
--- v2.8.1
+-- v2.8.2
 
 -- External condition assignment
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
@@ -97,10 +97,13 @@ invariant_mass_upt_i4_i: entity work.muon_muon_correlation_condition
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"00000000000274E8", X"0000000000000000",
-        X"002907FE9BCB0C80", X"000000012A05F200",
-        pt_width => MU_PT_VECTOR_WIDTH, mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION,
+        mass_upper_limit => X"002907FE9BCB0C80",
+        mass_lower_limit => X"000000012A05F200",        
+        pt_width => MU_PT_VECTOR_WIDTH, 
+        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
         cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
-        pt_sq_threshold_vector => X"0000000000000000", sin_cos_width => MUON_SIN_COS_VECTOR_WIDTH,
+        pt_sq_threshold_vector => X"0000000000000000", 
+        sin_cos_width => CALO_SIN_COS_VECTOR_WIDTH, 
         pt_sq_sin_cos_precision => MU_MU_SIN_COS_PRECISION
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
@@ -110,7 +113,7 @@ invariant_mass_upt_i4_i: entity work.muon_muon_correlation_condition
         mu_upt_vector_bx_0, mu_upt_vector_bx_0,
         mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
         mu_cos_phi_bx_0, mu_cos_phi_bx_0, mu_sin_phi_bx_0, mu_sin_phi_bx_0,
-        invariant_mass_upt_i4);
+        condition_o => invariant_mass_upt_i4);
 
 -- Instantiations of algorithms
 

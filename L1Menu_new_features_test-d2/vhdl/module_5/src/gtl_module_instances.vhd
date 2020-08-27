@@ -10,13 +10,13 @@
 -- cb154e4d-ac3d-4906-9155-0b6881069753
 
 -- Unique ID of firmware implementation:
--- 3285a6dd-72ae-4223-beb5-e049dc7cc44f
+-- 5ef9ee19-ae79-4d17-a69d-7f1c87446e73
 
 -- Scale set:
 -- scales_2020_07_20
 
 -- VHDL producer version
--- v2.8.1
+-- v2.8.2
 
 -- External condition assignment
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
@@ -84,7 +84,7 @@
     end generate eg_eg_bx_0_bx_0_calc_l1;
 
 -- Instantiations of conditions
-invariant_mass_delta_r_i6_i: entity work.calo_calo_mass_div_dr_condition
+invariant_mass_delta_r_i6_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
         false, false, false, true, 3, false,
@@ -113,13 +113,22 @@ invariant_mass_delta_r_i6_i: entity work.calo_calo_mass_div_dr_condition
         X"00000000", X"00000000",
         X"00000000", X"00000000",
         X"0000000000000000", X"0000000000000000",
-        X"0000000000000000", X"0000000001312D00",
-        EG_PT_VECTOR_WIDTH, EG_PT_VECTOR_WIDTH, EG_EG_COSH_COS_PRECISION, EG_EG_COSH_COS_VECTOR_WIDTH,
-        X"0000000000000000", CALO_SIN_COS_VECTOR_WIDTH, EG_EG_SIN_COS_PRECISION
+        mass_div_dr_threshold => X"000000000000001312D00",        
+        pt1_width => EG_PT_VECTOR_WIDTH, 
+        pt2_width => EG_PT_VECTOR_WIDTH, 
+        mass_cosh_cos_precision => EG_EG_COSH_COS_PRECISION, 
+        cosh_cos_width => EG_EG_COSH_COS_VECTOR_WIDTH,
+        pt_sq_threshold_vector => X"0000000000000000", 
+        sin_cos_width => CALO_SIN_COS_VECTOR_WIDTH, 
+        pt_sq_sin_cos_precision => EG_EG_SIN_COS_PRECISION
     )
     port map(lhc_clk, eg_bx_0, eg_bx_0,
-        eg_eg_bx_0_bx_0_mass_div_dr,
-        invariant_mass_delta_r_i6);
+        diff_eg_eg_bx_0_bx_0_eta_vector, diff_eg_eg_bx_0_bx_0_phi_vector,
+        eg_pt_vector_bx_0, eg_pt_vector_bx_0,
+        eg_eg_bx_0_bx_0_cosh_deta_vector, eg_eg_bx_0_bx_0_cos_dphi_vector,
+        eg_cos_phi_bx_0, eg_cos_phi_bx_0, eg_sin_phi_bx_0, eg_sin_phi_bx_0,
+        mass_div_dr => eg_eg_bx_0_bx_0_mass_div_dr,
+        condition_o => invariant_mass_delta_r_i6);
 
 -- Instantiations of algorithms
 
