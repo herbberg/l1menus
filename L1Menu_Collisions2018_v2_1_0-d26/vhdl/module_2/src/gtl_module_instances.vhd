@@ -10,7 +10,7 @@
 -- b10f1a3a-fae1-45cc-bcc8-671273cee1b2
 
 -- Unique ID of firmware implementation:
--- a70c2e18-3578-4ebf-9916-eaa20e2b3fda
+-- 824c0d34-2412-4408-a7a4-25216601dd70
 
 -- Scale set:
 -- scales_2020_07_20
@@ -1691,7 +1691,9 @@ invariant_mass_i58_i: entity work.correlation_conditions
         mass_lower_limit => X"000000000175D720",    
         muon_requested_charge_correlation => "os"
     )
-    port map(lhc_clk, mu_bx_0, mu_bx_0,
+    port map(lhc_clk, 
+        muon1_data_i => mu_bx_0, 
+        muon2_data_i => mu_bx_0,
         ls_charcorr_double => ls_charcorr_double_bx_0_bx_0, 
         os_charcorr_double => os_charcorr_double_bx_0_bx_0,
         mass_inv => mu_mu_bx_0_bx_0_mass_inv_vector,
@@ -1729,7 +1731,9 @@ invariant_mass_i72_i: entity work.correlation_conditions
         mass_lower_limit => X"0000000000BEBC20",    
         muon_requested_charge_correlation => "os"
     )
-    port map(lhc_clk, mu_bx_0, mu_bx_0,
+    port map(lhc_clk, 
+        muon1_data_i => mu_bx_0, 
+        muon2_data_i => mu_bx_0,
         ls_charcorr_double => ls_charcorr_double_bx_0_bx_0, 
         os_charcorr_double => os_charcorr_double_bx_0_bx_0,
         mass_inv => mu_mu_bx_0_bx_0_mass_inv_vector,
@@ -1770,7 +1774,9 @@ muon_muon_correlation_i51_i: entity work.correlation_conditions
         dr_lower_limit => X"0000000000000000",    
         muon_requested_charge_correlation => "os"
     )
-    port map(lhc_clk, mu_bx_0, mu_bx_0,
+    port map(lhc_clk, 
+        muon1_data_i => mu_bx_0, 
+        muon2_data_i => mu_bx_0,
         ls_charcorr_double => ls_charcorr_double_bx_0_bx_0, 
         os_charcorr_double => os_charcorr_double_bx_0_bx_0,
         dr => mu_mu_bx_0_bx_0_delta_r_vector,
@@ -1807,7 +1813,9 @@ muon_muon_correlation_i54_i: entity work.correlation_conditions
         dr_lower_limit => X"0000000000000000",    
         muon_requested_charge_correlation => "os"
     )
-    port map(lhc_clk, mu_bx_0, mu_bx_0,
+    port map(lhc_clk, 
+        muon1_data_i => mu_bx_0, 
+        muon2_data_i => mu_bx_0,
         ls_charcorr_double => ls_charcorr_double_bx_0_bx_0, 
         os_charcorr_double => os_charcorr_double_bx_0_bx_0,
         dr => mu_mu_bx_0_bx_0_delta_r_vector,
