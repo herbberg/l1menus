@@ -10,7 +10,7 @@
 -- b10f1a3a-fae1-45cc-bcc8-671273cee1b2
 
 -- Unique ID of firmware implementation:
--- 8f792543-49f1-497d-b362-38f4121c1e19
+-- 01b4d816-de86-4561-9c60-b7b908166949
 
 -- Scale set:
 -- scales_2020_07_20
@@ -1302,20 +1302,20 @@ calo_calo_correlation_i110_i: entity work.correlation_conditions
     generic map(
         same_bx => true,        
 -- parameter for object 1
-        nr_obj_obj1 => NR_JET_OBJECTS,
-        obj_type_obj1 => JET_TYPE,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
         slice_low_obj1 => 0, slice_high_obj1 => 11,
-        et_threshold_obj1 => X"0040",
+        pt_threshold_obj1 => X"0040",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"0034", 
         eta_w1_lower_limit_obj1 => X"00CB",
         -- no phi cuts for object 1
         -- no isolation cut for object 1    
 -- parameter for object 2
-        nr_obj_obj2 => NR_JET_OBJECTS,
-        obj_type_obj2 => JET_TYPE,
+        nr_obj2 => NR_JET_OBJECTS,
+        type_obj2 => JET_TYPE,
         slice_low_obj2 => 0, slice_high_obj2 => 11,
-        et_threshold_obj2 => X"0040",
+        pt_threshold_obj2 => X"0040",
         nr_eta_windows_obj2 => 1,
         eta_w1_upper_limit_obj2 => X"0034", 
         eta_w1_lower_limit_obj2 => X"00CB",
@@ -1337,20 +1337,20 @@ calo_calo_correlation_i187_i: entity work.correlation_conditions
     generic map(
         same_bx => true,        
 -- parameter for object 1
-        nr_obj_obj1 => NR_EG_OBJECTS,
-        obj_type_obj1 => EG_TYPE,
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
         slice_low_obj1 => 0, slice_high_obj1 => 11,
-        et_threshold_obj1 => X"0038",
+        pt_threshold_obj1 => X"0038",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"0030", 
         eta_w1_lower_limit_obj1 => X"00CF",
         -- no phi cuts for object 1
         calo_iso_lut_obj1 => X"C",    
 -- parameter for object 2
-        nr_obj_obj2 => NR_JET_OBJECTS,
-        obj_type_obj2 => JET_TYPE,
+        nr_obj2 => NR_JET_OBJECTS,
+        type_obj2 => JET_TYPE,
         slice_low_obj2 => 0, slice_high_obj2 => 11,
-        et_threshold_obj2 => X"0044",
+        pt_threshold_obj2 => X"0044",
         nr_eta_windows_obj2 => 1,
         eta_w1_upper_limit_obj2 => X"0039", 
         eta_w1_lower_limit_obj2 => X"00C6",
@@ -1372,20 +1372,20 @@ invariant_mass_i211_i: entity work.correlation_conditions
     generic map(
         same_bx => true,        
 -- parameter for object 1
-        nr_obj_obj1 => NR_TAU_OBJECTS,
-        obj_type_obj1 => TAU_TYPE,
+        nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
         slice_low_obj1 => 0, slice_high_obj1 => 11,
-        et_threshold_obj1 => X"003C",
+        pt_threshold_obj1 => X"003C",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"0030", 
         eta_w1_lower_limit_obj1 => X"00CF",
         -- no phi cuts for object 1
         calo_iso_lut_obj1 => X"E",    
 -- parameter for object 2
-        nr_obj_obj2 => NR_TAU_OBJECTS,
-        obj_type_obj2 => TAU_TYPE,
+        nr_obj2 => NR_TAU_OBJECTS,
+        type_obj2 => TAU_TYPE,
         slice_low_obj2 => 0, slice_high_obj2 => 11,
-        et_threshold_obj2 => X"003C",
+        pt_threshold_obj2 => X"003C",
         nr_eta_windows_obj2 => 1,
         eta_w1_upper_limit_obj2 => X"0030", 
         eta_w1_lower_limit_obj2 => X"00CF",
@@ -1408,20 +1408,20 @@ invariant_mass_i259_i: entity work.correlation_conditions
     generic map(
         same_bx => true,        
 -- parameter for object 1
-        nr_obj_obj1 => NR_JET_OBJECTS,
-        obj_type_obj1 => JET_TYPE,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
         slice_low_obj1 => 0, slice_high_obj1 => 11,
-        et_threshold_obj1 => X"003C",
+        pt_threshold_obj1 => X"003C",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"0039", 
         eta_w1_lower_limit_obj1 => X"00C6",
         -- no phi cuts for object 1
         -- no isolation cut for object 1    
 -- parameter for object 2
-        nr_obj_obj2 => NR_JET_OBJECTS,
-        obj_type_obj2 => JET_TYPE,
+        nr_obj2 => NR_JET_OBJECTS,
+        type_obj2 => JET_TYPE,
         slice_low_obj2 => 0, slice_high_obj2 => 11,
-        et_threshold_obj2 => X"003C",
+        pt_threshold_obj2 => X"003C",
         nr_eta_windows_obj2 => 1,
         eta_w1_upper_limit_obj2 => X"0039", 
         eta_w1_lower_limit_obj2 => X"00C6",
@@ -1448,20 +1448,20 @@ invariant_mass_i264_i: entity work.correlation_conditions
     generic map(
         same_bx => true,        
 -- parameter for object 1
-        nr_obj_obj1 => NR_JET_OBJECTS,
-        obj_type_obj1 => JET_TYPE,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
         slice_low_obj1 => 0, slice_high_obj1 => 11,
-        et_threshold_obj1 => X"003C",
+        pt_threshold_obj1 => X"003C",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"0039", 
         eta_w1_lower_limit_obj1 => X"00C6",
         -- no phi cuts for object 1
         -- no isolation cut for object 1    
 -- parameter for object 2
-        nr_obj_obj2 => NR_JET_OBJECTS,
-        obj_type_obj2 => JET_TYPE,
+        nr_obj2 => NR_JET_OBJECTS,
+        type_obj2 => JET_TYPE,
         slice_low_obj2 => 0, slice_high_obj2 => 11,
-        et_threshold_obj2 => X"003C",
+        pt_threshold_obj2 => X"003C",
         nr_eta_windows_obj2 => 1,
         eta_w1_upper_limit_obj2 => X"0039", 
         eta_w1_lower_limit_obj2 => X"00C6",
@@ -1530,8 +1530,8 @@ invariant_mass_ov_rm_i287_i: entity work.calo_calo_calo_correlation_orm_conditio
 calo_muon_correlation_i101_i: entity work.correlation_conditions
     generic map(
 -- parameter for object 1
-        nr_obj_obj1 => NR_JET_OBJECTS,
-        obj_type_obj1 => JET_TYPE,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
         slice_low_obj1 => 0, slice_high_obj1 => 11,
         pt_threshold_obj1 => X"00F0",
         nr_eta_windows_obj1 => 1,
@@ -1540,8 +1540,8 @@ calo_muon_correlation_i101_i: entity work.correlation_conditions
         -- no phi cuts for object 1
         -- no isolation cut for object 1    
 -- parameter for object 2
-        nr_obj_obj2 => NR_MU_OBJECTS,
-        obj_type_obj2 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
         slice_low_obj2 => 0, slice_high_obj2 => 7,
         pt_threshold_obj2 => X"0007",
         -- no eta cuts for object 2
@@ -1565,8 +1565,8 @@ calo_muon_correlation_i101_i: entity work.correlation_conditions
 calo_muon_correlation_i109_i: entity work.correlation_conditions
     generic map(
 -- parameter for object 1
-        nr_obj_obj1 => NR_JET_OBJECTS,
-        obj_type_obj1 => JET_TYPE,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
         slice_low_obj1 => 0, slice_high_obj1 => 11,
         pt_threshold_obj1 => X"0040",
         nr_eta_windows_obj1 => 1,
@@ -1575,8 +1575,8 @@ calo_muon_correlation_i109_i: entity work.correlation_conditions
         -- no phi cuts for object 1
         -- no isolation cut for object 1    
 -- parameter for object 2
-        nr_obj_obj2 => NR_MU_OBJECTS,
-        obj_type_obj2 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
         slice_low_obj2 => 0, slice_high_obj2 => 7,
         pt_threshold_obj2 => X"0015",
         nr_eta_windows_obj2 => 1,
@@ -1603,8 +1603,8 @@ invariant_mass_i59_i: entity work.correlation_conditions
     generic map(
         same_bx => true,        
 -- parameter for object 1
-        nr_obj_obj1 => NR_MU_OBJECTS,
-        obj_type_obj1 => MU_TYPE,
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
         slice_low_obj1 => 0, slice_high_obj1 => 7,
         pt_threshold_obj1 => X"000A",
         nr_eta_windows_obj1 => 1,
@@ -1616,8 +1616,8 @@ invariant_mass_i59_i: entity work.correlation_conditions
         -- no isolation cut for object 1
         -- no unconstraint pt cut for object 1    
 -- parameter for object 2
-        nr_obj_obj2 => NR_MU_OBJECTS,
-        obj_type_obj2 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
         slice_low_obj2 => 0, slice_high_obj2 => 7,
         pt_threshold_obj2 => X"000A",
         nr_eta_windows_obj2 => 1,
@@ -1645,8 +1645,8 @@ invariant_mass_i74_i: entity work.correlation_conditions
     generic map(
         same_bx => true,        
 -- parameter for object 1
-        nr_obj_obj1 => NR_MU_OBJECTS,
-        obj_type_obj1 => MU_TYPE,
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
         slice_low_obj1 => 0, slice_high_obj1 => 7,
         pt_threshold_obj1 => X"000B",
         -- no eta cuts for object 1
@@ -1656,8 +1656,8 @@ invariant_mass_i74_i: entity work.correlation_conditions
         -- no isolation cut for object 1
         -- no unconstraint pt cut for object 1    
 -- parameter for object 2
-        nr_obj_obj2 => NR_MU_OBJECTS,
-        obj_type_obj2 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
         slice_low_obj2 => 0, slice_high_obj2 => 7,
         pt_threshold_obj2 => X"0007",
         -- no eta cuts for object 2
@@ -1683,8 +1683,8 @@ muon_muon_correlation_i46_i: entity work.correlation_conditions
     generic map(
         same_bx => true,        
 -- parameter for object 1
-        nr_obj_obj1 => NR_MU_OBJECTS,
-        obj_type_obj1 => MU_TYPE,
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
         slice_low_obj1 => 0, slice_high_obj1 => 7,
         pt_threshold_obj1 => X"0001",
         nr_eta_windows_obj1 => 1,
@@ -1696,8 +1696,8 @@ muon_muon_correlation_i46_i: entity work.correlation_conditions
         -- no isolation cut for object 1
         -- no unconstraint pt cut for object 1    
 -- parameter for object 2
-        nr_obj_obj2 => NR_MU_OBJECTS,
-        obj_type_obj2 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
         slice_low_obj2 => 0, slice_high_obj2 => 7,
         pt_threshold_obj2 => X"0001",
         nr_eta_windows_obj2 => 1,
@@ -1722,8 +1722,8 @@ muon_muon_correlation_i52_i: entity work.correlation_conditions
     generic map(
         same_bx => true,        
 -- parameter for object 1
-        nr_obj_obj1 => NR_MU_OBJECTS,
-        obj_type_obj1 => MU_TYPE,
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
         slice_low_obj1 => 0, slice_high_obj1 => 7,
         pt_threshold_obj1 => X"0001",
         nr_eta_windows_obj1 => 1,
@@ -1735,8 +1735,8 @@ muon_muon_correlation_i52_i: entity work.correlation_conditions
         -- no isolation cut for object 1
         -- no unconstraint pt cut for object 1    
 -- parameter for object 2
-        nr_obj_obj2 => NR_MU_OBJECTS,
-        obj_type_obj2 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
         slice_low_obj2 => 0, slice_high_obj2 => 7,
         pt_threshold_obj2 => X"0001",
         nr_eta_windows_obj2 => 1,
