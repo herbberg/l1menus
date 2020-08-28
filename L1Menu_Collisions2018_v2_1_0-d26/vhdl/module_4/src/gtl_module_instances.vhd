@@ -10,7 +10,7 @@
 -- b10f1a3a-fae1-45cc-bcc8-671273cee1b2
 
 -- Unique ID of firmware implementation:
--- 01b4d816-de86-4561-9c60-b7b908166949
+-- a70c2e18-3578-4ebf-9916-eaa20e2b3fda
 
 -- Scale set:
 -- scales_2020_07_20
@@ -1633,7 +1633,7 @@ invariant_mass_i59_i: entity work.correlation_conditions
         mass_width => MU_MU_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"0000000009A7EC80",
         mass_lower_limit => X"000000000175D720",    
-        requested_charge_correlation => "os"
+        muon_requested_charge_correlation => "os"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double => ls_charcorr_double_bx_0_bx_0, 
@@ -1671,7 +1671,7 @@ invariant_mass_i74_i: entity work.correlation_conditions
         mass_width => MU_MU_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"000000000269FB20",
         mass_lower_limit => X"0000000000000000",    
-        requested_charge_correlation => "os"
+        muon_requested_charge_correlation => "os"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double => ls_charcorr_double_bx_0_bx_0, 
@@ -1712,7 +1712,7 @@ muon_muon_correlation_i46_i: entity work.correlation_conditions
         dr_cut => true,
         dr_upper_limit => X"00000000001DEC28", 
         dr_lower_limit => X"0000000000000000",    
-        requested_charge_correlation => "ig"
+        muon_requested_charge_correlation => "ig"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         dr => mu_mu_bx_0_bx_0_delta_r_vector,
@@ -1751,7 +1751,7 @@ muon_muon_correlation_i52_i: entity work.correlation_conditions
         dr_cut => true,
         dr_upper_limit => X"00000000001DEC28", 
         dr_lower_limit => X"0000000000000000",    
-        requested_charge_correlation => "os"
+        muon_requested_charge_correlation => "os"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double => ls_charcorr_double_bx_0_bx_0, 

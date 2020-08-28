@@ -10,7 +10,7 @@
 -- b10f1a3a-fae1-45cc-bcc8-671273cee1b2
 
 -- Unique ID of firmware implementation:
--- 01b4d816-de86-4561-9c60-b7b908166949
+-- a70c2e18-3578-4ebf-9916-eaa20e2b3fda
 
 -- Scale set:
 -- scales_2020_07_20
@@ -1466,7 +1466,7 @@ invariant_mass_i37_i: entity work.correlation_conditions
         mass_width => MU_MU_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"002907FE9BCB0C80",
         mass_lower_limit => X"000000000007A120",    
-        requested_charge_correlation => "ig"
+        muon_requested_charge_correlation => "ig"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         mass_inv => mu_mu_bx_0_bx_0_mass_inv_vector,
@@ -1506,7 +1506,7 @@ invariant_mass_i94_i: entity work.correlation_conditions
         mass_width => MU_MU_MASS_VECTOR_WIDTH,
         mass_upper_limit => X"0000000005D75C80",
         mass_lower_limit => X"0000000001E84800",    
-        requested_charge_correlation => "os"
+        muon_requested_charge_correlation => "os"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double => ls_charcorr_double_bx_0_bx_0, 
@@ -1543,7 +1543,7 @@ muon_muon_correlation_i117_i: entity work.correlation_conditions
         dr_cut => true,
         dr_upper_limit => X"00000000002713E8", 
         dr_lower_limit => X"0000000000000000",    
-        requested_charge_correlation => "ig"
+        muon_requested_charge_correlation => "ig"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         dr => mu_mu_bx_0_bx_0_delta_r_vector,
@@ -1586,7 +1586,7 @@ muon_muon_correlation_i355_i: entity work.correlation_conditions
         dphi_cut => true,
         dphi_upper_limit => X"00000C46", 
         dphi_lower_limit => X"00000A3A",    
-        requested_charge_correlation => "ig"
+        muon_requested_charge_correlation => "ig"
     )
     port map(lhc_clk, mu_bx_m1, mu_bx_0,
         dphi => mu_mu_bx_m1_bx_0_dphi_vector,
@@ -1625,7 +1625,7 @@ muon_muon_correlation_i47_i: entity work.correlation_conditions
         dr_cut => true,
         dr_upper_limit => X"00000000001DEC28", 
         dr_lower_limit => X"0000000000000000",    
-        requested_charge_correlation => "os"
+        muon_requested_charge_correlation => "os"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double => ls_charcorr_double_bx_0_bx_0, 
@@ -1887,11 +1887,11 @@ algo(25) <= l1_etm120;
 
 -- 465 L1_BptxXOR : (EXT_BPTX_B1_VME AND ( NOT EXT_BPTX_B2_VME)) OR (EXT_BPTX_B2_VME AND ( NOT EXT_BPTX_B1_VME))
 l1_bptx_xor <= ( single_ext_i335 and ( not single_ext_i336 ) ) or ( single_ext_i336 and ( not single_ext_i335 ) );
-algo(12) <= l1_bptx_xor;
+algo(13) <= l1_bptx_xor;
 
 -- 466 L1_BptxPlus : EXT_BPTX_B1_VME
 l1_bptx_plus <= single_ext_i335;
-algo(13) <= l1_bptx_plus;
+algo(12) <= l1_bptx_plus;
 
 -- 467 L1_BptxMinus : EXT_BPTX_B2_VME
 l1_bptx_minus <= single_ext_i336;
