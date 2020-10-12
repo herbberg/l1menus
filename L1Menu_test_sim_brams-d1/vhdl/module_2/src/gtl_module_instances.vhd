@@ -1580,7 +1580,7 @@ invariant_mass_delta_r_i371_i: entity work.calo_calo_mass_div_dr_condition
         true, X"0000", X"0000",
         true, X"0000", X"0000",
         X"F",
-        X"0000000000000000", X"0000000004C4B400"
+        X"000000000000000000000", X"000000000000004C4B400"
     )
     port map(lhc_clk, eg_bx_0, eg_bx_0,
         eg_eg_bx_0_bx_0_mass_div_dr,
