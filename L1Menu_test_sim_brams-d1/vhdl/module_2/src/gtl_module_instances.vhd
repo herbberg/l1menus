@@ -1557,7 +1557,7 @@ invariant_mass_i273_i: entity work.calo_calo_correlation_condition
 invariant_mass_delta_r_i371_i: entity work.calo_calo_mass_div_dr_condition
     generic map(
         true,
-        false, false, false, true, 3, false,
+        EG_EG_MASS_DIV_DR_VECTOR_WIDTH,
         0, 11, true, EG_TYPE,
         X"0014",
         0,

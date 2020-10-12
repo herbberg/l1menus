@@ -2116,8 +2116,6 @@ invariant_mass_i94_i: entity work.muon_muon_correlation_condition
 invariant_mass_delta_r_i372_i: entity work.muon_muon_mass_div_dr_condition
     generic map(
         true,
-        false, false, false, true, 3,
-        false, false,
         0, 7, true,
         X"0029",
         0,
