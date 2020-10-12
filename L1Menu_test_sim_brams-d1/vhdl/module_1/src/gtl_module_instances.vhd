@@ -2143,14 +2143,7 @@ invariant_mass_delta_r_i372_i: entity work.muon_muon_mass_div_dr_condition
         "ign", X"FFFF", X"F",
         false, X"0000", X"0000", X"F",
         "ig",
-        X"00000000", X"00000000",
-        X"00000000", X"00000000",
-        X"0000000000000000", X"0000000000000000",
-        X"0000000000000000", X"000000012A05F200",
-        pt_width => MU_PT_VECTOR_WIDTH, mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION,
-        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
-        pt_sq_threshold_vector => X"0000000000000000", sin_cos_width => MUON_SIN_COS_VECTOR_WIDTH,
-        pt_sq_sin_cos_precision => MU_MU_SIN_COS_PRECISION
+        X"0000000000000000", X"000000012A05F200"
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
