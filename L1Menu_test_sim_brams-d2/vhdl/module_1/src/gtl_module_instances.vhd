@@ -10,7 +10,7 @@
 -- f130ce06-3de9-4b81-a2ad-bd1936c68a18
 
 -- Unique ID of firmware implementation:
--- d28003ba-82e2-4437-b163-401d28fb4ec6
+-- 7d61fd00-b331-4384-84f4-3fb7453aa06c
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1645,6 +1645,7 @@ calo_calo_correlation_i199_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
         deta_cut => false, dphi_cut => false, dr_cut => true, mass_cut => false, mass_type => 0, twobody_pt_cut => false,        
+        nr_calo1_objects => NR_EG_OBJECTS;
         calo1_object_low => 0, calo1_object_high => 11, et_ge_mode_calo1 => true, obj_type_calo1 => EG_TYPE,
         et_threshold_calo1 => X"0030",
         nr_eta_windows_calo1 => 1,
@@ -1656,6 +1657,7 @@ calo_calo_correlation_i199_i: entity work.calo_calo_correlation_condition
         phi_full_range_calo1 => true, phi_w1_upper_limit_calo1 => X"0000", phi_w1_lower_limit_calo1 => X"0000",
         phi_w2_ignore_calo1 => true, phi_w2_upper_limit_calo1 => X"0000", phi_w2_lower_limit_calo1 => X"0000",
         iso_lut_calo1 => X"C",
+        nr_calo2_objects => NR_TAU_OBJECTS;
         calo2_object_low => 0, calo2_object_high => 11, et_ge_mode_calo2 => true, obj_type_calo2 => EG_TYPE,
         et_threshold_calo2 => X"0030",
         nr_eta_windows_calo2 => 1,
@@ -1691,6 +1693,7 @@ invariant_mass_i212_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
         deta_cut => false, dphi_cut => false, dr_cut => false, mass_cut => true, mass_type => 0, twobody_pt_cut => false,        
+        nr_calo1_objects => NR_TAU_OBJECTS;
         calo1_object_low => 0, calo1_object_high => 11, et_ge_mode_calo1 => true, obj_type_calo1 => TAU_TYPE,
         et_threshold_calo1 => X"003C",
         nr_eta_windows_calo1 => 1,
@@ -1702,6 +1705,7 @@ invariant_mass_i212_i: entity work.calo_calo_correlation_condition
         phi_full_range_calo1 => true, phi_w1_upper_limit_calo1 => X"0000", phi_w1_lower_limit_calo1 => X"0000",
         phi_w2_ignore_calo1 => true, phi_w2_upper_limit_calo1 => X"0000", phi_w2_lower_limit_calo1 => X"0000",
         iso_lut_calo1 => X"E",
+        nr_calo2_objects => NR_TAU_OBJECTS;
         calo2_object_low => 0, calo2_object_high => 11, et_ge_mode_calo2 => true, obj_type_calo2 => TAU_TYPE,
         et_threshold_calo2 => X"003C",
         nr_eta_windows_calo2 => 1,
@@ -1737,6 +1741,7 @@ invariant_mass_i271_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
         deta_cut => true, dphi_cut => false, dr_cut => false, mass_cut => true, mass_type => 0, twobody_pt_cut => false,        
+        nr_calo1_objects => NR_JET_OBJECTS;
         calo1_object_low => 0, calo1_object_high => 11, et_ge_mode_calo1 => true, obj_type_calo1 => JET_TYPE,
         et_threshold_calo1 => X"003C",
         nr_eta_windows_calo1 => 1,
@@ -1748,6 +1753,7 @@ invariant_mass_i271_i: entity work.calo_calo_correlation_condition
         phi_full_range_calo1 => true, phi_w1_upper_limit_calo1 => X"0000", phi_w1_lower_limit_calo1 => X"0000",
         phi_w2_ignore_calo1 => true, phi_w2_upper_limit_calo1 => X"0000", phi_w2_lower_limit_calo1 => X"0000",
         iso_lut_calo1 => X"F",
+        nr_calo2_objects => NR_JET_OBJECTS;
         calo2_object_low => 0, calo2_object_high => 11, et_ge_mode_calo2 => true, obj_type_calo2 => JET_TYPE,
         et_threshold_calo2 => X"003C",
         nr_eta_windows_calo2 => 1,
@@ -1783,6 +1789,7 @@ invariant_mass_i280_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
         deta_cut => false, dphi_cut => false, dr_cut => false, mass_cut => true, mass_type => 0, twobody_pt_cut => false,        
+        nr_calo1_objects => NR_JET_OBJECTS;
         calo1_object_low => 0, calo1_object_high => 11, et_ge_mode_calo1 => true, obj_type_calo1 => JET_TYPE,
         et_threshold_calo1 => X"0050",
         nr_eta_windows_calo1 => 0,
@@ -1794,6 +1801,7 @@ invariant_mass_i280_i: entity work.calo_calo_correlation_condition
         phi_full_range_calo1 => true, phi_w1_upper_limit_calo1 => X"0000", phi_w1_lower_limit_calo1 => X"0000",
         phi_w2_ignore_calo1 => true, phi_w2_upper_limit_calo1 => X"0000", phi_w2_lower_limit_calo1 => X"0000",
         iso_lut_calo1 => X"F",
+        nr_calo2_objects => NR_JET_OBJECTS;
         calo2_object_low => 0, calo2_object_high => 11, et_ge_mode_calo2 => true, obj_type_calo2 => JET_TYPE,
         et_threshold_calo2 => X"0050",
         nr_eta_windows_calo2 => 0,
@@ -1829,6 +1837,7 @@ invariant_mass_i95_i: entity work.calo_calo_correlation_condition
     generic map(
         true,
         deta_cut => false, dphi_cut => false, dr_cut => false, mass_cut => true, mass_type => 0, twobody_pt_cut => false,        
+        nr_calo1_objects => NR_EG_OBJECTS;
         calo1_object_low => 0, calo1_object_high => 11, et_ge_mode_calo1 => true, obj_type_calo1 => EG_TYPE,
         et_threshold_calo1 => X"0006",
         nr_eta_windows_calo1 => 1,
@@ -1840,6 +1849,7 @@ invariant_mass_i95_i: entity work.calo_calo_correlation_condition
         phi_full_range_calo1 => true, phi_w1_upper_limit_calo1 => X"0000", phi_w1_lower_limit_calo1 => X"0000",
         phi_w2_ignore_calo1 => true, phi_w2_upper_limit_calo1 => X"0000", phi_w2_lower_limit_calo1 => X"0000",
         iso_lut_calo1 => X"F",
+        nr_calo2_objects => NR_EG_OBJECTS;
         calo2_object_low => 0, calo2_object_high => 11, et_ge_mode_calo2 => true, obj_type_calo2 => EG_TYPE,
         et_threshold_calo2 => X"0006",
         nr_eta_windows_calo2 => 1,
@@ -1874,6 +1884,7 @@ invariant_mass_i95_i: entity work.calo_calo_correlation_condition
 calo_muon_correlation_i118_i: entity work.calo_muon_correlation_condition
     generic map(
         deta_cut => false, dphi_cut => false, dr_cut => true, mass_cut => false, mass_type => 0, twobody_pt_cut => false,        
+        nr_calo_objects => NR_JET_OBJECTS;
         calo_object_low => 0, calo_object_high => 11, et_ge_mode_calo => true, obj_type_calo => JET_TYPE,
         et_threshold_calo => X"00B4",
         nr_eta_windows_calo => 1,
@@ -1921,6 +1932,7 @@ calo_muon_correlation_i118_i: entity work.calo_muon_correlation_condition
 calo_muon_correlation_i99_i: entity work.calo_muon_correlation_condition
     generic map(
         deta_cut => false, dphi_cut => false, dr_cut => true, mass_cut => false, mass_type => 0, twobody_pt_cut => false,        
+        nr_calo_objects => NR_JET_OBJECTS;
         calo_object_low => 0, calo_object_high => 11, et_ge_mode_calo => true, obj_type_calo => JET_TYPE,
         et_threshold_calo => X"0078",
         nr_eta_windows_calo => 1,
@@ -2314,7 +2326,7 @@ algo(55) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(62) <= l1_single_mu7;
+algo(60) <= l1_single_mu7;
 
 -- 17 L1_SingleMu18 : MU18[MU-QLTY_SNGL]
 l1_single_mu18 <= single_mu_i17;
@@ -2390,35 +2402,35 @@ algo(82) <= l1_triple_mu_5_3p5_2p5_oq_double_mu_5_2p5_oq_os_mass_5to17;
 
 -- 85 L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9 : comb{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL],MU0[MU-QLTY_OPEN]} AND mass_inv{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}[MASS_MASS_0to9,CHGCOR_OS]
 l1_triple_mu_5_sq_3_sq_0_oq_double_mu_5_3_sq_os_mass_max9 <= triple_mu_i65 and invariant_mass_i74;
-algo(78) <= l1_triple_mu_5_sq_3_sq_0_oq_double_mu_5_3_sq_os_mass_max9;
+algo(77) <= l1_triple_mu_5_sq_3_sq_0_oq_double_mu_5_3_sq_os_mass_max9;
 
 -- 86 L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9 : comb{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL],MU0[MU-QLTY_DBLE]} AND mass_inv{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}[MASS_MASS_0to9,CHGCOR_OS]
 l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9 <= triple_mu_i75 and invariant_mass_i74;
-algo(77) <= l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9;
+algo(78) <= l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9;
 
 -- 96 L1_Mu5_EG23er2p5 : MU5[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu5_eg23er2p5 <= single_mu_i10 and single_eg_i79;
-algo(60) <= l1_mu5_eg23er2p5;
+algo(58) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i12 and single_eg_i80;
-algo(59) <= l1_mu7_eg20er2p5;
+algo(57) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i12 and single_eg_i79;
-algo(61) <= l1_mu7_eg23er2p5;
+algo(59) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i10 and single_eg_i82;
-algo(58) <= l1_mu5_loose_iso_eg20er2p5;
+algo(61) <= l1_mu5_loose_iso_eg20er2p5;
 
 -- 101 L1_Mu7_LooseIsoEG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg20er2p5 <= single_mu_i12 and single_eg_i82;
-algo(56) <= l1_mu7_loose_iso_eg20er2p5;
+algo(62) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i12 and single_eg_i83;
-algo(57) <= l1_mu7_loose_iso_eg23er2p5;
+algo(56) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 109 L1_DoubleMu4_SQ_EG9er2p5 : comb{MU4[MU-QLTY_SNGL],MU4[MU-QLTY_SNGL]} AND EG9[EG-ETA_2p52]
 l1_double_mu4_sq_eg9er2p5 <= double_mu_i89 and single_eg_i90;
@@ -2566,11 +2578,11 @@ algo(25) <= l1_etm120;
 
 -- 465 L1_BptxXOR : (EXT_BPTX_B1_VME AND ( NOT EXT_BPTX_B2_VME)) OR (EXT_BPTX_B2_VME AND ( NOT EXT_BPTX_B1_VME))
 l1_bptx_xor <= ( single_ext_i344 and ( not single_ext_i345 ) ) or ( single_ext_i345 and ( not single_ext_i344 ) );
-algo(13) <= l1_bptx_xor;
+algo(12) <= l1_bptx_xor;
 
 -- 466 L1_BptxPlus : EXT_BPTX_B1_VME
 l1_bptx_plus <= single_ext_i344;
-algo(12) <= l1_bptx_plus;
+algo(13) <= l1_bptx_plus;
 
 -- 467 L1_BptxMinus : EXT_BPTX_B2_VME
 l1_bptx_minus <= single_ext_i345;

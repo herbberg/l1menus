@@ -10,7 +10,7 @@
 -- f130ce06-3de9-4b81-a2ad-bd1936c68a18
 
 -- Unique ID of firmware implementation:
--- d28003ba-82e2-4437-b163-401d28fb4ec6
+-- 7d61fd00-b331-4384-84f4-3fb7453aa06c
 
 -- Scale set:
 -- scales_2020_10_04
@@ -31,8 +31,8 @@ constant global_index: global_index_array := (
         185, -- module_index: 7, name: L1_SingleIsoEG26er2p5
         192, -- module_index: 8, name: L1_SingleIsoEG30er2p5
         312, -- module_index: 9, name: L1_SingleJet120
-        360, -- module_index: 10, name: L1_DoubleJet_115_40_DoubleJet40_Mass_Min620_Jet60TT28
-        361, -- module_index: 11, name: L1_DoubleJet_120_45_DoubleJet45_Mass_Min620_Jet60TT28
+        361, -- module_index: 10, name: L1_DoubleJet_120_45_DoubleJet45_Mass_Min620_Jet60TT28
+        360, -- module_index: 11, name: L1_DoubleJet_115_40_DoubleJet40_Mass_Min620_Jet60TT28
         134, -- module_index: 12, name: L1_Mu10er2p3_Jet32er2p3_dR_Max0p4_DoubleJet32er2p3_dEta_Max1p6
         364, -- module_index: 13, name: L1_DoubleJet_80_30_Mass_Min420_IsoTau40_RmOvlp
     others => 0
