@@ -10,7 +10,7 @@
 -- f130ce06-3de9-4b81-a2ad-bd1936c68a18
 
 -- Unique ID of firmware implementation:
--- c5bee6d8-3e70-4298-bfe0-6fcff88a1f7b
+-- 0dabd1a8-f5a4-4df5-ac68-d21f5dbaa1b8
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1439,7 +1439,11 @@ invariant_mass_i268_i: entity work.calo_calo_correlation_condition
         deta_cut => true,
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
         diff_eta_upper_limit_vector => X"000005DC", diff_eta_lower_limit_vector => X"00000000",
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"00000000430E2340",        
         same_bx => true
@@ -1467,7 +1471,11 @@ invariant_mass_i273_i: entity work.calo_calo_correlation_condition
         deta_cut => true,
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
         diff_eta_upper_limit_vector => X"000005DC", diff_eta_lower_limit_vector => X"00000000",
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"00000001823CF400",        
         same_bx => true
@@ -1489,6 +1497,10 @@ invariant_mass_delta_r_i371_i: entity work.calo_calo_correlation_condition
         obj_type_calo2 => EG_TYPE,
         pt_threshold_calo2 => X"0028",
         mass_cut => true, mass_type => INVARIANT_MASS_DIV_DR_TYPE,
+        pt1_width => EG_PT_VECTOR_WIDTH, 
+        pt2_width => EG_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => EG_EG_COSH_COS_PRECISION, 
+        cosh_cos_width => EG_EG_COSH_COS_VECTOR_WIDTH,
         mass_div_dr_vector_width => EG_EG_MASS_DIV_DR_VECTOR_WIDTH,
         mass_div_dr_threshold => X"000000000000004C4B400",        
         same_bx => true
@@ -1552,6 +1564,10 @@ invariant_mass_i58_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "os",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => MU_PT_VECTOR_WIDTH, 
+        pt2_width => MU_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"002907FE9BCB0C80",
         mass_lower_limit => X"000000000175D720",        
         same_bx => true
@@ -1766,11 +1782,11 @@ algo(17) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;

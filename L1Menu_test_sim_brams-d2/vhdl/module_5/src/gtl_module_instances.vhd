@@ -10,7 +10,7 @@
 -- f130ce06-3de9-4b81-a2ad-bd1936c68a18
 
 -- Unique ID of firmware implementation:
--- c5bee6d8-3e70-4298-bfe0-6fcff88a1f7b
+-- 0dabd1a8-f5a4-4df5-ac68-d21f5dbaa1b8
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1581,6 +1581,10 @@ invariant_mass_i211_i: entity work.calo_calo_correlation_condition
         iso_lut_calo2 => X"E",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => TAU_PT_VECTOR_WIDTH, 
+        pt2_width => TAU_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => TAU_TAU_COSH_COS_PRECISION, 
+        cosh_cos_width => TAU_TAU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"000000001823CF40",
         mass_lower_limit => X"0000000000000000",        
         same_bx => true
@@ -1607,7 +1611,11 @@ invariant_mass_i272_i: entity work.calo_calo_correlation_condition
         deta_cut => true,
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
         diff_eta_upper_limit_vector => X"000005DC", diff_eta_lower_limit_vector => X"00000000",
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"00000001448C1B40",        
         same_bx => true
@@ -1630,6 +1638,10 @@ invariant_mass_i282_i: entity work.calo_calo_correlation_condition
         pt_threshold_calo2 => X"005A",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",        
         same_bx => true
@@ -1748,6 +1760,10 @@ invariant_mass_i59_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "os",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => MU_PT_VECTOR_WIDTH, 
+        pt2_width => MU_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"0000000009A7EC80",
         mass_lower_limit => X"000000000175D720",        
         same_bx => true
@@ -1769,6 +1785,10 @@ invariant_mass_i72_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "os",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => MU_PT_VECTOR_WIDTH, 
+        pt2_width => MU_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00000000089CE520",
         mass_lower_limit => X"0000000000BEBC20",        
         same_bx => true

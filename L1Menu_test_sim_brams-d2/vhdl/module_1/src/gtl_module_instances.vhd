@@ -10,7 +10,7 @@
 -- f130ce06-3de9-4b81-a2ad-bd1936c68a18
 
 -- Unique ID of firmware implementation:
--- c5bee6d8-3e70-4298-bfe0-6fcff88a1f7b
+-- 0dabd1a8-f5a4-4df5-ac68-d21f5dbaa1b8
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1684,6 +1684,10 @@ invariant_mass_i212_i: entity work.calo_calo_correlation_condition
         iso_lut_calo2 => X"E",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => TAU_PT_VECTOR_WIDTH, 
+        pt2_width => TAU_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => TAU_TAU_COSH_COS_PRECISION, 
+        cosh_cos_width => TAU_TAU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"000000001312D000",
         mass_lower_limit => X"0000000000000000",        
         same_bx => true
@@ -1710,7 +1714,11 @@ invariant_mass_i271_i: entity work.calo_calo_correlation_condition
         deta_cut => true,
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
         diff_eta_upper_limit_vector => X"000005DC", diff_eta_lower_limit_vector => X"00000000",
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000010C388D00",        
         same_bx => true
@@ -1733,6 +1741,10 @@ invariant_mass_i280_i: entity work.calo_calo_correlation_condition
         pt_threshold_calo2 => X"0050",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",        
         same_bx => true
@@ -1758,6 +1770,10 @@ invariant_mass_i95_i: entity work.calo_calo_correlation_condition
         eta_w1_upper_limit_calo2 => X"0030", eta_w1_lower_limit_calo2 => X"00CF",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => EG_PT_VECTOR_WIDTH, 
+        pt2_width => EG_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => EG_EG_COSH_COS_PRECISION, 
+        cosh_cos_width => EG_EG_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"0000000001312D00",
         mass_lower_limit => X"0000000000000000",        
         same_bx => true
@@ -1813,6 +1829,10 @@ invariant_mass_i37_i: entity work.muon_muon_correlation_condition
         pt_threshold_muon2 => X"0001",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => MU_PT_VECTOR_WIDTH, 
+        pt2_width => MU_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"002907FE9BCB0C80",
         mass_lower_limit => X"000000000007A120",        
         same_bx => true
@@ -1834,6 +1854,10 @@ invariant_mass_i71_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "os",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => MU_PT_VECTOR_WIDTH, 
+        pt2_width => MU_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00000000089CE520",
         mass_lower_limit => X"0000000000BEBC20",        
         same_bx => true
@@ -1855,6 +1879,10 @@ invariant_mass_i74_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "os",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => MU_PT_VECTOR_WIDTH, 
+        pt2_width => MU_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"000000000269FB20",
         mass_lower_limit => X"0000000000000000",        
         same_bx => true
@@ -1880,6 +1908,10 @@ invariant_mass_i94_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "os",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => MU_PT_VECTOR_WIDTH, 
+        pt2_width => MU_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"0000000005D75C80",
         mass_lower_limit => X"0000000001E84800",        
         same_bx => true
@@ -1897,6 +1929,10 @@ invariant_mass_delta_r_i372_i: entity work.muon_muon_correlation_condition
         muon2_object_low => 0, muon2_object_high => 7,        
         pt_threshold_muon2 => X"0051",
         mass_cut => true, mass_type => INVARIANT_MASS_DIV_DR_TYPE,
+        pt1_width => MU_PT_VECTOR_WIDTH, 
+        pt2_width => MU_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_div_dr_vector_width => MU_MU_MASS_DIV_DR_VECTOR_WIDTH,
         mass_div_dr_threshold => X"00000000000012A05F200",        
         same_bx => true
@@ -1959,7 +1995,7 @@ algo(55) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(58) <= l1_single_mu7;
+algo(60) <= l1_single_mu7;
 
 -- 17 L1_SingleMu18 : MU18[MU-QLTY_SNGL]
 l1_single_mu18 <= single_mu_i17;
@@ -2043,11 +2079,11 @@ algo(77) <= l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9;
 
 -- 96 L1_Mu5_EG23er2p5 : MU5[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu5_eg23er2p5 <= single_mu_i10 and single_eg_i79;
-algo(60) <= l1_mu5_eg23er2p5;
+algo(59) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i12 and single_eg_i80;
-algo(59) <= l1_mu7_eg20er2p5;
+algo(58) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i12 and single_eg_i79;

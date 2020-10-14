@@ -10,7 +10,7 @@
 -- f130ce06-3de9-4b81-a2ad-bd1936c68a18
 
 -- Unique ID of firmware implementation:
--- c5bee6d8-3e70-4298-bfe0-6fcff88a1f7b
+-- 0dabd1a8-f5a4-4df5-ac68-d21f5dbaa1b8
 
 -- Scale set:
 -- scales_2020_10_04
@@ -375,6 +375,10 @@ invariant_mass_i284_i: entity work.calo_calo_correlation_condition
         eta_w1_upper_limit_calo2 => X"003D", eta_w1_lower_limit_calo2 => X"00C2",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",        
         same_bx => true
@@ -396,6 +400,10 @@ invariant_mass_i285_i: entity work.calo_calo_correlation_condition
         pt_threshold_calo2 => X"0078",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",        
         same_bx => true
@@ -420,6 +428,10 @@ invariant_mass_i286_i: entity work.calo_calo_correlation_condition
         eta_w2_upper_limit_calo2 => X"0072", eta_w2_lower_limit_calo2 => X"0045",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",        
         same_bx => true
@@ -443,6 +455,10 @@ invariant_mass_i287_i: entity work.calo_calo_correlation_condition
         eta_w1_upper_limit_calo2 => X"003D", eta_w1_lower_limit_calo2 => X"00C2",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",        
         same_bx => true
@@ -469,6 +485,10 @@ invariant_mass_i288_i: entity work.calo_calo_correlation_condition
         eta_w1_upper_limit_calo2 => X"003D", eta_w1_lower_limit_calo2 => X"00C2",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",        
         same_bx => true
@@ -496,6 +516,10 @@ invariant_mass_i289_i: entity work.calo_calo_correlation_condition
         eta_w2_upper_limit_calo2 => X"0072", eta_w2_lower_limit_calo2 => X"0045",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",        
         same_bx => true
@@ -521,6 +545,10 @@ invariant_mass_i290_i: entity work.calo_calo_correlation_condition
         eta_w1_upper_limit_calo2 => X"003D", eta_w1_lower_limit_calo2 => X"00C2",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",        
         same_bx => true
@@ -545,6 +573,10 @@ invariant_mass_i291_i: entity work.calo_calo_correlation_condition
         eta_w2_upper_limit_calo2 => X"0072", eta_w2_lower_limit_calo2 => X"0045",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",        
         same_bx => true
@@ -568,6 +600,10 @@ invariant_mass_i292_i: entity work.calo_calo_correlation_condition
         eta_w1_upper_limit_calo2 => X"003D", eta_w1_lower_limit_calo2 => X"00C2",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",        
         same_bx => true
@@ -594,6 +630,10 @@ invariant_mass_i293_i: entity work.calo_calo_correlation_condition
         eta_w1_upper_limit_calo2 => X"003D", eta_w1_lower_limit_calo2 => X"00C2",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",        
         same_bx => true
@@ -621,6 +661,10 @@ invariant_mass_i294_i: entity work.calo_calo_correlation_condition
         eta_w2_upper_limit_calo2 => X"0072", eta_w2_lower_limit_calo2 => X"0045",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH, 
+        pt2_width => JET_PT_VECTOR_WIDTH,
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",        
         same_bx => true
