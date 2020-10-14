@@ -10,7 +10,7 @@
 -- f130ce06-3de9-4b81-a2ad-bd1936c68a18
 
 -- Unique ID of firmware implementation:
--- 0dabd1a8-f5a4-4df5-ac68-d21f5dbaa1b8
+-- 8986bf24-c55a-4f56-89bc-3445b97ad319
 
 -- Scale set:
 -- scales_2020_10_04
@@ -23,15 +23,15 @@ type global_index_array is array (0 to NR_ALGOS-1) of integer;
 constant global_index: global_index_array := (
         458, -- module_index: 0, name: L1_AlwaysTrue
         448, -- module_index: 1, name: L1_SingleMuOpen_er1p1_NotBptxOR_3BX
-        332, -- module_index: 2, name: L1_SingleJet140er2p5_ETMHF70
-        423, -- module_index: 3, name: L1_ETMHF120
+        423, -- module_index: 2, name: L1_ETMHF120
+        332, -- module_index: 3, name: L1_SingleJet140er2p5_ETMHF70
         447, -- module_index: 4, name: L1_SingleMuOpen_er1p4_NotBptxOR_3BX
         282, -- module_index: 5, name: L1_Mu22er2p1_IsoTau28er2p1
         104, -- module_index: 6, name: L1_Mu6_DoubleEG10er2p5
         474, -- module_index: 7, name: L1_SecondBunchInTrain
         320, -- module_index: 8, name: L1_SingleJet140er2p5
-        283, -- module_index: 9, name: L1_Mu22er2p1_IsoTau30er2p1
-        293, -- module_index: 10, name: L1_IsoTau40er2p1_ETMHF100
+        293, -- module_index: 9, name: L1_IsoTau40er2p1_ETMHF100
+        283, -- module_index: 10, name: L1_Mu22er2p1_IsoTau30er2p1
         105, -- module_index: 11, name: L1_Mu6_DoubleEG12er2p5
         424, -- module_index: 12, name: L1_ETMHF130
         150, -- module_index: 13, name: L1_DoubleMu3_SQ_HTT220er
