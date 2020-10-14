@@ -10,7 +10,7 @@
 -- f130ce06-3de9-4b81-a2ad-bd1936c68a18
 
 -- Unique ID of firmware implementation:
--- 8986bf24-c55a-4f56-89bc-3445b97ad319
+-- 49cfe9d1-da35-4a7e-8a20-6e7c2662583c
 
 -- Scale set:
 -- scales_2020_10_04
@@ -37,8 +37,8 @@ constant global_index: global_index_array := (
         179, -- module_index: 13, name: L1_SingleLooseIsoEG28er2p1
         241, -- module_index: 14, name: L1_LooseIsoEG30er2p1_HTT100er
         240, -- module_index: 15, name: L1_LooseIsoEG28er2p1_HTT100er
-        238, -- module_index: 16, name: L1_LooseIsoEG24er2p1_HTT100er
-        239, -- module_index: 17, name: L1_LooseIsoEG26er2p1_HTT100er
+        239, -- module_index: 16, name: L1_LooseIsoEG26er2p1_HTT100er
+        238, -- module_index: 17, name: L1_LooseIsoEG24er2p1_HTT100er
         210, -- module_index: 18, name: L1_DoubleEG_27_14_er2p5
         215, -- module_index: 19, name: L1_DoubleEG_LooseIso25_12_er2p5
         272, -- module_index: 20, name: L1_DoubleIsoTau34er2p1

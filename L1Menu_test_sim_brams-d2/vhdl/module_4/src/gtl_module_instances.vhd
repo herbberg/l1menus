@@ -10,7 +10,7 @@
 -- f130ce06-3de9-4b81-a2ad-bd1936c68a18
 
 -- Unique ID of firmware implementation:
--- 8986bf24-c55a-4f56-89bc-3445b97ad319
+-- 49cfe9d1-da35-4a7e-8a20-6e7c2662583c
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1427,16 +1427,11 @@ invariant_mass_i44_i: entity work.muon_muon_correlation_condition
         pt_threshold_muon2 => X"000F",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
-        pt_width => MU_PT_VECTOR_WIDTH, 
-        upt_width => MU_UPT_VECTOR_WIDTH,
-        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
-        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"002907FE9BCB0C80",
         mass_lower_limit => X"000000000007A120",        
         same_bx => true
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
-        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
         pt1 => mu_pt_vector_bx_0, pt2 => mu_pt_vector_bx_0,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector, cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
         condition_o => invariant_mass_i44);
@@ -1454,11 +1449,11 @@ muon_muon_correlation_i50_i: entity work.muon_muon_correlation_condition
         eta_w1_upper_limit_muon2 => X"008A", eta_w1_lower_limit_muon2 => X"0176",
         qual_lut_muon2 => X"F000",
         dr_cut => true,
-        dr_upper_limit_vector => X"00000000001DEC28", dr_lower_limit_vector => X"0000000000000000",        
+        dr_upper_limit_vector => X"00000000001DEC28", 
+        dr_lower_limit_vector => X"0000000000000000",        
         same_bx => true
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
-        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
         diff_eta => diff_mu_mu_bx_0_bx_0_eta_vector,
         diff_phi => diff_mu_mu_bx_0_bx_0_phi_vector,
         condition_o => muon_muon_correlation_i50);
@@ -1473,11 +1468,13 @@ muon_muon_correlation_i56_i: entity work.muon_muon_correlation_condition
         qual_lut_muon2 => X"F000",
         requested_charge_correlation => "os",
         dr_cut => true,
-        dr_upper_limit_vector => X"000000000015FCE8", dr_lower_limit_vector => X"0000000000000000",        
+        dr_upper_limit_vector => X"000000000015FCE8", 
+        dr_lower_limit_vector => X"0000000000000000",        
         same_bx => true
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
-        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+        ls_charcorr_double_bx_0_bx_0, 
+        os_charcorr_double_bx_0_bx_0,
         diff_eta => diff_mu_mu_bx_0_bx_0_eta_vector,
         diff_phi => diff_mu_mu_bx_0_bx_0_phi_vector,
         condition_o => muon_muon_correlation_i56);

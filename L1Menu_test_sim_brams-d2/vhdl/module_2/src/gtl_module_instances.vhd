@@ -10,7 +10,7 @@
 -- f130ce06-3de9-4b81-a2ad-bd1936c68a18
 
 -- Unique ID of firmware implementation:
--- 8986bf24-c55a-4f56-89bc-3445b97ad319
+-- 49cfe9d1-da35-4a7e-8a20-6e7c2662583c
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1564,16 +1564,13 @@ invariant_mass_i58_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "os",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
-        pt_width => MU_PT_VECTOR_WIDTH, 
-        upt_width => MU_UPT_VECTOR_WIDTH,
-        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
-        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"002907FE9BCB0C80",
         mass_lower_limit => X"000000000175D720",        
         same_bx => true
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
-        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+        ls_charcorr_double_bx_0_bx_0, 
+        os_charcorr_double_bx_0_bx_0,
         pt1 => mu_pt_vector_bx_0, pt2 => mu_pt_vector_bx_0,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector, cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
         condition_o => invariant_mass_i58);
@@ -1592,11 +1589,13 @@ muon_muon_correlation_i51_i: entity work.muon_muon_correlation_condition
         qual_lut_muon2 => X"F000",
         requested_charge_correlation => "os",
         dr_cut => true,
-        dr_upper_limit_vector => X"00000000001DEC28", dr_lower_limit_vector => X"0000000000000000",        
+        dr_upper_limit_vector => X"00000000001DEC28", 
+        dr_lower_limit_vector => X"0000000000000000",        
         same_bx => true
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
-        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+        ls_charcorr_double_bx_0_bx_0, 
+        os_charcorr_double_bx_0_bx_0,
         diff_eta => diff_mu_mu_bx_0_bx_0_eta_vector,
         diff_phi => diff_mu_mu_bx_0_bx_0_phi_vector,
         condition_o => muon_muon_correlation_i51);
@@ -1611,11 +1610,13 @@ muon_muon_correlation_i54_i: entity work.muon_muon_correlation_condition
         qual_lut_muon2 => X"F000",
         requested_charge_correlation => "os",
         dr_cut => true,
-        dr_upper_limit_vector => X"000000000015FCE8", dr_lower_limit_vector => X"0000000000000000",        
+        dr_upper_limit_vector => X"000000000015FCE8", 
+        dr_lower_limit_vector => X"0000000000000000",        
         same_bx => true
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
-        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+        ls_charcorr_double_bx_0_bx_0, 
+        os_charcorr_double_bx_0_bx_0,
         diff_eta => diff_mu_mu_bx_0_bx_0_eta_vector,
         diff_phi => diff_mu_mu_bx_0_bx_0_phi_vector,
         condition_o => muon_muon_correlation_i54);
@@ -1778,11 +1779,11 @@ algo(51) <= l1_loose_iso_eg28er2p1_jet34er2p5_d_r_min0p3;
 
 -- 238 L1_LooseIsoEG24er2p1_HTT100er : EG24[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg24er2p1_htt100er <= single_eg_i189 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg24er2p1_htt100er;
+algo(17) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(17) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
