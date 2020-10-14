@@ -10,7 +10,7 @@
 -- f130ce06-3de9-4b81-a2ad-bd1936c68a18
 
 -- Unique ID of firmware implementation:
--- 7d61fd00-b331-4384-84f4-3fb7453aa06c
+-- c5bee6d8-3e70-4298-bfe0-6fcff88a1f7b
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1643,675 +1643,308 @@ single_htt_i316_i: entity work.esums_conditions
 
 calo_calo_correlation_i199_i: entity work.calo_calo_correlation_condition
     generic map(
-        true,
-        deta_cut => false, dphi_cut => false, dr_cut => true, mass_cut => false, mass_type => 0, twobody_pt_cut => false,        
-        nr_calo1_objects => NR_EG_OBJECTS;
-        calo1_object_low => 0, calo1_object_high => 11, et_ge_mode_calo1 => true, obj_type_calo1 => EG_TYPE,
-        et_threshold_calo1 => X"0030",
+        nr_calo1_objects => NR_EG_OBJECTS,
+        calo1_object_low => 0, calo1_object_high => 11,        
+        obj_type_calo1 => EG_TYPE,
+        pt_threshold_calo1 => X"0030",
         nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0030", eta_w1_lower_limit_calo1 => X"00CF",
-        eta_w2_upper_limit_calo1 => X"0000", eta_w2_lower_limit_calo1 => X"0000",
-        eta_w3_upper_limit_calo1 => X"0000", eta_w3_lower_limit_calo1 => X"0000",
-        eta_w4_upper_limit_calo1 => X"0000", eta_w4_lower_limit_calo1 => X"0000",
-        eta_w5_upper_limit_calo1 => X"0000", eta_w5_lower_limit_calo1 => X"0000",
-        phi_full_range_calo1 => true, phi_w1_upper_limit_calo1 => X"0000", phi_w1_lower_limit_calo1 => X"0000",
-        phi_w2_ignore_calo1 => true, phi_w2_upper_limit_calo1 => X"0000", phi_w2_lower_limit_calo1 => X"0000",
-        iso_lut_calo1 => X"C",
-        nr_calo2_objects => NR_TAU_OBJECTS;
-        calo2_object_low => 0, calo2_object_high => 11, et_ge_mode_calo2 => true, obj_type_calo2 => EG_TYPE,
-        et_threshold_calo2 => X"0030",
+        iso_lut_calo1 => X"C",        
+        nr_calo2_objects => NR_TAU_OBJECTS,
+        calo2_object_low => 0, calo2_object_high => 11,        
+        obj_type_calo2 => TAU_TYPE,
+        pt_threshold_calo2 => X"0036",
         nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0030", eta_w1_lower_limit_calo2 => X"00CF",
-        eta_w2_upper_limit_calo2 => X"0000", eta_w2_lower_limit_calo2 => X"0000",
-        eta_w3_upper_limit_calo2 => X"0000", eta_w3_lower_limit_calo2 => X"0000",
-        eta_w4_upper_limit_calo2 => X"0000", eta_w4_lower_limit_calo2 => X"0000",
-        eta_w5_upper_limit_calo2 => X"0000", eta_w5_lower_limit_calo2 => X"0000",
-        phi_full_range_calo2 => true, phi_w1_upper_limit_calo2 => X"0000", phi_w1_lower_limit_calo2 => X"0000",
-        phi_w2_ignore_calo2 => true, phi_w2_upper_limit_calo2 => X"0000", phi_w2_lower_limit_calo2 => X"0000",
-        iso_lut_calo2 => X"C",
-        diff_eta_upper_limit_vector => X"00000000", diff_eta_lower_limit_vector => X"00000000",
-        diff_phi_upper_limit_vector => X"00000000", diff_phi_lower_limit_vector => X"00000000",
-        dr_upper_limit_vector => X"00000000084CA240", dr_lower_limit_vector => X"0000000000015F90",
-        mass_upper_limit => X"0000000000000000",
-        mass_lower_limit => X"0000000000000000",
-        pt1_width => EG_PT_VECTOR_WIDTH, 
-        pt2_width => TAU_PT_VECTOR_WIDTH, 
-        mass_cosh_cos_precision => EG_TAU_COSH_COS_PRECISION, 
-        cosh_cos_width => EG_TAU_COSH_COS_VECTOR_WIDTH,
-        pt_sq_threshold_vector => X"0000000000000000", 
-        sin_cos_width => CALO_SIN_COS_VECTOR_WIDTH, 
-        pt_sq_sin_cos_precision => EG_TAU_SIN_COS_PRECISION        
+        iso_lut_calo2 => X"E",
+        dr_cut => true,
+        dr_upper_limit_vector => X"00000000084CA240", dr_lower_limit_vector => X"0000000000015F90",        
+        same_bx => true
     )
     port map(lhc_clk, eg_bx_0, tau_bx_0,
-        diff_eta => diff_eg_tau_bx_0_bx_0_eta_vector, diff_phi => diff_eg_tau_bx_0_bx_0_phi_vector,
-        pt1 => eg_pt_vector_bx_0, pt2 => tau_pt_vector_bx_0,
-        cosh_deta => eg_tau_bx_0_bx_0_cosh_deta_vector, cos_dphi => eg_tau_bx_0_bx_0_cos_dphi_vector,
-        cos_phi_1_integer => eg_cos_phi_bx_0, cos_phi_2_integer => tau_cos_phi_bx_0, sin_phi_1_integer => eg_sin_phi_bx_0, sin_phi_2_integer => tau_sin_phi_bx_0,
+        diff_eta => diff_eg_tau_bx_0_bx_0_eta_vector,
+        diff_phi => diff_eg_tau_bx_0_bx_0_phi_vector,
         condition_o => calo_calo_correlation_i199);
 
 invariant_mass_i212_i: entity work.calo_calo_correlation_condition
     generic map(
-        true,
-        deta_cut => false, dphi_cut => false, dr_cut => false, mass_cut => true, mass_type => 0, twobody_pt_cut => false,        
-        nr_calo1_objects => NR_TAU_OBJECTS;
-        calo1_object_low => 0, calo1_object_high => 11, et_ge_mode_calo1 => true, obj_type_calo1 => TAU_TYPE,
-        et_threshold_calo1 => X"003C",
+        nr_calo1_objects => NR_TAU_OBJECTS,
+        calo1_object_low => 0, calo1_object_high => 11,        
+        obj_type_calo1 => TAU_TYPE,
+        pt_threshold_calo1 => X"003C",
         nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0030", eta_w1_lower_limit_calo1 => X"00CF",
-        eta_w2_upper_limit_calo1 => X"0000", eta_w2_lower_limit_calo1 => X"0000",
-        eta_w3_upper_limit_calo1 => X"0000", eta_w3_lower_limit_calo1 => X"0000",
-        eta_w4_upper_limit_calo1 => X"0000", eta_w4_lower_limit_calo1 => X"0000",
-        eta_w5_upper_limit_calo1 => X"0000", eta_w5_lower_limit_calo1 => X"0000",
-        phi_full_range_calo1 => true, phi_w1_upper_limit_calo1 => X"0000", phi_w1_lower_limit_calo1 => X"0000",
-        phi_w2_ignore_calo1 => true, phi_w2_upper_limit_calo1 => X"0000", phi_w2_lower_limit_calo1 => X"0000",
-        iso_lut_calo1 => X"E",
-        nr_calo2_objects => NR_TAU_OBJECTS;
-        calo2_object_low => 0, calo2_object_high => 11, et_ge_mode_calo2 => true, obj_type_calo2 => TAU_TYPE,
-        et_threshold_calo2 => X"003C",
+        iso_lut_calo1 => X"E",        
+        nr_calo2_objects => NR_TAU_OBJECTS,
+        calo2_object_low => 0, calo2_object_high => 11,        
+        obj_type_calo2 => TAU_TYPE,
+        pt_threshold_calo2 => X"003C",
         nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0030", eta_w1_lower_limit_calo2 => X"00CF",
-        eta_w2_upper_limit_calo2 => X"0000", eta_w2_lower_limit_calo2 => X"0000",
-        eta_w3_upper_limit_calo2 => X"0000", eta_w3_lower_limit_calo2 => X"0000",
-        eta_w4_upper_limit_calo2 => X"0000", eta_w4_lower_limit_calo2 => X"0000",
-        eta_w5_upper_limit_calo2 => X"0000", eta_w5_lower_limit_calo2 => X"0000",
-        phi_full_range_calo2 => true, phi_w1_upper_limit_calo2 => X"0000", phi_w1_lower_limit_calo2 => X"0000",
-        phi_w2_ignore_calo2 => true, phi_w2_upper_limit_calo2 => X"0000", phi_w2_lower_limit_calo2 => X"0000",
         iso_lut_calo2 => X"E",
-        diff_eta_upper_limit_vector => X"00000000", diff_eta_lower_limit_vector => X"00000000",
-        diff_phi_upper_limit_vector => X"00000000", diff_phi_lower_limit_vector => X"00000000",
-        dr_upper_limit_vector => X"0000000000000000", dr_lower_limit_vector => X"0000000000000000",
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         mass_upper_limit => X"000000001312D000",
-        mass_lower_limit => X"0000000000000000",
-        pt1_width => TAU_PT_VECTOR_WIDTH, 
-        pt2_width => TAU_PT_VECTOR_WIDTH, 
-        mass_cosh_cos_precision => TAU_TAU_COSH_COS_PRECISION, 
-        cosh_cos_width => TAU_TAU_COSH_COS_VECTOR_WIDTH,
-        pt_sq_threshold_vector => X"0000000000000000", 
-        sin_cos_width => CALO_SIN_COS_VECTOR_WIDTH, 
-        pt_sq_sin_cos_precision => TAU_TAU_SIN_COS_PRECISION        
+        mass_lower_limit => X"0000000000000000",        
+        same_bx => true
     )
     port map(lhc_clk, tau_bx_0, tau_bx_0,
-        diff_eta => diff_tau_tau_bx_0_bx_0_eta_vector, diff_phi => diff_tau_tau_bx_0_bx_0_phi_vector,
         pt1 => tau_pt_vector_bx_0, pt2 => tau_pt_vector_bx_0,
         cosh_deta => tau_tau_bx_0_bx_0_cosh_deta_vector, cos_dphi => tau_tau_bx_0_bx_0_cos_dphi_vector,
-        cos_phi_1_integer => tau_cos_phi_bx_0, cos_phi_2_integer => tau_cos_phi_bx_0, sin_phi_1_integer => tau_sin_phi_bx_0, sin_phi_2_integer => tau_sin_phi_bx_0,
         condition_o => invariant_mass_i212);
 
 invariant_mass_i271_i: entity work.calo_calo_correlation_condition
     generic map(
-        true,
-        deta_cut => true, dphi_cut => false, dr_cut => false, mass_cut => true, mass_type => 0, twobody_pt_cut => false,        
-        nr_calo1_objects => NR_JET_OBJECTS;
-        calo1_object_low => 0, calo1_object_high => 11, et_ge_mode_calo1 => true, obj_type_calo1 => JET_TYPE,
-        et_threshold_calo1 => X"003C",
+        nr_calo1_objects => NR_JET_OBJECTS,
+        calo1_object_low => 0, calo1_object_high => 11,        
+        obj_type_calo1 => JET_TYPE,
+        pt_threshold_calo1 => X"003C",
         nr_eta_windows_calo1 => 1,
-        eta_w1_upper_limit_calo1 => X"0039", eta_w1_lower_limit_calo1 => X"00C6",
-        eta_w2_upper_limit_calo1 => X"0000", eta_w2_lower_limit_calo1 => X"0000",
-        eta_w3_upper_limit_calo1 => X"0000", eta_w3_lower_limit_calo1 => X"0000",
-        eta_w4_upper_limit_calo1 => X"0000", eta_w4_lower_limit_calo1 => X"0000",
-        eta_w5_upper_limit_calo1 => X"0000", eta_w5_lower_limit_calo1 => X"0000",
-        phi_full_range_calo1 => true, phi_w1_upper_limit_calo1 => X"0000", phi_w1_lower_limit_calo1 => X"0000",
-        phi_w2_ignore_calo1 => true, phi_w2_upper_limit_calo1 => X"0000", phi_w2_lower_limit_calo1 => X"0000",
-        iso_lut_calo1 => X"F",
-        nr_calo2_objects => NR_JET_OBJECTS;
-        calo2_object_low => 0, calo2_object_high => 11, et_ge_mode_calo2 => true, obj_type_calo2 => JET_TYPE,
-        et_threshold_calo2 => X"003C",
+        eta_w1_upper_limit_calo1 => X"0039", eta_w1_lower_limit_calo1 => X"00C6",        
+        nr_calo2_objects => NR_JET_OBJECTS,
+        calo2_object_low => 0, calo2_object_high => 11,        
+        obj_type_calo2 => JET_TYPE,
+        pt_threshold_calo2 => X"003C",
         nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0039", eta_w1_lower_limit_calo2 => X"00C6",
-        eta_w2_upper_limit_calo2 => X"0000", eta_w2_lower_limit_calo2 => X"0000",
-        eta_w3_upper_limit_calo2 => X"0000", eta_w3_lower_limit_calo2 => X"0000",
-        eta_w4_upper_limit_calo2 => X"0000", eta_w4_lower_limit_calo2 => X"0000",
-        eta_w5_upper_limit_calo2 => X"0000", eta_w5_lower_limit_calo2 => X"0000",
-        phi_full_range_calo2 => true, phi_w1_upper_limit_calo2 => X"0000", phi_w1_lower_limit_calo2 => X"0000",
-        phi_w2_ignore_calo2 => true, phi_w2_upper_limit_calo2 => X"0000", phi_w2_lower_limit_calo2 => X"0000",
-        iso_lut_calo2 => X"F",
+        deta_cut => true,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         diff_eta_upper_limit_vector => X"000005DC", diff_eta_lower_limit_vector => X"00000000",
-        diff_phi_upper_limit_vector => X"00000000", diff_phi_lower_limit_vector => X"00000000",
-        dr_upper_limit_vector => X"0000000000000000", dr_lower_limit_vector => X"0000000000000000",
         mass_upper_limit => X"00041A6642C78140",
-        mass_lower_limit => X"000000010C388D00",
-        pt1_width => JET_PT_VECTOR_WIDTH, 
-        pt2_width => JET_PT_VECTOR_WIDTH, 
-        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
-        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
-        pt_sq_threshold_vector => X"0000000000000000", 
-        sin_cos_width => CALO_SIN_COS_VECTOR_WIDTH, 
-        pt_sq_sin_cos_precision => JET_JET_SIN_COS_PRECISION        
+        mass_lower_limit => X"000000010C388D00",        
+        same_bx => true
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
-        diff_eta => diff_jet_jet_bx_0_bx_0_eta_vector, diff_phi => diff_jet_jet_bx_0_bx_0_phi_vector,
+        diff_eta => diff_jet_jet_bx_0_bx_0_eta_vector,
         pt1 => jet_pt_vector_bx_0, pt2 => jet_pt_vector_bx_0,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
-        cos_phi_1_integer => jet_cos_phi_bx_0, cos_phi_2_integer => jet_cos_phi_bx_0, sin_phi_1_integer => jet_sin_phi_bx_0, sin_phi_2_integer => jet_sin_phi_bx_0,
         condition_o => invariant_mass_i271);
 
 invariant_mass_i280_i: entity work.calo_calo_correlation_condition
     generic map(
-        true,
-        deta_cut => false, dphi_cut => false, dr_cut => false, mass_cut => true, mass_type => 0, twobody_pt_cut => false,        
-        nr_calo1_objects => NR_JET_OBJECTS;
-        calo1_object_low => 0, calo1_object_high => 11, et_ge_mode_calo1 => true, obj_type_calo1 => JET_TYPE,
-        et_threshold_calo1 => X"0050",
-        nr_eta_windows_calo1 => 0,
-        eta_w1_upper_limit_calo1 => X"0000", eta_w1_lower_limit_calo1 => X"0000",
-        eta_w2_upper_limit_calo1 => X"0000", eta_w2_lower_limit_calo1 => X"0000",
-        eta_w3_upper_limit_calo1 => X"0000", eta_w3_lower_limit_calo1 => X"0000",
-        eta_w4_upper_limit_calo1 => X"0000", eta_w4_lower_limit_calo1 => X"0000",
-        eta_w5_upper_limit_calo1 => X"0000", eta_w5_lower_limit_calo1 => X"0000",
-        phi_full_range_calo1 => true, phi_w1_upper_limit_calo1 => X"0000", phi_w1_lower_limit_calo1 => X"0000",
-        phi_w2_ignore_calo1 => true, phi_w2_upper_limit_calo1 => X"0000", phi_w2_lower_limit_calo1 => X"0000",
-        iso_lut_calo1 => X"F",
-        nr_calo2_objects => NR_JET_OBJECTS;
-        calo2_object_low => 0, calo2_object_high => 11, et_ge_mode_calo2 => true, obj_type_calo2 => JET_TYPE,
-        et_threshold_calo2 => X"0050",
-        nr_eta_windows_calo2 => 0,
-        eta_w1_upper_limit_calo2 => X"0000", eta_w1_lower_limit_calo2 => X"0000",
-        eta_w2_upper_limit_calo2 => X"0000", eta_w2_lower_limit_calo2 => X"0000",
-        eta_w3_upper_limit_calo2 => X"0000", eta_w3_lower_limit_calo2 => X"0000",
-        eta_w4_upper_limit_calo2 => X"0000", eta_w4_lower_limit_calo2 => X"0000",
-        eta_w5_upper_limit_calo2 => X"0000", eta_w5_lower_limit_calo2 => X"0000",
-        phi_full_range_calo2 => true, phi_w1_upper_limit_calo2 => X"0000", phi_w1_lower_limit_calo2 => X"0000",
-        phi_w2_ignore_calo2 => true, phi_w2_upper_limit_calo2 => X"0000", phi_w2_lower_limit_calo2 => X"0000",
-        iso_lut_calo2 => X"F",
-        diff_eta_upper_limit_vector => X"00000000", diff_eta_lower_limit_vector => X"00000000",
-        diff_phi_upper_limit_vector => X"00000000", diff_phi_lower_limit_vector => X"00000000",
-        dr_upper_limit_vector => X"0000000000000000", dr_lower_limit_vector => X"0000000000000000",
+        nr_calo1_objects => NR_JET_OBJECTS,
+        calo1_object_low => 0, calo1_object_high => 11,        
+        obj_type_calo1 => JET_TYPE,
+        pt_threshold_calo1 => X"0050",        
+        nr_calo2_objects => NR_JET_OBJECTS,
+        calo2_object_low => 0, calo2_object_high => 11,        
+        obj_type_calo2 => JET_TYPE,
+        pt_threshold_calo2 => X"0050",
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         mass_upper_limit => X"00041A6642C78140",
-        mass_lower_limit => X"000000047999ED00",
-        pt1_width => JET_PT_VECTOR_WIDTH, 
-        pt2_width => JET_PT_VECTOR_WIDTH, 
-        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
-        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
-        pt_sq_threshold_vector => X"0000000000000000", 
-        sin_cos_width => CALO_SIN_COS_VECTOR_WIDTH, 
-        pt_sq_sin_cos_precision => JET_JET_SIN_COS_PRECISION        
+        mass_lower_limit => X"000000047999ED00",        
+        same_bx => true
     )
     port map(lhc_clk, jet_bx_0, jet_bx_0,
-        diff_eta => diff_jet_jet_bx_0_bx_0_eta_vector, diff_phi => diff_jet_jet_bx_0_bx_0_phi_vector,
         pt1 => jet_pt_vector_bx_0, pt2 => jet_pt_vector_bx_0,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
-        cos_phi_1_integer => jet_cos_phi_bx_0, cos_phi_2_integer => jet_cos_phi_bx_0, sin_phi_1_integer => jet_sin_phi_bx_0, sin_phi_2_integer => jet_sin_phi_bx_0,
         condition_o => invariant_mass_i280);
 
 invariant_mass_i95_i: entity work.calo_calo_correlation_condition
     generic map(
-        true,
-        deta_cut => false, dphi_cut => false, dr_cut => false, mass_cut => true, mass_type => 0, twobody_pt_cut => false,        
-        nr_calo1_objects => NR_EG_OBJECTS;
-        calo1_object_low => 0, calo1_object_high => 11, et_ge_mode_calo1 => true, obj_type_calo1 => EG_TYPE,
-        et_threshold_calo1 => X"0006",
+        nr_calo1_objects => NR_EG_OBJECTS,
+        calo1_object_low => 0, calo1_object_high => 11,        
+        obj_type_calo1 => EG_TYPE,
+        pt_threshold_calo1 => X"0006",
         nr_eta_windows_calo1 => 1,
-        eta_w1_upper_limit_calo1 => X"0030", eta_w1_lower_limit_calo1 => X"00CF",
-        eta_w2_upper_limit_calo1 => X"0000", eta_w2_lower_limit_calo1 => X"0000",
-        eta_w3_upper_limit_calo1 => X"0000", eta_w3_lower_limit_calo1 => X"0000",
-        eta_w4_upper_limit_calo1 => X"0000", eta_w4_lower_limit_calo1 => X"0000",
-        eta_w5_upper_limit_calo1 => X"0000", eta_w5_lower_limit_calo1 => X"0000",
-        phi_full_range_calo1 => true, phi_w1_upper_limit_calo1 => X"0000", phi_w1_lower_limit_calo1 => X"0000",
-        phi_w2_ignore_calo1 => true, phi_w2_upper_limit_calo1 => X"0000", phi_w2_lower_limit_calo1 => X"0000",
-        iso_lut_calo1 => X"F",
-        nr_calo2_objects => NR_EG_OBJECTS;
-        calo2_object_low => 0, calo2_object_high => 11, et_ge_mode_calo2 => true, obj_type_calo2 => EG_TYPE,
-        et_threshold_calo2 => X"0006",
+        eta_w1_upper_limit_calo1 => X"0030", eta_w1_lower_limit_calo1 => X"00CF",        
+        nr_calo2_objects => NR_EG_OBJECTS,
+        calo2_object_low => 0, calo2_object_high => 11,        
+        obj_type_calo2 => EG_TYPE,
+        pt_threshold_calo2 => X"0006",
         nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0030", eta_w1_lower_limit_calo2 => X"00CF",
-        eta_w2_upper_limit_calo2 => X"0000", eta_w2_lower_limit_calo2 => X"0000",
-        eta_w3_upper_limit_calo2 => X"0000", eta_w3_lower_limit_calo2 => X"0000",
-        eta_w4_upper_limit_calo2 => X"0000", eta_w4_lower_limit_calo2 => X"0000",
-        eta_w5_upper_limit_calo2 => X"0000", eta_w5_lower_limit_calo2 => X"0000",
-        phi_full_range_calo2 => true, phi_w1_upper_limit_calo2 => X"0000", phi_w1_lower_limit_calo2 => X"0000",
-        phi_w2_ignore_calo2 => true, phi_w2_upper_limit_calo2 => X"0000", phi_w2_lower_limit_calo2 => X"0000",
-        iso_lut_calo2 => X"F",
-        diff_eta_upper_limit_vector => X"00000000", diff_eta_lower_limit_vector => X"00000000",
-        diff_phi_upper_limit_vector => X"00000000", diff_phi_lower_limit_vector => X"00000000",
-        dr_upper_limit_vector => X"0000000000000000", dr_lower_limit_vector => X"0000000000000000",
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         mass_upper_limit => X"0000000001312D00",
-        mass_lower_limit => X"0000000000000000",
-        pt1_width => EG_PT_VECTOR_WIDTH, 
-        pt2_width => EG_PT_VECTOR_WIDTH, 
-        mass_cosh_cos_precision => EG_EG_COSH_COS_PRECISION, 
-        cosh_cos_width => EG_EG_COSH_COS_VECTOR_WIDTH,
-        pt_sq_threshold_vector => X"0000000000000000", 
-        sin_cos_width => CALO_SIN_COS_VECTOR_WIDTH, 
-        pt_sq_sin_cos_precision => EG_EG_SIN_COS_PRECISION        
+        mass_lower_limit => X"0000000000000000",        
+        same_bx => true
     )
     port map(lhc_clk, eg_bx_0, eg_bx_0,
-        diff_eta => diff_eg_eg_bx_0_bx_0_eta_vector, diff_phi => diff_eg_eg_bx_0_bx_0_phi_vector,
         pt1 => eg_pt_vector_bx_0, pt2 => eg_pt_vector_bx_0,
         cosh_deta => eg_eg_bx_0_bx_0_cosh_deta_vector, cos_dphi => eg_eg_bx_0_bx_0_cos_dphi_vector,
-        cos_phi_1_integer => eg_cos_phi_bx_0, cos_phi_2_integer => eg_cos_phi_bx_0, sin_phi_1_integer => eg_sin_phi_bx_0, sin_phi_2_integer => eg_sin_phi_bx_0,
         condition_o => invariant_mass_i95);
 
 calo_muon_correlation_i118_i: entity work.calo_muon_correlation_condition
     generic map(
-        deta_cut => false, dphi_cut => false, dr_cut => true, mass_cut => false, mass_type => 0, twobody_pt_cut => false,        
-        nr_calo_objects => NR_JET_OBJECTS;
-        calo_object_low => 0, calo_object_high => 11, et_ge_mode_calo => true, obj_type_calo => JET_TYPE,
-        et_threshold_calo => X"00B4",
+        calo_object_low => 0, calo_object_high => 11,        
+        obj_type_calo => JET_TYPE,
+        pt_threshold_calo => X"00B4",
         nr_eta_windows_calo => 1,
-        eta_w1_upper_limit_calo => X"0039", eta_w1_lower_limit_calo => X"00C6",
-        eta_w2_upper_limit_calo => X"0000", eta_w2_lower_limit_calo => X"0000",
-        eta_w3_upper_limit_calo => X"0000", eta_w3_lower_limit_calo => X"0000",
-        eta_w4_upper_limit_calo => X"0000", eta_w4_lower_limit_calo => X"0000",
-        eta_w5_upper_limit_calo => X"0000", eta_w5_lower_limit_calo => X"0000",
-        phi_full_range_calo => true, phi_w1_upper_limit_calo => X"0000", phi_w1_lower_limit_calo => X"0000",
-        phi_w2_ignore_calo => true, phi_w2_upper_limit_calo => X"0000", phi_w2_lower_limit_calo => X"0000",
-        iso_lut_calo => X"F",
-        muon_object_low => 0, muon_object_high => 7, et_ge_mode_muon => true, obj_type_muon => MU_TYPE,
+        eta_w1_upper_limit_calo => X"0039", eta_w1_lower_limit_calo => X"00C6",        
+        muon_object_low => 0, muon_object_high => 7,        
         pt_threshold_muon => X"0007",
-        nr_eta_windows_muon => 0,
-        eta_w1_upper_limit_muon => X"0000", eta_w1_lower_limit_muon => X"0000",
-        eta_w2_upper_limit_muon => X"0000", eta_w2_lower_limit_muon => X"0000",
-        eta_w3_upper_limit_muon => X"0000", eta_w3_lower_limit_muon => X"0000",
-        eta_w4_upper_limit_muon => X"0000", eta_w4_lower_limit_muon => X"0000",
-        eta_w5_upper_limit_muon => X"0000", eta_w5_lower_limit_muon => X"0000",
-        phi_full_range_muon => true, phi_w1_upper_limit_muon => X"0000", phi_w1_lower_limit_muon => X"0000",
-        phi_w2_ignore_muon => true, phi_w2_upper_limit_muon => X"0000", phi_w2_lower_limit_muon => X"0000",
-        requested_charge_muon => "ign", qual_lut_muon => X"FF00", iso_lut_muon => X"F",
-        upt_cut_muon => false, upt_upper_limit_muon => X"0000", upt_lower_limit_muon => X"0000", ip_lut_muon => X"F",
-        X"00000000", X"00000000",
-        X"00000000", X"00000000",
-        X"000000000009C7E8", X"0000000000000000",
-        mass_upper_limit => X"0000000000000000",
-        mass_lower_limit => X"0000000000000000",        
-        pt1_width => JET_PT_VECTOR_WIDTH, 
-        pt2_width => MU_PT_VECTOR_WIDTH, 
-        mass_cosh_cos_precision => JET_MU_COSH_COS_PRECISION, 
-        cosh_cos_width => JET_MU_COSH_COS_VECTOR_WIDTH,
-        pt_sq_threshold_vector => X"0000000000000000", 
-        sin_cos_width => MUON_SIN_COS_VECTOR_WIDTH, 
-        pt_sq_sin_cos_precision => JET_MU_SIN_COS_PRECISION
+        qual_lut_muon => X"FF00",
+        dr_cut => true,
+        dr_upper_limit_vector => X"000000000009C7E8", dr_lower_limit_vector => X"0000000000000000",        
+        nr_calo_objects => NR_JET_OBJECTS
     )
     port map(lhc_clk, jet_bx_0, mu_bx_0,
-        diff_jet_mu_bx_0_bx_0_eta_vector, diff_jet_jet_bx_0_bx_0_phi_vector,
-        jet_pt_vector_bx_0, mu_pt_vector_bx_0,
-        jet_upt_vector_bx_0, mu_upt_vector_bx_0,
-        jet_mu_bx_0_bx_0_cosh_deta_vector, jet_mu_bx_0_bx_0_cos_dphi_vector,
-        jet_cos_phi_bx_0, mu_cos_phi_bx_0, jet_sin_phi_bx_0, mu_sin_phi_bx_0,
+        diff_eta => diff_jet_mu_bx_0_bx_0_eta_vector,
+        diff_phi => diff_jet_mu_bx_0_bx_0_phi_vector,
         condition_o => calo_muon_correlation_i118);
 
 calo_muon_correlation_i99_i: entity work.calo_muon_correlation_condition
     generic map(
-        deta_cut => false, dphi_cut => false, dr_cut => true, mass_cut => false, mass_type => 0, twobody_pt_cut => false,        
-        nr_calo_objects => NR_JET_OBJECTS;
-        calo_object_low => 0, calo_object_high => 11, et_ge_mode_calo => true, obj_type_calo => JET_TYPE,
-        et_threshold_calo => X"0078",
+        calo_object_low => 0, calo_object_high => 11,        
+        obj_type_calo => JET_TYPE,
+        pt_threshold_calo => X"0078",
         nr_eta_windows_calo => 1,
-        eta_w1_upper_limit_calo => X"0039", eta_w1_lower_limit_calo => X"00C6",
-        eta_w2_upper_limit_calo => X"0000", eta_w2_lower_limit_calo => X"0000",
-        eta_w3_upper_limit_calo => X"0000", eta_w3_lower_limit_calo => X"0000",
-        eta_w4_upper_limit_calo => X"0000", eta_w4_lower_limit_calo => X"0000",
-        eta_w5_upper_limit_calo => X"0000", eta_w5_lower_limit_calo => X"0000",
-        phi_full_range_calo => true, phi_w1_upper_limit_calo => X"0000", phi_w1_lower_limit_calo => X"0000",
-        phi_w2_ignore_calo => true, phi_w2_upper_limit_calo => X"0000", phi_w2_lower_limit_calo => X"0000",
-        iso_lut_calo => X"F",
-        muon_object_low => 0, muon_object_high => 7, et_ge_mode_muon => true, obj_type_muon => MU_TYPE,
+        eta_w1_upper_limit_calo => X"0039", eta_w1_lower_limit_calo => X"00C6",        
+        muon_object_low => 0, muon_object_high => 7,        
         pt_threshold_muon => X"0007",
-        nr_eta_windows_muon => 0,
-        eta_w1_upper_limit_muon => X"0000", eta_w1_lower_limit_muon => X"0000",
-        eta_w2_upper_limit_muon => X"0000", eta_w2_lower_limit_muon => X"0000",
-        eta_w3_upper_limit_muon => X"0000", eta_w3_lower_limit_muon => X"0000",
-        eta_w4_upper_limit_muon => X"0000", eta_w4_lower_limit_muon => X"0000",
-        eta_w5_upper_limit_muon => X"0000", eta_w5_lower_limit_muon => X"0000",
-        phi_full_range_muon => true, phi_w1_upper_limit_muon => X"0000", phi_w1_lower_limit_muon => X"0000",
-        phi_w2_ignore_muon => true, phi_w2_upper_limit_muon => X"0000", phi_w2_lower_limit_muon => X"0000",
-        requested_charge_muon => "ign", qual_lut_muon => X"F000", iso_lut_muon => X"F",
-        upt_cut_muon => false, upt_upper_limit_muon => X"0000", upt_lower_limit_muon => X"0000", ip_lut_muon => X"F",
-        X"00000000", X"00000000",
-        X"00000000", X"00000000",
-        X"00000000000274E8", X"0000000000000000",
-        mass_upper_limit => X"0000000000000000",
-        mass_lower_limit => X"0000000000000000",        
-        pt1_width => JET_PT_VECTOR_WIDTH, 
-        pt2_width => MU_PT_VECTOR_WIDTH, 
-        mass_cosh_cos_precision => JET_MU_COSH_COS_PRECISION, 
-        cosh_cos_width => JET_MU_COSH_COS_VECTOR_WIDTH,
-        pt_sq_threshold_vector => X"0000000000000000", 
-        sin_cos_width => MUON_SIN_COS_VECTOR_WIDTH, 
-        pt_sq_sin_cos_precision => JET_MU_SIN_COS_PRECISION
+        qual_lut_muon => X"F000",
+        dr_cut => true,
+        dr_upper_limit_vector => X"00000000000274E8", dr_lower_limit_vector => X"0000000000000000",        
+        nr_calo_objects => NR_JET_OBJECTS
     )
     port map(lhc_clk, jet_bx_0, mu_bx_0,
-        diff_jet_mu_bx_0_bx_0_eta_vector, diff_jet_jet_bx_0_bx_0_phi_vector,
-        jet_pt_vector_bx_0, mu_pt_vector_bx_0,
-        jet_upt_vector_bx_0, mu_upt_vector_bx_0,
-        jet_mu_bx_0_bx_0_cosh_deta_vector, jet_mu_bx_0_bx_0_cos_dphi_vector,
-        jet_cos_phi_bx_0, mu_cos_phi_bx_0, jet_sin_phi_bx_0, mu_sin_phi_bx_0,
+        diff_eta => diff_jet_mu_bx_0_bx_0_eta_vector,
+        diff_phi => diff_jet_mu_bx_0_bx_0_phi_vector,
         condition_o => calo_muon_correlation_i99);
 
-invariant_mass_i37_i: entity work.calo_calo_correlation_condition
+invariant_mass_i37_i: entity work.muon_muon_correlation_condition
     generic map(
-        true,
-        deta_cut => false, dphi_cut => false, dr_cut => false, mass_cut => true, mass_type => 0, twobody_pt_cut => false,        
-        muon1_object_low => 0, muon1_object_high => 7, et_ge_mode_muon1 => true, obj_type_muon1 => MU_TYPE,
-        pt_threshold_muon1 => X"0001",
-        nr_eta_windows_muon1 => 0,
-        eta_w1_upper_limit_muon1 => X"0000", eta_w1_lower_limit_muon1 => X"0000",
-        eta_w2_upper_limit_muon1 => X"0000", eta_w2_lower_limit_muon1 => X"0000",
-        eta_w3_upper_limit_muon1 => X"0000", eta_w3_lower_limit_muon1 => X"0000",
-        eta_w4_upper_limit_muon1 => X"0000", eta_w4_lower_limit_muon1 => X"0000",
-        eta_w5_upper_limit_muon1 => X"0000", eta_w5_lower_limit_muon1 => X"0000",
-        phi_full_range_muon1 => true, phi_w1_upper_limit_muon1 => X"0000", phi_w1_lower_limit_muon1 => X"0000",
-        phi_w2_ignore_muon1 => true, phi_w2_upper_limit_muon1 => X"0000", phi_w2_lower_limit_muon1 => X"0000",
-        requested_charge_muon1 => "ign", qual_lut_muon1 => X"FFFF", iso_lut_muon1 => X"F",
-        upt_cut_muon1 => false, upt_upper_limit_muon1 => X"0000", upt_lower_limit_muon1 => X"0000", ip_lut_muon1 => X"F",
-        muon2_object_low => 0, muon2_object_high => 7, et_ge_mode_muon2 => true, obj_type_muon2 => MU_TYPE,
+        muon1_object_low => 0, muon1_object_high => 7,        
+        pt_threshold_muon1 => X"0001",        
+        muon2_object_low => 0, muon2_object_high => 7,        
         pt_threshold_muon2 => X"0001",
-        nr_eta_windows_muon2 => 0,
-        eta_w1_upper_limit_muon2 => X"0000", eta_w1_lower_limit_muon2 => X"0000",
-        eta_w2_upper_limit_muon2 => X"0000", eta_w2_lower_limit_muon2 => X"0000",
-        eta_w3_upper_limit_muon2 => X"0000", eta_w3_lower_limit_muon2 => X"0000",
-        eta_w4_upper_limit_muon2 => X"0000", eta_w4_lower_limit_muon2 => X"0000",
-        eta_w5_upper_limit_muon2 => X"0000", eta_w5_lower_limit_muon2 => X"0000",
-        phi_full_range_muon2 => true, phi_w1_upper_limit_muon2 => X"0000", phi_w1_lower_limit_muon2 => X"0000",
-        phi_w2_ignore_muon2 => true, phi_w2_upper_limit_muon2 => X"0000", phi_w2_lower_limit_muon2 => X"0000",
-        requested_charge_muon2 => "ign", qual_lut_muon2 => X"FFFF", iso_lut_muon2 => X"F",
-        upt_cut_muon2 => false, upt_upper_limit_muon2 => X"0000", upt_lower_limit_muon2 => X"0000", ip_lut_muon2 => X"F",
-        requested_charge_correlation => "ig",
-        diff_eta_upper_limit_vector => X"00000000", diff_eta_lower_limit_vector => X"00000000",
-        diff_phi_upper_limit_vector => X"00000000", diff_phi_lower_limit_vector => X"00000000",
-        dr_upper_limit_vector => X"0000000000000000", dr_lower_limit_vector => X"0000000000000000",
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         mass_upper_limit => X"002907FE9BCB0C80",
-        mass_lower_limit => X"000000000007A120",
-        pt_width => MU_PT_VECTOR_WIDTH, 
-        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
-        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
-        pt_sq_threshold_vector => X"0000000000000000", 
-        sin_cos_width => MUON_SIN_COS_VECTOR_WIDTH, 
-        pt_sq_sin_cos_precision => MU_MU_SIN_COS_PRECISION        
+        mass_lower_limit => X"000000000007A120",        
+        same_bx => true
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-        diff_mu_mu_bx_0_bx_0_eta_vector, diff_mu_mu_bx_0_bx_0_phi_vector,
-        mu_pt_vector_bx_0, mu_pt_vector_bx_0,
-        mu_upt_vector_bx_0, mu_upt_vector_bx_0,
-        mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
-        mu_cos_phi_bx_0, mu_cos_phi_bx_0, mu_sin_phi_bx_0, mu_sin_phi_bx_0,
+        pt1 => mu_pt_vector_bx_0, pt2 => mu_pt_vector_bx_0,
+        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector, cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
         condition_o => invariant_mass_i37);
 
-invariant_mass_i71_i: entity work.calo_calo_correlation_condition
+invariant_mass_i71_i: entity work.muon_muon_correlation_condition
     generic map(
-        true,
-        deta_cut => false, dphi_cut => false, dr_cut => false, mass_cut => true, mass_type => 0, twobody_pt_cut => false,        
-        muon1_object_low => 0, muon1_object_high => 7, et_ge_mode_muon1 => true, obj_type_muon1 => MU_TYPE,
+        muon1_object_low => 0, muon1_object_high => 7,        
         pt_threshold_muon1 => X"000B",
-        nr_eta_windows_muon1 => 0,
-        eta_w1_upper_limit_muon1 => X"0000", eta_w1_lower_limit_muon1 => X"0000",
-        eta_w2_upper_limit_muon1 => X"0000", eta_w2_lower_limit_muon1 => X"0000",
-        eta_w3_upper_limit_muon1 => X"0000", eta_w3_lower_limit_muon1 => X"0000",
-        eta_w4_upper_limit_muon1 => X"0000", eta_w4_lower_limit_muon1 => X"0000",
-        eta_w5_upper_limit_muon1 => X"0000", eta_w5_lower_limit_muon1 => X"0000",
-        phi_full_range_muon1 => true, phi_w1_upper_limit_muon1 => X"0000", phi_w1_lower_limit_muon1 => X"0000",
-        phi_w2_ignore_muon1 => true, phi_w2_upper_limit_muon1 => X"0000", phi_w2_lower_limit_muon1 => X"0000",
-        requested_charge_muon1 => "ign", qual_lut_muon1 => X"FFF0", iso_lut_muon1 => X"F",
-        upt_cut_muon1 => false, upt_upper_limit_muon1 => X"0000", upt_lower_limit_muon1 => X"0000", ip_lut_muon1 => X"F",
-        muon2_object_low => 0, muon2_object_high => 7, et_ge_mode_muon2 => true, obj_type_muon2 => MU_TYPE,
+        qual_lut_muon1 => X"FFF0",        
+        muon2_object_low => 0, muon2_object_high => 7,        
         pt_threshold_muon2 => X"0006",
-        nr_eta_windows_muon2 => 0,
-        eta_w1_upper_limit_muon2 => X"0000", eta_w1_lower_limit_muon2 => X"0000",
-        eta_w2_upper_limit_muon2 => X"0000", eta_w2_lower_limit_muon2 => X"0000",
-        eta_w3_upper_limit_muon2 => X"0000", eta_w3_lower_limit_muon2 => X"0000",
-        eta_w4_upper_limit_muon2 => X"0000", eta_w4_lower_limit_muon2 => X"0000",
-        eta_w5_upper_limit_muon2 => X"0000", eta_w5_lower_limit_muon2 => X"0000",
-        phi_full_range_muon2 => true, phi_w1_upper_limit_muon2 => X"0000", phi_w1_lower_limit_muon2 => X"0000",
-        phi_w2_ignore_muon2 => true, phi_w2_upper_limit_muon2 => X"0000", phi_w2_lower_limit_muon2 => X"0000",
-        requested_charge_muon2 => "ign", qual_lut_muon2 => X"FFF0", iso_lut_muon2 => X"F",
-        upt_cut_muon2 => false, upt_upper_limit_muon2 => X"0000", upt_lower_limit_muon2 => X"0000", ip_lut_muon2 => X"F",
+        qual_lut_muon2 => X"FFF0",
         requested_charge_correlation => "os",
-        diff_eta_upper_limit_vector => X"00000000", diff_eta_lower_limit_vector => X"00000000",
-        diff_phi_upper_limit_vector => X"00000000", diff_phi_lower_limit_vector => X"00000000",
-        dr_upper_limit_vector => X"0000000000000000", dr_lower_limit_vector => X"0000000000000000",
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         mass_upper_limit => X"00000000089CE520",
-        mass_lower_limit => X"0000000000BEBC20",
-        pt_width => MU_PT_VECTOR_WIDTH, 
-        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
-        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
-        pt_sq_threshold_vector => X"0000000000000000", 
-        sin_cos_width => MUON_SIN_COS_VECTOR_WIDTH, 
-        pt_sq_sin_cos_precision => MU_MU_SIN_COS_PRECISION        
+        mass_lower_limit => X"0000000000BEBC20",        
+        same_bx => true
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-        diff_mu_mu_bx_0_bx_0_eta_vector, diff_mu_mu_bx_0_bx_0_phi_vector,
-        mu_pt_vector_bx_0, mu_pt_vector_bx_0,
-        mu_upt_vector_bx_0, mu_upt_vector_bx_0,
-        mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
-        mu_cos_phi_bx_0, mu_cos_phi_bx_0, mu_sin_phi_bx_0, mu_sin_phi_bx_0,
+        pt1 => mu_pt_vector_bx_0, pt2 => mu_pt_vector_bx_0,
+        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector, cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
         condition_o => invariant_mass_i71);
 
-invariant_mass_i74_i: entity work.calo_calo_correlation_condition
+invariant_mass_i74_i: entity work.muon_muon_correlation_condition
     generic map(
-        true,
-        deta_cut => false, dphi_cut => false, dr_cut => false, mass_cut => true, mass_type => 0, twobody_pt_cut => false,        
-        muon1_object_low => 0, muon1_object_high => 7, et_ge_mode_muon1 => true, obj_type_muon1 => MU_TYPE,
+        muon1_object_low => 0, muon1_object_high => 7,        
         pt_threshold_muon1 => X"000B",
-        nr_eta_windows_muon1 => 0,
-        eta_w1_upper_limit_muon1 => X"0000", eta_w1_lower_limit_muon1 => X"0000",
-        eta_w2_upper_limit_muon1 => X"0000", eta_w2_lower_limit_muon1 => X"0000",
-        eta_w3_upper_limit_muon1 => X"0000", eta_w3_lower_limit_muon1 => X"0000",
-        eta_w4_upper_limit_muon1 => X"0000", eta_w4_lower_limit_muon1 => X"0000",
-        eta_w5_upper_limit_muon1 => X"0000", eta_w5_lower_limit_muon1 => X"0000",
-        phi_full_range_muon1 => true, phi_w1_upper_limit_muon1 => X"0000", phi_w1_lower_limit_muon1 => X"0000",
-        phi_w2_ignore_muon1 => true, phi_w2_upper_limit_muon1 => X"0000", phi_w2_lower_limit_muon1 => X"0000",
-        requested_charge_muon1 => "ign", qual_lut_muon1 => X"F000", iso_lut_muon1 => X"F",
-        upt_cut_muon1 => false, upt_upper_limit_muon1 => X"0000", upt_lower_limit_muon1 => X"0000", ip_lut_muon1 => X"F",
-        muon2_object_low => 0, muon2_object_high => 7, et_ge_mode_muon2 => true, obj_type_muon2 => MU_TYPE,
+        qual_lut_muon1 => X"F000",        
+        muon2_object_low => 0, muon2_object_high => 7,        
         pt_threshold_muon2 => X"0007",
-        nr_eta_windows_muon2 => 0,
-        eta_w1_upper_limit_muon2 => X"0000", eta_w1_lower_limit_muon2 => X"0000",
-        eta_w2_upper_limit_muon2 => X"0000", eta_w2_lower_limit_muon2 => X"0000",
-        eta_w3_upper_limit_muon2 => X"0000", eta_w3_lower_limit_muon2 => X"0000",
-        eta_w4_upper_limit_muon2 => X"0000", eta_w4_lower_limit_muon2 => X"0000",
-        eta_w5_upper_limit_muon2 => X"0000", eta_w5_lower_limit_muon2 => X"0000",
-        phi_full_range_muon2 => true, phi_w1_upper_limit_muon2 => X"0000", phi_w1_lower_limit_muon2 => X"0000",
-        phi_w2_ignore_muon2 => true, phi_w2_upper_limit_muon2 => X"0000", phi_w2_lower_limit_muon2 => X"0000",
-        requested_charge_muon2 => "ign", qual_lut_muon2 => X"F000", iso_lut_muon2 => X"F",
-        upt_cut_muon2 => false, upt_upper_limit_muon2 => X"0000", upt_lower_limit_muon2 => X"0000", ip_lut_muon2 => X"F",
+        qual_lut_muon2 => X"F000",
         requested_charge_correlation => "os",
-        diff_eta_upper_limit_vector => X"00000000", diff_eta_lower_limit_vector => X"00000000",
-        diff_phi_upper_limit_vector => X"00000000", diff_phi_lower_limit_vector => X"00000000",
-        dr_upper_limit_vector => X"0000000000000000", dr_lower_limit_vector => X"0000000000000000",
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         mass_upper_limit => X"000000000269FB20",
-        mass_lower_limit => X"0000000000000000",
-        pt_width => MU_PT_VECTOR_WIDTH, 
-        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
-        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
-        pt_sq_threshold_vector => X"0000000000000000", 
-        sin_cos_width => MUON_SIN_COS_VECTOR_WIDTH, 
-        pt_sq_sin_cos_precision => MU_MU_SIN_COS_PRECISION        
+        mass_lower_limit => X"0000000000000000",        
+        same_bx => true
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-        diff_mu_mu_bx_0_bx_0_eta_vector, diff_mu_mu_bx_0_bx_0_phi_vector,
-        mu_pt_vector_bx_0, mu_pt_vector_bx_0,
-        mu_upt_vector_bx_0, mu_upt_vector_bx_0,
-        mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
-        mu_cos_phi_bx_0, mu_cos_phi_bx_0, mu_sin_phi_bx_0, mu_sin_phi_bx_0,
+        pt1 => mu_pt_vector_bx_0, pt2 => mu_pt_vector_bx_0,
+        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector, cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
         condition_o => invariant_mass_i74);
 
-invariant_mass_i94_i: entity work.calo_calo_correlation_condition
+invariant_mass_i94_i: entity work.muon_muon_correlation_condition
     generic map(
-        true,
-        deta_cut => false, dphi_cut => false, dr_cut => false, mass_cut => true, mass_type => 0, twobody_pt_cut => false,        
-        muon1_object_low => 0, muon1_object_high => 7, et_ge_mode_muon1 => true, obj_type_muon1 => MU_TYPE,
+        muon1_object_low => 0, muon1_object_high => 7,        
         pt_threshold_muon1 => X"000B",
         nr_eta_windows_muon1 => 1,
         eta_w1_upper_limit_muon1 => X"00D3", eta_w1_lower_limit_muon1 => X"012D",
-        eta_w2_upper_limit_muon1 => X"0000", eta_w2_lower_limit_muon1 => X"0000",
-        eta_w3_upper_limit_muon1 => X"0000", eta_w3_lower_limit_muon1 => X"0000",
-        eta_w4_upper_limit_muon1 => X"0000", eta_w4_lower_limit_muon1 => X"0000",
-        eta_w5_upper_limit_muon1 => X"0000", eta_w5_lower_limit_muon1 => X"0000",
-        phi_full_range_muon1 => true, phi_w1_upper_limit_muon1 => X"0000", phi_w1_lower_limit_muon1 => X"0000",
-        phi_w2_ignore_muon1 => true, phi_w2_upper_limit_muon1 => X"0000", phi_w2_lower_limit_muon1 => X"0000",
-        requested_charge_muon1 => "ign", qual_lut_muon1 => X"FF00", iso_lut_muon1 => X"F",
-        upt_cut_muon1 => false, upt_upper_limit_muon1 => X"0000", upt_lower_limit_muon1 => X"0000", ip_lut_muon1 => X"F",
-        muon2_object_low => 0, muon2_object_high => 7, et_ge_mode_muon2 => true, obj_type_muon2 => MU_TYPE,
+        qual_lut_muon1 => X"FF00",        
+        muon2_object_low => 0, muon2_object_high => 7,        
         pt_threshold_muon2 => X"000B",
         nr_eta_windows_muon2 => 1,
         eta_w1_upper_limit_muon2 => X"00D3", eta_w1_lower_limit_muon2 => X"012D",
-        eta_w2_upper_limit_muon2 => X"0000", eta_w2_lower_limit_muon2 => X"0000",
-        eta_w3_upper_limit_muon2 => X"0000", eta_w3_lower_limit_muon2 => X"0000",
-        eta_w4_upper_limit_muon2 => X"0000", eta_w4_lower_limit_muon2 => X"0000",
-        eta_w5_upper_limit_muon2 => X"0000", eta_w5_lower_limit_muon2 => X"0000",
-        phi_full_range_muon2 => true, phi_w1_upper_limit_muon2 => X"0000", phi_w1_lower_limit_muon2 => X"0000",
-        phi_w2_ignore_muon2 => true, phi_w2_upper_limit_muon2 => X"0000", phi_w2_lower_limit_muon2 => X"0000",
-        requested_charge_muon2 => "ign", qual_lut_muon2 => X"FF00", iso_lut_muon2 => X"F",
-        upt_cut_muon2 => false, upt_upper_limit_muon2 => X"0000", upt_lower_limit_muon2 => X"0000", ip_lut_muon2 => X"F",
+        qual_lut_muon2 => X"FF00",
         requested_charge_correlation => "os",
-        diff_eta_upper_limit_vector => X"00000000", diff_eta_lower_limit_vector => X"00000000",
-        diff_phi_upper_limit_vector => X"00000000", diff_phi_lower_limit_vector => X"00000000",
-        dr_upper_limit_vector => X"0000000000000000", dr_lower_limit_vector => X"0000000000000000",
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         mass_upper_limit => X"0000000005D75C80",
-        mass_lower_limit => X"0000000001E84800",
-        pt_width => MU_PT_VECTOR_WIDTH, 
-        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
-        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
-        pt_sq_threshold_vector => X"0000000000000000", 
-        sin_cos_width => MUON_SIN_COS_VECTOR_WIDTH, 
-        pt_sq_sin_cos_precision => MU_MU_SIN_COS_PRECISION        
+        mass_lower_limit => X"0000000001E84800",        
+        same_bx => true
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-        diff_mu_mu_bx_0_bx_0_eta_vector, diff_mu_mu_bx_0_bx_0_phi_vector,
-        mu_pt_vector_bx_0, mu_pt_vector_bx_0,
-        mu_upt_vector_bx_0, mu_upt_vector_bx_0,
-        mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
-        mu_cos_phi_bx_0, mu_cos_phi_bx_0, mu_sin_phi_bx_0, mu_sin_phi_bx_0,
+        pt1 => mu_pt_vector_bx_0, pt2 => mu_pt_vector_bx_0,
+        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector, cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
         condition_o => invariant_mass_i94);
 
-invariant_mass_delta_r_i372_i: entity work.calo_calo_correlation_condition
+invariant_mass_delta_r_i372_i: entity work.muon_muon_correlation_condition
     generic map(
-        true,
-        mass_cut => true, mass_type => 3,        
-        muon1_object_low => 0, muon1_object_high => 7, et_ge_mode_muon1 => true, obj_type_muon1 => MU_TYPE,
-        pt_threshold_muon1 => X"0029",
-        nr_eta_windows_muon1 => 0,
-        eta_w1_upper_limit_muon1 => X"0000", eta_w1_lower_limit_muon1 => X"0000",
-        eta_w2_upper_limit_muon1 => X"0000", eta_w2_lower_limit_muon1 => X"0000",
-        eta_w3_upper_limit_muon1 => X"0000", eta_w3_lower_limit_muon1 => X"0000",
-        eta_w4_upper_limit_muon1 => X"0000", eta_w4_lower_limit_muon1 => X"0000",
-        eta_w5_upper_limit_muon1 => X"0000", eta_w5_lower_limit_muon1 => X"0000",
-        phi_full_range_muon1 => true, phi_w1_upper_limit_muon1 => X"0000", phi_w1_lower_limit_muon1 => X"0000",
-        phi_w2_ignore_muon1 => true, phi_w2_upper_limit_muon1 => X"0000", phi_w2_lower_limit_muon1 => X"0000",
-        requested_charge_muon1 => "ign", qual_lut_muon1 => X"FFFF", iso_lut_muon1 => X"F",
-        upt_cut_muon1 => false, upt_upper_limit_muon1 => X"0000", upt_lower_limit_muon1 => X"0000", ip_lut_muon1 => X"F",
-        muon2_object_low => 0, muon2_object_high => 7, et_ge_mode_muon2 => true, obj_type_muon2 => MU_TYPE,
+        muon1_object_low => 0, muon1_object_high => 7,        
+        pt_threshold_muon1 => X"0029",        
+        muon2_object_low => 0, muon2_object_high => 7,        
         pt_threshold_muon2 => X"0051",
-        nr_eta_windows_muon2 => 0,
-        eta_w1_upper_limit_muon2 => X"0000", eta_w1_lower_limit_muon2 => X"0000",
-        eta_w2_upper_limit_muon2 => X"0000", eta_w2_lower_limit_muon2 => X"0000",
-        eta_w3_upper_limit_muon2 => X"0000", eta_w3_lower_limit_muon2 => X"0000",
-        eta_w4_upper_limit_muon2 => X"0000", eta_w4_lower_limit_muon2 => X"0000",
-        eta_w5_upper_limit_muon2 => X"0000", eta_w5_lower_limit_muon2 => X"0000",
-        phi_full_range_muon2 => true, phi_w1_upper_limit_muon2 => X"0000", phi_w1_lower_limit_muon2 => X"0000",
-        phi_w2_ignore_muon2 => true, phi_w2_upper_limit_muon2 => X"0000", phi_w2_lower_limit_muon2 => X"0000",
-        requested_charge_muon2 => "ign", qual_lut_muon2 => X"FFFF", iso_lut_muon2 => X"F",
-        upt_cut_muon2 => false, upt_upper_limit_muon2 => X"0000", upt_lower_limit_muon2 => X"0000", ip_lut_muon2 => X"F",
-        requested_charge_correlation => "ig",
-        mass_div_dr_vector_width => MU_MU_MASS_DIV_DR_VECTOR_WIDTH;
-        mass_div_dr_threshold => X"00000000000012A05F200"        
+        mass_cut => true, mass_type => INVARIANT_MASS_DIV_DR_TYPE,
+        mass_div_dr_vector_width => MU_MU_MASS_DIV_DR_VECTOR_WIDTH,
+        mass_div_dr_threshold => X"00000000000012A05F200",        
+        same_bx => true
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
         mass_div_dr => mu_mu_bx_0_bx_0_mass_div_dr,
         condition_o => invariant_mass_delta_r_i372);
 
-muon_muon_correlation_i117_i: entity work.calo_calo_correlation_condition
+muon_muon_correlation_i117_i: entity work.muon_muon_correlation_condition
     generic map(
-        true,
-        deta_cut => false, dphi_cut => false, dr_cut => true, mass_cut => false, mass_type => 0, twobody_pt_cut => false,        
-        muon1_object_low => 0, muon1_object_high => 7, et_ge_mode_muon1 => true, obj_type_muon1 => MU_TYPE,
+        muon1_object_low => 0, muon1_object_high => 7,        
         pt_threshold_muon1 => X"0007",
-        nr_eta_windows_muon1 => 0,
-        eta_w1_upper_limit_muon1 => X"0000", eta_w1_lower_limit_muon1 => X"0000",
-        eta_w2_upper_limit_muon1 => X"0000", eta_w2_lower_limit_muon1 => X"0000",
-        eta_w3_upper_limit_muon1 => X"0000", eta_w3_lower_limit_muon1 => X"0000",
-        eta_w4_upper_limit_muon1 => X"0000", eta_w4_lower_limit_muon1 => X"0000",
-        eta_w5_upper_limit_muon1 => X"0000", eta_w5_lower_limit_muon1 => X"0000",
-        phi_full_range_muon1 => true, phi_w1_upper_limit_muon1 => X"0000", phi_w1_lower_limit_muon1 => X"0000",
-        phi_w2_ignore_muon1 => true, phi_w2_upper_limit_muon1 => X"0000", phi_w2_lower_limit_muon1 => X"0000",
-        requested_charge_muon1 => "ign", qual_lut_muon1 => X"FF00", iso_lut_muon1 => X"F",
-        upt_cut_muon1 => false, upt_upper_limit_muon1 => X"0000", upt_lower_limit_muon1 => X"0000", ip_lut_muon1 => X"F",
-        muon2_object_low => 0, muon2_object_high => 7, et_ge_mode_muon2 => true, obj_type_muon2 => MU_TYPE,
+        qual_lut_muon1 => X"FF00",        
+        muon2_object_low => 0, muon2_object_high => 7,        
         pt_threshold_muon2 => X"0007",
-        nr_eta_windows_muon2 => 0,
-        eta_w1_upper_limit_muon2 => X"0000", eta_w1_lower_limit_muon2 => X"0000",
-        eta_w2_upper_limit_muon2 => X"0000", eta_w2_lower_limit_muon2 => X"0000",
-        eta_w3_upper_limit_muon2 => X"0000", eta_w3_lower_limit_muon2 => X"0000",
-        eta_w4_upper_limit_muon2 => X"0000", eta_w4_lower_limit_muon2 => X"0000",
-        eta_w5_upper_limit_muon2 => X"0000", eta_w5_lower_limit_muon2 => X"0000",
-        phi_full_range_muon2 => true, phi_w1_upper_limit_muon2 => X"0000", phi_w1_lower_limit_muon2 => X"0000",
-        phi_w2_ignore_muon2 => true, phi_w2_upper_limit_muon2 => X"0000", phi_w2_lower_limit_muon2 => X"0000",
-        requested_charge_muon2 => "ign", qual_lut_muon2 => X"FF00", iso_lut_muon2 => X"F",
-        upt_cut_muon2 => false, upt_upper_limit_muon2 => X"0000", upt_lower_limit_muon2 => X"0000", ip_lut_muon2 => X"F",
-        requested_charge_correlation => "ig",
-        diff_eta_upper_limit_vector => X"00000000", diff_eta_lower_limit_vector => X"00000000",
-        diff_phi_upper_limit_vector => X"00000000", diff_phi_lower_limit_vector => X"00000000",
-        dr_upper_limit_vector => X"00000000002713E8", dr_lower_limit_vector => X"0000000000000000",
-        mass_upper_limit => X"0000000000000000",
-        mass_lower_limit => X"0000000000000000",
-        pt_width => MU_PT_VECTOR_WIDTH, 
-        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
-        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
-        pt_sq_threshold_vector => X"0000000000000000", 
-        sin_cos_width => MUON_SIN_COS_VECTOR_WIDTH, 
-        pt_sq_sin_cos_precision => MU_MU_SIN_COS_PRECISION        
+        qual_lut_muon2 => X"FF00",
+        dr_cut => true,
+        dr_upper_limit_vector => X"00000000002713E8", dr_lower_limit_vector => X"0000000000000000",        
+        same_bx => true
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-        diff_mu_mu_bx_0_bx_0_eta_vector, diff_mu_mu_bx_0_bx_0_phi_vector,
-        mu_pt_vector_bx_0, mu_pt_vector_bx_0,
-        mu_upt_vector_bx_0, mu_upt_vector_bx_0,
-        mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
-        mu_cos_phi_bx_0, mu_cos_phi_bx_0, mu_sin_phi_bx_0, mu_sin_phi_bx_0,
+        diff_eta => diff_mu_mu_bx_0_bx_0_eta_vector,
+        diff_phi => diff_mu_mu_bx_0_bx_0_phi_vector,
         condition_o => muon_muon_correlation_i117);
 
-muon_muon_correlation_i47_i: entity work.calo_calo_correlation_condition
+muon_muon_correlation_i47_i: entity work.muon_muon_correlation_condition
     generic map(
-        true,
-        deta_cut => false, dphi_cut => false, dr_cut => true, mass_cut => false, mass_type => 0, twobody_pt_cut => false,        
-        muon1_object_low => 0, muon1_object_high => 7, et_ge_mode_muon1 => true, obj_type_muon1 => MU_TYPE,
+        muon1_object_low => 0, muon1_object_high => 7,        
         pt_threshold_muon1 => X"0001",
         nr_eta_windows_muon1 => 1,
         eta_w1_upper_limit_muon1 => X"00B8", eta_w1_lower_limit_muon1 => X"0148",
-        eta_w2_upper_limit_muon1 => X"0000", eta_w2_lower_limit_muon1 => X"0000",
-        eta_w3_upper_limit_muon1 => X"0000", eta_w3_lower_limit_muon1 => X"0000",
-        eta_w4_upper_limit_muon1 => X"0000", eta_w4_lower_limit_muon1 => X"0000",
-        eta_w5_upper_limit_muon1 => X"0000", eta_w5_lower_limit_muon1 => X"0000",
-        phi_full_range_muon1 => true, phi_w1_upper_limit_muon1 => X"0000", phi_w1_lower_limit_muon1 => X"0000",
-        phi_w2_ignore_muon1 => true, phi_w2_upper_limit_muon1 => X"0000", phi_w2_lower_limit_muon1 => X"0000",
-        requested_charge_muon1 => "ign", qual_lut_muon1 => X"F000", iso_lut_muon1 => X"F",
-        upt_cut_muon1 => false, upt_upper_limit_muon1 => X"0000", upt_lower_limit_muon1 => X"0000", ip_lut_muon1 => X"F",
-        muon2_object_low => 0, muon2_object_high => 7, et_ge_mode_muon2 => true, obj_type_muon2 => MU_TYPE,
+        qual_lut_muon1 => X"F000",        
+        muon2_object_low => 0, muon2_object_high => 7,        
         pt_threshold_muon2 => X"0001",
         nr_eta_windows_muon2 => 1,
         eta_w1_upper_limit_muon2 => X"00B8", eta_w1_lower_limit_muon2 => X"0148",
-        eta_w2_upper_limit_muon2 => X"0000", eta_w2_lower_limit_muon2 => X"0000",
-        eta_w3_upper_limit_muon2 => X"0000", eta_w3_lower_limit_muon2 => X"0000",
-        eta_w4_upper_limit_muon2 => X"0000", eta_w4_lower_limit_muon2 => X"0000",
-        eta_w5_upper_limit_muon2 => X"0000", eta_w5_lower_limit_muon2 => X"0000",
-        phi_full_range_muon2 => true, phi_w1_upper_limit_muon2 => X"0000", phi_w1_lower_limit_muon2 => X"0000",
-        phi_w2_ignore_muon2 => true, phi_w2_upper_limit_muon2 => X"0000", phi_w2_lower_limit_muon2 => X"0000",
-        requested_charge_muon2 => "ign", qual_lut_muon2 => X"F000", iso_lut_muon2 => X"F",
-        upt_cut_muon2 => false, upt_upper_limit_muon2 => X"0000", upt_lower_limit_muon2 => X"0000", ip_lut_muon2 => X"F",
+        qual_lut_muon2 => X"F000",
         requested_charge_correlation => "os",
-        diff_eta_upper_limit_vector => X"00000000", diff_eta_lower_limit_vector => X"00000000",
-        diff_phi_upper_limit_vector => X"00000000", diff_phi_lower_limit_vector => X"00000000",
-        dr_upper_limit_vector => X"00000000001DEC28", dr_lower_limit_vector => X"0000000000000000",
-        mass_upper_limit => X"0000000000000000",
-        mass_lower_limit => X"0000000000000000",
-        pt_width => MU_PT_VECTOR_WIDTH, 
-        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
-        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
-        pt_sq_threshold_vector => X"0000000000000000", 
-        sin_cos_width => MUON_SIN_COS_VECTOR_WIDTH, 
-        pt_sq_sin_cos_precision => MU_MU_SIN_COS_PRECISION        
+        dr_cut => true,
+        dr_upper_limit_vector => X"00000000001DEC28", dr_lower_limit_vector => X"0000000000000000",        
+        same_bx => true
     )
     port map(lhc_clk, mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-        diff_mu_mu_bx_0_bx_0_eta_vector, diff_mu_mu_bx_0_bx_0_phi_vector,
-        mu_pt_vector_bx_0, mu_pt_vector_bx_0,
-        mu_upt_vector_bx_0, mu_upt_vector_bx_0,
-        mu_mu_bx_0_bx_0_cosh_deta_vector, mu_mu_bx_0_bx_0_cos_dphi_vector,
-        mu_cos_phi_bx_0, mu_cos_phi_bx_0, mu_sin_phi_bx_0, mu_sin_phi_bx_0,
+        diff_eta => diff_mu_mu_bx_0_bx_0_eta_vector,
+        diff_phi => diff_mu_mu_bx_0_bx_0_phi_vector,
         condition_o => muon_muon_correlation_i47);
 
 -- Instantiations of algorithms
@@ -2326,7 +1959,7 @@ algo(55) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(60) <= l1_single_mu7;
+algo(58) <= l1_single_mu7;
 
 -- 17 L1_SingleMu18 : MU18[MU-QLTY_SNGL]
 l1_single_mu18 <= single_mu_i17;
@@ -2402,35 +2035,35 @@ algo(82) <= l1_triple_mu_5_3p5_2p5_oq_double_mu_5_2p5_oq_os_mass_5to17;
 
 -- 85 L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9 : comb{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL],MU0[MU-QLTY_OPEN]} AND mass_inv{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}[MASS_MASS_0to9,CHGCOR_OS]
 l1_triple_mu_5_sq_3_sq_0_oq_double_mu_5_3_sq_os_mass_max9 <= triple_mu_i65 and invariant_mass_i74;
-algo(77) <= l1_triple_mu_5_sq_3_sq_0_oq_double_mu_5_3_sq_os_mass_max9;
+algo(78) <= l1_triple_mu_5_sq_3_sq_0_oq_double_mu_5_3_sq_os_mass_max9;
 
 -- 86 L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9 : comb{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL],MU0[MU-QLTY_DBLE]} AND mass_inv{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}[MASS_MASS_0to9,CHGCOR_OS]
 l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9 <= triple_mu_i75 and invariant_mass_i74;
-algo(78) <= l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9;
+algo(77) <= l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9;
 
 -- 96 L1_Mu5_EG23er2p5 : MU5[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu5_eg23er2p5 <= single_mu_i10 and single_eg_i79;
-algo(58) <= l1_mu5_eg23er2p5;
+algo(60) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i12 and single_eg_i80;
-algo(57) <= l1_mu7_eg20er2p5;
+algo(59) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i12 and single_eg_i79;
-algo(59) <= l1_mu7_eg23er2p5;
+algo(61) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i10 and single_eg_i82;
-algo(61) <= l1_mu5_loose_iso_eg20er2p5;
+algo(62) <= l1_mu5_loose_iso_eg20er2p5;
 
 -- 101 L1_Mu7_LooseIsoEG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg20er2p5 <= single_mu_i12 and single_eg_i82;
-algo(62) <= l1_mu7_loose_iso_eg20er2p5;
+algo(56) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i12 and single_eg_i83;
-algo(56) <= l1_mu7_loose_iso_eg23er2p5;
+algo(57) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 109 L1_DoubleMu4_SQ_EG9er2p5 : comb{MU4[MU-QLTY_SNGL],MU4[MU-QLTY_SNGL]} AND EG9[EG-ETA_2p52]
 l1_double_mu4_sq_eg9er2p5 <= double_mu_i89 and single_eg_i90;
@@ -2578,11 +2211,11 @@ algo(25) <= l1_etm120;
 
 -- 465 L1_BptxXOR : (EXT_BPTX_B1_VME AND ( NOT EXT_BPTX_B2_VME)) OR (EXT_BPTX_B2_VME AND ( NOT EXT_BPTX_B1_VME))
 l1_bptx_xor <= ( single_ext_i344 and ( not single_ext_i345 ) ) or ( single_ext_i345 and ( not single_ext_i344 ) );
-algo(12) <= l1_bptx_xor;
+algo(13) <= l1_bptx_xor;
 
 -- 466 L1_BptxPlus : EXT_BPTX_B1_VME
 l1_bptx_plus <= single_ext_i344;
-algo(13) <= l1_bptx_plus;
+algo(12) <= l1_bptx_plus;
 
 -- 467 L1_BptxMinus : EXT_BPTX_B2_VME
 l1_bptx_minus <= single_ext_i345;

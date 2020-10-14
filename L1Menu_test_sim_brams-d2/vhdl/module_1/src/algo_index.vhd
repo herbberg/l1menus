@@ -10,7 +10,7 @@
 -- f130ce06-3de9-4b81-a2ad-bd1936c68a18
 
 -- Unique ID of firmware implementation:
--- 7d61fd00-b331-4384-84f4-3fb7453aa06c
+-- c5bee6d8-3e70-4298-bfe0-6fcff88a1f7b
 
 -- Scale set:
 -- scales_2020_10_04
@@ -33,8 +33,8 @@ constant global_index: global_index_array := (
         484, -- module_index: 9, name: L1_BPTX_OR_Ref4_VME
         485, -- module_index: 10, name: L1_BPTX_RefAND_VME
         467, -- module_index: 11, name: L1_BptxMinus
-        465, -- module_index: 12, name: L1_BptxXOR
-        466, -- module_index: 13, name: L1_BptxPlus
+        466, -- module_index: 12, name: L1_BptxPlus
+        465, -- module_index: 13, name: L1_BptxXOR
         480, -- module_index: 14, name: L1_FirstCollisionInOrbit
         479, -- module_index: 15, name: L1_FirstCollisionInTrain
         500, -- module_index: 16, name: L1_HCAL_LaserMon_Trig
@@ -77,13 +77,13 @@ constant global_index: global_index_array := (
          17, -- module_index: 53, name: L1_SingleMu18
          22, -- module_index: 54, name: L1_SingleMu22_EMTF
          10, -- module_index: 55, name: L1_SingleMu5
-        102, -- module_index: 56, name: L1_Mu7_LooseIsoEG23er2p5
-         97, -- module_index: 57, name: L1_Mu7_EG20er2p5
-         96, -- module_index: 58, name: L1_Mu5_EG23er2p5
-         98, -- module_index: 59, name: L1_Mu7_EG23er2p5
-         12, -- module_index: 60, name: L1_SingleMu7
-        100, -- module_index: 61, name: L1_Mu5_LooseIsoEG20er2p5
-        101, -- module_index: 62, name: L1_Mu7_LooseIsoEG20er2p5
+        101, -- module_index: 56, name: L1_Mu7_LooseIsoEG20er2p5
+        102, -- module_index: 57, name: L1_Mu7_LooseIsoEG23er2p5
+         12, -- module_index: 58, name: L1_SingleMu7
+         97, -- module_index: 59, name: L1_Mu7_EG20er2p5
+         96, -- module_index: 60, name: L1_Mu5_EG23er2p5
+         98, -- module_index: 61, name: L1_Mu7_EG23er2p5
+        100, -- module_index: 62, name: L1_Mu5_LooseIsoEG20er2p5
         308, -- module_index: 63, name: L1_SingleMuOpenupt100
         373, -- module_index: 64, name: L1_TripleJet_100_80_70_DoubleJet_80_70_er2p5
          39, -- module_index: 65, name: L1_DoubleMu0_OQ
@@ -98,8 +98,8 @@ constant global_index: global_index_array := (
          71, -- module_index: 74, name: L1_TripleMu0_OQ
          74, -- module_index: 75, name: L1_TripleMu3
          76, -- module_index: 76, name: L1_TripleMu_5SQ_3SQ_0OQ
-         85, -- module_index: 77, name: L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9
-         86, -- module_index: 78, name: L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9
+         86, -- module_index: 77, name: L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9
+         85, -- module_index: 78, name: L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9
          34, -- module_index: 79, name: L1_MU20_40_MASSDR_100
          54, -- module_index: 80, name: L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4
          43, -- module_index: 81, name: L1_DoubleMu0_Mass_Min1
