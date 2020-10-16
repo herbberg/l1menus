@@ -10,7 +10,7 @@
 -- f130ce06-3de9-4b81-a2ad-bd1936c68a18
 
 -- Unique ID of firmware implementation:
--- 8ca771e8-5f74-4aea-a90e-c3709f87241f
+-- 0c8d1f9b-0487-43db-8d82-97f91f085206
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1784,7 +1784,6 @@ invariant_mass_i59_i: entity work.muon_muon_correlation_condition
         upt_lower_limit_muon2 => X"0000", 
         ip_lut_muon2 => X"F",
         requested_charge_correlation => "os",
-        mass_cut => true, mass_type => INVARIANT_MASS_DIV_DR_TYPE,
         deta_cut => false, 
         dphi_cut => false, 
         dr_cut => false, 
@@ -1850,7 +1849,6 @@ invariant_mass_i72_i: entity work.muon_muon_correlation_condition
         upt_lower_limit_muon2 => X"0000", 
         ip_lut_muon2 => X"F",
         requested_charge_correlation => "os",
-        mass_cut => true, mass_type => INVARIANT_MASS_DIV_DR_TYPE,
         deta_cut => false, 
         dphi_cut => false, 
         dr_cut => false, 
@@ -1916,7 +1914,6 @@ muon_muon_correlation_i46_i: entity work.muon_muon_correlation_condition
         upt_lower_limit_muon2 => X"0000", 
         ip_lut_muon2 => X"F",
         requested_charge_correlation => "ig",
-        mass_cut => false, mass_type => INVARIANT_MASS_DIV_DR_TYPE,
         deta_cut => false, 
         dphi_cut => false, 
         dr_cut => true, 
@@ -1980,7 +1977,6 @@ muon_muon_correlation_i52_i: entity work.muon_muon_correlation_condition
         upt_lower_limit_muon2 => X"0000", 
         ip_lut_muon2 => X"F",
         requested_charge_correlation => "os",
-        mass_cut => false, mass_type => INVARIANT_MASS_DIV_DR_TYPE,
         deta_cut => false, 
         dphi_cut => false, 
         dr_cut => true, 

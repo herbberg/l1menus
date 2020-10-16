@@ -10,7 +10,7 @@
 -- f130ce06-3de9-4b81-a2ad-bd1936c68a18
 
 -- Unique ID of firmware implementation:
--- 8ca771e8-5f74-4aea-a90e-c3709f87241f
+-- 0c8d1f9b-0487-43db-8d82-97f91f085206
 
 -- Scale set:
 -- scales_2020_10_04
@@ -25,8 +25,8 @@ constant global_index: global_index_array := (
         448, -- module_index: 1, name: L1_SingleMuOpen_er1p1_NotBptxOR_3BX
         332, -- module_index: 2, name: L1_SingleJet140er2p5_ETMHF70
         423, -- module_index: 3, name: L1_ETMHF120
-        447, -- module_index: 4, name: L1_SingleMuOpen_er1p4_NotBptxOR_3BX
-        282, -- module_index: 5, name: L1_Mu22er2p1_IsoTau28er2p1
+        282, -- module_index: 4, name: L1_Mu22er2p1_IsoTau28er2p1
+        447, -- module_index: 5, name: L1_SingleMuOpen_er1p4_NotBptxOR_3BX
         104, -- module_index: 6, name: L1_Mu6_DoubleEG10er2p5
         474, -- module_index: 7, name: L1_SecondBunchInTrain
         293, -- module_index: 8, name: L1_IsoTau40er2p1_ETMHF100
@@ -34,23 +34,23 @@ constant global_index: global_index_array := (
         320, -- module_index: 10, name: L1_SingleJet140er2p5
         105, -- module_index: 11, name: L1_Mu6_DoubleEG12er2p5
         424, -- module_index: 12, name: L1_ETMHF130
-        477, -- module_index: 13, name: L1_FirstBunchAfterTrain
-        284, -- module_index: 14, name: L1_Mu22er2p1_IsoTau32er2p1
-        432, -- module_index: 15, name: L1_ETMHF130_HTT60er
-        150, -- module_index: 16, name: L1_DoubleMu3_SQ_HTT220er
-        475, -- module_index: 17, name: L1_SecondLastBunchInTrain
-        317, -- module_index: 18, name: L1_SingleJet60er2p5
-        106, -- module_index: 19, name: L1_Mu6_DoubleEG15er2p5
-        145, -- module_index: 20, name: L1_DoubleMu3_SQ_ETMHF50_HTT60er
-        285, -- module_index: 21, name: L1_Mu22er2p1_IsoTau34er2p1
-        107, -- module_index: 22, name: L1_Mu6_DoubleEG17er2p5
-        147, -- module_index: 23, name: L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5
-        333, -- module_index: 24, name: L1_SingleJet140er2p5_ETMHF80
-        286, -- module_index: 25, name: L1_Mu22er2p1_IsoTau36er2p1
-        431, -- module_index: 26, name: L1_ETMHF120_HTT60er
-        131, -- module_index: 27, name: L1_Mu6_HTT240er
-        444, -- module_index: 28, name: L1_ETMHF110_HTT60er_NotSecondBunchInTrain
-        334, -- module_index: 29, name: L1_SingleJet140er2p5_ETMHF90
+        284, -- module_index: 13, name: L1_Mu22er2p1_IsoTau32er2p1
+        432, -- module_index: 14, name: L1_ETMHF130_HTT60er
+        317, -- module_index: 15, name: L1_SingleJet60er2p5
+        475, -- module_index: 16, name: L1_SecondLastBunchInTrain
+        150, -- module_index: 17, name: L1_DoubleMu3_SQ_HTT220er
+        106, -- module_index: 18, name: L1_Mu6_DoubleEG15er2p5
+        145, -- module_index: 19, name: L1_DoubleMu3_SQ_ETMHF50_HTT60er
+        285, -- module_index: 20, name: L1_Mu22er2p1_IsoTau34er2p1
+        107, -- module_index: 21, name: L1_Mu6_DoubleEG17er2p5
+        147, -- module_index: 22, name: L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5
+        333, -- module_index: 23, name: L1_SingleJet140er2p5_ETMHF80
+        286, -- module_index: 24, name: L1_Mu22er2p1_IsoTau36er2p1
+        431, -- module_index: 25, name: L1_ETMHF120_HTT60er
+        131, -- module_index: 26, name: L1_Mu6_HTT240er
+        444, -- module_index: 27, name: L1_ETMHF110_HTT60er_NotSecondBunchInTrain
+        334, -- module_index: 28, name: L1_SingleJet140er2p5_ETMHF90
+        477, -- module_index: 29, name: L1_FirstBunchAfterTrain
         146, -- module_index: 30, name: L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5
         287, -- module_index: 31, name: L1_Mu22er2p1_IsoTau40er2p1
         428, -- module_index: 32, name: L1_ETMHF90_HTT60er
@@ -78,16 +78,16 @@ constant global_index: global_index_array := (
           4, -- module_index: 54, name: L1_SingleMuOpen
         247, -- module_index: 55, name: L1_DoubleEG8er2p5_HTT260er
         471, -- module_index: 56, name: L1_IsolatedBunch
-        472, -- module_index: 57, name: L1_FirstBunchBeforeTrain
-        250, -- module_index: 58, name: L1_DoubleEG8er2p5_HTT320er
+        250, -- module_index: 57, name: L1_DoubleEG8er2p5_HTT320er
+        472, -- module_index: 58, name: L1_FirstBunchBeforeTrain
         429, -- module_index: 59, name: L1_ETMHF100_HTT60er
         421, -- module_index: 60, name: L1_ETMHF100
         473, -- module_index: 61, name: L1_FirstBunchInTrain
         451, -- module_index: 62, name: L1_SingleJet20er2p5_NotBptxOR_3BX
         386, -- module_index: 63, name: L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3
-        446, -- module_index: 64, name: L1_SingleMuOpen_NotBptxOR
-        251, -- module_index: 65, name: L1_DoubleEG8er2p5_HTT340er
-        459, -- module_index: 66, name: L1_ZeroBias
+        251, -- module_index: 64, name: L1_DoubleEG8er2p5_HTT340er
+        459, -- module_index: 65, name: L1_ZeroBias
+        446, -- module_index: 66, name: L1_SingleMuOpen_NotBptxOR
         128, -- module_index: 67, name: L1_Mu3er1p5_Jet100er2p5_ETMHF40
         387, -- module_index: 68, name: L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3
         460, -- module_index: 69, name: L1_ZeroBias_copy

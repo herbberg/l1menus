@@ -10,7 +10,7 @@
 -- f130ce06-3de9-4b81-a2ad-bd1936c68a18
 
 -- Unique ID of firmware implementation:
--- 8ca771e8-5f74-4aea-a90e-c3709f87241f
+-- 0c8d1f9b-0487-43db-8d82-97f91f085206
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1860,7 +1860,6 @@ invariant_mass_i37_i: entity work.muon_muon_correlation_condition
         upt_lower_limit_muon2 => X"0000", 
         ip_lut_muon2 => X"F",
         requested_charge_correlation => "ig",
-        mass_cut => true, mass_type => INVARIANT_MASS_DIV_DR_TYPE,
         deta_cut => false, 
         dphi_cut => false, 
         dr_cut => false, 
@@ -1924,7 +1923,6 @@ invariant_mass_i71_i: entity work.muon_muon_correlation_condition
         upt_lower_limit_muon2 => X"0000", 
         ip_lut_muon2 => X"F",
         requested_charge_correlation => "os",
-        mass_cut => true, mass_type => INVARIANT_MASS_DIV_DR_TYPE,
         deta_cut => false, 
         dphi_cut => false, 
         dr_cut => false, 
@@ -1990,7 +1988,6 @@ invariant_mass_i74_i: entity work.muon_muon_correlation_condition
         upt_lower_limit_muon2 => X"0000", 
         ip_lut_muon2 => X"F",
         requested_charge_correlation => "os",
-        mass_cut => true, mass_type => INVARIANT_MASS_DIV_DR_TYPE,
         deta_cut => false, 
         dphi_cut => false, 
         dr_cut => false, 
@@ -2056,7 +2053,6 @@ invariant_mass_i94_i: entity work.muon_muon_correlation_condition
         upt_lower_limit_muon2 => X"0000", 
         ip_lut_muon2 => X"F",
         requested_charge_correlation => "os",
-        mass_cut => true, mass_type => INVARIANT_MASS_DIV_DR_TYPE,
         deta_cut => false, 
         dphi_cut => false, 
         dr_cut => false, 
@@ -2122,7 +2118,6 @@ invariant_mass_delta_r_i372_i: entity work.muon_muon_correlation_condition
         upt_lower_limit_muon2 => X"0000", 
         ip_lut_muon2 => X"F",
         requested_charge_correlation => "ig",
-        mass_cut => true, mass_type => INVARIANT_MASS_DIV_DR_TYPE,
         deta_cut => false, 
         dphi_cut => false, 
         dr_cut => false, 
@@ -2185,7 +2180,6 @@ muon_muon_correlation_i117_i: entity work.muon_muon_correlation_condition
         upt_lower_limit_muon2 => X"0000", 
         ip_lut_muon2 => X"F",
         requested_charge_correlation => "ig",
-        mass_cut => false, mass_type => INVARIANT_MASS_DIV_DR_TYPE,
         deta_cut => false, 
         dphi_cut => false, 
         dr_cut => true, 
@@ -2249,7 +2243,6 @@ muon_muon_correlation_i47_i: entity work.muon_muon_correlation_condition
         upt_lower_limit_muon2 => X"0000", 
         ip_lut_muon2 => X"F",
         requested_charge_correlation => "os",
-        mass_cut => false, mass_type => INVARIANT_MASS_DIV_DR_TYPE,
         deta_cut => false, 
         dphi_cut => false, 
         dr_cut => true, 
@@ -2288,7 +2281,7 @@ algo(55) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(62) <= l1_single_mu7;
+algo(58) <= l1_single_mu7;
 
 -- 17 L1_SingleMu18 : MU18[MU-QLTY_SNGL]
 l1_single_mu18 <= single_mu_i17;
@@ -2384,7 +2377,7 @@ algo(61) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i10 and single_eg_i82;
-algo(57) <= l1_mu5_loose_iso_eg20er2p5;
+algo(62) <= l1_mu5_loose_iso_eg20er2p5;
 
 -- 101 L1_Mu7_LooseIsoEG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg20er2p5 <= single_mu_i12 and single_eg_i82;
@@ -2392,7 +2385,7 @@ algo(56) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i12 and single_eg_i83;
-algo(58) <= l1_mu7_loose_iso_eg23er2p5;
+algo(57) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 109 L1_DoubleMu4_SQ_EG9er2p5 : comb{MU4[MU-QLTY_SNGL],MU4[MU-QLTY_SNGL]} AND EG9[EG-ETA_2p52]
 l1_double_mu4_sq_eg9er2p5 <= double_mu_i89 and single_eg_i90;
