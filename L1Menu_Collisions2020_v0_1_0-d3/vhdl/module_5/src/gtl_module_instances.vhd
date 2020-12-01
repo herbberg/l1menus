@@ -10,7 +10,7 @@
 -- d2a8739b-a0c2-4bb8-b305-32db5f141af1
 
 -- Unique ID of firmware implementation:
--- e105913b-8956-48b7-9c61-f93aac475dd6
+-- 079b3e3f-211e-44b1-be26-d1cad3d06ecd
 
 -- Scale set:
 -- scales_2020_09_30
@@ -944,8 +944,8 @@ triple_mu_i73_i: entity work.muon_conditions
 
 single_ett_i311_i: entity work.esums_conditions
     generic map(
-        X"0960",        
-        ETT_TYPE
+        et_threshold => X"0960",        
+        obj_type => ETT_TYPE
     )
     port map(
         lhc_clk, 
@@ -955,8 +955,8 @@ single_ett_i311_i: entity work.esums_conditions
 
 single_htt_i306_i: entity work.esums_conditions
     generic map(
-        X"0190",        
-        HTT_TYPE
+        et_threshold => X"0190",        
+        obj_type => HTT_TYPE
     )
     port map(
         lhc_clk, 

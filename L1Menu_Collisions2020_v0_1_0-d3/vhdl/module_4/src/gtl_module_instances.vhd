@@ -10,7 +10,7 @@
 -- d2a8739b-a0c2-4bb8-b305-32db5f141af1
 
 -- Unique ID of firmware implementation:
--- e105913b-8956-48b7-9c61-f93aac475dd6
+-- 079b3e3f-211e-44b1-be26-d1cad3d06ecd
 
 -- Scale set:
 -- scales_2020_09_30
@@ -21,16 +21,16 @@
 -- External condition assignment
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
-    muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
-        port map(mu_bx_0, mu_bx_0,
-            ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-            ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-            ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
     muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
         port map(mu_bx_m1, mu_bx_0,
             ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
             ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
             ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
+    muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
+        port map(mu_bx_0, mu_bx_0,
+            ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+            ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
+            ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo ObjectType in certain Bx used in correlation conditions
     jet_conv_2_muon_bx_0_l: for i in 0 to NR_JET_OBJECTS-1 generate
@@ -797,8 +797,8 @@ single_mu_i5_i: entity work.muon_conditions
 
 single_etmhf_i319_i: entity work.esums_conditions
     generic map(
-        X"012C",        
-        ETMHF_TYPE
+        et_threshold => X"012C",        
+        obj_type => ETMHF_TYPE
     )
     port map(
         lhc_clk, 
@@ -808,8 +808,8 @@ single_etmhf_i319_i: entity work.esums_conditions
 
 single_htt_i305_i: entity work.esums_conditions
     generic map(
-        X"0140",        
-        HTT_TYPE
+        et_threshold => X"0140",        
+        obj_type => HTT_TYPE
     )
     port map(
         lhc_clk, 
@@ -819,8 +819,8 @@ single_htt_i305_i: entity work.esums_conditions
 
 single_htt_i310_i: entity work.esums_conditions
     generic map(
-        X"0384",        
-        HTT_TYPE
+        et_threshold => X"0384",        
+        obj_type => HTT_TYPE
     )
     port map(
         lhc_clk, 

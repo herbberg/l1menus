@@ -10,7 +10,7 @@
 -- d2a8739b-a0c2-4bb8-b305-32db5f141af1
 
 -- Unique ID of firmware implementation:
--- e105913b-8956-48b7-9c61-f93aac475dd6
+-- 079b3e3f-211e-44b1-be26-d1cad3d06ecd
 
 -- Scale set:
 -- scales_2020_09_30
@@ -216,8 +216,8 @@ single_jet_i274_i: entity work.calo_conditions
 
 single_etmhf_i318_i: entity work.esums_conditions
     generic map(
-        X"0118",        
-        ETMHF_TYPE
+        et_threshold => X"0118",        
+        obj_type => ETMHF_TYPE
     )
     port map(
         lhc_clk, 
@@ -227,8 +227,8 @@ single_etmhf_i318_i: entity work.esums_conditions
 
 single_htt_i304_i: entity work.esums_conditions
     generic map(
-        X"00F0",        
-        HTT_TYPE
+        et_threshold => X"00F0",        
+        obj_type => HTT_TYPE
     )
     port map(
         lhc_clk, 
@@ -238,8 +238,8 @@ single_htt_i304_i: entity work.esums_conditions
 
 single_htt_i309_i: entity work.esums_conditions
     generic map(
-        X"0320",        
-        HTT_TYPE
+        et_threshold => X"0320",        
+        obj_type => HTT_TYPE
     )
     port map(
         lhc_clk, 

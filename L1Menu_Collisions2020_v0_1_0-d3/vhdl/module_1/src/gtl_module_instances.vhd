@@ -10,7 +10,7 @@
 -- d2a8739b-a0c2-4bb8-b305-32db5f141af1
 
 -- Unique ID of firmware implementation:
--- e105913b-8956-48b7-9c61-f93aac475dd6
+-- 079b3e3f-211e-44b1-be26-d1cad3d06ecd
 
 -- Scale set:
 -- scales_2020_09_30
@@ -978,8 +978,8 @@ triple_mu_i75_i: entity work.muon_conditions
 
 single_etm_i314_i: entity work.esums_conditions
     generic map(
-        X"00F0",        
-        ETM_TYPE
+        et_threshold => X"00F0",        
+        obj_type => ETM_TYPE
     )
     port map(
         lhc_clk, 
@@ -989,8 +989,8 @@ single_etm_i314_i: entity work.esums_conditions
 
 single_ett_i312_i: entity work.esums_conditions
     generic map(
-        X"0C80",        
-        ETT_TYPE
+        et_threshold => X"0C80",        
+        obj_type => ETT_TYPE
     )
     port map(
         lhc_clk, 
@@ -1000,8 +1000,8 @@ single_ett_i312_i: entity work.esums_conditions
 
 single_htt_i307_i: entity work.esums_conditions
     generic map(
-        X"01FE",        
-        HTT_TYPE
+        et_threshold => X"01FE",        
+        obj_type => HTT_TYPE
     )
     port map(
         lhc_clk, 
@@ -1185,8 +1185,10 @@ invariant_mass_ov_rm_i287_i: entity work.calo_calo_calo_correlation_orm_conditio
         dr_orm_cut => true,
         mass_cut => true, 
         mass_type => INVARIANT_MASS_TYPE,        
+        nr_calo1_objects => NR_JET_OBJECTS,        
         obj_type_calo1 => JET_TYPE,
         pt_threshold_calo1 => X"00A0",        
+        nr_calo2_objects => NR_JET_OBJECTS,        
         obj_type_calo2 => JET_TYPE,
         pt_threshold_calo2 => X"003C",        
         obj_type_calo3 => TAU_TYPE,
