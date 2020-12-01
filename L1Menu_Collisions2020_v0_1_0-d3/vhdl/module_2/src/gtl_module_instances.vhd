@@ -10,7 +10,7 @@
 -- d2a8739b-a0c2-4bb8-b305-32db5f141af1
 
 -- Unique ID of firmware implementation:
--- a9df1385-72eb-46fa-b7a1-5a30e744094a
+-- e105913b-8956-48b7-9c61-f93aac475dd6
 
 -- Scale set:
 -- scales_2020_09_30
@@ -1268,7 +1268,8 @@ transverse_mass_i167_i: entity work.calo_esums_correlation_condition
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"0000000005C50D00",
         mass_cosh_cos_precision => EG_ETM_COSH_COS_PRECISION,
-        cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH            
+        cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH
+        nr_calo_objects => NR_EG_OBJECTS
     )
     port map(
         lhc_clk, 
@@ -1405,15 +1406,15 @@ algo(24) <= l1_triple_eg_16_12_8_er2p5;
 
 -- 238 L1_LooseIsoEG24er2p1_HTT100er : EG24[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg24er2p1_htt100er <= single_eg_i189 and single_htt_i190;
-algo(14) <= l1_loose_iso_eg24er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(14) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;

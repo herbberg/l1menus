@@ -10,7 +10,7 @@
 -- d2a8739b-a0c2-4bb8-b305-32db5f141af1
 
 -- Unique ID of firmware implementation:
--- a9df1385-72eb-46fa-b7a1-5a30e744094a
+-- e105913b-8956-48b7-9c61-f93aac475dd6
 
 -- Scale set:
 -- scales_2020_09_30
@@ -21,16 +21,16 @@
 -- External condition assignment
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
-    muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
-        port map(mu_bx_m1, mu_bx_0,
-            ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
-            ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
-            ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
     muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
         port map(mu_bx_0, mu_bx_0,
             ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
             ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
             ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
+    muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
+        port map(mu_bx_m1, mu_bx_0,
+            ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
+            ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
+            ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo ObjectType in certain Bx used in correlation conditions
     jet_conv_2_muon_bx_0_l: for i in 0 to NR_JET_OBJECTS-1 generate
@@ -1235,7 +1235,8 @@ transverse_mass_i166_i: entity work.calo_esums_correlation_condition
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"0000000004C4B400",
         mass_cosh_cos_precision => EG_ETM_COSH_COS_PRECISION,
-        cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH            
+        cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH
+        nr_calo_objects => NR_EG_OBJECTS
     )
     port map(
         lhc_clk, 
@@ -1265,7 +1266,8 @@ transverse_mass_i168_i: entity work.calo_esums_correlation_condition
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"0000000006DDD000",
         mass_cosh_cos_precision => EG_ETM_COSH_COS_PRECISION,
-        cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH            
+        cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH
+        nr_calo_objects => NR_EG_OBJECTS
     )
     port map(
         lhc_clk, 
@@ -1458,11 +1460,11 @@ algo(45) <= l1_double_jet_115_40_double_jet40_mass_min620;
 
 -- 365 L1_DoubleJet_80_30_Mass_Min420_Mu8 : mass_inv{JET80,JET30}[MASS_MIN_420] AND MU8[MU-QLTY_SNGL]
 l1_double_jet_80_30_mass_min420_mu8 <= invariant_mass_i288 and single_mu_i289;
-algo(37) <= l1_double_jet_80_30_mass_min420_mu8;
+algo(36) <= l1_double_jet_80_30_mass_min420_mu8;
 
 -- 366 L1_DoubleJet_80_30_Mass_Min420_DoubleMu0_SQ : mass_inv{JET80,JET30}[MASS_MIN_420] AND comb{MU0[MU-QLTY_SNGL],MU0[MU-QLTY_SNGL]}
 l1_double_jet_80_30_mass_min420_double_mu0_sq <= invariant_mass_i288 and double_mu_i35;
-algo(36) <= l1_double_jet_80_30_mass_min420_double_mu0_sq;
+algo(37) <= l1_double_jet_80_30_mass_min420_double_mu0_sq;
 
 -- 374 L1_TripleJet_105_85_75_DoubleJet_85_75_er2p5 : comb{JET105,JET85,JET75} AND comb{JET85[JET-ETA_2p52],JET75[JET-ETA_2p52]}
 l1_triple_jet_105_85_75_double_jet_85_75_er2p5 <= triple_jet_i294 and double_jet_i295;

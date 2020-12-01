@@ -10,7 +10,7 @@
 -- d2a8739b-a0c2-4bb8-b305-32db5f141af1
 
 -- Unique ID of firmware implementation:
--- a9df1385-72eb-46fa-b7a1-5a30e744094a
+-- e105913b-8956-48b7-9c61-f93aac475dd6
 
 -- Scale set:
 -- scales_2020_09_30
@@ -33,8 +33,8 @@ constant global_index: global_index_array := (
         484, -- module_index: 9, name: L1_BPTX_OR_Ref4_VME
         485, -- module_index: 10, name: L1_BPTX_RefAND_VME
         467, -- module_index: 11, name: L1_BptxMinus
-        465, -- module_index: 12, name: L1_BptxXOR
-        466, -- module_index: 13, name: L1_BptxPlus
+        466, -- module_index: 12, name: L1_BptxPlus
+        465, -- module_index: 13, name: L1_BptxXOR
         480, -- module_index: 14, name: L1_FirstCollisionInOrbit
         479, -- module_index: 15, name: L1_FirstCollisionInTrain
         500, -- module_index: 16, name: L1_HCAL_LaserMon_Trig
@@ -77,13 +77,13 @@ constant global_index: global_index_array := (
          17, -- module_index: 53, name: L1_SingleMu18
          22, -- module_index: 54, name: L1_SingleMu22_EMTF
          10, -- module_index: 55, name: L1_SingleMu5
-        102, -- module_index: 56, name: L1_Mu7_LooseIsoEG23er2p5
-         97, -- module_index: 57, name: L1_Mu7_EG20er2p5
-         96, -- module_index: 58, name: L1_Mu5_EG23er2p5
-         98, -- module_index: 59, name: L1_Mu7_EG23er2p5
-         12, -- module_index: 60, name: L1_SingleMu7
-        101, -- module_index: 61, name: L1_Mu7_LooseIsoEG20er2p5
-        100, -- module_index: 62, name: L1_Mu5_LooseIsoEG20er2p5
+        101, -- module_index: 56, name: L1_Mu7_LooseIsoEG20er2p5
+        100, -- module_index: 57, name: L1_Mu5_LooseIsoEG20er2p5
+        102, -- module_index: 58, name: L1_Mu7_LooseIsoEG23er2p5
+         97, -- module_index: 59, name: L1_Mu7_EG20er2p5
+         96, -- module_index: 60, name: L1_Mu5_EG23er2p5
+         98, -- module_index: 61, name: L1_Mu7_EG23er2p5
+         12, -- module_index: 62, name: L1_SingleMu7
         308, -- module_index: 63, name: L1_SingleMuOpenupt100
         373, -- module_index: 64, name: L1_TripleJet_100_80_70_DoubleJet_80_70_er2p5
          39, -- module_index: 65, name: L1_DoubleMu0_OQ
