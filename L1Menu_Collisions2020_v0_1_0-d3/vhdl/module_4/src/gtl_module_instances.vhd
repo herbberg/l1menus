@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 9b53cf7a-e4e1-43b0-9b45-3905a6d0ca36
+-- c146c912-c855-4015-9323-ed2653210bd8
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1232,8 +1232,8 @@ transverse_mass_i166_i: entity work.calo_esums_correlation_condition
         et_threshold_esums => X"0014",
         pt1_width => EG_PT_VECTOR_WIDTH, 
         pt2_width => ETM_PT_VECTOR_WIDTH,
-        mass_upper_limit => X"00041A6642C78140",
-        mass_lower_limit => X"0000000004C4B400",
+        mass_upper_limit_vector => X"00041A6642C78140",
+        mass_lower_limit_vector => X"0000000004C4B400",
         mass_cosh_cos_precision => EG_ETM_COSH_COS_PRECISION, 
         cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
         nr_calo_objects => NR_EG_OBJECTS
@@ -1244,7 +1244,6 @@ transverse_mass_i166_i: entity work.calo_esums_correlation_condition
         etm_bx_0,
         pt1 => eg_pt_vector_bx_0, 
         pt2 => etm_pt_vector_bx_0,
-        cosh_deta => eg_etm_bx_0_bx_0_cosh_deta_vector, 
         cos_dphi => eg_etm_bx_0_bx_0_cos_dphi_vector,        
         condition_o => transverse_mass_i166
     );
@@ -1263,8 +1262,8 @@ transverse_mass_i168_i: entity work.calo_esums_correlation_condition
         et_threshold_esums => X"0014",
         pt1_width => EG_PT_VECTOR_WIDTH, 
         pt2_width => ETM_PT_VECTOR_WIDTH,
-        mass_upper_limit => X"00041A6642C78140",
-        mass_lower_limit => X"0000000006DDD000",
+        mass_upper_limit_vector => X"00041A6642C78140",
+        mass_lower_limit_vector => X"0000000006DDD000",
         mass_cosh_cos_precision => EG_ETM_COSH_COS_PRECISION, 
         cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
         nr_calo_objects => NR_EG_OBJECTS
@@ -1275,7 +1274,6 @@ transverse_mass_i168_i: entity work.calo_esums_correlation_condition
         etm_bx_0,
         pt1 => eg_pt_vector_bx_0, 
         pt2 => etm_pt_vector_bx_0,
-        cosh_deta => eg_etm_bx_0_bx_0_cosh_deta_vector, 
         cos_dphi => eg_etm_bx_0_bx_0_cos_dphi_vector,        
         condition_o => transverse_mass_i168
     );
@@ -1460,11 +1458,11 @@ algo(45) <= l1_double_jet_115_40_double_jet40_mass_min620;
 
 -- 365 L1_DoubleJet_80_30_Mass_Min420_Mu8 : mass_inv{JET80,JET30}[MASS_MIN_420] AND MU8[MU-QLTY_SNGL]
 l1_double_jet_80_30_mass_min420_mu8 <= invariant_mass_i297 and single_mu_i298;
-algo(36) <= l1_double_jet_80_30_mass_min420_mu8;
+algo(37) <= l1_double_jet_80_30_mass_min420_mu8;
 
 -- 366 L1_DoubleJet_80_30_Mass_Min420_DoubleMu0_SQ : mass_inv{JET80,JET30}[MASS_MIN_420] AND comb{MU0[MU-QLTY_SNGL],MU0[MU-QLTY_SNGL]}
 l1_double_jet_80_30_mass_min420_double_mu0_sq <= invariant_mass_i297 and double_mu_i35;
-algo(37) <= l1_double_jet_80_30_mass_min420_double_mu0_sq;
+algo(36) <= l1_double_jet_80_30_mass_min420_double_mu0_sq;
 
 -- 374 L1_TripleJet_105_85_75_DoubleJet_85_75_er2p5 : comb{JET105,JET85,JET75} AND comb{JET85[JET-ETA_2p52],JET75[JET-ETA_2p52]}
 l1_triple_jet_105_85_75_double_jet_85_75_er2p5 <= triple_jet_i303 and double_jet_i304;

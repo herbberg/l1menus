@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 9b53cf7a-e4e1-43b0-9b45-3905a6d0ca36
+-- c146c912-c855-4015-9323-ed2653210bd8
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1265,8 +1265,8 @@ transverse_mass_i167_i: entity work.calo_esums_correlation_condition
         et_threshold_esums => X"0014",
         pt1_width => EG_PT_VECTOR_WIDTH, 
         pt2_width => ETM_PT_VECTOR_WIDTH,
-        mass_upper_limit => X"00041A6642C78140",
-        mass_lower_limit => X"0000000005C50D00",
+        mass_upper_limit_vector => X"00041A6642C78140",
+        mass_lower_limit_vector => X"0000000005C50D00",
         mass_cosh_cos_precision => EG_ETM_COSH_COS_PRECISION, 
         cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
         nr_calo_objects => NR_EG_OBJECTS
@@ -1277,7 +1277,6 @@ transverse_mass_i167_i: entity work.calo_esums_correlation_condition
         etm_bx_0,
         pt1 => eg_pt_vector_bx_0, 
         pt2 => etm_pt_vector_bx_0,
-        cosh_deta => eg_etm_bx_0_bx_0_cosh_deta_vector, 
         cos_dphi => eg_etm_bx_0_bx_0_cos_dphi_vector,        
         condition_o => transverse_mass_i167
     );
@@ -1406,15 +1405,15 @@ algo(24) <= l1_triple_eg_16_12_8_er2p5;
 
 -- 238 L1_LooseIsoEG24er2p1_HTT100er : EG24[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg24er2p1_htt100er <= single_eg_i189 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg24er2p1_htt100er;
+algo(14) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(14) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
