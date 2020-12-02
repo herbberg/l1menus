@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 6c837c56-d6e3-4d55-81af-9e8e0565fd9e
+-- 9b53cf7a-e4e1-43b0-9b45-3905a6d0ca36
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1289,7 +1289,7 @@ algo(24) <= l1_single_mu12_dq_omtf;
 
 -- 18 L1_SingleMu20 : MU20[MU-QLTY_SNGL]
 l1_single_mu20 <= single_mu_i18;
-algo(4) <= l1_single_mu20;
+algo(3) <= l1_single_mu20;
 
 -- 20 L1_SingleMu22_BMTF : MU22[MU-QLTY_SNGL,MU-ETA_BMTF]
 l1_single_mu22_bmtf <= single_mu_i20;
@@ -1381,7 +1381,7 @@ algo(49) <= l1_triple_mu_5_4_2p5_double_mu_5_2p5_os_mass_5to17;
 
 -- 99 L1_Mu20_EG10er2p5 : MU20[MU-QLTY_SNGL] AND EG10[EG-ETA_2p52]
 l1_mu20_eg10er2p5 <= single_mu_i18 and single_eg_i81;
-algo(3) <= l1_mu20_eg10er2p5;
+algo(4) <= l1_mu20_eg10er2p5;
 
 -- 119 L1_Mu3_Jet30er2p5 : MU3[MU-QLTY_SNGL] AND JET30[JET-ETA_2p52]
 l1_mu3_jet30er2p5 <= single_mu_i9 and single_jet_i96;
