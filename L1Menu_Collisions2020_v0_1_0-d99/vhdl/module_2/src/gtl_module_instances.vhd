@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 2d6909f2-6670-442b-a8f1-bbb77e2cd3ad
+-- ef1786ca-571d-4089-aeca-5b65ff0f722c
 
 -- Scale set:
 -- scales_2020_10_04
@@ -906,13 +906,13 @@ calo_calo_correlation_i200_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"002C",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0030", 
         eta_w1_lower_limit_calo1 => X"00CF",
         iso_lut_calo1 => X"C",
 -- object 2 cuts        
         pt_threshold_calo2 => X"008C",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0030", 
         eta_w1_lower_limit_calo2 => X"00CF",
 -- correlation cuts
@@ -927,22 +927,22 @@ calo_calo_correlation_i200_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         eg_bx_0, 
-        eg_pt_vector_bx_0,
-        eg_eg_bx_0_bx_0_cosh_deta_vector, 
-        eg_eg_bx_0_bx_0_cos_dphi_vector,
-        calo_calo_correlation_i200
+        tau_bx_0,
+        diff_eta => diff_eg_tau_bx_0_bx_0_eta_vector,
+        diff_phi => diff_eg_tau_bx_0_bx_0_phi_vector,
+        condition_o => calo_calo_correlation_i200
     );
 
 calo_calo_correlation_i266_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"00C8",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0034", 
         eta_w1_lower_limit_calo1 => X"00CB",
 -- object 2 cuts        
         pt_threshold_calo2 => X"00C8",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0034", 
         eta_w1_lower_limit_calo2 => X"00CB",
 -- correlation cuts
@@ -955,23 +955,22 @@ calo_calo_correlation_i266_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         jet_bx_0, 
-        jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, 
-        jet_jet_bx_0_bx_0_cos_dphi_vector,
-        calo_calo_correlation_i266
+        jet_bx_0,
+        diff_eta => diff_jet_jet_bx_0_bx_0_eta_vector,
+        condition_o => calo_calo_correlation_i266
     );
 
 invariant_mass_i210_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"0038",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0030", 
         eta_w1_lower_limit_calo1 => X"00CF",
         iso_lut_calo1 => X"E",
 -- object 2 cuts        
         pt_threshold_calo2 => X"0038",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0030", 
         eta_w1_lower_limit_calo2 => X"00CF",
         iso_lut_calo2 => X"E",
@@ -990,22 +989,24 @@ invariant_mass_i210_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         tau_bx_0, 
-        tau_pt_vector_bx_0,
-        tau_tau_bx_0_bx_0_cosh_deta_vector, 
-        tau_tau_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_i210
+        tau_bx_0,
+        pt1 => tau_pt_vector_bx_0, 
+        pt2 => tau_pt_vector_bx_0,
+        cosh_deta => tau_tau_bx_0_bx_0_cosh_deta_vector, 
+        cos_dphi => tau_tau_bx_0_bx_0_cos_dphi_vector,
+        condition_o => invariant_mass_i210
     );
 
 invariant_mass_i270_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"003C",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0039", 
         eta_w1_lower_limit_calo1 => X"00C6",
 -- object 2 cuts        
         pt_threshold_calo2 => X"003C",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0039", 
         eta_w1_lower_limit_calo2 => X"00C6",
 -- correlation cuts
@@ -1026,10 +1027,13 @@ invariant_mass_i270_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         jet_bx_0, 
-        jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, 
-        jet_jet_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_i270
+        jet_bx_0,
+        diff_eta => diff_jet_jet_bx_0_bx_0_eta_vector,
+        pt1 => jet_pt_vector_bx_0, 
+        pt2 => jet_pt_vector_bx_0,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        condition_o => invariant_mass_i270
     );
 
 invariant_mass_i278_i: entity work.calo_calo_correlation_condition
@@ -1053,22 +1057,24 @@ invariant_mass_i278_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         jet_bx_0, 
-        jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, 
-        jet_jet_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_i278
+        jet_bx_0,
+        pt1 => jet_pt_vector_bx_0, 
+        pt2 => jet_pt_vector_bx_0,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        condition_o => invariant_mass_i278
     );
 
 invariant_mass_i93_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"000F",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0030", 
         eta_w1_lower_limit_calo1 => X"00CF",
 -- object 2 cuts        
         pt_threshold_calo2 => X"000F",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0030", 
         eta_w1_lower_limit_calo2 => X"00CF",
 -- correlation cuts
@@ -1086,10 +1092,12 @@ invariant_mass_i93_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         eg_bx_0, 
-        eg_pt_vector_bx_0,
-        eg_eg_bx_0_bx_0_cosh_deta_vector, 
-        eg_eg_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_i93
+        eg_bx_0,
+        pt1 => eg_pt_vector_bx_0, 
+        pt2 => eg_pt_vector_bx_0,
+        cosh_deta => eg_eg_bx_0_bx_0_cosh_deta_vector, 
+        cos_dphi => eg_eg_bx_0_bx_0_cos_dphi_vector,
+        condition_o => invariant_mass_i93
     );
 
 calo_muon_correlation_i116_i: entity work.calo_muon_correlation_condition
@@ -1157,8 +1165,6 @@ invariant_mass_i44_i: entity work.muon_muon_correlation_condition
 -- correlation cuts
         mass_cut => true, 
         mass_type => INVARIANT_MASS_TYPE,
-        pt1_width => MU_PT_VECTOR_WIDTH, 
-        pt2_width => MU_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
         cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"002907FE9BCB0C80",
@@ -1192,8 +1198,6 @@ invariant_mass_i92_i: entity work.muon_muon_correlation_condition
 -- correlation cuts
         mass_cut => true, 
         mass_type => INVARIANT_MASS_TYPE,
-        pt1_width => MU_PT_VECTOR_WIDTH, 
-        pt2_width => MU_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
         cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"0000000005D75C80",
@@ -1449,7 +1453,7 @@ algo(24) <= l1_triple_eg_16_12_8_er2p5;
 
 -- 238 L1_LooseIsoEG24er2p1_HTT100er : EG24[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg24er2p1_htt100er <= single_eg_i189 and single_htt_i190;
-algo(17) <= l1_loose_iso_eg24er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
@@ -1461,7 +1465,7 @@ algo(14) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(17) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 259 L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3 : dist{EG22[EG-ETA_2p13,EG-ISO_0xC],TAU70[TAU-ETA_2p13]}[DR_MIN_0p3]
 l1_loose_iso_eg22er2p1_tau70er2p1_d_r_min0p3 <= calo_calo_correlation_i200;

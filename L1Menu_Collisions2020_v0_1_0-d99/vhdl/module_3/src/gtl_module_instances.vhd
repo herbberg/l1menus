@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 2d6909f2-6670-442b-a8f1-bbb77e2cd3ad
+-- ef1786ca-571d-4089-aeca-5b65ff0f722c
 
 -- Scale set:
 -- scales_2020_10_04
@@ -251,12 +251,12 @@ calo_calo_correlation_i114_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"0050",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0030", 
         eta_w1_lower_limit_calo1 => X"00CF",
 -- object 2 cuts        
         pt_threshold_calo2 => X"0050",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0030", 
         eta_w1_lower_limit_calo2 => X"00CF",
 -- correlation cuts
@@ -269,22 +269,21 @@ calo_calo_correlation_i114_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         jet_bx_0, 
-        jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, 
-        jet_jet_bx_0_bx_0_cos_dphi_vector,
-        calo_calo_correlation_i114
+        jet_bx_0,
+        diff_eta => diff_jet_jet_bx_0_bx_0_eta_vector,
+        condition_o => calo_calo_correlation_i114
     );
 
 invariant_mass_i284_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"0050",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"003D", 
         eta_w1_lower_limit_calo1 => X"00C2",
 -- object 2 cuts        
         pt_threshold_calo2 => X"0050",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"003D", 
         eta_w1_lower_limit_calo2 => X"00C2",
 -- correlation cuts
@@ -302,10 +301,12 @@ invariant_mass_i284_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         jet_bx_0, 
-        jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, 
-        jet_jet_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_i284
+        jet_bx_0,
+        pt1 => jet_pt_vector_bx_0, 
+        pt2 => jet_pt_vector_bx_0,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        condition_o => invariant_mass_i284
     );
 
 invariant_mass_i285_i: entity work.calo_calo_correlation_condition
@@ -329,10 +330,12 @@ invariant_mass_i285_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         jet_bx_0, 
-        jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, 
-        jet_jet_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_i285
+        jet_bx_0,
+        pt1 => jet_pt_vector_bx_0, 
+        pt2 => jet_pt_vector_bx_0,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        condition_o => invariant_mass_i285
     );
 
 invariant_mass_i286_i: entity work.calo_calo_correlation_condition
@@ -341,7 +344,7 @@ invariant_mass_i286_i: entity work.calo_calo_correlation_condition
         pt_threshold_calo1 => X"0078",
 -- object 2 cuts        
         pt_threshold_calo2 => X"0050",
-        nr_eta_windows_calo => 2,
+        nr_eta_windows_calo2 => 2,
         eta_w1_upper_limit_calo2 => X"00BA", 
         eta_w1_lower_limit_calo2 => X"008D",
         eta_w2_upper_limit_calo2 => X"0072", 
@@ -361,10 +364,12 @@ invariant_mass_i286_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         jet_bx_0, 
-        jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, 
-        jet_jet_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_i286
+        jet_bx_0,
+        pt1 => jet_pt_vector_bx_0, 
+        pt2 => jet_pt_vector_bx_0,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        condition_o => invariant_mass_i286
     );
 
 invariant_mass_i287_i: entity work.calo_calo_correlation_condition
@@ -373,7 +378,7 @@ invariant_mass_i287_i: entity work.calo_calo_correlation_condition
         pt_threshold_calo1 => X"0078",
 -- object 2 cuts        
         pt_threshold_calo2 => X"0050",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"003D", 
         eta_w1_lower_limit_calo2 => X"00C2",
 -- correlation cuts
@@ -391,24 +396,26 @@ invariant_mass_i287_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         jet_bx_0, 
-        jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, 
-        jet_jet_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_i287
+        jet_bx_0,
+        pt1 => jet_pt_vector_bx_0, 
+        pt2 => jet_pt_vector_bx_0,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        condition_o => invariant_mass_i287
     );
 
 invariant_mass_i288_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"0050",
-        nr_eta_windows_calo => 2,
+        nr_eta_windows_calo1 => 2,
         eta_w1_upper_limit_calo1 => X"00BA", 
         eta_w1_lower_limit_calo1 => X"008D",
         eta_w2_upper_limit_calo1 => X"0072", 
         eta_w2_lower_limit_calo1 => X"0045",
 -- object 2 cuts        
         pt_threshold_calo2 => X"0050",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"003D", 
         eta_w1_lower_limit_calo2 => X"00C2",
 -- correlation cuts
@@ -426,24 +433,26 @@ invariant_mass_i288_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         jet_bx_0, 
-        jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, 
-        jet_jet_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_i288
+        jet_bx_0,
+        pt1 => jet_pt_vector_bx_0, 
+        pt2 => jet_pt_vector_bx_0,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        condition_o => invariant_mass_i288
     );
 
 invariant_mass_i289_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"0050",
-        nr_eta_windows_calo => 2,
+        nr_eta_windows_calo1 => 2,
         eta_w1_upper_limit_calo1 => X"00BA", 
         eta_w1_lower_limit_calo1 => X"008D",
         eta_w2_upper_limit_calo1 => X"0072", 
         eta_w2_lower_limit_calo1 => X"0045",
 -- object 2 cuts        
         pt_threshold_calo2 => X"0050",
-        nr_eta_windows_calo => 2,
+        nr_eta_windows_calo2 => 2,
         eta_w1_upper_limit_calo2 => X"00BA", 
         eta_w1_lower_limit_calo2 => X"008D",
         eta_w2_upper_limit_calo2 => X"0072", 
@@ -463,22 +472,24 @@ invariant_mass_i289_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         jet_bx_0, 
-        jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, 
-        jet_jet_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_i289
+        jet_bx_0,
+        pt1 => jet_pt_vector_bx_0, 
+        pt2 => jet_pt_vector_bx_0,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        condition_o => invariant_mass_i289
     );
 
 invariant_mass_i290_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"005A",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"003D", 
         eta_w1_lower_limit_calo1 => X"00C2",
 -- object 2 cuts        
         pt_threshold_calo2 => X"005A",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"003D", 
         eta_w1_lower_limit_calo2 => X"00C2",
 -- correlation cuts
@@ -496,10 +507,12 @@ invariant_mass_i290_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         jet_bx_0, 
-        jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, 
-        jet_jet_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_i290
+        jet_bx_0,
+        pt1 => jet_pt_vector_bx_0, 
+        pt2 => jet_pt_vector_bx_0,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        condition_o => invariant_mass_i290
     );
 
 invariant_mass_i291_i: entity work.calo_calo_correlation_condition
@@ -508,7 +521,7 @@ invariant_mass_i291_i: entity work.calo_calo_correlation_condition
         pt_threshold_calo1 => X"0078",
 -- object 2 cuts        
         pt_threshold_calo2 => X"005A",
-        nr_eta_windows_calo => 2,
+        nr_eta_windows_calo2 => 2,
         eta_w1_upper_limit_calo2 => X"00BA", 
         eta_w1_lower_limit_calo2 => X"008D",
         eta_w2_upper_limit_calo2 => X"0072", 
@@ -528,10 +541,12 @@ invariant_mass_i291_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         jet_bx_0, 
-        jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, 
-        jet_jet_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_i291
+        jet_bx_0,
+        pt1 => jet_pt_vector_bx_0, 
+        pt2 => jet_pt_vector_bx_0,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        condition_o => invariant_mass_i291
     );
 
 invariant_mass_i292_i: entity work.calo_calo_correlation_condition
@@ -540,7 +555,7 @@ invariant_mass_i292_i: entity work.calo_calo_correlation_condition
         pt_threshold_calo1 => X"0078",
 -- object 2 cuts        
         pt_threshold_calo2 => X"005A",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"003D", 
         eta_w1_lower_limit_calo2 => X"00C2",
 -- correlation cuts
@@ -558,24 +573,26 @@ invariant_mass_i292_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         jet_bx_0, 
-        jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, 
-        jet_jet_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_i292
+        jet_bx_0,
+        pt1 => jet_pt_vector_bx_0, 
+        pt2 => jet_pt_vector_bx_0,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        condition_o => invariant_mass_i292
     );
 
 invariant_mass_i293_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"005A",
-        nr_eta_windows_calo => 2,
+        nr_eta_windows_calo1 => 2,
         eta_w1_upper_limit_calo1 => X"00BA", 
         eta_w1_lower_limit_calo1 => X"008D",
         eta_w2_upper_limit_calo1 => X"0072", 
         eta_w2_lower_limit_calo1 => X"0045",
 -- object 2 cuts        
         pt_threshold_calo2 => X"005A",
-        nr_eta_windows_calo => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"003D", 
         eta_w1_lower_limit_calo2 => X"00C2",
 -- correlation cuts
@@ -593,24 +610,26 @@ invariant_mass_i293_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         jet_bx_0, 
-        jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, 
-        jet_jet_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_i293
+        jet_bx_0,
+        pt1 => jet_pt_vector_bx_0, 
+        pt2 => jet_pt_vector_bx_0,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        condition_o => invariant_mass_i293
     );
 
 invariant_mass_i294_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"005A",
-        nr_eta_windows_calo => 2,
+        nr_eta_windows_calo1 => 2,
         eta_w1_upper_limit_calo1 => X"00BA", 
         eta_w1_lower_limit_calo1 => X"008D",
         eta_w2_upper_limit_calo1 => X"0072", 
         eta_w2_lower_limit_calo1 => X"0045",
 -- object 2 cuts        
         pt_threshold_calo2 => X"005A",
-        nr_eta_windows_calo => 2,
+        nr_eta_windows_calo2 => 2,
         eta_w1_upper_limit_calo2 => X"00BA", 
         eta_w1_lower_limit_calo2 => X"008D",
         eta_w2_upper_limit_calo2 => X"0072", 
@@ -630,10 +649,12 @@ invariant_mass_i294_i: entity work.calo_calo_correlation_condition
     port map(
         lhc_clk, 
         jet_bx_0, 
-        jet_pt_vector_bx_0,
-        jet_jet_bx_0_bx_0_cosh_deta_vector, 
-        jet_jet_bx_0_bx_0_cos_dphi_vector,
-        invariant_mass_i294
+        jet_bx_0,
+        pt1 => jet_pt_vector_bx_0, 
+        pt2 => jet_pt_vector_bx_0,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        condition_o => invariant_mass_i294
     );
 
 calo_muon_correlation_i113_i: entity work.calo_muon_correlation_condition
