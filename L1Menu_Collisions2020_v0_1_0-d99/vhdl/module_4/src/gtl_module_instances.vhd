@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 25c68ee9-26e4-4413-9c06-427a8e3e05f8
+-- d99bbee4-afcf-40be-a867-2b2bad10277e
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1527,11 +1527,11 @@ algo(45) <= l1_double_jet_115_40_double_jet40_mass_min620;
 
 -- 365 L1_DoubleJet_80_30_Mass_Min420_Mu8 : mass_inv{JET80,JET30}[MASS_MIN_420] AND MU8[MU-QLTY_SNGL]
 l1_double_jet_80_30_mass_min420_mu8 <= invariant_mass_i297 and single_mu_i298;
-algo(37) <= l1_double_jet_80_30_mass_min420_mu8;
+algo(36) <= l1_double_jet_80_30_mass_min420_mu8;
 
 -- 366 L1_DoubleJet_80_30_Mass_Min420_DoubleMu0_SQ : mass_inv{JET80,JET30}[MASS_MIN_420] AND comb{MU0[MU-QLTY_SNGL],MU0[MU-QLTY_SNGL]}
 l1_double_jet_80_30_mass_min420_double_mu0_sq <= invariant_mass_i297 and double_mu_i35;
-algo(36) <= l1_double_jet_80_30_mass_min420_double_mu0_sq;
+algo(37) <= l1_double_jet_80_30_mass_min420_double_mu0_sq;
 
 -- 374 L1_TripleJet_105_85_75_DoubleJet_85_75_er2p5 : comb{JET105,JET85,JET75} AND comb{JET85[JET-ETA_2p52],JET75[JET-ETA_2p52]}
 l1_triple_jet_105_85_75_double_jet_85_75_er2p5 <= triple_jet_i303 and double_jet_i304;
