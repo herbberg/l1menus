@@ -1,2 +1,2 @@
-tme_version: 0.12.0
-vhdl_producer_version: 2.9.0
+tm-editor 0.12.0
+%(prog)s 2.9.0
