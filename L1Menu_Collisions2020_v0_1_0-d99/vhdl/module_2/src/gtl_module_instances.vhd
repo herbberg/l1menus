@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 039dfdcb-9468-4dc5-a86b-e6f6882b5bc2
+-- c94bd8c4-2350-4272-81bb-47d38f1903b1
 
 -- Scale set:
 -- scales_2020_10_04
@@ -906,13 +906,13 @@ calo_calo_correlation_i200_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"002C",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0030", 
         eta_w1_lower_limit_calo1 => X"00CF",
         iso_lut_calo1 => X"C",
 -- object 2 cuts        
         pt_threshold_calo2 => X"008C",
-        nr_eta_windows2 => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0030", 
         eta_w1_lower_limit_calo2 => X"00CF",
 -- correlation cuts
@@ -935,12 +935,12 @@ calo_calo_correlation_i266_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"00C8",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0034", 
         eta_w1_lower_limit_calo1 => X"00CB",
 -- object 2 cuts        
         pt_threshold_calo2 => X"00C8",
-        nr_eta_windows2 => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0034", 
         eta_w1_lower_limit_calo2 => X"00CB",
 -- correlation cuts
@@ -962,13 +962,13 @@ invariant_mass_i210_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"0038",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0030", 
         eta_w1_lower_limit_calo1 => X"00CF",
         iso_lut_calo1 => X"E",
 -- object 2 cuts        
         pt_threshold_calo2 => X"0038",
-        nr_eta_windows2 => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0030", 
         eta_w1_lower_limit_calo2 => X"00CF",
         iso_lut_calo2 => X"E",
@@ -999,12 +999,12 @@ invariant_mass_i270_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"003C",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0039", 
         eta_w1_lower_limit_calo1 => X"00C6",
 -- object 2 cuts        
         pt_threshold_calo2 => X"003C",
-        nr_eta_windows2 => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0039", 
         eta_w1_lower_limit_calo2 => X"00C6",
 -- correlation cuts
@@ -1067,12 +1067,12 @@ invariant_mass_i93_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"000F",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0030", 
         eta_w1_lower_limit_calo1 => X"00CF",
 -- object 2 cuts        
         pt_threshold_calo2 => X"000F",
-        nr_eta_windows2 => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0030", 
         eta_w1_lower_limit_calo2 => X"00CF",
 -- correlation cuts
@@ -1102,7 +1102,7 @@ calo_muon_correlation_i116_i: entity work.calo_muon_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"00B4",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0039", 
         eta_w1_lower_limit_calo1 => X"00C6",
 -- object 2 cuts        
@@ -1130,7 +1130,7 @@ calo_muon_correlation_i98_i: entity work.calo_muon_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"0046",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0039", 
         eta_w1_lower_limit_calo1 => X"00C6",
 -- object 2 cuts        
@@ -1181,13 +1181,13 @@ invariant_mass_i92_i: entity work.muon_muon_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_muon1 => X"0007",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_muon1 => 1,
         eta_w1_upper_limit_muon1 => X"00D3", 
         eta_w1_lower_limit_muon1 => X"012D",
         qual_lut_muon1 => X"FF00",
 -- object 2 cuts        
         pt_threshold_muon2 => X"0007",
-        nr_eta_windows2 => 1,
+        nr_eta_windows_muon2 => 1,
         eta_w1_upper_limit_muon2 => X"00D3", 
         eta_w1_lower_limit_muon2 => X"012D",
         qual_lut_muon2 => X"FF00",
@@ -1236,13 +1236,13 @@ muon_muon_correlation_i50_i: entity work.muon_muon_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_muon1 => X"0001",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_muon1 => 1,
         eta_w1_upper_limit_muon1 => X"008A", 
         eta_w1_lower_limit_muon1 => X"0176",
         qual_lut_muon1 => X"F000",
 -- object 2 cuts        
         pt_threshold_muon2 => X"0001",
-        nr_eta_windows2 => 1,
+        nr_eta_windows_muon2 => 1,
         eta_w1_upper_limit_muon2 => X"008A", 
         eta_w1_lower_limit_muon2 => X"0176",
         qual_lut_muon2 => X"F000",
@@ -1290,7 +1290,7 @@ transverse_mass_i167_i: entity work.calo_esums_correlation_condition
         mass_type => TRANSVERSE_MASS_TYPE,
 -- object 1 cuts        
         pt_threshold_calo1 => X"0040",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0039", 
         eta_w1_lower_limit_calo1 => X"00C6",
         iso_lut_calo1 => X"A",
@@ -1443,11 +1443,11 @@ algo(24) <= l1_triple_eg_16_12_8_er2p5;
 
 -- 238 L1_LooseIsoEG24er2p1_HTT100er : EG24[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg24er2p1_htt100er <= single_eg_i189 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg24er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;

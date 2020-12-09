@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 039dfdcb-9468-4dc5-a86b-e6f6882b5bc2
+-- c94bd8c4-2350-4272-81bb-47d38f1903b1
 
 -- Scale set:
 -- scales_2020_10_04
@@ -24,8 +24,8 @@ constant global_index: global_index_array := (
         410, -- module_index: 0, name: L1_ETT1200
         400, -- module_index: 1, name: L1_HTT200er
         160, -- module_index: 2, name: L1_SingleEG10er2p5
-         99, -- module_index: 3, name: L1_Mu20_EG10er2p5
-         18, -- module_index: 4, name: L1_SingleMu20
+         18, -- module_index: 3, name: L1_SingleMu20
+         99, -- module_index: 4, name: L1_Mu20_EG10er2p5
         190, -- module_index: 5, name: L1_SingleIsoEG28er2p1
         194, -- module_index: 6, name: L1_SingleIsoEG32er2p5
         331, -- module_index: 7, name: L1_SingleJet12erHE

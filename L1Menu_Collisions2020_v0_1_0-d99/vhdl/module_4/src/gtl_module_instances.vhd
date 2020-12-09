@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 039dfdcb-9468-4dc5-a86b-e6f6882b5bc2
+-- c94bd8c4-2350-4272-81bb-47d38f1903b1
 
 -- Scale set:
 -- scales_2020_10_04
@@ -832,13 +832,13 @@ calo_calo_correlation_i199_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"0030",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0030", 
         eta_w1_lower_limit_calo1 => X"00CF",
         iso_lut_calo1 => X"C",
 -- object 2 cuts        
         pt_threshold_calo2 => X"0036",
-        nr_eta_windows2 => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0030", 
         eta_w1_lower_limit_calo2 => X"00CF",
         iso_lut_calo2 => X"E",
@@ -862,12 +862,12 @@ calo_calo_correlation_i267_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"00E0",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0034", 
         eta_w1_lower_limit_calo1 => X"00CB",
 -- object 2 cuts        
         pt_threshold_calo2 => X"00E0",
-        nr_eta_windows2 => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0034", 
         eta_w1_lower_limit_calo2 => X"00CB",
 -- correlation cuts
@@ -889,13 +889,13 @@ invariant_mass_i209_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"0038",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0030", 
         eta_w1_lower_limit_calo1 => X"00CF",
         iso_lut_calo1 => X"E",
 -- object 2 cuts        
         pt_threshold_calo2 => X"0038",
-        nr_eta_windows2 => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0030", 
         eta_w1_lower_limit_calo2 => X"00CF",
         iso_lut_calo2 => X"E",
@@ -926,12 +926,12 @@ invariant_mass_i271_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"003C",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0039", 
         eta_w1_lower_limit_calo1 => X"00C6",
 -- object 2 cuts        
         pt_threshold_calo2 => X"003C",
-        nr_eta_windows2 => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0039", 
         eta_w1_lower_limit_calo2 => X"00C6",
 -- correlation cuts
@@ -1023,12 +1023,12 @@ invariant_mass_i95_i: entity work.calo_calo_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"0006",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0030", 
         eta_w1_lower_limit_calo1 => X"00CF",
 -- object 2 cuts        
         pt_threshold_calo2 => X"0006",
-        nr_eta_windows2 => 1,
+        nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0030", 
         eta_w1_lower_limit_calo2 => X"00CF",
 -- correlation cuts
@@ -1058,7 +1058,7 @@ calo_muon_correlation_i118_i: entity work.calo_muon_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"00B4",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0039", 
         eta_w1_lower_limit_calo1 => X"00C6",
 -- object 2 cuts        
@@ -1086,7 +1086,7 @@ calo_muon_correlation_i99_i: entity work.calo_muon_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_calo1 => X"0078",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0039", 
         eta_w1_lower_limit_calo1 => X"00C6",
 -- object 2 cuts        
@@ -1137,13 +1137,13 @@ invariant_mass_i94_i: entity work.muon_muon_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_muon1 => X"000B",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_muon1 => 1,
         eta_w1_upper_limit_muon1 => X"00D3", 
         eta_w1_lower_limit_muon1 => X"012D",
         qual_lut_muon1 => X"FF00",
 -- object 2 cuts        
         pt_threshold_muon2 => X"000B",
-        nr_eta_windows2 => 1,
+        nr_eta_windows_muon2 => 1,
         eta_w1_upper_limit_muon2 => X"00D3", 
         eta_w1_lower_limit_muon2 => X"012D",
         qual_lut_muon2 => X"FF00",
@@ -1192,7 +1192,7 @@ muon_muon_correlation_i364_i: entity work.muon_muon_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_muon1 => X"0007",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_muon1 => 1,
         eta_w1_upper_limit_muon1 => X"006E", 
         eta_w1_lower_limit_muon1 => X"0192",
         phi_full_range_muon1 => false, 
@@ -1201,7 +1201,7 @@ muon_muon_correlation_i364_i: entity work.muon_muon_correlation_condition
         qual_lut_muon1 => X"F000",
 -- object 2 cuts        
         pt_threshold_muon2 => X"0007",
-        nr_eta_windows2 => 1,
+        nr_eta_windows_muon2 => 1,
         eta_w1_upper_limit_muon2 => X"006E", 
         eta_w1_lower_limit_muon2 => X"0192",
         phi_full_range_muon2 => false, 
@@ -1225,13 +1225,13 @@ muon_muon_correlation_i47_i: entity work.muon_muon_correlation_condition
     generic map(
 -- object 1 cuts        
         pt_threshold_muon1 => X"0001",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_muon1 => 1,
         eta_w1_upper_limit_muon1 => X"00B8", 
         eta_w1_lower_limit_muon1 => X"0148",
         qual_lut_muon1 => X"F000",
 -- object 2 cuts        
         pt_threshold_muon2 => X"0001",
-        nr_eta_windows2 => 1,
+        nr_eta_windows_muon2 => 1,
         eta_w1_upper_limit_muon2 => X"00B8", 
         eta_w1_lower_limit_muon2 => X"0148",
         qual_lut_muon2 => X"F000",
@@ -1257,7 +1257,7 @@ transverse_mass_i166_i: entity work.calo_esums_correlation_condition
         mass_type => TRANSVERSE_MASS_TYPE,
 -- object 1 cuts        
         pt_threshold_calo1 => X"0040",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0039", 
         eta_w1_lower_limit_calo1 => X"00C6",
         iso_lut_calo1 => X"A",
@@ -1292,7 +1292,7 @@ transverse_mass_i168_i: entity work.calo_esums_correlation_condition
         mass_type => TRANSVERSE_MASS_TYPE,
 -- object 1 cuts        
         pt_threshold_calo1 => X"0040",
-        nr_eta_windows1 => 1,
+        nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0039", 
         eta_w1_lower_limit_calo1 => X"00C6",
         iso_lut_calo1 => X"A",
