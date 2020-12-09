@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 9a751171-4593-4bdc-b014-4d53e02554f9
+-- 334ca519-5c6d-4d50-93f3-7e93d21dcbf0
 
 -- Scale set:
 -- scales_2020_10_04
@@ -830,13 +830,17 @@ single_htt_i319_i: entity work.esums_conditions
 
 calo_calo_correlation_i199_i: entity work.calo_calo_correlation_condition
     generic map(
--- object 1 cuts        
+-- object 1 cuts
+        nr_calo1_objects => NR_EG_OBJECTS,        
+        obj_type_calo1 => EG_TYPE,
         pt_threshold_calo1 => X"0030",
         nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0030", 
         eta_w1_lower_limit_calo1 => X"00CF",
         iso_lut_calo1 => X"C",
--- object 2 cuts        
+-- object 2 cuts
+        nr_calo2_objects => NR_TAU_OBJECTS,        
+        obj_type_calo2 => TAU_TYPE,
         pt_threshold_calo2 => X"0036",
         nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0030", 
@@ -860,12 +864,16 @@ calo_calo_correlation_i199_i: entity work.calo_calo_correlation_condition
 
 calo_calo_correlation_i267_i: entity work.calo_calo_correlation_condition
     generic map(
--- object 1 cuts        
+-- object 1 cuts
+        nr_calo1_objects => NR_JET_OBJECTS,        
+        obj_type_calo1 => JET_TYPE,
         pt_threshold_calo1 => X"00E0",
         nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0034", 
         eta_w1_lower_limit_calo1 => X"00CB",
--- object 2 cuts        
+-- object 2 cuts
+        nr_calo2_objects => NR_JET_OBJECTS,        
+        obj_type_calo2 => JET_TYPE,
         pt_threshold_calo2 => X"00E0",
         nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0034", 
@@ -887,13 +895,17 @@ calo_calo_correlation_i267_i: entity work.calo_calo_correlation_condition
 
 invariant_mass_i209_i: entity work.calo_calo_correlation_condition
     generic map(
--- object 1 cuts        
+-- object 1 cuts
+        nr_calo1_objects => NR_TAU_OBJECTS,        
+        obj_type_calo1 => TAU_TYPE,
         pt_threshold_calo1 => X"0038",
         nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0030", 
         eta_w1_lower_limit_calo1 => X"00CF",
         iso_lut_calo1 => X"E",
--- object 2 cuts        
+-- object 2 cuts
+        nr_calo2_objects => NR_TAU_OBJECTS,        
+        obj_type_calo2 => TAU_TYPE,
         pt_threshold_calo2 => X"0038",
         nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0030", 
@@ -924,12 +936,16 @@ invariant_mass_i209_i: entity work.calo_calo_correlation_condition
 
 invariant_mass_i271_i: entity work.calo_calo_correlation_condition
     generic map(
--- object 1 cuts        
+-- object 1 cuts
+        nr_calo1_objects => NR_JET_OBJECTS,        
+        obj_type_calo1 => JET_TYPE,
         pt_threshold_calo1 => X"003C",
         nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0039", 
         eta_w1_lower_limit_calo1 => X"00C6",
--- object 2 cuts        
+-- object 2 cuts
+        nr_calo2_objects => NR_JET_OBJECTS,        
+        obj_type_calo2 => JET_TYPE,
         pt_threshold_calo2 => X"003C",
         nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0039", 
@@ -963,9 +979,13 @@ invariant_mass_i271_i: entity work.calo_calo_correlation_condition
 
 invariant_mass_i280_i: entity work.calo_calo_correlation_condition
     generic map(
--- object 1 cuts        
+-- object 1 cuts
+        nr_calo1_objects => NR_JET_OBJECTS,        
+        obj_type_calo1 => JET_TYPE,
         pt_threshold_calo1 => X"0050",
--- object 2 cuts        
+-- object 2 cuts
+        nr_calo2_objects => NR_JET_OBJECTS,        
+        obj_type_calo2 => JET_TYPE,
         pt_threshold_calo2 => X"0050",
 -- correlation cuts
         mass_cut => true, 
@@ -992,9 +1012,13 @@ invariant_mass_i280_i: entity work.calo_calo_correlation_condition
 
 invariant_mass_i297_i: entity work.calo_calo_correlation_condition
     generic map(
--- object 1 cuts        
+-- object 1 cuts
+        nr_calo1_objects => NR_JET_OBJECTS,        
+        obj_type_calo1 => JET_TYPE,
         pt_threshold_calo1 => X"00A0",
--- object 2 cuts        
+-- object 2 cuts
+        nr_calo2_objects => NR_JET_OBJECTS,        
+        obj_type_calo2 => JET_TYPE,
         pt_threshold_calo2 => X"003C",
 -- correlation cuts
         mass_cut => true, 
@@ -1021,12 +1045,16 @@ invariant_mass_i297_i: entity work.calo_calo_correlation_condition
 
 invariant_mass_i95_i: entity work.calo_calo_correlation_condition
     generic map(
--- object 1 cuts        
+-- object 1 cuts
+        nr_calo1_objects => NR_EG_OBJECTS,        
+        obj_type_calo1 => EG_TYPE,
         pt_threshold_calo1 => X"0006",
         nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0030", 
         eta_w1_lower_limit_calo1 => X"00CF",
--- object 2 cuts        
+-- object 2 cuts
+        nr_calo2_objects => NR_EG_OBJECTS,        
+        obj_type_calo2 => EG_TYPE,
         pt_threshold_calo2 => X"0006",
         nr_eta_windows_calo2 => 1,
         eta_w1_upper_limit_calo2 => X"0030", 
@@ -1057,6 +1085,7 @@ invariant_mass_i95_i: entity work.calo_calo_correlation_condition
 calo_muon_correlation_i118_i: entity work.calo_muon_correlation_condition
     generic map(        
 -- calo obj cuts        
+        obj_type_calo => JET_TYPE,
         pt_threshold_calo => X"00B4",
         nr_eta_windows_calo => 1,
         eta_w1_upper_limit_calo => X"0039", 
@@ -1083,6 +1112,7 @@ calo_muon_correlation_i118_i: entity work.calo_muon_correlation_condition
 calo_muon_correlation_i99_i: entity work.calo_muon_correlation_condition
     generic map(        
 -- calo obj cuts        
+        obj_type_calo => JET_TYPE,
         pt_threshold_calo => X"0078",
         nr_eta_windows_calo => 1,
         eta_w1_upper_limit_calo => X"0039", 
@@ -1144,6 +1174,7 @@ invariant_mass_i94_i: entity work.muon_muon_correlation_condition
         eta_w1_lower_limit_muon2 => X"012D",
         qual_lut_muon2 => X"FF00",
 -- correlation cuts
+        requested_charge_correlation => "os",
         mass_cut => true, 
         mass_type => INVARIANT_MASS_TYPE,
         mass_upper_limit => X"0000000005D75C80",
@@ -1232,6 +1263,7 @@ muon_muon_correlation_i47_i: entity work.muon_muon_correlation_condition
         eta_w1_lower_limit_muon2 => X"0148",
         qual_lut_muon2 => X"F000",
 -- correlation cuts
+        requested_charge_correlation => "os",
         dr_cut => true,
         dr_upper_limit_vector => X"00000000001DEC28", 
         dr_lower_limit_vector => X"0000000000000000",
@@ -1252,6 +1284,7 @@ transverse_mass_i166_i: entity work.calo_esums_correlation_condition
         mass_cut => true, 
         mass_type => TRANSVERSE_MASS_TYPE,        
 -- calo obj cuts        
+        obj_type_calo => EG_TYPE,
         pt_threshold_calo => X"0040",
         nr_eta_windows_calo => 1,
         eta_w1_upper_limit_calo => X"0039", 
@@ -1285,6 +1318,7 @@ transverse_mass_i168_i: entity work.calo_esums_correlation_condition
         mass_cut => true, 
         mass_type => TRANSVERSE_MASS_TYPE,        
 -- calo obj cuts        
+        obj_type_calo => EG_TYPE,
         pt_threshold_calo => X"0040",
         nr_eta_windows_calo => 1,
         eta_w1_upper_limit_calo => X"0039", 
@@ -1493,11 +1527,11 @@ algo(45) <= l1_double_jet_115_40_double_jet40_mass_min620;
 
 -- 365 L1_DoubleJet_80_30_Mass_Min420_Mu8 : mass_inv{JET80,JET30}[MASS_MIN_420] AND MU8[MU-QLTY_SNGL]
 l1_double_jet_80_30_mass_min420_mu8 <= invariant_mass_i297 and single_mu_i298;
-algo(37) <= l1_double_jet_80_30_mass_min420_mu8;
+algo(36) <= l1_double_jet_80_30_mass_min420_mu8;
 
 -- 366 L1_DoubleJet_80_30_Mass_Min420_DoubleMu0_SQ : mass_inv{JET80,JET30}[MASS_MIN_420] AND comb{MU0[MU-QLTY_SNGL],MU0[MU-QLTY_SNGL]}
 l1_double_jet_80_30_mass_min420_double_mu0_sq <= invariant_mass_i297 and double_mu_i35;
-algo(36) <= l1_double_jet_80_30_mass_min420_double_mu0_sq;
+algo(37) <= l1_double_jet_80_30_mass_min420_double_mu0_sq;
 
 -- 374 L1_TripleJet_105_85_75_DoubleJet_85_75_er2p5 : comb{JET105,JET85,JET75} AND comb{JET85[JET-ETA_2p52],JET75[JET-ETA_2p52]}
 l1_triple_jet_105_85_75_double_jet_85_75_er2p5 <= triple_jet_i303 and double_jet_i304;
