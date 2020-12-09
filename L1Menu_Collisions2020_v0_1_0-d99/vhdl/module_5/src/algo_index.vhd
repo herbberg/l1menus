@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 334ca519-5c6d-4d50-93f3-7e93d21dcbf0
+-- 25c68ee9-26e4-4413-9c06-427a8e3e05f8
 
 -- Scale set:
 -- scales_2020_10_04
@@ -24,8 +24,8 @@ constant global_index: global_index_array := (
         410, -- module_index: 0, name: L1_ETT1200
         400, -- module_index: 1, name: L1_HTT200er
         160, -- module_index: 2, name: L1_SingleEG10er2p5
-         18, -- module_index: 3, name: L1_SingleMu20
-         99, -- module_index: 4, name: L1_Mu20_EG10er2p5
+         99, -- module_index: 3, name: L1_Mu20_EG10er2p5
+         18, -- module_index: 4, name: L1_SingleMu20
         190, -- module_index: 5, name: L1_SingleIsoEG28er2p1
         194, -- module_index: 6, name: L1_SingleIsoEG32er2p5
         331, -- module_index: 7, name: L1_SingleJet12erHE
@@ -69,8 +69,8 @@ constant global_index: global_index_array := (
          78, -- module_index: 45, name: L1_TripleMu_5_3_3
          79, -- module_index: 46, name: L1_TripleMu_5_3_3_SQ
          77, -- module_index: 47, name: L1_TripleMu_5_3p5_2p5
-         83, -- module_index: 48, name: L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_OS_Mass_5to17
-         84, -- module_index: 49, name: L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_Mass_5to17
+         84, -- module_index: 48, name: L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_Mass_5to17
+         83, -- module_index: 49, name: L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_OS_Mass_5to17
          58, -- module_index: 50, name: L1_DoubleMu0er1p5_SQ_OS_dR_Max1p4
          61, -- module_index: 51, name: L1_DoubleMu4_SQ_OS_dR_Max1p2
          65, -- module_index: 52, name: L1_DoubleMu4p5er2p0_SQ_OS_Mass_Min7
