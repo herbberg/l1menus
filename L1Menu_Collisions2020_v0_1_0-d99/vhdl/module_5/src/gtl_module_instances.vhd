@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- c94bd8c4-2350-4272-81bb-47d38f1903b1
+-- 9a751171-4593-4bdc-b014-4d53e02554f9
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1119,17 +1119,12 @@ invariant_mass_i275_i: entity work.calo_calo_correlation_condition
     );
 
 calo_muon_correlation_i111_i: entity work.calo_muon_correlation_condition
-    generic map(
--- object 1 cuts        
-        pt_threshold_calo1 => X"0050",
-        nr_eta_windows_calo1 => 1,
-        eta_w1_upper_limit_calo1 => X"0034", 
-        eta_w1_lower_limit_calo1 => X"00CB",
--- object 2 cuts        
-        pt_threshold_calo2 => X"0019",
-        nr_eta_windows_calo2 => 1,
-        eta_w1_upper_limit_calo2 => X"00D3", 
-        eta_w1_lower_limit_calo2 => X"012D",
+    generic map(        
+-- calo obj cuts        
+        pt_threshold_calo => X"0050",
+        nr_eta_windows_calo => 1,
+        eta_w1_upper_limit_calo => X"0034", 
+        eta_w1_lower_limit_calo => X"00CB",
 -- muon obj cuts        
         pt_threshold_muon => X"0019",
         nr_eta_windows_muon => 1,
@@ -1153,14 +1148,12 @@ calo_muon_correlation_i111_i: entity work.calo_muon_correlation_condition
     );
 
 calo_muon_correlation_i97_i: entity work.calo_muon_correlation_condition
-    generic map(
--- object 1 cuts        
-        pt_threshold_calo1 => X"0020",
-        nr_eta_windows_calo1 => 1,
-        eta_w1_upper_limit_calo1 => X"0039", 
-        eta_w1_lower_limit_calo1 => X"00C6",
--- object 2 cuts        
-        pt_threshold_calo2 => X"0007",
+    generic map(        
+-- calo obj cuts        
+        pt_threshold_calo => X"0020",
+        nr_eta_windows_calo => 1,
+        eta_w1_upper_limit_calo => X"0039", 
+        eta_w1_lower_limit_calo => X"00C6",
 -- muon obj cuts        
         pt_threshold_muon => X"0007",
         qual_lut_muon => X"F000",
