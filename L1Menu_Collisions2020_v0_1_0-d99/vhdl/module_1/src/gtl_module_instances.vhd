@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 0425532f-b00a-4e92-8cb4-6daca91a5b24
+-- 88c29ed4-7711-4033-81b2-347517ca7eb3
 
 -- Scale set:
 -- scales_2020_10_04
@@ -762,7 +762,7 @@ double_mu_i33_i: entity work.muon_conditions
         mu_bx_0,
         pt => mu_pt_vector_bx_0, 
         cos_phi_integer => mu_cos_phi_bx_0, 
-        sin_phi_integer => mu_sin_phi_bx_0),
+        sin_phi_integer => mu_sin_phi_bx_0,
         condition_o => double_mu_i33
     );
 
@@ -779,7 +779,7 @@ double_mu_i38_i: entity work.muon_conditions
         mu_bx_0,
         pt => mu_pt_vector_bx_0, 
         cos_phi_integer => mu_cos_phi_bx_0, 
-        sin_phi_integer => mu_sin_phi_bx_0),
+        sin_phi_integer => mu_sin_phi_bx_0,
         condition_o => double_mu_i38
     );
 
@@ -796,7 +796,7 @@ double_mu_i40_i: entity work.muon_conditions
         mu_bx_0,
         pt => mu_pt_vector_bx_0, 
         cos_phi_integer => mu_cos_phi_bx_0, 
-        sin_phi_integer => mu_sin_phi_bx_0),
+        sin_phi_integer => mu_sin_phi_bx_0,
         condition_o => double_mu_i40
     );
 
@@ -813,7 +813,7 @@ double_mu_i42_i: entity work.muon_conditions
         mu_bx_0,
         pt => mu_pt_vector_bx_0, 
         cos_phi_integer => mu_cos_phi_bx_0, 
-        sin_phi_integer => mu_sin_phi_bx_0),
+        sin_phi_integer => mu_sin_phi_bx_0,
         condition_o => double_mu_i42
     );
 
@@ -833,7 +833,7 @@ double_mu_i45_i: entity work.muon_conditions
         mu_bx_0,
         pt => mu_pt_vector_bx_0, 
         cos_phi_integer => mu_cos_phi_bx_0, 
-        sin_phi_integer => mu_sin_phi_bx_0),
+        sin_phi_integer => mu_sin_phi_bx_0,
         condition_o => double_mu_i45
     );
 
@@ -853,7 +853,7 @@ double_mu_i48_i: entity work.muon_conditions
         mu_bx_0,
         pt => mu_pt_vector_bx_0, 
         cos_phi_integer => mu_cos_phi_bx_0, 
-        sin_phi_integer => mu_sin_phi_bx_0),
+        sin_phi_integer => mu_sin_phi_bx_0,
         condition_o => double_mu_i48
     );
 
@@ -873,7 +873,7 @@ double_mu_i55_i: entity work.muon_conditions
         os_charcorr_double => os_charcorr_double_bx_0_bx_0,
         pt => mu_pt_vector_bx_0, 
         cos_phi_integer => mu_cos_phi_bx_0, 
-        sin_phi_integer => mu_sin_phi_bx_0),
+        sin_phi_integer => mu_sin_phi_bx_0,
         condition_o => double_mu_i55
     );
 
@@ -890,7 +890,7 @@ double_mu_i89_i: entity work.muon_conditions
         mu_bx_0,
         pt => mu_pt_vector_bx_0, 
         cos_phi_integer => mu_cos_phi_bx_0, 
-        sin_phi_integer => mu_sin_phi_bx_0),
+        sin_phi_integer => mu_sin_phi_bx_0,
         condition_o => double_mu_i89
     );
 
@@ -907,7 +907,7 @@ double_mu_i91_i: entity work.muon_conditions
         mu_bx_0,
         pt => mu_pt_vector_bx_0, 
         cos_phi_integer => mu_cos_phi_bx_0, 
-        sin_phi_integer => mu_sin_phi_bx_0),
+        sin_phi_integer => mu_sin_phi_bx_0,
         condition_o => double_mu_i91
     );
 
