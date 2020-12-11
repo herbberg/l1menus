@@ -10,13 +10,16 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- d99bbee4-afcf-40be-a867-2b2bad10277e
+-- c3304b9e-e26c-42db-8976-16a4f1db0429
 
 -- Scale set:
 -- scales_2020_10_04
 
 -- VHDL producer version
 -- v2.9.0
+
+-- eventSetup version
+-- v0.8.0
 
 -- HB 2016-09-16: constants for algo_mapping_rop.
 type global_index_array is array (0 to NR_ALGOS-1) of integer;
@@ -57,8 +60,8 @@ constant global_index: global_index_array := (
         307, -- module_index: 33, name: L1_SingleMuOpenupt20
         374, -- module_index: 34, name: L1_TripleJet_105_85_75_DoubleJet_85_75_er2p5
          41, -- module_index: 35, name: L1_DoubleMu0_SQ
-        365, -- module_index: 36, name: L1_DoubleJet_80_30_Mass_Min420_Mu8
-        366, -- module_index: 37, name: L1_DoubleJet_80_30_Mass_Min420_DoubleMu0_SQ
+        366, -- module_index: 36, name: L1_DoubleJet_80_30_Mass_Min420_DoubleMu0_SQ
+        365, -- module_index: 37, name: L1_DoubleJet_80_30_Mass_Min420_Mu8
         197, -- module_index: 38, name: L1_IsoEG32er2p5_Mt40
         199, -- module_index: 39, name: L1_IsoEG32er2p5_Mt48
         346, -- module_index: 40, name: L1_DoubleJet112er2p3_dEta_Max1p6

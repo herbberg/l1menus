@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- d99bbee4-afcf-40be-a867-2b2bad10277e
+-- c3304b9e-e26c-42db-8976-16a4f1db0429
 
 -- Scale set:
 -- scales_2020_10_04
@@ -18,14 +18,17 @@
 -- VHDL producer version
 -- v2.9.0
 
+-- eventSetup version
+-- v0.8.0
+
 -- HB 2016-09-16: constants for algo_mapping_rop.
 type global_index_array is array (0 to NR_ALGOS-1) of integer;
 constant global_index: global_index_array := (
         410, -- module_index: 0, name: L1_ETT1200
         400, -- module_index: 1, name: L1_HTT200er
         160, -- module_index: 2, name: L1_SingleEG10er2p5
-         18, -- module_index: 3, name: L1_SingleMu20
-         99, -- module_index: 4, name: L1_Mu20_EG10er2p5
+         99, -- module_index: 3, name: L1_Mu20_EG10er2p5
+         18, -- module_index: 4, name: L1_SingleMu20
         190, -- module_index: 5, name: L1_SingleIsoEG28er2p1
         194, -- module_index: 6, name: L1_SingleIsoEG32er2p5
         331, -- module_index: 7, name: L1_SingleJet12erHE
