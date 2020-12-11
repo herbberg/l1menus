@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 72027e70-a205-46a7-a0dd-86efd9e7743d
+-- 0425532f-b00a-4e92-8cb4-6daca91a5b24
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1638,15 +1638,15 @@ algo(14) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(17) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(17) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 259 L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3 : dist{EG22[EG-ETA_2p13,EG-ISO_0xC],TAU70[TAU-ETA_2p13]}[DR_MIN_0p3]
 l1_loose_iso_eg22er2p1_tau70er2p1_d_r_min0p3 <= calo_calo_correlation_i200;
