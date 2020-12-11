@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- c3304b9e-e26c-42db-8976-16a4f1db0429
+-- 72027e70-a205-46a7-a0dd-86efd9e7743d
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1298,12 +1298,8 @@ invariant_mass_i44_i: entity work.muon_muon_correlation_condition
         pt_threshold_muon2 => X"000F",
 
 -- correlation cuts
-        mass_cut => true, 
+        mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
-        pt1_width => MU_PT_VECTOR_WIDTH, 
-        pt2_width => MU_PT_VECTOR_WIDTH,
-        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
-        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"002907FE9BCB0C80",
         mass_lower_limit => X"000000000007A120",
 
@@ -1344,12 +1340,8 @@ invariant_mass_i92_i: entity work.muon_muon_correlation_condition
 -- charge correlation cuts
         requested_charge_correlation => "os",
 -- correlation cuts
-        mass_cut => true, 
+        mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
-        pt1_width => MU_PT_VECTOR_WIDTH, 
-        pt2_width => MU_PT_VECTOR_WIDTH,
-        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION, 
-        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit => X"0000000005D75C80",
         mass_lower_limit => X"0000000000000000",
 
@@ -1646,15 +1638,15 @@ algo(14) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(17) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(17) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 259 L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3 : dist{EG22[EG-ETA_2p13,EG-ISO_0xC],TAU70[TAU-ETA_2p13]}[DR_MIN_0p3]
 l1_loose_iso_eg22er2p1_tau70er2p1_d_r_min0p3 <= calo_calo_correlation_i200;
