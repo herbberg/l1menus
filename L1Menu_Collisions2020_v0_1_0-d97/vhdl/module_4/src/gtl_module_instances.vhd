@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- a8fa6916-a05b-4aa2-9cd3-5781eb415c3b
+-- b44c8f2e-3193-45cd-a559-0afccc6574ce
 
 -- Scale set:
 -- scales_2020_10_04
@@ -930,8 +930,6 @@ calo_calo_correlation_i199_i: entity work.calo_calo_correlation_condition
         iso_lut_calo2 => X"E",
 
 -- correlation cuts
-        dr_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         dr_upper_limit_vector => X"00000000084CA240", 
         dr_lower_limit_vector => X"0000000000015F90",        
 
@@ -964,8 +962,6 @@ calo_calo_correlation_i267_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00CB",
 
 -- correlation cuts
-        deta_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         diff_eta_upper_limit_vector => X"00000640", 
         diff_eta_lower_limit_vector => X"00000000",        
 
@@ -999,8 +995,6 @@ invariant_mass_i209_i: entity work.calo_calo_correlation_condition
         iso_lut_calo2 => X"E",
 
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => TAU_PT_VECTOR_WIDTH, 
         pt2_width => TAU_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => TAU_TAU_COSH_COS_PRECISION, 
@@ -1039,9 +1033,6 @@ invariant_mass_i271_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00C6",
 
 -- correlation cuts
-        deta_cut => true,
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         diff_eta_upper_limit_vector => X"000005DC", 
@@ -1077,8 +1068,6 @@ invariant_mass_i280_i: entity work.calo_calo_correlation_condition
         pt_threshold_calo2 => X"0050",
 
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
@@ -1111,8 +1100,6 @@ invariant_mass_i297_i: entity work.calo_calo_correlation_condition
         pt_threshold_calo2 => X"003C",
 
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
@@ -1151,8 +1138,6 @@ invariant_mass_i95_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00CF",
 
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => EG_PT_VECTOR_WIDTH, 
         pt2_width => EG_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => EG_EG_COSH_COS_PRECISION, 
@@ -1188,8 +1173,6 @@ calo_muon_correlation_i118_i: entity work.calo_muon_correlation_condition
         qual_lut_muon => X"FF00",
 
 -- correlation cuts
-        dr_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         dr_upper_limit_vector => X"000000000009C7E8", 
         dr_lower_limit_vector => X"0000000000000000",        
 
@@ -1219,8 +1202,6 @@ calo_muon_correlation_i99_i: entity work.calo_muon_correlation_condition
         qual_lut_muon => X"F000",
 
 -- correlation cuts
-        dr_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         dr_upper_limit_vector => X"00000000000274E8", 
         dr_lower_limit_vector => X"0000000000000000",        
 
@@ -1246,8 +1227,6 @@ invariant_mass_i37_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "None"
   
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         mass_upper_limit => X"002907FE9BCB0C80",
         mass_lower_limit => X"000000000007A120",        
 
@@ -1283,8 +1262,6 @@ invariant_mass_i94_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "os"
   
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         mass_upper_limit => X"0000000005D75C80",
         mass_lower_limit => X"0000000001E84800",        
 
@@ -1316,8 +1293,6 @@ muon_muon_correlation_i117_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "None"
   
 -- correlation cuts
-        dr_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         dr_upper_limit_vector => X"00000000002713E8", 
         dr_lower_limit_vector => X"0000000000000000",        
 
@@ -1357,8 +1332,6 @@ muon_muon_correlation_i364_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "None"
   
 -- correlation cuts
-        dphi_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         diff_phi_upper_limit_vector => X"00000C46", 
         diff_phi_lower_limit_vector => X"00000A3A",        
 
@@ -1391,8 +1364,6 @@ muon_muon_correlation_i47_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "os"
   
 -- correlation cuts
-        dr_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         dr_upper_limit_vector => X"00000000001DEC28", 
         dr_lower_limit_vector => X"0000000000000000",        
 

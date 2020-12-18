@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- a8fa6916-a05b-4aa2-9cd3-5781eb415c3b
+-- b44c8f2e-3193-45cd-a559-0afccc6574ce
 
 -- Scale set:
 -- scales_2020_10_04
@@ -289,8 +289,6 @@ calo_calo_correlation_i114_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00CF",
 
 -- correlation cuts
-        deta_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         diff_eta_upper_limit_vector => X"00000640", 
         diff_eta_lower_limit_vector => X"00000000",        
 
@@ -322,8 +320,6 @@ invariant_mass_i284_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00C2",
 
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
@@ -356,8 +352,6 @@ invariant_mass_i285_i: entity work.calo_calo_correlation_condition
         pt_threshold_calo2 => X"0078",
 
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
@@ -395,8 +389,6 @@ invariant_mass_i286_i: entity work.calo_calo_correlation_condition
         eta_w2_lower_limit_calo2 => X"0045",
 
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
@@ -432,8 +424,6 @@ invariant_mass_i287_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00C2",
 
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
@@ -474,8 +464,6 @@ invariant_mass_i288_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00C2",
 
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
@@ -518,8 +506,6 @@ invariant_mass_i289_i: entity work.calo_calo_correlation_condition
         eta_w2_lower_limit_calo2 => X"0045",
 
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
@@ -558,8 +544,6 @@ invariant_mass_i290_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00C2",
 
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
@@ -597,8 +581,6 @@ invariant_mass_i291_i: entity work.calo_calo_correlation_condition
         eta_w2_lower_limit_calo2 => X"0045",
 
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
@@ -634,8 +616,6 @@ invariant_mass_i292_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00C2",
 
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
@@ -676,8 +656,6 @@ invariant_mass_i293_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00C2",
 
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
@@ -720,8 +698,6 @@ invariant_mass_i294_i: entity work.calo_calo_correlation_condition
         eta_w2_lower_limit_calo2 => X"0045",
 
 -- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
@@ -760,8 +736,6 @@ calo_muon_correlation_i113_i: entity work.calo_muon_correlation_condition
         qual_lut_muon => X"F000",
 
 -- correlation cuts
-        dr_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
         dr_upper_limit_vector => X"00000000000274E8", 
         dr_lower_limit_vector => X"0000000000000000",        
 
