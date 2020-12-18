@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- d2e00444-cfb6-4e5c-9c49-06be32df34af
+-- 16e99435-1ebe-4541-b1cd-a35b649dff67
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1383,7 +1383,7 @@ transverse_mass_i166_i: entity work.calo_esums_correlation_condition
         nr_eta_windows_calo => 1,
         eta_w1_upper_limit_calo => X"0039", 
         eta_w1_lower_limit_calo => X"00C6",
-        iso_lut_muon => X"A",
+        iso_lut_calo => X"A",
 
 -- esums obj cuts        
         obj_type_esums => ETM_TYPE,
@@ -1421,7 +1421,7 @@ transverse_mass_i168_i: entity work.calo_esums_correlation_condition
         nr_eta_windows_calo => 1,
         eta_w1_upper_limit_calo => X"0039", 
         eta_w1_lower_limit_calo => X"00C6",
-        iso_lut_muon => X"A",
+        iso_lut_calo => X"A",
 
 -- esums obj cuts        
         obj_type_esums => ETM_TYPE,
