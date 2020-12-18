@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- b44c8f2e-3193-45cd-a559-0afccc6574ce
+-- ded3f5fa-14d6-4477-9d17-dde44ecc1141
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1013,7 +1013,7 @@ invariant_mass_i212_i: entity work.calo_calo_correlation_condition
         pt1_width => TAU_PT_VECTOR_WIDTH, 
         pt2_width => TAU_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => TAU_TAU_COSH_COS_PRECISION, 
-        cosh_cos_width => TAU_TAU_COSH_COS_VECTOR_WIDTH,
+        cosh_cos_width => TAU_TAU_COSH_COS_VECTOR_WIDTH,        
         mass_upper_limit => X"000000001312D000",
         mass_lower_limit => X"0000000000000000",        
 
@@ -1053,7 +1053,7 @@ invariant_mass_i272_i: entity work.calo_calo_correlation_condition
         diff_eta_upper_limit_vector => X"000005DC", 
         diff_eta_lower_limit_vector => X"00000000",
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
-        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,        
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"00000001448C1B40",        
 
@@ -1086,7 +1086,7 @@ invariant_mass_i282_i: entity work.calo_calo_correlation_condition
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
-        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,        
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",        
 
@@ -1130,8 +1130,8 @@ invariant_mass_ov_rm_i295_i: entity work.calo_calo_calo_correlation_orm_conditio
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
         cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
-        mass_upper_limit => X"00041A6642C78140",
-        mass_lower_limit => X"000000025B7F3D40",        
+        mass_upper_limit_vector => X"00041A6642C78140",
+        mass_lower_limit_vector => X"000000025B7F3D40",        
 
 -- selector one or two objects with orm
         obj_2plus1 => true
@@ -1497,7 +1497,7 @@ algo(31) <= l1_etmhf90_htt60er;
 
 -- 429 L1_ETMHF100_HTT60er : ETMHF100 AND HTT60
 l1_etmhf100_htt60er <= single_etmhf_i226 and single_htt_i120;
-algo(55) <= l1_etmhf100_htt60er;
+algo(54) <= l1_etmhf100_htt60er;
 
 -- 430 L1_ETMHF110_HTT60er : ETMHF110 AND HTT60
 l1_etmhf110_htt60er <= single_etmhf_i227 and single_htt_i120;
@@ -1541,7 +1541,7 @@ algo(57) <= l1_single_jet20er2p5_not_bptx_or_3_bx;
 
 -- 452 L1_SingleJet43er2p5_NotBptxOR_3BX : JET43[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
 l1_single_jet43er2p5_not_bptx_or_3_bx <= single_jet_i340 and ( not single_ext_i336 ) and ( not single_ext_i334 ) and ( not single_ext_i337 );
-algo(2) <= l1_single_jet43er2p5_not_bptx_or_3_bx;
+algo(1) <= l1_single_jet43er2p5_not_bptx_or_3_bx;
 
 -- 453 L1_SingleJet46er2p5_NotBptxOR_3BX : JET46[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
 l1_single_jet46er2p5_not_bptx_or_3_bx <= single_jet_i341 and ( not single_ext_i336 ) and ( not single_ext_i334 ) and ( not single_ext_i337 );
@@ -1553,7 +1553,7 @@ algo(0) <= l1_always_true;
 
 -- 459 L1_ZeroBias : EXT_ZeroBias_BPTX_AND_VME
 l1_zero_bias <= single_ext_i331;
-algo(54) <= l1_zero_bias;
+algo(55) <= l1_zero_bias;
 
 -- 460 L1_ZeroBias_copy : EXT_ZeroBias_BPTX_AND_VME
 l1_zero_bias_copy <= single_ext_i331;
@@ -1577,7 +1577,7 @@ algo(52) <= l1_isolated_bunch;
 
 -- 472 L1_FirstBunchBeforeTrain : ( NOT EXT_BPTX_OR_VME-2) AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND EXT_ZeroBias_BPTX_AND_VME+1 AND EXT_ZeroBias_BPTX_AND_VME+2
 l1_first_bunch_before_train <= ( not single_ext_i329 ) and ( not single_ext_i336 ) and ( not single_ext_i334 ) and single_ext_i332 and single_ext_i333;
-algo(1) <= l1_first_bunch_before_train;
+algo(2) <= l1_first_bunch_before_train;
 
 -- 473 L1_FirstBunchInTrain : ( NOT EXT_BPTX_OR_VME-2) AND ( NOT EXT_BPTX_OR_VME-1) AND EXT_ZeroBias_BPTX_AND_VME AND EXT_ZeroBias_BPTX_AND_VME+1 AND EXT_ZeroBias_BPTX_AND_VME+2
 l1_first_bunch_in_train <= ( not single_ext_i329 ) and ( not single_ext_i336 ) and single_ext_i331 and single_ext_i332 and single_ext_i333;

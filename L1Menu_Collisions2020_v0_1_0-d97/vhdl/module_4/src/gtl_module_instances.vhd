@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- b44c8f2e-3193-45cd-a559-0afccc6574ce
+-- ded3f5fa-14d6-4477-9d17-dde44ecc1141
 
 -- Scale set:
 -- scales_2020_10_04
@@ -998,7 +998,7 @@ invariant_mass_i209_i: entity work.calo_calo_correlation_condition
         pt1_width => TAU_PT_VECTOR_WIDTH, 
         pt2_width => TAU_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => TAU_TAU_COSH_COS_PRECISION, 
-        cosh_cos_width => TAU_TAU_COSH_COS_VECTOR_WIDTH,
+        cosh_cos_width => TAU_TAU_COSH_COS_VECTOR_WIDTH,        
         mass_upper_limit => X"000000001823CF40",
         mass_lower_limit => X"0000000000000000",        
 
@@ -1038,7 +1038,7 @@ invariant_mass_i271_i: entity work.calo_calo_correlation_condition
         diff_eta_upper_limit_vector => X"000005DC", 
         diff_eta_lower_limit_vector => X"00000000",
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
-        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,        
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000010C388D00",        
 
@@ -1071,7 +1071,7 @@ invariant_mass_i280_i: entity work.calo_calo_correlation_condition
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
-        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,        
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000047999ED00",        
 
@@ -1103,7 +1103,7 @@ invariant_mass_i297_i: entity work.calo_calo_correlation_condition
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
-        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,        
         mass_upper_limit => X"00041A6642C78140",
         mass_lower_limit => X"000000020DB68500",        
 
@@ -1141,7 +1141,7 @@ invariant_mass_i95_i: entity work.calo_calo_correlation_condition
         pt1_width => EG_PT_VECTOR_WIDTH, 
         pt2_width => EG_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => EG_EG_COSH_COS_PRECISION, 
-        cosh_cos_width => EG_EG_COSH_COS_VECTOR_WIDTH,
+        cosh_cos_width => EG_EG_COSH_COS_VECTOR_WIDTH,        
         mass_upper_limit => X"0000000001312D00",
         mass_lower_limit => X"0000000000000000",        
 
