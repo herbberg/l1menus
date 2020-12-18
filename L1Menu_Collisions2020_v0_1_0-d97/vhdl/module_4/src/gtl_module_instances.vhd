@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 16e99435-1ebe-4541-b1cd-a35b649dff67
+-- 5294fbf1-ae61-45e1-97f3-c1a135de6334
 
 -- Scale set:
 -- scales_2020_10_04
@@ -25,16 +25,16 @@
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-    muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
-        port map(mu_bx_m1, mu_bx_0,
-            ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
-            ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
-            ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
     muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
         port map(mu_bx_0, mu_bx_0,
             ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
             ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
             ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
+    muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
+        port map(mu_bx_m1, mu_bx_0,
+            ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
+            ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
+            ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo ObjectType in certain Bx used in correlation conditions
 
@@ -930,6 +930,7 @@ calo_calo_correlation_i199_i: entity work.calo_calo_correlation_condition
         iso_lut_calo2 => X"E",
 
 -- correlation cuts
+        dr_cut => true,
         dr_upper_limit_vector => X"00000000084CA240", 
         dr_lower_limit_vector => X"0000000000015F90",        
 
@@ -962,6 +963,7 @@ calo_calo_correlation_i267_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00CB",
 
 -- correlation cuts
+        deta_cut => true,
         diff_eta_upper_limit_vector => X"00000640", 
         diff_eta_lower_limit_vector => X"00000000",        
 
@@ -995,6 +997,8 @@ invariant_mass_i209_i: entity work.calo_calo_correlation_condition
         iso_lut_calo2 => X"E",
 
 -- correlation cuts
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => TAU_PT_VECTOR_WIDTH, 
         pt2_width => TAU_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => TAU_TAU_COSH_COS_PRECISION, 
@@ -1033,6 +1037,9 @@ invariant_mass_i271_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00C6",
 
 -- correlation cuts
+        deta_cut => true,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         diff_eta_upper_limit_vector => X"000005DC", 
@@ -1068,6 +1075,8 @@ invariant_mass_i280_i: entity work.calo_calo_correlation_condition
         pt_threshold_calo2 => X"0050",
 
 -- correlation cuts
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
@@ -1100,6 +1109,8 @@ invariant_mass_i297_i: entity work.calo_calo_correlation_condition
         pt_threshold_calo2 => X"003C",
 
 -- correlation cuts
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION, 
@@ -1138,6 +1149,8 @@ invariant_mass_i95_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00CF",
 
 -- correlation cuts
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => EG_PT_VECTOR_WIDTH, 
         pt2_width => EG_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => EG_EG_COSH_COS_PRECISION, 
@@ -1173,6 +1186,7 @@ calo_muon_correlation_i118_i: entity work.calo_muon_correlation_condition
         qual_lut_muon => X"FF00",
 
 -- correlation cuts
+        dr_cut => true,
         dr_upper_limit_vector => X"000000000009C7E8", 
         dr_lower_limit_vector => X"0000000000000000",        
 
@@ -1202,6 +1216,7 @@ calo_muon_correlation_i99_i: entity work.calo_muon_correlation_condition
         qual_lut_muon => X"F000",
 
 -- correlation cuts
+        dr_cut => true,
         dr_upper_limit_vector => X"00000000000274E8", 
         dr_lower_limit_vector => X"0000000000000000",        
 
@@ -1224,6 +1239,8 @@ invariant_mass_i37_i: entity work.muon_muon_correlation_condition
         pt_threshold_muon2 => X"0001",
 
 -- correlation cuts
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         mass_upper_limit => X"002907FE9BCB0C80",
         mass_lower_limit => X"000000000007A120",        
 
@@ -1259,6 +1276,8 @@ invariant_mass_i94_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "os",
     
 -- correlation cuts
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         mass_upper_limit => X"0000000005D75C80",
         mass_lower_limit => X"0000000001E84800",        
 
@@ -1287,6 +1306,7 @@ muon_muon_correlation_i117_i: entity work.muon_muon_correlation_condition
         qual_lut_muon2 => X"FF00",
 
 -- correlation cuts
+        dr_cut => true,
         dr_upper_limit_vector => X"00000000002713E8", 
         dr_lower_limit_vector => X"0000000000000000",        
 
@@ -1323,6 +1343,7 @@ muon_muon_correlation_i364_i: entity work.muon_muon_correlation_condition
         qual_lut_muon2 => X"F000",
 
 -- correlation cuts
+        dphi_cut => true,
         diff_phi_upper_limit_vector => X"00000C46", 
         diff_phi_lower_limit_vector => X"00000A3A",        
 
@@ -1355,6 +1376,7 @@ muon_muon_correlation_i47_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "os",
     
 -- correlation cuts
+        dr_cut => true,
         dr_upper_limit_vector => X"00000000001DEC28", 
         dr_lower_limit_vector => X"0000000000000000",        
 

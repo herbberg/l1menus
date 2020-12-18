@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 16e99435-1ebe-4541-b1cd-a35b649dff67
+-- 5294fbf1-ae61-45e1-97f3-c1a135de6334
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1142,6 +1142,7 @@ calo_calo_correlation_i110_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00CB",
 
 -- correlation cuts
+        deta_cut => true,
         diff_eta_upper_limit_vector => X"00000640", 
         diff_eta_lower_limit_vector => X"00000000",        
 
@@ -1174,6 +1175,7 @@ calo_calo_correlation_i187_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00C6",
 
 -- correlation cuts
+        dr_cut => true,
         dr_upper_limit_vector => X"00000000084CA240", 
         dr_lower_limit_vector => X"0000000000015F90",        
 
@@ -1208,6 +1210,8 @@ invariant_mass_i211_i: entity work.calo_calo_correlation_condition
         iso_lut_calo2 => X"E",
 
 -- correlation cuts
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => TAU_PT_VECTOR_WIDTH, 
         pt2_width => TAU_PT_VECTOR_WIDTH,
         mass_cosh_cos_precision => TAU_TAU_COSH_COS_PRECISION, 
@@ -1246,6 +1250,9 @@ invariant_mass_i268_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00C6",
 
 -- correlation cuts
+        deta_cut => true,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         diff_eta_upper_limit_vector => X"000005DC", 
@@ -1287,6 +1294,9 @@ invariant_mass_i273_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo2 => X"00C6",
 
 -- correlation cuts
+        deta_cut => true,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH, 
         pt2_width => JET_PT_VECTOR_WIDTH,
         diff_eta_upper_limit_vector => X"000005DC", 
@@ -1373,6 +1383,7 @@ calo_muon_correlation_i101_i: entity work.calo_muon_correlation_condition
         qual_lut_muon => X"F000",
 
 -- correlation cuts
+        dr_cut => true,
         dr_upper_limit_vector => X"000000000009C7E8", 
         dr_lower_limit_vector => X"0000000000000000",        
 
@@ -1405,6 +1416,7 @@ calo_muon_correlation_i109_i: entity work.calo_muon_correlation_condition
         qual_lut_muon => X"F000",
 
 -- correlation cuts
+        dr_cut => true,
         dr_upper_limit_vector => X"00000000000274E8", 
         dr_lower_limit_vector => X"0000000000000000",        
 
@@ -1438,6 +1450,8 @@ invariant_mass_i59_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "os",
     
 -- correlation cuts
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         mass_upper_limit => X"0000000009A7EC80",
         mass_lower_limit => X"000000000175D720",        
 
@@ -1469,6 +1483,8 @@ invariant_mass_i74_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "os",
     
 -- correlation cuts
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
         mass_upper_limit => X"000000000269FB20",
         mass_lower_limit => X"0000000000000000",        
 
@@ -1503,6 +1519,7 @@ muon_muon_correlation_i46_i: entity work.muon_muon_correlation_condition
         qual_lut_muon2 => X"F000",
 
 -- correlation cuts
+        dr_cut => true,
         dr_upper_limit_vector => X"00000000001DEC28", 
         dr_lower_limit_vector => X"0000000000000000",        
 
@@ -1536,6 +1553,7 @@ muon_muon_correlation_i52_i: entity work.muon_muon_correlation_condition
         requested_charge_correlation => "os",
     
 -- correlation cuts
+        dr_cut => true,
         dr_upper_limit_vector => X"00000000001DEC28", 
         dr_lower_limit_vector => X"0000000000000000",        
 
@@ -1567,7 +1585,7 @@ algo(55) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(58) <= l1_single_mu7;
+algo(59) <= l1_single_mu7;
 
 -- 17 L1_SingleMu18 : MU18[MU-QLTY_SNGL]
 l1_single_mu18 <= single_mu_i17;
@@ -1655,7 +1673,7 @@ algo(56) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i12 and single_eg_i79;
-algo(59) <= l1_mu7_eg23er2p5;
+algo(58) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i10 and single_eg_i82;
