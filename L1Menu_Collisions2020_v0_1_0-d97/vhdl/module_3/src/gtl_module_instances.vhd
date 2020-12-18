@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- bcec5093-bd0f-4bd4-9835-a99b01c4208f
+-- a8fa6916-a05b-4aa2-9cd3-5781eb415c3b
 
 -- Scale set:
 -- scales_2020_10_04
@@ -275,13 +275,13 @@ single_htt_i318_i: entity work.esums_conditions
 calo_calo_correlation_i114_i: entity work.calo_calo_correlation_condition
     generic map(
 -- obj cuts
-        nr_calo1_objects => NR_JET_OBJECTS
+        nr_calo1_objects => NR_JET_OBJECTS,
         obj_type_calo1 => JET_TYPE,        
         pt_threshold_calo1 => X"0050",
         nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"0030", 
         eta_w1_lower_limit_calo1 => X"00CF",
-        nr_calo2_objects => NR_JET_OBJECTS
+        nr_calo2_objects => NR_JET_OBJECTS,
         obj_type_calo2 => JET_TYPE,        
         pt_threshold_calo2 => X"0050",
         nr_eta_windows_calo2 => 1,
@@ -308,13 +308,13 @@ calo_calo_correlation_i114_i: entity work.calo_calo_correlation_condition
 invariant_mass_i284_i: entity work.calo_calo_correlation_condition
     generic map(
 -- obj cuts
-        nr_calo1_objects => NR_JET_OBJECTS
+        nr_calo1_objects => NR_JET_OBJECTS,
         obj_type_calo1 => JET_TYPE,        
         pt_threshold_calo1 => X"0050",
         nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"003D", 
         eta_w1_lower_limit_calo1 => X"00C2",
-        nr_calo2_objects => NR_JET_OBJECTS
+        nr_calo2_objects => NR_JET_OBJECTS,
         obj_type_calo2 => JET_TYPE,        
         pt_threshold_calo2 => X"0050",
         nr_eta_windows_calo2 => 1,
@@ -348,10 +348,10 @@ invariant_mass_i284_i: entity work.calo_calo_correlation_condition
 invariant_mass_i285_i: entity work.calo_calo_correlation_condition
     generic map(
 -- obj cuts
-        nr_calo1_objects => NR_JET_OBJECTS
+        nr_calo1_objects => NR_JET_OBJECTS,
         obj_type_calo1 => JET_TYPE,        
         pt_threshold_calo1 => X"0078",
-        nr_calo2_objects => NR_JET_OBJECTS
+        nr_calo2_objects => NR_JET_OBJECTS,
         obj_type_calo2 => JET_TYPE,        
         pt_threshold_calo2 => X"0078",
 
@@ -382,10 +382,10 @@ invariant_mass_i285_i: entity work.calo_calo_correlation_condition
 invariant_mass_i286_i: entity work.calo_calo_correlation_condition
     generic map(
 -- obj cuts
-        nr_calo1_objects => NR_JET_OBJECTS
+        nr_calo1_objects => NR_JET_OBJECTS,
         obj_type_calo1 => JET_TYPE,        
         pt_threshold_calo1 => X"0078",
-        nr_calo2_objects => NR_JET_OBJECTS
+        nr_calo2_objects => NR_JET_OBJECTS,
         obj_type_calo2 => JET_TYPE,        
         pt_threshold_calo2 => X"0050",
         nr_eta_windows_calo2 => 2,
@@ -421,10 +421,10 @@ invariant_mass_i286_i: entity work.calo_calo_correlation_condition
 invariant_mass_i287_i: entity work.calo_calo_correlation_condition
     generic map(
 -- obj cuts
-        nr_calo1_objects => NR_JET_OBJECTS
+        nr_calo1_objects => NR_JET_OBJECTS,
         obj_type_calo1 => JET_TYPE,        
         pt_threshold_calo1 => X"0078",
-        nr_calo2_objects => NR_JET_OBJECTS
+        nr_calo2_objects => NR_JET_OBJECTS,
         obj_type_calo2 => JET_TYPE,        
         pt_threshold_calo2 => X"0050",
         nr_eta_windows_calo2 => 1,
@@ -458,7 +458,7 @@ invariant_mass_i287_i: entity work.calo_calo_correlation_condition
 invariant_mass_i288_i: entity work.calo_calo_correlation_condition
     generic map(
 -- obj cuts
-        nr_calo1_objects => NR_JET_OBJECTS
+        nr_calo1_objects => NR_JET_OBJECTS,
         obj_type_calo1 => JET_TYPE,        
         pt_threshold_calo1 => X"0050",
         nr_eta_windows_calo1 => 2,
@@ -466,7 +466,7 @@ invariant_mass_i288_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo1 => X"008D",
         eta_w2_upper_limit_calo1 => X"0072", 
         eta_w2_lower_limit_calo1 => X"0045",
-        nr_calo2_objects => NR_JET_OBJECTS
+        nr_calo2_objects => NR_JET_OBJECTS,
         obj_type_calo2 => JET_TYPE,        
         pt_threshold_calo2 => X"0050",
         nr_eta_windows_calo2 => 1,
@@ -500,7 +500,7 @@ invariant_mass_i288_i: entity work.calo_calo_correlation_condition
 invariant_mass_i289_i: entity work.calo_calo_correlation_condition
     generic map(
 -- obj cuts
-        nr_calo1_objects => NR_JET_OBJECTS
+        nr_calo1_objects => NR_JET_OBJECTS,
         obj_type_calo1 => JET_TYPE,        
         pt_threshold_calo1 => X"0050",
         nr_eta_windows_calo1 => 2,
@@ -508,7 +508,7 @@ invariant_mass_i289_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo1 => X"008D",
         eta_w2_upper_limit_calo1 => X"0072", 
         eta_w2_lower_limit_calo1 => X"0045",
-        nr_calo2_objects => NR_JET_OBJECTS
+        nr_calo2_objects => NR_JET_OBJECTS,
         obj_type_calo2 => JET_TYPE,        
         pt_threshold_calo2 => X"0050",
         nr_eta_windows_calo2 => 2,
@@ -544,13 +544,13 @@ invariant_mass_i289_i: entity work.calo_calo_correlation_condition
 invariant_mass_i290_i: entity work.calo_calo_correlation_condition
     generic map(
 -- obj cuts
-        nr_calo1_objects => NR_JET_OBJECTS
+        nr_calo1_objects => NR_JET_OBJECTS,
         obj_type_calo1 => JET_TYPE,        
         pt_threshold_calo1 => X"005A",
         nr_eta_windows_calo1 => 1,
         eta_w1_upper_limit_calo1 => X"003D", 
         eta_w1_lower_limit_calo1 => X"00C2",
-        nr_calo2_objects => NR_JET_OBJECTS
+        nr_calo2_objects => NR_JET_OBJECTS,
         obj_type_calo2 => JET_TYPE,        
         pt_threshold_calo2 => X"005A",
         nr_eta_windows_calo2 => 1,
@@ -584,10 +584,10 @@ invariant_mass_i290_i: entity work.calo_calo_correlation_condition
 invariant_mass_i291_i: entity work.calo_calo_correlation_condition
     generic map(
 -- obj cuts
-        nr_calo1_objects => NR_JET_OBJECTS
+        nr_calo1_objects => NR_JET_OBJECTS,
         obj_type_calo1 => JET_TYPE,        
         pt_threshold_calo1 => X"0078",
-        nr_calo2_objects => NR_JET_OBJECTS
+        nr_calo2_objects => NR_JET_OBJECTS,
         obj_type_calo2 => JET_TYPE,        
         pt_threshold_calo2 => X"005A",
         nr_eta_windows_calo2 => 2,
@@ -623,10 +623,10 @@ invariant_mass_i291_i: entity work.calo_calo_correlation_condition
 invariant_mass_i292_i: entity work.calo_calo_correlation_condition
     generic map(
 -- obj cuts
-        nr_calo1_objects => NR_JET_OBJECTS
+        nr_calo1_objects => NR_JET_OBJECTS,
         obj_type_calo1 => JET_TYPE,        
         pt_threshold_calo1 => X"0078",
-        nr_calo2_objects => NR_JET_OBJECTS
+        nr_calo2_objects => NR_JET_OBJECTS,
         obj_type_calo2 => JET_TYPE,        
         pt_threshold_calo2 => X"005A",
         nr_eta_windows_calo2 => 1,
@@ -660,7 +660,7 @@ invariant_mass_i292_i: entity work.calo_calo_correlation_condition
 invariant_mass_i293_i: entity work.calo_calo_correlation_condition
     generic map(
 -- obj cuts
-        nr_calo1_objects => NR_JET_OBJECTS
+        nr_calo1_objects => NR_JET_OBJECTS,
         obj_type_calo1 => JET_TYPE,        
         pt_threshold_calo1 => X"005A",
         nr_eta_windows_calo1 => 2,
@@ -668,7 +668,7 @@ invariant_mass_i293_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo1 => X"008D",
         eta_w2_upper_limit_calo1 => X"0072", 
         eta_w2_lower_limit_calo1 => X"0045",
-        nr_calo2_objects => NR_JET_OBJECTS
+        nr_calo2_objects => NR_JET_OBJECTS,
         obj_type_calo2 => JET_TYPE,        
         pt_threshold_calo2 => X"005A",
         nr_eta_windows_calo2 => 1,
@@ -702,7 +702,7 @@ invariant_mass_i293_i: entity work.calo_calo_correlation_condition
 invariant_mass_i294_i: entity work.calo_calo_correlation_condition
     generic map(
 -- obj cuts
-        nr_calo1_objects => NR_JET_OBJECTS
+        nr_calo1_objects => NR_JET_OBJECTS,
         obj_type_calo1 => JET_TYPE,        
         pt_threshold_calo1 => X"005A",
         nr_eta_windows_calo1 => 2,
@@ -710,7 +710,7 @@ invariant_mass_i294_i: entity work.calo_calo_correlation_condition
         eta_w1_lower_limit_calo1 => X"008D",
         eta_w2_upper_limit_calo1 => X"0072", 
         eta_w2_lower_limit_calo1 => X"0045",
-        nr_calo2_objects => NR_JET_OBJECTS
+        nr_calo2_objects => NR_JET_OBJECTS,
         obj_type_calo2 => JET_TYPE,        
         pt_threshold_calo2 => X"005A",
         nr_eta_windows_calo2 => 2,
