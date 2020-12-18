@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 7f108440-b2f6-488b-82ec-2875f0c9fda6
+-- 7c338b65-4f49-43c7-807a-f71dd8055794
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1337,10 +1337,9 @@ invariant_mass_ov_rm_i296_i: entity work.calo_calo_calo_correlation_orm_conditio
         obj_type_calo3 => TAU_TYPE,        
         pt_threshold_calo3 => X"0050",
         iso_lut_calo3 => X"E",
-
 -- correlation cuts orm
         dr_orm_upper_limit_vector => X"000000000000A028", 
-        dr_orm_lower_limit_vector => X"0000000000000000",
+        dr_orm_lower_limit_vector => X"0000000000000000",        
 
 -- correlation cuts
         pt1_width => JET_PT_VECTOR_WIDTH, 
