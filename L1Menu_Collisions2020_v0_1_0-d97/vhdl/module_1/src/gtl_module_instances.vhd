@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- fe075233-8b95-4b76-a416-b31206fc7680
+-- d2e00444-cfb6-4e5c-9c49-06be32df34af
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1436,7 +1436,7 @@ invariant_mass_i59_i: entity work.muon_muon_correlation_condition
 
 -- charge correlation cut
         requested_charge_correlation => "os",
-  
+    
 -- correlation cuts
         mass_upper_limit => X"0000000009A7EC80",
         mass_lower_limit => X"000000000175D720",        
@@ -1467,7 +1467,7 @@ invariant_mass_i74_i: entity work.muon_muon_correlation_condition
 
 -- charge correlation cut
         requested_charge_correlation => "os",
-  
+    
 -- correlation cuts
         mass_upper_limit => X"000000000269FB20",
         mass_lower_limit => X"0000000000000000",        
@@ -1502,9 +1502,6 @@ muon_muon_correlation_i46_i: entity work.muon_muon_correlation_condition
         eta_w1_lower_limit_muon2 => X"0148",
         qual_lut_muon2 => X"F000",
 
--- charge correlation cut
-        requested_charge_correlation => "None",
-  
 -- correlation cuts
         dr_upper_limit_vector => X"00000000001DEC28", 
         dr_lower_limit_vector => X"0000000000000000",        
@@ -1537,7 +1534,7 @@ muon_muon_correlation_i52_i: entity work.muon_muon_correlation_condition
 
 -- charge correlation cut
         requested_charge_correlation => "os",
-  
+    
 -- correlation cuts
         dr_upper_limit_vector => X"00000000001DEC28", 
         dr_lower_limit_vector => X"0000000000000000",        
