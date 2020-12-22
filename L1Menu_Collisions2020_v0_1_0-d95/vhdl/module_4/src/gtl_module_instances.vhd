@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- bcf3d378-59e1-4f06-8d3e-a43c7a96b8c4
+-- 8b766e0c-a7cf-4d61-9e63-8cf976f5d665
 
 -- Scale set:
 -- scales_2020_10_04
@@ -100,7 +100,7 @@
         etm_bx_0_sin_phi(0) <= CALO_SIN_PHI_LUT(CONV_INTEGER(etm_bx_0(D_S_I_ETM_V2.phi_high downto D_S_I_ETM_V2.phi_low)));
         etm_bx_0_conv_cos_phi(0) <= MUON_COS_PHI_LUT(etm_bx_0_phi_conv_2_muon_phi_integer(0));
         etm_bx_0_conv_sin_phi(0) <= MUON_SIN_PHI_LUT(etm_bx_0_phi_conv_2_muon_phi_integer(0));
-    end generate etm_data_l;
+    end generate etm_bx_0_data_l;
 
 -- Instantiations of differences for correlation conditions (used for DETA, DPHI, DR, mass and b_tagging) - once for correlation conditions with two ObjectTypes in certain Bxs
 
