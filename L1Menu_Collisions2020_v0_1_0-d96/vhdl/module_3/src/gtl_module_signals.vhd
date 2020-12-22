@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- e81e5456-26d8-4986-b77b-e5e7567767d0
+-- c3488ac5-7b80-4c89-b986-0bc03d0febf3
 
 -- Scale set:
 -- scales_2020_10_04
@@ -19,7 +19,7 @@
 -- v2.10.0
 
 -- tmEventSetup version
--- v0.8.0
+-- v0.8.1
 
 -- Signal definition of pt, eta and phi for correlation conditions.
 -- Insert "signal_correlation_conditions_pt_eta_phi_cos_sin_phi.vhd" as often as an ObjectType at a certain Bx is used in a correlation condition.

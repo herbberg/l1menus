@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- e81e5456-26d8-4986-b77b-e5e7567767d0
+-- c3488ac5-7b80-4c89-b986-0bc03d0febf3
 
 -- Scale set:
 -- scales_2020_10_04
@@ -19,7 +19,7 @@
 -- v2.10.0
 
 -- tmEventSetup version
--- v0.8.0
+-- v0.8.1
 
 -- HB 2016-09-16: constants for algo_mapping_rop.
 type global_index_array is array (0 to NR_ALGOS-1) of integer;
