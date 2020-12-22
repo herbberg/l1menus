@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 8b30ebdf-62de-45d5-99b8-624653909b55
+-- 9a5a0c8b-ea50-48c2-9bae-891d560f98cf
 
 -- Scale set:
 -- scales_2020_10_04
@@ -78,60 +78,60 @@
 
 -- Instantiations of differences for correlation conditions (used for DETA, DPHI, DR, mass and b_tagging) - once for correlation conditions with two ObjectTypes in certain Bxs
 
-    jet_jet_deta_bx_0_bx_0_i: entity work.sub_eta_integer_obj_vs_obj
+    jet_jet_bx_0_bx_0_deta_i: entity work.sub_eta_integer_obj_vs_obj
         generic map(NR_JET_OBJECTS, NR_JET_OBJECTS)
-        port map(jet_eta_integer_bx_0, jet_eta_integer_bx_0, jet_jet_bx_0_bx_0_deta_integer);
-    jet_jet_dphi_bx_0_bx_0_i: entity work.sub_phi_integer_obj_vs_obj
+        port map(jet_bx_0_eta_integer, jet_bx_0_eta_integer, jet_jet_bx_0_bx_0_deta_integer);
+    jet_jet_bx_0_bx_0_dphi_i: entity work.sub_phi_integer_obj_vs_obj
         generic map(NR_JET_OBJECTS, NR_JET_OBJECTS, CALO_PHI_HALF_RANGE_BINS)
-        port map(jet_phi_integer_bx_0, jet_phi_integer_bx_0, jet_jet_bx_0_bx_0_dphi_integer);
+        port map(jet_bx_0_phi_integer, jet_bx_0_phi_integer, jet_jet_bx_0_bx_0_dphi_integer);
     jet_jet_bx_0_bx_0_l1: for i in 0 to NR_JET_OBJECTS-1 generate
         jet_jet_bx_0_bx_0_l2: for j in 0 to NR_JET_OBJECTS-1 generate
             jet_jet_bx_0_bx_0_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_JET_DIFF_ETA_LUT(jet_jet_bx_0_bx_0_deta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
             jet_jet_bx_0_bx_0_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_JET_DIFF_PHI_LUT(jet_jet_bx_0_bx_0_dphi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
         end generate jet_jet_bx_0_bx_0_l2;
     end generate jet_jet_bx_0_bx_0_l1;
-    eg_jet_deta_bx_0_bx_0_i: entity work.sub_eta_integer_obj_vs_obj
+    eg_jet_bx_0_bx_0_deta_i: entity work.sub_eta_integer_obj_vs_obj
         generic map(NR_EG_OBJECTS, NR_JET_OBJECTS)
-        port map(eg_eta_integer_bx_0, jet_eta_integer_bx_0, eg_jet_bx_0_bx_0_deta_integer);
-    eg_jet_dphi_bx_0_bx_0_i: entity work.sub_phi_integer_obj_vs_obj
+        port map(eg_bx_0_eta_integer, jet_bx_0_eta_integer, eg_jet_bx_0_bx_0_deta_integer);
+    eg_jet_bx_0_bx_0_dphi_i: entity work.sub_phi_integer_obj_vs_obj
         generic map(NR_EG_OBJECTS, NR_JET_OBJECTS, CALO_PHI_HALF_RANGE_BINS)
-        port map(eg_phi_integer_bx_0, jet_phi_integer_bx_0, eg_jet_bx_0_bx_0_dphi_integer);
+        port map(eg_bx_0_phi_integer, jet_bx_0_phi_integer, eg_jet_bx_0_bx_0_dphi_integer);
     eg_jet_bx_0_bx_0_l1: for i in 0 to NR_EG_OBJECTS-1 generate
         eg_jet_bx_0_bx_0_l2: for j in 0 to NR_JET_OBJECTS-1 generate
             eg_jet_bx_0_bx_0_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_JET_DIFF_ETA_LUT(eg_jet_bx_0_bx_0_deta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
             eg_jet_bx_0_bx_0_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_JET_DIFF_PHI_LUT(eg_jet_bx_0_bx_0_dphi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
         end generate eg_jet_bx_0_bx_0_l2;
     end generate eg_jet_bx_0_bx_0_l1;
-    eg_tau_deta_bx_0_bx_0_i: entity work.sub_eta_integer_obj_vs_obj
+    eg_tau_bx_0_bx_0_deta_i: entity work.sub_eta_integer_obj_vs_obj
         generic map(NR_EG_OBJECTS, NR_TAU_OBJECTS)
-        port map(eg_eta_integer_bx_0, tau_eta_integer_bx_0, eg_tau_bx_0_bx_0_deta_integer);
-    eg_tau_dphi_bx_0_bx_0_i: entity work.sub_phi_integer_obj_vs_obj
+        port map(eg_bx_0_eta_integer, tau_bx_0_eta_integer, eg_tau_bx_0_bx_0_deta_integer);
+    eg_tau_bx_0_bx_0_dphi_i: entity work.sub_phi_integer_obj_vs_obj
         generic map(NR_EG_OBJECTS, NR_TAU_OBJECTS, CALO_PHI_HALF_RANGE_BINS)
-        port map(eg_phi_integer_bx_0, tau_phi_integer_bx_0, eg_tau_bx_0_bx_0_dphi_integer);
+        port map(eg_bx_0_phi_integer, tau_bx_0_phi_integer, eg_tau_bx_0_bx_0_dphi_integer);
     eg_tau_bx_0_bx_0_l1: for i in 0 to NR_EG_OBJECTS-1 generate
         eg_tau_bx_0_bx_0_l2: for j in 0 to NR_TAU_OBJECTS-1 generate
             eg_tau_bx_0_bx_0_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_TAU_DIFF_ETA_LUT(eg_tau_bx_0_bx_0_deta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
             eg_tau_bx_0_bx_0_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_TAU_DIFF_PHI_LUT(eg_tau_bx_0_bx_0_dphi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
         end generate eg_tau_bx_0_bx_0_l2;
     end generate eg_tau_bx_0_bx_0_l1;
-    jet_mu_deta_bx_0_bx_0_i: entity work.sub_eta_integer_obj_vs_obj
+    jet_mu_bx_0_bx_0_deta_i: entity work.sub_eta_integer_obj_vs_obj
         generic map(NR_JET_OBJECTS, NR_MU_OBJECTS)
-        port map(jet_eta_conv_2_muon_eta_integer_bx_0, mu_eta_integer_bx_0, jet_mu_bx_0_bx_0_deta_integer);
-    jet_mu_dphi_bx_0_bx_0_i: entity work.sub_phi_integer_obj_vs_obj
+        port map(jet_bx_0_eta_conv_2_muon_eta_integer, mu_bx_0_eta_integer, jet_mu_bx_0_bx_0_deta_integer);
+    jet_mu_bx_0_bx_0_dphi_i: entity work.sub_phi_integer_obj_vs_obj
         generic map(NR_JET_OBJECTS, NR_MU_OBJECTS, MUON_PHI_HALF_RANGE_BINS)
-        port map(jet_phi_conv_2_muon_phi_integer_bx_0, mu_phi_integer_bx_0, jet_mu_bx_0_bx_0_dphi_integer);
+        port map(jet_bx_0_phi_conv_2_muon_phi_integer, mu_bx_0_phi_integer, jet_mu_bx_0_bx_0_dphi_integer);
     jet_mu_bx_0_bx_0_l1: for i in 0 to NR_JET_OBJECTS-1 generate
         jet_mu_bx_0_bx_0_l2: for j in 0 to NR_MU_OBJECTS-1 generate
             jet_mu_bx_0_bx_0_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_MU_DIFF_ETA_LUT(jet_mu_bx_0_bx_0_deta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
             jet_mu_bx_0_bx_0_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_MU_DIFF_PHI_LUT(jet_mu_bx_0_bx_0_dphi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
         end generate jet_mu_bx_0_bx_0_l2;
     end generate jet_mu_bx_0_bx_0_l1;
-    mu_mu_deta_bx_0_bx_0_i: entity work.sub_eta_integer_obj_vs_obj
+    mu_mu_bx_0_bx_0_deta_i: entity work.sub_eta_integer_obj_vs_obj
         generic map(NR_MU_OBJECTS, NR_MU_OBJECTS)
-        port map(mu_eta_integer_bx_0, mu_eta_integer_bx_0, mu_mu_bx_0_bx_0_deta_integer);
-    mu_mu_dphi_bx_0_bx_0_i: entity work.sub_phi_integer_obj_vs_obj
+        port map(mu_bx_0_eta_integer, mu_bx_0_eta_integer, mu_mu_bx_0_bx_0_deta_integer);
+    mu_mu_bx_0_bx_0_dphi_i: entity work.sub_phi_integer_obj_vs_obj
         generic map(NR_MU_OBJECTS, NR_MU_OBJECTS, MUON_PHI_HALF_RANGE_BINS)
-        port map(mu_phi_integer_bx_0, mu_phi_integer_bx_0, mu_mu_bx_0_bx_0_dphi_integer);
+        port map(mu_bx_0_phi_integer, mu_bx_0_phi_integer, mu_mu_bx_0_bx_0_dphi_integer);
     mu_mu_bx_0_bx_0_l1: for i in 0 to NR_MU_OBJECTS-1 generate
         mu_mu_bx_0_bx_0_l2: for j in 0 to NR_MU_OBJECTS-1 generate
             mu_mu_bx_0_bx_0_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(MU_MU_DIFF_ETA_LUT(mu_mu_bx_0_bx_0_deta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
