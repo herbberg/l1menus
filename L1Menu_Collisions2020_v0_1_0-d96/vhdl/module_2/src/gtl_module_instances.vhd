@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- c3488ac5-7b80-4c89-b986-0bc03d0febf3
+-- 0c43d589-fb6e-48be-abec-47dd30a8a6a1
 
 -- Scale set:
 -- scales_2020_10_04
@@ -842,7 +842,7 @@ single_mu_i230_i: entity work.muon_conditions
     generic map(
 -- object cuts        
         pt_thresholds_obj1 => (X"0001", X"0000", X"0000", X"0000"),
-        upt_cuts => (true, false, false, false), 
+        upt_cuts_obj1 => (true, false, false, false), 
         upt_upper_limits_obj1 => (X"00FF", X"0000", X"0000", X"0000"),
         upt_lower_limits_obj1 => (X"0000", X"0000", X"0000", X"0000"),
 -- number of objects and type
@@ -858,7 +858,7 @@ single_mu_i231_i: entity work.muon_conditions
     generic map(
 -- object cuts        
         pt_thresholds_obj1 => (X"0001", X"0000", X"0000", X"0000"),
-        upt_cuts => (true, false, false, false), 
+        upt_cuts_obj1 => (true, false, false, false), 
         upt_upper_limits_obj1 => (X"00FF", X"0000", X"0000", X"0000"),
         upt_lower_limits_obj1 => (X"0006", X"0000", X"0000", X"0000"),
 -- number of objects and type
@@ -875,7 +875,7 @@ single_mu_i236_i: entity work.muon_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"0001", X"0000", X"0000", X"0000"),
         qual_luts_obj1 => (X"F000", X"FFFF", X"FFFF", X"FFFF"),
-        upt_cuts => (true, false, false, false), 
+        upt_cuts_obj1 => (true, false, false, false), 
         upt_upper_limits_obj1 => (X"00FF", X"0000", X"0000", X"0000"),
         upt_lower_limits_obj1 => (X"0006", X"0000", X"0000", X"0000"),
 -- number of objects and type

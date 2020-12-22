@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- c3488ac5-7b80-4c89-b986-0bc03d0febf3
+-- 0c43d589-fb6e-48be-abec-47dd30a8a6a1
 
 -- Scale set:
 -- scales_2020_10_04
@@ -25,16 +25,16 @@
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-    muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
-        port map(mu_bx_0, mu_bx_0,
-            ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-            ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-            ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
     muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
         port map(mu_bx_m1, mu_bx_0,
             ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
             ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
             ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
+    muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
+        port map(mu_bx_0, mu_bx_0,
+            ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+            ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
+            ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo ObjectType in certain Bx used in correlation conditions
 
@@ -753,7 +753,7 @@ single_mu_i233_i: entity work.muon_conditions
     generic map(
 -- object cuts        
         pt_thresholds_obj1 => (X"0001", X"0000", X"0000", X"0000"),
-        upt_cuts => (true, false, false, false), 
+        upt_cuts_obj1 => (true, false, false, false), 
         upt_upper_limits_obj1 => (X"00FF", X"0000", X"0000", X"0000"),
         upt_lower_limits_obj1 => (X"0015", X"0000", X"0000", X"0000"),
 -- number of objects and type
@@ -770,7 +770,7 @@ single_mu_i237_i: entity work.muon_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"0001", X"0000", X"0000", X"0000"),
         qual_luts_obj1 => (X"F000", X"FFFF", X"FFFF", X"FFFF"),
-        upt_cuts => (true, false, false, false), 
+        upt_cuts_obj1 => (true, false, false, false), 
         upt_upper_limits_obj1 => (X"00FF", X"0000", X"0000", X"0000"),
         upt_lower_limits_obj1 => (X"0015", X"0000", X"0000", X"0000"),
 -- number of objects and type
