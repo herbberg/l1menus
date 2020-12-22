@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 9a5a0c8b-ea50-48c2-9bae-891d560f98cf
+-- bcf3d378-59e1-4f06-8d3e-a43c7a96b8c4
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1351,8 +1351,10 @@ invariant_mass_ov_rm_i296_i: entity work.calo_calo_correlation_condition_orm
         jet_bx_0,
         jet_bx_0,
         tau_bx_0,
-        deta_orm => jet_tau_bx_0_bx_0_deta_vector,
-        dphi_orm => jet_tau_bx_0_bx_0_dphi_vector,
+        deta_orm => jet_tau_bx_0_bx_0_deta_vector,        
+        dphi_orm => jet_tau_bx_0_bx_0_dphi_vector,        
+        deta => jet_jet_bx_0_bx_0_deta_vector,        
+        dphi => jet_jet_bx_0_bx_0_dphi_vector,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
