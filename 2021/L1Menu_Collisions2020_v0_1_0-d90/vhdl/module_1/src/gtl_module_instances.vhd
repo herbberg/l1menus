@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 33db184e-16a6-426a-84a0-667338dc37f6
+-- 1c7467f7-ba97-4153-be92-5e7730af82c6
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1150,8 +1150,8 @@ calo_calo_correlation_i110_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => jet_bx_0, 
-        calo2 => jet_bx_0,
+        obj1 => jet_bx_0, 
+        obj2 => jet_bx_0,
         deta => jet_jet_bx_0_bx_0_deta_vector,
         condition_o => calo_calo_correlation_i110
     );
@@ -1182,8 +1182,8 @@ calo_calo_correlation_i187_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => eg_bx_0, 
-        calo2 => jet_bx_0,
+        obj1 => eg_bx_0, 
+        obj2 => jet_bx_0,
         deta => eg_jet_bx_0_bx_0_deta_vector,
         dphi => eg_jet_bx_0_bx_0_dphi_vector,
         condition_o => calo_calo_correlation_i187
@@ -1221,8 +1221,8 @@ invariant_mass_i211_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => tau_bx_0, 
-        calo2 => tau_bx_0,
+        obj1 => tau_bx_0, 
+        obj2 => tau_bx_0,
         pt1 => tau_bx_0_pt_vector, 
         pt2 => tau_bx_0_pt_vector,
         cosh_deta => tau_tau_bx_0_bx_0_cosh_deta_vector, 
@@ -1263,8 +1263,8 @@ invariant_mass_i268_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => jet_bx_0, 
-        calo2 => jet_bx_0,
+        obj1 => jet_bx_0, 
+        obj2 => jet_bx_0,
         deta => jet_jet_bx_0_bx_0_deta_vector,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
@@ -1306,8 +1306,8 @@ invariant_mass_i273_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => jet_bx_0, 
-        calo2 => jet_bx_0,
+        obj1 => jet_bx_0, 
+        obj2 => jet_bx_0,
         deta => jet_jet_bx_0_bx_0_deta_vector,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
@@ -1349,9 +1349,9 @@ invariant_mass_ov_rm_i296_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => jet_bx_0,
-        calo2 => jet_bx_0,
-        calo3 => tau_bx_0,
+        obj1 => jet_bx_0,
+        obj2 => jet_bx_0,
+        obj3 => tau_bx_0,
         deta_orm => jet_tau_bx_0_bx_0_deta_vector,        
         dphi_orm => jet_tau_bx_0_bx_0_dphi_vector,
         pt1 => jet_bx_0_pt_vector, 
@@ -1566,7 +1566,7 @@ algo(55) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(62) <= l1_single_mu7;
+algo(61) <= l1_single_mu7;
 
 -- 17 L1_SingleMu18 : MU18[MU-QLTY_SNGL]
 l1_single_mu18 <= single_mu_i17;
@@ -1658,7 +1658,7 @@ algo(60) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i10 and single_eg_i82;
-algo(61) <= l1_mu5_loose_iso_eg20er2p5;
+algo(62) <= l1_mu5_loose_iso_eg20er2p5;
 
 -- 101 L1_Mu7_LooseIsoEG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg20er2p5 <= single_mu_i12 and single_eg_i82;

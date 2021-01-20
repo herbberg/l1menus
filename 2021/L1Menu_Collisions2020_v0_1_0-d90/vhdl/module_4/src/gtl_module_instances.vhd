@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 33db184e-16a6-426a-84a0-667338dc37f6
+-- 1c7467f7-ba97-4153-be92-5e7730af82c6
 
 -- Scale set:
 -- scales_2020_10_04
@@ -25,16 +25,16 @@
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-    muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
-        port map(mu_bx_m1, mu_bx_0,
-            ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
-            ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
-            ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
     muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
         port map(mu_bx_0, mu_bx_0,
             ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
             ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
             ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
+    muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
+        port map(mu_bx_m1, mu_bx_0,
+            ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
+            ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
+            ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo ObjectType in certain Bx used in correlation conditions
 
@@ -938,8 +938,8 @@ calo_calo_correlation_i199_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => eg_bx_0, 
-        calo2 => tau_bx_0,
+        obj1 => eg_bx_0, 
+        obj2 => tau_bx_0,
         deta => eg_tau_bx_0_bx_0_deta_vector,
         dphi => eg_tau_bx_0_bx_0_dphi_vector,
         condition_o => calo_calo_correlation_i199
@@ -970,8 +970,8 @@ calo_calo_correlation_i267_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => jet_bx_0, 
-        calo2 => jet_bx_0,
+        obj1 => jet_bx_0, 
+        obj2 => jet_bx_0,
         deta => jet_jet_bx_0_bx_0_deta_vector,
         condition_o => calo_calo_correlation_i267
     );
@@ -1008,8 +1008,8 @@ invariant_mass_i209_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => tau_bx_0, 
-        calo2 => tau_bx_0,
+        obj1 => tau_bx_0, 
+        obj2 => tau_bx_0,
         pt1 => tau_bx_0_pt_vector, 
         pt2 => tau_bx_0_pt_vector,
         cosh_deta => tau_tau_bx_0_bx_0_cosh_deta_vector, 
@@ -1050,8 +1050,8 @@ invariant_mass_i271_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => jet_bx_0, 
-        calo2 => jet_bx_0,
+        obj1 => jet_bx_0, 
+        obj2 => jet_bx_0,
         deta => jet_jet_bx_0_bx_0_deta_vector,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
@@ -1084,8 +1084,8 @@ invariant_mass_i280_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => jet_bx_0, 
-        calo2 => jet_bx_0,
+        obj1 => jet_bx_0, 
+        obj2 => jet_bx_0,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
@@ -1117,8 +1117,8 @@ invariant_mass_i297_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => jet_bx_0, 
-        calo2 => jet_bx_0,
+        obj1 => jet_bx_0, 
+        obj2 => jet_bx_0,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
@@ -1156,8 +1156,8 @@ invariant_mass_i95_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => eg_bx_0, 
-        calo2 => eg_bx_0,
+        obj1 => eg_bx_0, 
+        obj2 => eg_bx_0,
         pt1 => eg_bx_0_pt_vector, 
         pt2 => eg_bx_0_pt_vector,
         cosh_deta => eg_eg_bx_0_bx_0_cosh_deta_vector, 

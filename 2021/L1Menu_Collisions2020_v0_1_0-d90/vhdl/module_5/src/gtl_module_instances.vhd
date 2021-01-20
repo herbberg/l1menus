@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 33db184e-16a6-426a-84a0-667338dc37f6
+-- 1c7467f7-ba97-4153-be92-5e7730af82c6
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1108,8 +1108,8 @@ calo_calo_correlation_i112_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => jet_bx_0, 
-        calo2 => jet_bx_0,
+        obj1 => jet_bx_0, 
+        obj2 => jet_bx_0,
         deta => jet_jet_bx_0_bx_0_deta_vector,
         condition_o => calo_calo_correlation_i112
     );
@@ -1140,8 +1140,8 @@ calo_calo_correlation_i188_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => eg_bx_0, 
-        calo2 => jet_bx_0,
+        obj1 => eg_bx_0, 
+        obj2 => jet_bx_0,
         deta => eg_jet_bx_0_bx_0_deta_vector,
         dphi => eg_jet_bx_0_bx_0_dphi_vector,
         condition_o => calo_calo_correlation_i188
@@ -1174,8 +1174,8 @@ calo_calo_correlation_i198_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => eg_bx_0, 
-        calo2 => tau_bx_0,
+        obj1 => eg_bx_0, 
+        obj2 => tau_bx_0,
         deta => eg_tau_bx_0_bx_0_deta_vector,
         dphi => eg_tau_bx_0_bx_0_dphi_vector,
         condition_o => calo_calo_correlation_i198
@@ -1214,8 +1214,8 @@ invariant_mass_i269_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => jet_bx_0, 
-        calo2 => jet_bx_0,
+        obj1 => jet_bx_0, 
+        obj2 => jet_bx_0,
         deta => jet_jet_bx_0_bx_0_deta_vector,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
@@ -1248,8 +1248,8 @@ invariant_mass_i275_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo1 => jet_bx_0, 
-        calo2 => jet_bx_0,
+        obj1 => jet_bx_0, 
+        obj2 => jet_bx_0,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
