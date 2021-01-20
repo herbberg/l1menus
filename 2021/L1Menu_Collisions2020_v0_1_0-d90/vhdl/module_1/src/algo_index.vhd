@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 89e0d105-6792-4da0-9938-880ca41fdc21
+-- 33db184e-16a6-426a-84a0-667338dc37f6
 
 -- Scale set:
 -- scales_2020_10_04
@@ -82,11 +82,11 @@ constant global_index: global_index_array := (
          10, -- module_index: 55, name: L1_SingleMu5
         101, -- module_index: 56, name: L1_Mu7_LooseIsoEG20er2p5
         102, -- module_index: 57, name: L1_Mu7_LooseIsoEG23er2p5
-         98, -- module_index: 58, name: L1_Mu7_EG23er2p5
-         97, -- module_index: 59, name: L1_Mu7_EG20er2p5
-         96, -- module_index: 60, name: L1_Mu5_EG23er2p5
-         12, -- module_index: 61, name: L1_SingleMu7
-        100, -- module_index: 62, name: L1_Mu5_LooseIsoEG20er2p5
+         97, -- module_index: 58, name: L1_Mu7_EG20er2p5
+         96, -- module_index: 59, name: L1_Mu5_EG23er2p5
+         98, -- module_index: 60, name: L1_Mu7_EG23er2p5
+        100, -- module_index: 61, name: L1_Mu5_LooseIsoEG20er2p5
+         12, -- module_index: 62, name: L1_SingleMu7
         308, -- module_index: 63, name: L1_SingleMuOpenupt100
         373, -- module_index: 64, name: L1_TripleJet_100_80_70_DoubleJet_80_70_er2p5
          39, -- module_index: 65, name: L1_DoubleMu0_OQ
