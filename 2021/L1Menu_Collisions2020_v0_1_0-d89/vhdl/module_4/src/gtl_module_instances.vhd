@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- c4c11943-d56e-4b30-add9-94ebc5cbcd21
+-- bca215e1-0da8-42e6-935c-3cd9010403ba
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1183,7 +1183,6 @@ calo_muon_correlation_i118_i: entity work.correlation_conditions
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
-        width_obj2 => MAX_MUON_BITS,
         same_bx => true
     )
     port map(
@@ -1213,7 +1212,6 @@ calo_muon_correlation_i99_i: entity work.correlation_conditions
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
-        width_obj2 => MAX_MUON_BITS,
         same_bx => true
     )
     port map(
