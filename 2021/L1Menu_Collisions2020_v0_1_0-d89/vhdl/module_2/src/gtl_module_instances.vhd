@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 8e0bb9ee-85e0-48f6-9a75-229061259949
+-- 004e0589-cccf-4765-b56e-dc5a839d96a4
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1496,6 +1496,8 @@ transverse_mass_i167_i: entity work.correlation_conditions
 -- number of calo objects, types
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
+        nr_obj2 => NR_ETM_OBJECTS,
+        type_obj2 => ETM_TYPE,
         same_bx => true
     )
     port map(
@@ -1634,7 +1636,7 @@ algo(24) <= l1_triple_eg_16_12_8_er2p5;
 
 -- 238 L1_LooseIsoEG24er2p1_HTT100er : EG24[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg24er2p1_htt100er <= single_eg_i189 and single_htt_i190;
-algo(14) <= l1_loose_iso_eg24er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
@@ -1646,7 +1648,7 @@ algo(17) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(14) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 259 L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3 : dist{EG22[EG-ETA_2p13,EG-ISO_0xC],TAU70[TAU-ETA_2p13]}[DR_MIN_0p3]
 l1_loose_iso_eg22er2p1_tau70er2p1_d_r_min0p3 <= calo_calo_correlation_i200;
