@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- ab289e94-cce9-41c2-80b9-9fd0adf11efd
+-- d0da942d-a904-4bfe-b6d8-8bd6ce84639d
 
 -- Scale set:
 -- scales_2020_10_04
@@ -25,16 +25,16 @@
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-    muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
-        port map(mu_bx_0, mu_bx_0,
-            ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-            ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-            ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
     muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
         port map(mu_bx_m1, mu_bx_0,
             ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
             ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
             ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
+    muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
+        port map(mu_bx_0, mu_bx_0,
+            ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+            ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
+            ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo ObjectType in certain Bx used in correlation conditions
 
@@ -1240,10 +1240,8 @@ invariant_mass_i37_i: entity work.correlation_conditions
 -- number of objects and type
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
-        width_obj1 => MAX_MUON_BITS,
         nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
-        width_obj2 => MAX_MUON_BITS,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1285,10 +1283,8 @@ invariant_mass_i94_i: entity work.correlation_conditions
 -- number of objects and type
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
-        width_obj1 => MAX_MUON_BITS,
         nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
-        width_obj2 => MAX_MUON_BITS,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1319,10 +1315,8 @@ muon_muon_correlation_i117_i: entity work.correlation_conditions
 -- number of objects and type
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
-        width_obj1 => MAX_MUON_BITS,
         nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
-        width_obj2 => MAX_MUON_BITS,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1361,10 +1355,8 @@ muon_muon_correlation_i364_i: entity work.correlation_conditions
 -- number of objects and type
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
-        width_obj1 => MAX_MUON_BITS,
         nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
-        width_obj2 => MAX_MUON_BITS,
 -- selector same/different bunch crossings
         same_bx => false
     )
@@ -1398,10 +1390,8 @@ muon_muon_correlation_i47_i: entity work.correlation_conditions
 -- number of objects and type
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
-        width_obj1 => MAX_MUON_BITS,
         nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
-        width_obj2 => MAX_MUON_BITS,
 -- selector same/different bunch crossings
         same_bx => true
     )

@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- ab289e94-cce9-41c2-80b9-9fd0adf11efd
+-- d0da942d-a904-4bfe-b6d8-8bd6ce84639d
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1294,10 +1294,8 @@ invariant_mass_i44_i: entity work.correlation_conditions
 -- number of objects and type
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
-        width_obj1 => MAX_MUON_BITS,
         nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
-        width_obj2 => MAX_MUON_BITS,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1339,10 +1337,8 @@ invariant_mass_i92_i: entity work.correlation_conditions
 -- number of objects and type
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
-        width_obj1 => MAX_MUON_BITS,
         nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
-        width_obj2 => MAX_MUON_BITS,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1373,10 +1369,8 @@ muon_muon_correlation_i115_i: entity work.correlation_conditions
 -- number of objects and type
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
-        width_obj1 => MAX_MUON_BITS,
         nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
-        width_obj2 => MAX_MUON_BITS,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1409,10 +1403,8 @@ muon_muon_correlation_i50_i: entity work.correlation_conditions
 -- number of objects and type
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
-        width_obj1 => MAX_MUON_BITS,
         nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
-        width_obj2 => MAX_MUON_BITS,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1441,10 +1433,8 @@ muon_muon_correlation_i56_i: entity work.correlation_conditions
 -- number of objects and type
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
-        width_obj1 => MAX_MUON_BITS,
         nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
-        width_obj2 => MAX_MUON_BITS,
 -- selector same/different bunch crossings
         same_bx => true
     )
