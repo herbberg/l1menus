@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- d0da942d-a904-4bfe-b6d8-8bd6ce84639d
+-- 37085070-f285-4b95-a8ce-fe0d83ebd390
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1367,7 +1367,9 @@ calo_muon_correlation_i101_i: entity work.correlation_conditions
         pt_threshold_obj1 => X"00F0",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"0039", 
-        eta_w1_lower_limit_obj1 => X"00C6",        
+        eta_w1_lower_limit_obj1 => X"00C6",
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 7,        
         pt_threshold_obj2 => X"0007",
         qual_lut_obj2 => X"F000", 
 -- correlation cuts
@@ -1396,7 +1398,9 @@ calo_muon_correlation_i109_i: entity work.correlation_conditions
         pt_threshold_obj1 => X"0040",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"0034", 
-        eta_w1_lower_limit_obj1 => X"00CB",        
+        eta_w1_lower_limit_obj1 => X"00CB",
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 7,        
         pt_threshold_obj2 => X"0015",
         nr_eta_windows_obj2 => 1,
         eta_w1_upper_limit_obj2 => X"00D3", 
@@ -1424,12 +1428,16 @@ calo_muon_correlation_i109_i: entity work.correlation_conditions
 
 invariant_mass_i59_i: entity work.correlation_conditions
     generic map(
--- obj cuts        
+-- obj cuts
+        slice_low_obj1 => 0, 
+        slice_high_obj1 => 7,        
         pt_threshold_obj1 => X"000A",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"00B8", 
         eta_w1_lower_limit_obj1 => X"0148",
-        qual_lut_obj1 => X"F000",        
+        qual_lut_obj1 => X"F000",
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 7,        
         pt_threshold_obj2 => X"000A",
         nr_eta_windows_obj2 => 1,
         eta_w1_upper_limit_obj2 => X"00B8", 
@@ -1469,9 +1477,13 @@ invariant_mass_i59_i: entity work.correlation_conditions
 
 invariant_mass_i74_i: entity work.correlation_conditions
     generic map(
--- obj cuts        
+-- obj cuts
+        slice_low_obj1 => 0, 
+        slice_high_obj1 => 7,        
         pt_threshold_obj1 => X"000B",
-        qual_lut_obj1 => X"F000",        
+        qual_lut_obj1 => X"F000",
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 7,        
         pt_threshold_obj2 => X"0007",
         qual_lut_obj2 => X"F000",
 -- charge correlation cut
@@ -1508,12 +1520,16 @@ invariant_mass_i74_i: entity work.correlation_conditions
 
 muon_muon_correlation_i46_i: entity work.correlation_conditions
     generic map(
--- obj cuts        
+-- obj cuts
+        slice_low_obj1 => 0, 
+        slice_high_obj1 => 7,        
         pt_threshold_obj1 => X"0001",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"00B8", 
         eta_w1_lower_limit_obj1 => X"0148",
-        qual_lut_obj1 => X"F000",        
+        qual_lut_obj1 => X"F000",
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 7,        
         pt_threshold_obj2 => X"0001",
         nr_eta_windows_obj2 => 1,
         eta_w1_upper_limit_obj2 => X"00B8", 
@@ -1542,12 +1558,16 @@ muon_muon_correlation_i46_i: entity work.correlation_conditions
 
 muon_muon_correlation_i52_i: entity work.correlation_conditions
     generic map(
--- obj cuts        
+-- obj cuts
+        slice_low_obj1 => 0, 
+        slice_high_obj1 => 7,        
         pt_threshold_obj1 => X"0001",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"0081", 
         eta_w1_lower_limit_obj1 => X"017F",
-        qual_lut_obj1 => X"F000",        
+        qual_lut_obj1 => X"F000",
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 7,        
         pt_threshold_obj2 => X"0001",
         nr_eta_windows_obj2 => 1,
         eta_w1_upper_limit_obj2 => X"0081", 
@@ -1592,7 +1612,7 @@ algo(55) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(59) <= l1_single_mu7;
+algo(56) <= l1_single_mu7;
 
 -- 17 L1_SingleMu18 : MU18[MU-QLTY_SNGL]
 l1_single_mu18 <= single_mu_i17;
@@ -1664,35 +1684,35 @@ algo(76) <= l1_triple_mu_5_sq_3_sq_0_oq;
 
 -- 85 L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9 : comb{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL],MU0[MU-QLTY_OPEN]} AND mass_inv{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}[MASS_MASS_0to9,CHGCOR_OS]
 l1_triple_mu_5_sq_3_sq_0_oq_double_mu_5_3_sq_os_mass_max9 <= triple_mu_i65 and invariant_mass_i74;
-algo(77) <= l1_triple_mu_5_sq_3_sq_0_oq_double_mu_5_3_sq_os_mass_max9;
+algo(78) <= l1_triple_mu_5_sq_3_sq_0_oq_double_mu_5_3_sq_os_mass_max9;
 
 -- 86 L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9 : comb{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL],MU0[MU-QLTY_DBLE]} AND mass_inv{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}[MASS_MASS_0to9,CHGCOR_OS]
 l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9 <= triple_mu_i75 and invariant_mass_i74;
-algo(78) <= l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9;
+algo(77) <= l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9;
 
 -- 96 L1_Mu5_EG23er2p5 : MU5[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu5_eg23er2p5 <= single_mu_i10 and single_eg_i79;
-algo(57) <= l1_mu5_eg23er2p5;
+algo(62) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i12 and single_eg_i80;
-algo(56) <= l1_mu7_eg20er2p5;
+algo(61) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i12 and single_eg_i79;
-algo(58) <= l1_mu7_eg23er2p5;
+algo(57) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i10 and single_eg_i82;
-algo(60) <= l1_mu5_loose_iso_eg20er2p5;
+algo(58) <= l1_mu5_loose_iso_eg20er2p5;
 
 -- 101 L1_Mu7_LooseIsoEG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg20er2p5 <= single_mu_i12 and single_eg_i82;
-algo(61) <= l1_mu7_loose_iso_eg20er2p5;
+algo(59) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i12 and single_eg_i83;
-algo(62) <= l1_mu7_loose_iso_eg23er2p5;
+algo(60) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 109 L1_DoubleMu4_SQ_EG9er2p5 : comb{MU4[MU-QLTY_SNGL],MU4[MU-QLTY_SNGL]} AND EG9[EG-ETA_2p52]
 l1_double_mu4_sq_eg9er2p5 <= double_mu_i89 and single_eg_i90;

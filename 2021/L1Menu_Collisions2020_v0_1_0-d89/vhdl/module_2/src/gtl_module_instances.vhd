@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- d0da942d-a904-4bfe-b6d8-8bd6ce84639d
+-- 37085070-f285-4b95-a8ce-fe0d83ebd390
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1225,7 +1225,9 @@ calo_muon_correlation_i116_i: entity work.correlation_conditions
         pt_threshold_obj1 => X"00B4",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"0039", 
-        eta_w1_lower_limit_obj1 => X"00C6",        
+        eta_w1_lower_limit_obj1 => X"00C6",
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 7,        
         pt_threshold_obj2 => X"0001",
         qual_lut_obj2 => X"FF00", 
 -- correlation cuts
@@ -1254,7 +1256,9 @@ calo_muon_correlation_i98_i: entity work.correlation_conditions
         pt_threshold_obj1 => X"0046",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"0039", 
-        eta_w1_lower_limit_obj1 => X"00C6",        
+        eta_w1_lower_limit_obj1 => X"00C6",
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 7,        
         pt_threshold_obj2 => X"0007",
         qual_lut_obj2 => X"F000", 
 -- correlation cuts
@@ -1279,8 +1283,12 @@ calo_muon_correlation_i98_i: entity work.correlation_conditions
 
 invariant_mass_i44_i: entity work.correlation_conditions
     generic map(
--- obj cuts        
-        pt_threshold_obj1 => X"001F",        
+-- obj cuts
+        slice_low_obj1 => 0, 
+        slice_high_obj1 => 7,        
+        pt_threshold_obj1 => X"001F",
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 7,        
         pt_threshold_obj2 => X"000F", 
 -- correlation cuts
         pt1_width => MU_PT_VECTOR_WIDTH, 
@@ -1312,12 +1320,16 @@ invariant_mass_i44_i: entity work.correlation_conditions
 
 invariant_mass_i92_i: entity work.correlation_conditions
     generic map(
--- obj cuts        
+-- obj cuts
+        slice_low_obj1 => 0, 
+        slice_high_obj1 => 7,        
         pt_threshold_obj1 => X"0007",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"00D3", 
         eta_w1_lower_limit_obj1 => X"012D",
-        qual_lut_obj1 => X"FF00",        
+        qual_lut_obj1 => X"FF00",
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 7,        
         pt_threshold_obj2 => X"0007",
         nr_eta_windows_obj2 => 1,
         eta_w1_upper_limit_obj2 => X"00D3", 
@@ -1357,9 +1369,13 @@ invariant_mass_i92_i: entity work.correlation_conditions
 
 muon_muon_correlation_i115_i: entity work.correlation_conditions
     generic map(
--- obj cuts        
+-- obj cuts
+        slice_low_obj1 => 0, 
+        slice_high_obj1 => 7,        
         pt_threshold_obj1 => X"0001",
-        qual_lut_obj1 => X"FF00",        
+        qual_lut_obj1 => X"FF00",
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 7,        
         pt_threshold_obj2 => X"0001",
         qual_lut_obj2 => X"FF00", 
 -- correlation cuts
@@ -1385,12 +1401,16 @@ muon_muon_correlation_i115_i: entity work.correlation_conditions
 
 muon_muon_correlation_i50_i: entity work.correlation_conditions
     generic map(
--- obj cuts        
+-- obj cuts
+        slice_low_obj1 => 0, 
+        slice_high_obj1 => 7,        
         pt_threshold_obj1 => X"0001",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"008A", 
         eta_w1_lower_limit_obj1 => X"0176",
-        qual_lut_obj1 => X"F000",        
+        qual_lut_obj1 => X"F000",
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 7,        
         pt_threshold_obj2 => X"0001",
         nr_eta_windows_obj2 => 1,
         eta_w1_upper_limit_obj2 => X"008A", 
@@ -1419,9 +1439,13 @@ muon_muon_correlation_i50_i: entity work.correlation_conditions
 
 muon_muon_correlation_i56_i: entity work.correlation_conditions
     generic map(
--- obj cuts        
+-- obj cuts
+        slice_low_obj1 => 0, 
+        slice_high_obj1 => 7,        
         pt_threshold_obj1 => X"000A",
-        qual_lut_obj1 => X"F000",        
+        qual_lut_obj1 => X"F000",
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 7,        
         pt_threshold_obj2 => X"000A",
         qual_lut_obj2 => X"F000",
 -- charge correlation cut
@@ -1610,19 +1634,19 @@ algo(24) <= l1_triple_eg_16_12_8_er2p5;
 
 -- 238 L1_LooseIsoEG24er2p1_HTT100er : EG24[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg24er2p1_htt100er <= single_eg_i189 and single_htt_i190;
-algo(17) <= l1_loose_iso_eg24er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(14) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(14) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(17) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 259 L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3 : dist{EG22[EG-ETA_2p13,EG-ISO_0xC],TAU70[TAU-ETA_2p13]}[DR_MIN_0p3]
 l1_loose_iso_eg22er2p1_tau70er2p1_d_r_min0p3 <= calo_calo_correlation_i200;
