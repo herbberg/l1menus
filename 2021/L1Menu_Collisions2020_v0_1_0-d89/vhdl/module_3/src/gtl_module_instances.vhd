@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 26f718e8-1626-4e12-b7b3-177ba824a421
+-- 25df1268-eb65-4578-9776-8f35673a2ad7
 
 -- Scale set:
 -- scales_2020_10_04
@@ -114,6 +114,7 @@ single_eg_i133_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0022", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00DD", X"0000", X"0000", X"0000"),
 -- number of objects and type        
+        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -131,6 +132,7 @@ single_eg_i135_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
 -- number of objects and type        
+        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -148,6 +150,7 @@ single_eg_i139_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
 -- number of objects and type        
+        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -166,6 +169,7 @@ single_eg_i152_i: entity work.calo_conditions
         eta_w1_lower_limits_obj1 => (X"00DD", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
 -- number of objects and type        
+        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -184,6 +188,7 @@ single_eg_i153_i: entity work.calo_conditions
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
 -- number of objects and type        
+        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -202,6 +207,7 @@ single_eg_i161_i: entity work.calo_conditions
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
 -- number of objects and type        
+        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -216,6 +222,7 @@ single_jet_i242_i: entity work.calo_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"00F0", X"0000", X"0000", X"0000"),
 -- number of objects and type        
+        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 1
     )
@@ -230,6 +237,7 @@ single_jet_i283_i: entity work.calo_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"00E6", X"0000", X"0000", X"0000"),
 -- number of objects and type        
+        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 1
     )
