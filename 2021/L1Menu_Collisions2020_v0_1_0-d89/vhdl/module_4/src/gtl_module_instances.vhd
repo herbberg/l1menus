@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 004e0589-cccf-4765-b56e-dc5a839d96a4
+-- 26f718e8-1626-4e12-b7b3-177ba824a421
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1450,6 +1450,9 @@ transverse_mass_i166_i: entity work.correlation_conditions
         mass_lower_limit_vector => X"0000000004C4B400",
         mass_cosh_cos_precision => EG_ETM_COSH_COS_PRECISION, 
         cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
+-- slices for esums
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 0, 
 -- number of calo objects, types
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
@@ -1487,6 +1490,9 @@ transverse_mass_i168_i: entity work.correlation_conditions
         mass_lower_limit_vector => X"0000000006DDD000",
         mass_cosh_cos_precision => EG_ETM_COSH_COS_PRECISION, 
         cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
+-- slices for esums
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 0, 
 -- number of calo objects, types
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,

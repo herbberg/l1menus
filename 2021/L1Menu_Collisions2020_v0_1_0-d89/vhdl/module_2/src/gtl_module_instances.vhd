@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 004e0589-cccf-4765-b56e-dc5a839d96a4
+-- 26f718e8-1626-4e12-b7b3-177ba824a421
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1493,6 +1493,9 @@ transverse_mass_i167_i: entity work.correlation_conditions
         mass_lower_limit_vector => X"0000000005C50D00",
         mass_cosh_cos_precision => EG_ETM_COSH_COS_PRECISION, 
         cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
+-- slices for esums
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 0, 
 -- number of calo objects, types
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
@@ -1636,15 +1639,15 @@ algo(24) <= l1_triple_eg_16_12_8_er2p5;
 
 -- 238 L1_LooseIsoEG24er2p1_HTT100er : EG24[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg24er2p1_htt100er <= single_eg_i189 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg24er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(17) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(17) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
