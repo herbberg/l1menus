@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 25df1268-eb65-4578-9776-8f35673a2ad7
+-- 11ce987a-4f89-4d97-ad4b-1213ce3fa824
 
 -- Scale set:
 -- scales_2020_10_04
@@ -114,7 +114,6 @@ single_eg_i133_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0022", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00DD", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -132,7 +131,6 @@ single_eg_i135_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -150,7 +148,6 @@ single_eg_i139_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -169,7 +166,6 @@ single_eg_i152_i: entity work.calo_conditions
         eta_w1_lower_limits_obj1 => (X"00DD", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -188,7 +184,6 @@ single_eg_i153_i: entity work.calo_conditions
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -207,7 +202,6 @@ single_eg_i161_i: entity work.calo_conditions
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -222,7 +216,6 @@ single_jet_i242_i: entity work.calo_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"00F0", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 1
     )
@@ -237,7 +230,6 @@ single_jet_i283_i: entity work.calo_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"00E6", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 1
     )
@@ -305,8 +297,8 @@ calo_calo_correlation_i114_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => jet_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => jet_bx_0_common,
         deta => jet_jet_bx_0_bx_0_deta_vector,
         condition_o => calo_calo_correlation_i114
     );
@@ -341,8 +333,8 @@ invariant_mass_i284_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => jet_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => jet_bx_0_common,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
@@ -374,8 +366,8 @@ invariant_mass_i285_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => jet_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => jet_bx_0_common,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
@@ -412,8 +404,8 @@ invariant_mass_i286_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => jet_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => jet_bx_0_common,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
@@ -448,8 +440,8 @@ invariant_mass_i287_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => jet_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => jet_bx_0_common,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
@@ -489,8 +481,8 @@ invariant_mass_i288_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => jet_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => jet_bx_0_common,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
@@ -532,8 +524,8 @@ invariant_mass_i289_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => jet_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => jet_bx_0_common,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
@@ -571,8 +563,8 @@ invariant_mass_i290_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => jet_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => jet_bx_0_common,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
@@ -609,8 +601,8 @@ invariant_mass_i291_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => jet_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => jet_bx_0_common,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
@@ -645,8 +637,8 @@ invariant_mass_i292_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => jet_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => jet_bx_0_common,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
@@ -686,8 +678,8 @@ invariant_mass_i293_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => jet_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => jet_bx_0_common,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
@@ -729,8 +721,8 @@ invariant_mass_i294_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => jet_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => jet_bx_0_common,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
@@ -765,8 +757,8 @@ calo_muon_correlation_i113_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => mu_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => mu_bx_0_common,
         deta => jet_mu_bx_0_bx_0_deta_vector,
         dphi => jet_mu_bx_0_bx_0_dphi_vector,
         condition_o => calo_muon_correlation_i113

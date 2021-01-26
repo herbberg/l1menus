@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 25df1268-eb65-4578-9776-8f35673a2ad7
+-- 11ce987a-4f89-4d97-ad4b-1213ce3fa824
 
 -- Scale set:
 -- scales_2020_10_04
@@ -238,7 +238,6 @@ double_eg_i174_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 2
     )
@@ -257,7 +256,6 @@ double_eg_i178_i: entity work.calo_conditions
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"0000", X"0000"),
         iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 2
     )
@@ -275,7 +273,6 @@ double_jet_i265_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 2
     )
@@ -290,7 +287,6 @@ double_jet_i277_i: entity work.calo_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"00DC", X"0046", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 2
     )
@@ -308,7 +304,6 @@ double_jet_i300_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 2
     )
@@ -327,7 +322,6 @@ double_tau_i207_i: entity work.calo_conditions
         eta_w1_lower_limits_obj1 => (X"00CF", X"00CF", X"0000", X"0000"),
         iso_luts_obj1 => (X"E", X"E", X"F", X"F"),
 -- number of objects and type        
-        nr_obj1 => NR_TAU_OBJECTS,
         type_obj1 => TAU_TYPE,
         nr_templates => 2
     )
@@ -342,7 +336,6 @@ quad_jet_i305_i: entity work.calo_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"00BE", X"0096", X"0082", X"0028"),
 -- number of objects and type        
-        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 4
     )
@@ -360,7 +353,6 @@ single_eg_i126_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -378,7 +370,6 @@ single_eg_i128_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -396,7 +387,6 @@ single_eg_i129_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0072", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"003A", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -414,7 +404,6 @@ single_eg_i130_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"00C5", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"008D", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -432,7 +421,6 @@ single_eg_i134_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -450,7 +438,6 @@ single_eg_i138_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -469,7 +456,6 @@ single_eg_i147_i: entity work.calo_conditions
         eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -488,7 +474,6 @@ single_eg_i154_i: entity work.calo_conditions
         eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -507,7 +492,6 @@ single_eg_i162_i: entity work.calo_conditions
         eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -526,7 +510,6 @@ single_eg_i189_i: entity work.calo_conditions
         eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -545,7 +528,6 @@ single_eg_i191_i: entity work.calo_conditions
         eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -564,7 +546,6 @@ single_eg_i192_i: entity work.calo_conditions
         eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 1
     )
@@ -579,7 +560,6 @@ single_jet_i243_i: entity work.calo_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"0168", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 1
     )
@@ -597,7 +577,6 @@ single_jet_i245_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 1
     )
@@ -615,7 +594,6 @@ single_jet_i246_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 1
     )
@@ -633,7 +611,6 @@ single_jet_i253_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"00BA", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"008D", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 1
     )
@@ -651,7 +628,6 @@ single_jet_i254_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0072", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"0045", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 1
     )
@@ -671,7 +647,6 @@ single_jet_i260_i: entity work.calo_conditions
         eta_w2_upper_limits_obj1 => (X"0043", X"0000", X"0000", X"0000"), 
         eta_w2_lower_limits_obj1 => (X"0020", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 1
     )
@@ -689,7 +664,6 @@ single_jet_i306_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"00BA", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"008D", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 1
     )
@@ -707,7 +681,6 @@ single_jet_i307_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0072", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"0045", X"0000", X"0000", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 1
     )
@@ -725,7 +698,6 @@ triple_eg_i181_i: entity work.calo_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0039", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"00C6", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_templates => 3
     )
@@ -740,7 +712,6 @@ triple_jet_i299_i: entity work.calo_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"00BE", X"0096", X"0082", X"0000"),
 -- number of objects and type        
-        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_templates => 3
     )
@@ -1054,8 +1025,8 @@ calo_calo_correlation_i200_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => eg_bx_0, 
-        obj2 => tau_bx_0,
+        obj1 => eg_bx_0_common, 
+        obj2 => tau_bx_0_common,
         deta => eg_tau_bx_0_bx_0_deta_vector,
         dphi => eg_tau_bx_0_bx_0_dphi_vector,
         condition_o => calo_calo_correlation_i200
@@ -1086,8 +1057,8 @@ calo_calo_correlation_i266_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => jet_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => jet_bx_0_common,
         deta => jet_jet_bx_0_bx_0_deta_vector,
         condition_o => calo_calo_correlation_i266
     );
@@ -1124,8 +1095,8 @@ invariant_mass_i210_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => tau_bx_0, 
-        obj2 => tau_bx_0,
+        obj1 => tau_bx_0_common, 
+        obj2 => tau_bx_0_common,
         pt1 => tau_bx_0_pt_vector, 
         pt2 => tau_bx_0_pt_vector,
         cosh_deta => tau_tau_bx_0_bx_0_cosh_deta_vector, 
@@ -1166,8 +1137,8 @@ invariant_mass_i270_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => jet_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => jet_bx_0_common,
         deta => jet_jet_bx_0_bx_0_deta_vector,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
@@ -1200,8 +1171,8 @@ invariant_mass_i278_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => jet_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => jet_bx_0_common,
         pt1 => jet_bx_0_pt_vector, 
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector, 
@@ -1239,8 +1210,8 @@ invariant_mass_i93_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => eg_bx_0, 
-        obj2 => eg_bx_0,
+        obj1 => eg_bx_0_common, 
+        obj2 => eg_bx_0_common,
         pt1 => eg_bx_0_pt_vector, 
         pt2 => eg_bx_0_pt_vector,
         cosh_deta => eg_eg_bx_0_bx_0_cosh_deta_vector, 
@@ -1272,8 +1243,8 @@ calo_muon_correlation_i116_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => mu_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => mu_bx_0_common,
         deta => jet_mu_bx_0_bx_0_deta_vector,
         dphi => jet_mu_bx_0_bx_0_dphi_vector,
         condition_o => calo_muon_correlation_i116
@@ -1303,8 +1274,8 @@ calo_muon_correlation_i98_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => jet_bx_0, 
-        obj2 => mu_bx_0,
+        obj1 => jet_bx_0_common, 
+        obj2 => mu_bx_0_common,
         deta => jet_mu_bx_0_bx_0_deta_vector,
         dphi => jet_mu_bx_0_bx_0_dphi_vector,
         condition_o => calo_muon_correlation_i98
@@ -1338,8 +1309,8 @@ invariant_mass_i44_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => mu_bx_0,
-        obj2 => mu_bx_0,
+        obj1 => mu_bx_0_common,
+        obj2 => mu_bx_0_common,
         pt1 => mu_bx_0_pt_vector, 
         pt2 => mu_bx_0_pt_vector,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector, 
@@ -1385,8 +1356,8 @@ invariant_mass_i92_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => mu_bx_0,
-        obj2 => mu_bx_0,
+        obj1 => mu_bx_0_common,
+        obj2 => mu_bx_0_common,
         ls_charcorr_double => ls_charcorr_double_bx_0_bx_0, 
         os_charcorr_double => os_charcorr_double_bx_0_bx_0,
         pt1 => mu_bx_0_pt_vector, 
@@ -1421,8 +1392,8 @@ muon_muon_correlation_i115_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => mu_bx_0,
-        obj2 => mu_bx_0,
+        obj1 => mu_bx_0_common,
+        obj2 => mu_bx_0_common,
         deta => mu_mu_bx_0_bx_0_deta_vector,
         dphi => mu_mu_bx_0_bx_0_dphi_vector,
         condition_o => muon_muon_correlation_i115
@@ -1459,8 +1430,8 @@ muon_muon_correlation_i50_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => mu_bx_0,
-        obj2 => mu_bx_0,
+        obj1 => mu_bx_0_common,
+        obj2 => mu_bx_0_common,
         deta => mu_mu_bx_0_bx_0_deta_vector,
         dphi => mu_mu_bx_0_bx_0_dphi_vector,
         condition_o => muon_muon_correlation_i50
@@ -1493,8 +1464,8 @@ muon_muon_correlation_i56_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => mu_bx_0,
-        obj2 => mu_bx_0,
+        obj1 => mu_bx_0_common,
+        obj2 => mu_bx_0_common,
         ls_charcorr_double => ls_charcorr_double_bx_0_bx_0, 
         os_charcorr_double => os_charcorr_double_bx_0_bx_0,
         deta => mu_mu_bx_0_bx_0_deta_vector,
@@ -1534,7 +1505,7 @@ transverse_mass_i167_i: entity work.correlation_conditions
     )
     port map(
         lhc_clk,
-        obj1 => eg_bx_0, 
+        obj1 => eg_bx_0_common, 
         esums => etm_bx_0,
         pt1 => eg_bx_0_pt_vector, 
         pt2 => etm_bx_0_pt_vector,
@@ -1668,11 +1639,11 @@ algo(24) <= l1_triple_eg_16_12_8_er2p5;
 
 -- 238 L1_LooseIsoEG24er2p1_HTT100er : EG24[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg24er2p1_htt100er <= single_eg_i189 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg24er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(14) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
@@ -1680,7 +1651,7 @@ algo(17) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(14) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 259 L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3 : dist{EG22[EG-ETA_2p13,EG-ISO_0xC],TAU70[TAU-ETA_2p13]}[DR_MIN_0p3]
 l1_loose_iso_eg22er2p1_tau70er2p1_d_r_min0p3 <= calo_calo_correlation_i200;
