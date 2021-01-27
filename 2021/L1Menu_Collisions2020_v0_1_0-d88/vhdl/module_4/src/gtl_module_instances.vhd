@@ -10,7 +10,7 @@
 -- ccb1f20e-570b-4288-9561-401a03e247fd
 
 -- Unique ID of firmware implementation:
--- 9ec895f4-5329-45d6-bc25-f67fc75cc31c
+-- 1200a39a-3eb0-485d-8d78-cb3b8ea46fc9
 
 -- Scale set:
 -- scales_2020_10_04
@@ -25,16 +25,16 @@
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-    muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
-        port map(mu_bx_m1, mu_bx_0,
-            ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
-            ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
-            ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
     muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
         port map(mu_bx_0, mu_bx_0,
             ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
             ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
             ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
+    muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
+        port map(mu_bx_m1, mu_bx_0,
+            ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
+            ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
+            ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo ObjectType in certain Bx used in correlation conditions
 
@@ -1408,8 +1408,6 @@ transverse_mass_i166_i: entity work.calo_esums_correlation_condition
         eta_w1_lower_limit_obj1 => X"00C6",
         iso_lut_obj1 => X"A",
 -- esums obj cuts        
-        sel_esums => true,
-        obj_type_esums => ETM_TYPE,        
         et_threshold_esums => X"0014",        
 -- correlation cuts
         pt1_width => EG_PT_VECTOR_WIDTH, 
@@ -1443,8 +1441,6 @@ transverse_mass_i168_i: entity work.calo_esums_correlation_condition
         eta_w1_lower_limit_obj1 => X"00C6",
         iso_lut_obj1 => X"A",
 -- esums obj cuts        
-        sel_esums => true,
-        obj_type_esums => ETM_TYPE,        
         et_threshold_esums => X"0014",        
 -- correlation cuts
         pt1_width => EG_PT_VECTOR_WIDTH, 
