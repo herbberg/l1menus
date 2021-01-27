@@ -10,7 +10,7 @@
 -- 67b390d3-5f18-4e77-8cb1-c26fa03f3548
 
 -- Unique ID of firmware implementation:
--- 3d54f675-f154-44eb-ad62-a559e80588c6
+-- 9c33d2b6-9de3-4353-8d8c-d17d0c06a87e
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1469,7 +1469,7 @@ transverse_mass_i167_i: entity work.correlation_conditions_calo
     )
     port map(
         lhc_clk,
-        calo => eg_bx_0, 
+        obj1 => eg_bx_0, 
         esums => etm_bx_0,
         pt1 => eg_bx_0_pt_vector, 
         pt2 => etm_bx_0_pt_vector,
@@ -1603,11 +1603,11 @@ algo(24) <= l1_triple_eg_16_12_8_er2p5;
 
 -- 238 L1_LooseIsoEG24er2p1_HTT100er : EG24[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg24er2p1_htt100er <= single_eg_i189 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg24er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;

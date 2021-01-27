@@ -10,7 +10,7 @@
 -- 67b390d3-5f18-4e77-8cb1-c26fa03f3548
 
 -- Unique ID of firmware implementation:
--- 3d54f675-f154-44eb-ad62-a559e80588c6
+-- 9c33d2b6-9de3-4353-8d8c-d17d0c06a87e
 
 -- Scale set:
 -- scales_2020_10_04
@@ -25,8 +25,8 @@
 type global_index_array is array (0 to NR_ALGOS-1) of integer;
 constant global_index: global_index_array := (
         458, -- module_index: 0, name: L1_AlwaysTrue
-        284, -- module_index: 1, name: L1_Mu22er2p1_IsoTau32er2p1
-        293, -- module_index: 2, name: L1_IsoTau40er2p1_ETMHF100
+        293, -- module_index: 1, name: L1_IsoTau40er2p1_ETMHF100
+        284, -- module_index: 2, name: L1_Mu22er2p1_IsoTau32er2p1
         106, -- module_index: 3, name: L1_Mu6_DoubleEG15er2p5
         424, -- module_index: 4, name: L1_ETMHF130
         475, -- module_index: 5, name: L1_SecondLastBunchInTrain
