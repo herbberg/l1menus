@@ -1378,8 +1378,6 @@ muon_muon_correlation_i47_i: entity work.muon_muon_correlation_condition
 transverse_mass_i166_i: entity work.correlation_conditions_calo
     generic map( 
 -- obj cuts    
-        slice_low_obj2 => 0, 
-        slice_high_obj2 => 0,        
         pt_threshold_obj1 => X"0040",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"0039", 
@@ -1400,7 +1398,6 @@ transverse_mass_i166_i: entity work.correlation_conditions_calo
 -- number of calo objects, types
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
-        nr_obj2 => NR_ETM_OBJECTS,
         same_bx => true
     )
     port map(
@@ -1416,8 +1413,6 @@ transverse_mass_i166_i: entity work.correlation_conditions_calo
 transverse_mass_i168_i: entity work.correlation_conditions_calo
     generic map( 
 -- obj cuts    
-        slice_low_obj2 => 0, 
-        slice_high_obj2 => 0,        
         pt_threshold_obj1 => X"0040",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"0039", 
@@ -1438,7 +1433,6 @@ transverse_mass_i168_i: entity work.correlation_conditions_calo
 -- number of calo objects, types
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
-        nr_obj2 => NR_ETM_OBJECTS,
         same_bx => true
     )
     port map(
