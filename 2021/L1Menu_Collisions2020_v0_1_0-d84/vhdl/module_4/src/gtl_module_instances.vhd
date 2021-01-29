@@ -1375,7 +1375,7 @@ muon_muon_correlation_i47_i: entity work.muon_muon_correlation_condition
         condition_o => muon_muon_correlation_i47
     );
 
-transverse_mass_i166_i: entity work.correlation_conditions_calo
+transverse_mass_i166_i: entity work.calo_esums_correlation_condition
     generic map( 
 -- obj cuts    
         slice_low_obj2 => 0, 
@@ -1413,7 +1413,7 @@ transverse_mass_i166_i: entity work.correlation_conditions_calo
         condition_o => transverse_mass_i166
     );
 
-transverse_mass_i168_i: entity work.correlation_conditions_calo
+transverse_mass_i168_i: entity work.calo_esums_correlation_condition
     generic map( 
 -- obj cuts    
         slice_low_obj2 => 0, 
