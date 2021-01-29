@@ -10,7 +10,7 @@
 -- 67b390d3-5f18-4e77-8cb1-c26fa03f3548
 
 -- Unique ID of firmware implementation:
--- 73d11668-7df9-4d36-9f57-20579febe8ad
+-- 63dc0168-bcf3-47e5-910e-7edd36713638
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1436,6 +1436,7 @@ transverse_mass_i167_i: entity work.correlation_conditions_calo
         pt1_width => EG_PT_VECTOR_WIDTH, 
         pt2_width => ETM_PT_VECTOR_WIDTH,
         mass_cut => true, 
+        mass_type => TRANSVERSE_MASS_TYPE, 
         mass_upper_limit_vector => X"00041A6642C78140",
         mass_lower_limit_vector => X"0000000005C50D00",
         mass_cosh_cos_precision => EG_ETM_COSH_COS_PRECISION, 
@@ -1582,19 +1583,19 @@ algo(24) <= l1_triple_eg_16_12_8_er2p5;
 
 -- 238 L1_LooseIsoEG24er2p1_HTT100er : EG24[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg24er2p1_htt100er <= single_eg_i189 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg24er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(14) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(17) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(17) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(14) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 259 L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3 : dist{EG22[EG-ETA_2p13,EG-ISO_0xC],TAU70[TAU-ETA_2p13]}[DR_MIN_0p3]
 l1_loose_iso_eg22er2p1_tau70er2p1_d_r_min0p3 <= calo_calo_correlation_i200;
