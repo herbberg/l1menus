@@ -10,7 +10,7 @@
 -- 67b390d3-5f18-4e77-8cb1-c26fa03f3548
 
 -- Unique ID of firmware implementation:
--- 05f405f7-572c-4e5d-b15e-314c8bf8ad79
+-- 34139116-48ef-494e-a324-547cf42fd4c8
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1418,16 +1418,17 @@ muon_muon_correlation_i56_i: entity work.muon_muon_correlation_condition
         condition_o => muon_muon_correlation_i56
     );
 
-transverse_mass_i167_i: entity work.calo_esums_correlation_condition
+transverse_mass_i167_i: entity work.correlation_conditions_calo
     generic map( 
--- obj cuts    
-        slice_low_obj2 => 0, 
-        slice_high_obj2 => 0,        
+-- obj cuts        
         pt_threshold_obj1 => X"0040",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"0039", 
         eta_w1_lower_limit_obj1 => X"00C6",
         iso_lut_obj1 => X"A",
+-- slices for esums
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 0,
 -- esums obj cuts        
         sel_esums => true,
         obj_type_esums => ETM_TYPE,        
@@ -1583,11 +1584,11 @@ algo(24) <= l1_triple_eg_16_12_8_er2p5;
 
 -- 238 L1_LooseIsoEG24er2p1_HTT100er : EG24[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg24er2p1_htt100er <= single_eg_i189 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg24er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;

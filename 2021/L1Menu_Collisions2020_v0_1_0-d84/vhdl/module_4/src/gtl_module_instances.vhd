@@ -10,7 +10,7 @@
 -- 67b390d3-5f18-4e77-8cb1-c26fa03f3548
 
 -- Unique ID of firmware implementation:
--- 05f405f7-572c-4e5d-b15e-314c8bf8ad79
+-- 34139116-48ef-494e-a324-547cf42fd4c8
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1375,16 +1375,17 @@ muon_muon_correlation_i47_i: entity work.muon_muon_correlation_condition
         condition_o => muon_muon_correlation_i47
     );
 
-transverse_mass_i166_i: entity work.calo_esums_correlation_condition
+transverse_mass_i166_i: entity work.correlation_conditions_calo
     generic map( 
--- obj cuts    
-        slice_low_obj2 => 0, 
-        slice_high_obj2 => 0,        
+-- obj cuts        
         pt_threshold_obj1 => X"0040",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"0039", 
         eta_w1_lower_limit_obj1 => X"00C6",
         iso_lut_obj1 => X"A",
+-- slices for esums
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 0,
 -- esums obj cuts        
         sel_esums => true,
         obj_type_esums => ETM_TYPE,        
@@ -1414,16 +1415,17 @@ transverse_mass_i166_i: entity work.calo_esums_correlation_condition
         condition_o => transverse_mass_i166
     );
 
-transverse_mass_i168_i: entity work.calo_esums_correlation_condition
+transverse_mass_i168_i: entity work.correlation_conditions_calo
     generic map( 
--- obj cuts    
-        slice_low_obj2 => 0, 
-        slice_high_obj2 => 0,        
+-- obj cuts        
         pt_threshold_obj1 => X"0040",
         nr_eta_windows_obj1 => 1,
         eta_w1_upper_limit_obj1 => X"0039", 
         eta_w1_lower_limit_obj1 => X"00C6",
         iso_lut_obj1 => X"A",
+-- slices for esums
+        slice_low_obj2 => 0, 
+        slice_high_obj2 => 0,
 -- esums obj cuts        
         sel_esums => true,
         obj_type_esums => ETM_TYPE,        
