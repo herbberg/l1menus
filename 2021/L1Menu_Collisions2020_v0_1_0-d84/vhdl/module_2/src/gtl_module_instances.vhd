@@ -1436,6 +1436,7 @@ transverse_mass_i167_i: entity work.calo_esums_correlation_condition
         pt1_width => EG_PT_VECTOR_WIDTH, 
         pt2_width => ETM_PT_VECTOR_WIDTH,
         mass_cut => true, 
+        mass_type => TRANSVERSE_MASS_TYPE,
         mass_upper_limit_vector => X"00041A6642C78140",
         mass_lower_limit_vector => X"0000000005C50D00",
         mass_cosh_cos_precision => EG_ETM_COSH_COS_PRECISION, 
