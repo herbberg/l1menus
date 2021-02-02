@@ -10,7 +10,7 @@
 -- 67b390d3-5f18-4e77-8cb1-c26fa03f3548
 
 -- Unique ID of firmware implementation:
--- 4dd68ff7-0aa9-4ad5-ac92-732a41b63545
+-- 769006a6-5d84-4849-abd1-6fbcbebdf6e9
 
 -- Scale set:
 -- scales_2020_10_04
@@ -750,9 +750,9 @@ calo_muon_correlation_i113_i: entity work.correlation_conditions_calo
         slice_low_obj2 => 0, 
         slice_high_obj2 => 7,        
 -- number of objects and type
-        nr_obj1 =>  => NR_JET_OBJECTS,
+        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
-        nr_obj2 =>  => NR_MU_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
 -- selector same/different bunch crossings
         same_bx => true

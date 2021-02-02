@@ -10,7 +10,7 @@
 -- 67b390d3-5f18-4e77-8cb1-c26fa03f3548
 
 -- Unique ID of firmware implementation:
--- 4dd68ff7-0aa9-4ad5-ac92-732a41b63545
+-- 769006a6-5d84-4849-abd1-6fbcbebdf6e9
 
 -- Scale set:
 -- scales_2020_10_04
@@ -25,16 +25,16 @@
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-    muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
-        port map(mu_bx_0, mu_bx_0,
-            ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-            ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-            ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
     muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
         port map(mu_bx_m1, mu_bx_0,
             ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
             ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
             ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
+    muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
+        port map(mu_bx_0, mu_bx_0,
+            ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+            ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
+            ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo ObjectType in certain Bx used in correlation conditions
 
@@ -1182,9 +1182,9 @@ calo_muon_correlation_i118_i: entity work.correlation_conditions_calo
         slice_low_obj2 => 0, 
         slice_high_obj2 => 7,        
 -- number of objects and type
-        nr_obj1 =>  => NR_JET_OBJECTS,
+        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
-        nr_obj2 =>  => NR_MU_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
 -- selector same/different bunch crossings
         same_bx => true
@@ -1215,9 +1215,9 @@ calo_muon_correlation_i99_i: entity work.correlation_conditions_calo
         slice_low_obj2 => 0, 
         slice_high_obj2 => 7,        
 -- number of objects and type
-        nr_obj1 =>  => NR_JET_OBJECTS,
+        nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
-        nr_obj2 =>  => NR_MU_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
 -- selector same/different bunch crossings
         same_bx => true
