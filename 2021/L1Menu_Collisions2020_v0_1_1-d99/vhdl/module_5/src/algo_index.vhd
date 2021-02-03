@@ -10,13 +10,13 @@
 -- 1f5829f6-f0e2-4b7c-ad2c-bbb6835e42a8
 
 -- Unique ID of firmware implementation:
--- 2b8f9848-9cc9-4fc8-a9af-89c2ba24699b
+-- ba6db423-8672-40f4-b4ed-ad78e45e8016
 
 -- Scale set:
 -- scales_2020_10_04
 
 -- VHDL producer version
--- v2.10.0
+-- v2.9.0
 
 -- tmEventSetup version
 -- v0.8.1
@@ -27,8 +27,8 @@ constant global_index: global_index_array := (
         410, -- module_index: 0, name: L1_ETT1200
         400, -- module_index: 1, name: L1_HTT200er
         160, -- module_index: 2, name: L1_SingleEG10er2p5
-         18, -- module_index: 3, name: L1_SingleMu20
-         99, -- module_index: 4, name: L1_Mu20_EG10er2p5
+         99, -- module_index: 3, name: L1_Mu20_EG10er2p5
+         18, -- module_index: 4, name: L1_SingleMu20
         190, -- module_index: 5, name: L1_SingleIsoEG28er2p1
         194, -- module_index: 6, name: L1_SingleIsoEG32er2p5
         331, -- module_index: 7, name: L1_SingleJet12erHE

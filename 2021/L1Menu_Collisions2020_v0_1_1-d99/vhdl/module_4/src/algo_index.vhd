@@ -10,13 +10,13 @@
 -- 1f5829f6-f0e2-4b7c-ad2c-bbb6835e42a8
 
 -- Unique ID of firmware implementation:
--- 2b8f9848-9cc9-4fc8-a9af-89c2ba24699b
+-- ba6db423-8672-40f4-b4ed-ad78e45e8016
 
 -- Scale set:
 -- scales_2020_10_04
 
 -- VHDL producer version
--- v2.10.0
+-- v2.9.0
 
 -- tmEventSetup version
 -- v0.8.1
