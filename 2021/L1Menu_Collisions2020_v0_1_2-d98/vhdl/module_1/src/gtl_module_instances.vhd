@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 9a740682-1025-4bd4-9434-5453be195ad0
+-- f1208c16-3932-4620-8b1a-026670c0fae4
 
 -- Scale set:
 -- scales_2020_10_04
@@ -210,13 +210,18 @@ single_ext_i370 <= ext_cond_bx_0(43); -- single_ext_i370
 -- Instantiations of conditions
 double_eg_i169_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
-        slice_2_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,        
+        slice_2_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"001E", X"0014", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 1, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 2
     )
     port map(
         lhc_clk,
@@ -226,13 +231,18 @@ double_eg_i169_i: entity work.comb_conditions
 
 double_eg_i172_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
-        slice_2_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,        
+        slice_2_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0032", X"0018", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 1, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 2
     )
     port map(
         lhc_clk,
@@ -242,14 +252,19 @@ double_eg_i172_i: entity work.comb_conditions
 
 double_eg_i176_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
-        slice_2_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,        
+        slice_2_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"002C", X"0014", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 1, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"0000", X"0000"),
         iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 2
     )
     port map(
         lhc_clk,
@@ -259,14 +274,19 @@ double_eg_i176_i: entity work.comb_conditions
 
 double_eg_i180_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
-        slice_2_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,        
+        slice_2_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0030", X"0030", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 1, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0030", X"0030", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00CF", X"00CF", X"0000", X"0000"),
         iso_luts_obj1 => (X"C", X"C", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 2
     )
     port map(
         lhc_clk,
@@ -276,13 +296,18 @@ double_eg_i180_i: entity work.comb_conditions
 
 double_jet_i263_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
-        slice_2_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,        
+        slice_2_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"00C8", X"00C8", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 1, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 2
     )
     port map(
         lhc_clk,
@@ -292,10 +317,15 @@ double_jet_i263_i: entity work.comb_conditions
 
 double_jet_i274_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
-        slice_2_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,        
+        slice_2_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"00B4", X"003C", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 2
     )
     port map(
         lhc_clk,
@@ -305,10 +335,15 @@ double_jet_i274_i: entity work.comb_conditions
 
 double_jet_i276_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
-        slice_2_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,        
+        slice_2_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"00C8", X"003C", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 2
     )
     port map(
         lhc_clk,
@@ -318,14 +353,19 @@ double_jet_i276_i: entity work.comb_conditions
 
 double_tau_i205_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
-        slice_2_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,        
+        slice_2_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"003C", X"003C", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 1, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0030", X"0030", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00CF", X"00CF", X"0000", X"0000"),
         iso_luts_obj1 => (X"E", X"E", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
+        nr_templates => 2
     )
     port map(
         lhc_clk,
@@ -335,15 +375,20 @@ double_tau_i205_i: entity work.comb_conditions
 
 quad_jet_i228_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
-        slice_2_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
-        slice_3_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
-        slice_4_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,        
+        slice_2_high_obj1 => 11,        
+        slice_3_high_obj1 => 11,        
+        slice_4_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0048", X"0048", X"0048", X"0048"),
         nr_eta_windows_obj1 => (1, 1, 1, 1),
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0039", X"0039"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"00C6", X"00C6"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 4
     )
     port map(
         lhc_clk,
@@ -353,12 +398,17 @@ quad_jet_i228_i: entity work.comb_conditions
 
 single_eg_i127_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"001E", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -368,12 +418,17 @@ single_eg_i127_i: entity work.comb_conditions
 
 single_eg_i131_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0038", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -383,12 +438,17 @@ single_eg_i131_i: entity work.comb_conditions
 
 single_eg_i137_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0050", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -398,9 +458,14 @@ single_eg_i137_i: entity work.comb_conditions
 
 single_eg_i141_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0078", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -410,13 +475,18 @@ single_eg_i141_i: entity work.comb_conditions
 
 single_eg_i144_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0038", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0072", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"003A", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -426,13 +496,18 @@ single_eg_i144_i: entity work.comb_conditions
 
 single_eg_i145_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0038", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"00C5", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"008D", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -442,13 +517,18 @@ single_eg_i145_i: entity work.comb_conditions
 
 single_eg_i148_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0038", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0022", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00DD", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -458,13 +538,18 @@ single_eg_i148_i: entity work.comb_conditions
 
 single_eg_i149_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"003C", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -474,13 +559,18 @@ single_eg_i149_i: entity work.comb_conditions
 
 single_eg_i155_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0034", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0022", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00DD", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -490,13 +580,18 @@ single_eg_i155_i: entity work.comb_conditions
 
 single_eg_i158_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0038", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -506,13 +601,18 @@ single_eg_i158_i: entity work.comb_conditions
 
 single_eg_i165_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0044", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -522,9 +622,14 @@ single_eg_i165_i: entity work.comb_conditions
 
 single_jet_i239_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0046", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -534,9 +639,14 @@ single_jet_i239_i: entity work.comb_conditions
 
 single_jet_i241_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"00B4", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -546,12 +656,17 @@ single_jet_i241_i: entity work.comb_conditions
 
 single_jet_i249_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0140", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -561,12 +676,17 @@ single_jet_i249_i: entity work.comb_conditions
 
 single_jet_i257_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"00F0", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"00BA", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"008D", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -576,12 +696,17 @@ single_jet_i257_i: entity work.comb_conditions
 
 single_jet_i258_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"00F0", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0072", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"0045", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -591,12 +716,17 @@ single_jet_i258_i: entity work.comb_conditions
 
 single_jet_i96_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"003C", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -606,12 +736,17 @@ single_jet_i96_i: entity work.comb_conditions
 
 single_tau_i214_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0030", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0030", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -621,12 +756,17 @@ single_tau_i214_i: entity work.comb_conditions
 
 single_tau_i215_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0034", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0030", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -636,13 +776,18 @@ single_tau_i215_i: entity work.comb_conditions
 
 single_tau_i229_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0068", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0030", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"E", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -652,14 +797,19 @@ single_tau_i229_i: entity work.comb_conditions
 
 triple_eg_i183_i: entity work.comb_conditions
     generic map(
-        slice_1_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
-        slice_2_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
-        slice_3_high_obj1 => 11, -- default value is "NR_MU_OBJECTS-1 = 7"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)        
+        slice_1_high_obj1 => 11,        
+        slice_2_high_obj1 => 11,        
+        slice_3_high_obj1 => 11,
 -- object cuts        
         pt_thresholds_obj1 => (X"0024", X"0022", X"0010", X"0000"),
         nr_eta_windows_obj1 => (1, 1, 1, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0039", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"00C6", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 3
     )
     port map(
         lhc_clk,
