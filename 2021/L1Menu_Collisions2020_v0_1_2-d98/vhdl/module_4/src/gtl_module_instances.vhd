@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- e2490b87-b074-4735-875c-609ddfd98210
+-- 08355437-ed9f-4099-b527-4b04b8a4392a
 
 -- Scale set:
 -- scales_2020_10_04
@@ -237,6 +237,10 @@ double_eg_i170_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 1, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 2
     )
     port map(
         lhc_clk,
@@ -251,6 +255,10 @@ double_eg_i173_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 1, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 2
     )
     port map(
         lhc_clk,
@@ -266,6 +274,10 @@ double_eg_i177_i: entity work.comb_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"0000", X"0000"),
         iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 2
     )
     port map(
         lhc_clk,
@@ -280,6 +292,10 @@ double_jet_i264_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 1, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 2
     )
     port map(
         lhc_clk,
@@ -291,6 +307,10 @@ double_jet_i277_i: entity work.comb_conditions
     generic map(
 -- object cuts        
         pt_thresholds_obj1 => (X"00DC", X"0046", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 2
     )
     port map(
         lhc_clk,
@@ -305,6 +325,10 @@ double_jet_i300_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 1, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 2
     )
     port map(
         lhc_clk,
@@ -319,6 +343,10 @@ double_tau_i203_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 1, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0030", X"0030", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00CF", X"00CF", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
+        nr_templates => 2
     )
     port map(
         lhc_clk,
@@ -334,6 +362,10 @@ double_tau_i206_i: entity work.comb_conditions
         eta_w1_upper_limits_obj1 => (X"0030", X"0030", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00CF", X"00CF", X"0000", X"0000"),
         iso_luts_obj1 => (X"E", X"E", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
+        nr_templates => 2
     )
     port map(
         lhc_clk,
@@ -345,6 +377,10 @@ quad_jet_i305_i: entity work.comb_conditions
     generic map(
 -- object cuts        
         pt_thresholds_obj1 => (X"00BE", X"0096", X"0082", X"0028"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 4
     )
     port map(
         lhc_clk,
@@ -359,6 +395,10 @@ single_eg_i132_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0030", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -373,6 +413,10 @@ single_eg_i136_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -384,6 +428,10 @@ single_eg_i140_i: entity work.comb_conditions
     generic map(
 -- object cuts        
         pt_thresholds_obj1 => (X"0064", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -399,6 +447,10 @@ single_eg_i143_i: entity work.comb_conditions
         eta_w1_upper_limits_obj1 => (X"0022", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00DD", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -414,6 +466,10 @@ single_eg_i146_i: entity work.comb_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -429,6 +485,10 @@ single_eg_i151_i: entity work.comb_conditions
         eta_w1_upper_limits_obj1 => (X"0030", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -444,6 +504,10 @@ single_eg_i160_i: entity work.comb_conditions
         eta_w1_upper_limits_obj1 => (X"0022", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00DD", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -459,6 +523,10 @@ single_eg_i164_i: entity work.comb_conditions
         eta_w1_upper_limits_obj1 => (X"0030", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -473,6 +541,10 @@ single_eg_i79_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -487,6 +559,10 @@ single_eg_i80_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -502,6 +578,10 @@ single_eg_i82_i: entity work.comb_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -517,6 +597,10 @@ single_eg_i83_i: entity work.comb_conditions
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
         iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -528,6 +612,10 @@ single_jet_i240_i: entity work.comb_conditions
     generic map(
 -- object cuts        
         pt_thresholds_obj1 => (X"0078", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -542,6 +630,10 @@ single_jet_i247_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -556,6 +648,10 @@ single_jet_i250_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -570,6 +666,10 @@ single_jet_i251_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"00BA", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"008D", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -584,6 +684,10 @@ single_jet_i252_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0072", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"0045", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -598,6 +702,10 @@ single_jet_i306_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"00BA", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"008D", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -612,6 +720,10 @@ single_jet_i307_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0072", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"0045", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -626,6 +738,10 @@ single_tau_i201_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0030", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -640,6 +756,10 @@ triple_eg_i184_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 1, 1, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0039", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"00C6", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 3
     )
     port map(
         lhc_clk,
@@ -654,6 +774,10 @@ triple_eg_i185_i: entity work.comb_conditions
         nr_eta_windows_obj1 => (1, 1, 1, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0039", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"00C6", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 3
     )
     port map(
         lhc_clk,
@@ -665,6 +789,10 @@ triple_jet_i299_i: entity work.comb_conditions
     generic map(
 -- object cuts        
         pt_thresholds_obj1 => (X"00BE", X"0096", X"0082", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 3
     )
     port map(
         lhc_clk,
@@ -677,6 +805,10 @@ quad_mu_i76_i: entity work.comb_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"0001", X"0001", X"0001", X"0001"),
         qual_luts_obj1 => (X"FFF0", X"FFF0", X"FFF0", X"FFF0"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 4
     )
     port map(
         lhc_clk,
@@ -689,6 +821,10 @@ quad_mu_i77_i: entity work.comb_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"0001", X"0001", X"0001", X"0001"),
         qual_luts_obj1 => (X"FF00", X"FF00", X"FF00", X"FF00"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 4
     )
     port map(
         lhc_clk,
@@ -701,6 +837,10 @@ quad_mu_i78_i: entity work.comb_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"0001", X"0001", X"0001", X"0001"),
         qual_luts_obj1 => (X"F000", X"F000", X"F000", X"F000"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 4
     )
     port map(
         lhc_clk,
@@ -713,6 +853,10 @@ single_mu_i10_i: entity work.comb_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"000B", X"0000", X"0000", X"0000"),
         qual_luts_obj1 => (X"F000", X"FFFF", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -725,6 +869,10 @@ single_mu_i12_i: entity work.comb_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"000F", X"0000", X"0000", X"0000"),
         qual_luts_obj1 => (X"F000", X"FFFF", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -737,6 +885,10 @@ single_mu_i17_i: entity work.comb_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"0025", X"0000", X"0000", X"0000"),
         qual_luts_obj1 => (X"F000", X"FFFF", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -754,6 +906,10 @@ single_mu_i22_i: entity work.comb_conditions
         eta_w2_upper_limits_obj1 => (X"018D", X"0000", X"0000", X"0000"), 
         eta_w2_lower_limits_obj1 => (X"011F", X"0000", X"0000", X"0000"),
         qual_luts_obj1 => (X"F000", X"FFFF", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -768,6 +924,10 @@ single_mu_i233_i: entity work.comb_conditions
         upt_cuts_obj1 => (true, false, false, false), 
         upt_upper_limits_obj1 => (X"00FF", X"0000", X"0000", X"0000"),
         upt_lower_limits_obj1 => (X"0015", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -783,6 +943,10 @@ single_mu_i236_i: entity work.comb_conditions
         upt_cuts_obj1 => (true, false, false, false), 
         upt_upper_limits_obj1 => (X"00FF", X"0000", X"0000", X"0000"),
         upt_lower_limits_obj1 => (X"0006", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -798,6 +962,10 @@ single_mu_i28_i: entity work.comb_conditions
         eta_w1_upper_limits_obj1 => (X"008A", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"0176", X"0000", X"0000", X"0000"),
         qual_luts_obj1 => (X"F000", X"FFFF", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -813,6 +981,10 @@ single_mu_i29_i: entity work.comb_conditions
         eta_w1_upper_limits_obj1 => (X"008A", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"0176", X"0000", X"0000", X"0000"),
         qual_luts_obj1 => (X"F000", X"FFFF", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -828,6 +1000,10 @@ single_mu_i373_i: entity work.comb_conditions
         upt_upper_limits_obj1 => (X"00FF", X"0000", X"0000", X"0000"),
         upt_lower_limits_obj1 => (X"0015", X"0000", X"0000", X"0000"),
         ip_luts_obj1 => (X"4", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -843,6 +1019,10 @@ single_mu_i6_i: entity work.comb_conditions
         eta_w1_upper_limits_obj1 => (X"0049", X"0000", X"0000", X"0000"), 
         eta_w1_lower_limits_obj1 => (X"01B7", X"0000", X"0000", X"0000"),
         qual_luts_obj1 => (X"F000", X"FFFF", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
     )
     port map(
         lhc_clk,
@@ -855,6 +1035,10 @@ triple_mu_i69_i: entity work.comb_conditions
 -- object cuts        
         pt_thresholds_obj1 => (X"000B", X"000B", X"0007", X"0000"),
         qual_luts_obj1 => (X"FF00", X"FF00", X"FF00", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 3
     )
     port map(
         lhc_clk,
