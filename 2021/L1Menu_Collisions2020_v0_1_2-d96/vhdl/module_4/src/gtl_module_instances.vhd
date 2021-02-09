@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- dae5e884-9a4c-42f7-baff-3e0529e5a501
+-- b14d5fa5-6d85-4cff-9215-7a7c33a85b4e
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1664,6 +1664,7 @@ muon_muon_correlation_i56_i: entity work.correlation_conditions_muon
 
 transverse_mass_i167_i: entity work.correlation_conditions_calo
     generic map(
+
 -- obj cuts
         pt_threshold_obj1 => X"0040",
         nr_eta_windows_obj1 => 1,
@@ -1686,6 +1687,20 @@ transverse_mass_i167_i: entity work.correlation_conditions_calo
         cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"00041A6642C78140",
         mass_lower_limit_vector => X"0000000005C50D00",
+-- correlation cuts
+        pt1_width => EG_PT_VECTOR_WIDTH,
+        pt2_width => ETM_PT_VECTOR_WIDTH,
+        mass_cut => true,
+        mass_type => TRANSVERSE_MASS_TYPE,
+        mass_upper_limit_vector => X"00041A6642C78140",
+        mass_lower_limit_vector => X"0000000005C50D00",
+        mass_cosh_cos_precision => EG_ETM_COSH_COS_PRECISION,
+        cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
+-- number of calo objects, types
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_ETM_OBJECTS,
+        same_bx => true
     )
     port map(
         lhc_clk,
@@ -1711,7 +1726,7 @@ algo(31) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(34) <= l1_single_mu7;
+algo(33) <= l1_single_mu7;
 
 -- 17 L1_SingleMu18 : MU18[MU-QLTY_SNGL]
 l1_single_mu18 <= single_mu_i17;
@@ -1759,7 +1774,7 @@ algo(45) <= l1_quad_mu0_sq;
 
 -- 96 L1_Mu5_EG23er2p5 : MU5[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu5_eg23er2p5 <= single_mu_i10 and single_eg_i79;
-algo(32) <= l1_mu5_eg23er2p5;
+algo(34) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i12 and single_eg_i80;
@@ -1767,7 +1782,7 @@ algo(38) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i12 and single_eg_i79;
-algo(33) <= l1_mu7_eg23er2p5;
+algo(32) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i10 and single_eg_i82;

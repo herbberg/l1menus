@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- dae5e884-9a4c-42f7-baff-3e0529e5a501
+-- b14d5fa5-6d85-4cff-9215-7a7c33a85b4e
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1549,6 +1549,7 @@ muon_muon_correlation_i47_i: entity work.correlation_conditions_muon
 
 transverse_mass_i166_i: entity work.correlation_conditions_calo
     generic map(
+
 -- obj cuts
         pt_threshold_obj1 => X"0040",
         nr_eta_windows_obj1 => 1,
@@ -1571,6 +1572,20 @@ transverse_mass_i166_i: entity work.correlation_conditions_calo
         cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"00041A6642C78140",
         mass_lower_limit_vector => X"0000000004C4B400",
+-- correlation cuts
+        pt1_width => EG_PT_VECTOR_WIDTH,
+        pt2_width => ETM_PT_VECTOR_WIDTH,
+        mass_cut => true,
+        mass_type => TRANSVERSE_MASS_TYPE,
+        mass_upper_limit_vector => X"00041A6642C78140",
+        mass_lower_limit_vector => X"0000000004C4B400",
+        mass_cosh_cos_precision => EG_ETM_COSH_COS_PRECISION,
+        cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
+-- number of calo objects, types
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_ETM_OBJECTS,
+        same_bx => true
     )
     port map(
         lhc_clk,
@@ -1584,6 +1599,7 @@ transverse_mass_i166_i: entity work.correlation_conditions_calo
 
 transverse_mass_i168_i: entity work.correlation_conditions_calo
     generic map(
+
 -- obj cuts
         pt_threshold_obj1 => X"0040",
         nr_eta_windows_obj1 => 1,
@@ -1606,6 +1622,20 @@ transverse_mass_i168_i: entity work.correlation_conditions_calo
         cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"00041A6642C78140",
         mass_lower_limit_vector => X"0000000006DDD000",
+-- correlation cuts
+        pt1_width => EG_PT_VECTOR_WIDTH,
+        pt2_width => ETM_PT_VECTOR_WIDTH,
+        mass_cut => true,
+        mass_type => TRANSVERSE_MASS_TYPE,
+        mass_upper_limit_vector => X"00041A6642C78140",
+        mass_lower_limit_vector => X"0000000006DDD000",
+        mass_cosh_cos_precision => EG_ETM_COSH_COS_PRECISION,
+        cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
+-- number of calo objects, types
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_ETM_OBJECTS,
+        same_bx => true
     )
     port map(
         lhc_clk,
@@ -1643,7 +1673,7 @@ algo(26) <= l1_single_mu15_dq;
 
 -- 18 L1_SingleMu20 : MU20[MU-QLTY_SNGL]
 l1_single_mu20 <= single_mu_i18;
-algo(3) <= l1_single_mu20;
+algo(4) <= l1_single_mu20;
 
 -- 19 L1_SingleMu22 : MU22[MU-QLTY_SNGL]
 l1_single_mu22 <= single_mu_i19;
@@ -1671,7 +1701,7 @@ algo(40) <= l1_double_mu0er2p0_sq_os_d_r_max1p4;
 
 -- 99 L1_Mu20_EG10er2p5 : MU20[MU-QLTY_SNGL] AND EG10[EG-ETA_2p52]
 l1_mu20_eg10er2p5 <= single_mu_i18 and single_eg_i81;
-algo(4) <= l1_mu20_eg10er2p5;
+algo(3) <= l1_mu20_eg10er2p5;
 
 -- 113 L1_DoubleMu5Upsilon_OS_DoubleEG3 : mass_inv{MU5[MU-QLTY_DBLE,MU-ETA_2p3],MU5[MU-QLTY_DBLE,MU-ETA_2p3]}[MASS_MASS_8to14,CHGCOR_OS] AND mass_inv{EG3[EG-ETA_2p13],EG3[EG-ETA_2p13]}[MASS_MASS_0to20]
 l1_double_mu5_upsilon_os_double_eg3 <= invariant_mass_i94 and invariant_mass_i95;
