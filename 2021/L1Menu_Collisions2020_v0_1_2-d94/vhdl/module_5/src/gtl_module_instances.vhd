@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- f14c9037-6d1e-4e7e-b27d-8623d4518ba1
+-- a81e71ef-4ed6-43f9-bf89-9ee510987ad4
 
 -- Scale set:
 -- scales_2020_10_04
@@ -26,16 +26,16 @@
 -- Instantiations of muon charge correlations - only once for a certain bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-    muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
-        port map(mu_bx_m1, mu_bx_0,
-            ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
-            ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
-            ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
     muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
         port map(mu_bx_0, mu_bx_0,
             ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
             ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
             ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
+    muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
+        port map(mu_bx_m1, mu_bx_0,
+            ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
+            ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
+            ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo object type in certain bx used in correlation conditions
 
@@ -115,7 +115,7 @@
             eta_integer => mu_bx_0_eta_integer,
             phi_integer => mu_bx_0_phi_integer,
             cos_phi => mu_bx_0_cos_phi,
-            sin_phi => mu_bx_0_sin_phi,
+            sin_phi => mu_bx_0_sin_phi
         );
 --
     mu_bx_m1_parameter_i: entity work.obj_parameter
@@ -131,7 +131,7 @@
             eta_integer => mu_bx_m1_eta_integer,
             phi_integer => mu_bx_m1_phi_integer,
             cos_phi => mu_bx_m1_cos_phi,
-            sin_phi => mu_bx_m1_sin_phi,
+            sin_phi => mu_bx_m1_sin_phi
         );
 --
     etm_bx_0_parameter_i: entity work.obj_parameter
@@ -1703,7 +1703,7 @@ algo(26) <= l1_single_mu15_dq;
 
 -- 18 L1_SingleMu20 : MU20[MU-QLTY_SNGL]
 l1_single_mu20 <= single_mu_i18;
-algo(3) <= l1_single_mu20;
+algo(4) <= l1_single_mu20;
 
 -- 19 L1_SingleMu22 : MU22[MU-QLTY_SNGL]
 l1_single_mu22 <= single_mu_i19;
@@ -1731,7 +1731,7 @@ algo(40) <= l1_double_mu0er2p0_sq_os_d_r_max1p4;
 
 -- 99 L1_Mu20_EG10er2p5 : MU20[MU-QLTY_SNGL] AND EG10[EG-ETA_2p52]
 l1_mu20_eg10er2p5 <= single_mu_i18 and single_eg_i81;
-algo(4) <= l1_mu20_eg10er2p5;
+algo(3) <= l1_mu20_eg10er2p5;
 
 -- 113 L1_DoubleMu5Upsilon_OS_DoubleEG3 : mass_inv{MU5[MU-QLTY_DBLE,MU-ETA_2p3],MU5[MU-QLTY_DBLE,MU-ETA_2p3]}[MASS_MASS_8to14,CHGCOR_OS] AND mass_inv{EG3[EG-ETA_2p13],EG3[EG-ETA_2p13]}[MASS_MASS_0to20]
 l1_double_mu5_upsilon_os_double_eg3 <= invariant_mass_i94 and invariant_mass_i95;

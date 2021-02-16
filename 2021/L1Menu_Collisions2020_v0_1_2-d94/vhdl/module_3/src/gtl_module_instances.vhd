@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- f14c9037-6d1e-4e7e-b27d-8623d4518ba1
+-- a81e71ef-4ed6-43f9-bf89-9ee510987ad4
 
 -- Scale set:
 -- scales_2020_10_04
@@ -71,7 +71,7 @@
             eta_integer => mu_bx_0_eta_integer,
             phi_integer => mu_bx_0_phi_integer,
             cos_phi => mu_bx_0_cos_phi,
-            sin_phi => mu_bx_0_sin_phi,
+            sin_phi => mu_bx_0_sin_phi
         );
 --
 -- Instantiations of differences for correlation conditions (used for DETA, DPHI, DR, mass and two-body pt) - once for correlation conditions with two object types in certain bxs
