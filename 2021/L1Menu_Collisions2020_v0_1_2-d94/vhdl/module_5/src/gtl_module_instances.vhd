@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- a81e71ef-4ed6-43f9-bf89-9ee510987ad4
+-- 5db5bf8e-b584-481e-859f-bcce6e14297d
 
 -- Scale set:
 -- scales_2020_10_04
@@ -26,16 +26,16 @@
 -- Instantiations of muon charge correlations - only once for a certain bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-    muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
-        port map(mu_bx_0, mu_bx_0,
-            ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-            ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-            ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
     muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
         port map(mu_bx_m1, mu_bx_0,
             ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
             ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
             ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
+    muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
+        port map(mu_bx_0, mu_bx_0,
+            ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+            ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
+            ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo object type in certain bx used in correlation conditions
 
@@ -109,7 +109,6 @@
         )
         port map(
             muon => mu_bx_0,
-            phi_conv_2_muon_phi_integer => mu_bx_0_phi_conv_2_muon_phi_integer,
             pt_vector => mu_bx_0_pt_vector,
             upt_vector => mu_bx_0_upt_vector,
             eta_integer => mu_bx_0_eta_integer,
@@ -125,7 +124,6 @@
         )
         port map(
             muon => mu_bx_m1,
-            phi_conv_2_muon_phi_integer => mu_bx_m1_phi_conv_2_muon_phi_integer,
             pt_vector => mu_bx_m1_pt_vector,
             upt_vector => mu_bx_m1_upt_vector,
             eta_integer => mu_bx_m1_eta_integer,
