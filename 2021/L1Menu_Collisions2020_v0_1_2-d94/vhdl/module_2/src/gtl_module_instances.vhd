@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 49a7941a-1dfb-487d-9013-cf0c0a8c5ca1
+-- 48f82ba4-af1f-4952-928a-35303dfd8730
 
 -- Scale set:
 -- scales_2020_10_04
@@ -49,7 +49,7 @@
         port map(
             calo => jet_bx_0,
             phi_conv_2_muon_phi_integer => jet_bx_0_phi_conv_2_muon_phi_integer,
-            pt_vector => jet_bx_0_pt_vector
+            pt_vector => jet_bx_0_pt_vector,
             eta_integer => jet_bx_0_eta_integer,
             phi_integer => jet_bx_0_phi_integer,
             cos_phi => jet_bx_0_cos_phi,
@@ -66,7 +66,7 @@
         port map(
             calo => eg_bx_0,
             phi_conv_2_muon_phi_integer => eg_bx_0_phi_conv_2_muon_phi_integer,
-            pt_vector => eg_bx_0_pt_vector
+            pt_vector => eg_bx_0_pt_vector,
             eta_integer => eg_bx_0_eta_integer,
             phi_integer => eg_bx_0_phi_integer,
             cos_phi => eg_bx_0_cos_phi,
@@ -83,8 +83,8 @@
         port map(
             muon => mu_bx_0,
             phi_conv_2_muon_phi_integer => mu_bx_0_phi_conv_2_muon_phi_integer,
-            pt_vector => mu_bx_0_pt_vector
-            upt_vector => mu_bx_0_upt_vector
+            pt_vector => mu_bx_0_pt_vector,
+            upt_vector => mu_bx_0_upt_vector,
             eta_integer => mu_bx_0_eta_integer,
             phi_integer => mu_bx_0_phi_integer,
             cos_phi => mu_bx_0_cos_phi,
@@ -99,7 +99,7 @@
         port map(
             calo => tau_bx_0,
             phi_conv_2_muon_phi_integer => tau_bx_0_phi_conv_2_muon_phi_integer,
-            pt_vector => tau_bx_0_pt_vector
+            pt_vector => tau_bx_0_pt_vector,
             eta_integer => tau_bx_0_eta_integer,
             phi_integer => tau_bx_0_phi_integer,
             cos_phi => tau_bx_0_cos_phi,
@@ -1966,15 +1966,15 @@ algo(14) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(17) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(17) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 272 L1_DoubleIsoTau34er2p1 : comb{TAU34[TAU-ETA_2p13,TAU-ISO_0xE],TAU34[TAU-ETA_2p13,TAU-ISO_0xE]}
 l1_double_iso_tau34er2p1 <= double_tau_i207;

@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 49a7941a-1dfb-487d-9013-cf0c0a8c5ca1
+-- 48f82ba4-af1f-4952-928a-35303dfd8730
 
 -- Scale set:
 -- scales_2020_10_04
@@ -73,7 +73,7 @@
         port map(
             calo => jet_bx_0,
             phi_conv_2_muon_phi_integer => jet_bx_0_phi_conv_2_muon_phi_integer,
-            pt_vector => jet_bx_0_pt_vector
+            pt_vector => jet_bx_0_pt_vector,
             eta_integer => jet_bx_0_eta_integer,
             phi_integer => jet_bx_0_phi_integer,
             cos_phi => jet_bx_0_cos_phi,
@@ -90,7 +90,7 @@
         port map(
             calo => eg_bx_0,
             phi_conv_2_muon_phi_integer => eg_bx_0_phi_conv_2_muon_phi_integer,
-            pt_vector => eg_bx_0_pt_vector
+            pt_vector => eg_bx_0_pt_vector,
             eta_integer => eg_bx_0_eta_integer,
             phi_integer => eg_bx_0_phi_integer,
             cos_phi => eg_bx_0_cos_phi,
@@ -107,7 +107,7 @@
         port map(
             calo => tau_bx_0,
             phi_conv_2_muon_phi_integer => tau_bx_0_phi_conv_2_muon_phi_integer,
-            pt_vector => tau_bx_0_pt_vector
+            pt_vector => tau_bx_0_pt_vector,
             eta_integer => tau_bx_0_eta_integer,
             phi_integer => tau_bx_0_phi_integer,
             cos_phi => tau_bx_0_cos_phi,
@@ -124,8 +124,8 @@
         port map(
             muon => mu_bx_0,
             phi_conv_2_muon_phi_integer => mu_bx_0_phi_conv_2_muon_phi_integer,
-            pt_vector => mu_bx_0_pt_vector
-            upt_vector => mu_bx_0_upt_vector
+            pt_vector => mu_bx_0_pt_vector,
+            upt_vector => mu_bx_0_upt_vector,
             eta_integer => mu_bx_0_eta_integer,
             phi_integer => mu_bx_0_phi_integer,
             cos_phi => mu_bx_0_cos_phi,
