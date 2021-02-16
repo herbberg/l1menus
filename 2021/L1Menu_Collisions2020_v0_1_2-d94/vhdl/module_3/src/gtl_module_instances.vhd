@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 48f82ba4-af1f-4952-928a-35303dfd8730
+-- f14c9037-6d1e-4e7e-b27d-8623d4518ba1
 
 -- Scale set:
 -- scales_2020_10_04
@@ -41,7 +41,7 @@
 
 -- Instantiations of pt, eta, phi, cosine phi and sine phi for correlation conditions (used for DETA, DPHI, DR, mass, overlap_remover and two-body pt) - once for every object type in certain bx used in correlation conditions
 
-    jet_bx_0_parameter_i: work.obj_parameter
+    jet_bx_0_parameter_i: entity work.obj_parameter
         generic map(
             nr_obj => NR_JET_OBJECTS,
             type_obj => JET_TYPE
@@ -58,7 +58,7 @@
             conv_sin_phi => jet_bx_0_conv_sin_phi
         );
 --
-    mu_bx_0_parameter_i: work.obj_parameter
+    mu_bx_0_parameter_i: entity work.obj_parameter
         generic map(
             nr_obj => NR_MU_OBJECTS,
             type_obj => MU_TYPE

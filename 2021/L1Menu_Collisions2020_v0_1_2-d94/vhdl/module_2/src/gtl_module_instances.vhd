@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 48f82ba4-af1f-4952-928a-35303dfd8730
+-- f14c9037-6d1e-4e7e-b27d-8623d4518ba1
 
 -- Scale set:
 -- scales_2020_10_04
@@ -41,7 +41,7 @@
 
 -- Instantiations of pt, eta, phi, cosine phi and sine phi for correlation conditions (used for DETA, DPHI, DR, mass, overlap_remover and two-body pt) - once for every object type in certain bx used in correlation conditions
 
-    jet_bx_0_parameter_i: work.obj_parameter
+    jet_bx_0_parameter_i: entity work.obj_parameter
         generic map(
             nr_obj => NR_JET_OBJECTS,
             type_obj => JET_TYPE
@@ -58,7 +58,7 @@
             conv_sin_phi => jet_bx_0_conv_sin_phi
         );
 --
-    eg_bx_0_parameter_i: work.obj_parameter
+    eg_bx_0_parameter_i: entity work.obj_parameter
         generic map(
             nr_obj => NR_EG_OBJECTS,
             type_obj => EG_TYPE
@@ -75,7 +75,7 @@
             conv_sin_phi => eg_bx_0_conv_sin_phi
         );
 --
-    mu_bx_0_parameter_i: work.obj_parameter
+    mu_bx_0_parameter_i: entity work.obj_parameter
         generic map(
             nr_obj => NR_MU_OBJECTS,
             type_obj => MU_TYPE
@@ -91,7 +91,7 @@
             sin_phi => mu_bx_0_sin_phi,
         );
 --
-    tau_bx_0_parameter_i: work.obj_parameter
+    tau_bx_0_parameter_i: entity work.obj_parameter
         generic map(
             nr_obj => NR_TAU_OBJECTS,
             type_obj => TAU_TYPE
@@ -1962,7 +1962,7 @@ algo(59) <= l1_loose_iso_eg28er2p1_jet34er2p5_d_r_min0p3;
 
 -- 238 L1_LooseIsoEG24er2p1_HTT100er : EG24[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg24er2p1_htt100er <= single_eg_i189 and single_htt_i190;
-algo(14) <= l1_loose_iso_eg24er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
@@ -1974,7 +1974,7 @@ algo(16) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(14) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 272 L1_DoubleIsoTau34er2p1 : comb{TAU34[TAU-ETA_2p13,TAU-ISO_0xE],TAU34[TAU-ETA_2p13,TAU-ISO_0xE]}
 l1_double_iso_tau34er2p1 <= double_tau_i207;

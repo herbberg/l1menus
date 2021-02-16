@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 48f82ba4-af1f-4952-928a-35303dfd8730
+-- f14c9037-6d1e-4e7e-b27d-8623d4518ba1
 
 -- Scale set:
 -- scales_2020_10_04
@@ -56,13 +56,13 @@ constant global_index: global_index_array := (
          17, -- module_index: 29, name: L1_SingleMu18
          22, -- module_index: 30, name: L1_SingleMu22_EMTF
          10, -- module_index: 31, name: L1_SingleMu5
-        102, -- module_index: 32, name: L1_Mu7_LooseIsoEG23er2p5
-         97, -- module_index: 33, name: L1_Mu7_EG20er2p5
-         96, -- module_index: 34, name: L1_Mu5_EG23er2p5
-         98, -- module_index: 35, name: L1_Mu7_EG23er2p5
-         12, -- module_index: 36, name: L1_SingleMu7
-        100, -- module_index: 37, name: L1_Mu5_LooseIsoEG20er2p5
-        101, -- module_index: 38, name: L1_Mu7_LooseIsoEG20er2p5
+         97, -- module_index: 32, name: L1_Mu7_EG20er2p5
+         96, -- module_index: 33, name: L1_Mu5_EG23er2p5
+         98, -- module_index: 34, name: L1_Mu7_EG23er2p5
+         12, -- module_index: 35, name: L1_SingleMu7
+        100, -- module_index: 36, name: L1_Mu5_LooseIsoEG20er2p5
+        101, -- module_index: 37, name: L1_Mu7_LooseIsoEG20er2p5
+        102, -- module_index: 38, name: L1_Mu7_LooseIsoEG23er2p5
         306, -- module_index: 39, name: L1_SingleMuOpenupt5
         372, -- module_index: 40, name: L1_TripleJet_95_75_65_DoubleJet_75_65_er2p5
         376, -- module_index: 41, name: L1_QuadJet_95_75_65_20_DoubleJet_75_65_er2p5_Jet20_FWD3p0

@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 48f82ba4-af1f-4952-928a-35303dfd8730
+-- f14c9037-6d1e-4e7e-b27d-8623d4518ba1
 
 -- Scale set:
 -- scales_2020_10_04
@@ -36,8 +36,8 @@ constant global_index: global_index_array := (
         484, -- module_index: 9, name: L1_BPTX_OR_Ref4_VME
         485, -- module_index: 10, name: L1_BPTX_RefAND_VME
         467, -- module_index: 11, name: L1_BptxMinus
-        465, -- module_index: 12, name: L1_BptxXOR
-        466, -- module_index: 13, name: L1_BptxPlus
+        466, -- module_index: 12, name: L1_BptxPlus
+        465, -- module_index: 13, name: L1_BptxXOR
         480, -- module_index: 14, name: L1_FirstCollisionInOrbit
         479, -- module_index: 15, name: L1_FirstCollisionInTrain
         500, -- module_index: 16, name: L1_HCAL_LaserMon_Trig
@@ -101,8 +101,8 @@ constant global_index: global_index_array := (
          78, -- module_index: 74, name: L1_TripleMu_5_3_3
          79, -- module_index: 75, name: L1_TripleMu_5_3_3_SQ
          77, -- module_index: 76, name: L1_TripleMu_5_3p5_2p5
-         84, -- module_index: 77, name: L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_Mass_5to17
-         83, -- module_index: 78, name: L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_OS_Mass_5to17
+         83, -- module_index: 77, name: L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_OS_Mass_5to17
+         84, -- module_index: 78, name: L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_Mass_5to17
          58, -- module_index: 79, name: L1_DoubleMu0er1p5_SQ_OS_dR_Max1p4
          61, -- module_index: 80, name: L1_DoubleMu4_SQ_OS_dR_Max1p2
          65, -- module_index: 81, name: L1_DoubleMu4p5er2p0_SQ_OS_Mass_Min7

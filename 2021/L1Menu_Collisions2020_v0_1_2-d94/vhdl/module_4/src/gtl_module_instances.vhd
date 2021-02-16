@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 48f82ba4-af1f-4952-928a-35303dfd8730
+-- f14c9037-6d1e-4e7e-b27d-8623d4518ba1
 
 -- Scale set:
 -- scales_2020_10_04
@@ -46,7 +46,7 @@
 
 -- Instantiations of pt, eta, phi, cosine phi and sine phi for correlation conditions (used for DETA, DPHI, DR, mass, overlap_remover and two-body pt) - once for every object type in certain bx used in correlation conditions
 
-    eg_bx_0_parameter_i: work.obj_parameter
+    eg_bx_0_parameter_i: entity work.obj_parameter
         generic map(
             nr_obj => NR_EG_OBJECTS,
             type_obj => EG_TYPE
@@ -63,7 +63,7 @@
             conv_sin_phi => eg_bx_0_conv_sin_phi
         );
 --
-    tau_bx_0_parameter_i: work.obj_parameter
+    tau_bx_0_parameter_i: entity work.obj_parameter
         generic map(
             nr_obj => NR_TAU_OBJECTS,
             type_obj => TAU_TYPE
@@ -80,7 +80,7 @@
             conv_sin_phi => tau_bx_0_conv_sin_phi
         );
 --
-    jet_bx_0_parameter_i: work.obj_parameter
+    jet_bx_0_parameter_i: entity work.obj_parameter
         generic map(
             nr_obj => NR_JET_OBJECTS,
             type_obj => JET_TYPE
@@ -97,7 +97,7 @@
             conv_sin_phi => jet_bx_0_conv_sin_phi
         );
 --
-    mu_bx_0_parameter_i: work.obj_parameter
+    mu_bx_0_parameter_i: entity work.obj_parameter
         generic map(
             nr_obj => NR_MU_OBJECTS,
             type_obj => MU_TYPE
@@ -113,7 +113,7 @@
             sin_phi => mu_bx_0_sin_phi,
         );
 --
-    etm_bx_0_parameter_i: work.obj_parameter
+    etm_bx_0_parameter_i: entity work.obj_parameter
         generic map(
             nr_obj => NR_ETM_OBJECTS,
             type_obj => ETM_TYPE
@@ -1757,7 +1757,7 @@ algo(31) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(36) <= l1_single_mu7;
+algo(35) <= l1_single_mu7;
 
 -- 17 L1_SingleMu18 : MU18[MU-QLTY_SNGL]
 l1_single_mu18 <= single_mu_i17;
@@ -1805,27 +1805,27 @@ algo(45) <= l1_quad_mu0_sq;
 
 -- 96 L1_Mu5_EG23er2p5 : MU5[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu5_eg23er2p5 <= single_mu_i10 and single_eg_i79;
-algo(34) <= l1_mu5_eg23er2p5;
+algo(33) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i12 and single_eg_i80;
-algo(33) <= l1_mu7_eg20er2p5;
+algo(32) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i12 and single_eg_i79;
-algo(35) <= l1_mu7_eg23er2p5;
+algo(34) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i10 and single_eg_i82;
-algo(37) <= l1_mu5_loose_iso_eg20er2p5;
+algo(36) <= l1_mu5_loose_iso_eg20er2p5;
 
 -- 101 L1_Mu7_LooseIsoEG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg20er2p5 <= single_mu_i12 and single_eg_i82;
-algo(38) <= l1_mu7_loose_iso_eg20er2p5;
+algo(37) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i12 and single_eg_i83;
-algo(32) <= l1_mu7_loose_iso_eg23er2p5;
+algo(38) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 112 L1_DoubleMu3_OS_DoubleEG7p5Upsilon : mass_inv{MU3[MU-QLTY_DBLE,MU-ETA_2p3],MU3[MU-QLTY_DBLE,MU-ETA_2p3]}[MASS_MASS_0to14,CHGCOR_OS] AND mass_inv{EG7p5[EG-ETA_2p13],EG7p5[EG-ETA_2p13]}[MASS_MASS_0to20]
 l1_double_mu3_os_double_eg7p5_upsilon <= invariant_mass_i92 and invariant_mass_i93;

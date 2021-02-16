@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 48f82ba4-af1f-4952-928a-35303dfd8730
+-- f14c9037-6d1e-4e7e-b27d-8623d4518ba1
 
 -- Scale set:
 -- scales_2020_10_04
@@ -38,8 +38,8 @@ constant global_index: global_index_array := (
         316, -- module_index: 11, name: L1_SingleJet35er2p5
         318, -- module_index: 12, name: L1_SingleJet90er2p5
         179, -- module_index: 13, name: L1_SingleLooseIsoEG28er2p1
-        238, -- module_index: 14, name: L1_LooseIsoEG24er2p1_HTT100er
-        241, -- module_index: 15, name: L1_LooseIsoEG30er2p1_HTT100er
+        241, -- module_index: 14, name: L1_LooseIsoEG30er2p1_HTT100er
+        238, -- module_index: 15, name: L1_LooseIsoEG24er2p1_HTT100er
         240, -- module_index: 16, name: L1_LooseIsoEG28er2p1_HTT100er
         239, -- module_index: 17, name: L1_LooseIsoEG26er2p1_HTT100er
         210, -- module_index: 18, name: L1_DoubleEG_27_14_er2p5
