@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- d764eeee-9302-4031-87a0-f07d17ef96fa
+-- 402775fd-a9f3-4c8f-abd3-f6c4406cd6da
 
 -- Scale set:
 -- scales_2020_10_04
@@ -248,7 +248,7 @@ jet_jet_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         calo_calo_cosh_deta_lut => JET_JET_COSH_DETA_LUT,
         calo_calo_cos_dphi_lut => JET_JET_COS_DPHI_LUT,
         deta_bins_width => JET_JET_DETA_BINS_WIDTH,
-        dphi_bins_width => JET_JET_DETA_BINS_WIDTH,
+        dphi_bins_width => JET_JET_DPHI_BINS_WIDTH,
         cosh_cos_vector_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
@@ -269,7 +269,7 @@ eg_jet_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         calo_calo_cosh_deta_lut => EG_JET_COSH_DETA_LUT,
         calo_calo_cos_dphi_lut => EG_JET_COS_DPHI_LUT,
         deta_bins_width => EG_JET_DETA_BINS_WIDTH,
-        dphi_bins_width => EG_JET_DETA_BINS_WIDTH,
+        dphi_bins_width => EG_JET_DPHI_BINS_WIDTH,
         cosh_cos_vector_width => EG_JET_COSH_COS_VECTOR_WIDTH,
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
@@ -290,7 +290,7 @@ jet_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         calo_muon_cosh_deta_lut => JET_MU_COSH_DETA_LUT,
         calo_muon_cos_dphi_lut => JET_MU_COS_DPHI_LUT,
         deta_bins_width => JET_MU_DETA_BINS_WIDTH,
-        dphi_bins_width => JET_MU_DETA_BINS_WIDTH,
+        dphi_bins_width => JET_MU_DPHI_BINS_WIDTH,
         cosh_cos_vector_width => JET_MU_COSH_COS_VECTOR_WIDTH,
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
@@ -311,7 +311,7 @@ tau_tau_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         calo_calo_cosh_deta_lut => TAU_TAU_COSH_DETA_LUT,
         calo_calo_cos_dphi_lut => TAU_TAU_COS_DPHI_LUT,
         deta_bins_width => TAU_TAU_DETA_BINS_WIDTH,
-        dphi_bins_width => TAU_TAU_DETA_BINS_WIDTH,
+        dphi_bins_width => TAU_TAU_DPHI_BINS_WIDTH,
         cosh_cos_vector_width => TAU_TAU_COSH_COS_VECTOR_WIDTH,
         nr_obj1 => NR_TAU_OBJECTS,
         type_obj1 => TAU_TYPE,
@@ -332,7 +332,7 @@ mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         muon_muon_cosh_deta_lut => MU_MU_COSH_DETA_LUT,
         muon_muon_cos_dphi_lut => MU_MU_COS_DPHI_LUT,
         deta_bins_width => MU_MU_DETA_BINS_WIDTH,
-        dphi_bins_width => MU_MU_DETA_BINS_WIDTH,
+        dphi_bins_width => MU_MU_DPHI_BINS_WIDTH,
         cosh_cos_vector_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
@@ -353,7 +353,7 @@ jet_tau_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         calo_calo_cosh_deta_lut => JET_TAU_COSH_DETA_LUT,
         calo_calo_cos_dphi_lut => JET_TAU_COS_DPHI_LUT,
         deta_bins_width => JET_TAU_DETA_BINS_WIDTH,
-        dphi_bins_width => JET_TAU_DETA_BINS_WIDTH,
+        dphi_bins_width => JET_TAU_DPHI_BINS_WIDTH,
         cosh_cos_vector_width => JET_TAU_COSH_COS_VECTOR_WIDTH,
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
@@ -2101,7 +2101,7 @@ algo(14) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(17) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
@@ -2109,7 +2109,7 @@ algo(15) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(17) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 272 L1_DoubleIsoTau34er2p1 : comb{TAU34[TAU-ETA_2p13,TAU-ISO_0xE],TAU34[TAU-ETA_2p13,TAU-ISO_0xE]}
 l1_double_iso_tau34er2p1 <= double_tau_i207;

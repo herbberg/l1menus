@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- d764eeee-9302-4031-87a0-f07d17ef96fa
+-- 402775fd-a9f3-4c8f-abd3-f6c4406cd6da
 
 -- Scale set:
 -- scales_2020_10_04
@@ -130,7 +130,7 @@ jet_jet_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         calo_calo_cosh_deta_lut => JET_JET_COSH_DETA_LUT,
         calo_calo_cos_dphi_lut => JET_JET_COS_DPHI_LUT,
         deta_bins_width => JET_JET_DETA_BINS_WIDTH,
-        dphi_bins_width => JET_JET_DETA_BINS_WIDTH,
+        dphi_bins_width => JET_JET_DPHI_BINS_WIDTH,
         cosh_cos_vector_width => JET_JET_COSH_COS_VECTOR_WIDTH,
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
@@ -151,7 +151,7 @@ jet_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         calo_muon_cosh_deta_lut => JET_MU_COSH_DETA_LUT,
         calo_muon_cos_dphi_lut => JET_MU_COS_DPHI_LUT,
         deta_bins_width => JET_MU_DETA_BINS_WIDTH,
-        dphi_bins_width => JET_MU_DETA_BINS_WIDTH,
+        dphi_bins_width => JET_MU_DPHI_BINS_WIDTH,
         cosh_cos_vector_width => JET_MU_COSH_COS_VECTOR_WIDTH,
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
