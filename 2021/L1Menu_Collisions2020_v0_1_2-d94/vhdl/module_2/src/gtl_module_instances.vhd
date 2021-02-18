@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 1b11f6f0-9543-4c0e-a422-8bccdff0d79e
+-- b9fc1ba5-48b0-4a17-aadb-a2a997ddc058
 
 -- Scale set:
 -- scales_2020_10_04
@@ -261,7 +261,7 @@ jet_jet_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         cosh_deta_vector => jet_jet_bx_0_bx_0_cosh_deta_vector,
         dphi_integer => jet_jet_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => jet_jet_bx_0_bx_0_dphi_bin_vector,
-        cosh_dphi_vector => jet_jet_bx_0_bx_0_cos_dphi_vector
+        cos_dphi_vector => jet_jet_bx_0_bx_0_cos_dphi_vector
     );
 --
 eg_jet_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
@@ -282,7 +282,7 @@ eg_jet_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         cosh_deta_vector => eg_jet_bx_0_bx_0_cosh_deta_vector,
         dphi_integer => eg_jet_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => eg_jet_bx_0_bx_0_dphi_bin_vector,
-        cosh_dphi_vector => eg_jet_bx_0_bx_0_cos_dphi_vector
+        cos_dphi_vector => eg_jet_bx_0_bx_0_cos_dphi_vector
     );
 --
 jet_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
@@ -303,7 +303,7 @@ jet_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         cosh_deta_vector => jet_mu_bx_0_bx_0_cosh_deta_vector,
         dphi_integer => jet_mu_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => jet_mu_bx_0_bx_0_dphi_bin_vector,
-        cosh_dphi_vector => jet_mu_bx_0_bx_0_cos_dphi_vector
+        cos_dphi_vector => jet_mu_bx_0_bx_0_cos_dphi_vector
     );
 --
 tau_tau_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
@@ -324,7 +324,7 @@ tau_tau_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         cosh_deta_vector => tau_tau_bx_0_bx_0_cosh_deta_vector,
         dphi_integer => tau_tau_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => tau_tau_bx_0_bx_0_dphi_bin_vector,
-        cosh_dphi_vector => tau_tau_bx_0_bx_0_cos_dphi_vector
+        cos_dphi_vector => tau_tau_bx_0_bx_0_cos_dphi_vector
     );
 --
 mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
@@ -345,7 +345,7 @@ mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         cosh_deta_vector => mu_mu_bx_0_bx_0_cosh_deta_vector,
         dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => mu_mu_bx_0_bx_0_dphi_bin_vector,
-        cosh_dphi_vector => mu_mu_bx_0_bx_0_cos_dphi_vector
+        cos_dphi_vector => mu_mu_bx_0_bx_0_cos_dphi_vector
     );
 --
 jet_tau_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
@@ -366,7 +366,7 @@ jet_tau_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         cosh_deta_vector => jet_tau_bx_0_bx_0_cosh_deta_vector,
         dphi_integer => jet_tau_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => jet_tau_bx_0_bx_0_dphi_bin_vector,
-        cosh_dphi_vector => jet_tau_bx_0_bx_0_cos_dphi_vector
+        cos_dphi_vector => jet_tau_bx_0_bx_0_cos_dphi_vector
     );
 --
 

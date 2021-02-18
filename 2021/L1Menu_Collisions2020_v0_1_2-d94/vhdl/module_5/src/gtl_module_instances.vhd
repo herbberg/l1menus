@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 1b11f6f0-9543-4c0e-a422-8bccdff0d79e
+-- b9fc1ba5-48b0-4a17-aadb-a2a997ddc058
 
 -- Scale set:
 -- scales_2020_10_04
@@ -26,16 +26,16 @@
 -- Instantiations of muon charge correlations - only once for a certain bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
-    port map(mu_bx_0, mu_bx_0,
-        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-        ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-        ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
     port map(mu_bx_m1, mu_bx_0,
         ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
         ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
         ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
+muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
+    port map(mu_bx_0, mu_bx_0,
+        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+        ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
+        ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo object type in certain bx used in correlation conditions
 
@@ -355,7 +355,7 @@ eg_tau_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         cosh_deta_vector => eg_tau_bx_0_bx_0_cosh_deta_vector,
         dphi_integer => eg_tau_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => eg_tau_bx_0_bx_0_dphi_bin_vector,
-        cosh_dphi_vector => eg_tau_bx_0_bx_0_cos_dphi_vector
+        cos_dphi_vector => eg_tau_bx_0_bx_0_cos_dphi_vector
     );
 --
 jet_jet_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
@@ -376,7 +376,7 @@ jet_jet_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         cosh_deta_vector => jet_jet_bx_0_bx_0_cosh_deta_vector,
         dphi_integer => jet_jet_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => jet_jet_bx_0_bx_0_dphi_bin_vector,
-        cosh_dphi_vector => jet_jet_bx_0_bx_0_cos_dphi_vector
+        cos_dphi_vector => jet_jet_bx_0_bx_0_cos_dphi_vector
     );
 --
 jet_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
@@ -397,7 +397,7 @@ jet_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         cosh_deta_vector => jet_mu_bx_0_bx_0_cosh_deta_vector,
         dphi_integer => jet_mu_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => jet_mu_bx_0_bx_0_dphi_bin_vector,
-        cosh_dphi_vector => jet_mu_bx_0_bx_0_cos_dphi_vector
+        cos_dphi_vector => jet_mu_bx_0_bx_0_cos_dphi_vector
     );
 --
 tau_tau_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
@@ -418,7 +418,7 @@ tau_tau_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         cosh_deta_vector => tau_tau_bx_0_bx_0_cosh_deta_vector,
         dphi_integer => tau_tau_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => tau_tau_bx_0_bx_0_dphi_bin_vector,
-        cosh_dphi_vector => tau_tau_bx_0_bx_0_cos_dphi_vector
+        cos_dphi_vector => tau_tau_bx_0_bx_0_cos_dphi_vector
     );
 --
 mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
@@ -439,7 +439,7 @@ mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         cosh_deta_vector => mu_mu_bx_0_bx_0_cosh_deta_vector,
         dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => mu_mu_bx_0_bx_0_dphi_bin_vector,
-        cosh_dphi_vector => mu_mu_bx_0_bx_0_cos_dphi_vector
+        cos_dphi_vector => mu_mu_bx_0_bx_0_cos_dphi_vector
     );
 --
 eg_eg_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
@@ -460,7 +460,7 @@ eg_eg_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         cosh_deta_vector => eg_eg_bx_0_bx_0_cosh_deta_vector,
         dphi_integer => eg_eg_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => eg_eg_bx_0_bx_0_dphi_bin_vector,
-        cosh_dphi_vector => eg_eg_bx_0_bx_0_cos_dphi_vector
+        cos_dphi_vector => eg_eg_bx_0_bx_0_cos_dphi_vector
     );
 --
 mu_mu_bx_m1_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
@@ -481,7 +481,7 @@ mu_mu_bx_m1_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         cosh_deta_vector => mu_mu_bx_m1_bx_0_cosh_deta_vector,
         dphi_integer => mu_mu_bx_m1_bx_0_dphi_integer,
         dphi_bin_vector => mu_mu_bx_m1_bx_0_dphi_bin_vector,
-        cosh_dphi_vector => mu_mu_bx_m1_bx_0_cos_dphi_vector
+        cos_dphi_vector => mu_mu_bx_m1_bx_0_cos_dphi_vector
     );
 --
 eg_etm_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
@@ -498,7 +498,7 @@ eg_etm_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
     port map(
         dphi_integer => eg_etm_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => eg_etm_bx_0_bx_0_dphi_bin_vector,
-        cosh_dphi_vector => eg_etm_bx_0_bx_0_cos_dphi_vector
+        cos_dphi_vector => eg_etm_bx_0_bx_0_cos_dphi_vector
     );
 --
 
