@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 9c0e19ef-bc01-42e4-9f70-913526f95aef
+-- 1b11f6f0-9543-4c0e-a422-8bccdff0d79e
 
 -- Scale set:
 -- scales_2020_10_04
@@ -337,68 +337,170 @@ eg_etm_bx_0_bx_0_differences_i: entity work.differences
 --
 -- Instantiations of cosh deta and cos dphi LUTs for correlation conditions (used for mass) - once for correlation conditions with two object types in certain bxs
 
-    eg_tau_bx_0_bx_0_cosh_cos_l1: for i in 0 to NR_EG_OBJECTS-1 generate
-        eg_tau_bx_0_bx_0_cosh_cos_l2: for j in 0 to NR_TAU_OBJECTS-1 generate
-            eg_tau_bx_0_bx_0_cosh_deta_vector(i,j)(EG_TAU_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(EG_TAU_COSH_DETA_LUT(eg_tau_bx_0_bx_0_deta_integer(i,j)), EG_TAU_COSH_COS_VECTOR_WIDTH);
-            eg_tau_bx_0_bx_0_cos_dphi_vector(i,j)(EG_TAU_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(EG_TAU_COS_DPHI_LUT(eg_tau_bx_0_bx_0_dphi_integer(i,j)), EG_TAU_COSH_COS_VECTOR_WIDTH);
-            eg_tau_bx_0_bx_0_deta_bin_vector(i,j)(EG_TAU_DETA_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(eg_tau_bx_0_bx_0_deta_integer(i,j), EG_TAU_DETA_BINS_WIDTH);
-            eg_tau_bx_0_bx_0_dphi_bin_vector(i,j)(EG_TAU_DPHI_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(eg_tau_bx_0_bx_0_dphi_integer(i,j), EG_TAU_DPHI_BINS_WIDTH);
-        end generate eg_tau_bx_0_bx_0_cosh_cos_l2;
-    end generate eg_tau_bx_0_bx_0_cosh_cos_l1;
-    jet_jet_bx_0_bx_0_cosh_cos_l1: for i in 0 to NR_JET_OBJECTS-1 generate
-        jet_jet_bx_0_bx_0_cosh_cos_l2: for j in 0 to NR_JET_OBJECTS-1 generate
-            jet_jet_bx_0_bx_0_cosh_deta_vector(i,j)(JET_JET_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(JET_JET_COSH_DETA_LUT(jet_jet_bx_0_bx_0_deta_integer(i,j)), JET_JET_COSH_COS_VECTOR_WIDTH);
-            jet_jet_bx_0_bx_0_cos_dphi_vector(i,j)(JET_JET_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(JET_JET_COS_DPHI_LUT(jet_jet_bx_0_bx_0_dphi_integer(i,j)), JET_JET_COSH_COS_VECTOR_WIDTH);
-            jet_jet_bx_0_bx_0_deta_bin_vector(i,j)(JET_JET_DETA_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_deta_integer(i,j), JET_JET_DETA_BINS_WIDTH);
-            jet_jet_bx_0_bx_0_dphi_bin_vector(i,j)(JET_JET_DPHI_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(jet_jet_bx_0_bx_0_dphi_integer(i,j), JET_JET_DPHI_BINS_WIDTH);
-        end generate jet_jet_bx_0_bx_0_cosh_cos_l2;
-    end generate jet_jet_bx_0_bx_0_cosh_cos_l1;
-    jet_mu_bx_0_bx_0_cosh_cos_l1: for i in 0 to NR_JET_OBJECTS-1 generate
-        jet_mu_bx_0_bx_0_cosh_cos_l2: for j in 0 to NR_MU_OBJECTS-1 generate
-            jet_mu_bx_0_bx_0_cosh_deta_vector(i,j)(JET_MU_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(JET_MU_COSH_DETA_LUT(jet_mu_bx_0_bx_0_deta_integer(i,j)), JET_MU_COSH_COS_VECTOR_WIDTH);
-            jet_mu_bx_0_bx_0_cos_dphi_vector(i,j)(JET_MU_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(JET_MU_COS_DPHI_LUT(jet_mu_bx_0_bx_0_dphi_integer(i,j)), JET_MU_COSH_COS_VECTOR_WIDTH);
-            jet_mu_bx_0_bx_0_deta_bin_vector(i,j)(JET_MU_DETA_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(jet_mu_bx_0_bx_0_deta_integer(i,j), JET_MU_DETA_BINS_WIDTH);
-            jet_mu_bx_0_bx_0_dphi_bin_vector(i,j)(JET_MU_DPHI_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(jet_mu_bx_0_bx_0_dphi_integer(i,j), JET_MU_DPHI_BINS_WIDTH);
-        end generate jet_mu_bx_0_bx_0_cosh_cos_l2;
-    end generate jet_mu_bx_0_bx_0_cosh_cos_l1;
-    tau_tau_bx_0_bx_0_cosh_cos_l1: for i in 0 to NR_TAU_OBJECTS-1 generate
-        tau_tau_bx_0_bx_0_cosh_cos_l2: for j in 0 to NR_TAU_OBJECTS-1 generate
-            tau_tau_bx_0_bx_0_cosh_deta_vector(i,j)(TAU_TAU_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(TAU_TAU_COSH_DETA_LUT(tau_tau_bx_0_bx_0_deta_integer(i,j)), TAU_TAU_COSH_COS_VECTOR_WIDTH);
-            tau_tau_bx_0_bx_0_cos_dphi_vector(i,j)(TAU_TAU_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(TAU_TAU_COS_DPHI_LUT(tau_tau_bx_0_bx_0_dphi_integer(i,j)), TAU_TAU_COSH_COS_VECTOR_WIDTH);
-            tau_tau_bx_0_bx_0_deta_bin_vector(i,j)(TAU_TAU_DETA_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(tau_tau_bx_0_bx_0_deta_integer(i,j), TAU_TAU_DETA_BINS_WIDTH);
-            tau_tau_bx_0_bx_0_dphi_bin_vector(i,j)(TAU_TAU_DPHI_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(tau_tau_bx_0_bx_0_dphi_integer(i,j), TAU_TAU_DPHI_BINS_WIDTH);
-        end generate tau_tau_bx_0_bx_0_cosh_cos_l2;
-    end generate tau_tau_bx_0_bx_0_cosh_cos_l1;
-    mu_mu_bx_0_bx_0_cosh_cos_l1: for i in 0 to NR_MU_OBJECTS-1 generate
-        mu_mu_bx_0_bx_0_cosh_cos_l2: for j in 0 to NR_MU_OBJECTS-1 generate
-            mu_mu_bx_0_bx_0_cosh_deta_vector(i,j)(MU_MU_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(MU_MU_COSH_DETA_LUT(mu_mu_bx_0_bx_0_deta_integer(i,j)), MU_MU_COSH_COS_VECTOR_WIDTH);
-            mu_mu_bx_0_bx_0_cos_dphi_vector(i,j)(MU_MU_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(MU_MU_COS_DPHI_LUT(mu_mu_bx_0_bx_0_dphi_integer(i,j)), MU_MU_COSH_COS_VECTOR_WIDTH);
-            mu_mu_bx_0_bx_0_deta_bin_vector(i,j)(MU_MU_DETA_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(mu_mu_bx_0_bx_0_deta_integer(i,j), MU_MU_DETA_BINS_WIDTH);
-            mu_mu_bx_0_bx_0_dphi_bin_vector(i,j)(MU_MU_DPHI_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(mu_mu_bx_0_bx_0_dphi_integer(i,j), MU_MU_DPHI_BINS_WIDTH);
-        end generate mu_mu_bx_0_bx_0_cosh_cos_l2;
-    end generate mu_mu_bx_0_bx_0_cosh_cos_l1;
-    eg_eg_bx_0_bx_0_cosh_cos_l1: for i in 0 to NR_EG_OBJECTS-1 generate
-        eg_eg_bx_0_bx_0_cosh_cos_l2: for j in 0 to NR_EG_OBJECTS-1 generate
-            eg_eg_bx_0_bx_0_cosh_deta_vector(i,j)(EG_EG_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(EG_EG_COSH_DETA_LUT(eg_eg_bx_0_bx_0_deta_integer(i,j)), EG_EG_COSH_COS_VECTOR_WIDTH);
-            eg_eg_bx_0_bx_0_cos_dphi_vector(i,j)(EG_EG_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(EG_EG_COS_DPHI_LUT(eg_eg_bx_0_bx_0_dphi_integer(i,j)), EG_EG_COSH_COS_VECTOR_WIDTH);
-            eg_eg_bx_0_bx_0_deta_bin_vector(i,j)(EG_EG_DETA_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(eg_eg_bx_0_bx_0_deta_integer(i,j), EG_EG_DETA_BINS_WIDTH);
-            eg_eg_bx_0_bx_0_dphi_bin_vector(i,j)(EG_EG_DPHI_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(eg_eg_bx_0_bx_0_dphi_integer(i,j), EG_EG_DPHI_BINS_WIDTH);
-        end generate eg_eg_bx_0_bx_0_cosh_cos_l2;
-    end generate eg_eg_bx_0_bx_0_cosh_cos_l1;
-    mu_mu_bx_m1_bx_0_cosh_cos_l1: for i in 0 to NR_MU_OBJECTS-1 generate
-        mu_mu_bx_m1_bx_0_cosh_cos_l2: for j in 0 to NR_MU_OBJECTS-1 generate
-            mu_mu_bx_m1_bx_0_cosh_deta_vector(i,j)(MU_MU_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(MU_MU_COSH_DETA_LUT(mu_mu_bx_m1_bx_0_deta_integer(i,j)), MU_MU_COSH_COS_VECTOR_WIDTH);
-            mu_mu_bx_m1_bx_0_cos_dphi_vector(i,j)(MU_MU_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(MU_MU_COS_DPHI_LUT(mu_mu_bx_m1_bx_0_dphi_integer(i,j)), MU_MU_COSH_COS_VECTOR_WIDTH);
-            mu_mu_bx_m1_bx_0_deta_bin_vector(i,j)(MU_MU_DETA_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(mu_mu_bx_m1_bx_0_deta_integer(i,j), MU_MU_DETA_BINS_WIDTH);
-            mu_mu_bx_m1_bx_0_dphi_bin_vector(i,j)(MU_MU_DPHI_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(mu_mu_bx_m1_bx_0_dphi_integer(i,j), MU_MU_DPHI_BINS_WIDTH);
-        end generate mu_mu_bx_m1_bx_0_cosh_cos_l2;
-    end generate mu_mu_bx_m1_bx_0_cosh_cos_l1;
-    eg_etm_bx_0_bx_0_cos_dphi_l1: for i in 0 to NR_EG_OBJECTS-1 generate
-        eg_etm_bx_0_bx_0_cos_dphi_l2: for j in 0 to NR_ETM_OBJECTS-1 generate
-            eg_etm_bx_0_bx_0_cos_dphi_vector(i,j)(EG_ETM_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(EG_ETM_COS_DPHI_LUT(eg_etm_bx_0_bx_0_dphi_integer(i,j)), EG_ETM_COSH_COS_VECTOR_WIDTH);
-        end generate eg_etm_bx_0_bx_0_cos_dphi_l2;
-    end generate eg_etm_bx_0_bx_0_cos_dphi_l1;
-
+eg_tau_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
+    generic map(
+        calo_calo_cosh_deta_lut => EG_TAU_COSH_DETA_LUT,
+        calo_calo_cos_dphi_lut => EG_TAU_COS_DPHI_LUT,
+        deta_bins_width => EG_TAU_DETA_BINS_WIDTH,
+        dphi_bins_width => EG_TAU_DETA_BINS_WIDTH,
+        cosh_cos_vector_width => EG_TAU_COSH_COS_VECTOR_WIDTH,
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_TAU_OBJECTS,
+        type_obj2 => TAU_TYPE
+    )
+    port map(
+        deta_integer => eg_tau_bx_0_bx_0_deta_integer,
+        deta_bin_vector => eg_tau_bx_0_bx_0_deta_bin_vector,
+        cosh_deta_vector => eg_tau_bx_0_bx_0_cosh_deta_vector,
+        dphi_integer => eg_tau_bx_0_bx_0_dphi_integer,
+        dphi_bin_vector => eg_tau_bx_0_bx_0_dphi_bin_vector,
+        cosh_dphi_vector => eg_tau_bx_0_bx_0_cos_dphi_vector
+    );
+--
+jet_jet_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
+    generic map(
+        calo_calo_cosh_deta_lut => JET_JET_COSH_DETA_LUT,
+        calo_calo_cos_dphi_lut => JET_JET_COS_DPHI_LUT,
+        deta_bins_width => JET_JET_DETA_BINS_WIDTH,
+        dphi_bins_width => JET_JET_DETA_BINS_WIDTH,
+        cosh_cos_vector_width => JET_JET_COSH_COS_VECTOR_WIDTH,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_JET_OBJECTS,
+        type_obj2 => JET_TYPE
+    )
+    port map(
+        deta_integer => jet_jet_bx_0_bx_0_deta_integer,
+        deta_bin_vector => jet_jet_bx_0_bx_0_deta_bin_vector,
+        cosh_deta_vector => jet_jet_bx_0_bx_0_cosh_deta_vector,
+        dphi_integer => jet_jet_bx_0_bx_0_dphi_integer,
+        dphi_bin_vector => jet_jet_bx_0_bx_0_dphi_bin_vector,
+        cosh_dphi_vector => jet_jet_bx_0_bx_0_cos_dphi_vector
+    );
+--
+jet_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
+    generic map(
+        calo_muon_cosh_deta_lut => JET_MU_COSH_DETA_LUT,
+        calo_muon_cos_dphi_lut => JET_MU_COS_DPHI_LUT,
+        deta_bins_width => JET_MU_DETA_BINS_WIDTH,
+        dphi_bins_width => JET_MU_DETA_BINS_WIDTH,
+        cosh_cos_vector_width => JET_MU_COSH_COS_VECTOR_WIDTH,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
+    )
+    port map(
+        deta_integer => jet_mu_bx_0_bx_0_deta_integer,
+        deta_bin_vector => jet_mu_bx_0_bx_0_deta_bin_vector,
+        cosh_deta_vector => jet_mu_bx_0_bx_0_cosh_deta_vector,
+        dphi_integer => jet_mu_bx_0_bx_0_dphi_integer,
+        dphi_bin_vector => jet_mu_bx_0_bx_0_dphi_bin_vector,
+        cosh_dphi_vector => jet_mu_bx_0_bx_0_cos_dphi_vector
+    );
+--
+tau_tau_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
+    generic map(
+        calo_calo_cosh_deta_lut => TAU_TAU_COSH_DETA_LUT,
+        calo_calo_cos_dphi_lut => TAU_TAU_COS_DPHI_LUT,
+        deta_bins_width => TAU_TAU_DETA_BINS_WIDTH,
+        dphi_bins_width => TAU_TAU_DETA_BINS_WIDTH,
+        cosh_cos_vector_width => TAU_TAU_COSH_COS_VECTOR_WIDTH,
+        nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
+        nr_obj2 => NR_TAU_OBJECTS,
+        type_obj2 => TAU_TYPE
+    )
+    port map(
+        deta_integer => tau_tau_bx_0_bx_0_deta_integer,
+        deta_bin_vector => tau_tau_bx_0_bx_0_deta_bin_vector,
+        cosh_deta_vector => tau_tau_bx_0_bx_0_cosh_deta_vector,
+        dphi_integer => tau_tau_bx_0_bx_0_dphi_integer,
+        dphi_bin_vector => tau_tau_bx_0_bx_0_dphi_bin_vector,
+        cosh_dphi_vector => tau_tau_bx_0_bx_0_cos_dphi_vector
+    );
+--
+mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
+    generic map(
+        muon_muon_cosh_deta_lut => MU_MU_COSH_DETA_LUT,
+        muon_muon_cos_dphi_lut => MU_MU_COS_DPHI_LUT,
+        deta_bins_width => MU_MU_DETA_BINS_WIDTH,
+        dphi_bins_width => MU_MU_DETA_BINS_WIDTH,
+        cosh_cos_vector_width => MU_MU_COSH_COS_VECTOR_WIDTH,
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
+    )
+    port map(
+        deta_integer => mu_mu_bx_0_bx_0_deta_integer,
+        deta_bin_vector => mu_mu_bx_0_bx_0_deta_bin_vector,
+        cosh_deta_vector => mu_mu_bx_0_bx_0_cosh_deta_vector,
+        dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
+        dphi_bin_vector => mu_mu_bx_0_bx_0_dphi_bin_vector,
+        cosh_dphi_vector => mu_mu_bx_0_bx_0_cos_dphi_vector
+    );
+--
+eg_eg_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
+    generic map(
+        calo_calo_cosh_deta_lut => EG_EG_COSH_DETA_LUT,
+        calo_calo_cos_dphi_lut => EG_EG_COS_DPHI_LUT,
+        deta_bins_width => EG_EG_DETA_BINS_WIDTH,
+        dphi_bins_width => EG_EG_DETA_BINS_WIDTH,
+        cosh_cos_vector_width => EG_EG_COSH_COS_VECTOR_WIDTH,
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_EG_OBJECTS,
+        type_obj2 => EG_TYPE
+    )
+    port map(
+        deta_integer => eg_eg_bx_0_bx_0_deta_integer,
+        deta_bin_vector => eg_eg_bx_0_bx_0_deta_bin_vector,
+        cosh_deta_vector => eg_eg_bx_0_bx_0_cosh_deta_vector,
+        dphi_integer => eg_eg_bx_0_bx_0_dphi_integer,
+        dphi_bin_vector => eg_eg_bx_0_bx_0_dphi_bin_vector,
+        cosh_dphi_vector => eg_eg_bx_0_bx_0_cos_dphi_vector
+    );
+--
+mu_mu_bx_m1_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
+    generic map(
+        muon_muon_cosh_deta_lut => MU_MU_COSH_DETA_LUT,
+        muon_muon_cos_dphi_lut => MU_MU_COS_DPHI_LUT,
+        deta_bins_width => MU_MU_DETA_BINS_WIDTH,
+        dphi_bins_width => MU_MU_DETA_BINS_WIDTH,
+        cosh_cos_vector_width => MU_MU_COSH_COS_VECTOR_WIDTH,
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
+    )
+    port map(
+        deta_integer => mu_mu_bx_m1_bx_0_deta_integer,
+        deta_bin_vector => mu_mu_bx_m1_bx_0_deta_bin_vector,
+        cosh_deta_vector => mu_mu_bx_m1_bx_0_cosh_deta_vector,
+        dphi_integer => mu_mu_bx_m1_bx_0_dphi_integer,
+        dphi_bin_vector => mu_mu_bx_m1_bx_0_dphi_bin_vector,
+        cosh_dphi_vector => mu_mu_bx_m1_bx_0_cos_dphi_vector
+    );
+--
+eg_etm_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
+    generic map(
+        calo_calo_cos_dphi_lut => EG_ETM_COS_DPHI_LUT,
+        deta_bins_width => EG_ETM_DETA_BINS_WIDTH,
+        dphi_bins_width => EG_ETM_DETA_BINS_WIDTH,
+        cosh_cos_vector_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_ETM_OBJECTS,
+        type_obj2 => ETM_TYPE
+    )
+    port map(
+        dphi_integer => eg_etm_bx_0_bx_0_dphi_integer,
+        dphi_bin_vector => eg_etm_bx_0_bx_0_dphi_bin_vector,
+        cosh_dphi_vector => eg_etm_bx_0_bx_0_cos_dphi_vector
+    );
+--
 
 -- Instantiations of conditions
 double_eg_i171_i: entity work.comb_conditions
