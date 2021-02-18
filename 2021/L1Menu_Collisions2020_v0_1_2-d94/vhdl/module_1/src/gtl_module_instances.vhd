@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 402775fd-a9f3-4c8f-abd3-f6c4406cd6da
+-- c812d600-6e05-4e59-b31f-c91932ea7c15
 
 -- Scale set:
 -- scales_2020_10_04
@@ -259,11 +259,11 @@ jet_jet_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         type_obj2 => JET_TYPE
     )
     port map(
+        dphi_integer => jet_jet_bx_0_bx_0_dphi_integer,
         deta_integer => jet_jet_bx_0_bx_0_deta_integer,
         deta_bin_vector => jet_jet_bx_0_bx_0_deta_bin_vector,
-        cosh_deta_vector => jet_jet_bx_0_bx_0_cosh_deta_vector,
-        dphi_integer => jet_jet_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => jet_jet_bx_0_bx_0_dphi_bin_vector,
+        cosh_deta_vector => jet_jet_bx_0_bx_0_cosh_deta_vector,
         cos_dphi_vector => jet_jet_bx_0_bx_0_cos_dphi_vector
     );
 --
@@ -280,11 +280,11 @@ eg_jet_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         type_obj2 => JET_TYPE
     )
     port map(
+        dphi_integer => eg_jet_bx_0_bx_0_dphi_integer,
         deta_integer => eg_jet_bx_0_bx_0_deta_integer,
         deta_bin_vector => eg_jet_bx_0_bx_0_deta_bin_vector,
-        cosh_deta_vector => eg_jet_bx_0_bx_0_cosh_deta_vector,
-        dphi_integer => eg_jet_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => eg_jet_bx_0_bx_0_dphi_bin_vector,
+        cosh_deta_vector => eg_jet_bx_0_bx_0_cosh_deta_vector,
         cos_dphi_vector => eg_jet_bx_0_bx_0_cos_dphi_vector
     );
 --
@@ -301,11 +301,11 @@ eg_tau_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         type_obj2 => TAU_TYPE
     )
     port map(
+        dphi_integer => eg_tau_bx_0_bx_0_dphi_integer,
         deta_integer => eg_tau_bx_0_bx_0_deta_integer,
         deta_bin_vector => eg_tau_bx_0_bx_0_deta_bin_vector,
-        cosh_deta_vector => eg_tau_bx_0_bx_0_cosh_deta_vector,
-        dphi_integer => eg_tau_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => eg_tau_bx_0_bx_0_dphi_bin_vector,
+        cosh_deta_vector => eg_tau_bx_0_bx_0_cosh_deta_vector,
         cos_dphi_vector => eg_tau_bx_0_bx_0_cos_dphi_vector
     );
 --
@@ -322,11 +322,11 @@ jet_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         type_obj2 => MU_TYPE
     )
     port map(
+        dphi_integer => jet_mu_bx_0_bx_0_dphi_integer,
         deta_integer => jet_mu_bx_0_bx_0_deta_integer,
         deta_bin_vector => jet_mu_bx_0_bx_0_deta_bin_vector,
-        cosh_deta_vector => jet_mu_bx_0_bx_0_cosh_deta_vector,
-        dphi_integer => jet_mu_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => jet_mu_bx_0_bx_0_dphi_bin_vector,
+        cosh_deta_vector => jet_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi_vector => jet_mu_bx_0_bx_0_cos_dphi_vector
     );
 --
@@ -343,11 +343,11 @@ mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         type_obj2 => MU_TYPE
     )
     port map(
+        dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
         deta_integer => mu_mu_bx_0_bx_0_deta_integer,
         deta_bin_vector => mu_mu_bx_0_bx_0_deta_bin_vector,
-        cosh_deta_vector => mu_mu_bx_0_bx_0_cosh_deta_vector,
-        dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
         dphi_bin_vector => mu_mu_bx_0_bx_0_dphi_bin_vector,
+        cosh_deta_vector => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi_vector => mu_mu_bx_0_bx_0_cos_dphi_vector
     );
 --
