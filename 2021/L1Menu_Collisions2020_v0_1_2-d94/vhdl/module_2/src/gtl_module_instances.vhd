@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 5db5bf8e-b584-481e-859f-bcce6e14297d
+-- 4566c0a2-d07e-4fe0-b4ec-d97d9c249836
 
 -- Scale set:
 -- scales_2020_10_04
@@ -26,162 +26,209 @@
 -- Instantiations of muon charge correlations - only once for a certain bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-    muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
-        port map(mu_bx_0, mu_bx_0,
-            ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-            ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-            ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
+muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
+    port map(mu_bx_0, mu_bx_0,
+        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+        ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
+        ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo object type in certain bx used in correlation conditions
 
-    jet_bx_0_conv_2_muon_l: for i in 0 to NR_JET_OBJECTS-1 generate
-        jet_bx_0_eta_conv_2_muon_eta_integer(i) <= JET_ETA_CONV_2_MUON_ETA_LUT(CONV_INTEGER(jet_bx_0(i)(D_S_I_JET_V2.eta_high downto D_S_I_JET_V2.eta_low)));
-        jet_bx_0_phi_conv_2_muon_phi_integer(i) <= JET_PHI_CONV_2_MUON_PHI_LUT(CONV_INTEGER(jet_bx_0(i)(D_S_I_JET_V2.phi_high downto D_S_I_JET_V2.phi_low)));
-    end generate jet_bx_0_conv_2_muon_l;
-
+jet_bx_0_conv_eta_phi_i: entity work.conv_eta_phi
+    generic map(
+        nr_obj => NR_JET_OBJECTS,
+        type_obj => JET_TYPE
+    )
+    port map(
+        calo => jet_bx_0,
+        eta_conv => jet_bx_0_eta_conv_2_muon_eta_integer,
+        phi_conv => jet_bx_0_phi_conv_2_muon_phi_integer
+    );
+--
 -- Instantiations of pt, eta, phi, cosine phi and sine phi for correlation conditions (used for DETA, DPHI, DR, mass, overlap_remover and two-body pt) - once for every object type in certain bx used in correlation conditions
 
-    jet_bx_0_parameter_i: entity work.obj_parameter
-        generic map(
-            nr_obj => NR_JET_OBJECTS,
-            type_obj => JET_TYPE
-        )
-        port map(
-            calo => jet_bx_0,
-            phi_conv_2_muon_phi_integer => jet_bx_0_phi_conv_2_muon_phi_integer,
-            pt_vector => jet_bx_0_pt_vector,
-            eta_integer => jet_bx_0_eta_integer,
-            phi_integer => jet_bx_0_phi_integer,
-            cos_phi => jet_bx_0_cos_phi,
-            sin_phi => jet_bx_0_sin_phi,
-            conv_cos_phi => jet_bx_0_conv_cos_phi,
-            conv_sin_phi => jet_bx_0_conv_sin_phi
-        );
+jet_bx_0_parameter_i: entity work.obj_parameter
+    generic map(
+        nr_obj => NR_JET_OBJECTS,
+        type_obj => JET_TYPE
+    )
+    port map(
+        calo => jet_bx_0,
+        phi_conv_2_muon_phi_integer => jet_bx_0_phi_conv_2_muon_phi_integer,
+        pt_vector => jet_bx_0_pt_vector,
+        eta_integer => jet_bx_0_eta_integer,
+        phi_integer => jet_bx_0_phi_integer,
+        cos_phi => jet_bx_0_cos_phi,
+        sin_phi => jet_bx_0_sin_phi,
+        conv_cos_phi => jet_bx_0_conv_cos_phi,
+        conv_sin_phi => jet_bx_0_conv_sin_phi
+    );
 --
-    eg_bx_0_parameter_i: entity work.obj_parameter
-        generic map(
-            nr_obj => NR_EG_OBJECTS,
-            type_obj => EG_TYPE
-        )
-        port map(
-            calo => eg_bx_0,
-            phi_conv_2_muon_phi_integer => eg_bx_0_phi_conv_2_muon_phi_integer,
-            pt_vector => eg_bx_0_pt_vector,
-            eta_integer => eg_bx_0_eta_integer,
-            phi_integer => eg_bx_0_phi_integer,
-            cos_phi => eg_bx_0_cos_phi,
-            sin_phi => eg_bx_0_sin_phi,
-            conv_cos_phi => eg_bx_0_conv_cos_phi,
-            conv_sin_phi => eg_bx_0_conv_sin_phi
-        );
+eg_bx_0_parameter_i: entity work.obj_parameter
+    generic map(
+        nr_obj => NR_EG_OBJECTS,
+        type_obj => EG_TYPE
+    )
+    port map(
+        calo => eg_bx_0,
+        phi_conv_2_muon_phi_integer => eg_bx_0_phi_conv_2_muon_phi_integer,
+        pt_vector => eg_bx_0_pt_vector,
+        eta_integer => eg_bx_0_eta_integer,
+        phi_integer => eg_bx_0_phi_integer,
+        cos_phi => eg_bx_0_cos_phi,
+        sin_phi => eg_bx_0_sin_phi,
+        conv_cos_phi => eg_bx_0_conv_cos_phi,
+        conv_sin_phi => eg_bx_0_conv_sin_phi
+    );
 --
-    mu_bx_0_parameter_i: entity work.obj_parameter
-        generic map(
-            nr_obj => NR_MU_OBJECTS,
-            type_obj => MU_TYPE
-        )
-        port map(
-            muon => mu_bx_0,
-            pt_vector => mu_bx_0_pt_vector,
-            upt_vector => mu_bx_0_upt_vector,
-            eta_integer => mu_bx_0_eta_integer,
-            phi_integer => mu_bx_0_phi_integer,
-            cos_phi => mu_bx_0_cos_phi,
-            sin_phi => mu_bx_0_sin_phi
-        );
+mu_bx_0_parameter_i: entity work.obj_parameter
+    generic map(
+        nr_obj => NR_MU_OBJECTS,
+        type_obj => MU_TYPE
+    )
+    port map(
+        muon => mu_bx_0,
+        pt_vector => mu_bx_0_pt_vector,
+        upt_vector => mu_bx_0_upt_vector,
+        eta_integer => mu_bx_0_eta_integer,
+        phi_integer => mu_bx_0_phi_integer,
+        cos_phi => mu_bx_0_cos_phi,
+        sin_phi => mu_bx_0_sin_phi
+    );
 --
-    tau_bx_0_parameter_i: entity work.obj_parameter
-        generic map(
-            nr_obj => NR_TAU_OBJECTS,
-            type_obj => TAU_TYPE
-        )
-        port map(
-            calo => tau_bx_0,
-            phi_conv_2_muon_phi_integer => tau_bx_0_phi_conv_2_muon_phi_integer,
-            pt_vector => tau_bx_0_pt_vector,
-            eta_integer => tau_bx_0_eta_integer,
-            phi_integer => tau_bx_0_phi_integer,
-            cos_phi => tau_bx_0_cos_phi,
-            sin_phi => tau_bx_0_sin_phi,
-            conv_cos_phi => tau_bx_0_conv_cos_phi,
-            conv_sin_phi => tau_bx_0_conv_sin_phi
-        );
+tau_bx_0_parameter_i: entity work.obj_parameter
+    generic map(
+        nr_obj => NR_TAU_OBJECTS,
+        type_obj => TAU_TYPE
+    )
+    port map(
+        calo => tau_bx_0,
+        phi_conv_2_muon_phi_integer => tau_bx_0_phi_conv_2_muon_phi_integer,
+        pt_vector => tau_bx_0_pt_vector,
+        eta_integer => tau_bx_0_eta_integer,
+        phi_integer => tau_bx_0_phi_integer,
+        cos_phi => tau_bx_0_cos_phi,
+        sin_phi => tau_bx_0_sin_phi,
+        conv_cos_phi => tau_bx_0_conv_cos_phi,
+        conv_sin_phi => tau_bx_0_conv_sin_phi
+    );
 --
 -- Instantiations of differences for correlation conditions (used for DETA, DPHI, DR, mass and two-body pt) - once for correlation conditions with two object types in certain bxs
 
-    jet_jet_bx_0_bx_0_deta_i: entity work.sub_eta_integer_obj_vs_obj
-        generic map(NR_JET_OBJECTS, NR_JET_OBJECTS)
-        port map(jet_bx_0_eta_integer, jet_bx_0_eta_integer, jet_jet_bx_0_bx_0_deta_integer);
-    jet_jet_bx_0_bx_0_dphi_i: entity work.sub_phi_integer_obj_vs_obj
-        generic map(NR_JET_OBJECTS, NR_JET_OBJECTS, CALO_PHI_HALF_RANGE_BINS)
-        port map(jet_bx_0_phi_integer, jet_bx_0_phi_integer, jet_jet_bx_0_bx_0_dphi_integer);
-    jet_jet_bx_0_bx_0_l1: for i in 0 to NR_JET_OBJECTS-1 generate
-        jet_jet_bx_0_bx_0_l2: for j in 0 to NR_JET_OBJECTS-1 generate
-            jet_jet_bx_0_bx_0_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_JET_DIFF_ETA_LUT(jet_jet_bx_0_bx_0_deta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
-            jet_jet_bx_0_bx_0_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_JET_DIFF_PHI_LUT(jet_jet_bx_0_bx_0_dphi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
-        end generate jet_jet_bx_0_bx_0_l2;
-    end generate jet_jet_bx_0_bx_0_l1;
-    eg_jet_bx_0_bx_0_deta_i: entity work.sub_eta_integer_obj_vs_obj
-        generic map(NR_EG_OBJECTS, NR_JET_OBJECTS)
-        port map(eg_bx_0_eta_integer, jet_bx_0_eta_integer, eg_jet_bx_0_bx_0_deta_integer);
-    eg_jet_bx_0_bx_0_dphi_i: entity work.sub_phi_integer_obj_vs_obj
-        generic map(NR_EG_OBJECTS, NR_JET_OBJECTS, CALO_PHI_HALF_RANGE_BINS)
-        port map(eg_bx_0_phi_integer, jet_bx_0_phi_integer, eg_jet_bx_0_bx_0_dphi_integer);
-    eg_jet_bx_0_bx_0_l1: for i in 0 to NR_EG_OBJECTS-1 generate
-        eg_jet_bx_0_bx_0_l2: for j in 0 to NR_JET_OBJECTS-1 generate
-            eg_jet_bx_0_bx_0_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_JET_DIFF_ETA_LUT(eg_jet_bx_0_bx_0_deta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
-            eg_jet_bx_0_bx_0_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(EG_JET_DIFF_PHI_LUT(eg_jet_bx_0_bx_0_dphi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
-        end generate eg_jet_bx_0_bx_0_l2;
-    end generate eg_jet_bx_0_bx_0_l1;
-    jet_mu_bx_0_bx_0_deta_i: entity work.sub_eta_integer_obj_vs_obj
-        generic map(NR_JET_OBJECTS, NR_MU_OBJECTS)
-        port map(jet_bx_0_eta_conv_2_muon_eta_integer, mu_bx_0_eta_integer, jet_mu_bx_0_bx_0_deta_integer);
-    jet_mu_bx_0_bx_0_dphi_i: entity work.sub_phi_integer_obj_vs_obj
-        generic map(NR_JET_OBJECTS, NR_MU_OBJECTS, MUON_PHI_HALF_RANGE_BINS)
-        port map(jet_bx_0_phi_conv_2_muon_phi_integer, mu_bx_0_phi_integer, jet_mu_bx_0_bx_0_dphi_integer);
-    jet_mu_bx_0_bx_0_l1: for i in 0 to NR_JET_OBJECTS-1 generate
-        jet_mu_bx_0_bx_0_l2: for j in 0 to NR_MU_OBJECTS-1 generate
-            jet_mu_bx_0_bx_0_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_MU_DIFF_ETA_LUT(jet_mu_bx_0_bx_0_deta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
-            jet_mu_bx_0_bx_0_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_MU_DIFF_PHI_LUT(jet_mu_bx_0_bx_0_dphi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
-        end generate jet_mu_bx_0_bx_0_l2;
-    end generate jet_mu_bx_0_bx_0_l1;
-    tau_tau_bx_0_bx_0_deta_i: entity work.sub_eta_integer_obj_vs_obj
-        generic map(NR_TAU_OBJECTS, NR_TAU_OBJECTS)
-        port map(tau_bx_0_eta_integer, tau_bx_0_eta_integer, tau_tau_bx_0_bx_0_deta_integer);
-    tau_tau_bx_0_bx_0_dphi_i: entity work.sub_phi_integer_obj_vs_obj
-        generic map(NR_TAU_OBJECTS, NR_TAU_OBJECTS, CALO_PHI_HALF_RANGE_BINS)
-        port map(tau_bx_0_phi_integer, tau_bx_0_phi_integer, tau_tau_bx_0_bx_0_dphi_integer);
-    tau_tau_bx_0_bx_0_l1: for i in 0 to NR_TAU_OBJECTS-1 generate
-        tau_tau_bx_0_bx_0_l2: for j in 0 to NR_TAU_OBJECTS-1 generate
-            tau_tau_bx_0_bx_0_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(TAU_TAU_DIFF_ETA_LUT(tau_tau_bx_0_bx_0_deta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
-            tau_tau_bx_0_bx_0_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(TAU_TAU_DIFF_PHI_LUT(tau_tau_bx_0_bx_0_dphi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
-        end generate tau_tau_bx_0_bx_0_l2;
-    end generate tau_tau_bx_0_bx_0_l1;
-    mu_mu_bx_0_bx_0_deta_i: entity work.sub_eta_integer_obj_vs_obj
-        generic map(NR_MU_OBJECTS, NR_MU_OBJECTS)
-        port map(mu_bx_0_eta_integer, mu_bx_0_eta_integer, mu_mu_bx_0_bx_0_deta_integer);
-    mu_mu_bx_0_bx_0_dphi_i: entity work.sub_phi_integer_obj_vs_obj
-        generic map(NR_MU_OBJECTS, NR_MU_OBJECTS, MUON_PHI_HALF_RANGE_BINS)
-        port map(mu_bx_0_phi_integer, mu_bx_0_phi_integer, mu_mu_bx_0_bx_0_dphi_integer);
-    mu_mu_bx_0_bx_0_l1: for i in 0 to NR_MU_OBJECTS-1 generate
-        mu_mu_bx_0_bx_0_l2: for j in 0 to NR_MU_OBJECTS-1 generate
-            mu_mu_bx_0_bx_0_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(MU_MU_DIFF_ETA_LUT(mu_mu_bx_0_bx_0_deta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
-            mu_mu_bx_0_bx_0_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(MU_MU_DIFF_PHI_LUT(mu_mu_bx_0_bx_0_dphi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
-        end generate mu_mu_bx_0_bx_0_l2;
-    end generate mu_mu_bx_0_bx_0_l1;
-    jet_tau_bx_0_bx_0_deta_i: entity work.sub_eta_integer_obj_vs_obj
-        generic map(NR_JET_OBJECTS, NR_TAU_OBJECTS)
-        port map(jet_bx_0_eta_integer, tau_bx_0_eta_integer, jet_tau_bx_0_bx_0_deta_integer);
-    jet_tau_bx_0_bx_0_dphi_i: entity work.sub_phi_integer_obj_vs_obj
-        generic map(NR_JET_OBJECTS, NR_TAU_OBJECTS, CALO_PHI_HALF_RANGE_BINS)
-        port map(jet_bx_0_phi_integer, tau_bx_0_phi_integer, jet_tau_bx_0_bx_0_dphi_integer);
-    jet_tau_bx_0_bx_0_l1: for i in 0 to NR_JET_OBJECTS-1 generate
-        jet_tau_bx_0_bx_0_l2: for j in 0 to NR_TAU_OBJECTS-1 generate
-            jet_tau_bx_0_bx_0_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_TAU_DIFF_ETA_LUT(jet_tau_bx_0_bx_0_deta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
-            jet_tau_bx_0_bx_0_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(JET_TAU_DIFF_PHI_LUT(jet_tau_bx_0_bx_0_dphi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
-        end generate jet_tau_bx_0_bx_0_l2;
-    end generate jet_tau_bx_0_bx_0_l1;
-
+jet_jet_bx_0_bx_0_differences_i: entity work.differences
+    generic map(
+        calo_calo_deta_lut => JET_JET_DIFF_ETA_LUT,
+        calo_calo_dphi_lut => JET_JET_DIFF_PHI_LUT,
+        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_JET_OBJECTS,
+        type_obj2 => JET_TYPE
+    )
+    port map(
+        eta_integer_obj1 => jet_bx_0_eta_integer,
+        phi_integer_obj1 => jet_bx_0_phi_integer,
+        eta_integer_obj2 => jet_bx_0_eta_integer,
+        phi_integer_obj2 => jet_bx_0_phi_integer,
+        deta_vector => jet_jet_bx_0_bx_0_deta_vector,
+        dphi_vector => jet_jet_bx_0_bx_0_dphi_vector
+    );
+--
+eg_jet_bx_0_bx_0_differences_i: entity work.differences
+    generic map(
+        calo_calo_deta_lut => EG_JET_DIFF_ETA_LUT,
+        calo_calo_dphi_lut => EG_JET_DIFF_PHI_LUT,
+        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_JET_OBJECTS,
+        type_obj2 => JET_TYPE
+    )
+    port map(
+        eta_integer_obj1 => eg_bx_0_eta_integer,
+        phi_integer_obj1 => eg_bx_0_phi_integer,
+        eta_integer_obj2 => jet_bx_0_eta_integer,
+        phi_integer_obj2 => jet_bx_0_phi_integer,
+        deta_vector => eg_jet_bx_0_bx_0_deta_vector,
+        dphi_vector => eg_jet_bx_0_bx_0_dphi_vector
+    );
+--
+jet_mu_bx_0_bx_0_differences_i: entity work.differences
+    generic map(
+        calo_muon_deta_lut => JET_MU_DIFF_ETA_LUT,
+        calo_muon_dphi_lut => JET_MU_DIFF_PHI_LUT,
+        phi_half_range => MUON_PHI_HALF_RANGE_BINS,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
+    )
+    port map(
+        eta_integer_obj1 => jet_bx_0_eta_conv_2_muon_eta_integer,
+        phi_integer_obj1 => jet_bx_0_phi_conv_2_muon_phi_integer,
+        eta_integer_obj2 => mu_bx_0_eta_integer,
+        phi_integer_obj2 => mu_bx_0_phi_integer,
+        deta_vector => jet_mu_bx_0_bx_0_deta_vector,
+        dphi_vector => jet_mu_bx_0_bx_0_dphi_vector
+    );
+--
+tau_tau_bx_0_bx_0_differences_i: entity work.differences
+    generic map(
+        calo_calo_deta_lut => TAU_TAU_DIFF_ETA_LUT,
+        calo_calo_dphi_lut => TAU_TAU_DIFF_PHI_LUT,
+        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
+        nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
+        nr_obj2 => NR_TAU_OBJECTS,
+        type_obj2 => TAU_TYPE
+    )
+    port map(
+        eta_integer_obj1 => tau_bx_0_eta_integer,
+        phi_integer_obj1 => tau_bx_0_phi_integer,
+        eta_integer_obj2 => tau_bx_0_eta_integer,
+        phi_integer_obj2 => tau_bx_0_phi_integer,
+        deta_vector => tau_tau_bx_0_bx_0_deta_vector,
+        dphi_vector => tau_tau_bx_0_bx_0_dphi_vector
+    );
+--
+mu_mu_bx_0_bx_0_differences_i: entity work.differences
+    generic map(
+        muon_muon_deta_lut => MU_MU_DIFF_ETA_LUT
+        muon_muon_dphi_lut => MU_MU_DIFF_PHI_LUT,
+        phi_half_range => MUON_PHI_HALF_RANGE_BINS,
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
+    )
+    port map(
+        eta_integer_obj1 => mu_bx_0_eta_integer,
+        phi_integer_obj1 => mu_bx_0_phi_integer,
+        eta_integer_obj2 => mu_bx_0_eta_integer,
+        phi_integer_obj2 => mu_bx_0_phi_integer,
+        deta_vector => mu_mu_bx_0_bx_0_deta_vector,
+        dphi_vector => mu_mu_bx_0_bx_0_dphi_vector
+    );
+--
+jet_tau_bx_0_bx_0_differences_i: entity work.differences
+    generic map(
+        calo_calo_deta_lut => JET_TAU_DIFF_ETA_LUT,
+        calo_calo_dphi_lut => JET_TAU_DIFF_PHI_LUT,
+        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_TAU_OBJECTS,
+        type_obj2 => TAU_TYPE
+    )
+    port map(
+        eta_integer_obj1 => jet_bx_0_eta_integer,
+        phi_integer_obj1 => jet_bx_0_phi_integer,
+        eta_integer_obj2 => tau_bx_0_eta_integer,
+        phi_integer_obj2 => tau_bx_0_phi_integer,
+        deta_vector => jet_tau_bx_0_bx_0_deta_vector,
+        dphi_vector => jet_tau_bx_0_bx_0_dphi_vector
+    );
+--
 -- Instantiations of cosh deta and cos dphi LUTs for correlation conditions (used for mass) - once for correlation conditions with two object types in certain bxs
 
     jet_jet_bx_0_bx_0_cosh_cos_l1: for i in 0 to NR_JET_OBJECTS-1 generate
@@ -1965,7 +2012,7 @@ algo(14) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(17) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
@@ -1973,7 +2020,7 @@ algo(15) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(17) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 272 L1_DoubleIsoTau34er2p1 : comb{TAU34[TAU-ETA_2p13,TAU-ISO_0xE],TAU34[TAU-ETA_2p13,TAU-ISO_0xE]}
 l1_double_iso_tau34er2p1 <= double_tau_i207;
