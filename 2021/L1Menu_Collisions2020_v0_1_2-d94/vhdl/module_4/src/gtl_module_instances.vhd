@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 82416763-afd3-47af-b888-cc2290c5d9c5
+-- d764eeee-9302-4031-87a0-f07d17ef96fa
 
 -- Scale set:
 -- scales_2020_10_04
@@ -425,7 +425,6 @@ eg_eg_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
 eg_etm_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
     generic map(
         calo_calo_cos_dphi_lut => EG_ETM_COS_DPHI_LUT,
-        deta_bins_width => EG_ETM_DETA_BINS_WIDTH,
         dphi_bins_width => EG_ETM_DETA_BINS_WIDTH,
         cosh_cos_vector_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
         nr_obj1 => NR_EG_OBJECTS,
