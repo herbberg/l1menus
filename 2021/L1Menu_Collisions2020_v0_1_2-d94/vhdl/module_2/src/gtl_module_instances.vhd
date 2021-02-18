@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 4566c0a2-d07e-4fe0-b4ec-d97d9c249836
+-- 116465e5-577e-4e73-8f8f-1bbbb8e643de
 
 -- Scale set:
 -- scales_2020_10_04
@@ -193,7 +193,7 @@ tau_tau_bx_0_bx_0_differences_i: entity work.differences
 --
 mu_mu_bx_0_bx_0_differences_i: entity work.differences
     generic map(
-        muon_muon_deta_lut => MU_MU_DIFF_ETA_LUT
+        muon_muon_deta_lut => MU_MU_DIFF_ETA_LUT,
         muon_muon_dphi_lut => MU_MU_DIFF_PHI_LUT,
         phi_half_range => MUON_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_MU_OBJECTS,
@@ -2016,11 +2016,11 @@ algo(17) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 272 L1_DoubleIsoTau34er2p1 : comb{TAU34[TAU-ETA_2p13,TAU-ISO_0xE],TAU34[TAU-ETA_2p13,TAU-ISO_0xE]}
 l1_double_iso_tau34er2p1 <= double_tau_i207;
