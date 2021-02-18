@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 116465e5-577e-4e73-8f8f-1bbbb8e643de
+-- 9c0e19ef-bc01-42e4-9f70-913526f95aef
 
 -- Scale set:
 -- scales_2020_10_04
@@ -130,7 +130,9 @@ jet_jet_bx_0_bx_0_differences_i: entity work.differences
         phi_integer_obj1 => jet_bx_0_phi_integer,
         eta_integer_obj2 => jet_bx_0_eta_integer,
         phi_integer_obj2 => jet_bx_0_phi_integer,
+        deta_integer => jet_jet_bx_0_bx_0_deta_integer,
         deta_vector => jet_jet_bx_0_bx_0_deta_vector,
+        dphi_integer => jet_jet_bx_0_bx_0_dphi_integer,
         dphi_vector => jet_jet_bx_0_bx_0_dphi_vector
     );
 --
@@ -149,7 +151,9 @@ eg_jet_bx_0_bx_0_differences_i: entity work.differences
         phi_integer_obj1 => eg_bx_0_phi_integer,
         eta_integer_obj2 => jet_bx_0_eta_integer,
         phi_integer_obj2 => jet_bx_0_phi_integer,
+        deta_integer => eg_jet_bx_0_bx_0_deta_integer,
         deta_vector => eg_jet_bx_0_bx_0_deta_vector,
+        dphi_integer => eg_jet_bx_0_bx_0_dphi_integer,
         dphi_vector => eg_jet_bx_0_bx_0_dphi_vector
     );
 --
@@ -168,7 +172,9 @@ jet_mu_bx_0_bx_0_differences_i: entity work.differences
         phi_integer_obj1 => jet_bx_0_phi_conv_2_muon_phi_integer,
         eta_integer_obj2 => mu_bx_0_eta_integer,
         phi_integer_obj2 => mu_bx_0_phi_integer,
+        deta_integer => jet_mu_bx_0_bx_0_deta_integer,
         deta_vector => jet_mu_bx_0_bx_0_deta_vector,
+        dphi_integer => jet_mu_bx_0_bx_0_dphi_integer,
         dphi_vector => jet_mu_bx_0_bx_0_dphi_vector
     );
 --
@@ -187,7 +193,9 @@ tau_tau_bx_0_bx_0_differences_i: entity work.differences
         phi_integer_obj1 => tau_bx_0_phi_integer,
         eta_integer_obj2 => tau_bx_0_eta_integer,
         phi_integer_obj2 => tau_bx_0_phi_integer,
+        deta_integer => tau_tau_bx_0_bx_0_deta_integer,
         deta_vector => tau_tau_bx_0_bx_0_deta_vector,
+        dphi_integer => tau_tau_bx_0_bx_0_dphi_integer,
         dphi_vector => tau_tau_bx_0_bx_0_dphi_vector
     );
 --
@@ -206,7 +214,9 @@ mu_mu_bx_0_bx_0_differences_i: entity work.differences
         phi_integer_obj1 => mu_bx_0_phi_integer,
         eta_integer_obj2 => mu_bx_0_eta_integer,
         phi_integer_obj2 => mu_bx_0_phi_integer,
+        deta_integer => mu_mu_bx_0_bx_0_deta_integer,
         deta_vector => mu_mu_bx_0_bx_0_deta_vector,
+        dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
         dphi_vector => mu_mu_bx_0_bx_0_dphi_vector
     );
 --
@@ -225,7 +235,9 @@ jet_tau_bx_0_bx_0_differences_i: entity work.differences
         phi_integer_obj1 => jet_bx_0_phi_integer,
         eta_integer_obj2 => tau_bx_0_eta_integer,
         phi_integer_obj2 => tau_bx_0_phi_integer,
+        deta_integer => jet_tau_bx_0_bx_0_deta_integer,
         deta_vector => jet_tau_bx_0_bx_0_deta_vector,
+        dphi_integer => jet_tau_bx_0_bx_0_dphi_integer,
         dphi_vector => jet_tau_bx_0_bx_0_dphi_vector
     );
 --
@@ -2012,15 +2024,15 @@ algo(14) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(17) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(16) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(16) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(15) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(15) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(17) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 272 L1_DoubleIsoTau34er2p1 : comb{TAU34[TAU-ETA_2p13,TAU-ISO_0xE],TAU34[TAU-ETA_2p13,TAU-ISO_0xE]}
 l1_double_iso_tau34er2p1 <= double_tau_i207;

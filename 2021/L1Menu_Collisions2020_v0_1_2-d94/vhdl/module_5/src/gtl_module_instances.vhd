@@ -10,7 +10,7 @@
 -- a55448f7-430f-4308-91f2-5dd4d886290b
 
 -- Unique ID of firmware implementation:
--- 116465e5-577e-4e73-8f8f-1bbbb8e643de
+-- 9c0e19ef-bc01-42e4-9f70-913526f95aef
 
 -- Scale set:
 -- scales_2020_10_04
@@ -26,16 +26,16 @@
 -- Instantiations of muon charge correlations - only once for a certain bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
-    port map(mu_bx_m1, mu_bx_0,
-        ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
-        ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
-        ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
 muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
     port map(mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
         ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
         ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
+muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
+    port map(mu_bx_m1, mu_bx_0,
+        ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
+        ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
+        ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo object type in certain bx used in correlation conditions
 
@@ -187,7 +187,9 @@ eg_tau_bx_0_bx_0_differences_i: entity work.differences
         phi_integer_obj1 => eg_bx_0_phi_integer,
         eta_integer_obj2 => tau_bx_0_eta_integer,
         phi_integer_obj2 => tau_bx_0_phi_integer,
+        deta_integer => eg_tau_bx_0_bx_0_deta_integer,
         deta_vector => eg_tau_bx_0_bx_0_deta_vector,
+        dphi_integer => eg_tau_bx_0_bx_0_dphi_integer,
         dphi_vector => eg_tau_bx_0_bx_0_dphi_vector
     );
 --
@@ -206,7 +208,9 @@ jet_jet_bx_0_bx_0_differences_i: entity work.differences
         phi_integer_obj1 => jet_bx_0_phi_integer,
         eta_integer_obj2 => jet_bx_0_eta_integer,
         phi_integer_obj2 => jet_bx_0_phi_integer,
+        deta_integer => jet_jet_bx_0_bx_0_deta_integer,
         deta_vector => jet_jet_bx_0_bx_0_deta_vector,
+        dphi_integer => jet_jet_bx_0_bx_0_dphi_integer,
         dphi_vector => jet_jet_bx_0_bx_0_dphi_vector
     );
 --
@@ -225,7 +229,9 @@ jet_mu_bx_0_bx_0_differences_i: entity work.differences
         phi_integer_obj1 => jet_bx_0_phi_conv_2_muon_phi_integer,
         eta_integer_obj2 => mu_bx_0_eta_integer,
         phi_integer_obj2 => mu_bx_0_phi_integer,
+        deta_integer => jet_mu_bx_0_bx_0_deta_integer,
         deta_vector => jet_mu_bx_0_bx_0_deta_vector,
+        dphi_integer => jet_mu_bx_0_bx_0_dphi_integer,
         dphi_vector => jet_mu_bx_0_bx_0_dphi_vector
     );
 --
@@ -244,7 +250,9 @@ tau_tau_bx_0_bx_0_differences_i: entity work.differences
         phi_integer_obj1 => tau_bx_0_phi_integer,
         eta_integer_obj2 => tau_bx_0_eta_integer,
         phi_integer_obj2 => tau_bx_0_phi_integer,
+        deta_integer => tau_tau_bx_0_bx_0_deta_integer,
         deta_vector => tau_tau_bx_0_bx_0_deta_vector,
+        dphi_integer => tau_tau_bx_0_bx_0_dphi_integer,
         dphi_vector => tau_tau_bx_0_bx_0_dphi_vector
     );
 --
@@ -263,7 +271,9 @@ mu_mu_bx_0_bx_0_differences_i: entity work.differences
         phi_integer_obj1 => mu_bx_0_phi_integer,
         eta_integer_obj2 => mu_bx_0_eta_integer,
         phi_integer_obj2 => mu_bx_0_phi_integer,
+        deta_integer => mu_mu_bx_0_bx_0_deta_integer,
         deta_vector => mu_mu_bx_0_bx_0_deta_vector,
+        dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
         dphi_vector => mu_mu_bx_0_bx_0_dphi_vector
     );
 --
@@ -282,7 +292,9 @@ eg_eg_bx_0_bx_0_differences_i: entity work.differences
         phi_integer_obj1 => eg_bx_0_phi_integer,
         eta_integer_obj2 => eg_bx_0_eta_integer,
         phi_integer_obj2 => eg_bx_0_phi_integer,
+        deta_integer => eg_eg_bx_0_bx_0_deta_integer,
         deta_vector => eg_eg_bx_0_bx_0_deta_vector,
+        dphi_integer => eg_eg_bx_0_bx_0_dphi_integer,
         dphi_vector => eg_eg_bx_0_bx_0_dphi_vector
     );
 --
@@ -301,7 +313,9 @@ mu_mu_bx_m1_bx_0_differences_i: entity work.differences
         phi_integer_obj1 => mu_bx_m1_phi_integer,
         eta_integer_obj2 => mu_bx_0_eta_integer,
         phi_integer_obj2 => mu_bx_0_phi_integer,
+        deta_integer => mu_mu_bx_m1_bx_0_deta_integer,
         deta_vector => mu_mu_bx_m1_bx_0_deta_vector,
+        dphi_integer => mu_mu_bx_m1_bx_0_dphi_integer,
         dphi_vector => mu_mu_bx_m1_bx_0_dphi_vector
     );
 --
@@ -317,6 +331,7 @@ eg_etm_bx_0_bx_0_differences_i: entity work.differences
     port map(
         phi_integer_obj1 => eg_bx_0_phi_integer,
         phi_integer_obj2 => etm_bx_0_phi_integer,
+        dphi_integer => eg_etm_bx_0_bx_0_dphi_integer,
         dphi_vector => eg_etm_bx_0_bx_0_dphi_vector
     );
 --
