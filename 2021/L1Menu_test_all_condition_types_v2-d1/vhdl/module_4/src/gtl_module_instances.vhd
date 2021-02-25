@@ -10,7 +10,7 @@
 -- f940f49f-9e30-4dda-aece-eb528ec2ac6e
 
 -- Unique ID of firmware implementation:
--- 1b36b03f-7e76-463c-bdc1-743bf64fd4ad
+-- d1de7f11-ea0a-4b4d-ad4d-295738c2697b
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1739,7 +1739,7 @@ transverse_mass_i305_i: entity work.correlation_conditions_muon
         esums => htm_bx_0,
         pt1 => mu_bx_0_pt_vector,
         pt2 => htm_bx_0_pt_vector,
-        cos_dphi_esums => mu_htm_bx_0_bx_0_cos_dphi_vector,
+        cos_dphi => mu_htm_bx_0_bx_0_cos_dphi_vector,
         condition_o => transverse_mass_i305
     );
 

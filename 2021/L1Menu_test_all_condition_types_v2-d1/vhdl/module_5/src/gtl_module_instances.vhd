@@ -10,7 +10,7 @@
 -- f940f49f-9e30-4dda-aece-eb528ec2ac6e
 
 -- Unique ID of firmware implementation:
--- 1b36b03f-7e76-463c-bdc1-743bf64fd4ad
+-- d1de7f11-ea0a-4b4d-ad4d-295738c2697b
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1970,15 +1970,15 @@ algo(48) <= l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9;
 
 -- 96 L1_Mu5_EG23er2p5 : MU5[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu5_eg23er2p5 <= single_mu_i65 and single_eg_i66;
-algo(29) <= l1_mu5_eg23er2p5;
+algo(30) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i1 and single_eg_i67;
-algo(28) <= l1_mu7_eg20er2p5;
+algo(29) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i1 and single_eg_i66;
-algo(30) <= l1_mu7_eg23er2p5;
+algo(31) <= l1_mu7_eg23er2p5;
 
 -- 99 L1_Mu20_EG10er2p5 : MU20[MU-QLTY_SNGL] AND EG10[EG-ETA_2p52]
 l1_mu20_eg10er2p5 <= single_mu_i7 and single_eg_i68;
@@ -1986,15 +1986,15 @@ algo(4) <= l1_mu20_eg10er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i65 and single_eg_i69;
-algo(32) <= l1_mu5_loose_iso_eg20er2p5;
+algo(33) <= l1_mu5_loose_iso_eg20er2p5;
 
 -- 101 L1_Mu7_LooseIsoEG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg20er2p5 <= single_mu_i1 and single_eg_i69;
-algo(31) <= l1_mu7_loose_iso_eg20er2p5;
+algo(32) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i1 and single_eg_i70;
-algo(33) <= l1_mu7_loose_iso_eg23er2p5;
+algo(28) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 109 L1_DoubleMu4_SQ_EG9er2p5 : comb{MU4[MU-QLTY_SNGL],MU4[MU-QLTY_SNGL]} AND EG9[EG-ETA_2p52]
 l1_double_mu4_sq_eg9er2p5 <= double_mu_i76 and single_eg_i77;

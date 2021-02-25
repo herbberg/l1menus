@@ -10,7 +10,7 @@
 -- f940f49f-9e30-4dda-aece-eb528ec2ac6e
 
 -- Unique ID of firmware implementation:
--- 1b36b03f-7e76-463c-bdc1-743bf64fd4ad
+-- d1de7f11-ea0a-4b4d-ad4d-295738c2697b
 
 -- Scale set:
 -- scales_2020_10_04
@@ -35,12 +35,12 @@ constant global_index: global_index_array := (
         196, -- module_index: 8, name: L1_SingleIsoEG34er2p5
         321, -- module_index: 9, name: L1_SingleJet160er2p5
         450, -- module_index: 10, name: L1_SingleJet20er2p5_NotBptxOR
-        446, -- module_index: 11, name: L1_SingleMuOpen_NotBptxOR
-        452, -- module_index: 12, name: L1_SingleJet43er2p5_NotBptxOR_3BX
-        451, -- module_index: 13, name: L1_SingleJet20er2p5_NotBptxOR_3BX
-        453, -- module_index: 14, name: L1_SingleJet46er2p5_NotBptxOR_3BX
-        448, -- module_index: 15, name: L1_SingleMuOpen_er1p1_NotBptxOR_3BX
-        447, -- module_index: 16, name: L1_SingleMuOpen_er1p4_NotBptxOR_3BX
+        447, -- module_index: 11, name: L1_SingleMuOpen_er1p4_NotBptxOR_3BX
+        446, -- module_index: 12, name: L1_SingleMuOpen_NotBptxOR
+        452, -- module_index: 13, name: L1_SingleJet43er2p5_NotBptxOR_3BX
+        451, -- module_index: 14, name: L1_SingleJet20er2p5_NotBptxOR_3BX
+        453, -- module_index: 15, name: L1_SingleJet46er2p5_NotBptxOR_3BX
+        448, -- module_index: 16, name: L1_SingleMuOpen_er1p1_NotBptxOR_3BX
         272, -- module_index: 17, name: L1_DoubleIsoTau34er2p1
         343, -- module_index: 18, name: L1_DoubleJet150er2p5
         163, -- module_index: 19, name: L1_SingleEG28_FWD2p5
