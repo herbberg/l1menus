@@ -10,7 +10,7 @@
 -- f940f49f-9e30-4dda-aece-eb528ec2ac6e
 
 -- Unique ID of firmware implementation:
--- e326d275-b6e3-4d63-8ec6-bf636bd1ac11
+-- 1b36b03f-7e76-463c-bdc1-743bf64fd4ad
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1728,14 +1728,6 @@ transverse_mass_i305_i: entity work.correlation_conditions_muon
         cosh_cos_width => MU_HTM_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"002907FE9BCB0C80",
         mass_lower_limit_vector => X"000000029E8D6080",
--- correlation cuts
-        pt1_width => MU_PT_VECTOR_WIDTH,
-        pt2_width => HTM_PT_VECTOR_WIDTH,
-        mass_cut => true,
-        mass_upper_limit_vector => X"002907FE9BCB0C80",
-        mass_lower_limit_vector => X"000000029E8D6080",
-        mass_cosh_cos_precision => MU_HTM_COSH_COS_PRECISION,
-        cosh_cos_width => MU_HTM_COSH_COS_VECTOR_WIDTH,
 -- number of object 2
         nr_obj2 => NR_HTM_OBJECTS,
 -- selector same/different bunch crossings
