@@ -10,7 +10,7 @@
 -- f940f49f-9e30-4dda-aece-eb528ec2ac6e
 
 -- Unique ID of firmware implementation:
--- fa44c889-4278-4614-a2a7-efd4da754374
+-- e41ce0cf-e5a3-4287-8939-a3b8651a074b
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1405,7 +1405,7 @@ algo(54) <= l1_double_mu_15_7_mass_min1;
 
 -- 104 L1_Mu6_DoubleEG10er2p5 : MU6[MU-QLTY_SNGL] AND comb{EG10[EG-ETA_2p52],EG10[EG-ETA_2p52]}
 l1_mu6_double_eg10er2p5 <= single_mu_i71 and double_eg_i72;
-algo(2) <= l1_mu6_double_eg10er2p5;
+algo(1) <= l1_mu6_double_eg10er2p5;
 
 -- 105 L1_Mu6_DoubleEG12er2p5 : MU6[MU-QLTY_SNGL] AND comb{EG12[EG-ETA_2p52],EG12[EG-ETA_2p52]}
 l1_mu6_double_eg12er2p5 <= single_mu_i71 and double_eg_i73;
@@ -1417,7 +1417,7 @@ algo(12) <= l1_mu6_double_eg15er2p5;
 
 -- 107 L1_Mu6_DoubleEG17er2p5 : MU6[MU-QLTY_SNGL] AND comb{EG17[EG-ETA_2p52],EG17[EG-ETA_2p52]}
 l1_mu6_double_eg17er2p5 <= single_mu_i71 and double_eg_i75;
-algo(15) <= l1_mu6_double_eg17er2p5;
+algo(16) <= l1_mu6_double_eg17er2p5;
 
 -- 124 L1_Mu3_Jet80er2p5_dR_Max0p4 : dist{MU3[MU-QLTY_SNGL],JET80[JET-ETA_2p52]}[DR_MAX_0p4]
 l1_mu3_jet80er2p5_d_r_max0p4 <= calo_muon_correlation_i88;
@@ -1461,7 +1461,7 @@ algo(30) <= l1_double_mu3_sq_htt220er;
 
 -- 151 L1_DoubleMu3_SQ_HTT240er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND HTT240
 l1_double_mu3_sq_htt240er <= double_mu_i103 and single_htt_i95;
-algo(45) <= l1_double_mu3_sq_htt240er;
+algo(44) <= l1_double_mu3_sq_htt240er;
 
 -- 152 L1_DoubleMu3_SQ_HTT260er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND HTT260
 l1_double_mu3_sq_htt260er <= double_mu_i103 and single_htt_i109;
@@ -1469,7 +1469,7 @@ algo(47) <= l1_double_mu3_sq_htt260er;
 
 -- 247 L1_DoubleEG8er2p5_HTT260er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT260
 l1_double_eg8er2p5_htt260er <= double_eg_i164 and single_htt_i109;
-algo(1) <= l1_double_eg8er2p5_htt260er;
+algo(2) <= l1_double_eg8er2p5_htt260er;
 
 -- 248 L1_DoubleEG8er2p5_HTT280er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT280
 l1_double_eg8er2p5_htt280er <= double_eg_i164 and single_htt_i165;
@@ -1481,7 +1481,7 @@ algo(11) <= l1_double_eg8er2p5_htt300er;
 
 -- 250 L1_DoubleEG8er2p5_HTT320er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT320
 l1_double_eg8er2p5_htt320er <= double_eg_i164 and single_htt_i167;
-algo(16) <= l1_double_eg8er2p5_htt320er;
+algo(15) <= l1_double_eg8er2p5_htt320er;
 
 -- 251 L1_DoubleEG8er2p5_HTT340er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT340
 l1_double_eg8er2p5_htt340er <= double_eg_i164 and single_htt_i168;
@@ -1501,7 +1501,7 @@ algo(4) <= l1_mu22er2p1_iso_tau28er2p1;
 
 -- 283 L1_Mu22er2p1_IsoTau30er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU30[TAU-ETA_2p13,TAU-ISO_0xE]
 l1_mu22er2p1_iso_tau30er2p1 <= single_mu_i187 and single_tau_i189;
-algo(8) <= l1_mu22er2p1_iso_tau30er2p1;
+algo(9) <= l1_mu22er2p1_iso_tau30er2p1;
 
 -- 284 L1_Mu22er2p1_IsoTau32er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU32[TAU-ETA_2p13,TAU-ISO_0xE]
 l1_mu22er2p1_iso_tau32er2p1 <= single_mu_i187 and single_tau_i190;
@@ -1541,7 +1541,7 @@ algo(23) <= l1_iso_tau40er2p1_etmhf110;
 
 -- 317 L1_SingleJet60er2p5 : JET60[JET-ETA_2p52]
 l1_single_jet60er2p5 <= single_jet_i105;
-algo(44) <= l1_single_jet60er2p5;
+algo(45) <= l1_single_jet60er2p5;
 
 -- 320 L1_SingleJet140er2p5 : JET140[JET-ETA_2p52]
 l1_single_jet140er2p5 <= single_jet_i219;
@@ -1549,7 +1549,7 @@ algo(43) <= l1_single_jet140er2p5;
 
 -- 332 L1_SingleJet140er2p5_ETMHF70 : JET140[JET-ETA_2p52] AND ETMHF70
 l1_single_jet140er2p5_etmhf70 <= single_jet_i219 and single_etmhf_i233;
-algo(38) <= l1_single_jet140er2p5_etmhf70;
+algo(37) <= l1_single_jet140er2p5_etmhf70;
 
 -- 333 L1_SingleJet140er2p5_ETMHF80 : JET140[JET-ETA_2p52] AND ETMHF80
 l1_single_jet140er2p5_etmhf80 <= single_jet_i219 and single_etmhf_i195;
@@ -1589,7 +1589,7 @@ algo(28) <= l1_htt280er;
 
 -- 403 L1_HTT320er : HTT320
 l1_htt320er <= single_htt_i167;
-algo(37) <= l1_htt320er;
+algo(38) <= l1_htt320er;
 
 -- 421 L1_ETMHF100 : ETMHF100
 l1_etmhf100 <= single_etmhf_i197;
@@ -1617,7 +1617,7 @@ algo(53) <= l1_etmhf100_htt60er;
 
 -- 430 L1_ETMHF110_HTT60er : ETMHF110 AND HTT60
 l1_etmhf110_htt60er <= single_etmhf_i198 and single_htt_i104;
-algo(9) <= l1_etmhf110_htt60er;
+algo(8) <= l1_etmhf110_htt60er;
 
 -- 431 L1_ETMHF120_HTT60er : ETMHF120 AND HTT60
 l1_etmhf120_htt60er <= single_etmhf_i281 and single_htt_i104;
