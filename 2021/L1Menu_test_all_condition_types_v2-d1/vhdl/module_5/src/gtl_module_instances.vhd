@@ -10,7 +10,7 @@
 -- f940f49f-9e30-4dda-aece-eb528ec2ac6e
 
 -- Unique ID of firmware implementation:
--- e41ce0cf-e5a3-4287-8939-a3b8651a074b
+-- ef3c9ff6-b764-4a87-8be8-2c2494399e5c
 
 -- Scale set:
 -- scales_2020_10_04
@@ -953,7 +953,7 @@ double_eg_ov_rm_i307_i: entity work.comb_conditions
     port map(
         lhc_clk,
         obj1_calo => eg_bx_0,
-        obj2_orm => jet_bx_0,
+        obj2 => jet_bx_0,
         deta_orm => eg_jet_bx_0_bx_0_deta_vector,
         dphi_orm => eg_jet_bx_0_bx_0_dphi_vector,
         condition_o => double_eg_ov_rm_i307
@@ -991,7 +991,7 @@ single_eg_ov_rm_i306_i: entity work.comb_conditions
     port map(
         lhc_clk,
         obj1_calo => eg_bx_0,
-        obj2_orm => jet_bx_0,
+        obj2 => jet_bx_0,
         deta_orm => eg_jet_bx_0_bx_0_deta_vector,
         dphi_orm => eg_jet_bx_0_bx_0_dphi_vector,
         condition_o => single_eg_ov_rm_i306
