@@ -105,8 +105,8 @@
 
     <ul class="list-group">
       <li class="list-group-item"><strong>Comment:</strong> Menu for tests of all condition types</li>
-      <li class="list-group-item"><strong>Firmware UUID:</strong> 095d37eb-2631-4a60-a123-e20d1c12b084</li>
-      <li class="list-group-item"><strong>Menu UUID:</strong> 96b77dac-cdc4-40d4-8910-5387eadc9711</li>
+      <li class="list-group-item"><strong>Firmware UUID:</strong> e326d275-b6e3-4d63-8ec6-bf636bd1ac11</li>
+      <li class="list-group-item"><strong>Menu UUID:</strong> f940f49f-9e30-4dda-aece-eb528ec2ac6e</li>
       <li class="list-group-item"><strong>Grammar Version:</strong> 0.8</li>
       <li class="list-group-item"><strong>Scale Set:</strong> scales_2020_10_04</li>
       <li class="list-group-item"><strong>External Signals Set:</strong> L1ExternalConditionsCabling_20180319</li>
@@ -1718,18 +1718,18 @@
     <a class="anchor" name="L1_Eg20_Jet40_ORMDR_min_2p4"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>2 L1_Eg20_Jet40_ORMDR_min_2p4 <span class="informative">(Module 1)</span></h3>
+        <h3>2 L1_Eg20_Jet40_ORMDR_min_2p4 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
-        <p><pre class="expression"><span class="function">comb_orm</span><span class="curl">{</span>EG20[EG-PHI_Unnamed], JET40[JET-PHI_0_3p14]<span class="curl">}</span>[ORMDR_min_2p4]</pre></p>
+        <p><pre class="expression"><span class="function">comb_orm</span><span class="curl">{</span>EG20[EG-PHI_Unnamed, EG-SLICE_0_5], JET40[JET-PHI_0_3p14, JET-SLICE_0_5]<span class="curl">}</span>[ORMDR_min_2p4]</pre></p>
 
         <p><strong>VHDL Expression</strong></p>
         <p><pre class="vhdl"><span class="vhdlsig">l1_eg20_jet40_ormdr_min_2p4</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_eg_ov_rm_i306</span></pre></p>
 
         <p><strong>Conditions</strong></p>
         <ul>
-        <li><strong>comb_orm{EG20[EG-PHI_Unnamed], JET40[JET-PHI_0_3p14]}[ORMDR_min_2p4]</strong> : <code>single_eg_ov_rm_i306</code>
+        <li><strong>comb_orm{EG20[EG-PHI_Unnamed, EG-SLICE_0_5], JET40[JET-PHI_0_3p14, JET-SLICE_0_5]}[ORMDR_min_2p4]</strong> : <code>single_eg_ov_rm_i306</code>
           <ul>
             <li>Object: EG20
               <ul>
@@ -1744,6 +1744,15 @@
                   
                     Phi: <a href="#EG-PHI_Unnamed">EG-PHI_Unnamed</a> [0.0, 3.142] rad
                     : <code>[0x0, 0x47]</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    
+                    Slice: <a href="#EG-SLICE_0_5">EG-SLICE_0_5</a> [0 - 5]
+                    
+                    : <code>EG-SLICE_0_5</code>
                   
                 </li>
       
@@ -1762,6 +1771,15 @@
                   
                     Phi: <a href="#JET-PHI_0_3p14">JET-PHI_0_3p14</a> [0.0, 3.142] rad
                     : <code>[0x0, 0x47]</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    
+                    Slice: <a href="#JET-SLICE_0_5">JET-SLICE_0_5</a> [0 - 5]
+                    
+                    : <code>JET-SLICE_0_5</code>
                   
                 </li>
       
@@ -1926,7 +1944,7 @@
     <a class="anchor" name="L1_DoubleJet20_30_MASS_MIN_40"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>5 L1_DoubleJet20_30_MASS_MIN_40 <span class="informative">(Module 5)</span></h3>
+        <h3>5 L1_DoubleJet20_30_MASS_MIN_40 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -2055,7 +2073,7 @@
     <a class="anchor" name="L1_Mu10_Phi_20_30_MassMin40"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>7 L1_Mu10_Phi_20_30_MassMin40 <span class="informative">(Module 5)</span></h3>
+        <h3>7 L1_Mu10_Phi_20_30_MassMin40 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -2125,7 +2143,7 @@
     <a class="anchor" name="L1_DoubleMu20_30_slice_0_5_MASSDR_min_10"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>8 L1_DoubleMu20_30_slice_0_5_MASSDR_min_10 <span class="informative">(Module 5)</span></h3>
+        <h3>8 L1_DoubleMu20_30_slice_0_5_MASSDR_min_10 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -2313,7 +2331,7 @@
     <a class="anchor" name="L1_SingleMu12_DQ_OMTF"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>14 L1_SingleMu12_DQ_OMTF <span class="informative">(Module 4)</span></h3>
+        <h3>14 L1_SingleMu12_DQ_OMTF <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -2372,7 +2390,7 @@
     <a class="anchor" name="L1_SingleMu12_DQ_EMTF"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>15 L1_SingleMu12_DQ_EMTF <span class="informative">(Module 1)</span></h3>
+        <h3>15 L1_SingleMu12_DQ_EMTF <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -2431,7 +2449,7 @@
     <a class="anchor" name="L1_SingleMu15_DQ"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>16 L1_SingleMu15_DQ <span class="informative">(Module 1)</span></h3>
+        <h3>16 L1_SingleMu15_DQ <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -2557,7 +2575,7 @@
     <a class="anchor" name="L1_SingleMu22"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>19 L1_SingleMu22 <span class="informative">(Module 1)</span></h3>
+        <h3>19 L1_SingleMu22 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -2599,7 +2617,7 @@
     <a class="anchor" name="L1_SingleMu22_BMTF"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>20 L1_SingleMu22_BMTF <span class="informative">(Module 4)</span></h3>
+        <h3>20 L1_SingleMu22_BMTF <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -2769,7 +2787,7 @@
     <a class="anchor" name="L1_SingleMu25"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>23 L1_SingleMu25 <span class="informative">(Module 1)</span></h3>
+        <h3>23 L1_SingleMu25 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -2811,7 +2829,7 @@
     <a class="anchor" name="L1_SingleMu6er1p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>25 L1_SingleMu6er1p5 <span class="informative">(Module 4)</span></h3>
+        <h3>25 L1_SingleMu6er1p5 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -2863,7 +2881,7 @@
     <a class="anchor" name="L1_SingleMu7er1p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>26 L1_SingleMu7er1p5 <span class="informative">(Module 1)</span></h3>
+        <h3>26 L1_SingleMu7er1p5 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -2915,7 +2933,7 @@
     <a class="anchor" name="L1_SingleMu8er1p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>27 L1_SingleMu8er1p5 <span class="informative">(Module 4)</span></h3>
+        <h3>27 L1_SingleMu8er1p5 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -3175,7 +3193,7 @@
     <a class="anchor" name="L1_SingleMu16er1p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>32 L1_SingleMu16er1p5 <span class="informative">(Module 4)</span></h3>
+        <h3>32 L1_SingleMu16er1p5 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -4168,7 +4186,7 @@
     <a class="anchor" name="L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>54 L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4 <span class="informative">(Module 5)</span></h3>
+        <h3>54 L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -4496,7 +4514,7 @@
     <a class="anchor" name="L1_DoubleMu0er1p5_SQ_OS_dR_Max1p4"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>58 L1_DoubleMu0er1p5_SQ_OS_dR_Max1p4 <span class="informative">(Module 1)</span></h3>
+        <h3>58 L1_DoubleMu0er1p5_SQ_OS_dR_Max1p4 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -4737,7 +4755,7 @@
     <a class="anchor" name="L1_DoubleMu4_SQ_OS_dR_Max1p2"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>61 L1_DoubleMu4_SQ_OS_dR_Max1p2 <span class="informative">(Module 1)</span></h3>
+        <h3>61 L1_DoubleMu4_SQ_OS_dR_Max1p2 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -5031,7 +5049,7 @@
     <a class="anchor" name="L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>66 L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18 <span class="informative">(Module 1)</span></h3>
+        <h3>66 L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -5118,7 +5136,7 @@
     <a class="anchor" name="L1_TripleMu0_OQ"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>71 L1_TripleMu0_OQ <span class="informative">(Module 1)</span></h3>
+        <h3>71 L1_TripleMu0_OQ <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -5277,7 +5295,7 @@
     <a class="anchor" name="L1_TripleMu0_SQ"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>73 L1_TripleMu0_SQ <span class="informative">(Module 5)</span></h3>
+        <h3>73 L1_TripleMu0_SQ <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -5358,7 +5376,7 @@
     <a class="anchor" name="L1_TripleMu3"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>74 L1_TripleMu3 <span class="informative">(Module 1)</span></h3>
+        <h3>74 L1_TripleMu3 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -5436,7 +5454,7 @@
     <a class="anchor" name="L1_TripleMu3_SQ"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>75 L1_TripleMu3_SQ <span class="informative">(Module 5)</span></h3>
+        <h3>75 L1_TripleMu3_SQ <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -5514,7 +5532,7 @@
     <a class="anchor" name="L1_TripleMu_5SQ_3SQ_0OQ"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>76 L1_TripleMu_5SQ_3SQ_0OQ <span class="informative">(Module 1)</span></h3>
+        <h3>76 L1_TripleMu_5SQ_3SQ_0OQ <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -5595,7 +5613,7 @@
     <a class="anchor" name="L1_TripleMu_5_3p5_2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>77 L1_TripleMu_5_3p5_2p5 <span class="informative">(Module 5)</span></h3>
+        <h3>77 L1_TripleMu_5_3p5_2p5 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -5676,7 +5694,7 @@
     <a class="anchor" name="L1_TripleMu_5_3_3"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>78 L1_TripleMu_5_3_3 <span class="informative">(Module 5)</span></h3>
+        <h3>78 L1_TripleMu_5_3_3 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -5754,7 +5772,7 @@
     <a class="anchor" name="L1_TripleMu_5_3_3_SQ"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>79 L1_TripleMu_5_3_3_SQ <span class="informative">(Module 5)</span></h3>
+        <h3>79 L1_TripleMu_5_3_3_SQ <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -5910,7 +5928,7 @@
     <a class="anchor" name="L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_OS_Mass_5to17"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>83 L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_OS_Mass_5to17 <span class="informative">(Module 5)</span></h3>
+        <h3>83 L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_OS_Mass_5to17 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -6043,7 +6061,7 @@
     <a class="anchor" name="L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_Mass_5to17"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>84 L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_Mass_5to17 <span class="informative">(Module 5)</span></h3>
+        <h3>84 L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_Mass_5to17 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -6176,7 +6194,7 @@
     <a class="anchor" name="L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>85 L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9 <span class="informative">(Module 1)</span></h3>
+        <h3>85 L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -6309,7 +6327,7 @@
     <a class="anchor" name="L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>86 L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9 <span class="informative">(Module 1)</span></h3>
+        <h3>86 L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -7897,7 +7915,7 @@
     <a class="anchor" name="L1_DoubleMu5Upsilon_OS_DoubleEG3"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>113 L1_DoubleMu5Upsilon_OS_DoubleEG3 <span class="informative">(Module 1)</span></h3>
+        <h3>113 L1_DoubleMu5Upsilon_OS_DoubleEG3 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -8032,7 +8050,7 @@
     <a class="anchor" name="L1_Mu3_Jet30er2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>119 L1_Mu3_Jet30er2p5 <span class="informative">(Module 4)</span></h3>
+        <h3>119 L1_Mu3_Jet30er2p5 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -8239,7 +8257,7 @@
     <a class="anchor" name="L1_Mu3_Jet60er2p5_dR_Max0p4"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>123 L1_Mu3_Jet60er2p5_dR_Max0p4 <span class="informative">(Module 1)</span></h3>
+        <h3>123 L1_Mu3_Jet60er2p5_dR_Max0p4 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -8377,7 +8395,7 @@
     <a class="anchor" name="L1_Mu3_Jet120er2p5_dR_Max0p8"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>125 L1_Mu3_Jet120er2p5_dR_Max0p8 <span class="informative">(Module 5)</span></h3>
+        <h3>125 L1_Mu3_Jet120er2p5_dR_Max0p8 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -8949,7 +8967,7 @@
     <a class="anchor" name="L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>142 L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8 <span class="informative">(Module 5)</span></h3>
+        <h3>142 L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -9932,7 +9950,7 @@
     <a class="anchor" name="L1_Mu0upt20ip1"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>154 L1_Mu0upt20ip1 <span class="informative">(Module 4)</span></h3>
+        <h3>154 L1_Mu0upt20ip1 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -10106,7 +10124,7 @@
     <a class="anchor" name="L1_Mu0upt20ip03"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>157 L1_Mu0upt20ip03 <span class="informative">(Module 1)</span></h3>
+        <h3>157 L1_Mu0upt20ip03 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -10344,7 +10362,7 @@
     <a class="anchor" name="L1_SingleEG28_FWD2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>163 L1_SingleEG28_FWD2p5 <span class="informative">(Module 5)</span></h3>
+        <h3>163 L1_SingleEG28_FWD2p5 <span class="informative">(Module 0)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -10929,7 +10947,7 @@
     <a class="anchor" name="L1_SingleIsoEG28_FWD2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>188 L1_SingleIsoEG28_FWD2p5 <span class="informative">(Module 0)</span></h3>
+        <h3>188 L1_SingleIsoEG28_FWD2p5 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -11629,7 +11647,7 @@
     <a class="anchor" name="L1_DoubleEG_15_10_er2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>205 L1_DoubleEG_15_10_er2p5 <span class="informative">(Module 1)</span></h3>
+        <h3>205 L1_DoubleEG_15_10_er2p5 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -11692,7 +11710,7 @@
     <a class="anchor" name="L1_DoubleEG_20_10_er2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>206 L1_DoubleEG_20_10_er2p5 <span class="informative">(Module 4)</span></h3>
+        <h3>206 L1_DoubleEG_20_10_er2p5 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -11755,7 +11773,7 @@
     <a class="anchor" name="L1_DoubleEG_22_10_er2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>207 L1_DoubleEG_22_10_er2p5 <span class="informative">(Module 1)</span></h3>
+        <h3>207 L1_DoubleEG_22_10_er2p5 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -11818,7 +11836,7 @@
     <a class="anchor" name="L1_DoubleEG_25_12_er2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>208 L1_DoubleEG_25_12_er2p5 <span class="informative">(Module 4)</span></h3>
+        <h3>208 L1_DoubleEG_25_12_er2p5 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -11881,7 +11899,7 @@
     <a class="anchor" name="L1_DoubleEG_25_14_er2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>209 L1_DoubleEG_25_14_er2p5 <span class="informative">(Module 5)</span></h3>
+        <h3>209 L1_DoubleEG_25_14_er2p5 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -12007,7 +12025,7 @@
     <a class="anchor" name="L1_DoubleEG_LooseIso20_10_er2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>212 L1_DoubleEG_LooseIso20_10_er2p5 <span class="informative">(Module 4)</span></h3>
+        <h3>212 L1_DoubleEG_LooseIso20_10_er2p5 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -12077,7 +12095,7 @@
     <a class="anchor" name="L1_DoubleEG_LooseIso22_10_er2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>213 L1_DoubleEG_LooseIso22_10_er2p5 <span class="informative">(Module 5)</span></h3>
+        <h3>213 L1_DoubleEG_LooseIso22_10_er2p5 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -12217,7 +12235,7 @@
     <a class="anchor" name="L1_DoubleEG_LooseIso25_12_er2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>215 L1_DoubleEG_LooseIso25_12_er2p5 <span class="informative">(Module 4)</span></h3>
+        <h3>215 L1_DoubleEG_LooseIso25_12_er2p5 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -12287,7 +12305,7 @@
     <a class="anchor" name="L1_DoubleLooseIsoEG22er2p1"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>217 L1_DoubleLooseIsoEG22er2p1 <span class="informative">(Module 0)</span></h3>
+        <h3>217 L1_DoubleLooseIsoEG22er2p1 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -12603,7 +12621,7 @@
     <a class="anchor" name="L1_TripleEG_18_17_8_er2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>226 L1_TripleEG_18_17_8_er2p5 <span class="informative">(Module 1)</span></h3>
+        <h3>226 L1_TripleEG_18_17_8_er2p5 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -12684,7 +12702,7 @@
     <a class="anchor" name="L1_TripleEG_18_18_12_er2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>227 L1_TripleEG_18_18_12_er2p5 <span class="informative">(Module 4)</span></h3>
+        <h3>227 L1_TripleEG_18_18_12_er2p5 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -12765,7 +12783,7 @@
     <a class="anchor" name="L1_TripleEG16er2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>228 L1_TripleEG16er2p5 <span class="informative">(Module 4)</span></h3>
+        <h3>228 L1_TripleEG16er2p5 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -12922,7 +12940,7 @@
     <a class="anchor" name="L1_LooseIsoEG28er2p1_Jet34er2p5_dR_Min0p3"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>235 L1_LooseIsoEG28er2p1_Jet34er2p5_dR_Min0p3 <span class="informative">(Module 5)</span></h3>
+        <h3>235 L1_LooseIsoEG28er2p1_Jet34er2p5_dR_Min0p3 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -13074,7 +13092,7 @@
     <a class="anchor" name="L1_LooseIsoEG24er2p1_HTT100er"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>238 L1_LooseIsoEG24er2p1_HTT100er <span class="informative">(Module 5)</span></h3>
+        <h3>238 L1_LooseIsoEG24er2p1_HTT100er <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -13143,7 +13161,7 @@
     <a class="anchor" name="L1_LooseIsoEG26er2p1_HTT100er"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>239 L1_LooseIsoEG26er2p1_HTT100er <span class="informative">(Module 5)</span></h3>
+        <h3>239 L1_LooseIsoEG26er2p1_HTT100er <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -13212,7 +13230,7 @@
     <a class="anchor" name="L1_LooseIsoEG28er2p1_HTT100er"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>240 L1_LooseIsoEG28er2p1_HTT100er <span class="informative">(Module 5)</span></h3>
+        <h3>240 L1_LooseIsoEG28er2p1_HTT100er <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -13281,7 +13299,7 @@
     <a class="anchor" name="L1_LooseIsoEG30er2p1_HTT100er"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>241 L1_LooseIsoEG30er2p1_HTT100er <span class="informative">(Module 5)</span></h3>
+        <h3>241 L1_LooseIsoEG30er2p1_HTT100er <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -13916,7 +13934,7 @@
     <a class="anchor" name="L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>259 L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3 <span class="informative">(Module 1)</span></h3>
+        <h3>259 L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -14079,7 +14097,7 @@
     <a class="anchor" name="L1_DoubleTau70er2p1"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>267 L1_DoubleTau70er2p1 <span class="informative">(Module 4)</span></h3>
+        <h3>267 L1_DoubleTau70er2p1 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -14142,7 +14160,7 @@
     <a class="anchor" name="L1_DoubleIsoTau28er2p1"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>269 L1_DoubleIsoTau28er2p1 <span class="informative">(Module 5)</span></h3>
+        <h3>269 L1_DoubleIsoTau28er2p1 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -14296,7 +14314,7 @@
     <a class="anchor" name="L1_DoubleIsoTau32er2p1"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>271 L1_DoubleIsoTau32er2p1 <span class="informative">(Module 4)</span></h3>
+        <h3>271 L1_DoubleIsoTau32er2p1 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -14373,7 +14391,7 @@
     <a class="anchor" name="L1_DoubleIsoTau34er2p1"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>272 L1_DoubleIsoTau34er2p1 <span class="informative">(Module 5)</span></h3>
+        <h3>272 L1_DoubleIsoTau34er2p1 <span class="informative">(Module 0)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -14450,7 +14468,7 @@
     <a class="anchor" name="L1_DoubleIsoTau36er2p1"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>273 L1_DoubleIsoTau36er2p1 <span class="informative">(Module 0)</span></h3>
+        <h3>273 L1_DoubleIsoTau36er2p1 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -14527,7 +14545,7 @@
     <a class="anchor" name="L1_DoubleIsoTau28er2p1_Mass_Max90"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>274 L1_DoubleIsoTau28er2p1_Mass_Max90 <span class="informative">(Module 1)</span></h3>
+        <h3>274 L1_DoubleIsoTau28er2p1_Mass_Max90 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -14859,7 +14877,7 @@
     <a class="anchor" name="L1_Mu18er2p1_Tau24er2p1"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>279 L1_Mu18er2p1_Tau24er2p1 <span class="informative">(Module 1)</span></h3>
+        <h3>279 L1_Mu18er2p1_Tau24er2p1 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -14935,7 +14953,7 @@
     <a class="anchor" name="L1_Mu18er2p1_Tau26er2p1"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>280 L1_Mu18er2p1_Tau26er2p1 <span class="informative">(Module 1)</span></h3>
+        <h3>280 L1_Mu18er2p1_Tau26er2p1 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -15861,7 +15879,7 @@
     <a class="anchor" name="L1_QuadJet36er2p5_IsoTau52er2p1"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>298 L1_QuadJet36er2p5_IsoTau52er2p1 <span class="informative">(Module 5)</span></h3>
+        <h3>298 L1_QuadJet36er2p5_IsoTau52er2p1 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -16041,7 +16059,7 @@
     <a class="anchor" name="L1_Mu0upt5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>301 L1_Mu0upt5 <span class="informative">(Module 1)</span></h3>
+        <h3>301 L1_Mu0upt5 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -16091,7 +16109,7 @@
     <a class="anchor" name="L1_Mu0upt10"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>302 L1_Mu0upt10 <span class="informative">(Module 1)</span></h3>
+        <h3>302 L1_Mu0upt10 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -16191,7 +16209,7 @@
     <a class="anchor" name="L1_Mu0upt50"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>304 L1_Mu0upt50 <span class="informative">(Module 4)</span></h3>
+        <h3>304 L1_Mu0upt50 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -16241,7 +16259,7 @@
     <a class="anchor" name="L1_Mu0upt100"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>305 L1_Mu0upt100 <span class="informative">(Module 4)</span></h3>
+        <h3>305 L1_Mu0upt100 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -16348,7 +16366,7 @@
     <a class="anchor" name="L1_SingleMuOpenupt20"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>307 L1_SingleMuOpenupt20 <span class="informative">(Module 4)</span></h3>
+        <h3>307 L1_SingleMuOpenupt20 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -16405,7 +16423,7 @@
     <a class="anchor" name="L1_SingleMuOpenupt100"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>308 L1_SingleMuOpenupt100 <span class="informative">(Module 1)</span></h3>
+        <h3>308 L1_SingleMuOpenupt100 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -17005,7 +17023,7 @@
     <a class="anchor" name="L1_SingleJet35_FWD3p0"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>324 L1_SingleJet35_FWD3p0 <span class="informative">(Module 4)</span></h3>
+        <h3>324 L1_SingleJet35_FWD3p0 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -17074,7 +17092,7 @@
     <a class="anchor" name="L1_SingleJet60_FWD3p0"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>325 L1_SingleJet60_FWD3p0 <span class="informative">(Module 5)</span></h3>
+        <h3>325 L1_SingleJet60_FWD3p0 <span class="informative">(Module 0)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -17143,7 +17161,7 @@
     <a class="anchor" name="L1_SingleJet90_FWD3p0"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>326 L1_SingleJet90_FWD3p0 <span class="informative">(Module 0)</span></h3>
+        <h3>326 L1_SingleJet90_FWD3p0 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -17749,7 +17767,7 @@
     <a class="anchor" name="L1_DoubleJet120er2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>342 L1_DoubleJet120er2p5 <span class="informative">(Module 4)</span></h3>
+        <h3>342 L1_DoubleJet120er2p5 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -17812,7 +17830,7 @@
     <a class="anchor" name="L1_DoubleJet150er2p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>343 L1_DoubleJet150er2p5 <span class="informative">(Module 5)</span></h3>
+        <h3>343 L1_DoubleJet150er2p5 <span class="informative">(Module 0)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -17875,7 +17893,7 @@
     <a class="anchor" name="L1_DoubleJet100er2p3_dEta_Max1p6"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>345 L1_DoubleJet100er2p3_dEta_Max1p6 <span class="informative">(Module 1)</span></h3>
+        <h3>345 L1_DoubleJet100er2p3_dEta_Max1p6 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -18088,7 +18106,7 @@
     <a class="anchor" name="L1_DoubleJet30er2p5_Mass_Min200_dEta_Max1p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>349 L1_DoubleJet30er2p5_Mass_Min200_dEta_Max1p5 <span class="informative">(Module 1)</span></h3>
+        <h3>349 L1_DoubleJet30er2p5_Mass_Min200_dEta_Max1p5 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -18313,7 +18331,7 @@
     <a class="anchor" name="L1_DoubleJet30er2p5_Mass_Min330_dEta_Max1p5"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>352 L1_DoubleJet30er2p5_Mass_Min330_dEta_Max1p5 <span class="informative">(Module 5)</span></h3>
+        <h3>352 L1_DoubleJet30er2p5_Mass_Min330_dEta_Max1p5 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -18868,7 +18886,7 @@
     <a class="anchor" name="L1_DoubleJet_80_30_Mass_Min420_IsoTau40_RmOvlp"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>364 L1_DoubleJet_80_30_Mass_Min420_IsoTau40_RmOvlp <span class="informative">(Module 1)</span></h3>
+        <h3>364 L1_DoubleJet_80_30_Mass_Min420_IsoTau40_RmOvlp <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
@@ -22407,6 +22425,14 @@
         <td><code>0x0000</code></td>
       </tr>
       <tr>
+        <td><a class="anchor" name="EG-SLICE_0_5"></a> EG-SLICE_0_5</td>
+        <td>0.0</td>
+        <td>5.0</td>
+        <td><code>0.0</code></td>
+        <td><code>5.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><a class="anchor" name="JET-SLICE_0_5"></a> JET-SLICE_0_5</td>
         <td>0.0</td>
         <td>5.0</td>
@@ -22529,7 +22555,7 @@
     </table>
 
     <footer class="footer">
-      <p>Generated by tm-reporter v2.8.1 on 2021-02-25 09:48:47.</p>
+      <p>Generated by tm-reporter v2.8.1 on 2021-02-25 10:46:28.</p>
     </fooer>
 
   </main><!-- /container -->

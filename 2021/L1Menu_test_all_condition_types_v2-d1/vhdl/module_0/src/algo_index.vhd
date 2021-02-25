@@ -7,10 +7,10 @@
 -- L1Menu_test_all_condition_types_v2
 
 -- Unique ID of L1 Trigger Menu:
--- 96b77dac-cdc4-40d4-8910-5387eadc9711
+-- f940f49f-9e30-4dda-aece-eb528ec2ac6e
 
 -- Unique ID of firmware implementation:
--- 095d37eb-2631-4a60-a123-e20d1c12b084
+-- e326d275-b6e3-4d63-8ec6-bf636bd1ac11
 
 -- Scale set:
 -- scales_2020_10_04
@@ -35,16 +35,16 @@ constant global_index: global_index_array := (
         196, -- module_index: 8, name: L1_SingleIsoEG34er2p5
         321, -- module_index: 9, name: L1_SingleJet160er2p5
         450, -- module_index: 10, name: L1_SingleJet20er2p5_NotBptxOR
-        453, -- module_index: 11, name: L1_SingleJet46er2p5_NotBptxOR_3BX
-        448, -- module_index: 12, name: L1_SingleMuOpen_er1p1_NotBptxOR_3BX
-        447, -- module_index: 13, name: L1_SingleMuOpen_er1p4_NotBptxOR_3BX
-        446, -- module_index: 14, name: L1_SingleMuOpen_NotBptxOR
-        452, -- module_index: 15, name: L1_SingleJet43er2p5_NotBptxOR_3BX
-        451, -- module_index: 16, name: L1_SingleJet20er2p5_NotBptxOR_3BX
-        273, -- module_index: 17, name: L1_DoubleIsoTau36er2p1
-        217, -- module_index: 18, name: L1_DoubleLooseIsoEG22er2p1
-        188, -- module_index: 19, name: L1_SingleIsoEG28_FWD2p5
-        326, -- module_index: 20, name: L1_SingleJet90_FWD3p0
+        446, -- module_index: 11, name: L1_SingleMuOpen_NotBptxOR
+        452, -- module_index: 12, name: L1_SingleJet43er2p5_NotBptxOR_3BX
+        451, -- module_index: 13, name: L1_SingleJet20er2p5_NotBptxOR_3BX
+        453, -- module_index: 14, name: L1_SingleJet46er2p5_NotBptxOR_3BX
+        448, -- module_index: 15, name: L1_SingleMuOpen_er1p1_NotBptxOR_3BX
+        447, -- module_index: 16, name: L1_SingleMuOpen_er1p4_NotBptxOR_3BX
+        272, -- module_index: 17, name: L1_DoubleIsoTau34er2p1
+        343, -- module_index: 18, name: L1_DoubleJet150er2p5
+        163, -- module_index: 19, name: L1_SingleEG28_FWD2p5
+        325, -- module_index: 20, name: L1_SingleJet60_FWD3p0
         225, -- module_index: 21, name: L1_TripleEG_16_15_8_er2p5
         300, -- module_index: 22, name: L1_Mu0upt0
         153, -- module_index: 23, name: L1_Mu0upt20ip0

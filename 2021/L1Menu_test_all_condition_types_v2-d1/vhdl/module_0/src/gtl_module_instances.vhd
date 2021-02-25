@@ -7,10 +7,10 @@
 -- L1Menu_test_all_condition_types_v2
 
 -- Unique ID of L1 Trigger Menu:
--- 96b77dac-cdc4-40d4-8910-5387eadc9711
+-- f940f49f-9e30-4dda-aece-eb528ec2ac6e
 
 -- Unique ID of firmware implementation:
--- 095d37eb-2631-4a60-a123-e20d1c12b084
+-- e326d275-b6e3-4d63-8ec6-bf636bd1ac11
 
 -- Scale set:
 -- scales_2020_10_04
@@ -424,26 +424,25 @@ jet_jet_bx_0_bx_0_mass_div_dr_i: entity work.mass_div_dr
 
 -- Instantiations of conditions
 --
-double_eg_i149_i: entity work.comb_conditions
+double_jet_i236_i: entity work.comb_conditions
     generic map(
 -- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
         slice_1_high_obj1 => 11,
         slice_2_high_obj1 => 11,
 -- object cuts
-        pt_thresholds_obj1 => (X"002C", X"002C", X"0000", X"0000"),
+        pt_thresholds_obj1 => (X"012C", X"012C", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 1, 0, 0),
-        eta_w1_upper_limits_obj1 => (X"0030", X"0030", X"0000", X"0000"),
-        eta_w1_lower_limits_obj1 => (X"00CF", X"00CF", X"0000", X"0000"),
-        iso_luts_obj1 => (X"C", X"C", X"F", X"F"),
+        eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"0000", X"0000"),
 -- number of objects and type
-        nr_obj1 => NR_EG_OBJECTS,
-        type_obj1 => EG_TYPE,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
         nr_templates => 2
     )
     port map(
         lhc_clk,
-        obj1_calo => eg_bx_0,
-        condition_o => double_eg_i149
+        obj1_calo => jet_bx_0,
+        condition_o => double_jet_i236
     );
 
 double_jet_i260_i: entity work.comb_conditions
@@ -467,13 +466,13 @@ double_jet_i260_i: entity work.comb_conditions
         condition_o => double_jet_i260
     );
 
-double_tau_i179_i: entity work.comb_conditions
+double_tau_i178_i: entity work.comb_conditions
     generic map(
 -- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
         slice_1_high_obj1 => 11,
         slice_2_high_obj1 => 11,
 -- object cuts
-        pt_thresholds_obj1 => (X"0048", X"0048", X"0000", X"0000"),
+        pt_thresholds_obj1 => (X"0044", X"0044", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 1, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0030", X"0030", X"0000", X"0000"),
         eta_w1_lower_limits_obj1 => (X"00CF", X"00CF", X"0000", X"0000"),
@@ -486,7 +485,7 @@ double_tau_i179_i: entity work.comb_conditions
     port map(
         lhc_clk,
         obj1_calo => tau_bx_0,
-        condition_o => double_tau_i179
+        condition_o => double_tau_i178
     );
 
 single_eg_i110_i: entity work.comb_conditions
@@ -529,6 +528,46 @@ single_eg_i111_i: entity work.comb_conditions
         condition_o => single_eg_i111
     );
 
+single_eg_i113_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0038", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0072", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"003A", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => single_eg_i113
+    );
+
+single_eg_i114_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0038", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"00C5", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"008D", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => single_eg_i114
+    );
+
 single_eg_i115_i: entity work.comb_conditions
     generic map(
 -- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
@@ -568,48 +607,6 @@ single_eg_i124_i: entity work.comb_conditions
         lhc_clk,
         obj1_calo => eg_bx_0,
         condition_o => single_eg_i124
-    );
-
-single_eg_i126_i: entity work.comb_conditions
-    generic map(
--- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
-        slice_1_high_obj1 => 11,
--- object cuts
-        pt_thresholds_obj1 => (X"0038", X"0000", X"0000", X"0000"),
-        nr_eta_windows_obj1 => (1, 0, 0, 0),
-        eta_w1_upper_limits_obj1 => (X"0072", X"0000", X"0000", X"0000"),
-        eta_w1_lower_limits_obj1 => (X"003A", X"0000", X"0000", X"0000"),
-        iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
--- number of objects and type
-        nr_obj1 => NR_EG_OBJECTS,
-        type_obj1 => EG_TYPE,
-        nr_templates => 1
-    )
-    port map(
-        lhc_clk,
-        obj1_calo => eg_bx_0,
-        condition_o => single_eg_i126
-    );
-
-single_eg_i127_i: entity work.comb_conditions
-    generic map(
--- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
-        slice_1_high_obj1 => 11,
--- object cuts
-        pt_thresholds_obj1 => (X"0038", X"0000", X"0000", X"0000"),
-        nr_eta_windows_obj1 => (1, 0, 0, 0),
-        eta_w1_upper_limits_obj1 => (X"00C5", X"0000", X"0000", X"0000"),
-        eta_w1_lower_limits_obj1 => (X"008D", X"0000", X"0000", X"0000"),
-        iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
--- number of objects and type
-        nr_obj1 => NR_EG_OBJECTS,
-        type_obj1 => EG_TYPE,
-        nr_templates => 1
-    )
-    port map(
-        lhc_clk,
-        obj1_calo => eg_bx_0,
-        condition_o => single_eg_i127
     );
 
 single_eg_i128_i: entity work.comb_conditions
@@ -674,12 +671,12 @@ single_jet_i220_i: entity work.comb_conditions
         condition_o => single_jet_i220
     );
 
-single_jet_i226_i: entity work.comb_conditions
+single_jet_i224_i: entity work.comb_conditions
     generic map(
 -- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
         slice_1_high_obj1 => 11,
 -- object cuts
-        pt_thresholds_obj1 => (X"00B4", X"0000", X"0000", X"0000"),
+        pt_thresholds_obj1 => (X"0078", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"00BA", X"0000", X"0000", X"0000"),
         eta_w1_lower_limits_obj1 => (X"008D", X"0000", X"0000", X"0000"),
@@ -691,15 +688,15 @@ single_jet_i226_i: entity work.comb_conditions
     port map(
         lhc_clk,
         obj1_calo => jet_bx_0,
-        condition_o => single_jet_i226
+        condition_o => single_jet_i224
     );
 
-single_jet_i227_i: entity work.comb_conditions
+single_jet_i225_i: entity work.comb_conditions
     generic map(
 -- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
         slice_1_high_obj1 => 11,
 -- object cuts
-        pt_thresholds_obj1 => (X"00B4", X"0000", X"0000", X"0000"),
+        pt_thresholds_obj1 => (X"0078", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0072", X"0000", X"0000", X"0000"),
         eta_w1_lower_limits_obj1 => (X"0045", X"0000", X"0000", X"0000"),
@@ -711,7 +708,7 @@ single_jet_i227_i: entity work.comb_conditions
     port map(
         lhc_clk,
         obj1_calo => jet_bx_0,
-        condition_o => single_jet_i227
+        condition_o => single_jet_i225
     );
 
 single_jet_i296_i: entity work.comb_conditions
@@ -1701,6 +1698,10 @@ algo(5) <= l1_single_eg8er2p5;
 l1_single_eg15er2p5 <= single_eg_i111;
 algo(3) <= l1_single_eg15er2p5;
 
+-- 163 L1_SingleEG28_FWD2p5 : EG28[EG-ETA_FWD_2p52_POS] OR EG28[EG-ETA_FWD_2p52_NEG]
+l1_single_eg28_fwd2p5 <= single_eg_i113 or single_eg_i114;
+algo(19) <= l1_single_eg28_fwd2p5;
+
 -- 164 L1_SingleEG28er2p5 : EG28[EG-ETA_2p52]
 l1_single_eg28er2p5 <= single_eg_i115;
 algo(4) <= l1_single_eg28er2p5;
@@ -1708,10 +1709,6 @@ algo(4) <= l1_single_eg28er2p5;
 -- 186 L1_SingleIsoEG26er2p1 : EG26[EG-ETA_2p13,EG-ISO_0xA]
 l1_single_iso_eg26er2p1 <= single_eg_i124;
 algo(6) <= l1_single_iso_eg26er2p1;
-
--- 188 L1_SingleIsoEG28_FWD2p5 : EG28[EG-ETA_FWD_2p52_POS,EG-ISO_0xA] OR EG28[EG-ETA_FWD_2p52_NEG,EG-ISO_0xA]
-l1_single_iso_eg28_fwd2p5 <= single_eg_i126 or single_eg_i127;
-algo(19) <= l1_single_iso_eg28_fwd2p5;
 
 -- 189 L1_SingleIsoEG28er2p5 : EG28[EG-ETA_2p52,EG-ISO_0xA]
 l1_single_iso_eg28er2p5 <= single_eg_i128;
@@ -1729,10 +1726,6 @@ algo(36) <= l1_iso_eg32er2p5_mt40;
 l1_iso_eg32er2p5_mt48 <= transverse_mass_i138;
 algo(37) <= l1_iso_eg32er2p5_mt48;
 
--- 217 L1_DoubleLooseIsoEG22er2p1 : comb{EG22[EG-ISO_0xC,EG-ETA_2p13],EG22[EG-ISO_0xC,EG-ETA_2p13]}
-l1_double_loose_iso_eg22er2p1 <= double_eg_i149;
-algo(18) <= l1_double_loose_iso_eg22er2p1;
-
 -- 225 L1_TripleEG_16_15_8_er2p5 : comb{EG16[EG-ETA_2p52],EG15[EG-ETA_2p52],EG8[EG-ETA_2p52]}
 l1_triple_eg_16_15_8_er2p5 <= triple_eg_i152;
 algo(21) <= l1_triple_eg_16_15_8_er2p5;
@@ -1741,9 +1734,9 @@ algo(21) <= l1_triple_eg_16_15_8_er2p5;
 l1_loose_iso_eg30er2p1_jet34er2p5_d_r_min0p3 <= calo_calo_correlation_i158;
 algo(45) <= l1_loose_iso_eg30er2p1_jet34er2p5_d_r_min0p3;
 
--- 273 L1_DoubleIsoTau36er2p1 : comb{TAU36[TAU-ETA_2p13,TAU-ISO_0xE],TAU36[TAU-ETA_2p13,TAU-ISO_0xE]}
-l1_double_iso_tau36er2p1 <= double_tau_i179;
-algo(17) <= l1_double_iso_tau36er2p1;
+-- 272 L1_DoubleIsoTau34er2p1 : comb{TAU34[TAU-ETA_2p13,TAU-ISO_0xE],TAU34[TAU-ETA_2p13,TAU-ISO_0xE]}
+l1_double_iso_tau34er2p1 <= double_tau_i178;
+algo(17) <= l1_double_iso_tau34er2p1;
 
 -- 275 L1_DoubleIsoTau28er2p1_Mass_Max80 : mass_inv{TAU28[TAU-ETA_2p13,TAU-ISO_0xE],TAU28[TAU-ETA_2p13,TAU-ISO_0xE]}[MASS_MAX_80]
 l1_double_iso_tau28er2p1_mass_max80 <= invariant_mass_i181;
@@ -1761,9 +1754,13 @@ algo(31) <= l1_single_mu_openupt5;
 l1_single_jet160er2p5 <= single_jet_i220;
 algo(9) <= l1_single_jet160er2p5;
 
--- 326 L1_SingleJet90_FWD3p0 : JET90[JET-ETA_FWD_3p00_NEG] OR JET90[JET-ETA_FWD_3p00_POS]
-l1_single_jet90_fwd3p0 <= single_jet_i226 or single_jet_i227;
-algo(20) <= l1_single_jet90_fwd3p0;
+-- 325 L1_SingleJet60_FWD3p0 : JET60[JET-ETA_FWD_3p00_NEG] OR JET60[JET-ETA_FWD_3p00_POS]
+l1_single_jet60_fwd3p0 <= single_jet_i224 or single_jet_i225;
+algo(20) <= l1_single_jet60_fwd3p0;
+
+-- 343 L1_DoubleJet150er2p5 : comb{JET150[JET-ETA_2p52],JET150[JET-ETA_2p52]}
+l1_double_jet150er2p5 <= double_jet_i236;
+algo(18) <= l1_double_jet150er2p5;
 
 -- 348 L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5 : mass_inv{JET30[JET-ETA_2p52],JET30[JET-ETA_2p52]}[MASS_MIN_150,DETA_MAX_1p5]
 l1_double_jet30er2p5_mass_min150_d_eta_max1p5 <= invariant_mass_i239;
@@ -1799,15 +1796,15 @@ algo(0) <= l1_etm120;
 
 -- 446 L1_SingleMuOpen_NotBptxOR : MU0[MU-QLTY_OPEN] AND ( NOT EXT_BPTX_OR_VME)
 l1_single_mu_open_not_bptx_or <= single_mu_i290 and ( not single_ext_i291 );
-algo(14) <= l1_single_mu_open_not_bptx_or;
+algo(11) <= l1_single_mu_open_not_bptx_or;
 
 -- 447 L1_SingleMuOpen_er1p4_NotBptxOR_3BX : MU0[MU-QLTY_OPEN,MU-ETA_1p4] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
 l1_single_mu_open_er1p4_not_bptx_or_3_bx <= single_mu_i292 and ( not single_ext_i293 ) and ( not single_ext_i291 ) and ( not single_ext_i294 );
-algo(13) <= l1_single_mu_open_er1p4_not_bptx_or_3_bx;
+algo(16) <= l1_single_mu_open_er1p4_not_bptx_or_3_bx;
 
 -- 448 L1_SingleMuOpen_er1p1_NotBptxOR_3BX : MU0[MU-QLTY_OPEN,MU-ETA_1p1] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
 l1_single_mu_open_er1p1_not_bptx_or_3_bx <= single_mu_i295 and ( not single_ext_i293 ) and ( not single_ext_i291 ) and ( not single_ext_i294 );
-algo(12) <= l1_single_mu_open_er1p1_not_bptx_or_3_bx;
+algo(15) <= l1_single_mu_open_er1p1_not_bptx_or_3_bx;
 
 -- 450 L1_SingleJet20er2p5_NotBptxOR : JET20[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME)
 l1_single_jet20er2p5_not_bptx_or <= single_jet_i296 and ( not single_ext_i291 );
@@ -1815,15 +1812,15 @@ algo(10) <= l1_single_jet20er2p5_not_bptx_or;
 
 -- 451 L1_SingleJet20er2p5_NotBptxOR_3BX : JET20[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
 l1_single_jet20er2p5_not_bptx_or_3_bx <= single_jet_i296 and ( not single_ext_i293 ) and ( not single_ext_i291 ) and ( not single_ext_i294 );
-algo(16) <= l1_single_jet20er2p5_not_bptx_or_3_bx;
+algo(13) <= l1_single_jet20er2p5_not_bptx_or_3_bx;
 
 -- 452 L1_SingleJet43er2p5_NotBptxOR_3BX : JET43[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
 l1_single_jet43er2p5_not_bptx_or_3_bx <= single_jet_i297 and ( not single_ext_i293 ) and ( not single_ext_i291 ) and ( not single_ext_i294 );
-algo(15) <= l1_single_jet43er2p5_not_bptx_or_3_bx;
+algo(12) <= l1_single_jet43er2p5_not_bptx_or_3_bx;
 
 -- 453 L1_SingleJet46er2p5_NotBptxOR_3BX : JET46[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
 l1_single_jet46er2p5_not_bptx_or_3_bx <= single_jet_i298 and ( not single_ext_i293 ) and ( not single_ext_i291 ) and ( not single_ext_i294 );
-algo(11) <= l1_single_jet46er2p5_not_bptx_or_3_bx;
+algo(14) <= l1_single_jet46er2p5_not_bptx_or_3_bx;
 
 
 -- ========================================================
