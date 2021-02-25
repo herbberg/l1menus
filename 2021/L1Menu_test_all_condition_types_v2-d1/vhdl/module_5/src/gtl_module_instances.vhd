@@ -10,7 +10,7 @@
 -- f940f49f-9e30-4dda-aece-eb528ec2ac6e
 
 -- Unique ID of firmware implementation:
--- d1de7f11-ea0a-4b4d-ad4d-295738c2697b
+-- fa44c889-4278-4614-a2a7-efd4da754374
 
 -- Scale set:
 -- scales_2020_10_04
@@ -930,13 +930,11 @@ triple_jet_i257_i: entity work.comb_conditions
 double_eg_ov_rm_i307_i: entity work.comb_conditions
     generic map(
 -- object cuts
-        obj_type_obj1 => EG_TYPE,
         pt_thresholds_obj1 => (X"0028", X"003C", X"0050", X"0000"),
         nr_phi_windows_obj1 => (X"0001", X"0001", X"0001", X"0000"),
         phi_w1_upper_limits_obj1 => (X"0047", X"0047", X"0047", X"0000"),
         phi_w1_lower_limits_obj1 => (X"0000", X"0000", X"0000", X"0000"),
         -- orm object cuts
-        obj_type_obj2 => JET_TYPE,
         pt_threshold_obj2 => X"0050",
         nr_phi_windows_obj2 => 1,
         phi_w1_upper_limit_obj2 => X"0047",
@@ -968,7 +966,6 @@ single_eg_ov_rm_i306_i: entity work.comb_conditions
         slice_2_low_obj1 => 0,
         slice_2_high_obj1 => 5,
 -- object cuts
-        obj_type_obj1 => EG_TYPE,
         pt_thresholds_obj1 => (X"0028", X"0050", X"0000", X"0000"),
         nr_phi_windows_obj1 => (X"0001", X"0001", X"0000", X"0000"),
         phi_w1_upper_limits_obj1 => (X"0047", X"0047", X"0000", X"0000"),
@@ -976,7 +973,6 @@ single_eg_ov_rm_i306_i: entity work.comb_conditions
         -- orm object cuts
         slice_low_obj2 => 0,
         slice_high_obj2 => 5,
-        obj_type_obj2 => JET_TYPE,
         pt_threshold_obj2 => X"0050",
         nr_phi_windows_obj2 => 1,
         phi_w1_upper_limit_obj2 => X"0047",
