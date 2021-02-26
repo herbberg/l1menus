@@ -7,10 +7,10 @@
 -- L1Menu_test_all_condition_types_v2
 
 -- Unique ID of L1 Trigger Menu:
--- f940f49f-9e30-4dda-aece-eb528ec2ac6e
+-- 4b3352a6-1a08-40b6-8bb4-f1030e7d707b
 
 -- Unique ID of firmware implementation:
--- ef3c9ff6-b764-4a87-8be8-2c2494399e5c
+-- 00b1e547-ab99-48cd-b522-36504ce56ac1
 
 -- Scale set:
 -- scales_2020_10_04
@@ -37,44 +37,47 @@ constant global_index: global_index_array := (
         316, -- module_index: 10, name: L1_SingleJet35er2p5
         311, -- module_index: 11, name: L1_SingleJet90
         265, -- module_index: 12, name: L1_SingleTau130er2p1
-        205, -- module_index: 13, name: L1_DoubleEG_15_10_er2p5
-        207, -- module_index: 14, name: L1_DoubleEG_22_10_er2p5
-        209, -- module_index: 15, name: L1_DoubleEG_25_14_er2p5
-        213, -- module_index: 16, name: L1_DoubleEG_LooseIso22_10_er2p5
-        269, -- module_index: 17, name: L1_DoubleIsoTau28er2p1
-        273, -- module_index: 18, name: L1_DoubleIsoTau36er2p1
-        217, -- module_index: 19, name: L1_DoubleLooseIsoEG22er2p1
-        188, -- module_index: 20, name: L1_SingleIsoEG28_FWD2p5
-        326, -- module_index: 21, name: L1_SingleJet90_FWD3p0
-        226, -- module_index: 22, name: L1_TripleEG_18_17_8_er2p5
-        302, -- module_index: 23, name: L1_Mu0upt10
-        157, -- module_index: 24, name: L1_Mu0upt20ip03
-        301, -- module_index: 25, name: L1_Mu0upt5
-         15, -- module_index: 26, name: L1_SingleMu12_DQ_EMTF
-         16, -- module_index: 27, name: L1_SingleMu15_DQ
-         19, -- module_index: 28, name: L1_SingleMu22
-         23, -- module_index: 29, name: L1_SingleMu25
-         26, -- module_index: 30, name: L1_SingleMu7er1p5
-        308, -- module_index: 31, name: L1_SingleMuOpenupt100
-        279, -- module_index: 32, name: L1_Mu18er2p1_Tau24er2p1
-        280, -- module_index: 33, name: L1_Mu18er2p1_Tau26er2p1
-        372, -- module_index: 34, name: L1_TripleJet_95_75_65_DoubleJet_75_65_er2p5
-        376, -- module_index: 35, name: L1_QuadJet_95_75_65_20_DoubleJet_75_65_er2p5_Jet20_FWD3p0
-         80, -- module_index: 36, name: L1_TripleMu_5_5_3
-         89, -- module_index: 37, name: L1_QuadMu0
-         88, -- module_index: 38, name: L1_QuadMu0_OQ
-         90, -- module_index: 39, name: L1_QuadMu0_SQ
-        198, -- module_index: 40, name: L1_IsoEG32er2p5_Mt44
-          1, -- module_index: 41, name: L1_Mu10_Htm100_MASS_min_150
-        346, -- module_index: 42, name: L1_DoubleJet112er2p3_dEta_Max1p6
-         57, -- module_index: 43, name: L1_DoubleMu0er1p5_SQ_dR_Max1p4
-         63, -- module_index: 44, name: L1_DoubleMu4p5_SQ_OS_dR_Max1p2
-        382, -- module_index: 45, name: L1_QuadJet60er2p5
-        276, -- module_index: 46, name: L1_DoubleIsoTau30er2p1_Mass_Max90
-        351, -- module_index: 47, name: L1_DoubleJet30er2p5_Mass_Min300_dEta_Max1p5
-        234, -- module_index: 48, name: L1_LooseIsoEG26er2p1_Jet34er2p5_dR_Min0p3
-        126, -- module_index: 49, name: L1_Mu3_Jet120er2p5_dR_Max0p4
-        136, -- module_index: 50, name: L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er2p1_dEta_Max1p6
+        206, -- module_index: 13, name: L1_DoubleEG_20_10_er2p5
+        209, -- module_index: 14, name: L1_DoubleEG_25_14_er2p5
+        270, -- module_index: 15, name: L1_DoubleIsoTau30er2p1
+        273, -- module_index: 16, name: L1_DoubleIsoTau36er2p1
+        343, -- module_index: 17, name: L1_DoubleJet150er2p5
+        327, -- module_index: 18, name: L1_SingleJet120_FWD3p0
+        228, -- module_index: 19, name: L1_TripleEG16er2p5
+        227, -- module_index: 20, name: L1_TripleEG_18_18_12_er2p5
+        305, -- module_index: 21, name: L1_Mu0upt100
+        154, -- module_index: 22, name: L1_Mu0upt20ip1
+        304, -- module_index: 23, name: L1_Mu0upt50
+         14, -- module_index: 24, name: L1_SingleMu12_DQ_OMTF
+         32, -- module_index: 25, name: L1_SingleMu16er1p5
+         20, -- module_index: 26, name: L1_SingleMu22_BMTF
+         25, -- module_index: 27, name: L1_SingleMu6er1p5
+         27, -- module_index: 28, name: L1_SingleMu8er1p5
+        307, -- module_index: 29, name: L1_SingleMuOpenupt20
+        373, -- module_index: 30, name: L1_TripleJet_100_80_70_DoubleJet_80_70_er2p5
+         39, -- module_index: 31, name: L1_DoubleMu0_OQ
+         55, -- module_index: 32, name: L1_DoubleMu0er1p5_SQ
+         51, -- module_index: 33, name: L1_DoubleMu18er2p1
+         62, -- module_index: 34, name: L1_DoubleMu4p5_SQ_OS
+         44, -- module_index: 35, name: L1_DoubleMu8_SQ
+         46, -- module_index: 36, name: L1_DoubleMu_12_5
+         48, -- module_index: 37, name: L1_DoubleMu_15_7
+        109, -- module_index: 38, name: L1_DoubleMu4_SQ_EG9er2p5
+        110, -- module_index: 39, name: L1_DoubleMu5_SQ_EG9er2p5
+         71, -- module_index: 40, name: L1_TripleMu0_OQ
+         74, -- module_index: 41, name: L1_TripleMu3
+         76, -- module_index: 42, name: L1_TripleMu_5SQ_3SQ_0OQ
+         85, -- module_index: 43, name: L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9
+         86, -- module_index: 44, name: L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9
+        346, -- module_index: 45, name: L1_DoubleJet112er2p3_dEta_Max1p6
+         57, -- module_index: 46, name: L1_DoubleMu0er1p5_SQ_dR_Max1p4
+         63, -- module_index: 47, name: L1_DoubleMu4p5_SQ_OS_dR_Max1p2
+         50, -- module_index: 48, name: L1_DoubleMu_15_7_Mass_Min1
+        277, -- module_index: 49, name: L1_DoubleIsoTau30er2p1_Mass_Max80
+        349, -- module_index: 50, name: L1_DoubleJet30er2p5_Mass_Min200_dEta_Max1p5
+        113, -- module_index: 51, name: L1_DoubleMu5Upsilon_OS_DoubleEG3
+        123, -- module_index: 52, name: L1_Mu3_Jet60er2p5_dR_Max0p4
+        364, -- module_index: 53, name: L1_DoubleJet_80_30_Mass_Min420_IsoTau40_RmOvlp
     others => 0
 );
 

@@ -7,10 +7,10 @@
 -- L1Menu_test_all_condition_types_v2
 
 -- Unique ID of L1 Trigger Menu:
--- f940f49f-9e30-4dda-aece-eb528ec2ac6e
+-- 4b3352a6-1a08-40b6-8bb4-f1030e7d707b
 
 -- Unique ID of firmware implementation:
--- ef3c9ff6-b764-4a87-8be8-2c2494399e5c
+-- 00b1e547-ab99-48cd-b522-36504ce56ac1
 
 -- Scale set:
 -- scales_2020_10_04
@@ -34,10 +34,9 @@ constant global_index: global_index_array := (
         192, -- module_index: 7, name: L1_SingleIsoEG30er2p5
         312, -- module_index: 8, name: L1_SingleJet120
         361, -- module_index: 9, name: L1_DoubleJet_120_45_DoubleJet45_Mass_Min620_Jet60TT28
-        257, -- module_index: 10, name: L1_LooseIsoEG22er2p1_IsoTau26er2p1_dR_Min0p3
-        112, -- module_index: 11, name: L1_DoubleMu3_OS_DoubleEG7p5Upsilon
-        122, -- module_index: 12, name: L1_Mu3_Jet35er2p5_dR_Max0p4
-        363, -- module_index: 13, name: L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp
+        353, -- module_index: 10, name: L1_DoubleJet30er2p5_Mass_Min360_dEta_Max1p5
+        121, -- module_index: 11, name: L1_Mu3_Jet16er2p5_dR_Max0p4
+        143, -- module_index: 12, name: L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8
     others => 0
 );
 
