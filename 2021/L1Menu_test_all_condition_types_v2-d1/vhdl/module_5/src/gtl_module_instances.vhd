@@ -7,10 +7,10 @@
 -- L1Menu_test_all_condition_types_v2
 
 -- Unique ID of L1 Trigger Menu:
--- 4b3352a6-1a08-40b6-8bb4-f1030e7d707b
+-- f44e2f52-9675-43a6-a0f8-f3f65ce86b3b
 
 -- Unique ID of firmware implementation:
--- 00b1e547-ab99-48cd-b522-36504ce56ac1
+-- eeda2c32-50eb-4d25-ba7c-73a41bd8c985
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1708,15 +1708,15 @@ algo(39) <= l1_double_mu4p5er2p0_sq_os_mass7to18;
 
 -- 96 L1_Mu5_EG23er2p5 : MU5[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu5_eg23er2p5 <= single_mu_i65 and single_eg_i66;
-algo(26) <= l1_mu5_eg23er2p5;
+algo(28) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i1 and single_eg_i67;
-algo(28) <= l1_mu7_eg20er2p5;
+algo(27) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i1 and single_eg_i66;
-algo(27) <= l1_mu7_eg23er2p5;
+algo(26) <= l1_mu7_eg23er2p5;
 
 -- 99 L1_Mu20_EG10er2p5 : MU20[MU-QLTY_SNGL] AND EG10[EG-ETA_2p52]
 l1_mu20_eg10er2p5 <= single_mu_i7 and single_eg_i68;

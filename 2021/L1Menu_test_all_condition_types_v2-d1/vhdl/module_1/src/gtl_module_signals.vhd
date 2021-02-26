@@ -7,10 +7,10 @@
 -- L1Menu_test_all_condition_types_v2
 
 -- Unique ID of L1 Trigger Menu:
--- 4b3352a6-1a08-40b6-8bb4-f1030e7d707b
+-- f44e2f52-9675-43a6-a0f8-f3f65ce86b3b
 
 -- Unique ID of firmware implementation:
--- 00b1e547-ab99-48cd-b522-36504ce56ac1
+-- eeda2c32-50eb-4d25-ba7c-73a41bd8c985
 
 -- Scale set:
 -- scales_2020_10_04
@@ -163,10 +163,10 @@
     signal triple_mu_i57 : std_logic;
 
 -- Signal definition for algorithms names
-    signal l1_double_jet10_massdr_min_10 : std_logic;
+    signal l1_double_jet1_massdr_min_1 : std_logic;
     signal l1_mu10_htm100_mass_min_150 : std_logic;
-    signal l1_triple_mu10_mass_min1 : std_logic;
-    signal l1_double_mu10_massdr_min_10 : std_logic;
+    signal l1_triple_mu1_mass_min1 : std_logic;
+    signal l1_double_mu1_massdr_min_1 : std_logic;
     signal l1_single_mu12_dq_emtf : std_logic;
     signal l1_single_mu15_dq : std_logic;
     signal l1_single_mu22 : std_logic;

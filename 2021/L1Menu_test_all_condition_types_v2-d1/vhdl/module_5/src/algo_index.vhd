@@ -7,10 +7,10 @@
 -- L1Menu_test_all_condition_types_v2
 
 -- Unique ID of L1 Trigger Menu:
--- 4b3352a6-1a08-40b6-8bb4-f1030e7d707b
+-- f44e2f52-9675-43a6-a0f8-f3f65ce86b3b
 
 -- Unique ID of firmware implementation:
--- 00b1e547-ab99-48cd-b522-36504ce56ac1
+-- eeda2c32-50eb-4d25-ba7c-73a41bd8c985
 
 -- Scale set:
 -- scales_2020_10_04
@@ -50,9 +50,9 @@ constant global_index: global_index_array := (
          17, -- module_index: 23, name: L1_SingleMu18
          22, -- module_index: 24, name: L1_SingleMu22_EMTF
          12, -- module_index: 25, name: L1_SingleMu7
-         96, -- module_index: 26, name: L1_Mu5_EG23er2p5
-         98, -- module_index: 27, name: L1_Mu7_EG23er2p5
-         97, -- module_index: 28, name: L1_Mu7_EG20er2p5
+         98, -- module_index: 26, name: L1_Mu7_EG23er2p5
+         97, -- module_index: 27, name: L1_Mu7_EG20er2p5
+         96, -- module_index: 28, name: L1_Mu5_EG23er2p5
         306, -- module_index: 29, name: L1_SingleMuOpenupt5
         374, -- module_index: 30, name: L1_TripleJet_105_85_75_DoubleJet_85_75_er2p5
          41, -- module_index: 31, name: L1_DoubleMu0_SQ

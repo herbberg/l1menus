@@ -7,10 +7,10 @@
 -- L1Menu_test_all_condition_types_v2
 
 -- Unique ID of L1 Trigger Menu:
--- 4b3352a6-1a08-40b6-8bb4-f1030e7d707b
+-- f44e2f52-9675-43a6-a0f8-f3f65ce86b3b
 
 -- Unique ID of firmware implementation:
--- 00b1e547-ab99-48cd-b522-36504ce56ac1
+-- eeda2c32-50eb-4d25-ba7c-73a41bd8c985
 
 -- Scale set:
 -- scales_2020_10_04
@@ -1342,15 +1342,15 @@ invariant_mass_i223_i: entity work.correlation_conditions_calo
 invariant_mass_delta_r_i285_i: entity work.correlation_conditions_calo
     generic map(
 -- obj cuts
-        pt_threshold_obj1 => X"0014",
-        pt_threshold_obj2 => X"0014",
+        pt_threshold_obj1 => X"0002",
+        pt_threshold_obj2 => X"0002",
 -- correlation cuts
         pt1_width => JET_PT_VECTOR_WIDTH,
         pt2_width => JET_PT_VECTOR_WIDTH,
         mass_cut => true,
         mass_type => INVARIANT_MASS_DIV_DR_TYPE,
         mass_div_dr_vector_width => JET_JET_MASS_DIV_DR_VECTOR_WIDTH,
-        mass_div_dr_threshold => X"0000000000000004C4B40",
+        mass_div_dr_threshold => X"00000000000000000C350",
 -- number of objects and type
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
@@ -1439,15 +1439,15 @@ calo_muon_correlation_i95_i: entity work.correlation_conditions_calo
 invariant_mass_delta_r_i293_i: entity work.correlation_conditions_muon
     generic map(
 -- obj cuts
-        pt_threshold_obj1 => X"0015",
-        pt_threshold_obj2 => X"0015",
+        pt_threshold_obj1 => X"0003",
+        pt_threshold_obj2 => X"0003",
 -- correlation cuts
         pt1_width => MU_PT_VECTOR_WIDTH,
         pt2_width => MU_PT_VECTOR_WIDTH,
         mass_cut => true,
         mass_type => INVARIANT_MASS_DIV_DR_TYPE,
         mass_div_dr_vector_width => MU_MU_MASS_DIV_DR_VECTOR_WIDTH,
-        mass_div_dr_threshold => X"000000000000002FAF080",
+        mass_div_dr_threshold => X"00000000000000007A120",
 -- number of object 2
         nr_obj2 => NR_MU_OBJECTS,
 -- selector same/different bunch crossings
@@ -1574,9 +1574,9 @@ transverse_mass_i286_i: entity work.correlation_conditions_muon
 invariant_mass3_i292_i: entity work.correlation_conditions_muon
     generic map(
 -- obj cuts
-        pt_threshold_obj1 => X"0015",
-        pt_threshold_obj2 => X"0015",
-        pt_threshold_obj3 => X"0015",
+        pt_threshold_obj1 => X"0003",
+        pt_threshold_obj2 => X"0003",
+        pt_threshold_obj3 => X"0003",
 -- correlation cuts
         mass_upper_limit_vector => X"002907FE9BCB0C80",
         mass_lower_limit_vector => X"000000000007A120",
@@ -1606,21 +1606,21 @@ invariant_mass3_i292_i: entity work.correlation_conditions_muon
 -- Instantiations of algorithms
 
 
--- 0 L1_DoubleJet10_MASSDR_min_10 : mass_inv_dr{JET10,JET10}[MASSDR_min_10]
-l1_double_jet10_massdr_min_10 <= invariant_mass_delta_r_i285;
-algo(43) <= l1_double_jet10_massdr_min_10;
+-- 0 L1_DoubleJet1_MASSDR_min_1 : mass_inv_dr{JET1,JET1}[MASSDR_1]
+l1_double_jet1_massdr_min_1 <= invariant_mass_delta_r_i285;
+algo(43) <= l1_double_jet1_massdr_min_1;
 
 -- 1 L1_Mu10_Htm100_MASS_min_150 : mass_trv{MU10,HTM100}[MASS_MIN_150]
 l1_mu10_htm100_mass_min_150 <= transverse_mass_i286;
 algo(38) <= l1_mu10_htm100_mass_min_150;
 
--- 7 L1_TripleMu10_MassMin1 : mass_inv_3{MU10,MU10,MU10}[MASS_MIN_1]
-l1_triple_mu10_mass_min1 <= invariant_mass3_i292;
-algo(41) <= l1_triple_mu10_mass_min1;
+-- 7 L1_TripleMu1_MassMin1 : mass_inv_3{MU1,MU1,MU1}[MASS_MIN_1]
+l1_triple_mu1_mass_min1 <= invariant_mass3_i292;
+algo(41) <= l1_triple_mu1_mass_min1;
 
--- 8 L1_DoubleMu10_MASSDR_min_10 : mass_inv_dr{MU10,MU10}[MASSDR_min_10]
-l1_double_mu10_massdr_min_10 <= invariant_mass_delta_r_i293;
-algo(39) <= l1_double_mu10_massdr_min_10;
+-- 8 L1_DoubleMu1_MASSDR_min_1 : mass_inv_dr{MU1,MU1}[MASSDR_1]
+l1_double_mu1_massdr_min_1 <= invariant_mass_delta_r_i293;
+algo(39) <= l1_double_mu1_massdr_min_1;
 
 -- 15 L1_SingleMu12_DQ_EMTF : MU12[MU-QLTY_DBLE,MU-ETA_EMTF_POS,MU-ETA_EMTF_NEG]
 l1_single_mu12_dq_emtf <= single_mu_i4;

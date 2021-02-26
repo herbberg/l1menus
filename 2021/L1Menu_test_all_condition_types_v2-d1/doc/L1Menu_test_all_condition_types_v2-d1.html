@@ -105,8 +105,8 @@
 
     <ul class="list-group">
       <li class="list-group-item"><strong>Comment:</strong> Menu for tests of all condition types</li>
-      <li class="list-group-item"><strong>Firmware UUID:</strong> 00b1e547-ab99-48cd-b522-36504ce56ac1</li>
-      <li class="list-group-item"><strong>Menu UUID:</strong> 4b3352a6-1a08-40b6-8bb4-f1030e7d707b</li>
+      <li class="list-group-item"><strong>Firmware UUID:</strong> eeda2c32-50eb-4d25-ba7c-73a41bd8c985</li>
+      <li class="list-group-item"><strong>Menu UUID:</strong> f44e2f52-9675-43a6-a0f8-f3f65ce86b3b</li>
       <li class="list-group-item"><strong>Grammar Version:</strong> 0.8</li>
       <li class="list-group-item"><strong>Scale Set:</strong> scales_2020_10_04</li>
       <li class="list-group-item"><strong>External Signals Set:</strong> L1ExternalConditionsCabling_20180319</li>
@@ -127,8 +127,8 @@
         <th>Labels</th>
       </tr>
       <tr>
-        <td><a href=#L1_DoubleJet10_MASSDR_min_10>0</a></td>
-        <td><a href=#L1_DoubleJet10_MASSDR_min_10>L1_DoubleJet10_MASSDR_min_10</a></td>
+        <td><a href=#L1_DoubleJet1_MASSDR_min_1>0</a></td>
+        <td><a href=#L1_DoubleJet1_MASSDR_min_1>L1_DoubleJet1_MASSDR_min_1</a></td>
         <td></td>
       </tr>
       <tr>
@@ -157,18 +157,18 @@
         <td></td>
       </tr>
       <tr>
-        <td><a href=#L1_TripleEg10_MassMin1>6</a></td>
-        <td><a href=#L1_TripleEg10_MassMin1>L1_TripleEg10_MassMin1</a></td>
+        <td><a href=#L1_TripleEg1_MassMin1>6</a></td>
+        <td><a href=#L1_TripleEg1_MassMin1>L1_TripleEg1_MassMin1</a></td>
         <td></td>
       </tr>
       <tr>
-        <td><a href=#L1_TripleMu10_MassMin1>7</a></td>
-        <td><a href=#L1_TripleMu10_MassMin1>L1_TripleMu10_MassMin1</a></td>
+        <td><a href=#L1_TripleMu1_MassMin1>7</a></td>
+        <td><a href=#L1_TripleMu1_MassMin1>L1_TripleMu1_MassMin1</a></td>
         <td></td>
       </tr>
       <tr>
-        <td><a href=#L1_DoubleMu10_MASSDR_min_10>8</a></td>
-        <td><a href=#L1_DoubleMu10_MASSDR_min_10>L1_DoubleMu10_MASSDR_min_10</a></td>
+        <td><a href=#L1_DoubleMu1_MASSDR_min_1>8</a></td>
+        <td><a href=#L1_DoubleMu1_MASSDR_min_1>L1_DoubleMu1_MASSDR_min_1</a></td>
         <td></td>
       </tr>
       <tr>
@@ -1498,39 +1498,39 @@
       </tr>
     </table>
     <hr />
-    <a class="anchor" name="L1_DoubleJet10_MASSDR_min_10"></a>
+    <a class="anchor" name="L1_DoubleJet1_MASSDR_min_1"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>0 L1_DoubleJet10_MASSDR_min_10 <span class="informative">(Module 1)</span></h3>
+        <h3>0 L1_DoubleJet1_MASSDR_min_1 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
-        <p><pre class="expression">mass_inv_dr{JET10, JET10}[MASSDR_min_10]</pre></p>
+        <p><pre class="expression">mass_inv_dr{JET1, JET1}[MASSDR_1]</pre></p>
 
         <p><strong>VHDL Expression</strong></p>
-        <p><pre class="vhdl"><span class="vhdlsig">l1_double_jet10_massdr_min_10</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_delta_r_i285</span></pre></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_jet1_massdr_min_1</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_delta_r_i285</span></pre></p>
 
         <p><strong>Conditions</strong></p>
         <ul>
-        <li><strong>mass_inv_dr{JET10, JET10}[MASSDR_min_10]</strong> : <code>invariant_mass_delta_r_i285</code>
+        <li><strong>mass_inv_dr{JET1, JET1}[MASSDR_1]</strong> : <code>invariant_mass_delta_r_i285</code>
           <ul>
-            <li>Object: JET10
+            <li>Object: JET1
               <ul>
                 <li>
                   
-                    Threshold: 10.0 GeV
-                    : <code>0x14</code>
+                    Threshold: 1.0 GeV
+                    : <code>0x2</code>
                   
                 </li>
       
               </ul>
             </li>
-            <li>Object: JET10
+            <li>Object: JET1
               <ul>
                 <li>
                   
-                    Threshold: 10.0 GeV
-                    : <code>0x14</code>
+                    Threshold: 1.0 GeV
+                    : <code>0x2</code>
                   
                 </li>
       
@@ -1538,10 +1538,10 @@
             </li>
           </ul>
           <ul>
-            <li>Cut: <a href="#MASSDR_min_10">MASSDR_min_10</a></li>
+            <li>Cut: <a href="#MASSDR_1">MASSDR_1</a></li>
             <ul><li>
-                Mass/DeltaR: [10.0]
-                : <code>[50.0]</code>
+                Mass/DeltaR: [1.0]
+                : <code>[0.5]</code>
                   <code>precision: 1</code>
             </li></ul>
           </ul>
@@ -1880,50 +1880,50 @@
       </div>
     </div>
     <hr />
-    <a class="anchor" name="L1_TripleEg10_MassMin1"></a>
+    <a class="anchor" name="L1_TripleEg1_MassMin1"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>6 L1_TripleEg10_MassMin1 <span class="informative">(Module 2)</span></h3>
+        <h3>6 L1_TripleEg1_MassMin1 <span class="informative">(Module 2)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
-        <p><pre class="expression">mass_inv_3{EG10, EG10, EG10}[MASS_MIN_1]</pre></p>
+        <p><pre class="expression">mass_inv_3{EG1, EG1, EG1}[MASS_MIN_1]</pre></p>
 
         <p><strong>VHDL Expression</strong></p>
-        <p><pre class="vhdl"><span class="vhdlsig">l1_triple_eg10_mass_min1</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass3_i291</span></pre></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_triple_eg1_mass_min1</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass3_i291</span></pre></p>
 
         <p><strong>Conditions</strong></p>
         <ul>
-        <li><strong>mass_inv_3{EG10, EG10, EG10}[MASS_MIN_1]</strong> : <code>invariant_mass3_i291</code>
+        <li><strong>mass_inv_3{EG1, EG1, EG1}[MASS_MIN_1]</strong> : <code>invariant_mass3_i291</code>
           <ul>
-            <li>Object: EG10
+            <li>Object: EG1
               <ul>
                 <li>
                   
-                    Threshold: 10.0 GeV
-                    : <code>0x14</code>
+                    Threshold: 1.0 GeV
+                    : <code>0x2</code>
                   
                 </li>
       
               </ul>
             </li>
-            <li>Object: EG10
+            <li>Object: EG1
               <ul>
                 <li>
                   
-                    Threshold: 10.0 GeV
-                    : <code>0x14</code>
+                    Threshold: 1.0 GeV
+                    : <code>0x2</code>
                   
                 </li>
       
               </ul>
             </li>
-            <li>Object: EG10
+            <li>Object: EG1
               <ul>
                 <li>
                   
-                    Threshold: 10.0 GeV
-                    : <code>0x14</code>
+                    Threshold: 1.0 GeV
+                    : <code>0x2</code>
                   
                 </li>
       
@@ -1943,50 +1943,50 @@
       </div>
     </div>
     <hr />
-    <a class="anchor" name="L1_TripleMu10_MassMin1"></a>
+    <a class="anchor" name="L1_TripleMu1_MassMin1"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>7 L1_TripleMu10_MassMin1 <span class="informative">(Module 1)</span></h3>
+        <h3>7 L1_TripleMu1_MassMin1 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
-        <p><pre class="expression">mass_inv_3{MU10, MU10, MU10}[MASS_MIN_1]</pre></p>
+        <p><pre class="expression">mass_inv_3{MU1, MU1, MU1}[MASS_MIN_1]</pre></p>
 
         <p><strong>VHDL Expression</strong></p>
-        <p><pre class="vhdl"><span class="vhdlsig">l1_triple_mu10_mass_min1</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass3_i292</span></pre></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_triple_mu1_mass_min1</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass3_i292</span></pre></p>
 
         <p><strong>Conditions</strong></p>
         <ul>
-        <li><strong>mass_inv_3{MU10, MU10, MU10}[MASS_MIN_1]</strong> : <code>invariant_mass3_i292</code>
+        <li><strong>mass_inv_3{MU1, MU1, MU1}[MASS_MIN_1]</strong> : <code>invariant_mass3_i292</code>
           <ul>
-            <li>Object: MU10
+            <li>Object: MU1
               <ul>
                 <li>
                   
-                    Threshold: 10.0 GeV
-                    : <code>0x15</code>
+                    Threshold: 1.0 GeV
+                    : <code>0x3</code>
                   
                 </li>
       
               </ul>
             </li>
-            <li>Object: MU10
+            <li>Object: MU1
               <ul>
                 <li>
                   
-                    Threshold: 10.0 GeV
-                    : <code>0x15</code>
+                    Threshold: 1.0 GeV
+                    : <code>0x3</code>
                   
                 </li>
       
               </ul>
             </li>
-            <li>Object: MU10
+            <li>Object: MU1
               <ul>
                 <li>
                   
-                    Threshold: 10.0 GeV
-                    : <code>0x15</code>
+                    Threshold: 1.0 GeV
+                    : <code>0x3</code>
                   
                 </li>
       
@@ -2006,39 +2006,39 @@
       </div>
     </div>
     <hr />
-    <a class="anchor" name="L1_DoubleMu10_MASSDR_min_10"></a>
+    <a class="anchor" name="L1_DoubleMu1_MASSDR_min_1"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>8 L1_DoubleMu10_MASSDR_min_10 <span class="informative">(Module 1)</span></h3>
+        <h3>8 L1_DoubleMu1_MASSDR_min_1 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
-        <p><pre class="expression">mass_inv_dr{MU10, MU10}[MASSDR_min_10]</pre></p>
+        <p><pre class="expression">mass_inv_dr{MU1, MU1}[MASSDR_1]</pre></p>
 
         <p><strong>VHDL Expression</strong></p>
-        <p><pre class="vhdl"><span class="vhdlsig">l1_double_mu10_massdr_min_10</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_delta_r_i293</span></pre></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_mu1_massdr_min_1</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_delta_r_i293</span></pre></p>
 
         <p><strong>Conditions</strong></p>
         <ul>
-        <li><strong>mass_inv_dr{MU10, MU10}[MASSDR_min_10]</strong> : <code>invariant_mass_delta_r_i293</code>
+        <li><strong>mass_inv_dr{MU1, MU1}[MASSDR_1]</strong> : <code>invariant_mass_delta_r_i293</code>
           <ul>
-            <li>Object: MU10
+            <li>Object: MU1
               <ul>
                 <li>
                   
-                    Threshold: 10.0 GeV
-                    : <code>0x15</code>
+                    Threshold: 1.0 GeV
+                    : <code>0x3</code>
                   
                 </li>
       
               </ul>
             </li>
-            <li>Object: MU10
+            <li>Object: MU1
               <ul>
                 <li>
                   
-                    Threshold: 10.0 GeV
-                    : <code>0x15</code>
+                    Threshold: 1.0 GeV
+                    : <code>0x3</code>
                   
                 </li>
       
@@ -2046,10 +2046,10 @@
             </li>
           </ul>
           <ul>
-            <li>Cut: <a href="#MASSDR_min_10">MASSDR_min_10</a></li>
+            <li>Cut: <a href="#MASSDR_1">MASSDR_1</a></li>
             <ul><li>
-                Mass/DeltaR: [10.0]
-                : <code>[50.0]</code>
+                Mass/DeltaR: [1.0]
+                : <code>[0.5]</code>
                   <code>precision: 1</code>
             </li></ul>
           </ul>
@@ -20979,17 +20979,17 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="anchor" name="MASSDR_min_10"></a> MASSDR_min_10</td>
-        <td>10.0</td>
+        <td><a class="anchor" name="MASSDR_1"></a> MASSDR_1</td>
+        <td>1.0</td>
         <td>0.0</td>
-        <td><code>50.0</code></td>
+        <td><code>0.5</code></td>
         <td><code>0.0</code></td>
         <td></td>
       </tr>
     </table>
 
     <footer class="footer">
-      <p>Generated by tm-reporter v2.8.1 on 2021-02-26 08:06:24.</p>
+      <p>Generated by tm-reporter v2.8.1 on 2021-02-26 08:25:20.</p>
     </fooer>
 
   </main><!-- /container -->
