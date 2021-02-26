@@ -7,10 +7,10 @@
 -- L1Menu_test_all_condition_types_v2
 
 -- Unique ID of L1 Trigger Menu:
--- f44e2f52-9675-43a6-a0f8-f3f65ce86b3b
+-- cc104e5d-7c52-44be-bebc-0319b13440dc
 
 -- Unique ID of firmware implementation:
--- eeda2c32-50eb-4d25-ba7c-73a41bd8c985
+-- 07b75d92-8de1-4840-9378-6be8dd07e1c2
 
 -- Scale set:
 -- scales_2020_10_04
@@ -393,13 +393,13 @@ double_eg_i138_i: entity work.comb_conditions
         condition_o => double_eg_i138
     );
 
-double_eg_i141_i: entity work.comb_conditions
+double_eg_i142_i: entity work.comb_conditions
     generic map(
 -- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
         slice_1_high_obj1 => 11,
         slice_2_high_obj1 => 11,
 -- object cuts
-        pt_thresholds_obj1 => (X"0032", X"001C", X"0000", X"0000"),
+        pt_thresholds_obj1 => (X"0036", X"001C", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 1, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0000", X"0000"),
         eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"0000", X"0000"),
@@ -411,7 +411,7 @@ double_eg_i141_i: entity work.comb_conditions
     port map(
         lhc_clk,
         obj1_calo => eg_bx_0,
-        condition_o => double_eg_i141
+        condition_o => double_eg_i142
     );
 
 double_jet_i217_i: entity work.comb_conditions
@@ -456,13 +456,13 @@ double_jet_i239_i: entity work.comb_conditions
         condition_o => double_jet_i239
     );
 
-double_tau_i157_i: entity work.comb_conditions
+double_tau_i159_i: entity work.comb_conditions
     generic map(
 -- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
         slice_1_high_obj1 => 11,
         slice_2_high_obj1 => 11,
 -- object cuts
-        pt_thresholds_obj1 => (X"003C", X"003C", X"0000", X"0000"),
+        pt_thresholds_obj1 => (X"0044", X"0044", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 1, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0030", X"0030", X"0000", X"0000"),
         eta_w1_lower_limits_obj1 => (X"00CF", X"00CF", X"0000", X"0000"),
@@ -475,29 +475,7 @@ double_tau_i157_i: entity work.comb_conditions
     port map(
         lhc_clk,
         obj1_calo => tau_bx_0,
-        condition_o => double_tau_i157
-    );
-
-double_tau_i160_i: entity work.comb_conditions
-    generic map(
--- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
-        slice_1_high_obj1 => 11,
-        slice_2_high_obj1 => 11,
--- object cuts
-        pt_thresholds_obj1 => (X"0048", X"0048", X"0000", X"0000"),
-        nr_eta_windows_obj1 => (1, 1, 0, 0),
-        eta_w1_upper_limits_obj1 => (X"0030", X"0030", X"0000", X"0000"),
-        eta_w1_lower_limits_obj1 => (X"00CF", X"00CF", X"0000", X"0000"),
-        iso_luts_obj1 => (X"E", X"E", X"F", X"F"),
--- number of objects and type
-        nr_obj1 => NR_TAU_OBJECTS,
-        type_obj1 => TAU_TYPE,
-        nr_templates => 2
-    )
-    port map(
-        lhc_clk,
-        obj1_calo => tau_bx_0,
-        condition_o => double_tau_i160
+        condition_o => double_tau_i159
     );
 
 single_eg_i114_i: entity work.comb_conditions
@@ -620,12 +598,12 @@ single_eg_i75_i: entity work.comb_conditions
         condition_o => single_eg_i75
     );
 
-single_jet_i193_i: entity work.comb_conditions
+single_jet_i192_i: entity work.comb_conditions
     generic map(
 -- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
         slice_1_high_obj1 => 11,
 -- object cuts
-        pt_thresholds_obj1 => (X"00B4", X"0000", X"0000", X"0000"),
+        pt_thresholds_obj1 => (X"0078", X"0000", X"0000", X"0000"),
 -- number of objects and type
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
@@ -634,27 +612,7 @@ single_jet_i193_i: entity work.comb_conditions
     port map(
         lhc_clk,
         obj1_calo => jet_bx_0,
-        condition_o => single_jet_i193
-    );
-
-single_jet_i197_i: entity work.comb_conditions
-    generic map(
--- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
-        slice_1_high_obj1 => 11,
--- object cuts
-        pt_thresholds_obj1 => (X"0046", X"0000", X"0000", X"0000"),
-        nr_eta_windows_obj1 => (1, 0, 0, 0),
-        eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"),
-        eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
--- number of objects and type
-        nr_obj1 => NR_JET_OBJECTS,
-        type_obj1 => JET_TYPE,
-        nr_templates => 1
-    )
-    port map(
-        lhc_clk,
-        obj1_calo => jet_bx_0,
-        condition_o => single_jet_i197
+        condition_o => single_jet_i192
     );
 
 single_jet_i199_i: entity work.comb_conditions
@@ -737,12 +695,12 @@ single_jet_i210_i: entity work.comb_conditions
         condition_o => single_jet_i210
     );
 
-single_tau_i154_i: entity work.comb_conditions
+single_tau_i153_i: entity work.comb_conditions
     generic map(
 -- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
         slice_1_high_obj1 => 11,
 -- object cuts
-        pt_thresholds_obj1 => (X"0104", X"0000", X"0000", X"0000"),
+        pt_thresholds_obj1 => (X"00F0", X"0000", X"0000", X"0000"),
         nr_eta_windows_obj1 => (1, 0, 0, 0),
         eta_w1_upper_limits_obj1 => (X"0030", X"0000", X"0000", X"0000"),
         eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
@@ -754,7 +712,7 @@ single_tau_i154_i: entity work.comb_conditions
     port map(
         lhc_clk,
         obj1_calo => tau_bx_0,
-        condition_o => single_tau_i154
+        condition_o => single_tau_i153
     );
 
 triple_eg_i146_i: entity work.comb_conditions
@@ -1101,7 +1059,7 @@ single_mu_i20_i: entity work.comb_conditions
         condition_o => single_mu_i20
     );
 
-single_mu_i281_i: entity work.comb_conditions
+single_mu_i272_i: entity work.comb_conditions
     generic map(
 -- no slice requirements
 -- object cuts
@@ -1118,7 +1076,7 @@ single_mu_i281_i: entity work.comb_conditions
     port map(
         lhc_clk,
         obj1_muon => mu_bx_0,
-        condition_o => single_mu_i281
+        condition_o => single_mu_i272
     );
 
 single_mu_i3_i: entity work.comb_conditions
@@ -1670,103 +1628,103 @@ muon_muon_correlation_i45_i: entity work.correlation_conditions_muon
 
 -- 14 L1_SingleMu12_DQ_OMTF : MU12[MU-QLTY_DBLE,MU-ETA_OMTF_POS,MU-ETA_OMTF_NEG]
 l1_single_mu12_dq_omtf <= single_mu_i3;
-algo(24) <= l1_single_mu12_dq_omtf;
+algo(22) <= l1_single_mu12_dq_omtf;
 
 -- 20 L1_SingleMu22_BMTF : MU22[MU-QLTY_SNGL,MU-ETA_BMTF]
 l1_single_mu22_bmtf <= single_mu_i9;
-algo(26) <= l1_single_mu22_bmtf;
+algo(24) <= l1_single_mu22_bmtf;
 
 -- 25 L1_SingleMu6er1p5 : MU6[MU-QLTY_SNGL,MU-ETA_1p5]
 l1_single_mu6er1p5 <= single_mu_i13;
-algo(27) <= l1_single_mu6er1p5;
+algo(25) <= l1_single_mu6er1p5;
 
 -- 27 L1_SingleMu8er1p5 : MU8[MU-QLTY_SNGL,MU-ETA_1p5]
 l1_single_mu8er1p5 <= single_mu_i15;
-algo(28) <= l1_single_mu8er1p5;
+algo(26) <= l1_single_mu8er1p5;
 
 -- 32 L1_SingleMu16er1p5 : MU16[MU-QLTY_SNGL,MU-ETA_1p5]
 l1_single_mu16er1p5 <= single_mu_i20;
-algo(25) <= l1_single_mu16er1p5;
+algo(23) <= l1_single_mu16er1p5;
 
 -- 39 L1_DoubleMu0_OQ : comb{MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN]}
 l1_double_mu0_oq <= double_mu_i22;
-algo(31) <= l1_double_mu0_oq;
+algo(29) <= l1_double_mu0_oq;
 
 -- 44 L1_DoubleMu8_SQ : comb{MU8[MU-QLTY_SNGL],MU8[MU-QLTY_SNGL]}
 l1_double_mu8_sq <= double_mu_i27;
-algo(35) <= l1_double_mu8_sq;
+algo(33) <= l1_double_mu8_sq;
 
 -- 46 L1_DoubleMu_12_5 : comb{MU12[MU-QLTY_DBLE],MU5[MU-QLTY_DBLE]}
 l1_double_mu_12_5 <= double_mu_i29;
-algo(36) <= l1_double_mu_12_5;
+algo(34) <= l1_double_mu_12_5;
 
 -- 48 L1_DoubleMu_15_7 : comb{MU15[MU-QLTY_DBLE],MU7[MU-QLTY_DBLE]}
 l1_double_mu_15_7 <= double_mu_i31;
-algo(37) <= l1_double_mu_15_7;
+algo(35) <= l1_double_mu_15_7;
 
 -- 50 L1_DoubleMu_15_7_Mass_Min1 : mass_inv{MU15,MU7}[MASS_MIN_1]
 l1_double_mu_15_7_mass_min1 <= invariant_mass_i33;
-algo(48) <= l1_double_mu_15_7_mass_min1;
+algo(46) <= l1_double_mu_15_7_mass_min1;
 
 -- 51 L1_DoubleMu18er2p1 : comb{MU18[MU-QLTY_SNGL,MU-ETA_2p10],MU18[MU-QLTY_SNGL,MU-ETA_2p10]}
 l1_double_mu18er2p1 <= double_mu_i34;
-algo(33) <= l1_double_mu18er2p1;
+algo(31) <= l1_double_mu18er2p1;
 
 -- 55 L1_DoubleMu0er1p5_SQ : comb{MU0[MU-QLTY_SNGL,MU-ETA_1p5],MU0[MU-QLTY_SNGL,MU-ETA_1p5]}
 l1_double_mu0er1p5_sq <= double_mu_i37;
-algo(32) <= l1_double_mu0er1p5_sq;
+algo(30) <= l1_double_mu0er1p5_sq;
 
 -- 57 L1_DoubleMu0er1p5_SQ_dR_Max1p4 : dist{MU0[MU-QLTY_SNGL,MU-ETA_1p5],MU0[MU-QLTY_SNGL,MU-ETA_1p5]}[DR_1p4]
 l1_double_mu0er1p5_sq_d_r_max1p4 <= muon_muon_correlation_i39;
-algo(46) <= l1_double_mu0er1p5_sq_d_r_max1p4;
+algo(44) <= l1_double_mu0er1p5_sq_d_r_max1p4;
 
 -- 62 L1_DoubleMu4p5_SQ_OS : comb{MU4p5[MU-QLTY_SNGL],MU4p5[MU-QLTY_SNGL]}[CHGCOR_OS]
 l1_double_mu4p5_sq_os <= double_mu_i44;
-algo(34) <= l1_double_mu4p5_sq_os;
+algo(32) <= l1_double_mu4p5_sq_os;
 
 -- 63 L1_DoubleMu4p5_SQ_OS_dR_Max1p2 : dist{MU4p5[MU-QLTY_SNGL],MU4p5[MU-QLTY_SNGL]}[DR_1p2,CHGCOR_OS]
 l1_double_mu4p5_sq_os_d_r_max1p2 <= muon_muon_correlation_i45;
-algo(47) <= l1_double_mu4p5_sq_os_d_r_max1p2;
+algo(45) <= l1_double_mu4p5_sq_os_d_r_max1p2;
 
 -- 71 L1_TripleMu0_OQ : comb{MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN]}
 l1_triple_mu0_oq <= triple_mu_i48;
-algo(40) <= l1_triple_mu0_oq;
+algo(38) <= l1_triple_mu0_oq;
 
 -- 74 L1_TripleMu3 : comb{MU3[MU-QLTY_DBLE],MU3[MU-QLTY_DBLE],MU3[MU-QLTY_DBLE]}
 l1_triple_mu3 <= triple_mu_i51;
-algo(41) <= l1_triple_mu3;
+algo(39) <= l1_triple_mu3;
 
 -- 76 L1_TripleMu_5SQ_3SQ_0OQ : comb{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL],MU0[MU-QLTY_OPEN]}
 l1_triple_mu_5_sq_3_sq_0_oq <= triple_mu_i53;
-algo(42) <= l1_triple_mu_5_sq_3_sq_0_oq;
+algo(40) <= l1_triple_mu_5_sq_3_sq_0_oq;
 
 -- 85 L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9 : comb{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL],MU0[MU-QLTY_OPEN]} AND mass_inv{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}[MASS_MASS_0to9,CHGCOR_OS]
 l1_triple_mu_5_sq_3_sq_0_oq_double_mu_5_3_sq_os_mass_max9 <= triple_mu_i53 and invariant_mass_i60;
-algo(43) <= l1_triple_mu_5_sq_3_sq_0_oq_double_mu_5_3_sq_os_mass_max9;
+algo(41) <= l1_triple_mu_5_sq_3_sq_0_oq_double_mu_5_3_sq_os_mass_max9;
 
 -- 86 L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9 : comb{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL],MU0[MU-QLTY_DBLE]} AND mass_inv{MU5[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}[MASS_MASS_0to9,CHGCOR_OS]
 l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9 <= triple_mu_i61 and invariant_mass_i60;
-algo(44) <= l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9;
+algo(42) <= l1_triple_mu_5_sq_3_sq_0_double_mu_5_3_sq_os_mass_max9;
 
 -- 109 L1_DoubleMu4_SQ_EG9er2p5 : comb{MU4[MU-QLTY_SNGL],MU4[MU-QLTY_SNGL]} AND EG9[EG-ETA_2p52]
 l1_double_mu4_sq_eg9er2p5 <= double_mu_i74 and single_eg_i75;
-algo(38) <= l1_double_mu4_sq_eg9er2p5;
+algo(36) <= l1_double_mu4_sq_eg9er2p5;
 
 -- 110 L1_DoubleMu5_SQ_EG9er2p5 : comb{MU5[MU-QLTY_SNGL],MU5[MU-QLTY_SNGL]} AND EG9[EG-ETA_2p52]
 l1_double_mu5_sq_eg9er2p5 <= double_mu_i76 and single_eg_i75;
-algo(39) <= l1_double_mu5_sq_eg9er2p5;
+algo(37) <= l1_double_mu5_sq_eg9er2p5;
 
 -- 113 L1_DoubleMu5Upsilon_OS_DoubleEG3 : mass_inv{MU5[MU-QLTY_DBLE,MU-ETA_2p3],MU5[MU-QLTY_DBLE,MU-ETA_2p3]}[MASS_MASS_8to14,CHGCOR_OS] AND mass_inv{EG3[EG-ETA_2p13],EG3[EG-ETA_2p13]}[MASS_MASS_0to20]
 l1_double_mu5_upsilon_os_double_eg3 <= invariant_mass_i79 and invariant_mass_i80;
-algo(51) <= l1_double_mu5_upsilon_os_double_eg3;
+algo(49) <= l1_double_mu5_upsilon_os_double_eg3;
 
 -- 123 L1_Mu3_Jet60er2p5_dR_Max0p4 : dist{MU3[MU-QLTY_SNGL],JET60[JET-ETA_2p52]}[DR_MAX_0p4]
 l1_mu3_jet60er2p5_d_r_max0p4 <= calo_muon_correlation_i85;
-algo(52) <= l1_mu3_jet60er2p5_d_r_max0p4;
+algo(50) <= l1_mu3_jet60er2p5_d_r_max0p4;
 
 -- 154 L1_Mu0upt20ip1 : MU0[MU-IP_1,MU-UPT_20]
-l1_mu0upt20ip1 <= single_mu_i281;
-algo(22) <= l1_mu0upt20ip1;
+l1_mu0upt20ip1 <= single_mu_i272;
+algo(20) <= l1_mu0upt20ip1;
 
 -- 165 L1_SingleEG28er2p1 : EG28[EG-ETA_2p13]
 l1_single_eg28er2p1 <= single_eg_i114;
@@ -1790,55 +1748,47 @@ algo(7) <= l1_single_iso_eg32er2p1;
 
 -- 206 L1_DoubleEG_20_10_er2p5 : comb{EG20[EG-ETA_2p52],EG10[EG-ETA_2p52]}
 l1_double_eg_20_10_er2p5 <= double_eg_i138;
-algo(13) <= l1_double_eg_20_10_er2p5;
+algo(12) <= l1_double_eg_20_10_er2p5;
 
--- 209 L1_DoubleEG_25_14_er2p5 : comb{EG25[EG-ETA_2p52],EG14[EG-ETA_2p52]}
-l1_double_eg_25_14_er2p5 <= double_eg_i141;
-algo(14) <= l1_double_eg_25_14_er2p5;
+-- 210 L1_DoubleEG_27_14_er2p5 : comb{EG27[EG-ETA_2p52],EG14[EG-ETA_2p52]}
+l1_double_eg_27_14_er2p5 <= double_eg_i142;
+algo(13) <= l1_double_eg_27_14_er2p5;
 
 -- 227 L1_TripleEG_18_18_12_er2p5 : comb{EG18[EG-ETA_2p52],EG18[EG-ETA_2p52],EG12[EG-ETA_2p52]}
 l1_triple_eg_18_18_12_er2p5 <= triple_eg_i146;
-algo(20) <= l1_triple_eg_18_18_12_er2p5;
+algo(18) <= l1_triple_eg_18_18_12_er2p5;
 
 -- 228 L1_TripleEG16er2p5 : comb{EG16[EG-ETA_2p52],EG16[EG-ETA_2p52],EG16[EG-ETA_2p52]}
 l1_triple_eg16er2p5 <= triple_eg_i147;
-algo(19) <= l1_triple_eg16er2p5;
+algo(17) <= l1_triple_eg16er2p5;
 
--- 265 L1_SingleTau130er2p1 : TAU130[TAU-ETA_2p13]
-l1_single_tau130er2p1 <= single_tau_i154;
-algo(12) <= l1_single_tau130er2p1;
+-- 264 L1_SingleTau120er2p1 : TAU120[TAU-ETA_2p13]
+l1_single_tau120er2p1 <= single_tau_i153;
+algo(11) <= l1_single_tau120er2p1;
 
--- 270 L1_DoubleIsoTau30er2p1 : comb{TAU30[TAU-ETA_2p13,TAU-ISO_0xE],TAU30[TAU-ETA_2p13,TAU-ISO_0xE]}
-l1_double_iso_tau30er2p1 <= double_tau_i157;
-algo(15) <= l1_double_iso_tau30er2p1;
-
--- 273 L1_DoubleIsoTau36er2p1 : comb{TAU36[TAU-ETA_2p13,TAU-ISO_0xE],TAU36[TAU-ETA_2p13,TAU-ISO_0xE]}
-l1_double_iso_tau36er2p1 <= double_tau_i160;
-algo(16) <= l1_double_iso_tau36er2p1;
+-- 272 L1_DoubleIsoTau34er2p1 : comb{TAU34[TAU-ETA_2p13,TAU-ISO_0xE],TAU34[TAU-ETA_2p13,TAU-ISO_0xE]}
+l1_double_iso_tau34er2p1 <= double_tau_i159;
+algo(14) <= l1_double_iso_tau34er2p1;
 
 -- 277 L1_DoubleIsoTau30er2p1_Mass_Max80 : mass_inv{TAU30[TAU-ETA_2p13,TAU-ISO_0xE],TAU30[TAU-ETA_2p13,TAU-ISO_0xE]}[MASS_MAX_80]
 l1_double_iso_tau30er2p1_mass_max80 <= invariant_mass_i164;
-algo(49) <= l1_double_iso_tau30er2p1_mass_max80;
+algo(47) <= l1_double_iso_tau30er2p1_mass_max80;
 
 -- 304 L1_Mu0upt50 : MU0[MU-UPT_50]
 l1_mu0upt50 <= single_mu_i186;
-algo(23) <= l1_mu0upt50;
+algo(21) <= l1_mu0upt50;
 
 -- 305 L1_Mu0upt100 : MU0[MU-UPT_100]
 l1_mu0upt100 <= single_mu_i187;
-algo(21) <= l1_mu0upt100;
+algo(19) <= l1_mu0upt100;
 
 -- 307 L1_SingleMuOpenupt20 : MU0[MU-QLTY_SNGL,MU-UPT_20]
 l1_single_mu_openupt20 <= single_mu_i189;
-algo(29) <= l1_single_mu_openupt20;
+algo(27) <= l1_single_mu_openupt20;
 
--- 311 L1_SingleJet90 : JET90
-l1_single_jet90 <= single_jet_i193;
-algo(11) <= l1_single_jet90;
-
--- 316 L1_SingleJet35er2p5 : JET35[JET-ETA_2p52]
-l1_single_jet35er2p5 <= single_jet_i197;
-algo(10) <= l1_single_jet35er2p5;
+-- 310 L1_SingleJet60 : JET60
+l1_single_jet60 <= single_jet_i192;
+algo(10) <= l1_single_jet60;
 
 -- 319 L1_SingleJet120er2p5 : JET120[JET-ETA_2p52]
 l1_single_jet120er2p5 <= single_jet_i199;
@@ -1850,27 +1800,27 @@ algo(9) <= l1_single_jet180er2p5;
 
 -- 327 L1_SingleJet120_FWD3p0 : JET120[JET-ETA_FWD_3p00_NEG] OR JET120[JET-ETA_FWD_3p00_POS]
 l1_single_jet120_fwd3p0 <= single_jet_i209 or single_jet_i210;
-algo(18) <= l1_single_jet120_fwd3p0;
+algo(16) <= l1_single_jet120_fwd3p0;
 
 -- 343 L1_DoubleJet150er2p5 : comb{JET150[JET-ETA_2p52],JET150[JET-ETA_2p52]}
 l1_double_jet150er2p5 <= double_jet_i217;
-algo(17) <= l1_double_jet150er2p5;
+algo(15) <= l1_double_jet150er2p5;
 
 -- 346 L1_DoubleJet112er2p3_dEta_Max1p6 : dist{JET112[JET-ETA_2p3],JET112[JET-ETA_2p3]}[DETA_MAX_1p6]
 l1_double_jet112er2p3_d_eta_max1p6 <= calo_calo_correlation_i219;
-algo(45) <= l1_double_jet112er2p3_d_eta_max1p6;
+algo(43) <= l1_double_jet112er2p3_d_eta_max1p6;
 
 -- 349 L1_DoubleJet30er2p5_Mass_Min200_dEta_Max1p5 : mass_inv{JET30[JET-ETA_2p52],JET30[JET-ETA_2p52]}[MASS_MIN_200,DETA_MAX_1p5]
 l1_double_jet30er2p5_mass_min200_d_eta_max1p5 <= invariant_mass_i221;
-algo(50) <= l1_double_jet30er2p5_mass_min200_d_eta_max1p5;
+algo(48) <= l1_double_jet30er2p5_mass_min200_d_eta_max1p5;
 
 -- 364 L1_DoubleJet_80_30_Mass_Min420_IsoTau40_RmOvlp : mass_inv_orm{JET80,JET30,TAU40[TAU-ISO_0xE]}[MASS_MIN_420,ORMDR_0p2]
 l1_double_jet_80_30_mass_min420_iso_tau40_rm_ovlp <= invariant_mass_ov_rm_i233;
-algo(53) <= l1_double_jet_80_30_mass_min420_iso_tau40_rm_ovlp;
+algo(51) <= l1_double_jet_80_30_mass_min420_iso_tau40_rm_ovlp;
 
 -- 373 L1_TripleJet_100_80_70_DoubleJet_80_70_er2p5 : comb{JET100,JET80,JET70} AND comb{JET80[JET-ETA_2p52],JET70[JET-ETA_2p52]}
 l1_triple_jet_100_80_70_double_jet_80_70_er2p5 <= triple_jet_i238 and double_jet_i239;
-algo(30) <= l1_triple_jet_100_80_70_double_jet_80_70_er2p5;
+algo(28) <= l1_triple_jet_100_80_70_double_jet_80_70_er2p5;
 
 -- 399 L1_HTT160er : HTT160
 l1_htt160er <= single_htt_i251;

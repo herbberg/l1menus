@@ -7,10 +7,10 @@
 -- L1Menu_test_all_condition_types_v2
 
 -- Unique ID of L1 Trigger Menu:
--- f44e2f52-9675-43a6-a0f8-f3f65ce86b3b
+-- cc104e5d-7c52-44be-bebc-0319b13440dc
 
 -- Unique ID of firmware implementation:
--- eeda2c32-50eb-4d25-ba7c-73a41bd8c985
+-- 07b75d92-8de1-4840-9378-6be8dd07e1c2
 
 -- Scale set:
 -- scales_2020_10_04

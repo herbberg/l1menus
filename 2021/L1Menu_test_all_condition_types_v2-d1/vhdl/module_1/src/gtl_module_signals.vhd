@@ -7,10 +7,10 @@
 -- L1Menu_test_all_condition_types_v2
 
 -- Unique ID of L1 Trigger Menu:
--- f44e2f52-9675-43a6-a0f8-f3f65ce86b3b
+-- cc104e5d-7c52-44be-bebc-0319b13440dc
 
 -- Unique ID of firmware implementation:
--- eeda2c32-50eb-4d25-ba7c-73a41bd8c985
+-- 07b75d92-8de1-4840-9378-6be8dd07e1c2
 
 -- Scale set:
 -- scales_2020_10_04
@@ -113,18 +113,17 @@
     signal calo_muon_correlation_i88 : std_logic;
     signal calo_muon_correlation_i95 : std_logic;
     signal invariant_mass_i223 : std_logic;
-    signal invariant_mass_delta_r_i285 : std_logic;
-    signal invariant_mass_delta_r_i293 : std_logic;
+    signal invariant_mass_delta_r_i276 : std_logic;
+    signal invariant_mass_delta_r_i284 : std_logic;
     signal muon_muon_correlation_i36 : std_logic;
     signal transverse_mass_i135 : std_logic;
-    signal transverse_mass_i286 : std_logic;
-    signal invariant_mass3_i292 : std_logic;
+    signal transverse_mass_i277 : std_logic;
+    signal invariant_mass3_i283 : std_logic;
     signal double_eg_i137 : std_logic;
-    signal double_eg_i140 : std_logic;
+    signal double_eg_i141 : std_logic;
     signal double_jet_i216 : std_logic;
     signal double_jet_i237 : std_logic;
-    signal double_tau_i156 : std_logic;
-    signal double_tau_i159 : std_logic;
+    signal double_tau_i158 : std_logic;
     signal quad_jet_i180 : std_logic;
     signal quad_jet_i242 : std_logic;
     signal quad_mu_i62 : std_logic;
@@ -137,11 +136,11 @@
     signal single_eg_i124 : std_logic;
     signal single_eg_i125 : std_logic;
     signal single_eg_i130 : std_logic;
-    signal single_jet_i191 : std_logic;
     signal single_jet_i195 : std_logic;
+    signal single_jet_i197 : std_logic;
+    signal single_jet_i198 : std_logic;
     signal single_jet_i207 : std_logic;
     signal single_jet_i208 : std_logic;
-    signal single_jet_i211 : std_logic;
     signal single_jet_i212 : std_logic;
     signal single_jet_i243 : std_logic;
     signal single_jet_i244 : std_logic;
@@ -151,12 +150,11 @@
     signal single_mu_i183 : std_logic;
     signal single_mu_i184 : std_logic;
     signal single_mu_i190 : std_logic;
-    signal single_mu_i284 : std_logic;
+    signal single_mu_i275 : std_logic;
     signal single_mu_i4 : std_logic;
     signal single_mu_i5 : std_logic;
     signal single_mu_i8 : std_logic;
     signal single_mu_i81 : std_logic;
-    signal single_tau_i153 : std_logic;
     signal single_tau_i181 : std_logic;
     signal triple_eg_i145 : std_logic;
     signal triple_jet_i236 : std_logic;
@@ -189,19 +187,17 @@
     signal l1_single_iso_eg30er2p1 : std_logic;
     signal l1_iso_eg32er2p5_mt44 : std_logic;
     signal l1_double_eg_15_10_er2p5 : std_logic;
-    signal l1_double_eg_25_12_er2p5 : std_logic;
+    signal l1_double_eg_25_14_er2p5 : std_logic;
     signal l1_triple_eg_18_17_8_er2p5 : std_logic;
-    signal l1_single_tau120er2p1 : std_logic;
-    signal l1_double_iso_tau28er2p1 : std_logic;
-    signal l1_double_iso_tau34er2p1 : std_logic;
+    signal l1_double_iso_tau32er2p1 : std_logic;
     signal l1_quad_jet36er2p5_iso_tau52er2p1 : std_logic;
     signal l1_mu0upt5 : std_logic;
     signal l1_mu0upt10 : std_logic;
     signal l1_single_mu_openupt100 : std_logic;
-    signal l1_single_jet35 : std_logic;
     signal l1_single_jet180 : std_logic;
+    signal l1_single_jet35er2p5 : std_logic;
+    signal l1_single_jet90er2p5 : std_logic;
     signal l1_single_jet90_fwd3p0 : std_logic;
-    signal l1_single_jet8er_he : std_logic;
     signal l1_single_jet10er_he : std_logic;
     signal l1_double_jet120er2p5 : std_logic;
     signal l1_double_jet30er2p5_mass_min300_d_eta_max1p5 : std_logic;

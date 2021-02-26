@@ -7,10 +7,10 @@
 -- L1Menu_test_all_condition_types_v2
 
 -- Unique ID of L1 Trigger Menu:
--- f44e2f52-9675-43a6-a0f8-f3f65ce86b3b
+-- cc104e5d-7c52-44be-bebc-0319b13440dc
 
 -- Unique ID of firmware implementation:
--- eeda2c32-50eb-4d25-ba7c-73a41bd8c985
+-- 07b75d92-8de1-4840-9378-6be8dd07e1c2
 
 -- Scale set:
 -- scales_2020_10_04
@@ -137,7 +137,7 @@
     signal muon_muon_correlation_i45 : std_logic;
     signal invariant_mass_ov_rm_i233 : std_logic;
     signal double_eg_i138 : std_logic;
-    signal double_eg_i141 : std_logic;
+    signal double_eg_i142 : std_logic;
     signal double_jet_i217 : std_logic;
     signal double_jet_i239 : std_logic;
     signal double_mu_i22 : std_logic;
@@ -149,16 +149,14 @@
     signal double_mu_i44 : std_logic;
     signal double_mu_i74 : std_logic;
     signal double_mu_i76 : std_logic;
-    signal double_tau_i157 : std_logic;
-    signal double_tau_i160 : std_logic;
+    signal double_tau_i159 : std_logic;
     signal single_eg_i114 : std_logic;
     signal single_eg_i118 : std_logic;
     signal single_eg_i123 : std_logic;
     signal single_eg_i127 : std_logic;
     signal single_eg_i132 : std_logic;
     signal single_eg_i75 : std_logic;
-    signal single_jet_i193 : std_logic;
-    signal single_jet_i197 : std_logic;
+    signal single_jet_i192 : std_logic;
     signal single_jet_i199 : std_logic;
     signal single_jet_i202 : std_logic;
     signal single_jet_i209 : std_logic;
@@ -169,10 +167,10 @@
     signal single_mu_i187 : std_logic;
     signal single_mu_i189 : std_logic;
     signal single_mu_i20 : std_logic;
-    signal single_mu_i281 : std_logic;
+    signal single_mu_i272 : std_logic;
     signal single_mu_i3 : std_logic;
     signal single_mu_i9 : std_logic;
-    signal single_tau_i154 : std_logic;
+    signal single_tau_i153 : std_logic;
     signal triple_eg_i146 : std_logic;
     signal triple_eg_i147 : std_logic;
     signal triple_jet_i238 : std_logic;
@@ -213,18 +211,16 @@
     signal l1_single_iso_eg28er2p1 : std_logic;
     signal l1_single_iso_eg32er2p1 : std_logic;
     signal l1_double_eg_20_10_er2p5 : std_logic;
-    signal l1_double_eg_25_14_er2p5 : std_logic;
+    signal l1_double_eg_27_14_er2p5 : std_logic;
     signal l1_triple_eg_18_18_12_er2p5 : std_logic;
     signal l1_triple_eg16er2p5 : std_logic;
-    signal l1_single_tau130er2p1 : std_logic;
-    signal l1_double_iso_tau30er2p1 : std_logic;
-    signal l1_double_iso_tau36er2p1 : std_logic;
+    signal l1_single_tau120er2p1 : std_logic;
+    signal l1_double_iso_tau34er2p1 : std_logic;
     signal l1_double_iso_tau30er2p1_mass_max80 : std_logic;
     signal l1_mu0upt50 : std_logic;
     signal l1_mu0upt100 : std_logic;
     signal l1_single_mu_openupt20 : std_logic;
-    signal l1_single_jet90 : std_logic;
-    signal l1_single_jet35er2p5 : std_logic;
+    signal l1_single_jet60 : std_logic;
     signal l1_single_jet120er2p5 : std_logic;
     signal l1_single_jet180er2p5 : std_logic;
     signal l1_single_jet120_fwd3p0 : std_logic;
