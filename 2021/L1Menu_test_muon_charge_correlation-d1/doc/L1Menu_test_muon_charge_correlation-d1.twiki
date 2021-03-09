@@ -1,0 +1,77 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_test_muon_charge_correlation.html" }%
+
+---+!! !L1Menu_test_muon_charge_correlation
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_test_muon_charge_correlation | 0.7 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_test_muon_charge_correlation |
+|Menu UUID: | 1ae9dee9-6017-461b-a3e4-a221e19d28a2 |
+|Firmware UUID: | 8957cdc9-a76e-40d6-97cb-c09dd21a780e  |
+|Associated L1 scale DB key: | scales_2018_08_07 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 6 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Muon algorithm triggers: | 6 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Muon algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_QuadMu10_CHGCOR_OS ][L1_QuadMu10_CHGCOR_OS]]   | L1_QuadMu10_CHGCOR_OS  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu10_CHGCOR_OS ][L1_TripleMu10_CHGCOR_OS]]   | L1_TripleMu10_CHGCOR_OS  | 1 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu10_CHGCOR_OS ][L1_DoubleMu10_CHGCOR_OS]]   | L1_DoubleMu10_CHGCOR_OS  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_QuadMu10_CHGCOR_LS ][L1_QuadMu10_CHGCOR_LS]]   | L1_QuadMu10_CHGCOR_LS  | 3 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu10_CHGCOR_LS ][L1_TripleMu10_CHGCOR_LS]]   | L1_TripleMu10_CHGCOR_LS  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu10_CHGCOR_LS ][L1_DoubleMu10_CHGCOR_LS]]   | L1_DoubleMu10_CHGCOR_LS  | 5 |  |
+!Muon algorithm triggers: 6 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_QuadMu10_CHGCOR_OS ][L1_QuadMu10_CHGCOR_OS]]   |L1_QuadMu10_CHGCOR_OS |0 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu10_CHGCOR_OS ][L1_TripleMu10_CHGCOR_OS]]   |L1_TripleMu10_CHGCOR_OS |1 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu10_CHGCOR_OS ][L1_DoubleMu10_CHGCOR_OS]]   |L1_DoubleMu10_CHGCOR_OS |2 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_QuadMu10_CHGCOR_LS ][L1_QuadMu10_CHGCOR_LS]]   |L1_QuadMu10_CHGCOR_LS |3 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu10_CHGCOR_LS ][L1_TripleMu10_CHGCOR_LS]]   |L1_TripleMu10_CHGCOR_LS |4 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu10_CHGCOR_LS ][L1_DoubleMu10_CHGCOR_LS]]   |L1_DoubleMu10_CHGCOR_LS |5 |0 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
