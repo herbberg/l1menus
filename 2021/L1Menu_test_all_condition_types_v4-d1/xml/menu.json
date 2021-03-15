@@ -1,0 +1,31 @@
+{
+  "firmware_uuid" : "61c350e0-893d-4deb-af27-d885c0c687c4",
+  "menu_uuid"     : "e807980a-ee1d-4e53-81de-49a55e22bfd5",
+  "n_modules"     : 1,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_DoubleJet20_30_slice_0_5_MASSDR_min_10", 0, 0, 21],
+    ["L1_Mu10_Htm100_MASS_min_150", 1, 0, 7],
+    ["L1_Jet10_Tau10_MASS_MIN_40_ORMDR_min_2p4", 4, 0, 20],
+    ["L1_DoubleJet20_30_MASS_MIN_40", 5, 0, 16],
+    ["L1_Eg10_Eta_Iso_20_30_MassMin48", 6, 0, 18],
+    ["L1_Mu10_Phi_20_30_MassMin40", 7, 0, 13],
+    ["L1_DoubleJet20_30_slice_0_7_MASSDR_min_10", 9, 0, 22],
+    ["L1_DoubleMu0_Mass_Min1", 43, 0, 14],
+    ["L1_DoubleMu0er2p0_SQ_dR_Max1p4", 53, 0, 5],
+    ["L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4", 54, 0, 4],
+    ["L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18", 66, 0, 15],
+    ["L1_Mu3_Jet16er2p5_dR_Max0p4", 121, 0, 8],
+    ["L1_Mu3_Jet35er2p5_dR_Max0p4", 122, 0, 9],
+    ["L1_Mu3er1p5_Jet100er2p5_ETMHF40", 128, 0, 0],
+    ["L1_Mu3er1p5_Jet100er2p5_ETMHF50", 129, 0, 1],
+    ["L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er2p1_dEta_Max1p6", 136, 0, 10],
+    ["L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8", 142, 0, 11],
+    ["L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8", 143, 0, 12],
+    ["L1_IsoEG32er2p5_Mt48", 199, 0, 6],
+    ["L1_DoubleIsoTau28er2p1_Mass_Max90", 274, 0, 19],
+    ["L1_DoubleJet100er2p3_dEta_Max1p6", 345, 0, 2],
+    ["L1_DoubleJet112er2p3_dEta_Max1p6", 346, 0, 3],
+    ["L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5", 348, 0, 17]
+  ]
+}
