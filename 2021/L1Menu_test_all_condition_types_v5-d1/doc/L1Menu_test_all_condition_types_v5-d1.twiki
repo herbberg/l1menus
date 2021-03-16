@@ -1,0 +1,115 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_test_all_condition_types_v5.html" }%
+
+---+!! !L1Menu_test_all_condition_types_v5
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_test_all_condition_types_v5 | 0.8 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_test_all_condition_types_v5 |
+|Menu UUID: | 9b8f1705-dedd-4cba-b11d-409cb9fe35e1 |
+|Firmware UUID: | 3b485016-dc10-4e31-92ab-1852cbd889c9  |
+|Associated L1 scale DB key: | scales_2021_03_02 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 21 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Cross algorithm triggers: | 3 |
+      | !Correlation algorithm triggers: | 6 |
+      | !Mass algorithm triggers: | 12 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Cross algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er2p1_dEta_Max1p6 ][L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er2p1_dEta_Max1p6]]   | L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er2p1_dEta_Max1p6  | 136 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8 ][L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8]]   | L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8  | 142 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8 ][L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8]]   | L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8  | 143 |  |
+!Cross algorithm triggers: 3 bits defined
+---++++ !Correlation algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu0er2p0_SQ_dR_Max1p4 ][L1_DoubleMu0er2p0_SQ_dR_Max1p4]]   | L1_DoubleMu0er2p0_SQ_dR_Max1p4  | 53 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4 ][L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4]]   | L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4  | 54 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Mu3_Jet16er2p5_dR_Max0p4 ][L1_Mu3_Jet16er2p5_dR_Max0p4]]   | L1_Mu3_Jet16er2p5_dR_Max0p4  | 121 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Mu3_Jet35er2p5_dR_Max0p4 ][L1_Mu3_Jet35er2p5_dR_Max0p4]]   | L1_Mu3_Jet35er2p5_dR_Max0p4  | 122 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet100er2p3_dEta_Max1p6 ][L1_DoubleJet100er2p3_dEta_Max1p6]]   | L1_DoubleJet100er2p3_dEta_Max1p6  | 345 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet112er2p3_dEta_Max1p6 ][L1_DoubleJet112er2p3_dEta_Max1p6]]   | L1_DoubleJet112er2p3_dEta_Max1p6  | 346 |  |
+!Correlation algorithm triggers: 6 bits defined
+---++++ !Mass algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet20_30_slice_0_5_MASSDR_min_10 ][L1_DoubleJet20_30_slice_0_5_MASSDR_min_10]]   | L1_DoubleJet20_30_slice_0_5_MASSDR_min_10  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Mu10_Htm100_MASS_min_150 ][L1_Mu10_Htm100_MASS_min_150]]   | L1_Mu10_Htm100_MASS_min_150  | 1 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Jet10_Tau10_MASS_MIN_40_ORMDR_min_2p4 ][L1_Jet10_Tau10_MASS_MIN_40_ORMDR_min_2p4]]   | L1_Jet10_Tau10_MASS_MIN_40_ORMDR_min_2p4  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet20_30_MASS_MIN_40 ][L1_DoubleJet20_30_MASS_MIN_40]]   | L1_DoubleJet20_30_MASS_MIN_40  | 5 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Eg10_Eta_Iso_20_30_MassMin48 ][L1_Eg10_Eta_Iso_20_30_MassMin48]]   | L1_Eg10_Eta_Iso_20_30_MassMin48  | 6 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Mu10_Phi_20_30_MassMin40 ][L1_Mu10_Phi_20_30_MassMin40]]   | L1_Mu10_Phi_20_30_MassMin40  | 7 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMU20_30_MASSDR_min_10 ][L1_DoubleMU20_30_MASSDR_min_10]]   | L1_DoubleMU20_30_MASSDR_min_10  | 9 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu0_Mass_Min1 ][L1_DoubleMu0_Mass_Min1]]   | L1_DoubleMu0_Mass_Min1  | 43 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18 ][L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18]]   | L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18  | 66 |  |
+|[[%GET{"REPORTER_URL"}%#L1_IsoEG32er2p5_Mt48 ][L1_IsoEG32er2p5_Mt48]]   | L1_IsoEG32er2p5_Mt48  | 199 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleIsoTau28er2p1_Mass_Max90 ][L1_DoubleIsoTau28er2p1_Mass_Max90]]   | L1_DoubleIsoTau28er2p1_Mass_Max90  | 274 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5 ][L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5]]   | L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5  | 348 |  |
+!Mass algorithm triggers: 12 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet20_30_slice_0_5_MASSDR_min_10 ][L1_DoubleJet20_30_slice_0_5_MASSDR_min_10]]   |L1_DoubleJet20_30_slice_0_5_MASSDR_min_10 |0 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_Mu10_Htm100_MASS_min_150 ][L1_Mu10_Htm100_MASS_min_150]]   |L1_Mu10_Htm100_MASS_min_150 |1 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_Jet10_Tau10_MASS_MIN_40_ORMDR_min_2p4 ][L1_Jet10_Tau10_MASS_MIN_40_ORMDR_min_2p4]]   |L1_Jet10_Tau10_MASS_MIN_40_ORMDR_min_2p4 |4 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet20_30_MASS_MIN_40 ][L1_DoubleJet20_30_MASS_MIN_40]]   |L1_DoubleJet20_30_MASS_MIN_40 |5 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_Eg10_Eta_Iso_20_30_MassMin48 ][L1_Eg10_Eta_Iso_20_30_MassMin48]]   |L1_Eg10_Eta_Iso_20_30_MassMin48 |6 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_Mu10_Phi_20_30_MassMin40 ][L1_Mu10_Phi_20_30_MassMin40]]   |L1_Mu10_Phi_20_30_MassMin40 |7 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMU20_30_MASSDR_min_10 ][L1_DoubleMU20_30_MASSDR_min_10]]   |L1_DoubleMU20_30_MASSDR_min_10 |9 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu0_Mass_Min1 ][L1_DoubleMu0_Mass_Min1]]   |L1_DoubleMu0_Mass_Min1 |43 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu0er2p0_SQ_dR_Max1p4 ][L1_DoubleMu0er2p0_SQ_dR_Max1p4]]   |L1_DoubleMu0er2p0_SQ_dR_Max1p4 |53 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4 ][L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4]]   |L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4 |54 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18 ][L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18]]   |L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18 |66 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_Mu3_Jet16er2p5_dR_Max0p4 ][L1_Mu3_Jet16er2p5_dR_Max0p4]]   |L1_Mu3_Jet16er2p5_dR_Max0p4 |121 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_Mu3_Jet35er2p5_dR_Max0p4 ][L1_Mu3_Jet35er2p5_dR_Max0p4]]   |L1_Mu3_Jet35er2p5_dR_Max0p4 |122 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er2p1_dEta_Max1p6 ][L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er2p1_dEta_Max1p6]]   |L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er2p1_dEta_Max1p6 |136 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8 ][L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8]]   |L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8 |142 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8 ][L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8]]   |L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8 |143 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_IsoEG32er2p5_Mt48 ][L1_IsoEG32er2p5_Mt48]]   |L1_IsoEG32er2p5_Mt48 |199 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleIsoTau28er2p1_Mass_Max90 ][L1_DoubleIsoTau28er2p1_Mass_Max90]]   |L1_DoubleIsoTau28er2p1_Mass_Max90 |274 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet100er2p3_dEta_Max1p6 ][L1_DoubleJet100er2p3_dEta_Max1p6]]   |L1_DoubleJet100er2p3_dEta_Max1p6 |345 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet112er2p3_dEta_Max1p6 ][L1_DoubleJet112er2p3_dEta_Max1p6]]   |L1_DoubleJet112er2p3_dEta_Max1p6 |346 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5 ][L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5]]   |L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5 |348 |2 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
