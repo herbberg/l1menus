@@ -31,7 +31,7 @@ A complete description of the algorithm and technical trigger implementation is 
 
 |Menu Name: | !L1Menu_test_all_condition_types_v5 |
 |Menu UUID: | 9b8f1705-dedd-4cba-b11d-409cb9fe35e1 |
-|Firmware UUID: | 3b485016-dc10-4e31-92ab-1852cbd889c9  |
+|Firmware UUID: | fc7bc2f8-5838-4df5-ba33-ab67aab96ba2  |
 |Associated L1 scale DB key: | scales_2021_03_02 |
 
 
@@ -89,27 +89,27 @@ Number of algorithm triggers per trigger group:
 ---+++ List of algorithm triggers sorted by bits
 
 | *Algorithm* | *Alias* | *Bit number* | *Module Id* |
-|[[%GET{"REPORTER_URL"}%#L1_DoubleJet20_30_slice_0_5_MASSDR_min_10 ][L1_DoubleJet20_30_slice_0_5_MASSDR_min_10]]   |L1_DoubleJet20_30_slice_0_5_MASSDR_min_10 |0 |0 |
-|[[%GET{"REPORTER_URL"}%#L1_Mu10_Htm100_MASS_min_150 ][L1_Mu10_Htm100_MASS_min_150]]   |L1_Mu10_Htm100_MASS_min_150 |1 |1 |
-|[[%GET{"REPORTER_URL"}%#L1_Jet10_Tau10_MASS_MIN_40_ORMDR_min_2p4 ][L1_Jet10_Tau10_MASS_MIN_40_ORMDR_min_2p4]]   |L1_Jet10_Tau10_MASS_MIN_40_ORMDR_min_2p4 |4 |2 |
-|[[%GET{"REPORTER_URL"}%#L1_DoubleJet20_30_MASS_MIN_40 ][L1_DoubleJet20_30_MASS_MIN_40]]   |L1_DoubleJet20_30_MASS_MIN_40 |5 |2 |
-|[[%GET{"REPORTER_URL"}%#L1_Eg10_Eta_Iso_20_30_MassMin48 ][L1_Eg10_Eta_Iso_20_30_MassMin48]]   |L1_Eg10_Eta_Iso_20_30_MassMin48 |6 |2 |
-|[[%GET{"REPORTER_URL"}%#L1_Mu10_Phi_20_30_MassMin40 ][L1_Mu10_Phi_20_30_MassMin40]]   |L1_Mu10_Phi_20_30_MassMin40 |7 |2 |
-|[[%GET{"REPORTER_URL"}%#L1_DoubleMU20_30_MASSDR_min_10 ][L1_DoubleMU20_30_MASSDR_min_10]]   |L1_DoubleMU20_30_MASSDR_min_10 |9 |1 |
-|[[%GET{"REPORTER_URL"}%#L1_DoubleMu0_Mass_Min1 ][L1_DoubleMu0_Mass_Min1]]   |L1_DoubleMu0_Mass_Min1 |43 |2 |
-|[[%GET{"REPORTER_URL"}%#L1_DoubleMu0er2p0_SQ_dR_Max1p4 ][L1_DoubleMu0er2p0_SQ_dR_Max1p4]]   |L1_DoubleMu0er2p0_SQ_dR_Max1p4 |53 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet20_30_slice_0_5_MASSDR_min_10 ][L1_DoubleJet20_30_slice_0_5_MASSDR_min_10]]   |L1_DoubleJet20_30_slice_0_5_MASSDR_min_10 |0 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_Mu10_Htm100_MASS_min_150 ][L1_Mu10_Htm100_MASS_min_150]]   |L1_Mu10_Htm100_MASS_min_150 |1 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_Jet10_Tau10_MASS_MIN_40_ORMDR_min_2p4 ][L1_Jet10_Tau10_MASS_MIN_40_ORMDR_min_2p4]]   |L1_Jet10_Tau10_MASS_MIN_40_ORMDR_min_2p4 |4 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet20_30_MASS_MIN_40 ][L1_DoubleJet20_30_MASS_MIN_40]]   |L1_DoubleJet20_30_MASS_MIN_40 |5 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_Eg10_Eta_Iso_20_30_MassMin48 ][L1_Eg10_Eta_Iso_20_30_MassMin48]]   |L1_Eg10_Eta_Iso_20_30_MassMin48 |6 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_Mu10_Phi_20_30_MassMin40 ][L1_Mu10_Phi_20_30_MassMin40]]   |L1_Mu10_Phi_20_30_MassMin40 |7 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMU20_30_MASSDR_min_10 ][L1_DoubleMU20_30_MASSDR_min_10]]   |L1_DoubleMU20_30_MASSDR_min_10 |9 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu0_Mass_Min1 ][L1_DoubleMu0_Mass_Min1]]   |L1_DoubleMu0_Mass_Min1 |43 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu0er2p0_SQ_dR_Max1p4 ][L1_DoubleMu0er2p0_SQ_dR_Max1p4]]   |L1_DoubleMu0er2p0_SQ_dR_Max1p4 |53 |3 |
 |[[%GET{"REPORTER_URL"}%#L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4 ][L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4]]   |L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4 |54 |2 |
-|[[%GET{"REPORTER_URL"}%#L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18 ][L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18]]   |L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18 |66 |2 |
-|[[%GET{"REPORTER_URL"}%#L1_Mu3_Jet16er2p5_dR_Max0p4 ][L1_Mu3_Jet16er2p5_dR_Max0p4]]   |L1_Mu3_Jet16er2p5_dR_Max0p4 |121 |2 |
-|[[%GET{"REPORTER_URL"}%#L1_Mu3_Jet35er2p5_dR_Max0p4 ][L1_Mu3_Jet35er2p5_dR_Max0p4]]   |L1_Mu3_Jet35er2p5_dR_Max0p4 |122 |2 |
-|[[%GET{"REPORTER_URL"}%#L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er2p1_dEta_Max1p6 ][L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er2p1_dEta_Max1p6]]   |L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er2p1_dEta_Max1p6 |136 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18 ][L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18]]   |L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18 |66 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_Mu3_Jet16er2p5_dR_Max0p4 ][L1_Mu3_Jet16er2p5_dR_Max0p4]]   |L1_Mu3_Jet16er2p5_dR_Max0p4 |121 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_Mu3_Jet35er2p5_dR_Max0p4 ][L1_Mu3_Jet35er2p5_dR_Max0p4]]   |L1_Mu3_Jet35er2p5_dR_Max0p4 |122 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er2p1_dEta_Max1p6 ][L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er2p1_dEta_Max1p6]]   |L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er2p1_dEta_Max1p6 |136 |1 |
 |[[%GET{"REPORTER_URL"}%#L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8 ][L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8]]   |L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8 |142 |1 |
-|[[%GET{"REPORTER_URL"}%#L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8 ][L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8]]   |L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8 |143 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8 ][L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8]]   |L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8 |143 |2 |
 |[[%GET{"REPORTER_URL"}%#L1_IsoEG32er2p5_Mt48 ][L1_IsoEG32er2p5_Mt48]]   |L1_IsoEG32er2p5_Mt48 |199 |2 |
-|[[%GET{"REPORTER_URL"}%#L1_DoubleIsoTau28er2p1_Mass_Max90 ][L1_DoubleIsoTau28er2p1_Mass_Max90]]   |L1_DoubleIsoTau28er2p1_Mass_Max90 |274 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleIsoTau28er2p1_Mass_Max90 ][L1_DoubleIsoTau28er2p1_Mass_Max90]]   |L1_DoubleIsoTau28er2p1_Mass_Max90 |274 |1 |
 |[[%GET{"REPORTER_URL"}%#L1_DoubleJet100er2p3_dEta_Max1p6 ][L1_DoubleJet100er2p3_dEta_Max1p6]]   |L1_DoubleJet100er2p3_dEta_Max1p6 |345 |0 |
 |[[%GET{"REPORTER_URL"}%#L1_DoubleJet112er2p3_dEta_Max1p6 ][L1_DoubleJet112er2p3_dEta_Max1p6]]   |L1_DoubleJet112er2p3_dEta_Max1p6 |346 |1 |
-|[[%GET{"REPORTER_URL"}%#L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5 ][L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5]]   |L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5 |348 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5 ][L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5]]   |L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5 |348 |1 |
 
 
 <p style="page-break-before: always">&nbsp;</p>
