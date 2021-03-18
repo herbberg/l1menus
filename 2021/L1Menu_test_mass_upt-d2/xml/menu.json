@@ -1,0 +1,23 @@
+{
+  "firmware_uuid" : "fa681a3e-489f-4ddc-b4eb-198ccda2a6c8",
+  "menu_uuid"     : "f2f81b3c-c2e1-405e-b16d-525e83716098",
+  "n_modules"     : 1,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_MuUpt10_10_MassUpt40", 0, 0, 12],
+    ["L1_MuUpt20_20_MassUpt60", 1, 0, 13],
+    ["L1_MuUpt20_20_MassUpt60_DphiMin2p618Max3p142", 2, 0, 14],
+    ["L1_MuUpt100_100_MassUpt60", 3, 0, 11],
+    ["L1_Mu10_10_MuUpt20_20_MassUpt60", 4, 0, 9],
+    ["L1_Mu10_10_MuUpt20_20_MassUpt60_DetaMax1p5_OS", 5, 0, 10],
+    ["L1_Mu0upt0", 300, 0, 0],
+    ["L1_Mu0upt5", 301, 0, 4],
+    ["L1_Mu0upt10", 302, 0, 1],
+    ["L1_Mu0upt20", 303, 0, 3],
+    ["L1_Mu0upt50", 304, 0, 5],
+    ["L1_Mu0upt100", 305, 0, 2],
+    ["L1_SingleMuOpenupt5", 306, 0, 8],
+    ["L1_SingleMuOpenupt20", 307, 0, 7],
+    ["L1_SingleMuOpenupt100", 308, 0, 6]
+  ]
+}
