@@ -1,0 +1,210 @@
+2021-03-18 09:21:30 INFO : distributing menu...
+2021-03-18 09:21:30 INFO : loading resource information from JSON: /home/bergauer/github/cms-l1-globaltrigger/tm-vhdlproducer/tmVhdlProducer/config/resource_default.json
+2021-03-18 09:21:30 INFO : :: listing resources...
+2021-03-18 09:21:30 INFO : thresholds:
+2021-03-18 09:21:30 INFO :  * floor: sliceLUTs=17.00%, processors=0.00%
+2021-03-18 09:21:30 INFO :  * ceiling: sliceLUTs=90.00%, processors=100.00%
+2021-03-18 09:21:30 INFO : instances:
+2021-03-18 09:21:30 INFO :  * MuonCondition[ muon ]: sliceLUTs=0.01%, processors=0.00%
+2021-03-18 09:21:30 INFO :  * MuonCondition[ muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * tbpt: sliceLUTs=0.08%, processors=0.33%: 
+2021-03-18 09:21:30 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :  * MuonCondition[ muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :  * MuonCondition[ muon, muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :  * CaloCondition[ calo ]: sliceLUTs=0.00%, processors=0.00%
+2021-03-18 09:21:30 INFO :  * CaloCondition[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.33%: 
+2021-03-18 09:21:30 INFO :  * CaloCondition[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2021-03-18 09:21:30 INFO :  * CaloCondition[ calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
+2021-03-18 09:21:30 INFO :  * CaloConditionOvRm[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2021-03-18 09:21:30 INFO :  * CaloConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2021-03-18 09:21:30 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.33%: 
+2021-03-18 09:21:30 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2021-03-18 09:21:30 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2021-03-18 09:21:30 INFO :  * CorrelationCondition[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2021-03-18 09:21:30 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2021-03-18 09:21:30 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2021-03-18 09:21:30 INFO :    * massdr: sliceLUTs=0.03%, processors=0.08%: 
+2021-03-18 09:21:30 INFO :  * CorrelationCondition[ calo, muon ]: sliceLUTs=0.05%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * deta: sliceLUTs=0.01%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dr: sliceLUTs=0.05%, processors=0.06%: 
+2021-03-18 09:21:30 INFO :    * tbpt: sliceLUTs=0.00%, processors=0.39%: 
+2021-03-18 09:21:30 INFO :    * mass: sliceLUTs=0.12%, processors=0.14%: 
+2021-03-18 09:21:30 INFO :    * massdr: sliceLUTs=0.03%, processors=0.08%: 
+2021-03-18 09:21:30 INFO :  * CorrelationCondition[ calo, esum ]: sliceLUTs=0.02%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * tbpt: sliceLUTs=0.04%, processors=0.41%: 
+2021-03-18 09:21:30 INFO :    * mass: sliceLUTs=0.01%, processors=0.08%: 
+2021-03-18 09:21:30 INFO :  * CorrelationCondition[ muon, esum ]: sliceLUTs=0.08%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.61%: 
+2021-03-18 09:21:30 INFO :    * mass: sliceLUTs=0.02%, processors=0.14%: 
+2021-03-18 09:21:30 INFO :  * CorrelationCondition[ muon, muon ]: sliceLUTs=0.04%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dphi: sliceLUTs=0.01%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dr: sliceLUTs=0.04%, processors=0.06%: 
+2021-03-18 09:21:30 INFO :    * tbpt: sliceLUTs=0.03%, processors=0.33%: 
+2021-03-18 09:21:30 INFO :    * mass: sliceLUTs=0.07%, processors=0.08%: 
+2021-03-18 09:21:30 INFO :    * massupt: sliceLUTs=0.03%, processors=0.08%: 
+2021-03-18 09:21:30 INFO :    * massdr: sliceLUTs=0.03%, processors=0.08%: 
+2021-03-18 09:21:30 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :  * Correlation3Condition[ calo, calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2021-03-18 09:21:30 INFO :  * Correlation3Condition[ muon, muon, muon ]: sliceLUTs=0.03%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2021-03-18 09:21:30 INFO :  * CorrelationConditionOvRm[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
+2021-03-18 09:21:30 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2021-03-18 09:21:30 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2021-03-18 09:21:30 INFO :  * CorrelationConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.10%, processors=0.00%
+2021-03-18 09:21:30 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2021-03-18 09:21:30 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
+2021-03-18 09:21:30 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2021-03-18 09:21:30 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2021-03-18 09:21:30 INFO :  * EsumsCondition[ esum ]: sliceLUTs=0.00%, processors=0.00%
+2021-03-18 09:21:30 INFO :  * MinBiasCondition[ bias ]: sliceLUTs=0.00%, processors=0.00%
+2021-03-18 09:21:30 INFO :  * ExternalCondition[ ext ]: sliceLUTs=0.00%, processors=0.00%
+2021-03-18 09:21:30 INFO :  * TowerCountCondition[ count ]: sliceLUTs=0.00%, processors=0.00%
+2021-03-18 09:21:30 INFO :  * SignalCondition[ signal ]: sliceLUTs=0.00%, processors=0.00%
+2021-03-18 09:21:30 INFO : |-----------------------------------------------------------------------------|
+2021-03-18 09:21:30 INFO : |                                                                             |
+2021-03-18 09:21:30 INFO : | Algorithms sorted by payload (descending)                                   |
+2021-03-18 09:21:30 INFO : |                                                                             |
+2021-03-18 09:21:30 INFO : |-----------------------------------------------------------------------------|
+2021-03-18 09:21:30 INFO : |-------|-----------|---------|-----------------------------------------------|
+2021-03-18 09:21:30 INFO : | Index | SliceLUTs | DSPs    | Name                                          |
+2021-03-18 09:21:30 INFO : |-------|-----------|---------|-----------------------------------------------|
+2021-03-18 09:21:30 INFO : |   300 |    0.080% |  0.000% | L1_Mu0upt0                                    |
+2021-03-18 09:21:30 INFO : |   302 |    0.080% |  0.000% | L1_Mu0upt10                                   |
+2021-03-18 09:21:30 INFO : |   305 |    0.080% |  0.000% | L1_Mu0upt100                                  |
+2021-03-18 09:21:30 INFO : |   303 |    0.080% |  0.000% | L1_Mu0upt20                                   |
+2021-03-18 09:21:30 INFO : |   301 |    0.080% |  0.000% | L1_Mu0upt5                                    |
+2021-03-18 09:21:30 INFO : |   304 |    0.080% |  0.000% | L1_Mu0upt50                                   |
+2021-03-18 09:21:30 INFO : |   308 |    0.080% |  0.000% | L1_SingleMuOpenupt100                         |
+2021-03-18 09:21:30 INFO : |   307 |    0.080% |  0.000% | L1_SingleMuOpenupt20                          |
+2021-03-18 09:21:30 INFO : |   306 |    0.080% |  0.000% | L1_SingleMuOpenupt5                           |
+2021-03-18 09:21:30 INFO : |     4 |    2.184% |  2.324% | L1_Mu10_10_MuUpt20_20_MassUpt60               |
+2021-03-18 09:21:30 INFO : |     5 |    2.184% |  2.324% | L1_Mu10_10_MuUpt20_20_MassUpt60_DetaMa...     |
+2021-03-18 09:21:30 INFO : |     3 |    2.184% |  2.324% | L1_MuUpt100_100_MassUpt60                     |
+2021-03-18 09:21:30 INFO : |     0 |    2.184% |  2.324% | L1_MuUpt10_10_MassUpt40                       |
+2021-03-18 09:21:30 INFO : |     1 |    2.184% |  2.324% | L1_MuUpt20_20_MassUpt60                       |
+2021-03-18 09:21:30 INFO : |     2 |    2.324% |  2.324% | L1_MuUpt20_20_MassUpt60_DphiMin2p618Ma...     |
+2021-03-18 09:21:30 INFO : |-------|-----------|---------|-----------------------------------------------|
+2021-03-18 09:21:30 INFO : |-----------------------------------------------------------------------------|
+2021-03-18 09:21:30 INFO : distributing algorithms, shadow ratio: 0.0
+2021-03-18 09:21:30 INFO : starting algorithm distribution for 15 algorithms on 1 modules using shadow ratio of 0.0
+2021-03-18 09:21:30 INFO :  . adding L1_Mu0upt0 (300) to module 0
+2021-03-18 09:21:30 INFO :  . adding L1_Mu0upt10 (302) to module 0
+2021-03-18 09:21:30 INFO :  . adding L1_Mu0upt100 (305) to module 0
+2021-03-18 09:21:30 INFO :  . adding L1_Mu0upt20 (303) to module 0
+2021-03-18 09:21:30 INFO :  . adding L1_Mu0upt5 (301) to module 0
+2021-03-18 09:21:30 INFO :  . adding L1_Mu0upt50 (304) to module 0
+2021-03-18 09:21:30 INFO :  . adding L1_SingleMuOpenupt100 (308) to module 0
+2021-03-18 09:21:30 INFO :  . adding L1_SingleMuOpenupt20 (307) to module 0
+2021-03-18 09:21:30 INFO :  . adding L1_SingleMuOpenupt5 (306) to module 0
+2021-03-18 09:21:30 INFO :  . adding L1_Mu10_10_MuUpt20_20_MassUpt60 (4) to module 0
+2021-03-18 09:21:30 INFO :  . adding L1_Mu10_10_MuUpt20_20_MassUpt60_DetaMax1p5_OS (5) to module 0
+2021-03-18 09:21:30 INFO :  . adding L1_MuUpt100_100_MassUpt60 (3) to module 0
+2021-03-18 09:21:30 INFO :  . adding L1_MuUpt10_10_MassUpt40 (0) to module 0
+2021-03-18 09:21:30 INFO :  . adding L1_MuUpt20_20_MassUpt60 (1) to module 0
+2021-03-18 09:21:30 INFO :  . adding L1_MuUpt20_20_MassUpt60_DphiMin2p618Max3p142 (2) to module 0
+2021-03-18 09:21:30 INFO : |-----------------------------------------------------------------------------|
+2021-03-18 09:21:30 INFO : |                                                                             |
+2021-03-18 09:21:30 INFO : | Detailed distribition on 1 modules, shadow ratio: 0.0                       |
+2021-03-18 09:21:30 INFO : |                                                                             |
+2021-03-18 09:21:30 INFO : |------------|----------------------------------------------------------------|
+2021-03-18 09:21:30 INFO : | Module     | Algorithm                                                      |
+2021-03-18 09:21:30 INFO : | ID | Index | Index | Name                                                   |
+2021-03-18 09:21:30 INFO : |----|-------|-------|--------------------------------------------------------|
+2021-03-18 09:21:30 INFO : |  0 |     0 |   300 | L1_Mu0upt0                                             |
+2021-03-18 09:21:30 INFO : |  0 |     1 |   302 | L1_Mu0upt10                                            |
+2021-03-18 09:21:30 INFO : |  0 |     2 |   305 | L1_Mu0upt100                                           |
+2021-03-18 09:21:30 INFO : |  0 |     3 |   303 | L1_Mu0upt20                                            |
+2021-03-18 09:21:30 INFO : |  0 |     4 |   301 | L1_Mu0upt5                                             |
+2021-03-18 09:21:30 INFO : |  0 |     5 |   304 | L1_Mu0upt50                                            |
+2021-03-18 09:21:30 INFO : |  0 |     6 |   308 | L1_SingleMuOpenupt100                                  |
+2021-03-18 09:21:30 INFO : |  0 |     7 |   307 | L1_SingleMuOpenupt20                                   |
+2021-03-18 09:21:30 INFO : |  0 |     8 |   306 | L1_SingleMuOpenupt5                                    |
+2021-03-18 09:21:30 INFO : |  0 |     9 |     4 | L1_Mu10_10_MuUpt20_20_MassUpt60                        |
+2021-03-18 09:21:30 INFO : |  0 |    10 |     5 | L1_Mu10_10_MuUpt20_20_MassUpt60_DetaMax1p5_OS          |
+2021-03-18 09:21:30 INFO : |  0 |    11 |     3 | L1_MuUpt100_100_MassUpt60                              |
+2021-03-18 09:21:30 INFO : |  0 |    12 |     0 | L1_MuUpt10_10_MassUpt40                                |
+2021-03-18 09:21:30 INFO : |  0 |    13 |     1 | L1_MuUpt20_20_MassUpt60                                |
+2021-03-18 09:21:30 INFO : |  0 |    14 |     2 | L1_MuUpt20_20_MassUpt60_DphiMin2p618Max3p142           |
+2021-03-18 09:21:30 INFO : |----|-------|-------|--------------------------------------------------------|
+2021-03-18 09:21:30 INFO : |-----------------------------------------------------------------------------|
+2021-03-18 09:21:30 INFO : |                                                                             |
+2021-03-18 09:21:30 INFO : | Condition distribution, sorted by weight (ascending)                        |
+2021-03-18 09:21:30 INFO : |                                                                             |
+2021-03-18 09:21:30 INFO : |-----------------------------------------------------------------------------|
+2021-03-18 09:21:30 INFO : | Name                                             | Modules                  |
+2021-03-18 09:21:30 INFO : |--------------------------------------------------|--------------------------|
+2021-03-18 09:21:30 INFO : | SingleMU_i0                                      | 0                        |
+2021-03-18 09:21:30 INFO : | SingleMU_i1                                      | 0                        |
+2021-03-18 09:21:30 INFO : | SingleMU_i2                                      | 0                        |
+2021-03-18 09:21:30 INFO : | SingleMU_i3                                      | 0                        |
+2021-03-18 09:21:30 INFO : | SingleMU_i4                                      | 0                        |
+2021-03-18 09:21:30 INFO : | SingleMU_i5                                      | 0                        |
+2021-03-18 09:21:30 INFO : | SingleMU_i6                                      | 0                        |
+2021-03-18 09:21:30 INFO : | SingleMU_i7                                      | 0                        |
+2021-03-18 09:21:30 INFO : | SingleMU_i8                                      | 0                        |
+2021-03-18 09:21:30 INFO : | InvariantMassUpt_i10                             | 0                        |
+2021-03-18 09:21:30 INFO : | InvariantMassUpt_i12                             | 0                        |
+2021-03-18 09:21:30 INFO : | InvariantMassUpt_i13                             | 0                        |
+2021-03-18 09:21:30 INFO : | InvariantMassUpt_i14                             | 0                        |
+2021-03-18 09:21:30 INFO : | InvariantMassUpt_i9                              | 0                        |
+2021-03-18 09:21:30 INFO : | InvariantMassUpt_i11                             | 0                        |
+2021-03-18 09:21:30 INFO : |--------------------------------------------------|--------------------------|
+2021-03-18 09:21:30 INFO : |-----------------------------------------------------------------------------|
+2021-03-18 09:21:30 INFO : |                                                                             |
+2021-03-18 09:21:30 INFO : | Summary for distribution on 1 modules, shadow ratio: 0.0                    |
+2021-03-18 09:21:30 INFO : |                                                                             |
+2021-03-18 09:21:30 INFO : |-------------------------------------|---------------------------------------|
+2021-03-18 09:21:30 INFO : | Module                              | Payload                               |
+2021-03-18 09:21:30 INFO : | ID | Algorithms | Conditions | Rel. | SliceLUTs | DSPs    |                 |
+2021-03-18 09:21:30 INFO : |----|------------|------------|------|-----------|---------|-----------------|
+2021-03-18 09:21:30 INFO : |  0 |         15 |         15 | 1.00 |    30.96% |  13.94% |                 |
+2021-03-18 09:21:30 INFO : |----|------------|------------|------|-----------|---------|-----------------|
+2021-03-18 09:21:30 INFO : writing VHDL modules...
+2021-03-18 09:21:30 INFO : writing 15 algorithms to 1 module(s)
+2021-03-18 09:21:30 INFO : writing output for module: 0
+2021-03-18 09:21:30 INFO : algo_index.vhd          : /home/bergauer/github/herbberg/l1menus/2021/L1Menu_test_mass_upt-d3/vhdl/module_0/src/algo_index.vhd
+2021-03-18 09:21:31 INFO : gtl_module_signals.vhd  : /home/bergauer/github/herbberg/l1menus/2021/L1Menu_test_mass_upt-d3/vhdl/module_0/src/gtl_module_signals.vhd
+2021-03-18 09:21:31 INFO : gtl_module_instances.vhd: /home/bergauer/github/herbberg/l1menus/2021/L1Menu_test_mass_upt-d3/vhdl/module_0/src/gtl_module_instances.vhd
+2021-03-18 09:21:31 INFO : ugt_constants.vhd       : /home/bergauer/github/herbberg/l1menus/2021/L1Menu_test_mass_upt-d3/vhdl/module_0/src/ugt_constants.vhd
+2021-03-18 09:21:31 INFO : writing updated XML file /home/bergauer/github/herbberg/l1menus/2021/L1Menu_test_mass_upt.xml
+2021-03-18 09:21:31 INFO : reading source XML menu file /home/bergauer/github/herbberg/l1menus/2021/L1Menu_test_mass_upt.xml
+2021-03-18 09:21:31 INFO : processing menu "L1Menu_test_mass_upt" ... 
+2021-03-18 09:21:31 INFO : updating menu information...
+2021-03-18 09:21:31 INFO : uuid_menu     : f2f81b3c-c2e1-405e-b16d-525e83716098
+2021-03-18 09:21:31 INFO : uuid_firmware : bc352bfb-0cd8-4d5f-943b-8b58bfd992e8
+2021-03-18 09:21:31 INFO : n_modules     : 1
+2021-03-18 09:21:31 INFO : writing target XML menu file /home/bergauer/github/herbberg/l1menus/2021/L1Menu_test_mass_upt-d3/xml/L1Menu_test_mass_upt-d3.xml
+2021-03-18 09:21:32 INFO : generating menu documentation...
+2021-03-18 09:21:32 INFO : writing HTML documentation /home/bergauer/github/herbberg/l1menus/2021/L1Menu_test_mass_upt-d3/xml/L1Menu_test_mass_upt-d3.xml
+2021-03-18 09:21:34 INFO : writing TWIKI page template /home/bergauer/github/herbberg/l1menus/2021/L1Menu_test_mass_upt-d3/xml/L1Menu_test_mass_upt-d3.xml
+2021-03-18 09:21:35 INFO : patching filenames...
+2021-03-18 09:21:35 INFO : /home/bergauer/github/herbberg/l1menus/2021/L1Menu_test_mass_upt-d3/doc/L1Menu_test_mass_upt.html --> /home/bergauer/github/herbberg/l1menus/2021/L1Menu_test_mass_upt-d3/doc/L1Menu_test_mass_upt-d3.html
+2021-03-18 09:21:35 INFO : /home/bergauer/github/herbberg/l1menus/2021/L1Menu_test_mass_upt-d3/doc/L1Menu_test_mass_upt.twiki --> /home/bergauer/github/herbberg/l1menus/2021/L1Menu_test_mass_upt-d3/doc/L1Menu_test_mass_upt-d3.twiki
+2021-03-18 09:21:35 INFO : done.
