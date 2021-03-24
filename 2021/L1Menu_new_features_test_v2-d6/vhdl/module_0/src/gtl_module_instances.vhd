@@ -96,18 +96,9 @@ mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         cosh_deta_vector => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi_vector => mu_mu_bx_0_bx_0_cos_dphi_vector
     );
---     mu_mu_bx_0_bx_0_cosh_cos_l1: for i in 0 to NR_MU_OBJECTS-1 generate
---         mu_mu_bx_0_bx_0_cosh_cos_l2: for j in 0 to NR_MU_OBJECTS-1 generate
---             mu_mu_bx_0_bx_0_cosh_deta_vector(i,j)(MU_MU_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(MU_MU_COSH_DETA_LUT(mu_mu_bx_0_bx_0_deta_integer(i,j)), MU_MU_COSH_COS_VECTOR_WIDTH);
---             mu_mu_bx_0_bx_0_cos_dphi_vector(i,j)(MU_MU_COSH_COS_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(MU_MU_COS_DPHI_LUT(mu_mu_bx_0_bx_0_dphi_integer(i,j)), MU_MU_COSH_COS_VECTOR_WIDTH);
---             mu_mu_bx_0_bx_0_deta_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(mu_mu_bx_0_bx_0_deta_integer(i,j), MU_MU_DETA_BINS_WIDTH);
---             mu_mu_bx_0_bx_0_dphi_bin_vector(i,j) <= CONV_STD_LOGIC_VECTOR(mu_mu_bx_0_bx_0_dphi_integer(i,j), MU_MU_DPHI_BINS_WIDTH);
---         end generate mu_mu_bx_0_bx_0_cosh_cos_l2;
---     end generate mu_mu_bx_0_bx_0_cosh_cos_l1;
-
 
 -- Instantiations of conditions
-invariant_mass_upt_i0_i: entity work.correlation_conditions_muon_test
+invariant_mass_upt_i0_i: entity work.correlation_conditions_muon
     generic map(
       -- obj cuts
         pt_threshold_obj1 => X"0015",
@@ -130,7 +121,7 @@ invariant_mass_upt_i0_i: entity work.correlation_conditions_muon_test
         condition_o => invariant_mass_upt_i0
     );
 
-invariant_mass_upt_i1_i: entity work.correlation_conditions_muon_test
+invariant_mass_upt_i1_i: entity work.correlation_conditions_muon
     generic map(
       -- obj cuts
         pt_threshold_obj1 => X"003D",
