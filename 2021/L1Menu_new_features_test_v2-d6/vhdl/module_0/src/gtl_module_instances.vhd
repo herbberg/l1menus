@@ -50,29 +50,41 @@ mu_bx_0_parameter_i: entity work.obj_parameter
         cos_phi => mu_bx_0_cos_phi,
         sin_phi => mu_bx_0_sin_phi
     );
---     mu_data_bx_0_l: for i in 0 to NR_MU_OBJECTS-1 generate
---         mu_pt_vector_bx_0(i)(MU_PT_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(MU_PT_LUT(CONV_INTEGER(mu_bx_0(i)(D_S_I_MU_V2.pt_high downto D_S_I_MU_V2.pt_low))), MU_PT_VECTOR_WIDTH);
---         mu_upt_vector_bx_0(i)(MU_UPT_VECTOR_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(MU_UPT_LUT(CONV_INTEGER(mu_bx_0(i)(D_S_I_MU_V2.upt_high downto D_S_I_MU_V2.upt_low))), MU_UPT_VECTOR_WIDTH);
---         mu_eta_integer_bx_0(i) <= CONV_INTEGER(signed(mu_bx_0(i)(D_S_I_MU_V2.eta_high downto D_S_I_MU_V2.eta_low)));
---         mu_phi_integer_bx_0(i) <= CONV_INTEGER(mu_bx_0(i)(D_S_I_MU_V2.phi_high downto D_S_I_MU_V2.phi_low));
---         mu_cos_phi_bx_0(i) <= MUON_COS_PHI_LUT(CONV_INTEGER(mu_bx_0(i)(D_S_I_MU_V2.phi_high downto D_S_I_MU_V2.phi_low)));
---         mu_sin_phi_bx_0(i) <= MUON_SIN_PHI_LUT(CONV_INTEGER(mu_bx_0(i)(D_S_I_MU_V2.phi_high downto D_S_I_MU_V2.phi_low)));
---     end generate mu_data_bx_0_l;
 
 -- Instantiations of differences for correlation conditions (used for DETA, DPHI, DR, mass and b_tagging) - once for correlation conditions with two ObjectTypes in certain Bxs
 
-    diff_mu_mu_eta_bx_0_bx_0_i: entity work.sub_eta_integer_obj_vs_obj
-        generic map(NR_MU_OBJECTS, NR_MU_OBJECTS)
-        port map(mu_bx_0_eta_integer, mu_bx_0_eta_integer, mu_mu_bx_0_bx_0_deta_integer);
-    diff_mu_mu_phi_bx_0_bx_0_i: entity work.sub_phi_integer_obj_vs_obj
-        generic map(NR_MU_OBJECTS, NR_MU_OBJECTS, MUON_PHI_HALF_RANGE_BINS)
-        port map(mu_bx_0_phi_integer, mu_bx_0_phi_integer, mu_mu_bx_0_bx_0_dphi_integer);
-    mu_mu_bx_0_bx_0_l1: for i in 0 to NR_MU_OBJECTS-1 generate
-        mu_mu_bx_0_bx_0_l2: for j in 0 to NR_MU_OBJECTS-1 generate
-            mu_mu_bx_0_bx_0_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(MU_MU_DIFF_ETA_LUT(mu_mu_bx_0_bx_0_deta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
-            mu_mu_bx_0_bx_0_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(MU_MU_DIFF_PHI_LUT(mu_mu_bx_0_bx_0_dphi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
-        end generate mu_mu_bx_0_bx_0_l2;
-    end generate mu_mu_bx_0_bx_0_l1;
+mu_mu_bx_0_bx_0_differences_i: entity work.differences
+    generic map(
+        muon_muon_deta_lut => MU_MU_DIFF_ETA_LUT,
+        muon_muon_dphi_lut => MU_MU_DIFF_PHI_LUT,
+        phi_half_range => MUON_PHI_HALF_RANGE_BINS,
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
+    )
+    port map(
+        eta_integer_obj1 => mu_bx_0_eta_integer,
+        phi_integer_obj1 => mu_bx_0_phi_integer,
+        eta_integer_obj2 => mu_bx_0_eta_integer,
+        phi_integer_obj2 => mu_bx_0_phi_integer,
+        deta_integer => mu_mu_bx_0_bx_0_deta_integer,
+        deta_vector => mu_mu_bx_0_bx_0_deta_vector,
+        dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
+        dphi_vector => mu_mu_bx_0_bx_0_dphi_vector
+    );
+--     diff_mu_mu_eta_bx_0_bx_0_i: entity work.sub_eta_integer_obj_vs_obj
+--         generic map(NR_MU_OBJECTS, NR_MU_OBJECTS)
+--         port map(mu_bx_0_eta_integer, mu_bx_0_eta_integer, mu_mu_bx_0_bx_0_deta_integer);
+--     diff_mu_mu_phi_bx_0_bx_0_i: entity work.sub_phi_integer_obj_vs_obj
+--         generic map(NR_MU_OBJECTS, NR_MU_OBJECTS, MUON_PHI_HALF_RANGE_BINS)
+--         port map(mu_bx_0_phi_integer, mu_bx_0_phi_integer, mu_mu_bx_0_bx_0_dphi_integer);
+--     mu_mu_bx_0_bx_0_l1: for i in 0 to NR_MU_OBJECTS-1 generate
+--         mu_mu_bx_0_bx_0_l2: for j in 0 to NR_MU_OBJECTS-1 generate
+--             mu_mu_bx_0_bx_0_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(MU_MU_DIFF_ETA_LUT(mu_mu_bx_0_bx_0_deta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
+--             mu_mu_bx_0_bx_0_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(MU_MU_DIFF_PHI_LUT(mu_mu_bx_0_bx_0_dphi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
+--         end generate mu_mu_bx_0_bx_0_l2;
+--     end generate mu_mu_bx_0_bx_0_l1;
 
 -- Instantiations of cosh-deta and cos-dphi LUTs for correlation conditions (used for mass and overlap_remover) - once for correlation conditions with two ObjectTypes in certain Bxs
 
