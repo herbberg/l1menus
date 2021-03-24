@@ -63,14 +63,14 @@ mu_bx_0_parameter_i: entity work.obj_parameter
 
     diff_mu_mu_eta_bx_0_bx_0_i: entity work.sub_eta_integer_obj_vs_obj
         generic map(NR_MU_OBJECTS, NR_MU_OBJECTS)
-        port map(mu_eta_integer_bx_0, mu_eta_integer_bx_0, diff_mu_mu_bx_0_bx_0_eta_integer);
+        port map(mu_bx_0_eta_integer, mu_bx_0_eta_integer, mu_mu_bx_0_bx_0_deta_integer);
     diff_mu_mu_phi_bx_0_bx_0_i: entity work.sub_phi_integer_obj_vs_obj
         generic map(NR_MU_OBJECTS, NR_MU_OBJECTS, MUON_PHI_HALF_RANGE_BINS)
-        port map(mu_phi_integer_bx_0, mu_phi_integer_bx_0, diff_mu_mu_bx_0_bx_0_phi_integer);
+        port map(mu_bx_0_phi_integer, mu_bx_0_phi_integer, mu_mu_bx_0_bx_0_dphi_integer);
     mu_mu_bx_0_bx_0_l1: for i in 0 to NR_MU_OBJECTS-1 generate
         mu_mu_bx_0_bx_0_l2: for j in 0 to NR_MU_OBJECTS-1 generate
-            diff_mu_mu_bx_0_bx_0_eta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(MU_MU_DIFF_ETA_LUT(diff_mu_mu_bx_0_bx_0_eta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
-            diff_mu_mu_bx_0_bx_0_phi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(MU_MU_DIFF_PHI_LUT(diff_mu_mu_bx_0_bx_0_phi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
+            mu_mu_bx_0_bx_0_deta_vector(i,j) <= CONV_STD_LOGIC_VECTOR(MU_MU_DIFF_ETA_LUT(mu_mu_bx_0_bx_0_deta_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
+            mu_mu_bx_0_bx_0_dphi_vector(i,j) <= CONV_STD_LOGIC_VECTOR(MU_MU_DIFF_PHI_LUT(mu_mu_bx_0_bx_0_dphi_integer(i,j)),DETA_DPHI_VECTOR_WIDTH_ALL);
         end generate mu_mu_bx_0_bx_0_l2;
     end generate mu_mu_bx_0_bx_0_l1;
 
@@ -103,8 +103,8 @@ invariant_mass_upt_i0_i: entity work.correlation_conditions_muon_test
         lhc_clk,
         mu_bx_0,
         mu_bx_0,
-        pt1 => mu_pt_vector_bx_0,
-        pt2 => mu_pt_vector_bx_0,
+        pt1 => mu_bx_0_pt_vector,
+        pt2 => mu_bx_0_pt_vector,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
         condition_o => invariant_mass_upt_i0
@@ -131,8 +131,8 @@ invariant_mass_upt_i1_i: entity work.correlation_conditions_muon_test
         mu_bx_0,
         deta => diff_mu_mu_bx_0_bx_0_eta_vector,
         dphi => diff_mu_mu_bx_0_bx_0_phi_vector,
-        pt1 => mu_pt_vector_bx_0,
-        pt2 => mu_pt_vector_bx_0,
+        pt1 => mu_bx_0_pt_vector,
+        pt2 => mu_bx_0_pt_vector,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
         condition_o => invariant_mass_upt_i1
