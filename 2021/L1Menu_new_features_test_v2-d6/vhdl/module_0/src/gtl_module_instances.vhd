@@ -117,6 +117,8 @@ invariant_mass_upt_i0_i: entity work.correlation_conditions_muon
         mu_bx_0,
         pt1 => mu_bx_0_pt_vector,
         pt2 => mu_bx_0_pt_vector,
+        upt1 => mu_bx_0_upt_vector,
+        upt2 => mu_bx_0_upt_vector,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
         condition_o => invariant_mass_upt_i0
@@ -146,6 +148,8 @@ invariant_mass_upt_i1_i: entity work.correlation_conditions_muon
         dphi => mu_mu_bx_0_bx_0_dphi_vector,
         pt1 => mu_bx_0_pt_vector,
         pt2 => mu_bx_0_pt_vector,
+        upt1 => mu_bx_0_upt_vector,
+        upt2 => mu_bx_0_upt_vector,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
         condition_o => invariant_mass_upt_i1
