@@ -25,11 +25,11 @@
 -- Instantiations of muon charge correlations - only once for a certain Bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-    muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
-        port map(mu_bx_0, mu_bx_0,
-            ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-            ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-            ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
+muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
+    port map(mu_bx_0, mu_bx_0,
+        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+        ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
+        ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo ObjectType in certain Bx used in correlation conditions
 
@@ -105,6 +105,7 @@ invariant_mass_upt_i0_i: entity work.correlation_conditions_muon
         pt_threshold_obj2 => X"0029",
     -- correlation cuts
         mass_cut => true,
+        mass_type => INVARIANT_MASS_UPT_TYPE,
         mass_upper_limit_vector => X"000000012A05F200",
         mass_lower_limit_vector => X"000000002FAF0800",
         -- selector same/different bunch crossings
@@ -131,6 +132,7 @@ invariant_mass_upt_i1_i: entity work.correlation_conditions_muon
         mass_cut => true,
         dr_upper_limit_vector => X"00000000000274E8",
         dr_lower_limit_vector => X"0000000000000000",
+        mass_type => INVARIANT_MASS_UPT_TYPE,
         mass_upper_limit_vector => X"002907FE9BCB0C80",
         mass_lower_limit_vector => X"000000012A05F200",
         -- selector same/different bunch crossings
