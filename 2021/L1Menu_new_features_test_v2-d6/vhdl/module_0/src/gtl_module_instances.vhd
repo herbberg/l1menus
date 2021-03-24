@@ -73,7 +73,7 @@
 
 
 -- Instantiations of conditions
-invariant_mass_upt_i0_i: entity work.muon_muon_correlation_condition
+invariant_mass_upt_i0_i: entity work.correlation_conditions_muon_test
     generic map(
       -- obj cuts
         pt_threshold_obj1 => X"0015",
@@ -96,7 +96,7 @@ invariant_mass_upt_i0_i: entity work.muon_muon_correlation_condition
         condition_o => invariant_mass_upt_i0
     );
 
-invariant_mass_upt_i1_i: entity work.muon_muon_correlation_condition
+invariant_mass_upt_i1_i: entity work.correlation_conditions_muon_test
     generic map(
       -- obj cuts
         pt_threshold_obj1 => X"003D",
