@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- de4da8be-96bc-4962-8955-ddfdbbf731d4
+-- 069e672f-a887-41e5-83fd-4f4c9bbdd724
 
 -- Scale set:
 -- scales_2021_03_02
@@ -378,99 +378,99 @@ eg_etm_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
 
 tau_tau_bx_0_bx_0_mass_i: entity work.mass_instances
     generic map(
-        NR_TAU_OBJECTS,
-        NR_TAU_OBJECTS,
-        TAU_PT_VECTOR_WIDTH,
-        TAU_PT_VECTOR_WIDTH,
-        TAU_TAU_COSH_COS_VECTOR_WIDTH,
-        TAU_TAU_INV_MASS_SQ_VECTOR_WIDTH
+        nr_obj1 => NR_TAU_OBJECTS,
+        nr_obj2 => NR_TAU_OBJECTS,
+        mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => TAU_PT_VECTOR_WIDTH,
+        pt2_width => TAU_PT_VECTOR_WIDTH,
+        cosh_cos_precision => TAU_TAU_COSH_COS_PRECISION,
+        cosh_cos_width => TAU_TAU_COSH_COS_VECTOR_WIDTH
     )
     port map(
-        lhc_clk,
-        tau_bx_0_pt_vector,
-        tau_bx_0_pt_vector,
-        tau_tau_bx_0_bx_0_cosh_deta_vector,
-        tau_tau_bx_0_bx_0_cos_dphi_vector,
-        tau_tau_bx_0_bx_0_mass_inv_pt
+        pt1 => tau_bx_0_pt_vector,
+        pt2 => tau_bx_0_pt_vector,
+        cosh_deta => tau_tau_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => tau_tau_bx_0_bx_0_cos_dphi_vector,
+        inv_mass_pt => tau_tau_bx_0_bx_0_mass_inv_pt
     );
 
 -- Instantiations of invariant mass pt calculation modules
 
 jet_jet_bx_0_bx_0_mass_i: entity work.mass_instances
     generic map(
-        NR_JET_OBJECTS,
-        NR_JET_OBJECTS,
-        JET_PT_VECTOR_WIDTH,
-        JET_PT_VECTOR_WIDTH,
-        JET_JET_COSH_COS_VECTOR_WIDTH,
-        JET_JET_INV_MASS_SQ_VECTOR_WIDTH
+        nr_obj1 => NR_JET_OBJECTS,
+        nr_obj2 => NR_JET_OBJECTS,
+        mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH,
+        pt2_width => JET_PT_VECTOR_WIDTH,
+        cosh_cos_precision => JET_JET_COSH_COS_PRECISION,
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH
     )
     port map(
-        lhc_clk,
-        jet_bx_0_pt_vector,
-        jet_bx_0_pt_vector,
-        jet_jet_bx_0_bx_0_cosh_deta_vector,
-        jet_jet_bx_0_bx_0_cos_dphi_vector,
-        jet_jet_bx_0_bx_0_mass_inv_pt
+        pt1 => jet_bx_0_pt_vector,
+        pt2 => jet_bx_0_pt_vector,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        inv_mass_pt => jet_jet_bx_0_bx_0_mass_inv_pt
     );
 
 -- Instantiations of invariant mass pt calculation modules
 
 mu_mu_bx_0_bx_0_mass_i: entity work.mass_instances
     generic map(
-        NR_MU_OBJECTS,
-        NR_MU_OBJECTS,
-        MU_PT_VECTOR_WIDTH,
-        MU_PT_VECTOR_WIDTH,
-        MU_MU_COSH_COS_VECTOR_WIDTH,
-        MU_MU_INV_MASS_SQ_VECTOR_WIDTH
+        nr_obj1 => NR_MU_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
+        mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => MU_PT_VECTOR_WIDTH,
+        pt2_width => MU_PT_VECTOR_WIDTH,
+        cosh_cos_precision => MU_MU_COSH_COS_PRECISION,
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH
     )
     port map(
-        lhc_clk,
-        mu_bx_0_pt_vector,
-        mu_bx_0_pt_vector,
-        mu_mu_bx_0_bx_0_cosh_deta_vector,
-        mu_mu_bx_0_bx_0_cos_dphi_vector,
-        mu_mu_bx_0_bx_0_mass_inv_pt
+        pt1 => mu_bx_0_pt_vector,
+        pt2 => mu_bx_0_pt_vector,
+        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
+        inv_mass_pt => mu_mu_bx_0_bx_0_mass_inv_pt
     );
 
 -- Instantiations of invariant mass upt calculation modules
 
 mu_mu_bx_0_bx_0_mass_i: entity work.mass_instances
     generic map(
-        NR_MU_OBJECTS,
-        NR_MU_OBJECTS,
-        MU_PT_VECTOR_WIDTH,
-        MU_PT_VECTOR_WIDTH,
-        MU_MU_COSH_COS_VECTOR_WIDTH,
-        MU_MU_INV_MASS_SQ_VECTOR_WIDTH
+        nr_obj1 => NR_MU_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
+        mass_type => INVARIANT_MASS_UPT_TYPE,
+        upt1_width => MU_UPT_VECTOR_WIDTH,
+        upt2_width => MU_UPT_VECTOR_WIDTH,
+        cosh_cos_precision => MU_MU_COSH_COS_PRECISION,
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH
     )
     port map(
-        lhc_clk,
-        mu_bx_0_pt_vector,
-        mu_bx_0_pt_vector,
-        mu_mu_bx_0_bx_0_cosh_deta_vector,
-        mu_mu_bx_0_bx_0_cos_dphi_vector,
-        mu_mu_bx_0_bx_0_mass_inv_upt
+        upt1 => mu_bx_0_upt_vector,
+        upt2 => mu_bx_0_upt_vector,
+        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
+        inv_mass_upt => mu_mu_bx_0_bx_0_mass_inv_upt
     );
 
 -- Instantiations of transverse mass calculation modules
 
 eg_etm_bx_0_bx_0_mass_i: entity work.mass_instances
     generic map(
-        NR_EG_OBJECTS,
-        NR_ETM_OBJECTS,
-        EG_PT_VECTOR_WIDTH,
-        ETM_PT_VECTOR_WIDTH,
-        EG_ETM_COSH_COS_VECTOR_WIDTH,
-        EG_ETM_INV_MASS_SQ_VECTOR_WIDTH
+        nr_obj1 => NR_EG_OBJECTS,
+        nr_obj2 => NR_ETM_OBJECTS,
+        mass_type => TRANSVERSE_MASS_TYPE,
+        pt1_width => EG_PT_VECTOR_WIDTH,
+        pt2_width => ETM_PT_VECTOR_WIDTH,
+        cosh_cos_precision => EG_ETM_COSH_COS_PRECISION,
+        cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH
     )
     port map(
-        lhc_clk,
-        eg_bx_0_pt_vector,
-        etm_bx_0_pt_vector,
-        eg_etm_bx_0_bx_0_cos_dphi_vector,
-        eg_etm_bx_0_bx_0_mass_trans
+        pt1 => eg_bx_0_pt_vector,
+        pt2 => etm_bx_0_pt_vector,
+        cos_dphi => eg_etm_bx_0_bx_0_cos_dphi_vector,
+        trans_mass => eg_etm_bx_0_bx_0_mass_trans
     );
 
 
