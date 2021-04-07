@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- de6c856c-ab1c-412a-9d4d-45d163cbed6b
+-- a76b7eba-5ac7-41d0-9e35-0fa651c3cdd3
 
 -- Scale set:
 -- scales_2021_03_02
@@ -1780,7 +1780,7 @@ algo(40) <= l1_single_loose_iso_eg28er2p5;
 
 -- 179 L1_SingleLooseIsoEG28er2p1 : EG28[EG-ETA_2p13,EG-ISO_0xC]
 l1_single_loose_iso_eg28er2p1 <= single_eg_i147;
-algo(34) <= l1_single_loose_iso_eg28er2p1;
+algo(33) <= l1_single_loose_iso_eg28er2p1;
 
 -- 188 L1_SingleIsoEG28_FWD2p5 : EG28[EG-ETA_FWD_2p52_POS,EG-ISO_0xA] OR EG28[EG-ETA_FWD_2p52_NEG,EG-ISO_0xA]
 l1_single_iso_eg28_fwd2p5 <= single_eg_i156 or single_eg_i157;
@@ -1812,15 +1812,15 @@ algo(31) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(32) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(34) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(35) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(32) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(33) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(35) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 269 L1_DoubleIsoTau28er2p1 : comb{TAU28[TAU-ETA_2p13,TAU-ISO_0xE],TAU28[TAU-ETA_2p13,TAU-ISO_0xE]}
 l1_double_iso_tau28er2p1 <= double_tau_i204;

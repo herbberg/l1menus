@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- de6c856c-ab1c-412a-9d4d-45d163cbed6b
+-- a76b7eba-5ac7-41d0-9e35-0fa651c3cdd3
 
 -- Scale set:
 -- scales_2021_03_02
@@ -77,8 +77,8 @@ constant global_index: global_index_array := (
         484, -- module_index: 50, name: L1_BPTX_OR_Ref4_VME
         485, -- module_index: 51, name: L1_BPTX_RefAND_VME
         467, -- module_index: 52, name: L1_BptxMinus
-        465, -- module_index: 53, name: L1_BptxXOR
-        466, -- module_index: 54, name: L1_BptxPlus
+        466, -- module_index: 53, name: L1_BptxPlus
+        465, -- module_index: 54, name: L1_BptxXOR
         480, -- module_index: 55, name: L1_FirstCollisionInOrbit
         479, -- module_index: 56, name: L1_FirstCollisionInTrain
         500, -- module_index: 57, name: L1_HCAL_LaserMon_Trig
