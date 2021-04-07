@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 6fcf168b-1b8f-4d40-a5dd-86c891d07c59
+-- 45c2c58c-35cf-496c-8726-7dbd82ab02a4
 
 -- Scale set:
 -- scales_2021_03_02
@@ -233,7 +233,7 @@ tau_tau_bx_0_bx_0_mass_inv_pt_i: entity work.mass_instances
         pt2 => tau_bx_0_pt_vector,
         cosh_deta => tau_tau_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => tau_tau_bx_0_bx_0_cos_dphi_vector,
-        inv_mass_pt => tau_tau_bx_0_bx_0_mass_inv_pt
+        inv_mass_pt => tau_tau_bx_0_bx_0_mass_inv_pt(pt1_width+pt2_width+cosh_cos_width-1 downto 0)
     );
 
 -- Instantiations of invariant mass pt calculation modules
@@ -253,7 +253,7 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.mass_instances
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
-        inv_mass_pt => jet_jet_bx_0_bx_0_mass_inv_pt
+        inv_mass_pt => jet_jet_bx_0_bx_0_mass_inv_pt(pt1_width+pt2_width+cosh_cos_width-1 downto 0)
     );
 
 -- Instantiations of invariant mass pt calculation modules
@@ -273,7 +273,7 @@ mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.mass_instances
         pt2 => mu_bx_0_pt_vector,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
-        inv_mass_pt => mu_mu_bx_0_bx_0_mass_inv_pt
+        inv_mass_pt => mu_mu_bx_0_bx_0_mass_inv_pt(pt1_width+pt2_width+cosh_cos_width-1 downto 0)
     );
 
 -- Instantiations of invariant mass upt calculation modules
@@ -293,7 +293,7 @@ mu_mu_bx_0_bx_0_mass_inv_upt_i: entity work.mass_instances
         upt2 => mu_bx_0_upt_vector,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
-        inv_mass_upt => mu_mu_bx_0_bx_0_mass_inv_upt
+        inv_mass_upt => mu_mu_bx_0_bx_0_mass_inv_upt(upt1_width+upt2_width+cosh_cos_width-1 downto 0)
     );
 
 
