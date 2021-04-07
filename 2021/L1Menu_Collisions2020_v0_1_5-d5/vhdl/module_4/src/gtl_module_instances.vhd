@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 069e672f-a887-41e5-83fd-4f4c9bbdd724
+-- 6fcf168b-1b8f-4d40-a5dd-86c891d07c59
 
 -- Scale set:
 -- scales_2021_03_02
@@ -50,16 +50,16 @@ single_ext_i370 <= ext_cond_bx_0(43); -- single_ext_i370
 -- Instantiations of muon charge correlations - only once for a certain bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
-    port map(mu_bx_m1, mu_bx_0,
-        ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
-        ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
-        ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
 muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
     port map(mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
         ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
         ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
+muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
+    port map(mu_bx_m1, mu_bx_0,
+        ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
+        ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
+        ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo object type in certain bx used in correlation conditions
 
@@ -311,7 +311,7 @@ mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
 
 -- Instantiations of invariant mass pt calculation modules
 
-jet_jet_bx_0_bx_0_mass_i: entity work.mass_instances
+jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.mass_instances
     generic map(
         nr_obj1 => NR_JET_OBJECTS,
         nr_obj2 => NR_JET_OBJECTS,
@@ -331,7 +331,7 @@ jet_jet_bx_0_bx_0_mass_i: entity work.mass_instances
 
 -- Instantiations of invariant mass pt calculation modules
 
-mu_mu_bx_0_bx_0_mass_i: entity work.mass_instances
+mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.mass_instances
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
         nr_obj2 => NR_MU_OBJECTS,
@@ -351,7 +351,7 @@ mu_mu_bx_0_bx_0_mass_i: entity work.mass_instances
 
 -- Instantiations of invariant mass upt calculation modules
 
-mu_mu_bx_0_bx_0_mass_i: entity work.mass_instances
+mu_mu_bx_0_bx_0_mass_inv_upt_i: entity work.mass_instances
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
         nr_obj2 => NR_MU_OBJECTS,
