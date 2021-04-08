@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 714ed258-683e-4618-94f5-76919938815d
+-- e7010a02-ebd6-43e3-b838-d81b31480a58
 
 -- Scale set:
 -- scales_2021_03_02
@@ -1331,6 +1331,7 @@ invariant_mass_i44_i: entity work.correlation_conditions_muon
         pt2 => mu_bx_0_pt_vector,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
+        mass_inv_pt => mu_mu_bx_0_bx_0_mass_inv_pt,
         condition_o => invariant_mass_i44
     );
 
@@ -1371,6 +1372,7 @@ invariant_mass_upt_i376_i: entity work.correlation_conditions_muon
         upt2 => mu_bx_0_upt_vector,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
+        mass_inv_upt => mu_mu_bx_0_bx_0_mass_inv_upt,
         condition_o => invariant_mass_upt_i376
     );
 
@@ -1411,6 +1413,7 @@ invariant_mass_upt_i378_i: entity work.correlation_conditions_muon
         upt2 => mu_bx_0_upt_vector,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
+        mass_inv_upt => mu_mu_bx_0_bx_0_mass_inv_upt,
         condition_o => invariant_mass_upt_i378
     );
 
