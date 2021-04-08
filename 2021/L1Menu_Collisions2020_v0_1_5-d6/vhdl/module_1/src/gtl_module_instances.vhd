@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 063234d3-794c-476b-ba6e-8b74e3330c6a
+-- 941c3619-d5dd-44c3-97f8-7358f12ba91d
 
 -- Scale set:
 -- scales_2021_03_02
@@ -303,6 +303,8 @@ tau_tau_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_TAU_OBJECTS,
         nr_obj2 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
+        type_obj2 => TAU_TYPE,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => TAU_PT_VECTOR_WIDTH,
         pt2_width => TAU_PT_VECTOR_WIDTH,
@@ -325,6 +327,8 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_JET_OBJECTS,
         nr_obj2 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        type_obj2 => JET_TYPE,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH,
         pt2_width => JET_PT_VECTOR_WIDTH,
@@ -347,6 +351,8 @@ mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        type_obj2 => MU_TYPE,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => MU_PT_VECTOR_WIDTH,
         pt2_width => MU_PT_VECTOR_WIDTH,
@@ -369,6 +375,8 @@ mu_mu_bx_0_bx_0_mass_inv_upt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        type_obj2 => MU_TYPE,
         mass_type => INVARIANT_MASS_UPT_TYPE,
         upt1_width => MU_UPT_VECTOR_WIDTH,
         upt2_width => MU_UPT_VECTOR_WIDTH,
@@ -389,6 +397,8 @@ eg_etm_bx_0_bx_0_mass_trans_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_EG_OBJECTS,
         nr_obj2 => NR_ETM_OBJECTS,
+        type_obj1 => EG_TYPE,
+        type_obj2 => ETM_TYPE,
         mass_type => TRANSVERSE_MASS_TYPE,
         pt1_width => EG_PT_VECTOR_WIDTH,
         pt2_width => ETM_PT_VECTOR_WIDTH,

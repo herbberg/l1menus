@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 063234d3-794c-476b-ba6e-8b74e3330c6a
+-- 941c3619-d5dd-44c3-97f8-7358f12ba91d
 
 -- Scale set:
 -- scales_2021_03_02
@@ -50,16 +50,16 @@ single_ext_i370 <= ext_cond_bx_0(43); -- single_ext_i370
 -- Instantiations of muon charge correlations - only once for a certain bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
-    port map(mu_bx_m1, mu_bx_0,
-        ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
-        ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
-        ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
 muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
     port map(mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
         ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
         ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
+muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
+    port map(mu_bx_m1, mu_bx_0,
+        ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
+        ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
+        ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo object type in certain bx used in correlation conditions
 
@@ -273,6 +273,8 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_JET_OBJECTS,
         nr_obj2 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        type_obj2 => JET_TYPE,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH,
         pt2_width => JET_PT_VECTOR_WIDTH,
@@ -295,6 +297,8 @@ mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        type_obj2 => MU_TYPE,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => MU_PT_VECTOR_WIDTH,
         pt2_width => MU_PT_VECTOR_WIDTH,
@@ -317,6 +321,8 @@ mu_mu_bx_0_bx_0_mass_inv_upt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        type_obj2 => MU_TYPE,
         mass_type => INVARIANT_MASS_UPT_TYPE,
         upt1_width => MU_UPT_VECTOR_WIDTH,
         upt2_width => MU_UPT_VECTOR_WIDTH,
