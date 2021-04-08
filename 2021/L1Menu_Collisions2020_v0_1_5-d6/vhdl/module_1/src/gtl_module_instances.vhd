@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- cc25e675-7aae-4090-a9e2-041ec937f29b
+-- 9505a58f-ddc0-4943-8e43-9ce4e15d8eaa
 
 -- Scale set:
 -- scales_2021_03_02
@@ -307,6 +307,8 @@ tau_tau_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         type_obj2 => TAU_TYPE,
         deta_bins_width => TAU_TAU_DETA_BINS_WIDTH,
         dphi_bins_width => TAU_TAU_DPHI_BINS_WIDTH,
+        calo_calo_cosh_deta_lut => TAU_TAU_COSH_DETA_LUT,
+        calo_calo_cos_dphi_lut => TAU_TAU_COS_DPHI_LUT,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => TAU_PT_VECTOR_WIDTH,
         pt2_width => TAU_PT_VECTOR_WIDTH,
@@ -333,6 +335,8 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         type_obj2 => JET_TYPE,
         deta_bins_width => JET_JET_DETA_BINS_WIDTH,
         dphi_bins_width => JET_JET_DPHI_BINS_WIDTH,
+        calo_calo_cosh_deta_lut => JET_JET_COSH_DETA_LUT,
+        calo_calo_cos_dphi_lut => JET_JET_COS_DPHI_LUT,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH,
         pt2_width => JET_PT_VECTOR_WIDTH,
@@ -359,6 +363,8 @@ mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         type_obj2 => MU_TYPE,
         deta_bins_width => MU_MU_DETA_BINS_WIDTH,
         dphi_bins_width => MU_MU_DPHI_BINS_WIDTH,
+        muon_muon_cosh_deta_lut => MU_MU_COSH_DETA_LUT,
+        muon_muon_cos_dphi_lut => MU_MU_COS_DPHI_LUT,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => MU_PT_VECTOR_WIDTH,
         pt2_width => MU_PT_VECTOR_WIDTH,
@@ -383,6 +389,8 @@ mu_mu_bx_0_bx_0_mass_inv_upt_i: entity work.correlation_cuts_calculation
         nr_obj2 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
         type_obj2 => MU_TYPE,
+        muon_muon_cosh_deta_lut => MU_MU_COSH_DETA_LUT,
+        muon_muon_cos_dphi_lut => MU_MU_COS_DPHI_LUT,
         mass_type => INVARIANT_MASS_UPT_TYPE,
         upt1_width => MU_UPT_VECTOR_WIDTH,
         upt2_width => MU_UPT_VECTOR_WIDTH,
@@ -405,6 +413,7 @@ eg_etm_bx_0_bx_0_mass_trans_i: entity work.correlation_cuts_calculation
         nr_obj2 => NR_ETM_OBJECTS,
         type_obj1 => EG_TYPE,
         type_obj2 => ETM_TYPE,
+        calo_calo_cos_dphi_lut => EG_ETM_COS_DPHI_LUT,
         mass_type => TRANSVERSE_MASS_TYPE,
         pt1_width => EG_PT_VECTOR_WIDTH,
         pt2_width => ETM_PT_VECTOR_WIDTH,
@@ -1803,11 +1812,11 @@ transverse_mass_i167_i: entity work.correlation_conditions_calo
 
 -- 10 L1_SingleMu5 : MU5[MU-QLTY_SNGL]
 l1_single_mu5 <= single_mu_i10;
-algo(28) <= l1_single_mu5;
+algo(30) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(32) <= l1_single_mu7;
+algo(27) <= l1_single_mu7;
 
 -- 13 L1_SingleMu12_DQ_BMTF : MU12[MU-QLTY_DBLE,MU-ETA_BMTF]
 l1_single_mu12_dq_bmtf <= single_mu_i13;
@@ -1879,23 +1888,23 @@ algo(25) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i12 and single_eg_i80;
-algo(26) <= l1_mu7_eg20er2p5;
+algo(28) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i12 and single_eg_i79;
-algo(27) <= l1_mu7_eg23er2p5;
+algo(29) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i10 and single_eg_i82;
-algo(30) <= l1_mu5_loose_iso_eg20er2p5;
+algo(32) <= l1_mu5_loose_iso_eg20er2p5;
 
 -- 101 L1_Mu7_LooseIsoEG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg20er2p5 <= single_mu_i12 and single_eg_i82;
-algo(29) <= l1_mu7_loose_iso_eg20er2p5;
+algo(31) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i12 and single_eg_i83;
-algo(31) <= l1_mu7_loose_iso_eg23er2p5;
+algo(26) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 109 L1_DoubleMu4_SQ_EG9er2p5 : comb{MU4[MU-QLTY_SNGL],MU4[MU-QLTY_SNGL]} AND EG9[EG-ETA_2p52]
 l1_double_mu4_sq_eg9er2p5 <= double_mu_i89 and single_eg_i90;

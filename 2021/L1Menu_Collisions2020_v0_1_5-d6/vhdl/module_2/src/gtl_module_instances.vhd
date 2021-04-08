@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- cc25e675-7aae-4090-a9e2-041ec937f29b
+-- 9505a58f-ddc0-4943-8e43-9ce4e15d8eaa
 
 -- Scale set:
 -- scales_2021_03_02
@@ -254,6 +254,8 @@ tau_tau_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         type_obj2 => TAU_TYPE,
         deta_bins_width => TAU_TAU_DETA_BINS_WIDTH,
         dphi_bins_width => TAU_TAU_DPHI_BINS_WIDTH,
+        calo_calo_cosh_deta_lut => TAU_TAU_COSH_DETA_LUT,
+        calo_calo_cos_dphi_lut => TAU_TAU_COS_DPHI_LUT,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => TAU_PT_VECTOR_WIDTH,
         pt2_width => TAU_PT_VECTOR_WIDTH,
@@ -280,6 +282,8 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         type_obj2 => JET_TYPE,
         deta_bins_width => JET_JET_DETA_BINS_WIDTH,
         dphi_bins_width => JET_JET_DPHI_BINS_WIDTH,
+        calo_calo_cosh_deta_lut => JET_JET_COSH_DETA_LUT,
+        calo_calo_cos_dphi_lut => JET_JET_COS_DPHI_LUT,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH,
         pt2_width => JET_PT_VECTOR_WIDTH,
@@ -306,6 +310,8 @@ mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         type_obj2 => MU_TYPE,
         deta_bins_width => MU_MU_DETA_BINS_WIDTH,
         dphi_bins_width => MU_MU_DPHI_BINS_WIDTH,
+        muon_muon_cosh_deta_lut => MU_MU_COSH_DETA_LUT,
+        muon_muon_cos_dphi_lut => MU_MU_COS_DPHI_LUT,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => MU_PT_VECTOR_WIDTH,
         pt2_width => MU_PT_VECTOR_WIDTH,
@@ -330,6 +336,8 @@ mu_mu_bx_0_bx_0_mass_inv_upt_i: entity work.correlation_cuts_calculation
         nr_obj2 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
         type_obj2 => MU_TYPE,
+        muon_muon_cosh_deta_lut => MU_MU_COSH_DETA_LUT,
+        muon_muon_cos_dphi_lut => MU_MU_COS_DPHI_LUT,
         mass_type => INVARIANT_MASS_UPT_TYPE,
         upt1_width => MU_UPT_VECTOR_WIDTH,
         upt2_width => MU_UPT_VECTOR_WIDTH,
