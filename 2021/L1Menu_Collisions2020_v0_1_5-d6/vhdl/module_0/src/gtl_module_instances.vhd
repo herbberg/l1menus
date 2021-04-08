@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 9505a58f-ddc0-4943-8e43-9ce4e15d8eaa
+-- f8c87628-beae-4f08-9cc1-b8c81888c644
 
 -- Scale set:
 -- scales_2021_03_02
@@ -152,6 +152,69 @@ mu_mu_bx_0_bx_0_differences_i: entity work.differences
 --
 -- Instantiations of cosh deta and cos dphi LUTs for correlation conditions (used for mass) - once for correlation conditions with two object types in certain bxs
 
+tau_tau_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
+    generic map(
+        calo_calo_cosh_deta_lut => TAU_TAU_COSH_DETA_LUT,
+        calo_calo_cos_dphi_lut => TAU_TAU_COS_DPHI_LUT,
+        deta_bins_width => TAU_TAU_DETA_BINS_WIDTH,
+        dphi_bins_width => TAU_TAU_DPHI_BINS_WIDTH,
+        cosh_cos_vector_width => TAU_TAU_COSH_COS_VECTOR_WIDTH,
+        nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
+        nr_obj2 => NR_TAU_OBJECTS,
+        type_obj2 => TAU_TYPE
+    )
+    port map(
+        dphi_integer => tau_tau_bx_0_bx_0_dphi_integer,
+        deta_integer => tau_tau_bx_0_bx_0_deta_integer,
+        deta_bin_vector => tau_tau_bx_0_bx_0_deta_bin_vector,
+        dphi_bin_vector => tau_tau_bx_0_bx_0_dphi_bin_vector,
+        cosh_deta_vector => tau_tau_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi_vector => tau_tau_bx_0_bx_0_cos_dphi_vector
+    );
+--
+jet_jet_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
+    generic map(
+        calo_calo_cosh_deta_lut => JET_JET_COSH_DETA_LUT,
+        calo_calo_cos_dphi_lut => JET_JET_COS_DPHI_LUT,
+        deta_bins_width => JET_JET_DETA_BINS_WIDTH,
+        dphi_bins_width => JET_JET_DPHI_BINS_WIDTH,
+        cosh_cos_vector_width => JET_JET_COSH_COS_VECTOR_WIDTH,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_JET_OBJECTS,
+        type_obj2 => JET_TYPE
+    )
+    port map(
+        dphi_integer => jet_jet_bx_0_bx_0_dphi_integer,
+        deta_integer => jet_jet_bx_0_bx_0_deta_integer,
+        deta_bin_vector => jet_jet_bx_0_bx_0_deta_bin_vector,
+        dphi_bin_vector => jet_jet_bx_0_bx_0_dphi_bin_vector,
+        cosh_deta_vector => jet_jet_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi_vector => jet_jet_bx_0_bx_0_cos_dphi_vector
+    );
+--
+mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
+    generic map(
+        muon_muon_cosh_deta_lut => MU_MU_COSH_DETA_LUT,
+        muon_muon_cos_dphi_lut => MU_MU_COS_DPHI_LUT,
+        deta_bins_width => MU_MU_DETA_BINS_WIDTH,
+        dphi_bins_width => MU_MU_DPHI_BINS_WIDTH,
+        cosh_cos_vector_width => MU_MU_COSH_COS_VECTOR_WIDTH,
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
+    )
+    port map(
+        dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
+        deta_integer => mu_mu_bx_0_bx_0_deta_integer,
+        deta_bin_vector => mu_mu_bx_0_bx_0_deta_bin_vector,
+        dphi_bin_vector => mu_mu_bx_0_bx_0_dphi_bin_vector,
+        cosh_deta_vector => mu_mu_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi_vector => mu_mu_bx_0_bx_0_cos_dphi_vector
+    );
+--
 
 -- Instantiations of invariant mass pt calculation modules
 
@@ -159,12 +222,6 @@ tau_tau_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_TAU_OBJECTS,
         nr_obj2 => NR_TAU_OBJECTS,
-        type_obj1 => TAU_TYPE,
-        type_obj2 => TAU_TYPE,
-        deta_bins_width => TAU_TAU_DETA_BINS_WIDTH,
-        dphi_bins_width => TAU_TAU_DPHI_BINS_WIDTH,
-        calo_calo_cosh_deta_lut => TAU_TAU_COSH_DETA_LUT,
-        calo_calo_cos_dphi_lut => TAU_TAU_COS_DPHI_LUT,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => TAU_PT_VECTOR_WIDTH,
         pt2_width => TAU_PT_VECTOR_WIDTH,
@@ -172,12 +229,10 @@ tau_tau_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         cosh_cos_width => TAU_TAU_COSH_COS_VECTOR_WIDTH
     )
     port map(
-        dphi_integer => tau_tau_bx_0_bx_0_dphi_integer,
-        deta_integer => tau_tau_bx_0_bx_0_deta_integer,
         pt1 => tau_bx_0_pt_vector,
         pt2 => tau_bx_0_pt_vector,
-        deta_bin_vector => tau_tau_bx_0_bx_0_deta_bin_vector,
-        dphi_bin_vector => tau_tau_bx_0_bx_0_dphi_bin_vector,
+        cosh_deta_vector => tau_tau_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi_vector => tau_tau_bx_0_bx_0_cos_dphi_vector,
         inv_mass_pt => tau_tau_bx_0_bx_0_mass_inv_pt
     );
 
@@ -187,12 +242,6 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_JET_OBJECTS,
         nr_obj2 => NR_JET_OBJECTS,
-        type_obj1 => JET_TYPE,
-        type_obj2 => JET_TYPE,
-        deta_bins_width => JET_JET_DETA_BINS_WIDTH,
-        dphi_bins_width => JET_JET_DPHI_BINS_WIDTH,
-        calo_calo_cosh_deta_lut => JET_JET_COSH_DETA_LUT,
-        calo_calo_cos_dphi_lut => JET_JET_COS_DPHI_LUT,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH,
         pt2_width => JET_PT_VECTOR_WIDTH,
@@ -200,12 +249,10 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH
     )
     port map(
-        dphi_integer => jet_jet_bx_0_bx_0_dphi_integer,
-        deta_integer => jet_jet_bx_0_bx_0_deta_integer,
         pt1 => jet_bx_0_pt_vector,
         pt2 => jet_bx_0_pt_vector,
-        deta_bin_vector => jet_jet_bx_0_bx_0_deta_bin_vector,
-        dphi_bin_vector => jet_jet_bx_0_bx_0_dphi_bin_vector,
+        cosh_deta_vector => jet_jet_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi_vector => jet_jet_bx_0_bx_0_cos_dphi_vector,
         inv_mass_pt => jet_jet_bx_0_bx_0_mass_inv_pt
     );
 
@@ -215,12 +262,6 @@ mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
         nr_obj2 => NR_MU_OBJECTS,
-        type_obj1 => MU_TYPE,
-        type_obj2 => MU_TYPE,
-        deta_bins_width => MU_MU_DETA_BINS_WIDTH,
-        dphi_bins_width => MU_MU_DPHI_BINS_WIDTH,
-        muon_muon_cosh_deta_lut => MU_MU_COSH_DETA_LUT,
-        muon_muon_cos_dphi_lut => MU_MU_COS_DPHI_LUT,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => MU_PT_VECTOR_WIDTH,
         pt2_width => MU_PT_VECTOR_WIDTH,
@@ -228,12 +269,10 @@ mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH
     )
     port map(
-        dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
-        deta_integer => mu_mu_bx_0_bx_0_deta_integer,
         pt1 => mu_bx_0_pt_vector,
         pt2 => mu_bx_0_pt_vector,
-        deta_bin_vector => mu_mu_bx_0_bx_0_deta_bin_vector,
-        dphi_bin_vector => mu_mu_bx_0_bx_0_dphi_bin_vector,
+        cosh_deta_vector => mu_mu_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi_vector => mu_mu_bx_0_bx_0_cos_dphi_vector,
         inv_mass_pt => mu_mu_bx_0_bx_0_mass_inv_pt
     );
 
@@ -243,10 +282,6 @@ mu_mu_bx_0_bx_0_mass_inv_upt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
         nr_obj2 => NR_MU_OBJECTS,
-        type_obj1 => MU_TYPE,
-        type_obj2 => MU_TYPE,
-        muon_muon_cosh_deta_lut => MU_MU_COSH_DETA_LUT,
-        muon_muon_cos_dphi_lut => MU_MU_COS_DPHI_LUT,
         mass_type => INVARIANT_MASS_UPT_TYPE,
         upt1_width => MU_UPT_VECTOR_WIDTH,
         upt2_width => MU_UPT_VECTOR_WIDTH,
@@ -254,10 +289,10 @@ mu_mu_bx_0_bx_0_mass_inv_upt_i: entity work.correlation_cuts_calculation
         cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH
     )
     port map(
-        dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
-        deta_integer => mu_mu_bx_0_bx_0_deta_integer,
         upt1 => mu_bx_0_upt_vector,
         upt2 => mu_bx_0_upt_vector,
+        cosh_deta_vector => mu_mu_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi_vector => mu_mu_bx_0_bx_0_cos_dphi_vector,
         inv_mass_upt => mu_mu_bx_0_bx_0_mass_inv_upt
     );
 
@@ -1749,7 +1784,7 @@ algo(40) <= l1_single_loose_iso_eg28er2p5;
 
 -- 179 L1_SingleLooseIsoEG28er2p1 : EG28[EG-ETA_2p13,EG-ISO_0xC]
 l1_single_loose_iso_eg28er2p1 <= single_eg_i147;
-algo(34) <= l1_single_loose_iso_eg28er2p1;
+algo(33) <= l1_single_loose_iso_eg28er2p1;
 
 -- 188 L1_SingleIsoEG28_FWD2p5 : EG28[EG-ETA_FWD_2p52_POS,EG-ISO_0xA] OR EG28[EG-ETA_FWD_2p52_NEG,EG-ISO_0xA]
 l1_single_iso_eg28_fwd2p5 <= single_eg_i156 or single_eg_i157;
@@ -1781,15 +1816,15 @@ algo(31) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(32) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(34) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(35) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(32) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(33) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(35) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 269 L1_DoubleIsoTau28er2p1 : comb{TAU28[TAU-ETA_2p13,TAU-ISO_0xE],TAU28[TAU-ETA_2p13,TAU-ISO_0xE]}
 l1_double_iso_tau28er2p1 <= double_tau_i204;
