@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 941c3619-d5dd-44c3-97f8-7358f12ba91d
+-- cc25e675-7aae-4090-a9e2-041ec937f29b
 
 -- Scale set:
 -- scales_2021_03_02
@@ -50,16 +50,16 @@ single_ext_i370 <= ext_cond_bx_0(43); -- single_ext_i370
 -- Instantiations of muon charge correlations - only once for a certain bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
-    port map(mu_bx_0, mu_bx_0,
-        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-        ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-        ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
     port map(mu_bx_m1, mu_bx_0,
         ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
         ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
         ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
+muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
+    port map(mu_bx_0, mu_bx_0,
+        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+        ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
+        ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo object type in certain bx used in correlation conditions
 
@@ -275,6 +275,8 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         nr_obj2 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         type_obj2 => JET_TYPE,
+        deta_bins_width => JET_JET_DETA_BINS_WIDTH,
+        dphi_bins_width => JET_JET_DPHI_BINS_WIDTH,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH,
         pt2_width => JET_PT_VECTOR_WIDTH,
@@ -299,6 +301,8 @@ mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         nr_obj2 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
         type_obj2 => MU_TYPE,
+        deta_bins_width => MU_MU_DETA_BINS_WIDTH,
+        dphi_bins_width => MU_MU_DPHI_BINS_WIDTH,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => MU_PT_VECTOR_WIDTH,
         pt2_width => MU_PT_VECTOR_WIDTH,
@@ -1612,11 +1616,11 @@ algo(40) <= l1_htt255er;
 
 -- 465 L1_BptxXOR : (EXT_BPTX_B1_VME AND ( NOT EXT_BPTX_B2_VME)) OR (EXT_BPTX_B2_VME AND ( NOT EXT_BPTX_B1_VME))
 l1_bptx_xor <= ( single_ext_i344 and ( not single_ext_i345 ) ) or ( single_ext_i345 and ( not single_ext_i344 ) );
-algo(53) <= l1_bptx_xor;
+algo(54) <= l1_bptx_xor;
 
 -- 466 L1_BptxPlus : EXT_BPTX_B1_VME
 l1_bptx_plus <= single_ext_i344;
-algo(54) <= l1_bptx_plus;
+algo(53) <= l1_bptx_plus;
 
 -- 467 L1_BptxMinus : EXT_BPTX_B2_VME
 l1_bptx_minus <= single_ext_i345;

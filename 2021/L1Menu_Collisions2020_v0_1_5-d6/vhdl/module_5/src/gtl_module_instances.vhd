@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 941c3619-d5dd-44c3-97f8-7358f12ba91d
+-- cc25e675-7aae-4090-a9e2-041ec937f29b
 
 -- Scale set:
 -- scales_2021_03_02
@@ -252,6 +252,8 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         nr_obj2 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         type_obj2 => JET_TYPE,
+        deta_bins_width => JET_JET_DETA_BINS_WIDTH,
+        dphi_bins_width => JET_JET_DPHI_BINS_WIDTH,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH,
         pt2_width => JET_PT_VECTOR_WIDTH,
@@ -276,6 +278,8 @@ mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         nr_obj2 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
         type_obj2 => MU_TYPE,
+        deta_bins_width => MU_MU_DETA_BINS_WIDTH,
+        dphi_bins_width => MU_MU_DPHI_BINS_WIDTH,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => MU_PT_VECTOR_WIDTH,
         pt2_width => MU_PT_VECTOR_WIDTH,
@@ -300,6 +304,8 @@ eg_eg_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         nr_obj2 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         type_obj2 => EG_TYPE,
+        deta_bins_width => EG_EG_DETA_BINS_WIDTH,
+        dphi_bins_width => EG_EG_DPHI_BINS_WIDTH,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => EG_PT_VECTOR_WIDTH,
         pt2_width => EG_PT_VECTOR_WIDTH,

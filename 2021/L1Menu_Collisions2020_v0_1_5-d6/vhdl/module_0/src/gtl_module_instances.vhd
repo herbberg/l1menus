@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 941c3619-d5dd-44c3-97f8-7358f12ba91d
+-- cc25e675-7aae-4090-a9e2-041ec937f29b
 
 -- Scale set:
 -- scales_2021_03_02
@@ -161,6 +161,8 @@ tau_tau_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         nr_obj2 => NR_TAU_OBJECTS,
         type_obj1 => TAU_TYPE,
         type_obj2 => TAU_TYPE,
+        deta_bins_width => TAU_TAU_DETA_BINS_WIDTH,
+        dphi_bins_width => TAU_TAU_DPHI_BINS_WIDTH,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => TAU_PT_VECTOR_WIDTH,
         pt2_width => TAU_PT_VECTOR_WIDTH,
@@ -185,6 +187,8 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         nr_obj2 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         type_obj2 => JET_TYPE,
+        deta_bins_width => JET_JET_DETA_BINS_WIDTH,
+        dphi_bins_width => JET_JET_DPHI_BINS_WIDTH,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH,
         pt2_width => JET_PT_VECTOR_WIDTH,
@@ -209,6 +213,8 @@ mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
         nr_obj2 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
         type_obj2 => MU_TYPE,
+        deta_bins_width => MU_MU_DETA_BINS_WIDTH,
+        dphi_bins_width => MU_MU_DPHI_BINS_WIDTH,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => MU_PT_VECTOR_WIDTH,
         pt2_width => MU_PT_VECTOR_WIDTH,
@@ -1735,7 +1741,7 @@ algo(40) <= l1_single_loose_iso_eg28er2p5;
 
 -- 179 L1_SingleLooseIsoEG28er2p1 : EG28[EG-ETA_2p13,EG-ISO_0xC]
 l1_single_loose_iso_eg28er2p1 <= single_eg_i147;
-algo(34) <= l1_single_loose_iso_eg28er2p1;
+algo(33) <= l1_single_loose_iso_eg28er2p1;
 
 -- 188 L1_SingleIsoEG28_FWD2p5 : EG28[EG-ETA_FWD_2p52_POS,EG-ISO_0xA] OR EG28[EG-ETA_FWD_2p52_NEG,EG-ISO_0xA]
 l1_single_iso_eg28_fwd2p5 <= single_eg_i156 or single_eg_i157;
@@ -1767,15 +1773,15 @@ algo(31) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(32) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(34) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(35) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(32) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(33) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(35) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 269 L1_DoubleIsoTau28er2p1 : comb{TAU28[TAU-ETA_2p13,TAU-ISO_0xE],TAU28[TAU-ETA_2p13,TAU-ISO_0xE]}
 l1_double_iso_tau28er2p1 <= double_tau_i204;
