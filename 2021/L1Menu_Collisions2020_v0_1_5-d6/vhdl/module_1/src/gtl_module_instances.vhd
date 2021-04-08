@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- f8c87628-beae-4f08-9cc1-b8c81888c644
+-- 94d30ea4-0e25-4f6d-9696-b0ac202d4e12
 
 -- Scale set:
 -- scales_2021_03_02
@@ -389,8 +389,8 @@ tau_tau_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     port map(
         pt1 => tau_bx_0_pt_vector,
         pt2 => tau_bx_0_pt_vector,
-        cosh_deta_vector => tau_tau_bx_0_bx_0_cosh_deta_vector,
-        cos_dphi_vector => tau_tau_bx_0_bx_0_cos_dphi_vector,
+        cosh_deta => tau_tau_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => tau_tau_bx_0_bx_0_cos_dphi_vector,
         inv_mass_pt => tau_tau_bx_0_bx_0_mass_inv_pt
     );
 
@@ -409,8 +409,8 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     port map(
         pt1 => jet_bx_0_pt_vector,
         pt2 => jet_bx_0_pt_vector,
-        cosh_deta_vector => jet_jet_bx_0_bx_0_cosh_deta_vector,
-        cos_dphi_vector => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
         inv_mass_pt => jet_jet_bx_0_bx_0_mass_inv_pt
     );
 
@@ -429,8 +429,8 @@ mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     port map(
         pt1 => mu_bx_0_pt_vector,
         pt2 => mu_bx_0_pt_vector,
-        cosh_deta_vector => mu_mu_bx_0_bx_0_cosh_deta_vector,
-        cos_dphi_vector => mu_mu_bx_0_bx_0_cos_dphi_vector,
+        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
         inv_mass_pt => mu_mu_bx_0_bx_0_mass_inv_pt
     );
 
@@ -449,8 +449,8 @@ mu_mu_bx_0_bx_0_mass_inv_upt_i: entity work.correlation_cuts_calculation
     port map(
         upt1 => mu_bx_0_upt_vector,
         upt2 => mu_bx_0_upt_vector,
-        cosh_deta_vector => mu_mu_bx_0_bx_0_cosh_deta_vector,
-        cos_dphi_vector => mu_mu_bx_0_bx_0_cos_dphi_vector,
+        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
         inv_mass_upt => mu_mu_bx_0_bx_0_mass_inv_upt
     );
 
@@ -469,7 +469,7 @@ eg_etm_bx_0_bx_0_mass_trans_i: entity work.correlation_cuts_calculation
     port map(
         pt1 => eg_bx_0_pt_vector,
         pt2 => etm_bx_0_pt_vector,
-        cos_dphi_vector => eg_etm_bx_0_bx_0_cos_dphi_vector,
+        cos_dphi => eg_etm_bx_0_bx_0_cos_dphi_vector,
         trans_mass => eg_etm_bx_0_bx_0_mass_trans
     );
 
