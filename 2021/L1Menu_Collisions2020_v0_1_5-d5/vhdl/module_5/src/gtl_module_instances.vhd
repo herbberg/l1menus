@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 45c2c58c-35cf-496c-8726-7dbd82ab02a4
+-- bb964d0e-f6e6-462d-9841-056b549cff83
 
 -- Scale set:
 -- scales_2021_03_02
@@ -324,7 +324,7 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.mass_instances
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
-        inv_mass_pt => jet_jet_bx_0_bx_0_mass_inv_pt(pt1_width+pt2_width+cosh_cos_width-1 downto 0)
+        inv_mass_pt => jet_jet_bx_0_bx_0_mass_inv_pt(JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+JET_JET_COSH_COS_VECTOR_WIDTH-1 downto 0)
     );
 
 -- Instantiations of invariant mass pt calculation modules
@@ -344,7 +344,7 @@ mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.mass_instances
         pt2 => mu_bx_0_pt_vector,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
-        inv_mass_pt => mu_mu_bx_0_bx_0_mass_inv_pt(pt1_width+pt2_width+cosh_cos_width-1 downto 0)
+        inv_mass_pt => mu_mu_bx_0_bx_0_mass_inv_pt(MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+MU_MU_COSH_COS_VECTOR_WIDTH-1 downto 0)
     );
 
 -- Instantiations of invariant mass pt calculation modules
@@ -364,7 +364,7 @@ eg_eg_bx_0_bx_0_mass_inv_pt_i: entity work.mass_instances
         pt2 => eg_bx_0_pt_vector,
         cosh_deta => eg_eg_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => eg_eg_bx_0_bx_0_cos_dphi_vector,
-        inv_mass_pt => eg_eg_bx_0_bx_0_mass_inv_pt(pt1_width+pt2_width+cosh_cos_width-1 downto 0)
+        inv_mass_pt => eg_eg_bx_0_bx_0_mass_inv_pt(EG_PT_VECTOR_WIDTH+EG_PT_VECTOR_WIDTH+EG_EG_COSH_COS_VECTOR_WIDTH-1 downto 0)
     );
 
 -- Instantiations of invariant mass upt calculation modules
@@ -384,7 +384,7 @@ mu_mu_bx_0_bx_0_mass_inv_upt_i: entity work.mass_instances
         upt2 => mu_bx_0_upt_vector,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
-        inv_mass_upt => mu_mu_bx_0_bx_0_mass_inv_upt(upt1_width+upt2_width+cosh_cos_width-1 downto 0)
+        inv_mass_upt => mu_mu_bx_0_bx_0_mass_inv_upt(MU_UPT_VECTOR_WIDTH+MU_UPT_VECTOR_WIDTH+MU_MU_COSH_COS_VECTOR_WIDTH-1 downto 0-1 downto 0)
     );
 
 

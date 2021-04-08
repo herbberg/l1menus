@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 45c2c58c-35cf-496c-8726-7dbd82ab02a4
+-- bb964d0e-f6e6-462d-9841-056b549cff83
 
 -- Scale set:
 -- scales_2021_03_02
@@ -50,16 +50,16 @@ single_ext_i370 <= ext_cond_bx_0(43); -- single_ext_i370
 -- Instantiations of muon charge correlations - only once for a certain bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
-    port map(mu_bx_0, mu_bx_0,
-        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-        ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-        ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
     port map(mu_bx_m1, mu_bx_0,
         ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
         ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
         ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
+muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
+    port map(mu_bx_0, mu_bx_0,
+        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+        ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
+        ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo object type in certain bx used in correlation conditions
 
@@ -326,7 +326,7 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.mass_instances
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
-        inv_mass_pt => jet_jet_bx_0_bx_0_mass_inv_pt(pt1_width+pt2_width+cosh_cos_width-1 downto 0)
+        inv_mass_pt => jet_jet_bx_0_bx_0_mass_inv_pt(JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+JET_JET_COSH_COS_VECTOR_WIDTH-1 downto 0)
     );
 
 -- Instantiations of invariant mass pt calculation modules
@@ -346,7 +346,7 @@ mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.mass_instances
         pt2 => mu_bx_0_pt_vector,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
-        inv_mass_pt => mu_mu_bx_0_bx_0_mass_inv_pt(pt1_width+pt2_width+cosh_cos_width-1 downto 0)
+        inv_mass_pt => mu_mu_bx_0_bx_0_mass_inv_pt(MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+MU_MU_COSH_COS_VECTOR_WIDTH-1 downto 0)
     );
 
 -- Instantiations of invariant mass upt calculation modules
@@ -366,7 +366,7 @@ mu_mu_bx_0_bx_0_mass_inv_upt_i: entity work.mass_instances
         upt2 => mu_bx_0_upt_vector,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
-        inv_mass_upt => mu_mu_bx_0_bx_0_mass_inv_upt(upt1_width+upt2_width+cosh_cos_width-1 downto 0)
+        inv_mass_upt => mu_mu_bx_0_bx_0_mass_inv_upt(MU_UPT_VECTOR_WIDTH+MU_UPT_VECTOR_WIDTH+MU_MU_COSH_COS_VECTOR_WIDTH-1 downto 0-1 downto 0)
     );
 
 
@@ -1641,11 +1641,11 @@ algo(40) <= l1_htt255er;
 
 -- 465 L1_BptxXOR : (EXT_BPTX_B1_VME AND ( NOT EXT_BPTX_B2_VME)) OR (EXT_BPTX_B2_VME AND ( NOT EXT_BPTX_B1_VME))
 l1_bptx_xor <= ( single_ext_i344 and ( not single_ext_i345 ) ) or ( single_ext_i345 and ( not single_ext_i344 ) );
-algo(53) <= l1_bptx_xor;
+algo(54) <= l1_bptx_xor;
 
 -- 466 L1_BptxPlus : EXT_BPTX_B1_VME
 l1_bptx_plus <= single_ext_i344;
-algo(54) <= l1_bptx_plus;
+algo(53) <= l1_bptx_plus;
 
 -- 467 L1_BptxMinus : EXT_BPTX_B2_VME
 l1_bptx_minus <= single_ext_i345;

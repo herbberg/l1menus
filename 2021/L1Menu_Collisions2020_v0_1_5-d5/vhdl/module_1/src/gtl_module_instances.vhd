@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 45c2c58c-35cf-496c-8726-7dbd82ab02a4
+-- bb964d0e-f6e6-462d-9841-056b549cff83
 
 -- Scale set:
 -- scales_2021_03_02
@@ -391,7 +391,7 @@ tau_tau_bx_0_bx_0_mass_inv_pt_i: entity work.mass_instances
         pt2 => tau_bx_0_pt_vector,
         cosh_deta => tau_tau_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => tau_tau_bx_0_bx_0_cos_dphi_vector,
-        inv_mass_pt => tau_tau_bx_0_bx_0_mass_inv_pt(pt1_width+pt2_width+cosh_cos_width-1 downto 0)
+        inv_mass_pt => tau_tau_bx_0_bx_0_mass_inv_pt(TAU_PT_VECTOR_WIDTH+TAU_PT_VECTOR_WIDTH+TAU_TAU_COSH_COS_VECTOR_WIDTH-1 downto 0)
     );
 
 -- Instantiations of invariant mass pt calculation modules
@@ -411,7 +411,7 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.mass_instances
         pt2 => jet_bx_0_pt_vector,
         cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
-        inv_mass_pt => jet_jet_bx_0_bx_0_mass_inv_pt(pt1_width+pt2_width+cosh_cos_width-1 downto 0)
+        inv_mass_pt => jet_jet_bx_0_bx_0_mass_inv_pt(JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+JET_JET_COSH_COS_VECTOR_WIDTH-1 downto 0)
     );
 
 -- Instantiations of invariant mass pt calculation modules
@@ -431,7 +431,7 @@ mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.mass_instances
         pt2 => mu_bx_0_pt_vector,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
-        inv_mass_pt => mu_mu_bx_0_bx_0_mass_inv_pt(pt1_width+pt2_width+cosh_cos_width-1 downto 0)
+        inv_mass_pt => mu_mu_bx_0_bx_0_mass_inv_pt(MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+MU_MU_COSH_COS_VECTOR_WIDTH-1 downto 0)
     );
 
 -- Instantiations of invariant mass upt calculation modules
@@ -451,7 +451,7 @@ mu_mu_bx_0_bx_0_mass_inv_upt_i: entity work.mass_instances
         upt2 => mu_bx_0_upt_vector,
         cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
         cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
-        inv_mass_upt => mu_mu_bx_0_bx_0_mass_inv_upt(upt1_width+upt2_width+cosh_cos_width-1 downto 0)
+        inv_mass_upt => mu_mu_bx_0_bx_0_mass_inv_upt(MU_UPT_VECTOR_WIDTH+MU_UPT_VECTOR_WIDTH+MU_MU_COSH_COS_VECTOR_WIDTH-1 downto 0-1 downto 0)
     );
 
 -- Instantiations of transverse mass calculation modules
@@ -470,7 +470,7 @@ eg_etm_bx_0_bx_0_mass_trans_i: entity work.mass_instances
         pt1 => eg_bx_0_pt_vector,
         pt2 => etm_bx_0_pt_vector,
         cos_dphi => eg_etm_bx_0_bx_0_cos_dphi_vector,
-        trans_mass => eg_etm_bx_0_bx_0_mass_trans(pt1_width+pt2_width+cosh_cos_width-1 downto 0)
+        trans_mass => eg_etm_bx_0_bx_0_mass_trans(EG_PT_VECTOR_WIDTH+ETM_PT_VECTOR_WIDTH+EG_ETM_COSH_COS_VECTOR_WIDTH-1 downto 0-1 downto 0)
     );
 
 
@@ -1855,11 +1855,11 @@ transverse_mass_i167_i: entity work.correlation_conditions_calo
 
 -- 10 L1_SingleMu5 : MU5[MU-QLTY_SNGL]
 l1_single_mu5 <= single_mu_i10;
-algo(30) <= l1_single_mu5;
+algo(28) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(27) <= l1_single_mu7;
+algo(32) <= l1_single_mu7;
 
 -- 13 L1_SingleMu12_DQ_BMTF : MU12[MU-QLTY_DBLE,MU-ETA_BMTF]
 l1_single_mu12_dq_bmtf <= single_mu_i13;
@@ -1931,23 +1931,23 @@ algo(25) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i12 and single_eg_i80;
-algo(28) <= l1_mu7_eg20er2p5;
+algo(26) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i12 and single_eg_i79;
-algo(29) <= l1_mu7_eg23er2p5;
+algo(27) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i10 and single_eg_i82;
-algo(32) <= l1_mu5_loose_iso_eg20er2p5;
+algo(30) <= l1_mu5_loose_iso_eg20er2p5;
 
 -- 101 L1_Mu7_LooseIsoEG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg20er2p5 <= single_mu_i12 and single_eg_i82;
-algo(31) <= l1_mu7_loose_iso_eg20er2p5;
+algo(29) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i12 and single_eg_i83;
-algo(26) <= l1_mu7_loose_iso_eg23er2p5;
+algo(31) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 109 L1_DoubleMu4_SQ_EG9er2p5 : comb{MU4[MU-QLTY_SNGL],MU4[MU-QLTY_SNGL]} AND EG9[EG-ETA_2p52]
 l1_double_mu4_sq_eg9er2p5 <= double_mu_i89 and single_eg_i90;
