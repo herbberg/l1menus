@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 75e3fe8e-53a8-463b-9b57-c843f7a620f1
+-- 32fc9fbb-8a51-429f-b041-4e6a5c2185de
 
 -- Scale set:
 -- scales_2021_03_02
@@ -373,6 +373,48 @@ eg_etm_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         cos_dphi_vector => eg_etm_bx_0_bx_0_cos_dphi_vector
     );
 --
+
+-- Instantiations of deltaR calculation
+
+eg_jet_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_EG_OBJECTS,
+        nr_obj2 => NR_JET_OBJECTS,
+        dr_cut => true
+    )
+    port map(
+        deta => eg_jet_bx_0_bx_0_deta_vector,
+        dphi => eg_jet_bx_0_bx_0_dphi_vector,
+        dr => eg_jet_bx_0_bx_0_dr
+    );
+
+-- Instantiations of deltaR calculation
+
+jet_mu_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_JET_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
+        dr_cut => true
+    )
+    port map(
+        deta => jet_mu_bx_0_bx_0_deta_vector,
+        dphi => jet_mu_bx_0_bx_0_dphi_vector,
+        dr => jet_mu_bx_0_bx_0_dr
+    );
+
+-- Instantiations of deltaR calculation
+
+mu_mu_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_MU_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
+        dr_cut => true
+    )
+    port map(
+        deta => mu_mu_bx_0_bx_0_deta_vector,
+        dphi => mu_mu_bx_0_bx_0_dphi_vector,
+        dr => mu_mu_bx_0_bx_0_dr
+    );
 
 -- Instantiations of invariant mass pt calculation
 
@@ -1352,7 +1394,7 @@ calo_calo_correlation_i186_i: entity work.correlation_conditions_calo
         obj2 => jet_bx_0,
         deta => eg_jet_bx_0_bx_0_deta_vector,
         dphi => eg_jet_bx_0_bx_0_dphi_vector,
-            dr => eg_jet_bx_0_bx_0_dr,
+        dr => eg_jet_bx_0_bx_0_dr,
         condition_o => calo_calo_correlation_i186
     );
 
@@ -1863,11 +1905,11 @@ transverse_mass_i167_i: entity work.correlation_conditions_calo
 
 -- 10 L1_SingleMu5 : MU5[MU-QLTY_SNGL]
 l1_single_mu5 <= single_mu_i10;
-algo(30) <= l1_single_mu5;
+algo(27) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(28) <= l1_single_mu7;
+algo(32) <= l1_single_mu7;
 
 -- 13 L1_SingleMu12_DQ_BMTF : MU12[MU-QLTY_DBLE,MU-ETA_BMTF]
 l1_single_mu12_dq_bmtf <= single_mu_i13;
@@ -1939,23 +1981,23 @@ algo(25) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i12 and single_eg_i80;
-algo(29) <= l1_mu7_eg20er2p5;
+algo(26) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i12 and single_eg_i79;
-algo(26) <= l1_mu7_eg23er2p5;
+algo(28) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i10 and single_eg_i82;
-algo(32) <= l1_mu5_loose_iso_eg20er2p5;
+algo(30) <= l1_mu5_loose_iso_eg20er2p5;
 
 -- 101 L1_Mu7_LooseIsoEG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg20er2p5 <= single_mu_i12 and single_eg_i82;
-algo(31) <= l1_mu7_loose_iso_eg20er2p5;
+algo(29) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i12 and single_eg_i83;
-algo(27) <= l1_mu7_loose_iso_eg23er2p5;
+algo(31) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 109 L1_DoubleMu4_SQ_EG9er2p5 : comb{MU4[MU-QLTY_SNGL],MU4[MU-QLTY_SNGL]} AND EG9[EG-ETA_2p52]
 l1_double_mu4_sq_eg9er2p5 <= double_mu_i89 and single_eg_i90;

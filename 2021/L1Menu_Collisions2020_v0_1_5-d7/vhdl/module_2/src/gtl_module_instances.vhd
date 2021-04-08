@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 75e3fe8e-53a8-463b-9b57-c843f7a620f1
+-- 32fc9fbb-8a51-429f-b041-4e6a5c2185de
 
 -- Scale set:
 -- scales_2021_03_02
@@ -306,6 +306,48 @@ mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
         cos_dphi_vector => mu_mu_bx_0_bx_0_cos_dphi_vector
     );
 --
+
+-- Instantiations of deltaR calculation
+
+eg_jet_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_EG_OBJECTS,
+        nr_obj2 => NR_JET_OBJECTS,
+        dr_cut => true
+    )
+    port map(
+        deta => eg_jet_bx_0_bx_0_deta_vector,
+        dphi => eg_jet_bx_0_bx_0_dphi_vector,
+        dr => eg_jet_bx_0_bx_0_dr
+    );
+
+-- Instantiations of deltaR calculation
+
+jet_mu_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_JET_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
+        dr_cut => true
+    )
+    port map(
+        deta => jet_mu_bx_0_bx_0_deta_vector,
+        dphi => jet_mu_bx_0_bx_0_dphi_vector,
+        dr => jet_mu_bx_0_bx_0_dr
+    );
+
+-- Instantiations of deltaR calculation
+
+mu_mu_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_MU_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
+        dr_cut => true
+    )
+    port map(
+        deta => mu_mu_bx_0_bx_0_deta_vector,
+        dphi => mu_mu_bx_0_bx_0_dphi_vector,
+        dr => mu_mu_bx_0_bx_0_dr
+    );
 
 -- Instantiations of invariant mass pt calculation
 
@@ -1037,7 +1079,7 @@ calo_calo_correlation_i187_i: entity work.correlation_conditions_calo
         obj2 => jet_bx_0,
         deta => eg_jet_bx_0_bx_0_deta_vector,
         dphi => eg_jet_bx_0_bx_0_dphi_vector,
-            dr => eg_jet_bx_0_bx_0_dr,
+        dr => eg_jet_bx_0_bx_0_dr,
         condition_o => calo_calo_correlation_i187
     );
 
