@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 100dcc12-55a0-412e-8400-2667c30f37f4
+-- f696c7c3-bd41-4119-b938-2965c00ad3a4
 
 -- Scale set:
 -- scales_2021_03_02
@@ -50,16 +50,16 @@ single_ext_i370 <= ext_cond_bx_0(43); -- single_ext_i370
 -- Instantiations of muon charge correlations - only once for a certain bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
-    port map(mu_bx_0, mu_bx_0,
-        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
-        ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
-        ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
     port map(mu_bx_m1, mu_bx_0,
         ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
         ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
         ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
+muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
+    port map(mu_bx_0, mu_bx_0,
+        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+        ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
+        ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass) - once for every calo object type in certain bx used in correlation conditions
 
@@ -313,6 +313,8 @@ mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
 
 eg_tau_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
     generic map(
+        nr_obj1 => NR_EG_OBJECTS,
+        nr_obj2 => NR_TAU_OBJECTS,
         dr_cut => true
     )
     port map(
@@ -325,6 +327,8 @@ eg_tau_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
 
 jet_mu_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
     generic map(
+        nr_obj1 => NR_JET_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
         dr_cut => true
     )
     port map(
@@ -337,6 +341,8 @@ jet_mu_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
 
 mu_mu_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
     generic map(
+        nr_obj1 => NR_MU_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
         dr_cut => true
     )
     port map(

@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 100dcc12-55a0-412e-8400-2667c30f37f4
+-- f696c7c3-bd41-4119-b938-2965c00ad3a4
 
 -- Scale set:
 -- scales_2021_03_02
@@ -311,6 +311,8 @@ eg_eg_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
 
 eg_jet_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
     generic map(
+        nr_obj1 => NR_EG_OBJECTS,
+        nr_obj2 => NR_JET_OBJECTS,
         dr_cut => true
     )
     port map(
@@ -323,6 +325,8 @@ eg_jet_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
 
 eg_tau_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
     generic map(
+        nr_obj1 => NR_EG_OBJECTS,
+        nr_obj2 => NR_TAU_OBJECTS,
         dr_cut => true
     )
     port map(
@@ -335,6 +339,8 @@ eg_tau_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
 
 jet_mu_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
     generic map(
+        nr_obj1 => NR_JET_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
         dr_cut => true
     )
     port map(
@@ -347,6 +353,8 @@ jet_mu_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
 
 mu_mu_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
     generic map(
+        nr_obj1 => NR_MU_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
         dr_cut => true
     )
     port map(
