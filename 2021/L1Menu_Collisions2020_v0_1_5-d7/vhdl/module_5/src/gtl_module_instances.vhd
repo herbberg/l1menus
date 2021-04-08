@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 32fc9fbb-8a51-429f-b041-4e6a5c2185de
+-- 6529eff6-0bd5-4df9-b75a-9ccf95848ef7
 
 -- Scale set:
 -- scales_2021_03_02
@@ -369,6 +369,7 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_JET_OBJECTS,
         nr_obj2 => NR_JET_OBJECTS,
+        mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH,
         pt2_width => JET_PT_VECTOR_WIDTH,
@@ -389,6 +390,7 @@ mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
         nr_obj2 => NR_MU_OBJECTS,
+        mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => MU_PT_VECTOR_WIDTH,
         pt2_width => MU_PT_VECTOR_WIDTH,
@@ -409,6 +411,7 @@ eg_eg_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_EG_OBJECTS,
         nr_obj2 => NR_EG_OBJECTS,
+        mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => EG_PT_VECTOR_WIDTH,
         pt2_width => EG_PT_VECTOR_WIDTH,
@@ -429,6 +432,7 @@ mu_mu_bx_0_bx_0_mass_inv_upt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
         nr_obj2 => NR_MU_OBJECTS,
+        mass_cut => true,
         mass_type => INVARIANT_MASS_UPT_TYPE,
         upt1_width => MU_UPT_VECTOR_WIDTH,
         upt2_width => MU_UPT_VECTOR_WIDTH,

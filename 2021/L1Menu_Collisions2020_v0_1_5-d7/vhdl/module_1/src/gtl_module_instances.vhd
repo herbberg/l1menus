@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 32fc9fbb-8a51-429f-b041-4e6a5c2185de
+-- 6529eff6-0bd5-4df9-b75a-9ccf95848ef7
 
 -- Scale set:
 -- scales_2021_03_02
@@ -422,6 +422,7 @@ tau_tau_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_TAU_OBJECTS,
         nr_obj2 => NR_TAU_OBJECTS,
+        mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => TAU_PT_VECTOR_WIDTH,
         pt2_width => TAU_PT_VECTOR_WIDTH,
@@ -442,6 +443,7 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_JET_OBJECTS,
         nr_obj2 => NR_JET_OBJECTS,
+        mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH,
         pt2_width => JET_PT_VECTOR_WIDTH,
@@ -462,6 +464,7 @@ mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
         nr_obj2 => NR_MU_OBJECTS,
+        mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => MU_PT_VECTOR_WIDTH,
         pt2_width => MU_PT_VECTOR_WIDTH,
@@ -482,6 +485,7 @@ mu_mu_bx_0_bx_0_mass_inv_upt_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
         nr_obj2 => NR_MU_OBJECTS,
+        mass_cut => true,
         mass_type => INVARIANT_MASS_UPT_TYPE,
         upt1_width => MU_UPT_VECTOR_WIDTH,
         upt2_width => MU_UPT_VECTOR_WIDTH,
@@ -502,6 +506,7 @@ eg_etm_bx_0_bx_0_mass_trans_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_EG_OBJECTS,
         nr_obj2 => NR_ETM_OBJECTS,
+        mass_cut => true,
         mass_type => TRANSVERSE_MASS_TYPE,
         pt1_width => EG_PT_VECTOR_WIDTH,
         pt2_width => ETM_PT_VECTOR_WIDTH,
@@ -1905,11 +1910,11 @@ transverse_mass_i167_i: entity work.correlation_conditions_calo
 
 -- 10 L1_SingleMu5 : MU5[MU-QLTY_SNGL]
 l1_single_mu5 <= single_mu_i10;
-algo(27) <= l1_single_mu5;
+algo(30) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(32) <= l1_single_mu7;
+algo(28) <= l1_single_mu7;
 
 -- 13 L1_SingleMu12_DQ_BMTF : MU12[MU-QLTY_DBLE,MU-ETA_BMTF]
 l1_single_mu12_dq_bmtf <= single_mu_i13;
@@ -1981,23 +1986,23 @@ algo(25) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i12 and single_eg_i80;
-algo(26) <= l1_mu7_eg20er2p5;
+algo(29) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i12 and single_eg_i79;
-algo(28) <= l1_mu7_eg23er2p5;
+algo(26) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i10 and single_eg_i82;
-algo(30) <= l1_mu5_loose_iso_eg20er2p5;
+algo(32) <= l1_mu5_loose_iso_eg20er2p5;
 
 -- 101 L1_Mu7_LooseIsoEG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg20er2p5 <= single_mu_i12 and single_eg_i82;
-algo(29) <= l1_mu7_loose_iso_eg20er2p5;
+algo(31) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i12 and single_eg_i83;
-algo(31) <= l1_mu7_loose_iso_eg23er2p5;
+algo(27) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 109 L1_DoubleMu4_SQ_EG9er2p5 : comb{MU4[MU-QLTY_SNGL],MU4[MU-QLTY_SNGL]} AND EG9[EG-ETA_2p52]
 l1_double_mu4_sq_eg9er2p5 <= double_mu_i89 and single_eg_i90;

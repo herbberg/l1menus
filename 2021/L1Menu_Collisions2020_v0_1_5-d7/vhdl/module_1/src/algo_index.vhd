@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 32fc9fbb-8a51-429f-b041-4e6a5c2185de
+-- 6529eff6-0bd5-4df9-b75a-9ccf95848ef7
 
 -- Scale set:
 -- scales_2021_03_02
@@ -50,13 +50,13 @@ constant global_index: global_index_array := (
          44, -- module_index: 23, name: L1_DoubleMu8_SQ
         373, -- module_index: 24, name: L1_TripleJet_100_80_70_DoubleJet_80_70_er2p5
          96, -- module_index: 25, name: L1_Mu5_EG23er2p5
-         97, -- module_index: 26, name: L1_Mu7_EG20er2p5
-         10, -- module_index: 27, name: L1_SingleMu5
-         98, -- module_index: 28, name: L1_Mu7_EG23er2p5
-        101, -- module_index: 29, name: L1_Mu7_LooseIsoEG20er2p5
-        100, -- module_index: 30, name: L1_Mu5_LooseIsoEG20er2p5
-        102, -- module_index: 31, name: L1_Mu7_LooseIsoEG23er2p5
-         12, -- module_index: 32, name: L1_SingleMu7
+         98, -- module_index: 26, name: L1_Mu7_EG23er2p5
+        102, -- module_index: 27, name: L1_Mu7_LooseIsoEG23er2p5
+         12, -- module_index: 28, name: L1_SingleMu7
+         97, -- module_index: 29, name: L1_Mu7_EG20er2p5
+         10, -- module_index: 30, name: L1_SingleMu5
+        101, -- module_index: 31, name: L1_Mu7_LooseIsoEG20er2p5
+        100, -- module_index: 32, name: L1_Mu5_LooseIsoEG20er2p5
          13, -- module_index: 33, name: L1_SingleMu12_DQ_BMTF
          32, -- module_index: 34, name: L1_SingleMu16er1p5
          21, -- module_index: 35, name: L1_SingleMu22_OMTF
