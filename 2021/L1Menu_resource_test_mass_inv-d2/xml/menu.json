@@ -1,0 +1,10 @@
+{
+  "firmware_uuid" : "1100b797-1d49-4fa8-b161-8d7de5613311",
+  "menu_uuid"     : "fae4a4ee-1c2a-4260-8a0b-fc6d237e7546",
+  "n_modules"     : 1,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_DoubleJet_115_40_DoubleJet40_Mass_Min620_Jet60TT28", 360, 0, 0],
+    ["L1_DoubleJet_120_45_DoubleJet45_Mass_Min620_Jet60TT28", 361, 0, 1]
+  ]
+}
