@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 25a8f43a-ad62-4619-b3fb-d2c6e575ec3e
+-- 59186412-4ecb-4d33-933f-6007749d5ae9
 
 -- Scale set:
 -- scales_2021_03_02
@@ -1661,8 +1661,9 @@ invariant_mass_i59_i: entity work.correlation_conditions_muon
         cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"0000000009A7EC80",
         mass_lower_limit_vector => X"000000000175D720",
--- number of object 2
+-- number and type of object 2
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1698,8 +1699,9 @@ invariant_mass_i74_i: entity work.correlation_conditions_muon
         cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"000000000269FB20",
         mass_lower_limit_vector => X"0000000000000000",
--- number of object 2
+-- number and type of object 2
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1741,8 +1743,9 @@ invariant_mass_upt_i382_i: entity work.correlation_conditions_muon
         cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"002907FE9BCB0C80",
         mass_lower_limit_vector => X"0000000002FAF080",
--- number of object 2
+-- number and type of object 2
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1777,8 +1780,9 @@ muon_muon_correlation_i50_i: entity work.correlation_conditions_muon
         dr_cut => true,
         dr_upper_limit_vector => X"00000000001DEC28",
         dr_lower_limit_vector => X"0000000000000000",
--- number of object 2
+-- number and type of object 2
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1805,8 +1809,9 @@ muon_muon_correlation_i56_i: entity work.correlation_conditions_muon
         dr_cut => true,
         dr_upper_limit_vector => X"000000000015FCE8",
         dr_lower_limit_vector => X"0000000000000000",
--- number of object 2
+-- number and type of object 2
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1914,7 +1919,7 @@ algo(30) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(27) <= l1_single_mu7;
+algo(28) <= l1_single_mu7;
 
 -- 13 L1_SingleMu12_DQ_BMTF : MU12[MU-QLTY_DBLE,MU-ETA_BMTF]
 l1_single_mu12_dq_bmtf <= single_mu_i13;
@@ -1986,11 +1991,11 @@ algo(25) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i12 and single_eg_i80;
-algo(28) <= l1_mu7_eg20er2p5;
+algo(29) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i12 and single_eg_i79;
-algo(29) <= l1_mu7_eg23er2p5;
+algo(26) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i10 and single_eg_i82;
@@ -2002,7 +2007,7 @@ algo(31) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i12 and single_eg_i83;
-algo(26) <= l1_mu7_loose_iso_eg23er2p5;
+algo(27) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 109 L1_DoubleMu4_SQ_EG9er2p5 : comb{MU4[MU-QLTY_SNGL],MU4[MU-QLTY_SNGL]} AND EG9[EG-ETA_2p52]
 l1_double_mu4_sq_eg9er2p5 <= double_mu_i89 and single_eg_i90;

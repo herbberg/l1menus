@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 25a8f43a-ad62-4619-b3fb-d2c6e575ec3e
+-- 59186412-4ecb-4d33-933f-6007749d5ae9
 
 -- Scale set:
 -- scales_2021_03_02
@@ -1489,8 +1489,9 @@ invariant_mass_i71_i: entity work.correlation_conditions_muon
         cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"00000000089CE520",
         mass_lower_limit_vector => X"0000000000BEBC20",
--- number of object 2
+-- number and type of object 2
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1532,8 +1533,9 @@ invariant_mass_i92_i: entity work.correlation_conditions_muon
         cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"0000000005D75C80",
         mass_lower_limit_vector => X"0000000000000000",
--- number of object 2
+-- number and type of object 2
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1573,8 +1575,9 @@ invariant_mass_upt_i377_i: entity work.correlation_conditions_muon
         cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"002907FE9BCB0C80",
         mass_lower_limit_vector => X"000000000BEBC200",
--- number of object 2
+-- number and type of object 2
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1616,8 +1619,9 @@ invariant_mass_upt_i383_i: entity work.correlation_conditions_muon
         cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"002907FE9BCB0C80",
         mass_lower_limit_vector => X"000000000BEBC200",
--- number of object 2
+-- number and type of object 2
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1652,8 +1656,9 @@ muon_muon_correlation_i46_i: entity work.correlation_conditions_muon
         dr_cut => true,
         dr_upper_limit_vector => X"00000000001DEC28",
         dr_lower_limit_vector => X"0000000000000000",
--- number of object 2
+-- number and type of object 2
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
 -- selector same/different bunch crossings
         same_bx => true
     )
@@ -1686,8 +1691,9 @@ muon_muon_correlation_i52_i: entity work.correlation_conditions_muon
         dr_cut => true,
         dr_upper_limit_vector => X"00000000001DEC28",
         dr_lower_limit_vector => X"0000000000000000",
--- number of object 2
+-- number and type of object 2
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
 -- selector same/different bunch crossings
         same_bx => true
     )
