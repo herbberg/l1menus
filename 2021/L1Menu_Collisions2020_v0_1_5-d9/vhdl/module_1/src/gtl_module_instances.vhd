@@ -1,0 +1,2372 @@
+-- ========================================================
+-- from VHDL producer:
+
+-- Module ID: 1
+
+-- Name of L1 Trigger Menu:
+-- L1Menu_Collisions2020_v0_1_5
+
+-- Unique ID of L1 Trigger Menu:
+-- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
+
+-- Unique ID of firmware implementation:
+-- 89f3a7c0-db76-43f6-a495-7f0fa83da437
+
+-- Scale set:
+-- scales_2021_03_02
+
+-- VHDL producer version
+-- v2.11.0
+
+-- tmEventSetup version
+-- v0.8.1
+
+-- External condition assignment
+single_ext_i350 <= ext_cond_bx_0(22); -- single_ext_i350
+single_ext_i352 <= ext_cond_bx_0(19); -- single_ext_i352
+single_ext_i353 <= ext_cond_bx_0(11); -- single_ext_i353
+single_ext_i359 <= ext_cond_bx_0(20); -- single_ext_i359
+single_ext_i370 <= ext_cond_bx_0(43); -- single_ext_i370
+
+-- Instantiations of muon charge correlations - only once for a certain bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
+-- or muon-muon correlation condition.
+
+muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
+    port map(mu_bx_0, mu_bx_0,
+        ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
+        ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
+        ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
+muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
+    port map(mu_bx_m1, mu_bx_0,
+        ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
+        ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
+        ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
+
+-- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass)
+
+conv_eta_phi_jet_bx_0_i: entity work.conv_eta_phi
+    generic map(
+        nr_obj => NR_JET_OBJECTS,
+        type_obj => JET_TYPE
+    )
+    port map(
+        calo => jet_bx_0,
+        eta_conv => jet_bx_0_eta_conv_2_muon_eta_integer,
+        phi_conv => jet_bx_0_phi_conv_2_muon_phi_integer
+    );
+--
+conv_eta_phi_eg_bx_0_i: entity work.conv_eta_phi
+    generic map(
+        nr_obj => NR_EG_OBJECTS,
+        type_obj => EG_TYPE
+    )
+    port map(
+        calo => eg_bx_0,
+        eta_conv => eg_bx_0_eta_conv_2_muon_eta_integer,
+        phi_conv => eg_bx_0_phi_conv_2_muon_phi_integer
+    );
+--
+etm_bx_0_conv_eta_phi_i: entity work.conv_eta_phi
+    generic map(
+        nr_obj => NR_ETM_OBJECTS,
+        type_obj => ETM_TYPE
+    )
+    port map(
+        esums => etm_bx_0,
+        phi_conv => etm_bx_0_phi_conv_2_muon_phi_integer
+    );
+--
+-- Instantiations of pt, eta, phi, cosine phi and sine phi for correlation conditions (used for DETA, DPHI, DR, mass, overlap_remover and two-body pt)
+
+obj_parameter_jet_bx_0_i: entity work.obj_parameter
+    generic map(
+        nr_obj => NR_JET_OBJECTS,
+        type_obj => JET_TYPE
+    )
+    port map(
+        calo => jet_bx_0,
+        phi_conv_2_muon_phi_integer => jet_bx_0_phi_conv_2_muon_phi_integer,
+        pt_vector => jet_bx_0_pt_vector,
+        eta_integer => jet_bx_0_eta_integer,
+        phi_integer => jet_bx_0_phi_integer,
+        cos_phi => jet_bx_0_cos_phi,
+        sin_phi => jet_bx_0_sin_phi,
+        conv_cos_phi => jet_bx_0_conv_cos_phi,
+        conv_sin_phi => jet_bx_0_conv_sin_phi
+    );
+--
+obj_parameter_mu_bx_0_i: entity work.obj_parameter
+    generic map(
+        nr_obj => NR_MU_OBJECTS,
+        type_obj => MU_TYPE
+    )
+    port map(
+        muon => mu_bx_0,
+        pt_vector => mu_bx_0_pt_vector,
+        upt_vector => mu_bx_0_upt_vector,
+        eta_integer => mu_bx_0_eta_integer,
+        phi_integer => mu_bx_0_phi_integer,
+        cos_phi => mu_bx_0_cos_phi,
+        sin_phi => mu_bx_0_sin_phi
+    );
+--
+obj_parameter_tau_bx_0_i: entity work.obj_parameter
+    generic map(
+        nr_obj => NR_TAU_OBJECTS,
+        type_obj => TAU_TYPE
+    )
+    port map(
+        calo => tau_bx_0,
+        phi_conv_2_muon_phi_integer => tau_bx_0_phi_conv_2_muon_phi_integer,
+        pt_vector => tau_bx_0_pt_vector,
+        eta_integer => tau_bx_0_eta_integer,
+        phi_integer => tau_bx_0_phi_integer,
+        cos_phi => tau_bx_0_cos_phi,
+        sin_phi => tau_bx_0_sin_phi,
+        conv_cos_phi => tau_bx_0_conv_cos_phi,
+        conv_sin_phi => tau_bx_0_conv_sin_phi
+    );
+--
+obj_parameter_eg_bx_0_i: entity work.obj_parameter
+    generic map(
+        nr_obj => NR_EG_OBJECTS,
+        type_obj => EG_TYPE
+    )
+    port map(
+        calo => eg_bx_0,
+        phi_conv_2_muon_phi_integer => eg_bx_0_phi_conv_2_muon_phi_integer,
+        pt_vector => eg_bx_0_pt_vector,
+        eta_integer => eg_bx_0_eta_integer,
+        phi_integer => eg_bx_0_phi_integer,
+        cos_phi => eg_bx_0_cos_phi,
+        sin_phi => eg_bx_0_sin_phi,
+        conv_cos_phi => eg_bx_0_conv_cos_phi,
+        conv_sin_phi => eg_bx_0_conv_sin_phi
+    );
+--
+obj_parameter_mu_bx_m1_i: entity work.obj_parameter
+    generic map(
+        nr_obj => NR_MU_OBJECTS,
+        type_obj => MU_TYPE
+    )
+    port map(
+        muon => mu_bx_m1,
+        pt_vector => mu_bx_m1_pt_vector,
+        upt_vector => mu_bx_m1_upt_vector,
+        eta_integer => mu_bx_m1_eta_integer,
+        phi_integer => mu_bx_m1_phi_integer,
+        cos_phi => mu_bx_m1_cos_phi,
+        sin_phi => mu_bx_m1_sin_phi
+    );
+--
+obj_parameter_etm_bx_0_i: entity work.obj_parameter
+    generic map(
+        nr_obj => NR_ETM_OBJECTS,
+        type_obj => ETM_TYPE
+    )
+    port map(
+        esums => etm_bx_0,
+        phi_conv_2_muon_phi_integer => etm_bx_0_phi_conv_2_muon_phi_integer,
+        pt_vector => etm_bx_0_pt_vector,
+        phi_integer => etm_bx_0_phi_integer,
+        cos_phi => etm_bx_0_cos_phi,
+        sin_phi => etm_bx_0_sin_phi,
+        conv_cos_phi => etm_bx_0_conv_cos_phi,
+        conv_sin_phi => etm_bx_0_conv_sin_phi
+    );
+--
+-- Instantiations of deta and dphi calculations for correlation conditions (used for DETA, DPHI, DR, mass)
+
+deta_dphi_jet_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
+    generic map(
+        calo_muon_deta_lut => JET_MU_DIFF_ETA_LUT,
+        calo_muon_dphi_lut => JET_MU_DIFF_PHI_LUT,
+        phi_half_range => MUON_PHI_HALF_RANGE_BINS,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
+    )
+    port map(
+        eta_integer_obj1 => jet_bx_0_eta_conv_2_muon_eta_integer,
+        phi_integer_obj1 => jet_bx_0_phi_conv_2_muon_phi_integer,
+        eta_integer_obj2 => mu_bx_0_eta_integer,
+        phi_integer_obj2 => mu_bx_0_phi_integer,
+        deta_integer => jet_mu_bx_0_bx_0_deta_integer,
+        deta_vector => jet_mu_bx_0_bx_0_deta_vector,
+        dphi_integer => jet_mu_bx_0_bx_0_dphi_integer,
+        dphi_vector => jet_mu_bx_0_bx_0_dphi_vector
+    );
+--
+deta_dphi_tau_tau_bx_0_bx_0_i: entity work.deta_dphi_calculations
+    generic map(
+        calo_calo_deta_lut => TAU_TAU_DIFF_ETA_LUT,
+        calo_calo_dphi_lut => TAU_TAU_DIFF_PHI_LUT,
+        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
+        nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
+        nr_obj2 => NR_TAU_OBJECTS,
+        type_obj2 => TAU_TYPE
+    )
+    port map(
+        eta_integer_obj1 => tau_bx_0_eta_integer,
+        phi_integer_obj1 => tau_bx_0_phi_integer,
+        eta_integer_obj2 => tau_bx_0_eta_integer,
+        phi_integer_obj2 => tau_bx_0_phi_integer,
+        deta_integer => tau_tau_bx_0_bx_0_deta_integer,
+        deta_vector => tau_tau_bx_0_bx_0_deta_vector,
+        dphi_integer => tau_tau_bx_0_bx_0_dphi_integer,
+        dphi_vector => tau_tau_bx_0_bx_0_dphi_vector
+    );
+--
+deta_dphi_jet_jet_bx_0_bx_0_i: entity work.deta_dphi_calculations
+    generic map(
+        calo_calo_deta_lut => JET_JET_DIFF_ETA_LUT,
+        calo_calo_dphi_lut => JET_JET_DIFF_PHI_LUT,
+        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_JET_OBJECTS,
+        type_obj2 => JET_TYPE
+    )
+    port map(
+        eta_integer_obj1 => jet_bx_0_eta_integer,
+        phi_integer_obj1 => jet_bx_0_phi_integer,
+        eta_integer_obj2 => jet_bx_0_eta_integer,
+        phi_integer_obj2 => jet_bx_0_phi_integer,
+        deta_integer => jet_jet_bx_0_bx_0_deta_integer,
+        deta_vector => jet_jet_bx_0_bx_0_deta_vector,
+        dphi_integer => jet_jet_bx_0_bx_0_dphi_integer,
+        dphi_vector => jet_jet_bx_0_bx_0_dphi_vector
+    );
+--
+deta_dphi_mu_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
+    generic map(
+        muon_muon_deta_lut => MU_MU_DIFF_ETA_LUT,
+        muon_muon_dphi_lut => MU_MU_DIFF_PHI_LUT,
+        phi_half_range => MUON_PHI_HALF_RANGE_BINS,
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
+    )
+    port map(
+        eta_integer_obj1 => mu_bx_0_eta_integer,
+        phi_integer_obj1 => mu_bx_0_phi_integer,
+        eta_integer_obj2 => mu_bx_0_eta_integer,
+        phi_integer_obj2 => mu_bx_0_phi_integer,
+        deta_integer => mu_mu_bx_0_bx_0_deta_integer,
+        deta_vector => mu_mu_bx_0_bx_0_deta_vector,
+        dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
+        dphi_vector => mu_mu_bx_0_bx_0_dphi_vector
+    );
+--
+deta_dphi_eg_eg_bx_0_bx_0_i: entity work.deta_dphi_calculations
+    generic map(
+        calo_calo_deta_lut => EG_EG_DIFF_ETA_LUT,
+        calo_calo_dphi_lut => EG_EG_DIFF_PHI_LUT,
+        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_EG_OBJECTS,
+        type_obj2 => EG_TYPE
+    )
+    port map(
+        eta_integer_obj1 => eg_bx_0_eta_integer,
+        phi_integer_obj1 => eg_bx_0_phi_integer,
+        eta_integer_obj2 => eg_bx_0_eta_integer,
+        phi_integer_obj2 => eg_bx_0_phi_integer,
+        deta_integer => eg_eg_bx_0_bx_0_deta_integer,
+        deta_vector => eg_eg_bx_0_bx_0_deta_vector,
+        dphi_integer => eg_eg_bx_0_bx_0_dphi_integer,
+        dphi_vector => eg_eg_bx_0_bx_0_dphi_vector
+    );
+--
+deta_dphi_mu_mu_bx_m1_bx_0_i: entity work.deta_dphi_calculations
+    generic map(
+        muon_muon_deta_lut => MU_MU_DIFF_ETA_LUT,
+        muon_muon_dphi_lut => MU_MU_DIFF_PHI_LUT,
+        phi_half_range => MUON_PHI_HALF_RANGE_BINS,
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
+    )
+    port map(
+        eta_integer_obj1 => mu_bx_m1_eta_integer,
+        phi_integer_obj1 => mu_bx_m1_phi_integer,
+        eta_integer_obj2 => mu_bx_0_eta_integer,
+        phi_integer_obj2 => mu_bx_0_phi_integer,
+        deta_integer => mu_mu_bx_m1_bx_0_deta_integer,
+        deta_vector => mu_mu_bx_m1_bx_0_deta_vector,
+        dphi_integer => mu_mu_bx_m1_bx_0_dphi_integer,
+        dphi_vector => mu_mu_bx_m1_bx_0_dphi_vector
+    );
+--
+deta_dphi_eg_etm_bx_0_bx_0_i: entity work.deta_dphi_calculations
+    generic map(
+        calo_calo_dphi_lut => EG_ETM_DIFF_PHI_LUT,
+        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_ETM_OBJECTS,
+        type_obj2 => ETM_TYPE
+    )
+    port map(
+        phi_integer_obj1 => eg_bx_0_phi_integer,
+        phi_integer_obj2 => etm_bx_0_phi_integer,
+        dphi_integer => eg_etm_bx_0_bx_0_dphi_integer,
+        dphi_vector => eg_etm_bx_0_bx_0_dphi_vector
+    );
+--
+-- Instantiations of cosh deta and cos dphi LUTs for correlation conditions (used for mass) and DR, mass and two-body pt calculations
+
+-- Instantiations of cosh_deta and cos_dphi calculation
+tau_tau_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
+    generic map(
+        calo_calo_cosh_deta_lut => TAU_TAU_COSH_DETA_LUT,
+        calo_calo_cos_dphi_lut => TAU_TAU_COS_DPHI_LUT,
+        deta_bins_width => TAU_TAU_DETA_BINS_WIDTH,
+        dphi_bins_width => TAU_TAU_DPHI_BINS_WIDTH,
+        cosh_cos_vector_width => TAU_TAU_COSH_COS_VECTOR_WIDTH,
+        nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
+        nr_obj2 => NR_TAU_OBJECTS,
+        type_obj2 => TAU_TYPE
+    )
+    port map(
+        dphi_integer => tau_tau_bx_0_bx_0_dphi_integer,
+        deta_integer => tau_tau_bx_0_bx_0_deta_integer,
+        deta_bin_vector => tau_tau_bx_0_bx_0_deta_bin_vector,
+        dphi_bin_vector => tau_tau_bx_0_bx_0_dphi_bin_vector,
+        cosh_deta_vector => tau_tau_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi_vector => tau_tau_bx_0_bx_0_cos_dphi_vector
+    );
+--
+jet_jet_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
+    generic map(
+        calo_calo_cosh_deta_lut => JET_JET_COSH_DETA_LUT,
+        calo_calo_cos_dphi_lut => JET_JET_COS_DPHI_LUT,
+        deta_bins_width => JET_JET_DETA_BINS_WIDTH,
+        dphi_bins_width => JET_JET_DPHI_BINS_WIDTH,
+        cosh_cos_vector_width => JET_JET_COSH_COS_VECTOR_WIDTH,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_JET_OBJECTS,
+        type_obj2 => JET_TYPE
+    )
+    port map(
+        dphi_integer => jet_jet_bx_0_bx_0_dphi_integer,
+        deta_integer => jet_jet_bx_0_bx_0_deta_integer,
+        deta_bin_vector => jet_jet_bx_0_bx_0_deta_bin_vector,
+        dphi_bin_vector => jet_jet_bx_0_bx_0_dphi_bin_vector,
+        cosh_deta_vector => jet_jet_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi_vector => jet_jet_bx_0_bx_0_cos_dphi_vector
+    );
+--
+mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
+    generic map(
+        muon_muon_cosh_deta_lut => MU_MU_COSH_DETA_LUT,
+        muon_muon_cos_dphi_lut => MU_MU_COS_DPHI_LUT,
+        deta_bins_width => MU_MU_DETA_BINS_WIDTH,
+        dphi_bins_width => MU_MU_DPHI_BINS_WIDTH,
+        cosh_cos_vector_width => MU_MU_COSH_COS_VECTOR_WIDTH,
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
+    )
+    port map(
+        dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
+        deta_integer => mu_mu_bx_0_bx_0_deta_integer,
+        deta_bin_vector => mu_mu_bx_0_bx_0_deta_bin_vector,
+        dphi_bin_vector => mu_mu_bx_0_bx_0_dphi_bin_vector,
+        cosh_deta_vector => mu_mu_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi_vector => mu_mu_bx_0_bx_0_cos_dphi_vector
+    );
+--
+eg_eg_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
+    generic map(
+        calo_calo_cosh_deta_lut => EG_EG_COSH_DETA_LUT,
+        calo_calo_cos_dphi_lut => EG_EG_COS_DPHI_LUT,
+        deta_bins_width => EG_EG_DETA_BINS_WIDTH,
+        dphi_bins_width => EG_EG_DPHI_BINS_WIDTH,
+        cosh_cos_vector_width => EG_EG_COSH_COS_VECTOR_WIDTH,
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_EG_OBJECTS,
+        type_obj2 => EG_TYPE
+    )
+    port map(
+        dphi_integer => eg_eg_bx_0_bx_0_dphi_integer,
+        deta_integer => eg_eg_bx_0_bx_0_deta_integer,
+        deta_bin_vector => eg_eg_bx_0_bx_0_deta_bin_vector,
+        dphi_bin_vector => eg_eg_bx_0_bx_0_dphi_bin_vector,
+        cosh_deta_vector => eg_eg_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi_vector => eg_eg_bx_0_bx_0_cos_dphi_vector
+    );
+--
+eg_etm_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
+    generic map(
+        calo_calo_cos_dphi_lut => EG_ETM_COS_DPHI_LUT,
+        cosh_cos_vector_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_ETM_OBJECTS,
+        type_obj2 => ETM_TYPE
+    )
+    port map(
+        dphi_integer => eg_etm_bx_0_bx_0_dphi_integer,
+        cos_dphi_vector => eg_etm_bx_0_bx_0_cos_dphi_vector
+    );
+--
+
+-- Instantiations of DeltaR calculation
+
+jet_mu_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_JET_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
+        dr_cut => true
+    )
+    port map(
+        deta => jet_mu_bx_0_bx_0_deta_vector,
+        dphi => jet_mu_bx_0_bx_0_dphi_vector,
+        dr => jet_mu_bx_0_bx_0_dr
+    );
+
+mu_mu_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_MU_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
+        dr_cut => true
+    )
+    port map(
+        deta => mu_mu_bx_0_bx_0_deta_vector,
+        dphi => mu_mu_bx_0_bx_0_dphi_vector,
+        dr => mu_mu_bx_0_bx_0_dr
+    );
+
+-- Instantiations of Invariant mass calculation
+
+tau_tau_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_TAU_OBJECTS,
+        nr_obj2 => NR_TAU_OBJECTS,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => TAU_PT_VECTOR_WIDTH,
+        pt2_width => TAU_PT_VECTOR_WIDTH,
+        cosh_cos_precision => TAU_TAU_COSH_COS_PRECISION,
+        cosh_cos_width => TAU_TAU_COSH_COS_VECTOR_WIDTH
+    )
+    port map(
+        pt1 => tau_bx_0_pt_vector,
+        pt2 => tau_bx_0_pt_vector,
+        cosh_deta => tau_tau_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => tau_tau_bx_0_bx_0_cos_dphi_vector,
+        inv_mass_pt => tau_tau_bx_0_bx_0_mass_inv_pt
+    );
+
+jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_JET_OBJECTS,
+        nr_obj2 => NR_JET_OBJECTS,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => JET_PT_VECTOR_WIDTH,
+        pt2_width => JET_PT_VECTOR_WIDTH,
+        cosh_cos_precision => JET_JET_COSH_COS_PRECISION,
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH
+    )
+    port map(
+        pt1 => jet_bx_0_pt_vector,
+        pt2 => jet_bx_0_pt_vector,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        inv_mass_pt => jet_jet_bx_0_bx_0_mass_inv_pt
+    );
+
+mu_mu_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_MU_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => MU_PT_VECTOR_WIDTH,
+        pt2_width => MU_PT_VECTOR_WIDTH,
+        cosh_cos_precision => MU_MU_COSH_COS_PRECISION,
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH
+    )
+    port map(
+        pt1 => mu_bx_0_pt_vector,
+        pt2 => mu_bx_0_pt_vector,
+        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
+        inv_mass_pt => mu_mu_bx_0_bx_0_mass_inv_pt
+    );
+
+eg_eg_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_EG_OBJECTS,
+        nr_obj2 => NR_EG_OBJECTS,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => EG_PT_VECTOR_WIDTH,
+        pt2_width => EG_PT_VECTOR_WIDTH,
+        cosh_cos_precision => EG_EG_COSH_COS_PRECISION,
+        cosh_cos_width => EG_EG_COSH_COS_VECTOR_WIDTH
+    )
+    port map(
+        pt1 => eg_bx_0_pt_vector,
+        pt2 => eg_bx_0_pt_vector,
+        cosh_deta => eg_eg_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => eg_eg_bx_0_bx_0_cos_dphi_vector,
+        inv_mass_pt => eg_eg_bx_0_bx_0_mass_inv_pt
+    );
+
+-- Instantiations of Invariant mass divided DeltaR calculation
+
+-- Instantiations of Invariant mass unconstrained pt calculation
+
+mu_mu_bx_0_bx_0_mass_inv_upt_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_MU_OBJECTS,
+        nr_obj2 => NR_MU_OBJECTS,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_UPT_TYPE,
+        upt1_width => MU_UPT_VECTOR_WIDTH,
+        upt2_width => MU_UPT_VECTOR_WIDTH,
+        cosh_cos_precision => MU_MU_COSH_COS_PRECISION,
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH
+    )
+    port map(
+        upt1 => mu_bx_0_upt_vector,
+        upt2 => mu_bx_0_upt_vector,
+        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
+        inv_mass_upt => mu_mu_bx_0_bx_0_mass_inv_upt
+    );
+
+-- Instantiations of Transverse mass calculation
+
+eg_etm_bx_0_bx_0_mass_trans_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_EG_OBJECTS,
+        nr_obj2 => NR_ETM_OBJECTS,
+        mass_cut => true,
+        mass_type => TRANSVERSE_MASS_TYPE,
+        pt1_width => EG_PT_VECTOR_WIDTH,
+        pt2_width => ETM_PT_VECTOR_WIDTH,
+        cosh_cos_precision => EG_ETM_COSH_COS_PRECISION,
+        cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH
+    )
+    port map(
+        pt1 => eg_bx_0_pt_vector,
+        pt2 => etm_bx_0_pt_vector,
+        cos_dphi => eg_etm_bx_0_bx_0_cos_dphi_vector,
+        trans_mass => eg_etm_bx_0_bx_0_mass_trans
+    );
+
+-- Instantiations of Two-body pt calculation
+
+-- Instantiations of conditions
+--
+double_eg_i179_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+        slice_2_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"002C", X"002C", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 1, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0030", X"0030", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00CF", X"00CF", X"0000", X"0000"),
+        iso_luts_obj1 => (X"C", X"C", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 2
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => double_eg_i179
+    );
+
+double_jet_i300_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+        slice_2_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0096", X"0082", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 1, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 2
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => jet_bx_0,
+        condition_o => double_jet_i300
+    );
+
+double_tau_i205_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+        slice_2_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"003C", X"003C", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 1, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0030", X"0030", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00CF", X"00CF", X"0000", X"0000"),
+        iso_luts_obj1 => (X"E", X"E", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
+        nr_templates => 2
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => tau_bx_0,
+        condition_o => double_tau_i205
+    );
+
+quad_jet_i305_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+        slice_2_high_obj1 => 11,
+        slice_3_high_obj1 => 11,
+        slice_4_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"00BE", X"0096", X"0082", X"0028"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 4
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => jet_bx_0,
+        condition_o => quad_jet_i305
+    );
+
+quad_jet_i308_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+        slice_2_high_obj1 => 11,
+        slice_3_high_obj1 => 11,
+        slice_4_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0078", X"0078", X"0078", X"0078"),
+        nr_eta_windows_obj1 => (1, 1, 1, 1),
+        eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0039", X"0039"),
+        eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"00C6", X"00C6"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 4
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => jet_bx_0,
+        condition_o => quad_jet_i308
+    );
+
+single_eg_i131_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0038", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => single_eg_i131
+    );
+
+single_eg_i138_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0054", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => single_eg_i138
+    );
+
+single_eg_i140_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0064", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => single_eg_i140
+    );
+
+single_eg_i148_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0038", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0022", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00DD", X"0000", X"0000", X"0000"),
+        iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => single_eg_i148
+    );
+
+single_eg_i149_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"003C", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+        iso_luts_obj1 => (X"C", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => single_eg_i149
+    );
+
+single_eg_i151_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0030", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0030", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
+        iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => single_eg_i151
+    );
+
+single_eg_i152_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0030", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0022", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00DD", X"0000", X"0000", X"0000"),
+        iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => single_eg_i152
+    );
+
+single_eg_i153_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0034", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+        iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => single_eg_i153
+    );
+
+single_eg_i155_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0034", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0022", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00DD", X"0000", X"0000", X"0000"),
+        iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => single_eg_i155
+    );
+
+single_eg_i159_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0038", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0030", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
+        iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => single_eg_i159
+    );
+
+single_eg_i161_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"003C", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+        iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => single_eg_i161
+    );
+
+single_eg_i165_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0044", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+        iso_luts_obj1 => (X"A", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => single_eg_i165
+    );
+
+single_jet_i240_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0078", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => jet_bx_0,
+        condition_o => single_jet_i240
+    );
+
+single_jet_i250_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0168", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => jet_bx_0,
+        condition_o => single_jet_i250
+    );
+
+single_jet_i259_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0010", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (2, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"00DF", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00BC", X"0000", X"0000", X"0000"),
+        eta_w2_upper_limits_obj1 => (X"0043", X"0000", X"0000", X"0000"),
+        eta_w2_lower_limits_obj1 => (X"0020", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => jet_bx_0,
+        condition_o => single_jet_i259
+    );
+
+single_jet_i260_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0014", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (2, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"00DF", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00BC", X"0000", X"0000", X"0000"),
+        eta_w2_upper_limits_obj1 => (X"0043", X"0000", X"0000", X"0000"),
+        eta_w2_lower_limits_obj1 => (X"0020", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => jet_bx_0,
+        condition_o => single_jet_i260
+    );
+
+single_jet_i306_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0028", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"00BA", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"008D", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => jet_bx_0,
+        condition_o => single_jet_i306
+    );
+
+single_jet_i307_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0028", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0072", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"0045", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => jet_bx_0,
+        condition_o => single_jet_i307
+    );
+
+single_jet_i96_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"003C", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => jet_bx_0,
+        condition_o => single_jet_i96
+    );
+
+single_tau_i201_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"00F0", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0030", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00CF", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => tau_bx_0,
+        condition_o => single_tau_i201
+    );
+
+triple_eg_i183_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+        slice_2_high_obj1 => 11,
+        slice_3_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0024", X"0022", X"0010", X"0000"),
+        nr_eta_windows_obj1 => (1, 1, 1, 0),
+        eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0039", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"00C6", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 3
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => triple_eg_i183
+    );
+
+triple_eg_i185_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+        slice_2_high_obj1 => 11,
+        slice_3_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0020", X"0020", X"0020", X"0000"),
+        nr_eta_windows_obj1 => (1, 1, 1, 0),
+        eta_w1_upper_limits_obj1 => (X"0039", X"0039", X"0039", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00C6", X"00C6", X"00C6", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 3
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        condition_o => triple_eg_i185
+    );
+
+triple_jet_i299_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+        slice_2_high_obj1 => 11,
+        slice_3_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"00BE", X"0096", X"0082", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_templates => 3
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => jet_bx_0,
+        condition_o => triple_jet_i299
+    );
+
+double_mu_i34_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0001", X"0001", X"0000", X"0000"),
+        qual_luts_obj1 => (X"FF00", X"FF00", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 2
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => double_mu_i34
+    );
+
+double_mu_i41_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"001F", X"000B", X"0000", X"0000"),
+        qual_luts_obj1 => (X"F000", X"F000", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 2
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => double_mu_i41
+    );
+
+double_mu_i48_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0001", X"0001", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 1, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"008A", X"008A", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"0176", X"0176", X"0000", X"0000"),
+        qual_luts_obj1 => (X"F000", X"F000", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 2
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => double_mu_i48
+    );
+
+double_mu_i49_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0001", X"0001", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 1, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"008A", X"008A", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"0176", X"0176", X"0000", X"0000"),
+        qual_luts_obj1 => (X"F000", X"F000", X"FFFF", X"FFFF"),
+-- charge correlation cut
+        requested_charge_correlation => "os",
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 2
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        ls_charcorr_double => ls_charcorr_double_bx_0_bx_0,
+        os_charcorr_double => os_charcorr_double_bx_0_bx_0,
+        condition_o => double_mu_i49
+    );
+
+quad_mu_i384_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0001", X"0001", X"0001", X"0001"),
+-- charge correlation cut
+        requested_charge_correlation => "os",
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 4
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        ls_charcorr_quad => ls_charcorr_quad_bx_0_bx_0,
+        os_charcorr_quad => os_charcorr_quad_bx_0_bx_0,
+        condition_o => quad_mu_i384
+    );
+
+quad_mu_i78_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0001", X"0001", X"0001", X"0001"),
+        qual_luts_obj1 => (X"F000", X"F000", X"F000", X"F000"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 4
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => quad_mu_i78
+    );
+
+single_mu_i1_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0001", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0049", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"01B7", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => single_mu_i1
+    );
+
+single_mu_i13_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0019", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0049", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"01B7", X"0000", X"0000", X"0000"),
+        qual_luts_obj1 => (X"FF00", X"FFFF", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => single_mu_i13
+    );
+
+single_mu_i19_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"002D", X"0000", X"0000", X"0000"),
+        qual_luts_obj1 => (X"F000", X"FFFF", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => single_mu_i19
+    );
+
+single_mu_i20_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"002D", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0049", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"01B7", X"0000", X"0000", X"0000"),
+        qual_luts_obj1 => (X"F000", X"FFFF", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => single_mu_i20
+    );
+
+single_mu_i21_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"002D", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (2, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0072", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"004A", X"0000", X"0000", X"0000"),
+        eta_w2_upper_limits_obj1 => (X"01B6", X"0000", X"0000", X"0000"),
+        eta_w2_lower_limits_obj1 => (X"018E", X"0000", X"0000", X"0000"),
+        qual_luts_obj1 => (X"F000", X"FFFF", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => single_mu_i21
+    );
+
+single_mu_i232_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0001", X"0000", X"0000", X"0000"),
+        upt_cuts_obj1 => (true, false, false, false),
+        upt_upper_limits_obj1 => (X"00FF", X"0000", X"0000", X"0000"),
+        upt_lower_limits_obj1 => (X"000B", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => single_mu_i232
+    );
+
+single_mu_i371_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0001", X"0000", X"0000", X"0000"),
+        upt_cuts_obj1 => (true, false, false, false),
+        upt_upper_limits_obj1 => (X"00FF", X"0000", X"0000", X"0000"),
+        upt_lower_limits_obj1 => (X"0015", X"0000", X"0000", X"0000"),
+        ip_luts_obj1 => (X"1", X"F", X"F", X"F"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => single_mu_i371
+    );
+
+single_mu_i8_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0001", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (2, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"00E1", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"0073", X"0000", X"0000", X"0000"),
+        eta_w2_upper_limits_obj1 => (X"018D", X"0000", X"0000", X"0000"),
+        eta_w2_lower_limits_obj1 => (X"011F", X"0000", X"0000", X"0000"),
+        qual_luts_obj1 => (X"F000", X"FFFF", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => single_mu_i8
+    );
+
+single_mu_i9_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0007", X"0000", X"0000", X"0000"),
+        qual_luts_obj1 => (X"F000", X"FFFF", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => single_mu_i9
+    );
+
+triple_mu_i60_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0001", X"0001", X"0001", X"0000"),
+        qual_luts_obj1 => (X"FFF0", X"FFF0", X"FFF0", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 3
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => triple_mu_i60
+    );
+
+triple_mu_i63_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0007", X"0007", X"0007", X"0000"),
+        qual_luts_obj1 => (X"FF00", X"FF00", X"FF00", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 3
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => triple_mu_i63
+    );
+
+triple_mu_i67_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"000B", X"0007", X"0007", X"0000"),
+        qual_luts_obj1 => (X"FF00", X"FF00", X"FF00", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 3
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => triple_mu_i67
+    );
+
+triple_mu_i69_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"000B", X"000B", X"0007", X"0000"),
+        qual_luts_obj1 => (X"FF00", X"FF00", X"FF00", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 3
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => triple_mu_i69
+    );
+
+triple_mu_i70_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"000B", X"0008", X"0006", X"0000"),
+        qual_luts_obj1 => (X"FFF0", X"FFF0", X"FFF0", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 3
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        condition_o => triple_mu_i70
+    );
+
+single_etm_i324_i: entity work.esums_conditions
+    generic map(
+        et_threshold => X"012C",
+        obj_type => ETM_TYPE
+    )
+    port map(
+        lhc_clk,
+        etm_bx_0,
+        condition_o => single_etm_i324
+    );
+
+single_ett_i322_i: entity work.esums_conditions
+    generic map(
+        et_threshold => X"0FA0",
+        obj_type => ETT_TYPE
+    )
+    port map(
+        lhc_clk,
+        ett_bx_0,
+        condition_o => single_ett_i322
+    );
+
+single_htt_i317_i: entity work.esums_conditions
+    generic map(
+        et_threshold => X"02D0",
+        obj_type => HTT_TYPE
+    )
+    port map(
+        lhc_clk,
+        htt_bx_0,
+        condition_o => single_htt_i317
+    );
+
+invariant_mass_i209_i: entity work.correlation_conditions_calo
+    generic map(
+-- obj cuts
+        pt_threshold_obj1 => X"0038",
+        nr_eta_windows_obj1 => 1,
+        eta_w1_upper_limit_obj1 => X"0030",
+        eta_w1_lower_limit_obj1 => X"00CF",
+        iso_lut_obj1 => X"E",
+        pt_threshold_obj2 => X"0038",
+        nr_eta_windows_obj2 => 1,
+        eta_w1_upper_limit_obj2 => X"0030",
+        eta_w1_lower_limit_obj2 => X"00CF",
+        iso_lut_obj2 => X"E",
+-- correlation cuts
+        pt1_width => TAU_PT_VECTOR_WIDTH,
+        pt2_width => TAU_PT_VECTOR_WIDTH,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
+        mass_cosh_cos_precision => TAU_TAU_COSH_COS_PRECISION,
+        cosh_cos_width => TAU_TAU_COSH_COS_VECTOR_WIDTH,
+        mass_upper_limit_vector => X"000000001823CF40",
+        mass_lower_limit_vector => X"0000000000000000",
+-- number of objects and type
+        nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
+        nr_obj2 => NR_TAU_OBJECTS,
+        type_obj2 => TAU_TYPE,
+-- selector same/different bunch crossings
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        obj1 => tau_bx_0,
+        obj2 => tau_bx_0,
+        pt1 => tau_bx_0_pt_vector,
+        pt2 => tau_bx_0_pt_vector,
+        cosh_deta => tau_tau_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => tau_tau_bx_0_bx_0_cos_dphi_vector,
+        mass_inv_pt => tau_tau_bx_0_bx_0_mass_inv_pt,
+        condition_o => invariant_mass_i209
+    );
+
+invariant_mass_i268_i: entity work.correlation_conditions_calo
+    generic map(
+-- obj cuts
+        pt_threshold_obj1 => X"003C",
+        nr_eta_windows_obj1 => 1,
+        eta_w1_upper_limit_obj1 => X"0039",
+        eta_w1_lower_limit_obj1 => X"00C6",
+        pt_threshold_obj2 => X"003C",
+        nr_eta_windows_obj2 => 1,
+        eta_w1_upper_limit_obj2 => X"0039",
+        eta_w1_lower_limit_obj2 => X"00C6",
+-- correlation cuts
+        deta_cut => true,
+        deta_upper_limit_vector => X"000005DC",
+        deta_lower_limit_vector => X"00000000",
+        pt1_width => JET_PT_VECTOR_WIDTH,
+        pt2_width => JET_PT_VECTOR_WIDTH,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
+        mass_cosh_cos_precision => JET_JET_COSH_COS_PRECISION,
+        cosh_cos_width => JET_JET_COSH_COS_VECTOR_WIDTH,
+        mass_upper_limit_vector => X"00041A6642C78140",
+        mass_lower_limit_vector => X"00000000430E2340",
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_JET_OBJECTS,
+        type_obj2 => JET_TYPE,
+-- selector same/different bunch crossings
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        obj1 => jet_bx_0,
+        obj2 => jet_bx_0,
+        deta => jet_jet_bx_0_bx_0_deta_vector,
+        pt1 => jet_bx_0_pt_vector,
+        pt2 => jet_bx_0_pt_vector,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        mass_inv_pt => jet_jet_bx_0_bx_0_mass_inv_pt,
+        condition_o => invariant_mass_i268
+    );
+
+invariant_mass_i93_i: entity work.correlation_conditions_calo
+    generic map(
+-- obj cuts
+        pt_threshold_obj1 => X"000F",
+        nr_eta_windows_obj1 => 1,
+        eta_w1_upper_limit_obj1 => X"0030",
+        eta_w1_lower_limit_obj1 => X"00CF",
+        pt_threshold_obj2 => X"000F",
+        nr_eta_windows_obj2 => 1,
+        eta_w1_upper_limit_obj2 => X"0030",
+        eta_w1_lower_limit_obj2 => X"00CF",
+-- correlation cuts
+        pt1_width => EG_PT_VECTOR_WIDTH,
+        pt2_width => EG_PT_VECTOR_WIDTH,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
+        mass_cosh_cos_precision => EG_EG_COSH_COS_PRECISION,
+        cosh_cos_width => EG_EG_COSH_COS_VECTOR_WIDTH,
+        mass_upper_limit_vector => X"0000000001312D00",
+        mass_lower_limit_vector => X"0000000000000000",
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_EG_OBJECTS,
+        type_obj2 => EG_TYPE,
+-- selector same/different bunch crossings
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        obj1 => eg_bx_0,
+        obj2 => eg_bx_0,
+        pt1 => eg_bx_0_pt_vector,
+        pt2 => eg_bx_0_pt_vector,
+        cosh_deta => eg_eg_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => eg_eg_bx_0_bx_0_cos_dphi_vector,
+        mass_inv_pt => eg_eg_bx_0_bx_0_mass_inv_pt,
+        condition_o => invariant_mass_i93
+    );
+
+calo_muon_correlation_i98_i: entity work.correlation_conditions_calo
+    generic map(
+-- obj cuts
+        pt_threshold_obj1 => X"0046",
+        nr_eta_windows_obj1 => 1,
+        eta_w1_upper_limit_obj1 => X"0039",
+        eta_w1_lower_limit_obj1 => X"00C6",
+        pt_threshold_obj2 => X"0007",
+        qual_lut_obj2 => X"F000",
+-- correlation cuts
+        dr_cut => true,
+        dr_upper_limit_vector => X"00000000000274E8",
+        dr_lower_limit_vector => X"0000000000000000",
+-- slices for muon
+        slice_low_obj2 => 0,
+        slice_high_obj2 => 7,
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
+-- selector same/different bunch crossings
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        obj1 => jet_bx_0,
+        muon => mu_bx_0,
+        deta => jet_mu_bx_0_bx_0_deta_vector,
+        dphi => jet_mu_bx_0_bx_0_dphi_vector,
+        dr => jet_mu_bx_0_bx_0_dr,
+        condition_o => calo_muon_correlation_i98
+    );
+
+invariant_mass_i44_i: entity work.correlation_conditions_muon
+    generic map(
+-- obj cuts
+        pt_threshold_obj1 => X"001F",
+        pt_threshold_obj2 => X"000F",
+-- correlation cuts
+        pt1_width => MU_PT_VECTOR_WIDTH,
+        pt2_width => MU_PT_VECTOR_WIDTH,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
+        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION,
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
+        mass_upper_limit_vector => X"002907FE9BCB0C80",
+        mass_lower_limit_vector => X"000000000007A120",
+-- number and type of object 2
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
+-- selector same/different bunch crossings
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        obj1 => mu_bx_0,
+        obj2 => mu_bx_0,
+        pt1 => mu_bx_0_pt_vector,
+        pt2 => mu_bx_0_pt_vector,
+        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
+        mass_inv_pt => mu_mu_bx_0_bx_0_mass_inv_pt,
+        condition_o => invariant_mass_i44
+    );
+
+invariant_mass_i71_i: entity work.correlation_conditions_muon
+    generic map(
+-- obj cuts
+        pt_threshold_obj1 => X"000B",
+        qual_lut_obj1 => X"FFF0",
+        pt_threshold_obj2 => X"0006",
+        qual_lut_obj2 => X"FFF0",
+-- charge correlation cut
+        requested_charge_correlation => "os",
+-- correlation cuts
+        pt1_width => MU_PT_VECTOR_WIDTH,
+        pt2_width => MU_PT_VECTOR_WIDTH,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
+        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION,
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
+        mass_upper_limit_vector => X"00000000089CE520",
+        mass_lower_limit_vector => X"0000000000BEBC20",
+-- number and type of object 2
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
+-- selector same/different bunch crossings
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        obj1 => mu_bx_0,
+        obj2 => mu_bx_0,
+        ls_charcorr_double => ls_charcorr_double_bx_0_bx_0,
+        os_charcorr_double => os_charcorr_double_bx_0_bx_0,
+        pt1 => mu_bx_0_pt_vector,
+        pt2 => mu_bx_0_pt_vector,
+        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
+        mass_inv_pt => mu_mu_bx_0_bx_0_mass_inv_pt,
+        condition_o => invariant_mass_i71
+    );
+
+invariant_mass_i92_i: entity work.correlation_conditions_muon
+    generic map(
+-- obj cuts
+        pt_threshold_obj1 => X"0007",
+        nr_eta_windows_obj1 => 1,
+        eta_w1_upper_limit_obj1 => X"00D3",
+        eta_w1_lower_limit_obj1 => X"012D",
+        qual_lut_obj1 => X"FF00",
+        pt_threshold_obj2 => X"0007",
+        nr_eta_windows_obj2 => 1,
+        eta_w1_upper_limit_obj2 => X"00D3",
+        eta_w1_lower_limit_obj2 => X"012D",
+        qual_lut_obj2 => X"FF00",
+-- charge correlation cut
+        requested_charge_correlation => "os",
+-- correlation cuts
+        pt1_width => MU_PT_VECTOR_WIDTH,
+        pt2_width => MU_PT_VECTOR_WIDTH,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
+        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION,
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
+        mass_upper_limit_vector => X"0000000005D75C80",
+        mass_lower_limit_vector => X"0000000000000000",
+-- number and type of object 2
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
+-- selector same/different bunch crossings
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        obj1 => mu_bx_0,
+        obj2 => mu_bx_0,
+        ls_charcorr_double => ls_charcorr_double_bx_0_bx_0,
+        os_charcorr_double => os_charcorr_double_bx_0_bx_0,
+        pt1 => mu_bx_0_pt_vector,
+        pt2 => mu_bx_0_pt_vector,
+        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
+        mass_inv_pt => mu_mu_bx_0_bx_0_mass_inv_pt,
+        condition_o => invariant_mass_i92
+    );
+
+invariant_mass_upt_i381_i: entity work.correlation_conditions_muon
+    generic map(
+-- obj cuts
+        pt_threshold_obj1 => X"0001",
+        qual_lut_obj1 => X"FFF0",
+        upt_cut_obj1 => true,
+        upt_upper_limit_obj1 => X"00FF",
+        upt_lower_limit_obj1 => X"0001",
+        pt_threshold_obj2 => X"0001",
+        qual_lut_obj2 => X"FFF0",
+        upt_cut_obj2 => true,
+        upt_upper_limit_obj2 => X"00FF",
+        upt_lower_limit_obj2 => X"0001",
+-- correlation cuts
+        pt1_width => MU_PT_VECTOR_WIDTH,
+        pt2_width => MU_PT_VECTOR_WIDTH,
+        upt1_width => MU_UPT_VECTOR_WIDTH,
+        upt2_width => MU_UPT_VECTOR_WIDTH,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_UPT_TYPE,
+        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION,
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
+        mass_upper_limit_vector => X"002907FE9BCB0C80",
+        mass_lower_limit_vector => X"000000000BEBC200",
+-- number and type of object 2
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
+-- selector same/different bunch crossings
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        obj1 => mu_bx_0,
+        obj2 => mu_bx_0,
+        pt1 => mu_bx_0_pt_vector,
+        pt2 => mu_bx_0_pt_vector,
+        upt1 => mu_bx_0_upt_vector,
+        upt2 => mu_bx_0_upt_vector,
+        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
+        mass_inv_upt => mu_mu_bx_0_bx_0_mass_inv_upt,
+        condition_o => invariant_mass_upt_i381
+    );
+
+invariant_mass_upt_i383_i: entity work.correlation_conditions_muon
+    generic map(
+-- obj cuts
+        pt_threshold_obj1 => X"0001",
+        qual_lut_obj1 => X"FFF0",
+        upt_cut_obj1 => true,
+        upt_upper_limit_obj1 => X"00FF",
+        upt_lower_limit_obj1 => X"0006",
+        pt_threshold_obj2 => X"0001",
+        qual_lut_obj2 => X"FFF0",
+        upt_cut_obj2 => true,
+        upt_upper_limit_obj2 => X"00FF",
+        upt_lower_limit_obj2 => X"0006",
+-- correlation cuts
+        pt1_width => MU_PT_VECTOR_WIDTH,
+        pt2_width => MU_PT_VECTOR_WIDTH,
+        upt1_width => MU_UPT_VECTOR_WIDTH,
+        upt2_width => MU_UPT_VECTOR_WIDTH,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_UPT_TYPE,
+        mass_cosh_cos_precision => MU_MU_COSH_COS_PRECISION,
+        cosh_cos_width => MU_MU_COSH_COS_VECTOR_WIDTH,
+        mass_upper_limit_vector => X"002907FE9BCB0C80",
+        mass_lower_limit_vector => X"000000000BEBC200",
+-- number and type of object 2
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
+-- selector same/different bunch crossings
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        obj1 => mu_bx_0,
+        obj2 => mu_bx_0,
+        pt1 => mu_bx_0_pt_vector,
+        pt2 => mu_bx_0_pt_vector,
+        upt1 => mu_bx_0_upt_vector,
+        upt2 => mu_bx_0_upt_vector,
+        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
+        cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
+        mass_inv_upt => mu_mu_bx_0_bx_0_mass_inv_upt,
+        condition_o => invariant_mass_upt_i383
+    );
+
+muon_muon_correlation_i364_i: entity work.correlation_conditions_muon
+    generic map(
+-- obj cuts
+        pt_threshold_obj1 => X"0007",
+        nr_eta_windows_obj1 => 1,
+        eta_w1_upper_limit_obj1 => X"006E",
+        eta_w1_lower_limit_obj1 => X"0192",
+        nr_phi_windows_obj1 => 1,
+        phi_w1_upper_limit_obj1 => X"00EF",
+        phi_w1_lower_limit_obj1 => X"0030",
+        qual_lut_obj1 => X"F000",
+        pt_threshold_obj2 => X"0007",
+        nr_eta_windows_obj2 => 1,
+        eta_w1_upper_limit_obj2 => X"006E",
+        eta_w1_lower_limit_obj2 => X"0192",
+        nr_phi_windows_obj2 => 1,
+        phi_w1_upper_limit_obj2 => X"020F",
+        phi_w1_lower_limit_obj2 => X"0150",
+        qual_lut_obj2 => X"F000",
+-- correlation cuts
+        dphi_cut => true,
+        dphi_upper_limit_vector => X"00000C46",
+        dphi_lower_limit_vector => X"00000A3A",
+-- number and type of object 2
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
+-- selector same/different bunch crossings
+        same_bx => false
+    )
+    port map(
+        lhc_clk,
+        obj1 => mu_bx_m1,
+        obj2 => mu_bx_0,
+        dphi => mu_mu_bx_m1_bx_0_dphi_vector,
+        condition_o => muon_muon_correlation_i364
+    );
+
+muon_muon_correlation_i47_i: entity work.correlation_conditions_muon
+    generic map(
+-- obj cuts
+        pt_threshold_obj1 => X"0001",
+        nr_eta_windows_obj1 => 1,
+        eta_w1_upper_limit_obj1 => X"00B8",
+        eta_w1_lower_limit_obj1 => X"0148",
+        qual_lut_obj1 => X"F000",
+        pt_threshold_obj2 => X"0001",
+        nr_eta_windows_obj2 => 1,
+        eta_w1_upper_limit_obj2 => X"00B8",
+        eta_w1_lower_limit_obj2 => X"0148",
+        qual_lut_obj2 => X"F000",
+-- charge correlation cut
+        requested_charge_correlation => "os",
+-- correlation cuts
+        dr_cut => true,
+        dr_upper_limit_vector => X"00000000001DEC28",
+        dr_lower_limit_vector => X"0000000000000000",
+-- number and type of object 2
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
+-- selector same/different bunch crossings
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        obj1 => mu_bx_0,
+        obj2 => mu_bx_0,
+        ls_charcorr_double => ls_charcorr_double_bx_0_bx_0,
+        os_charcorr_double => os_charcorr_double_bx_0_bx_0,
+        deta => mu_mu_bx_0_bx_0_deta_vector,
+        dphi => mu_mu_bx_0_bx_0_dphi_vector,
+        dr => mu_mu_bx_0_bx_0_dr,
+        condition_o => muon_muon_correlation_i47
+    );
+
+muon_muon_correlation_i51_i: entity work.correlation_conditions_muon
+    generic map(
+-- obj cuts
+        pt_threshold_obj1 => X"0001",
+        nr_eta_windows_obj1 => 1,
+        eta_w1_upper_limit_obj1 => X"008A",
+        eta_w1_lower_limit_obj1 => X"0176",
+        qual_lut_obj1 => X"F000",
+        pt_threshold_obj2 => X"0001",
+        nr_eta_windows_obj2 => 1,
+        eta_w1_upper_limit_obj2 => X"008A",
+        eta_w1_lower_limit_obj2 => X"0176",
+        qual_lut_obj2 => X"F000",
+-- charge correlation cut
+        requested_charge_correlation => "os",
+-- correlation cuts
+        dr_cut => true,
+        dr_upper_limit_vector => X"00000000001DEC28",
+        dr_lower_limit_vector => X"0000000000000000",
+-- number and type of object 2
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
+-- selector same/different bunch crossings
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        obj1 => mu_bx_0,
+        obj2 => mu_bx_0,
+        ls_charcorr_double => ls_charcorr_double_bx_0_bx_0,
+        os_charcorr_double => os_charcorr_double_bx_0_bx_0,
+        deta => mu_mu_bx_0_bx_0_deta_vector,
+        dphi => mu_mu_bx_0_bx_0_dphi_vector,
+        dr => mu_mu_bx_0_bx_0_dr,
+        condition_o => muon_muon_correlation_i51
+    );
+
+muon_muon_correlation_i54_i: entity work.correlation_conditions_muon
+    generic map(
+-- obj cuts
+        pt_threshold_obj1 => X"0009",
+        qual_lut_obj1 => X"F000",
+        pt_threshold_obj2 => X"0009",
+        qual_lut_obj2 => X"F000",
+-- charge correlation cut
+        requested_charge_correlation => "os",
+-- correlation cuts
+        dr_cut => true,
+        dr_upper_limit_vector => X"000000000015FCE8",
+        dr_lower_limit_vector => X"0000000000000000",
+-- number and type of object 2
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
+-- selector same/different bunch crossings
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        obj1 => mu_bx_0,
+        obj2 => mu_bx_0,
+        ls_charcorr_double => ls_charcorr_double_bx_0_bx_0,
+        os_charcorr_double => os_charcorr_double_bx_0_bx_0,
+        deta => mu_mu_bx_0_bx_0_deta_vector,
+        dphi => mu_mu_bx_0_bx_0_dphi_vector,
+        dr => mu_mu_bx_0_bx_0_dr,
+        condition_o => muon_muon_correlation_i54
+    );
+
+transverse_mass_i166_i: entity work.correlation_conditions_calo
+    generic map(
+-- obj cuts
+        pt_threshold_obj1 => X"0040",
+        nr_eta_windows_obj1 => 1,
+        eta_w1_upper_limit_obj1 => X"0039",
+        eta_w1_lower_limit_obj1 => X"00C6",
+        iso_lut_obj1 => X"A",
+-- slices for esums
+        slice_low_obj2 => 0,
+        slice_high_obj2 => 0,
+-- esums obj cuts
+        sel_esums => true,
+        obj_type_esums => ETM_TYPE,
+        et_threshold_esums => X"0014",
+-- correlation cuts
+        pt1_width => EG_PT_VECTOR_WIDTH,
+        pt2_width => ETM_PT_VECTOR_WIDTH,
+        mass_cut => true,
+        mass_type => TRANSVERSE_MASS_TYPE,
+        mass_cosh_cos_precision => EG_ETM_COSH_COS_PRECISION,
+        cosh_cos_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
+        mass_upper_limit_vector => X"00041A6642C78140",
+        mass_lower_limit_vector => X"0000000004C4B400",
+-- number of calo objects, types
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_ETM_OBJECTS,
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        obj1 => eg_bx_0,
+        esums => etm_bx_0,
+        pt1 => eg_bx_0_pt_vector,
+        pt2 => etm_bx_0_pt_vector,
+        cos_dphi => eg_etm_bx_0_bx_0_cos_dphi_vector,
+        mass_trans => eg_etm_bx_0_bx_0_mass_trans,
+        condition_o => transverse_mass_i166
+    );
+
+
+-- Instantiations of algorithms
+
+
+-- 1 L1_SingleMuCosmics_BMTF : MU0[MU-ETA_BMTF]
+l1_single_mu_cosmics_bmtf <= single_mu_i1;
+algo(52) <= l1_single_mu_cosmics_bmtf;
+
+-- 8 L1_SingleMu0_EMTF : MU0[MU-QLTY_SNGL,MU-ETA_EMTF_POS,MU-ETA_EMTF_NEG]
+l1_single_mu0_emtf <= single_mu_i8;
+algo(41) <= l1_single_mu0_emtf;
+
+-- 9 L1_SingleMu3 : MU3[MU-QLTY_SNGL]
+l1_single_mu3 <= single_mu_i9;
+algo(23) <= l1_single_mu3;
+
+-- 13 L1_SingleMu12_DQ_BMTF : MU12[MU-QLTY_DBLE,MU-ETA_BMTF]
+l1_single_mu12_dq_bmtf <= single_mu_i13;
+algo(49) <= l1_single_mu12_dq_bmtf;
+
+-- 19 L1_SingleMu22 : MU22[MU-QLTY_SNGL]
+l1_single_mu22 <= single_mu_i19;
+algo(56) <= l1_single_mu22;
+
+-- 20 L1_SingleMu22_BMTF : MU22[MU-QLTY_SNGL,MU-ETA_BMTF]
+l1_single_mu22_bmtf <= single_mu_i20;
+algo(50) <= l1_single_mu22_bmtf;
+
+-- 21 L1_SingleMu22_OMTF : MU22[MU-QLTY_SNGL,MU-ETA_OMTF_POS,MU-ETA_OMTF_NEG]
+l1_single_mu22_omtf <= single_mu_i21;
+algo(42) <= l1_single_mu22_omtf;
+
+-- 38 L1_MASSUPT_0_0_20_open : mass_inv_upt{MU0[MU-UPT_0,MU-QLTY_OPEN],MU0[MU-UPT_0,MU-QLTY_OPEN]}[MASSUPT_20]
+l1_massupt_0_0_20_open <= invariant_mass_upt_i381;
+algo(25) <= l1_massupt_0_0_20_open;
+
+-- 40 L1_DoubleMu0 : comb{MU0[MU-QLTY_DBLE],MU0[MU-QLTY_DBLE]}
+l1_double_mu0 <= double_mu_i34;
+algo(47) <= l1_double_mu0;
+
+-- 47 L1_DoubleMu_15_5_SQ : comb{MU15[MU-QLTY_SNGL],MU5[MU-QLTY_SNGL]}
+l1_double_mu_15_5_sq <= double_mu_i41;
+algo(48) <= l1_double_mu_15_5_sq;
+
+-- 50 L1_DoubleMu_15_7_Mass_Min1 : mass_inv{MU15,MU7}[MASS_MIN_1]
+l1_double_mu_15_7_mass_min1 <= invariant_mass_i44;
+algo(5) <= l1_double_mu_15_7_mass_min1;
+
+-- 54 L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4 : dist{MU0[MU-QLTY_SNGL,MU-ETA_2p0],MU0[MU-QLTY_SNGL,MU-ETA_2p0]}[DR_1p4,CHGCOR_OS]
+l1_double_mu0er2p0_sq_os_d_r_max1p4 <= muon_muon_correlation_i47;
+algo(7) <= l1_double_mu0er2p0_sq_os_d_r_max1p4;
+
+-- 55 L1_DoubleMu0er1p5_SQ : comb{MU0[MU-QLTY_SNGL,MU-ETA_1p5],MU0[MU-QLTY_SNGL,MU-ETA_1p5]}
+l1_double_mu0er1p5_sq <= double_mu_i48;
+algo(19) <= l1_double_mu0er1p5_sq;
+
+-- 56 L1_DoubleMu0er1p5_SQ_OS : comb{MU0[MU-QLTY_SNGL,MU-ETA_1p5],MU0[MU-QLTY_SNGL,MU-ETA_1p5]}[CHGCOR_OS]
+l1_double_mu0er1p5_sq_os <= double_mu_i49;
+algo(18) <= l1_double_mu0er1p5_sq_os;
+
+-- 58 L1_DoubleMu0er1p5_SQ_OS_dR_Max1p4 : dist{MU0[MU-QLTY_SNGL,MU-ETA_1p5],MU0[MU-QLTY_SNGL,MU-ETA_1p5]}[DR_1p4,CHGCOR_OS]
+l1_double_mu0er1p5_sq_os_d_r_max1p4 <= muon_muon_correlation_i51;
+algo(6) <= l1_double_mu0er1p5_sq_os_d_r_max1p4;
+
+-- 61 L1_DoubleMu4_SQ_OS_dR_Max1p2 : dist{MU4[MU-QLTY_SNGL],MU4[MU-QLTY_SNGL]}[DR_1p2,CHGCOR_OS]
+l1_double_mu4_sq_os_d_r_max1p2 <= muon_muon_correlation_i54;
+algo(8) <= l1_double_mu4_sq_os_d_r_max1p2;
+
+-- 67 L1_MASSUPT_5_5_20_open : mass_inv_upt{MU0[MU-UPT_5,MU-QLTY_OPEN],MU0[MU-UPT_5,MU-QLTY_OPEN]}[MASSUPT_20]
+l1_massupt_5_5_20_open <= invariant_mass_upt_i383;
+algo(26) <= l1_massupt_5_5_20_open;
+
+-- 68 L1_QuadMu0_OS : comb{MU0,MU0,MU0,MU0}[CHGCOR_OS]
+l1_quad_mu0_os <= quad_mu_i384;
+algo(24) <= l1_quad_mu0_os;
+
+-- 71 L1_TripleMu0_OQ : comb{MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN]}
+l1_triple_mu0_oq <= triple_mu_i60;
+algo(27) <= l1_triple_mu0_oq;
+
+-- 74 L1_TripleMu3 : comb{MU3[MU-QLTY_DBLE],MU3[MU-QLTY_DBLE],MU3[MU-QLTY_DBLE]}
+l1_triple_mu3 <= triple_mu_i63;
+algo(28) <= l1_triple_mu3;
+
+-- 78 L1_TripleMu_5_3_3 : comb{MU5[MU-QLTY_DBLE],MU3[MU-QLTY_DBLE],MU3[MU-QLTY_DBLE]}
+l1_triple_mu_5_3_3 <= triple_mu_i67;
+algo(29) <= l1_triple_mu_5_3_3;
+
+-- 80 L1_TripleMu_5_5_3 : comb{MU5[MU-QLTY_DBLE],MU5[MU-QLTY_DBLE],MU3[MU-QLTY_DBLE]}
+l1_triple_mu_5_5_3 <= triple_mu_i69;
+algo(30) <= l1_triple_mu_5_5_3;
+
+-- 82 L1_TripleMu_5_3p5_2p5_OQ_DoubleMu_5_2p5_OQ_OS_Mass_5to17 : comb{MU5[MU-QLTY_OPEN],MU3p5[MU-QLTY_OPEN],MU2p5[MU-QLTY_OPEN]} AND mass_inv{MU5[MU-QLTY_OPEN],MU2p5[MU-QLTY_OPEN]}[MASS_MASS_5to17,CHGCOR_OS]
+l1_triple_mu_5_3p5_2p5_oq_double_mu_5_2p5_oq_os_mass_5to17 <= triple_mu_i70 and invariant_mass_i71;
+algo(4) <= l1_triple_mu_5_3p5_2p5_oq_double_mu_5_2p5_oq_os_mass_5to17;
+
+-- 90 L1_QuadMu0_SQ : comb{MU0[MU-QLTY_SNGL],MU0[MU-QLTY_SNGL],MU0[MU-QLTY_SNGL],MU0[MU-QLTY_SNGL]}
+l1_quad_mu0_sq <= quad_mu_i78;
+algo(17) <= l1_quad_mu0_sq;
+
+-- 112 L1_DoubleMu3_OS_DoubleEG7p5Upsilon : mass_inv{MU3[MU-QLTY_DBLE,MU-ETA_2p3],MU3[MU-QLTY_DBLE,MU-ETA_2p3]}[MASS_MASS_0to14,CHGCOR_OS] AND mass_inv{EG7p5[EG-ETA_2p13],EG7p5[EG-ETA_2p13]}[MASS_MASS_0to20]
+l1_double_mu3_os_double_eg7p5_upsilon <= invariant_mass_i92 and invariant_mass_i93;
+algo(0) <= l1_double_mu3_os_double_eg7p5_upsilon;
+
+-- 119 L1_Mu3_Jet30er2p5 : MU3[MU-QLTY_SNGL] AND JET30[JET-ETA_2p52]
+l1_mu3_jet30er2p5 <= single_mu_i9 and single_jet_i96;
+algo(22) <= l1_mu3_jet30er2p5;
+
+-- 122 L1_Mu3_Jet35er2p5_dR_Max0p4 : dist{MU3[MU-QLTY_SNGL],JET35[JET-ETA_2p52]}[DR_MAX_0p4]
+l1_mu3_jet35er2p5_d_r_max0p4 <= calo_muon_correlation_i98;
+algo(3) <= l1_mu3_jet35er2p5_d_r_max0p4;
+
+-- 153 L1_Mu0upt20ip0 : MU0[MU-IP_0,MU-UPT_20]
+l1_mu0upt20ip0 <= single_mu_i371;
+algo(51) <= l1_mu0upt20ip0;
+
+-- 164 L1_SingleEG28er2p5 : EG28[EG-ETA_2p52]
+l1_single_eg28er2p5 <= single_eg_i131;
+algo(43) <= l1_single_eg28er2p5;
+
+-- 171 L1_SingleEG42er2p5 : EG42[EG-ETA_2p52]
+l1_single_eg42er2p5 <= single_eg_i138;
+algo(44) <= l1_single_eg42er2p5;
+
+-- 173 L1_SingleEG50 : EG50
+l1_single_eg50 <= single_eg_i140;
+algo(54) <= l1_single_eg50;
+
+-- 180 L1_SingleLooseIsoEG28er1p5 : EG28[EG-ETA_1p52_HASHFIX,EG-ISO_0xC]
+l1_single_loose_iso_eg28er1p5 <= single_eg_i148;
+algo(39) <= l1_single_loose_iso_eg28er1p5;
+
+-- 181 L1_SingleLooseIsoEG30er2p5 : EG30[EG-ETA_2p52,EG-ISO_0xC]
+l1_single_loose_iso_eg30er2p5 <= single_eg_i149;
+algo(40) <= l1_single_loose_iso_eg30er2p5;
+
+-- 183 L1_SingleIsoEG24er2p1 : EG24[EG-ETA_2p13,EG-ISO_0xA]
+l1_single_iso_eg24er2p1 <= single_eg_i151;
+algo(33) <= l1_single_iso_eg24er2p1;
+
+-- 184 L1_SingleIsoEG24er1p5 : EG24[EG-ETA_1p52_HASHFIX,EG-ISO_0xA]
+l1_single_iso_eg24er1p5 <= single_eg_i152;
+algo(32) <= l1_single_iso_eg24er1p5;
+
+-- 185 L1_SingleIsoEG26er2p5 : EG26[EG-ETA_2p52,EG-ISO_0xA]
+l1_single_iso_eg26er2p5 <= single_eg_i153;
+algo(35) <= l1_single_iso_eg26er2p5;
+
+-- 187 L1_SingleIsoEG26er1p5 : EG26[EG-ETA_1p52_HASHFIX,EG-ISO_0xA]
+l1_single_iso_eg26er1p5 <= single_eg_i155;
+algo(34) <= l1_single_iso_eg26er1p5;
+
+-- 190 L1_SingleIsoEG28er2p1 : EG28[EG-ETA_2p13,EG-ISO_0xA]
+l1_single_iso_eg28er2p1 <= single_eg_i159;
+algo(36) <= l1_single_iso_eg28er2p1;
+
+-- 192 L1_SingleIsoEG30er2p5 : EG30[EG-ETA_2p52,EG-ISO_0xA]
+l1_single_iso_eg30er2p5 <= single_eg_i161;
+algo(37) <= l1_single_iso_eg30er2p5;
+
+-- 196 L1_SingleIsoEG34er2p5 : EG34[EG-ETA_2p52,EG-ISO_0xA]
+l1_single_iso_eg34er2p5 <= single_eg_i165;
+algo(38) <= l1_single_iso_eg34er2p5;
+
+-- 197 L1_IsoEG32er2p5_Mt40 : mass_trv{EG32[EG-ETA_2p52,EG-ISO_0xA],ETM10}[MASS_MIN_40]
+l1_iso_eg32er2p5_mt40 <= transverse_mass_i166;
+algo(31) <= l1_iso_eg32er2p5_mt40;
+
+-- 217 L1_DoubleLooseIsoEG22er2p1 : comb{EG22[EG-ISO_0xC,EG-ETA_2p13],EG22[EG-ISO_0xC,EG-ETA_2p13]}
+l1_double_loose_iso_eg22er2p1 <= double_eg_i179;
+algo(15) <= l1_double_loose_iso_eg22er2p1;
+
+-- 226 L1_TripleEG_18_17_8_er2p5 : comb{EG18[EG-ETA_2p52],EG17[EG-ETA_2p52],EG8[EG-ETA_2p52]}
+l1_triple_eg_18_17_8_er2p5 <= triple_eg_i183;
+algo(13) <= l1_triple_eg_18_17_8_er2p5;
+
+-- 228 L1_TripleEG16er2p5 : comb{EG16[EG-ETA_2p52],EG16[EG-ETA_2p52],EG16[EG-ETA_2p52]}
+l1_triple_eg16er2p5 <= triple_eg_i185;
+algo(12) <= l1_triple_eg16er2p5;
+
+-- 264 L1_SingleTau120er2p1 : TAU120[TAU-ETA_2p13]
+l1_single_tau120er2p1 <= single_tau_i201;
+algo(46) <= l1_single_tau120er2p1;
+
+-- 270 L1_DoubleIsoTau30er2p1 : comb{TAU30[TAU-ETA_2p13,TAU-ISO_0xE],TAU30[TAU-ETA_2p13,TAU-ISO_0xE]}
+l1_double_iso_tau30er2p1 <= double_tau_i205;
+algo(14) <= l1_double_iso_tau30er2p1;
+
+-- 274 L1_DoubleIsoTau28er2p1_Mass_Max90 : mass_inv{TAU28[TAU-ETA_2p13,TAU-ISO_0xE],TAU28[TAU-ETA_2p13,TAU-ISO_0xE]}[MASS_MAX_90]
+l1_double_iso_tau28er2p1_mass_max90 <= invariant_mass_i209;
+algo(2) <= l1_double_iso_tau28er2p1_mass_max90;
+
+-- 302 L1_Mu0upt10 : MU0[MU-UPT_10]
+l1_mu0upt10 <= single_mu_i232;
+algo(53) <= l1_mu0upt10;
+
+-- 310 L1_SingleJet60 : JET60
+l1_single_jet60 <= single_jet_i240;
+algo(55) <= l1_single_jet60;
+
+-- 322 L1_SingleJet180er2p5 : JET180[JET-ETA_2p52]
+l1_single_jet180er2p5 <= single_jet_i250;
+algo(45) <= l1_single_jet180er2p5;
+
+-- 329 L1_SingleJet8erHE : JET8[JET-ETA_1p392_2p958_NEG,JET-ETA_1p392_2p958_POS]
+l1_single_jet8er_he <= single_jet_i259;
+algo(21) <= l1_single_jet8er_he;
+
+-- 330 L1_SingleJet10erHE : JET10[JET-ETA_1p392_2p958_NEG,JET-ETA_1p392_2p958_POS]
+l1_single_jet10er_he <= single_jet_i260;
+algo(20) <= l1_single_jet10er_he;
+
+-- 348 L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5 : mass_inv{JET30[JET-ETA_2p52],JET30[JET-ETA_2p52]}[MASS_MIN_150,DETA_MAX_1p5]
+l1_double_jet30er2p5_mass_min150_d_eta_max1p5 <= invariant_mass_i268;
+algo(1) <= l1_double_jet30er2p5_mass_min150_d_eta_max1p5;
+
+-- 372 L1_TripleJet_95_75_65_DoubleJet_75_65_er2p5 : comb{JET95,JET75,JET65} AND comb{JET75[JET-ETA_2p52],JET65[JET-ETA_2p52]}
+l1_triple_jet_95_75_65_double_jet_75_65_er2p5 <= triple_jet_i299 and double_jet_i300;
+algo(10) <= l1_triple_jet_95_75_65_double_jet_75_65_er2p5;
+
+-- 376 L1_QuadJet_95_75_65_20_DoubleJet_75_65_er2p5_Jet20_FWD3p0 : comb{JET95,JET75,JET65,JET20} AND comb{JET75[JET-ETA_2p52],JET65[JET-ETA_2p52]} AND (JET20[JET-ETA_FWD_3p00_NEG] OR JET20[JET-ETA_FWD_3p00_POS])
+l1_quad_jet_95_75_65_20_double_jet_75_65_er2p5_jet20_fwd3p0 <= quad_jet_i305 and double_jet_i300 and ( single_jet_i306 or single_jet_i307 );
+algo(9) <= l1_quad_jet_95_75_65_20_double_jet_75_65_er2p5_jet20_fwd3p0;
+
+-- 382 L1_QuadJet60er2p5 : comb{JET60[JET-ETA_2p52],JET60[JET-ETA_2p52],JET60[JET-ETA_2p52],JET60[JET-ETA_2p52]}
+l1_quad_jet60er2p5 <= quad_jet_i308;
+algo(11) <= l1_quad_jet60er2p5;
+
+-- 404 L1_HTT360er : HTT360
+l1_htt360er <= single_htt_i317;
+algo(59) <= l1_htt360er;
+
+-- 412 L1_ETT2000 : ETT2000
+l1_ett2000 <= single_ett_i322;
+algo(58) <= l1_ett2000;
+
+-- 417 L1_ETM150 : ETM150
+l1_etm150 <= single_etm_i324;
+algo(57) <= l1_etm150;
+
+-- 478 L1_LastCollisionInTrain : EXT_BPTX_LastCollisionInTrain_VME
+l1_last_collision_in_train <= single_ext_i350;
+algo(63) <= l1_last_collision_in_train;
+
+-- 480 L1_FirstCollisionInOrbit : EXT_BPTX_FirstCollidingBunch_VME
+l1_first_collision_in_orbit <= single_ext_i352;
+algo(62) <= l1_first_collision_in_orbit;
+
+-- 482 L1_BPTX_NotOR_VME : EXT_BPTX_NotOR_VME
+l1_bptx_not_or_vme <= single_ext_i353;
+algo(61) <= l1_bptx_not_or_vme;
+
+-- 488 L1_BPTX_AND_Ref4_VME : EXT_BPTX_AND_Ref4_VME
+l1_bptx_and_ref4_vme <= single_ext_i359;
+algo(60) <= l1_bptx_and_ref4_vme;
+
+-- 494 L1_CDC_SingleMu_3_er1p2_TOP120_DPHI2p618_3p142 : dist{MU3-1[MU-ETA_1p2,MU-PHI_TOP120,MU-QLTY_SNGL],MU3[MU-ETA_1p2,MU-PHI_BOTTOM120,MU-QLTY_SNGL]}[DPHI_DPHI_MIN2p618_MAX3p142]
+l1_cdc_single_mu_3_er1p2_top120_dphi2p618_3p142 <= muon_muon_correlation_i364;
+algo(16) <= l1_cdc_single_mu_3_er1p2_top120_dphi2p618_3p142;
+
+-- 506 L1_TOTEM_4 : EXT_TOTEM_4
+l1_totem_4 <= single_ext_i370;
+algo(64) <= l1_totem_4;
+
+
+-- ========================================================
