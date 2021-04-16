@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 5563f5e5-c279-49d9-ad94-c234dcd8d5bc
+-- 11cffbad-8087-401b-8501-a8f5fc58b075
 
 -- Scale set:
 -- scales_2021_03_02
@@ -161,9 +161,9 @@ deta_dphi_eg_jet_bx_0_bx_0_i: entity work.deta_dphi_calculations
         eta_integer_obj2 => jet_bx_0_eta_integer,
         phi_integer_obj2 => jet_bx_0_phi_integer,
         deta_integer => eg_jet_bx_0_bx_0_deta_integer,
-        deta_vector => eg_jet_bx_0_bx_0_deta_vector,
+        deta_vector => eg_jet_bx_0_bx_0_deta,
         dphi_integer => eg_jet_bx_0_bx_0_dphi_integer,
-        dphi_vector => eg_jet_bx_0_bx_0_dphi_vector
+        dphi_vector => eg_jet_bx_0_bx_0_dphi
     );
 --
 deta_dphi_eg_tau_bx_0_bx_0_i: entity work.deta_dphi_calculations
@@ -182,9 +182,9 @@ deta_dphi_eg_tau_bx_0_bx_0_i: entity work.deta_dphi_calculations
         eta_integer_obj2 => tau_bx_0_eta_integer,
         phi_integer_obj2 => tau_bx_0_phi_integer,
         deta_integer => eg_tau_bx_0_bx_0_deta_integer,
-        deta_vector => eg_tau_bx_0_bx_0_deta_vector,
+        deta_vector => eg_tau_bx_0_bx_0_deta,
         dphi_integer => eg_tau_bx_0_bx_0_dphi_integer,
-        dphi_vector => eg_tau_bx_0_bx_0_dphi_vector
+        dphi_vector => eg_tau_bx_0_bx_0_dphi
     );
 --
 deta_dphi_tau_tau_bx_0_bx_0_i: entity work.deta_dphi_calculations
@@ -203,9 +203,9 @@ deta_dphi_tau_tau_bx_0_bx_0_i: entity work.deta_dphi_calculations
         eta_integer_obj2 => tau_bx_0_eta_integer,
         phi_integer_obj2 => tau_bx_0_phi_integer,
         deta_integer => tau_tau_bx_0_bx_0_deta_integer,
-        deta_vector => tau_tau_bx_0_bx_0_deta_vector,
+        deta_vector => tau_tau_bx_0_bx_0_deta,
         dphi_integer => tau_tau_bx_0_bx_0_dphi_integer,
-        dphi_vector => tau_tau_bx_0_bx_0_dphi_vector
+        dphi_vector => tau_tau_bx_0_bx_0_dphi
     );
 --
 deta_dphi_jet_jet_bx_0_bx_0_i: entity work.deta_dphi_calculations
@@ -224,9 +224,9 @@ deta_dphi_jet_jet_bx_0_bx_0_i: entity work.deta_dphi_calculations
         eta_integer_obj2 => jet_bx_0_eta_integer,
         phi_integer_obj2 => jet_bx_0_phi_integer,
         deta_integer => jet_jet_bx_0_bx_0_deta_integer,
-        deta_vector => jet_jet_bx_0_bx_0_deta_vector,
+        deta_vector => jet_jet_bx_0_bx_0_deta,
         dphi_integer => jet_jet_bx_0_bx_0_dphi_integer,
-        dphi_vector => jet_jet_bx_0_bx_0_dphi_vector
+        dphi_vector => jet_jet_bx_0_bx_0_dphi
     );
 --
 deta_dphi_mu_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
@@ -245,9 +245,9 @@ deta_dphi_mu_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
         eta_integer_obj2 => mu_bx_0_eta_integer,
         phi_integer_obj2 => mu_bx_0_phi_integer,
         deta_integer => mu_mu_bx_0_bx_0_deta_integer,
-        deta_vector => mu_mu_bx_0_bx_0_deta_vector,
+        deta_vector => mu_mu_bx_0_bx_0_deta,
         dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
-        dphi_vector => mu_mu_bx_0_bx_0_dphi_vector
+        dphi_vector => mu_mu_bx_0_bx_0_dphi
     );
 --
 deta_dphi_eg_etm_bx_0_bx_0_i: entity work.deta_dphi_calculations
@@ -263,7 +263,7 @@ deta_dphi_eg_etm_bx_0_bx_0_i: entity work.deta_dphi_calculations
         phi_integer_obj1 => eg_bx_0_phi_integer,
         phi_integer_obj2 => etm_bx_0_phi_integer,
         dphi_integer => eg_etm_bx_0_bx_0_dphi_integer,
-        dphi_vector => eg_etm_bx_0_bx_0_dphi_vector
+        dphi_vector => eg_etm_bx_0_bx_0_dphi
     );
 --
 -- Instantiations of cosh deta and cos dphi LUTs for correlation conditions (used for mass) and DR, mass and two-body pt calculations
@@ -282,8 +282,8 @@ tau_tau_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
     port map(
         dphi_integer => tau_tau_bx_0_bx_0_dphi_integer,
         deta_integer => tau_tau_bx_0_bx_0_deta_integer,
-        cosh_deta_vector => tau_tau_bx_0_bx_0_cosh_deta_vector,
-        cos_dphi_vector => tau_tau_bx_0_bx_0_cos_dphi_vector
+        cosh_deta_vector => tau_tau_bx_0_bx_0_cosh_deta,
+        cos_dphi_vector => tau_tau_bx_0_bx_0_cos_dphi
     );
 --
 jet_jet_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
@@ -299,8 +299,8 @@ jet_jet_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
     port map(
         dphi_integer => jet_jet_bx_0_bx_0_dphi_integer,
         deta_integer => jet_jet_bx_0_bx_0_deta_integer,
-        cosh_deta_vector => jet_jet_bx_0_bx_0_cosh_deta_vector,
-        cos_dphi_vector => jet_jet_bx_0_bx_0_cos_dphi_vector
+        cosh_deta_vector => jet_jet_bx_0_bx_0_cosh_deta,
+        cos_dphi_vector => jet_jet_bx_0_bx_0_cos_dphi
     );
 --
 mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
@@ -316,8 +316,8 @@ mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
     port map(
         dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
         deta_integer => mu_mu_bx_0_bx_0_deta_integer,
-        cosh_deta_vector => mu_mu_bx_0_bx_0_cosh_deta_vector,
-        cos_dphi_vector => mu_mu_bx_0_bx_0_cos_dphi_vector
+        cosh_deta_vector => mu_mu_bx_0_bx_0_cosh_deta,
+        cos_dphi_vector => mu_mu_bx_0_bx_0_cos_dphi
     );
 --
 eg_etm_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
@@ -331,7 +331,7 @@ eg_etm_bx_0_bx_0_cosh_deta_cos_dphi_i: entity work.cosh_deta_cos_dphi
     )
     port map(
         dphi_integer => eg_etm_bx_0_bx_0_dphi_integer,
-        cos_dphi_vector => eg_etm_bx_0_bx_0_cos_dphi_vector
+        cos_dphi_vector => eg_etm_bx_0_bx_0_cos_dphi
     );
 --
 
@@ -344,8 +344,8 @@ eg_jet_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
         dr_cut => true
     )
     port map(
-        deta => eg_jet_bx_0_bx_0_deta_vector,
-        dphi => eg_jet_bx_0_bx_0_dphi_vector,
+        deta => eg_jet_bx_0_bx_0_deta,
+        dphi => eg_jet_bx_0_bx_0_dphi,
         dr => eg_jet_bx_0_bx_0_dr
     );
 
@@ -356,8 +356,8 @@ eg_tau_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
         dr_cut => true
     )
     port map(
-        deta => eg_tau_bx_0_bx_0_deta_vector,
-        dphi => eg_tau_bx_0_bx_0_dphi_vector,
+        deta => eg_tau_bx_0_bx_0_deta,
+        dphi => eg_tau_bx_0_bx_0_dphi,
         dr => eg_tau_bx_0_bx_0_dr
     );
 
@@ -368,8 +368,8 @@ mu_mu_bx_0_bx_0_deltaR_i: entity work.correlation_cuts_calculation
         dr_cut => true
     )
     port map(
-        deta => mu_mu_bx_0_bx_0_deta_vector,
-        dphi => mu_mu_bx_0_bx_0_dphi_vector,
+        deta => mu_mu_bx_0_bx_0_deta,
+        dphi => mu_mu_bx_0_bx_0_dphi,
         dr => mu_mu_bx_0_bx_0_dr
     );
 
@@ -389,8 +389,8 @@ tau_tau_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     port map(
         pt1 => tau_bx_0_pt_vector,
         pt2 => tau_bx_0_pt_vector,
-        cosh_deta => tau_tau_bx_0_bx_0_cosh_deta_vector,
-        cos_dphi => tau_tau_bx_0_bx_0_cos_dphi_vector,
+        cosh_deta => tau_tau_bx_0_bx_0_cosh_deta,
+        cos_dphi => tau_tau_bx_0_bx_0_cos_dphi,
         inv_mass_pt => tau_tau_bx_0_bx_0_mass_inv_pt
     );
 
@@ -408,8 +408,8 @@ jet_jet_bx_0_bx_0_mass_inv_pt_i: entity work.correlation_cuts_calculation
     port map(
         pt1 => jet_bx_0_pt_vector,
         pt2 => jet_bx_0_pt_vector,
-        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta_vector,
-        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi_vector,
+        cosh_deta => jet_jet_bx_0_bx_0_cosh_deta,
+        cos_dphi => jet_jet_bx_0_bx_0_cos_dphi,
         inv_mass_pt => jet_jet_bx_0_bx_0_mass_inv_pt
     );
 
@@ -431,8 +431,8 @@ mu_mu_bx_0_bx_0_mass_inv_upt_i: entity work.correlation_cuts_calculation
     port map(
         upt1 => mu_bx_0_upt_vector,
         upt2 => mu_bx_0_upt_vector,
-        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta_vector,
-        cos_dphi => mu_mu_bx_0_bx_0_cos_dphi_vector,
+        cosh_deta => mu_mu_bx_0_bx_0_cosh_deta,
+        cos_dphi => mu_mu_bx_0_bx_0_cos_dphi,
         inv_mass_upt => mu_mu_bx_0_bx_0_mass_inv_upt
     );
 
@@ -452,7 +452,7 @@ eg_etm_bx_0_bx_0_mass_trans_i: entity work.correlation_cuts_calculation
     port map(
         pt1 => eg_bx_0_pt_vector,
         pt2 => etm_bx_0_pt_vector,
-        cos_dphi => eg_etm_bx_0_bx_0_cos_dphi_vector,
+        cos_dphi => eg_etm_bx_0_bx_0_cos_dphi,
         trans_mass => eg_etm_bx_0_bx_0_mass_trans
     );
 
@@ -1292,8 +1292,8 @@ calo_calo_correlation_i186_i: entity work.correlation_conditions_calo
         lhc_clk,
         obj1 => eg_bx_0,
         obj2 => jet_bx_0,
-        deta => eg_jet_bx_0_bx_0_deta_vector,
-        dphi => eg_jet_bx_0_bx_0_dphi_vector,
+        deta => eg_jet_bx_0_bx_0_deta,
+        dphi => eg_jet_bx_0_bx_0_dphi,
         dr => eg_jet_bx_0_bx_0_dr,
         condition_o => calo_calo_correlation_i186
     );
@@ -1326,8 +1326,8 @@ calo_calo_correlation_i200_i: entity work.correlation_conditions_calo
         lhc_clk,
         obj1 => eg_bx_0,
         obj2 => tau_bx_0,
-        deta => eg_tau_bx_0_bx_0_deta_vector,
-        dphi => eg_tau_bx_0_bx_0_dphi_vector,
+        deta => eg_tau_bx_0_bx_0_deta,
+        dphi => eg_tau_bx_0_bx_0_dphi,
         dr => eg_tau_bx_0_bx_0_dr,
         condition_o => calo_calo_correlation_i200
     );
@@ -1399,7 +1399,7 @@ invariant_mass_i270_i: entity work.correlation_conditions_calo
         lhc_clk,
         obj1 => jet_bx_0,
         obj2 => jet_bx_0,
-        deta => jet_jet_bx_0_bx_0_deta_vector,
+        deta => jet_jet_bx_0_bx_0_deta,
         mass_inv_pt => jet_jet_bx_0_bx_0_mass_inv_pt,
         condition_o => invariant_mass_i270
     );
@@ -1726,11 +1726,11 @@ algo(44) <= l1_etm120;
 
 -- 465 L1_BptxXOR : (EXT_BPTX_B1_VME AND ( NOT EXT_BPTX_B2_VME)) OR (EXT_BPTX_B2_VME AND ( NOT EXT_BPTX_B1_VME))
 l1_bptx_xor <= ( single_ext_i344 and ( not single_ext_i345 ) ) or ( single_ext_i345 and ( not single_ext_i344 ) );
-algo(50) <= l1_bptx_xor;
+algo(51) <= l1_bptx_xor;
 
 -- 466 L1_BptxPlus : EXT_BPTX_B1_VME
 l1_bptx_plus <= single_ext_i344;
-algo(51) <= l1_bptx_plus;
+algo(50) <= l1_bptx_plus;
 
 -- 467 L1_BptxMinus : EXT_BPTX_B2_VME
 l1_bptx_minus <= single_ext_i345;
