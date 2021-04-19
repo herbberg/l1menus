@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 5714bab1-1ac0-49f3-b3ce-a2a82e1bbb30
+-- 6bd03df0-0b88-499f-8d5d-1f3c8a6c8cb0
 
 -- Scale set:
 -- scales_2021_03_02
@@ -224,8 +224,8 @@ jet_tau_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
 jet_jet_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
         deta_dphi_sel => true,
-        calo_calo_deta_lut => JET_JET_DIFF_ETA_LUT,
-        calo_calo_dphi_lut => JET_JET_DIFF_PHI_LUT,
+        calo_calo_deta_lut => CALO_CALO_DIFF_ETA_LUT,
+        calo_calo_dphi_lut => CALO_CALO_DIFF_PHI_LUT,
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_JET_OBJECTS,
@@ -241,8 +241,8 @@ jet_jet_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
 eg_jet_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
         deta_dphi_sel => true,
-        calo_calo_deta_lut => EG_JET_DIFF_ETA_LUT,
-        calo_calo_dphi_lut => EG_JET_DIFF_PHI_LUT,
+        calo_calo_deta_lut => CALO_CALO_DIFF_ETA_LUT,
+        calo_calo_dphi_lut => CALO_CALO_DIFF_PHI_LUT,
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_obj2 => NR_JET_OBJECTS,
@@ -258,8 +258,8 @@ eg_jet_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
 eg_tau_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
         deta_dphi_sel => true,
-        calo_calo_deta_lut => EG_TAU_DIFF_ETA_LUT,
-        calo_calo_dphi_lut => EG_TAU_DIFF_PHI_LUT,
+        calo_calo_deta_lut => CALO_CALO_DIFF_ETA_LUT,
+        calo_calo_dphi_lut => CALO_CALO_DIFF_PHI_LUT,
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_obj2 => NR_TAU_OBJECTS,
@@ -275,8 +275,8 @@ eg_tau_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
 jet_mu_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
         deta_dphi_sel => true,
-        calo_muon_deta_lut => JET_MU_DIFF_ETA_LUT,
-        calo_muon_dphi_lut => JET_MU_DIFF_PHI_LUT,
+        calo_muon_deta_lut => CALO_MU_DIFF_ETA_LUT,
+        calo_muon_dphi_lut => CALO_MU_DIFF_PHI_LUT,
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
@@ -309,8 +309,8 @@ mu_mu_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
 jet_tau_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
         deta_dphi_sel => true,
-        calo_calo_deta_lut => JET_TAU_DIFF_ETA_LUT,
-        calo_calo_dphi_lut => JET_TAU_DIFF_PHI_LUT,
+        calo_calo_deta_lut => CALO_CALO_DIFF_ETA_LUT,
+        calo_calo_dphi_lut => CALO_CALO_DIFF_PHI_LUT,
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_TAU_OBJECTS,
@@ -328,9 +328,9 @@ jet_tau_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
 jet_jet_bx_0_bx_0_cosh_deta_cos_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
         cosh_deta_cos_dphi_sel => true,
-        calo_calo_cosh_deta_lut => JET_JET_COSH_DETA_LUT,
-        calo_calo_cos_dphi_lut => JET_JET_COS_DPHI_LUT,
-        cosh_cos_vector_width => JET_JET_COSH_COS_VECTOR_WIDTH,
+        calo_calo_cosh_deta_lut => CALO_CALO_COSH_DETA_LUT,
+        calo_calo_cos_dphi_lut => CALO_CALO_COS_DPHI_LUT,
+        cosh_cos_vector_width => CALO_CALO_COSH_COS_VECTOR_WIDTH,
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_JET_OBJECTS,
@@ -348,7 +348,7 @@ mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrappe
         cosh_deta_cos_dphi_sel => true,
         muon_muon_cosh_deta_lut => MU_MU_COSH_DETA_LUT,
         muon_muon_cos_dphi_lut => MU_MU_COS_DPHI_LUT,
-        cosh_cos_vector_width => MU_MU_COSH_COS_VECTOR_WIDTH,
+        cosh_cos_vector_width => CALO_MUON_COSH_COS_VECTOR_WIDTH,
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
@@ -1196,7 +1196,7 @@ invariant_mass_i272_i: entity work.correlation_conditions_calo
         deta_lower_limit_vector => X"00000000",
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
-        mass_vector_width => JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+JET_JET_COSH_COS_VECTOR_WIDTH,
+        mass_vector_width => JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+CALO_CALO_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"00041A6642C78140",
         mass_lower_limit_vector => X"00000001448C1B40",
 -- number of objects and type
@@ -1224,7 +1224,7 @@ invariant_mass_i278_i: entity work.correlation_conditions_calo
 -- correlation cuts
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
-        mass_vector_width => JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+JET_JET_COSH_COS_VECTOR_WIDTH,
+        mass_vector_width => JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+CALO_CALO_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"00041A6642C78140",
         mass_lower_limit_vector => X"000000047999ED00",
 -- number of objects and type
@@ -1251,7 +1251,7 @@ invariant_mass_i280_i: entity work.correlation_conditions_calo
 -- correlation cuts
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
-        mass_vector_width => JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+JET_JET_COSH_COS_VECTOR_WIDTH,
+        mass_vector_width => JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+CALO_CALO_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"00041A6642C78140",
         mass_lower_limit_vector => X"000000047999ED00",
 -- number of objects and type
@@ -1278,7 +1278,7 @@ invariant_mass_i297_i: entity work.correlation_conditions_calo
 -- correlation cuts
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
-        mass_vector_width => JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+JET_JET_COSH_COS_VECTOR_WIDTH,
+        mass_vector_width => JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+CALO_CALO_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"00041A6642C78140",
         mass_lower_limit_vector => X"000000020DB68500",
 -- number of objects and type
@@ -1307,7 +1307,7 @@ invariant_mass_ov_rm_i295_i: entity work.correlation_conditions_calo
 -- correlation cuts
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
-        mass_vector_width => JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+JET_JET_COSH_COS_VECTOR_WIDTH,
+        mass_vector_width => JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+CALO_CALO_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"00041A6642C78140",
         mass_lower_limit_vector => X"000000025B7F3D40",
 -- correlation cuts orm
@@ -1489,7 +1489,7 @@ invariant_mass_i58_i: entity work.correlation_conditions_muon
 -- correlation cuts
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
-        mass_vector_width => MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+MU_MU_COSH_COS_VECTOR_WIDTH,
+        mass_vector_width => MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+CALO_MUON_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"002907FE9BCB0C80",
         mass_lower_limit_vector => X"000000000175D720",
 -- number and type of object 2
@@ -1522,7 +1522,7 @@ invariant_mass_upt_i376_i: entity work.correlation_conditions_muon
 -- correlation cuts
         mass_cut => true,
         mass_type => INVARIANT_MASS_UPT_TYPE,
-        mass_vector_width => MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+MU_MU_COSH_COS_VECTOR_WIDTH,
+        mass_vector_width => MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+CALO_MUON_COSH_COS_VECTOR_WIDTH,
         mass_upper_limit_vector => X"002907FE9BCB0C80",
         mass_lower_limit_vector => X"0000000002FAF080",
 -- number and type of object 2
