@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- f5ac9636-57a6-4f78-a3d3-bdb884dfcc48
+-- 5714bab1-1ac0-49f3-b3ce-a2a82e1bbb30
 
 -- Scale set:
 -- scales_2021_03_02
@@ -31,16 +31,16 @@ single_ext_i370 <= ext_cond_bx_0(43); -- single_ext_i370
 -- Instantiations of muon charge correlations - only once for a certain bx combination, if there is at least one DoubleMuon, TripleMuon, QuadMuon condition
 -- or muon-muon correlation condition.
 
-muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
-    port map(mu_bx_m1, mu_bx_0,
-        ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
-        ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
-        ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
 muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
     port map(mu_bx_0, mu_bx_0,
         ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0,
         ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
         ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
+muon_charge_correlations_bx_m1_bx_0_i: entity work.muon_charge_correlations
+    port map(mu_bx_m1, mu_bx_0,
+        ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0,
+        ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0,
+        ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0);
 
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass)
 
@@ -179,6 +179,7 @@ obj_parameter_etm_bx_0_i: entity work.obj_parameter
 
 jet_mu_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
     generic map(
+        phi_half_range => MUON_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_MU_OBJECTS,

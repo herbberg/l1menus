@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- f5ac9636-57a6-4f78-a3d3-bdb884dfcc48
+-- 5714bab1-1ac0-49f3-b3ce-a2a82e1bbb30
 
 -- Scale set:
 -- scales_2021_03_02
@@ -170,6 +170,7 @@ eg_tau_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
 --
 jet_mu_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
     generic map(
+        phi_half_range => MUON_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
