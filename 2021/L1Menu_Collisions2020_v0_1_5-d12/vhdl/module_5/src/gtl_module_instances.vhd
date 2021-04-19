@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 04043998-caff-4084-ae3f-9d18e65dbd41
+-- 68584588-d464-4205-ae82-9a83c691cb00
 
 -- Scale set:
 -- scales_2021_03_02
@@ -244,7 +244,7 @@ eg_etm_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
 -- Instantiations of deta and dphi LUTs
 eg_jet_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
-        deta_dphi_sel => true;
+        deta_dphi_sel => true,
         calo_calo_deta_lut => EG_JET_DIFF_ETA_LUT,
         calo_calo_dphi_lut => EG_JET_DIFF_PHI_LUT,
         phi_half_range => CALO_PHI_HALF_RANGE_BINS,
@@ -262,7 +262,7 @@ eg_jet_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
 --
 eg_tau_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
-        deta_dphi_sel => true;
+        deta_dphi_sel => true,
         calo_calo_deta_lut => EG_TAU_DIFF_ETA_LUT,
         calo_calo_dphi_lut => EG_TAU_DIFF_PHI_LUT,
         phi_half_range => CALO_PHI_HALF_RANGE_BINS,
@@ -280,7 +280,7 @@ eg_tau_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
 --
 tau_tau_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
-        deta_dphi_sel => true;
+        deta_dphi_sel => true,
         calo_calo_deta_lut => TAU_TAU_DIFF_ETA_LUT,
         calo_calo_dphi_lut => TAU_TAU_DIFF_PHI_LUT,
         phi_half_range => CALO_PHI_HALF_RANGE_BINS,
@@ -298,7 +298,7 @@ tau_tau_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
 --
 jet_jet_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
-        deta_dphi_sel => true;
+        deta_dphi_sel => true,
         calo_calo_deta_lut => JET_JET_DIFF_ETA_LUT,
         calo_calo_dphi_lut => JET_JET_DIFF_PHI_LUT,
         phi_half_range => CALO_PHI_HALF_RANGE_BINS,
@@ -316,7 +316,7 @@ jet_jet_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
 --
 mu_mu_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
-        deta_dphi_sel => true;
+        deta_dphi_sel => true,
         muon_muon_deta_lut => MU_MU_DIFF_ETA_LUT,
         muon_muon_dphi_lut => MU_MU_DIFF_PHI_LUT,
         phi_half_range => MUON_PHI_HALF_RANGE_BINS,
@@ -334,7 +334,7 @@ mu_mu_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
 --
 eg_etm_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
-        deta_dphi_sel => true;
+        deta_dphi_sel => true,
         calo_calo_dphi_lut => EG_ETM_DIFF_PHI_LUT,
         phi_half_range => CALO_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_EG_OBJECTS,
@@ -351,7 +351,7 @@ eg_etm_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
 -- Instantiations of cosh_deta and cos_dphi LUTs
 tau_tau_bx_0_bx_0_cosh_deta_cos_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
-        cosh_deta_cos_dphi_sel => true;
+        cosh_deta_cos_dphi_sel => true,
         calo_calo_cosh_deta_lut => TAU_TAU_COSH_DETA_LUT,
         calo_calo_cos_dphi_lut => TAU_TAU_COS_DPHI_LUT,
         cosh_cos_vector_width => TAU_TAU_COSH_COS_VECTOR_WIDTH,
@@ -369,7 +369,7 @@ tau_tau_bx_0_bx_0_cosh_deta_cos_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrap
 --
 jet_jet_bx_0_bx_0_cosh_deta_cos_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
-        cosh_deta_cos_dphi_sel => true;
+        cosh_deta_cos_dphi_sel => true,
         calo_calo_cosh_deta_lut => JET_JET_COSH_DETA_LUT,
         calo_calo_cos_dphi_lut => JET_JET_COS_DPHI_LUT,
         cosh_cos_vector_width => JET_JET_COSH_COS_VECTOR_WIDTH,
@@ -387,7 +387,7 @@ jet_jet_bx_0_bx_0_cosh_deta_cos_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrap
 --
 mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
-        cosh_deta_cos_dphi_sel => true;
+        cosh_deta_cos_dphi_sel => true,
         muon_muon_cosh_deta_lut => MU_MU_COSH_DETA_LUT,
         muon_muon_cos_dphi_lut => MU_MU_COS_DPHI_LUT,
         cosh_cos_vector_width => MU_MU_COSH_COS_VECTOR_WIDTH,
@@ -405,7 +405,7 @@ mu_mu_bx_0_bx_0_cosh_deta_cos_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrappe
 --
 eg_etm_bx_0_bx_0_cosh_deta_cos_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
-        cosh_deta_cos_dphi_sel => true;
+        cosh_deta_cos_dphi_sel => true,
         calo_calo_cos_dphi_lut => EG_ETM_COS_DPHI_LUT,
         cosh_cos_vector_width => EG_ETM_COSH_COS_VECTOR_WIDTH,
         nr_obj1 => NR_EG_OBJECTS,
