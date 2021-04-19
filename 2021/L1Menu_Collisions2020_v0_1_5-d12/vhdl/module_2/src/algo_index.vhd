@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 68584588-d464-4205-ae82-9a83c691cb00
+-- 24b35f85-fc22-4243-9054-5aa14d653df2
 
 -- Scale set:
 -- scales_2021_03_02
@@ -48,23 +48,23 @@ constant global_index: global_index_array := (
          69, -- module_index: 21, name: L1_QuadMu0_OQ_OS
          88, -- module_index: 22, name: L1_QuadMu0_OQ
         100, -- module_index: 23, name: L1_Mu5_LooseIsoEG20er2p5
-         10, -- module_index: 24, name: L1_SingleMu5
-        101, -- module_index: 25, name: L1_Mu7_LooseIsoEG20er2p5
+        102, -- module_index: 24, name: L1_Mu7_LooseIsoEG23er2p5
+         12, -- module_index: 25, name: L1_SingleMu7
          96, -- module_index: 26, name: L1_Mu5_EG23er2p5
-        102, -- module_index: 27, name: L1_Mu7_LooseIsoEG23er2p5
-         12, -- module_index: 28, name: L1_SingleMu7
-         97, -- module_index: 29, name: L1_Mu7_EG20er2p5
-         98, -- module_index: 30, name: L1_Mu7_EG23er2p5
+         97, -- module_index: 27, name: L1_Mu7_EG20er2p5
+         98, -- module_index: 28, name: L1_Mu7_EG23er2p5
+         10, -- module_index: 29, name: L1_SingleMu5
+        101, -- module_index: 30, name: L1_Mu7_LooseIsoEG20er2p5
          52, -- module_index: 31, name: L1_MASSUPT_5_5_10_open
          72, -- module_index: 32, name: L1_TripleMu0
          73, -- module_index: 33, name: L1_TripleMu0_SQ
          75, -- module_index: 34, name: L1_TripleMu3_SQ
          79, -- module_index: 35, name: L1_TripleMu_5_3_3_SQ
         238, -- module_index: 36, name: L1_LooseIsoEG24er2p1_HTT100er
-        239, -- module_index: 37, name: L1_LooseIsoEG26er2p1_HTT100er
-        241, -- module_index: 38, name: L1_LooseIsoEG30er2p1_HTT100er
+        240, -- module_index: 37, name: L1_LooseIsoEG28er2p1_HTT100er
+        239, -- module_index: 38, name: L1_LooseIsoEG26er2p1_HTT100er
         179, -- module_index: 39, name: L1_SingleLooseIsoEG28er2p1
-        240, -- module_index: 40, name: L1_LooseIsoEG28er2p1_HTT100er
+        241, -- module_index: 40, name: L1_LooseIsoEG30er2p1_HTT100er
         199, -- module_index: 41, name: L1_IsoEG32er2p5_Mt48
         189, -- module_index: 42, name: L1_SingleIsoEG28er2p5
         195, -- module_index: 43, name: L1_SingleIsoEG32er2p1

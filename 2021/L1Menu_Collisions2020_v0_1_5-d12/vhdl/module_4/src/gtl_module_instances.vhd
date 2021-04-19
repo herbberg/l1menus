@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 68584588-d464-4205-ae82-9a83c691cb00
+-- 24b35f85-fc22-4243-9054-5aa14d653df2
 
 -- Scale set:
 -- scales_2021_03_02
@@ -297,7 +297,6 @@ mu_mu_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
         deta_dphi_sel => true,
         muon_muon_deta_lut => MU_MU_DIFF_ETA_LUT,
         muon_muon_dphi_lut => MU_MU_DIFF_PHI_LUT,
-        phi_half_range => MUON_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
@@ -1574,7 +1573,7 @@ algo(29) <= l1_single_mu14er1p5;
 
 -- 41 L1_DoubleMu0_SQ : comb{MU0[MU-QLTY_SNGL],MU0[MU-QLTY_SNGL]}
 l1_double_mu0_sq <= double_mu_i35;
-algo(7) <= l1_double_mu0_sq;
+algo(6) <= l1_double_mu0_sq;
 
 -- 44 L1_DoubleMu8_SQ : comb{MU8[MU-QLTY_SNGL],MU8[MU-QLTY_SNGL]}
 l1_double_mu8_sq <= double_mu_i38;
@@ -1690,7 +1689,7 @@ algo(19) <= l1_double_jet35_mass_min450_iso_tau45_rm_ovlp;
 
 -- 365 L1_DoubleJet_80_30_Mass_Min420_Mu8 : mass_inv{JET80,JET30}[MASS_MIN_420] AND MU8[MU-QLTY_SNGL]
 l1_double_jet_80_30_mass_min420_mu8 <= invariant_mass_i297 and single_mu_i298;
-algo(6) <= l1_double_jet_80_30_mass_min420_mu8;
+algo(7) <= l1_double_jet_80_30_mass_min420_mu8;
 
 -- 366 L1_DoubleJet_80_30_Mass_Min420_DoubleMu0_SQ : mass_inv{JET80,JET30}[MASS_MIN_420] AND comb{MU0[MU-QLTY_SNGL],MU0[MU-QLTY_SNGL]}
 l1_double_jet_80_30_mass_min420_double_mu0_sq <= invariant_mass_i297 and double_mu_i35;

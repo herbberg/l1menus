@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 68584588-d464-4205-ae82-9a83c691cb00
+-- 24b35f85-fc22-4243-9054-5aa14d653df2
 
 -- Scale set:
 -- scales_2021_03_02
@@ -297,7 +297,6 @@ mu_mu_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
         deta_dphi_sel => true,
         muon_muon_deta_lut => MU_MU_DIFF_ETA_LUT,
         muon_muon_dphi_lut => MU_MU_DIFF_PHI_LUT,
-        phi_half_range => MUON_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
