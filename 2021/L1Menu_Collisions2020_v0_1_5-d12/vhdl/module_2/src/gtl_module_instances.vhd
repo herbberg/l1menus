@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- ac5a64aa-cc0e-4214-bb6a-5052968d2730
+-- 04043998-caff-4084-ae3f-9d18e65dbd41
 
 -- Scale set:
 -- scales_2021_03_02
@@ -159,9 +159,6 @@ obj_parameter_etm_bx_0_i: entity work.obj_parameter
 
 jet_jet_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
     generic map(
-        calo_calo_deta_lut => JET_JET_DIFF_ETA_LUT,
-        calo_calo_dphi_lut => JET_JET_DIFF_PHI_LUT,
-        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_JET_OBJECTS,
@@ -178,9 +175,6 @@ jet_jet_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
 --
 jet_mu_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
     generic map(
-        calo_muon_deta_lut => JET_MU_DIFF_ETA_LUT,
-        calo_muon_dphi_lut => JET_MU_DIFF_PHI_LUT,
-        phi_half_range => MUON_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
@@ -197,9 +191,6 @@ jet_mu_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
 --
 tau_tau_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
     generic map(
-        calo_calo_deta_lut => TAU_TAU_DIFF_ETA_LUT,
-        calo_calo_dphi_lut => TAU_TAU_DIFF_PHI_LUT,
-        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_TAU_OBJECTS,
         type_obj1 => TAU_TYPE,
         nr_obj2 => NR_TAU_OBJECTS,
@@ -216,8 +207,6 @@ tau_tau_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
 --
 mu_mu_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
     generic map(
-        muon_muon_deta_lut => MU_MU_DIFF_ETA_LUT,
-        muon_muon_dphi_lut => MU_MU_DIFF_PHI_LUT,
         phi_half_range => MUON_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
@@ -235,9 +224,6 @@ mu_mu_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
 --
 eg_eg_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
     generic map(
-        calo_calo_deta_lut => EG_EG_DIFF_ETA_LUT,
-        calo_calo_dphi_lut => EG_EG_DIFF_PHI_LUT,
-        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_obj2 => NR_EG_OBJECTS,
@@ -254,8 +240,6 @@ eg_eg_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
 --
 eg_etm_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
     generic map(
-        calo_calo_dphi_lut => EG_ETM_DIFF_PHI_LUT,
-        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_obj2 => NR_ETM_OBJECTS,
