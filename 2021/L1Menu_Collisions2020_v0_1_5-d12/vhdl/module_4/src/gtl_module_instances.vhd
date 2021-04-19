@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 3904cb05-f0e3-4fa6-a67f-c6b2f2c2a9af
+-- ac5a64aa-cc0e-4214-bb6a-5052968d2730
 
 -- Scale set:
 -- scales_2021_03_02
@@ -136,7 +136,7 @@ jet_jet_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
         eta_integer_obj2 => jet_bx_0_eta_integer,
         phi_integer_obj2 => jet_bx_0_phi_integer,
         deta_integer => jet_jet_bx_0_bx_0_deta_integer,
-        dphi_integer => jet_jet_bx_0_bx_0_dphi_integer,
+        dphi_integer => jet_jet_bx_0_bx_0_dphi_integer
     );
 --
 eg_jet_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
@@ -155,7 +155,7 @@ eg_jet_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
         eta_integer_obj2 => jet_bx_0_eta_integer,
         phi_integer_obj2 => jet_bx_0_phi_integer,
         deta_integer => eg_jet_bx_0_bx_0_deta_integer,
-        dphi_integer => eg_jet_bx_0_bx_0_dphi_integer,
+        dphi_integer => eg_jet_bx_0_bx_0_dphi_integer
     );
 --
 eg_tau_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
@@ -174,7 +174,7 @@ eg_tau_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
         eta_integer_obj2 => tau_bx_0_eta_integer,
         phi_integer_obj2 => tau_bx_0_phi_integer,
         deta_integer => eg_tau_bx_0_bx_0_deta_integer,
-        dphi_integer => eg_tau_bx_0_bx_0_dphi_integer,
+        dphi_integer => eg_tau_bx_0_bx_0_dphi_integer
     );
 --
 jet_mu_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
@@ -193,7 +193,7 @@ jet_mu_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
         eta_integer_obj2 => mu_bx_0_eta_integer,
         phi_integer_obj2 => mu_bx_0_phi_integer,
         deta_integer => jet_mu_bx_0_bx_0_deta_integer,
-        dphi_integer => jet_mu_bx_0_bx_0_dphi_integer,
+        dphi_integer => jet_mu_bx_0_bx_0_dphi_integer
     );
 --
 mu_mu_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
@@ -212,7 +212,7 @@ mu_mu_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
         eta_integer_obj2 => mu_bx_0_eta_integer,
         phi_integer_obj2 => mu_bx_0_phi_integer,
         deta_integer => mu_mu_bx_0_bx_0_deta_integer,
-        dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
+        dphi_integer => mu_mu_bx_0_bx_0_dphi_integer
     );
 --
 jet_tau_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
@@ -231,7 +231,7 @@ jet_tau_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
         eta_integer_obj2 => tau_bx_0_eta_integer,
         phi_integer_obj2 => tau_bx_0_phi_integer,
         deta_integer => jet_tau_bx_0_bx_0_deta_integer,
-        dphi_integer => jet_tau_bx_0_bx_0_dphi_integer,
+        dphi_integer => jet_tau_bx_0_bx_0_dphi_integer
     );
 --
 -- Instantiations of deta, dphi, cosh deta and cos dphi LUTs for correlation conditions (used for DR and mass)
