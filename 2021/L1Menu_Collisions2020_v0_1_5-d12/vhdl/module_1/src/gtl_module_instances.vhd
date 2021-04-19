@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 24b35f85-fc22-4243-9054-5aa14d653df2
+-- f5ac9636-57a6-4f78-a3d3-bdb884dfcc48
 
 -- Scale set:
 -- scales_2021_03_02
@@ -296,7 +296,6 @@ jet_mu_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
         deta_dphi_sel => true,
         calo_muon_deta_lut => JET_MU_DIFF_ETA_LUT,
         calo_muon_dphi_lut => JET_MU_DIFF_PHI_LUT,
-        phi_half_range => MUON_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
@@ -314,7 +313,6 @@ tau_tau_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
         deta_dphi_sel => true,
         calo_calo_deta_lut => TAU_TAU_DIFF_ETA_LUT,
         calo_calo_dphi_lut => TAU_TAU_DIFF_PHI_LUT,
-        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_TAU_OBJECTS,
         type_obj1 => TAU_TYPE,
         nr_obj2 => NR_TAU_OBJECTS,
@@ -332,7 +330,6 @@ jet_jet_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
         deta_dphi_sel => true,
         calo_calo_deta_lut => JET_JET_DIFF_ETA_LUT,
         calo_calo_dphi_lut => JET_JET_DIFF_PHI_LUT,
-        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_JET_OBJECTS,
@@ -367,7 +364,6 @@ eg_eg_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
         deta_dphi_sel => true,
         calo_calo_deta_lut => EG_EG_DIFF_ETA_LUT,
         calo_calo_dphi_lut => EG_EG_DIFF_PHI_LUT,
-        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_obj2 => NR_EG_OBJECTS,
@@ -401,7 +397,6 @@ eg_etm_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
         deta_dphi_sel => true,
         calo_calo_dphi_lut => EG_ETM_DIFF_PHI_LUT,
-        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_obj2 => NR_ETM_OBJECTS,

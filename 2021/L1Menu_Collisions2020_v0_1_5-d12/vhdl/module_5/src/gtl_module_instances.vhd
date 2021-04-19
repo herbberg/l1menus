@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 24b35f85-fc22-4243-9054-5aa14d653df2
+-- f5ac9636-57a6-4f78-a3d3-bdb884dfcc48
 
 -- Scale set:
 -- scales_2021_03_02
@@ -247,7 +247,6 @@ eg_jet_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
         deta_dphi_sel => true,
         calo_calo_deta_lut => EG_JET_DIFF_ETA_LUT,
         calo_calo_dphi_lut => EG_JET_DIFF_PHI_LUT,
-        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_obj2 => NR_JET_OBJECTS,
@@ -265,7 +264,6 @@ eg_tau_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
         deta_dphi_sel => true,
         calo_calo_deta_lut => EG_TAU_DIFF_ETA_LUT,
         calo_calo_dphi_lut => EG_TAU_DIFF_PHI_LUT,
-        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_obj2 => NR_TAU_OBJECTS,
@@ -283,7 +281,6 @@ tau_tau_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
         deta_dphi_sel => true,
         calo_calo_deta_lut => TAU_TAU_DIFF_ETA_LUT,
         calo_calo_dphi_lut => TAU_TAU_DIFF_PHI_LUT,
-        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_TAU_OBJECTS,
         type_obj1 => TAU_TYPE,
         nr_obj2 => NR_TAU_OBJECTS,
@@ -301,7 +298,6 @@ jet_jet_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
         deta_dphi_sel => true,
         calo_calo_deta_lut => JET_JET_DIFF_ETA_LUT,
         calo_calo_dphi_lut => JET_JET_DIFF_PHI_LUT,
-        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_JET_OBJECTS,
@@ -335,7 +331,6 @@ eg_etm_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
         deta_dphi_sel => true,
         calo_calo_dphi_lut => EG_ETM_DIFF_PHI_LUT,
-        phi_half_range => CALO_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_obj2 => NR_ETM_OBJECTS,
@@ -1809,11 +1804,11 @@ algo(44) <= l1_etm120;
 
 -- 465 L1_BptxXOR : (EXT_BPTX_B1_VME AND ( NOT EXT_BPTX_B2_VME)) OR (EXT_BPTX_B2_VME AND ( NOT EXT_BPTX_B1_VME))
 l1_bptx_xor <= ( single_ext_i344 and ( not single_ext_i345 ) ) or ( single_ext_i345 and ( not single_ext_i344 ) );
-algo(51) <= l1_bptx_xor;
+algo(50) <= l1_bptx_xor;
 
 -- 466 L1_BptxPlus : EXT_BPTX_B1_VME
 l1_bptx_plus <= single_ext_i344;
-algo(50) <= l1_bptx_plus;
+algo(51) <= l1_bptx_plus;
 
 -- 467 L1_BptxMinus : EXT_BPTX_B2_VME
 l1_bptx_minus <= single_ext_i345;
