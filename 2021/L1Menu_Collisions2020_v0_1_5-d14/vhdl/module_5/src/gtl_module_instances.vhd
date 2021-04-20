@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- ac6d616c-6abd-4c11-a824-04afa13116c6
+-- 60c10388-bf9a-4688-9c2b-10f34ac4dde7
 
 -- Scale set:
 -- scales_2021_03_02
@@ -227,6 +227,40 @@ eg_etm_bx_0_bx_0_deta_dphi_calc_i: entity work.deta_dphi_calculations
 -- Instantiations of deta, dphi, cosh deta and cos dphi LUTs for correlation conditions (used for DR and mass)
 --
 -- Instantiations of deta and dphi LUTs
+eg_jet_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
+    generic map(
+        deta_dphi_sel => true,
+        calo_calo_deta_lut => CALO_CALO_DIFF_ETA_LUT,
+        calo_calo_dphi_lut => CALO_CALO_DIFF_PHI_LUT,
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_JET_OBJECTS,
+        type_obj2 => JET_TYPE
+    )
+    port map(
+        dphi_integer => eg_jet_bx_0_bx_0_dphi_integer,
+        deta_integer => eg_jet_bx_0_bx_0_deta_integer,
+        deta_vector => eg_jet_bx_0_bx_0_deta,
+        dphi_vector => eg_jet_bx_0_bx_0_dphi
+    );
+--
+eg_tau_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
+    generic map(
+        deta_dphi_sel => true,
+        calo_calo_deta_lut => CALO_CALO_DIFF_ETA_LUT,
+        calo_calo_dphi_lut => CALO_CALO_DIFF_PHI_LUT,
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_TAU_OBJECTS,
+        type_obj2 => TAU_TYPE
+    )
+    port map(
+        dphi_integer => eg_tau_bx_0_bx_0_dphi_integer,
+        deta_integer => eg_tau_bx_0_bx_0_deta_integer,
+        deta_vector => eg_tau_bx_0_bx_0_deta,
+        dphi_vector => eg_tau_bx_0_bx_0_dphi
+    );
+--
 jet_jet_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
     generic map(
         deta_dphi_sel => true,
@@ -242,6 +276,23 @@ jet_jet_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
         deta_integer => jet_jet_bx_0_bx_0_deta_integer,
         deta_vector => jet_jet_bx_0_bx_0_deta,
         dphi_vector => jet_jet_bx_0_bx_0_dphi
+    );
+--
+mu_mu_bx_0_bx_0_deta_dphi_luts_i: entity work.deta_dphi_cosh_cos_wrapper
+    generic map(
+        deta_dphi_sel => true,
+        muon_muon_deta_lut => MU_MU_DIFF_ETA_LUT,
+        muon_muon_dphi_lut => MU_MU_DIFF_PHI_LUT,
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
+    )
+    port map(
+        dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
+        deta_integer => mu_mu_bx_0_bx_0_deta_integer,
+        deta_vector => mu_mu_bx_0_bx_0_deta,
+        dphi_vector => mu_mu_bx_0_bx_0_dphi
     );
 --
 
@@ -1724,11 +1775,11 @@ algo(44) <= l1_etm120;
 
 -- 465 L1_BptxXOR : (EXT_BPTX_B1_VME AND ( NOT EXT_BPTX_B2_VME)) OR (EXT_BPTX_B2_VME AND ( NOT EXT_BPTX_B1_VME))
 l1_bptx_xor <= ( single_ext_i344 and ( not single_ext_i345 ) ) or ( single_ext_i345 and ( not single_ext_i344 ) );
-algo(51) <= l1_bptx_xor;
+algo(50) <= l1_bptx_xor;
 
 -- 466 L1_BptxPlus : EXT_BPTX_B1_VME
 l1_bptx_plus <= single_ext_i344;
-algo(50) <= l1_bptx_plus;
+algo(51) <= l1_bptx_plus;
 
 -- 467 L1_BptxMinus : EXT_BPTX_B2_VME
 l1_bptx_minus <= single_ext_i345;
