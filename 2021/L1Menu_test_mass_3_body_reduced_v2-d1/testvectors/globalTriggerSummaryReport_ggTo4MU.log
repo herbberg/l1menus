@@ -1,0 +1,104 @@
+=========================== Global Trigger Summary Report  ==================================
+                       Algorithm Name                              Init     aBXM     Final   
+=============================================================================================
+                                    L1_Mu10_20_30_MassMin150       868       868       868
+                                    L1_Mu10_20_30_MassMin300       317       317       317
+                                     L1_Mu10_20_30_MassMin40      3231      3231      3231
+                                 L1_Mu10_Phi_20_30_MassMin40      2735      2735      2735
+===========================================================================================================
+20-Apr-2021 22:18:07 CEST  Closed file root://xrootd-cms.infn.it//store/mc/RunIISummer19UL18RECO/GluGluToContinToZZTo4mu_13TeV_MCFM701_pythia8/AODSIM/106X_upgrade2018_realistic_v11_L1v1-v2/110000/664BBEBB-93A9-5B40-AD9C-DE835A79B712.root
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 3564 passed = 3564 failed = 0
+
+TrigReport ---------- Path   Summary ------------
+TrigReport  Trig Bit#   Executed     Passed     Failed      Error Name
+TrigReport     1    0       3564       3564          0          0 p1
+
+TrigReport -------End-Path   Summary ------------
+TrigReport  Trig Bit#   Executed     Passed     Failed      Error Name
+
+TrigReport ---------- Modules in Path: p1 ------------
+TrigReport  Trig Bit#    Visited     Passed     Failed      Error Name
+TrigReport     1    0       3564       3564          0          0 dumpMenu
+TrigReport     1    1       3564       3564          0          0 gtInput
+TrigReport     1    2       3564       3564          0          0 simGtExtFakeProd
+TrigReport     1    3       3564       3564          0          0 simGtStage2Digis
+TrigReport     1    4       3564       3564          0          0 dumpGTRecord
+TrigReport     1    5       3564       3564          0          0 l1tGlobalAnalyzer
+
+TrigReport ---------- Module Summary ------------
+TrigReport    Visited   Executed     Passed     Failed      Error Name
+TrigReport       3564       3564       3564          0          0 TriggerResults
+TrigReport       3564       3564       3564          0          0 dumpGTRecord
+TrigReport       3564       3564       3564          0          0 dumpMenu
+TrigReport       3564       3564       3564          0          0 gtInput
+TrigReport       3564       3564       3564          0          0 l1tGlobalAnalyzer
+TrigReport       3564       3564       3564          0          0 p1
+TrigReport       3564       3564       3564          0          0 simGtExtFakeProd
+TrigReport       3564       3564       3564          0          0 simGtStage2Digis
+
+TimeReport ---------- Event  Summary ---[sec]----
+TimeReport       event loop CPU/event = 0.031012
+TimeReport      event loop Real/event = 0.038627
+TimeReport     sum Streams Real/event = 0.037182
+TimeReport efficiency CPU/Real/thread = 0.802856
+
+TimeReport ---------- Path   Summary ---[Real sec]----
+TimeReport  per event     per exec  Name
+TimeReport   0.036466     0.036466  p1
+TimeReport  per event     per exec  Name
+
+TimeReport -------End-Path   Summary ---[Real sec]----
+TimeReport  per event     per exec  Name
+TimeReport  per event     per exec  Name
+
+TimeReport ---------- Modules in Path: p1 ---[Real sec]----
+TimeReport  per event    per visit  Name
+TimeReport   0.001885     0.001885  dumpMenu
+TimeReport   0.000169     0.000169  gtInput
+TimeReport   0.000013     0.000013  simGtExtFakeProd
+TimeReport   0.019823     0.019823  simGtStage2Digis
+TimeReport   0.002367     0.002367  dumpGTRecord
+TimeReport   0.000205     0.000205  l1tGlobalAnalyzer
+TimeReport  per event    per visit  Name
+
+TimeReport ---------- Module Summary ---[Real sec]----
+TimeReport  per event     per exec    per visit  Name
+TimeReport   0.000003     0.000003     0.000003  TriggerResults
+TimeReport   0.002367     0.002367     0.002367  dumpGTRecord
+TimeReport   0.001885     0.001885     0.001885  dumpMenu
+TimeReport   0.000169     0.000169     0.000169  gtInput
+TimeReport   0.000205     0.000205     0.000205  l1tGlobalAnalyzer
+TimeReport   0.000005     0.000005     0.000005  p1
+TimeReport   0.000013     0.000013     0.000013  simGtExtFakeProd
+TimeReport   0.019823     0.019823     0.019823  simGtStage2Digis
+TimeReport  per event     per exec    per visit  Name
+
+T---Report end!
+
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 XrdAdaptor           -w file_open                              1        1
+    2 XrdAdaptorInternal   -w file_open                              2        2
+    3 fileAction           -s file_close                             1        1
+    4 fileAction           -s file_open                              3        3
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 XrdAdaptor           pre-events                        
+    2 XrdAdaptorInternal   pre-events       pre-events       
+    3 fileAction           PostGlobalEndRun                  
+    4 fileAction           pre-events       pre-events       pre-events
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                 3                   3
+System                  4                   4
+
+dropped waiting message count 0
