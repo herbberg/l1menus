@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- b01daf67-7dab-4609-b8b2-0d417feefdba
+-- 758eefe5-8ea2-4767-8abb-de556732c42e
 
 -- Scale set:
 -- scales_2021_03_02
@@ -237,7 +237,7 @@ calc_deta_dphi_jet_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         nr_obj2 => NR_JET_OBJECTS,
         type_obj2 => JET_TYPE
         deta_cut => true,
-        dphi_cut => true,
+        dphi_cut => true
     )
     port map(
         deta_integer => jet_jet_bx_0_bx_0_deta_integer,
@@ -1663,11 +1663,11 @@ algo(44) <= l1_etm120;
 
 -- 465 L1_BptxXOR : (EXT_BPTX_B1_VME AND ( NOT EXT_BPTX_B2_VME)) OR (EXT_BPTX_B2_VME AND ( NOT EXT_BPTX_B1_VME))
 l1_bptx_xor <= ( single_ext_i344 and ( not single_ext_i345 ) ) or ( single_ext_i345 and ( not single_ext_i344 ) );
-algo(50) <= l1_bptx_xor;
+algo(51) <= l1_bptx_xor;
 
 -- 466 L1_BptxPlus : EXT_BPTX_B1_VME
 l1_bptx_plus <= single_ext_i344;
-algo(51) <= l1_bptx_plus;
+algo(50) <= l1_bptx_plus;
 
 -- 467 L1_BptxMinus : EXT_BPTX_B2_VME
 l1_bptx_minus <= single_ext_i345;

@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- b01daf67-7dab-4609-b8b2-0d417feefdba
+-- 758eefe5-8ea2-4767-8abb-de556732c42e
 
 -- Scale set:
 -- scales_2021_03_02
@@ -74,8 +74,8 @@ constant global_index: global_index_array := (
         487, -- module_index: 47, name: L1_BPTX_AND_Ref3_VME
         490, -- module_index: 48, name: L1_BPTX_BeamGas_Ref2_VME
         467, -- module_index: 49, name: L1_BptxMinus
-        465, -- module_index: 50, name: L1_BptxXOR
-        466, -- module_index: 51, name: L1_BptxPlus
+        466, -- module_index: 50, name: L1_BptxPlus
+        465, -- module_index: 51, name: L1_BptxXOR
     others => 0
 );
 

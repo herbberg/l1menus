@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- b01daf67-7dab-4609-b8b2-0d417feefdba
+-- 758eefe5-8ea2-4767-8abb-de556732c42e
 
 -- Scale set:
 -- scales_2021_03_02
@@ -215,7 +215,7 @@ calc_deta_dphi_jet_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         nr_obj2 => NR_JET_OBJECTS,
         type_obj2 => JET_TYPE
         deta_cut => true,
-        dphi_cut => true,
+        dphi_cut => true
     )
     port map(
         deta_integer => jet_jet_bx_0_bx_0_deta_integer,
@@ -1456,7 +1456,7 @@ algo(29) <= l1_single_mu14er1p5;
 
 -- 41 L1_DoubleMu0_SQ : comb{MU0[MU-QLTY_SNGL],MU0[MU-QLTY_SNGL]}
 l1_double_mu0_sq <= double_mu_i35;
-algo(7) <= l1_double_mu0_sq;
+algo(6) <= l1_double_mu0_sq;
 
 -- 44 L1_DoubleMu8_SQ : comb{MU8[MU-QLTY_SNGL],MU8[MU-QLTY_SNGL]}
 l1_double_mu8_sq <= double_mu_i38;
@@ -1572,7 +1572,7 @@ algo(19) <= l1_double_jet35_mass_min450_iso_tau45_rm_ovlp;
 
 -- 365 L1_DoubleJet_80_30_Mass_Min420_Mu8 : mass_inv{JET80,JET30}[MASS_MIN_420] AND MU8[MU-QLTY_SNGL]
 l1_double_jet_80_30_mass_min420_mu8 <= invariant_mass_i297 and single_mu_i298;
-algo(6) <= l1_double_jet_80_30_mass_min420_mu8;
+algo(7) <= l1_double_jet_80_30_mass_min420_mu8;
 
 -- 366 L1_DoubleJet_80_30_Mass_Min420_DoubleMu0_SQ : mass_inv{JET80,JET30}[MASS_MIN_420] AND comb{MU0[MU-QLTY_SNGL],MU0[MU-QLTY_SNGL]}
 l1_double_jet_80_30_mass_min420_double_mu0_sq <= invariant_mass_i297 and double_mu_i35;

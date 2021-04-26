@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- b01daf67-7dab-4609-b8b2-0d417feefdba
+-- 758eefe5-8ea2-4767-8abb-de556732c42e
 
 -- Scale set:
 -- scales_2021_03_02
@@ -215,7 +215,7 @@ calc_deta_dphi_jet_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         nr_obj2 => NR_JET_OBJECTS,
         type_obj2 => JET_TYPE
         deta_cut => true,
-        dphi_cut => true,
+        dphi_cut => true
     )
     port map(
         deta_integer => jet_jet_bx_0_bx_0_deta_integer,

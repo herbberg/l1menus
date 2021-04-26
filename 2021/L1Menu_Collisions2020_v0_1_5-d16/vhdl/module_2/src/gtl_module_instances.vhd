@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- b01daf67-7dab-4609-b8b2-0d417feefdba
+-- 758eefe5-8ea2-4767-8abb-de556732c42e
 
 -- Scale set:
 -- scales_2021_03_02
@@ -249,7 +249,7 @@ calc_deta_dphi_jet_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         nr_obj2 => NR_JET_OBJECTS,
         type_obj2 => JET_TYPE
         deta_cut => true,
-        dphi_cut => true,
+        dphi_cut => true
     )
     port map(
         deta_integer => jet_jet_bx_0_bx_0_deta_integer,
@@ -1930,7 +1930,7 @@ single_ext_i368 <= ext_cond_bx_0(41); -- single_ext_i368
 
 -- 10 L1_SingleMu5 : MU5[MU-QLTY_SNGL]
 l1_single_mu5 <= single_mu_i10;
-algo(24) <= l1_single_mu5;
+algo(29) <= l1_single_mu5;
 
 -- 11 L1_SingleMu7_DQ : MU7[MU-QLTY_DBLE]
 l1_single_mu7_dq <= single_mu_i11;
@@ -1938,7 +1938,7 @@ algo(62) <= l1_single_mu7_dq;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(28) <= l1_single_mu7;
+algo(25) <= l1_single_mu7;
 
 -- 15 L1_SingleMu12_DQ_EMTF : MU12[MU-QLTY_DBLE,MU-ETA_EMTF_POS,MU-ETA_EMTF_NEG]
 l1_single_mu12_dq_emtf <= single_mu_i15;
@@ -2022,11 +2022,11 @@ algo(26) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i12 and single_eg_i80;
-algo(29) <= l1_mu7_eg20er2p5;
+algo(27) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i12 and single_eg_i79;
-algo(30) <= l1_mu7_eg23er2p5;
+algo(28) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i10 and single_eg_i82;
@@ -2034,11 +2034,11 @@ algo(23) <= l1_mu5_loose_iso_eg20er2p5;
 
 -- 101 L1_Mu7_LooseIsoEG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg20er2p5 <= single_mu_i12 and single_eg_i82;
-algo(25) <= l1_mu7_loose_iso_eg20er2p5;
+algo(30) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i12 and single_eg_i83;
-algo(27) <= l1_mu7_loose_iso_eg23er2p5;
+algo(24) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 113 L1_DoubleMu5Upsilon_OS_DoubleEG3 : mass_inv{MU5[MU-QLTY_DBLE,MU-ETA_2p3],MU5[MU-QLTY_DBLE,MU-ETA_2p3]}[MASS_MASS_8to14,CHGCOR_OS] AND mass_inv{EG3[EG-ETA_2p13],EG3[EG-ETA_2p13]}[MASS_MASS_0to20]
 l1_double_mu5_upsilon_os_double_eg3 <= invariant_mass_i94 and invariant_mass_i95;
@@ -2078,7 +2078,7 @@ algo(45) <= l1_single_loose_iso_eg28er2p5;
 
 -- 179 L1_SingleLooseIsoEG28er2p1 : EG28[EG-ETA_2p13,EG-ISO_0xC]
 l1_single_loose_iso_eg28er2p1 <= single_eg_i147;
-algo(39) <= l1_single_loose_iso_eg28er2p1;
+algo(40) <= l1_single_loose_iso_eg28er2p1;
 
 -- 189 L1_SingleIsoEG28er2p5 : EG28[EG-ETA_2p52,EG-ISO_0xA]
 l1_single_iso_eg28er2p5 <= single_eg_i158;
@@ -2122,15 +2122,15 @@ algo(36) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(37) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(38) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(40) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(37) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(38) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(39) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 271 L1_DoubleIsoTau32er2p1 : comb{TAU32[TAU-ETA_2p13,TAU-ISO_0xE],TAU32[TAU-ETA_2p13,TAU-ISO_0xE]}
 l1_double_iso_tau32er2p1 <= double_tau_i206;
