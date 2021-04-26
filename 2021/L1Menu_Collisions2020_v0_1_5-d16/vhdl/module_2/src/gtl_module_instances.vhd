@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 15246644-a58a-49ed-8d74-0594e1d1a1e1
+-- b01daf67-7dab-4609-b8b2-0d417feefdba
 
 -- Scale set:
 -- scales_2021_03_02
@@ -141,7 +141,7 @@ calc_obj_parameter_etm_bx_0_i: entity work.obj_parameter
 --
 -- Instantiations of deta and dphi calculations for correlation conditions (used for DETA, DPHI)
 
-calc_deta_dphi_jet_jet_bx_0_bx_0_i: entity work.deta_dphi_calculations
+calc_deta_dphi_integer_jet_jet_bx_0_bx_0_i: entity work.deta_dphi_calculations
     generic map(
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
@@ -157,7 +157,7 @@ calc_deta_dphi_jet_jet_bx_0_bx_0_i: entity work.deta_dphi_calculations
         dphi_integer => jet_jet_bx_0_bx_0_dphi_integer
     );
 --
-calc_deta_dphi_jet_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
+calc_deta_dphi_integer_jet_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
     generic map(
         phi_half_range => MUON_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_JET_OBJECTS,
@@ -174,7 +174,7 @@ calc_deta_dphi_jet_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
         dphi_integer => jet_mu_bx_0_bx_0_dphi_integer
     );
 --
-calc_deta_dphi_tau_tau_bx_0_bx_0_i: entity work.deta_dphi_calculations
+calc_deta_dphi_integer_tau_tau_bx_0_bx_0_i: entity work.deta_dphi_calculations
     generic map(
         nr_obj1 => NR_TAU_OBJECTS,
         type_obj1 => TAU_TYPE,
@@ -190,7 +190,7 @@ calc_deta_dphi_tau_tau_bx_0_bx_0_i: entity work.deta_dphi_calculations
         dphi_integer => tau_tau_bx_0_bx_0_dphi_integer
     );
 --
-calc_deta_dphi_mu_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
+calc_deta_dphi_integer_mu_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
     generic map(
         phi_half_range => MUON_PHI_HALF_RANGE_BINS,
         nr_obj1 => NR_MU_OBJECTS,
@@ -207,7 +207,7 @@ calc_deta_dphi_mu_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
         dphi_integer => mu_mu_bx_0_bx_0_dphi_integer
     );
 --
-calc_deta_dphi_eg_eg_bx_0_bx_0_i: entity work.deta_dphi_calculations
+calc_deta_dphi_integer_eg_eg_bx_0_bx_0_i: entity work.deta_dphi_calculations
     generic map(
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
@@ -223,7 +223,7 @@ calc_deta_dphi_eg_eg_bx_0_bx_0_i: entity work.deta_dphi_calculations
         dphi_integer => eg_eg_bx_0_bx_0_dphi_integer
     );
 --
-calc_deta_dphi_eg_etm_bx_0_bx_0_i: entity work.deta_dphi_calculations
+calc_deta_dphi_integer_eg_etm_bx_0_bx_0_i: entity work.deta_dphi_calculations
     generic map(
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
@@ -245,7 +245,9 @@ calc_deta_dphi_eg_etm_bx_0_bx_0_i: entity work.deta_dphi_calculations
 calc_deta_dphi_jet_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
         nr_obj2 => NR_JET_OBJECTS,
+        type_obj2 => JET_TYPE
         deta_cut => true,
         dphi_cut => true,
     )
@@ -261,7 +263,9 @@ calc_deta_dphi_jet_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
 calc_deltaR_jet_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
         dr_cut => true
     )
     port map(
@@ -273,7 +277,9 @@ calc_deltaR_jet_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
 calc_deltaR_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
         dr_cut => true
     )
     port map(
@@ -287,7 +293,9 @@ calc_deltaR_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
 calc_mass_inv_pt_tau_tau_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_TAU_OBJECTS,
+        type_obj1 => TAU_TYPE,
         nr_obj2 => NR_TAU_OBJECTS,
+        type_obj2 => TAU_TYPE
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => TAU_PT_VECTOR_WIDTH,
@@ -305,7 +313,9 @@ calc_mass_inv_pt_tau_tau_bx_0_bx_0_i: entity work.correlation_cuts_calculation
 calc_mass_inv_pt_jet_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
         nr_obj2 => NR_JET_OBJECTS,
+        type_obj2 => JET_TYPE
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH,
@@ -323,7 +333,9 @@ calc_mass_inv_pt_jet_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
 calc_mass_inv_pt_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => MU_PT_VECTOR_WIDTH,
@@ -341,7 +353,9 @@ calc_mass_inv_pt_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
 calc_mass_inv_pt_eg_eg_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
         nr_obj2 => NR_EG_OBJECTS,
+        type_obj2 => EG_TYPE
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => EG_PT_VECTOR_WIDTH,
@@ -363,7 +377,9 @@ calc_mass_inv_pt_eg_eg_bx_0_bx_0_i: entity work.correlation_cuts_calculation
 calc_mass_inv_upt_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
         mass_cut => true,
         mass_type => INVARIANT_MASS_UPT_TYPE,
         upt1_width => MU_UPT_VECTOR_WIDTH,
@@ -383,7 +399,9 @@ calc_mass_inv_upt_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
 calc_mass_trans_eg_etm_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
         nr_obj2 => NR_ETM_OBJECTS,
+        type_obj2 => ETM_TYPE
         mass_cut => true,
         mass_type => TRANSVERSE_MASS_TYPE,
         pt1_width => EG_PT_VECTOR_WIDTH,
