@@ -10,7 +10,7 @@
 -- bc1fa81a-3cbf-49e9-8c0a-9dd8c6637c06
 
 -- Unique ID of firmware implementation:
--- 758eefe5-8ea2-4767-8abb-de556732c42e
+-- 7732426d-b62b-498d-bafc-c8df839fd1d2
 
 -- Scale set:
 -- scales_2021_03_02
@@ -213,7 +213,7 @@ calc_deta_dphi_jet_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_JET_OBJECTS,
-        type_obj2 => JET_TYPE
+        type_obj2 => JET_TYPE,
         deta_cut => true,
         dphi_cut => true
     )
@@ -231,7 +231,7 @@ calc_deltaR_eg_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_obj2 => NR_JET_OBJECTS,
-        type_obj2 => JET_TYPE
+        type_obj2 => JET_TYPE,
         dr_cut => true
     )
     port map(
@@ -245,7 +245,7 @@ calc_deltaR_eg_tau_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
         nr_obj2 => NR_TAU_OBJECTS,
-        type_obj2 => TAU_TYPE
+        type_obj2 => TAU_TYPE,
         dr_cut => true
     )
     port map(
@@ -259,7 +259,7 @@ calc_deltaR_jet_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
-        type_obj2 => MU_TYPE
+        type_obj2 => MU_TYPE,
         dr_cut => true
     )
     port map(
@@ -273,7 +273,7 @@ calc_deltaR_jet_tau_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_TAU_OBJECTS,
-        type_obj2 => TAU_TYPE
+        type_obj2 => TAU_TYPE,
         dr_cut => true
     )
     port map(
@@ -289,7 +289,7 @@ calc_mass_inv_pt_jet_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_JET_OBJECTS,
-        type_obj2 => JET_TYPE
+        type_obj2 => JET_TYPE,
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => JET_PT_VECTOR_WIDTH,
@@ -309,7 +309,7 @@ calc_mass_inv_pt_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
-        type_obj2 => MU_TYPE
+        type_obj2 => MU_TYPE,
         mass_cut => true,
         mass_type => INVARIANT_MASS_TYPE,
         pt1_width => MU_PT_VECTOR_WIDTH,
@@ -333,7 +333,7 @@ calc_mass_inv_upt_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
-        type_obj2 => MU_TYPE
+        type_obj2 => MU_TYPE,
         mass_cut => true,
         mass_type => INVARIANT_MASS_UPT_TYPE,
         upt1_width => MU_UPT_VECTOR_WIDTH,
@@ -1456,7 +1456,7 @@ algo(29) <= l1_single_mu14er1p5;
 
 -- 41 L1_DoubleMu0_SQ : comb{MU0[MU-QLTY_SNGL],MU0[MU-QLTY_SNGL]}
 l1_double_mu0_sq <= double_mu_i35;
-algo(6) <= l1_double_mu0_sq;
+algo(7) <= l1_double_mu0_sq;
 
 -- 44 L1_DoubleMu8_SQ : comb{MU8[MU-QLTY_SNGL],MU8[MU-QLTY_SNGL]}
 l1_double_mu8_sq <= double_mu_i38;
@@ -1572,7 +1572,7 @@ algo(19) <= l1_double_jet35_mass_min450_iso_tau45_rm_ovlp;
 
 -- 365 L1_DoubleJet_80_30_Mass_Min420_Mu8 : mass_inv{JET80,JET30}[MASS_MIN_420] AND MU8[MU-QLTY_SNGL]
 l1_double_jet_80_30_mass_min420_mu8 <= invariant_mass_i297 and single_mu_i298;
-algo(7) <= l1_double_jet_80_30_mass_min420_mu8;
+algo(6) <= l1_double_jet_80_30_mass_min420_mu8;
 
 -- 366 L1_DoubleJet_80_30_Mass_Min420_DoubleMu0_SQ : mass_inv{JET80,JET30}[MASS_MIN_420] AND comb{MU0[MU-QLTY_SNGL],MU0[MU-QLTY_SNGL]}
 l1_double_jet_80_30_mass_min420_double_mu0_sq <= invariant_mass_i297 and double_mu_i35;
