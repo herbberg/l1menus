@@ -10,7 +10,7 @@
 -- ac925705-a39c-4317-b9ca-0ffb092e29ff
 
 -- Unique ID of firmware implementation:
--- 3ffdb52b-366f-4e63-81e9-24cb9b6e77b1
+-- c80ae6b2-e52f-40ea-ab8a-ed6431dc8bd5
 
 -- Scale set:
 -- scales_2021_03_02
@@ -243,7 +243,35 @@ calc_deta_dphi_integer_mu_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
 --
 -- Instantiations of correlation cuts calculations
 --
--- Instantiations of deta and dphi LUTs
+-- Instantiations of deta LUTs
+
+calc_deta_dphi_jet_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
+        deta_cut => true
+    )
+    port map(
+        deta_integer => jet_mu_bx_0_bx_0_deta_integer,
+        deta => jet_mu_bx_0_bx_0_deta
+    );
+
+calc_deta_dphi_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
+        deta_cut => true
+    )
+    port map(
+        deta_integer => mu_mu_bx_0_bx_0_deta_integer,
+        deta => mu_mu_bx_0_bx_0_deta
+    );
+
+-- Instantiations of dphi LUTs
 
 calc_deta_dphi_eg_eg_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
@@ -251,13 +279,10 @@ calc_deta_dphi_eg_eg_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         type_obj1 => EG_TYPE,
         nr_obj2 => NR_EG_OBJECTS,
         type_obj2 => EG_TYPE,
-        deta_cut => true,
         dphi_cut => true
     )
     port map(
-        deta_integer => eg_eg_bx_0_bx_0_deta_integer,
         dphi_integer => eg_eg_bx_0_bx_0_dphi_integer,
-        deta => eg_eg_bx_0_bx_0_deta,
         dphi => eg_eg_bx_0_bx_0_dphi
     );
 
@@ -267,13 +292,10 @@ calc_deta_dphi_jet_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_JET_OBJECTS,
         type_obj2 => JET_TYPE,
-        deta_cut => true,
         dphi_cut => true
     )
     port map(
-        deta_integer => jet_jet_bx_0_bx_0_deta_integer,
         dphi_integer => jet_jet_bx_0_bx_0_dphi_integer,
-        deta => jet_jet_bx_0_bx_0_deta,
         dphi => jet_jet_bx_0_bx_0_dphi
     );
 
@@ -283,13 +305,10 @@ calc_deta_dphi_tau_etm_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         type_obj1 => TAU_TYPE,
         nr_obj2 => NR_ETM_OBJECTS,
         type_obj2 => ETM_TYPE,
-        deta_cut => true,
         dphi_cut => true
     )
     port map(
-        deta_integer => tau_etm_bx_0_bx_0_deta_integer,
         dphi_integer => tau_etm_bx_0_bx_0_dphi_integer,
-        deta => tau_etm_bx_0_bx_0_deta,
         dphi => tau_etm_bx_0_bx_0_dphi
     );
 
@@ -299,13 +318,10 @@ calc_deta_dphi_jet_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         type_obj1 => JET_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
-        deta_cut => true,
         dphi_cut => true
     )
     port map(
-        deta_integer => jet_mu_bx_0_bx_0_deta_integer,
         dphi_integer => jet_mu_bx_0_bx_0_dphi_integer,
-        deta => jet_mu_bx_0_bx_0_deta,
         dphi => jet_mu_bx_0_bx_0_dphi
     );
 
@@ -315,13 +331,10 @@ calc_deta_dphi_mu_htm_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         type_obj1 => MU_TYPE,
         nr_obj2 => NR_HTM_OBJECTS,
         type_obj2 => HTM_TYPE,
-        deta_cut => true,
         dphi_cut => true
     )
     port map(
-        deta_integer => mu_htm_bx_0_bx_0_deta_integer,
         dphi_integer => mu_htm_bx_0_bx_0_dphi_integer,
-        deta => mu_htm_bx_0_bx_0_deta,
         dphi => mu_htm_bx_0_bx_0_dphi
     );
 
@@ -331,13 +344,10 @@ calc_deta_dphi_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         type_obj1 => MU_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
         type_obj2 => MU_TYPE,
-        deta_cut => true,
         dphi_cut => true
     )
     port map(
-        deta_integer => mu_mu_bx_0_bx_0_deta_integer,
         dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
-        deta => mu_mu_bx_0_bx_0_deta,
         dphi => mu_mu_bx_0_bx_0_dphi
     );
 
