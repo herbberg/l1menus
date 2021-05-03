@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="text/html" charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>L1Menu_test_all_condition_types_v7</title>
+  <meta name="description" content="Menu for tests of all condition types">
+  <meta name="generator" content="tm-reporter 2.8.1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- style customizations -->
+  <style>
+    /* Fixing anchor offset for fixed top navbar */
+    h1:before,
+    h2:before {
+        height: 38px;
+        content: "";
+        display:block;
+    }
+    a.anchor {
+      visibility:hidden;
+      position:relative;
+      top:-68px;
+    }
+    .panel-heading h3 {
+        margin-top: .1em;
+        margin-bottom: .1em;
+    }
+    .panel-heading a.top {
+        float: right;
+    }
+    pre .curl {
+        font-weight: bold;
+    }
+    pre .cut {
+        color: darkmagenta;
+    }
+    pre .function {
+        font-weight: bold;
+        color: darkblue;
+    }
+    pre .keyword {
+        font-weight: bold;
+        color: blue;
+    }
+    pre .vhdlop {
+        font-weight: bold;
+        color: darkmagenta;
+    }
+    pre .vhdlsig {
+        color: brown;
+    }
+    .vhdl,
+    .expression {
+        white-space: normal;
+        word-wrap: normal;
+        word-break: keep-all;
+    }
+    .informative {
+        font-size: .9em;
+        color: darkgray;
+    }
+    h3 .informative {
+        font-size: .6em;
+    }
+    .footer {
+        float: right;
+        font-size: .9em;
+        color: darkgray;
+    }
+  </style>
+</head>
+<body role="document">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class=""><a href="#top"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Top</span></a></li>
+          <li class=""><a href="#algorithms"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Algorithms</span></a></li>
+          <li class=""><a href="#cuts"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> Cuts</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <a name="top"></a>
+
+    <header class="page-header">
+      <h1>L1Menu_test_all_condition_types_v7</h1>
+    </header>
+
+
+
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Comment:</strong> Menu for tests of all condition types</li>
+      <li class="list-group-item"><strong>Firmware UUID:</strong> 3ffdb52b-366f-4e63-81e9-24cb9b6e77b1</li>
+      <li class="list-group-item"><strong>Menu UUID:</strong> ac925705-a39c-4317-b9ca-0ffb092e29ff</li>
+      <li class="list-group-item"><strong>Grammar Version:</strong> 0.8</li>
+      <li class="list-group-item"><strong>Scale Set:</strong> scales_2021_03_02</li>
+      <li class="list-group-item"><strong>External Signals Set:</strong> L1ExternalConditionsCabling_20180319</li>
+      <li class="list-group-item"><strong>Labels:</strong> </li>
+    </ul>
+    <hr />
+
+    <a name="algorithms"></a>
+
+    <header class="page-header">
+      <h2>Algorithms</h2>
+    </header>
+
+    <table class="table">
+      <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Labels</th>
+      </tr>
+      <tr>
+        <td><a href=#L1_Eg10_20_DPHI_0_1>0</a></td>
+        <td><a href=#L1_Eg10_20_DPHI_0_1>L1_Eg10_20_DPHI_0_1</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_Mu10_Htm100_MASS_min_150>1</a></td>
+        <td><a href=#L1_Mu10_Htm100_MASS_min_150>L1_Mu10_Htm100_MASS_min_150</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleJet10_DPHI_0_1_TBPT_min_20>2</a></td>
+        <td><a href=#L1_DoubleJet10_DPHI_0_1_TBPT_min_20>L1_DoubleJet10_DPHI_0_1_TBPT_min_20</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_Tau10_Etm50_DPHI_0_1_TBPT_min_20>3</a></td>
+        <td><a href=#L1_Tau10_Etm50_DPHI_0_1_TBPT_min_20>L1_Tau10_Etm50_DPHI_0_1_TBPT_min_20</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_Jet10_Mu10_DETA_MAX_1p6>4</a></td>
+        <td><a href=#L1_Jet10_Mu10_DETA_MAX_1p6>L1_Jet10_Mu10_DETA_MAX_1p6</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_Jet10_Mu10_DPHI_0_1_TBPT_min_20>5</a></td>
+        <td><a href=#L1_Jet10_Mu10_DPHI_0_1_TBPT_min_20>L1_Jet10_Mu10_DPHI_0_1_TBPT_min_20</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_Jet10_Mu20_MASS_MIN_40>6</a></td>
+        <td><a href=#L1_Jet10_Mu20_MASS_MIN_40>L1_Jet10_Mu20_MASS_MIN_40</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_Mu20_Htm150_DPHI_0_1_TBPT_min_20>7</a></td>
+        <td><a href=#L1_Mu20_Htm150_DPHI_0_1_TBPT_min_20>L1_Mu20_Htm150_DPHI_0_1_TBPT_min_20</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleMu30_DETA_MAX_1p5>8</a></td>
+        <td><a href=#L1_DoubleMu30_DETA_MAX_1p5>L1_DoubleMu30_DETA_MAX_1p5</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleMu30_DPHI_0_1_TBPT_min_20>9</a></td>
+        <td><a href=#L1_DoubleMu30_DPHI_0_1_TBPT_min_20>L1_DoubleMu30_DPHI_0_1_TBPT_min_20</a></td>
+        <td></td>
+      </tr>
+    </table>
+    <hr />
+    <a class="anchor" name="L1_Eg10_20_DPHI_0_1"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>0 L1_Eg10_20_DPHI_0_1 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist</span><span class="curl">{</span>EG10, EG20<span class="curl">}</span>[DPHI_0_1]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_eg10_20_dphi_0_1</span> <span class="vhdlop"><=</span> <span class="vhdlsig">calo_calo_correlation_i1</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist{EG10, EG20}[DPHI_0_1]</strong> : <code>calo_calo_correlation_i1</code>
+          <ul>
+            <li>Object: EG10
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x14</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: EG20
+              <ul>
+                <li>
+                  
+                    Threshold: 20.0 GeV
+                    : <code>0x28</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#DPHI_0_1">DPHI_0_1</a></li>
+            <ul><li>
+                Delta-Phi: [0.0, 1.0]
+                : <code>[0.0, 1.0]</code>
+                  <code>precision: 3</code>
+            </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_Mu10_Htm100_MASS_min_150"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>1 L1_Mu10_Htm100_MASS_min_150 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_trv</span><span class="curl">{</span>MU10, HTM100<span class="curl">}</span>[MASS_MIN_150]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_mu10_htm100_mass_min_150</span> <span class="vhdlop"><=</span> <span class="vhdlsig">transverse_mass_i0</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_trv{MU10, HTM100}[MASS_MIN_150]</strong> : <code>transverse_mass_i0</code>
+          <ul>
+            <li>Object: MU10
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: HTM100
+              <ul>
+                <li>
+                  
+                    Threshold: 100.0 GeV
+                    : <code>0xc8</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#MASS_MIN_150">MASS_MIN_150</a></li>
+            <ul><li>
+                Mass: [150.0, 151982.0]
+                : <code>[11250.0, 11549264162.0]</code>
+                  <code>precision: 1</code>
+            </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleJet10_DPHI_0_1_TBPT_min_20"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>2 L1_DoubleJet10_DPHI_0_1_TBPT_min_20 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist</span><span class="curl">{</span>JET10, JET10<span class="curl">}</span>[DPHI_0_1, TBPT_min_20]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_jet10_dphi_0_1_tbpt_min_20</span> <span class="vhdlop"><=</span> <span class="vhdlsig">calo_calo_correlation_i2</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist{JET10, JET10}[DPHI_0_1, TBPT_min_20]</strong> : <code>calo_calo_correlation_i2</code>
+          <ul>
+            <li>Object: JET10
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x14</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET10
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x14</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#DPHI_0_1">DPHI_0_1</a></li>
+            <ul><li>
+                Delta-Phi: [0.0, 1.0]
+                : <code>[0.0, 1.0]</code>
+                  <code>precision: 3</code>
+            </li></ul>
+            <li>Cut: <a href="#TBPT_min_20">TBPT_min_20</a></li>
+            <ul><li>
+                TwoBodyPt: [20.0]
+                : <code>[400.0]</code>
+                  <code>precision: 1</code>
+            </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_Tau10_Etm50_DPHI_0_1_TBPT_min_20"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>3 L1_Tau10_Etm50_DPHI_0_1_TBPT_min_20 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist</span><span class="curl">{</span>TAU10, ETM50<span class="curl">}</span>[DPHI_0_1, TBPT_min_20]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_tau10_etm50_dphi_0_1_tbpt_min_20</span> <span class="vhdlop"><=</span> <span class="vhdlsig">calo_esum_correlation_i3</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist{TAU10, ETM50}[DPHI_0_1, TBPT_min_20]</strong> : <code>calo_esum_correlation_i3</code>
+          <ul>
+            <li>Object: TAU10
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x14</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: ETM50
+              <ul>
+                <li>
+                  
+                    Threshold: 50.0 GeV
+                    : <code>0x64</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#DPHI_0_1">DPHI_0_1</a></li>
+            <ul><li>
+                Delta-Phi: [0.0, 1.0]
+                : <code>[0.0, 1.0]</code>
+                  <code>precision: 3</code>
+            </li></ul>
+            <li>Cut: <a href="#TBPT_min_20">TBPT_min_20</a></li>
+            <ul><li>
+                TwoBodyPt: [20.0]
+                : <code>[400.0]</code>
+                  <code>precision: 1</code>
+            </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_Jet10_Mu10_DETA_MAX_1p6"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>4 L1_Jet10_Mu10_DETA_MAX_1p6 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist</span><span class="curl">{</span>JET10, MU10<span class="curl">}</span>[DETA_MAX_1p6]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_jet10_mu10_deta_max_1p6</span> <span class="vhdlop"><=</span> <span class="vhdlsig">calo_muon_correlation_i4</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist{JET10, MU10}[DETA_MAX_1p6]</strong> : <code>calo_muon_correlation_i4</code>
+          <ul>
+            <li>Object: JET10
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x14</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU10
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#DETA_MAX_1p6">DETA_MAX_1p6</a></li>
+            <ul><li>
+                Delta-Eta: [0.0, 1.6]
+                : <code>[0.0, 1.6]</code>
+                  <code>precision: 3</code>
+            </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_Jet10_Mu10_DPHI_0_1_TBPT_min_20"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>5 L1_Jet10_Mu10_DPHI_0_1_TBPT_min_20 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist</span><span class="curl">{</span>JET10, MU10<span class="curl">}</span>[DPHI_0_1, TBPT_min_20]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_jet10_mu10_dphi_0_1_tbpt_min_20</span> <span class="vhdlop"><=</span> <span class="vhdlsig">calo_muon_correlation_i5</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist{JET10, MU10}[DPHI_0_1, TBPT_min_20]</strong> : <code>calo_muon_correlation_i5</code>
+          <ul>
+            <li>Object: JET10
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x14</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU10
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#DPHI_0_1">DPHI_0_1</a></li>
+            <ul><li>
+                Delta-Phi: [0.0, 1.0]
+                : <code>[0.0, 1.0]</code>
+                  <code>precision: 3</code>
+            </li></ul>
+            <li>Cut: <a href="#TBPT_min_20">TBPT_min_20</a></li>
+            <ul><li>
+                TwoBodyPt: [20.0]
+                : <code>[400.0]</code>
+                  <code>precision: 1</code>
+            </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_Jet10_Mu20_MASS_MIN_40"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>6 L1_Jet10_Mu20_MASS_MIN_40 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_inv</span><span class="curl">{</span>JET10, MU20<span class="curl">}</span>[MASS_MIN_40]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_jet10_mu20_mass_min_40</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_i6</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_inv{JET10, MU20}[MASS_MIN_40]</strong> : <code>invariant_mass_i6</code>
+          <ul>
+            <li>Object: JET10
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x14</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU20
+              <ul>
+                <li>
+                  
+                    Threshold: 20.0 GeV
+                    : <code>0x29</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#MASS_MIN_40">MASS_MIN_40</a></li>
+            <ul><li>
+                Mass: [40.0, 151982.0]
+                : <code>[800.0, 11549264162.0]</code>
+                  <code>precision: 1</code>
+            </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_Mu20_Htm150_DPHI_0_1_TBPT_min_20"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>7 L1_Mu20_Htm150_DPHI_0_1_TBPT_min_20 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist</span><span class="curl">{</span>MU20, HTM150<span class="curl">}</span>[DPHI_0_1, TBPT_min_20]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_mu20_htm150_dphi_0_1_tbpt_min_20</span> <span class="vhdlop"><=</span> <span class="vhdlsig">muon_esum_correlation_i7</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist{MU20, HTM150}[DPHI_0_1, TBPT_min_20]</strong> : <code>muon_esum_correlation_i7</code>
+          <ul>
+            <li>Object: MU20
+              <ul>
+                <li>
+                  
+                    Threshold: 20.0 GeV
+                    : <code>0x29</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: HTM150
+              <ul>
+                <li>
+                  
+                    Threshold: 150.0 GeV
+                    : <code>0x12c</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#DPHI_0_1">DPHI_0_1</a></li>
+            <ul><li>
+                Delta-Phi: [0.0, 1.0]
+                : <code>[0.0, 1.0]</code>
+                  <code>precision: 3</code>
+            </li></ul>
+            <li>Cut: <a href="#TBPT_min_20">TBPT_min_20</a></li>
+            <ul><li>
+                TwoBodyPt: [20.0]
+                : <code>[400.0]</code>
+                  <code>precision: 1</code>
+            </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleMu30_DETA_MAX_1p5"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>8 L1_DoubleMu30_DETA_MAX_1p5 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist</span><span class="curl">{</span>MU30, MU30<span class="curl">}</span>[DETA_MAX_1p5]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_mu30_deta_max_1p5</span> <span class="vhdlop"><=</span> <span class="vhdlsig">muon_muon_correlation_i8</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist{MU30, MU30}[DETA_MAX_1p5]</strong> : <code>muon_muon_correlation_i8</code>
+          <ul>
+            <li>Object: MU30
+              <ul>
+                <li>
+                  
+                    Threshold: 30.0 GeV
+                    : <code>0x3d</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU30
+              <ul>
+                <li>
+                  
+                    Threshold: 30.0 GeV
+                    : <code>0x3d</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#DETA_MAX_1p5">DETA_MAX_1p5</a></li>
+            <ul><li>
+                Delta-Eta: [0.0, 1.5]
+                : <code>[0.0, 1.5]</code>
+                  <code>precision: 3</code>
+            </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleMu30_DPHI_0_1_TBPT_min_20"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>9 L1_DoubleMu30_DPHI_0_1_TBPT_min_20 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist</span><span class="curl">{</span>MU30, MU30<span class="curl">}</span>[DPHI_0_1, TBPT_min_20]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_mu30_dphi_0_1_tbpt_min_20</span> <span class="vhdlop"><=</span> <span class="vhdlsig">muon_muon_correlation_i9</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist{MU30, MU30}[DPHI_0_1, TBPT_min_20]</strong> : <code>muon_muon_correlation_i9</code>
+          <ul>
+            <li>Object: MU30
+              <ul>
+                <li>
+                  
+                    Threshold: 30.0 GeV
+                    : <code>0x3d</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU30
+              <ul>
+                <li>
+                  
+                    Threshold: 30.0 GeV
+                    : <code>0x3d</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#DPHI_0_1">DPHI_0_1</a></li>
+            <ul><li>
+                Delta-Phi: [0.0, 1.0]
+                : <code>[0.0, 1.0]</code>
+                  <code>precision: 3</code>
+            </li></ul>
+            <li>Cut: <a href="#TBPT_min_20">TBPT_min_20</a></li>
+            <ul><li>
+                TwoBodyPt: [20.0]
+                : <code>[400.0]</code>
+                  <code>precision: 1</code>
+            </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+
+    <a name="cuts"></a>
+
+    <header class="page-header">
+      <h2>Cuts</h2>
+    </header>
+
+    <table class="table">
+      <tr>
+        <th>Name</th>
+        <th>Minimum</th>
+        <th>Maximum</th>
+        <th>Minimum (hw/emu)</th>
+        <th>Maximum (hw/emu)</th>
+        <th>Data (hw/emu)</th>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="DETA_MAX_1p6"></a> DETA_MAX_1p6</td>
+        <td>0.0</td>
+        <td>1.6</td>
+        <td><code>0.0</code></td>
+        <td><code>1.6</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="DETA_MAX_1p5"></a> DETA_MAX_1p5</td>
+        <td>0.0</td>
+        <td>1.5</td>
+        <td><code>0.0</code></td>
+        <td><code>1.5</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="DPHI_0_1"></a> DPHI_0_1</td>
+        <td>0.0</td>
+        <td>1.0</td>
+        <td><code>0.0</code></td>
+        <td><code>1.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="MASS_MIN_150"></a> MASS_MIN_150</td>
+        <td>150.0</td>
+        <td>151982.0</td>
+        <td><code>11250.0</code></td>
+        <td><code>11549264162.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="MASS_MIN_40"></a> MASS_MIN_40</td>
+        <td>40.0</td>
+        <td>151982.0</td>
+        <td><code>800.0</code></td>
+        <td><code>11549264162.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="TBPT_min_20"></a> TBPT_min_20</td>
+        <td>20.0</td>
+        <td>0.0</td>
+        <td><code>400.0</code></td>
+        <td><code>0.0</code></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <footer class="footer">
+      <p>Generated by tm-reporter v2.8.1 on 2021-05-03 09:48:58.</p>
+    </fooer>
+
+  </main><!-- /container -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+</html>
