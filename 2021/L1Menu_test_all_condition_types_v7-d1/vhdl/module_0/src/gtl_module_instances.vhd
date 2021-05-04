@@ -10,7 +10,7 @@
 -- ac925705-a39c-4317-b9ca-0ffb092e29ff
 
 -- Unique ID of firmware implementation:
--- c80ae6b2-e52f-40ea-ab8a-ed6431dc8bd5
+-- a03da038-be40-469d-aed7-dd50db61d21a
 
 -- Scale set:
 -- scales_2021_03_02
@@ -243,9 +243,9 @@ calc_deta_dphi_integer_mu_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
 --
 -- Instantiations of correlation cuts calculations
 --
--- Instantiations of deta LUTs
+-- Instantiations of DeltaEta LUTs
 
-calc_deta_dphi_jet_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
+calc_deta_jet_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
@@ -258,7 +258,7 @@ calc_deta_dphi_jet_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         deta => jet_mu_bx_0_bx_0_deta
     );
 
-calc_deta_dphi_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
+calc_deta_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
@@ -271,9 +271,9 @@ calc_deta_dphi_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         deta => mu_mu_bx_0_bx_0_deta
     );
 
--- Instantiations of dphi LUTs
+-- Instantiations of DeltaPhi LUTs
 
-calc_deta_dphi_eg_eg_bx_0_bx_0_i: entity work.correlation_cuts_calculation
+calc_dphi_eg_eg_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_EG_OBJECTS,
         type_obj1 => EG_TYPE,
@@ -286,7 +286,7 @@ calc_deta_dphi_eg_eg_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         dphi => eg_eg_bx_0_bx_0_dphi
     );
 
-calc_deta_dphi_jet_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
+calc_dphi_jet_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
@@ -299,7 +299,7 @@ calc_deta_dphi_jet_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         dphi => jet_jet_bx_0_bx_0_dphi
     );
 
-calc_deta_dphi_tau_etm_bx_0_bx_0_i: entity work.correlation_cuts_calculation
+calc_dphi_tau_etm_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_TAU_OBJECTS,
         type_obj1 => TAU_TYPE,
@@ -312,7 +312,7 @@ calc_deta_dphi_tau_etm_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         dphi => tau_etm_bx_0_bx_0_dphi
     );
 
-calc_deta_dphi_jet_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
+calc_dphi_jet_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
@@ -325,7 +325,7 @@ calc_deta_dphi_jet_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         dphi => jet_mu_bx_0_bx_0_dphi
     );
 
-calc_deta_dphi_mu_htm_bx_0_bx_0_i: entity work.correlation_cuts_calculation
+calc_dphi_mu_htm_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
@@ -338,7 +338,7 @@ calc_deta_dphi_mu_htm_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         dphi => mu_htm_bx_0_bx_0_dphi
     );
 
-calc_deta_dphi_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
+calc_dphi_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
