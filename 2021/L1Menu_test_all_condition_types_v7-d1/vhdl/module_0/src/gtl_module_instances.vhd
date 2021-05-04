@@ -10,7 +10,7 @@
 -- ac925705-a39c-4317-b9ca-0ffb092e29ff
 
 -- Unique ID of firmware implementation:
--- a03da038-be40-469d-aed7-dd50db61d21a
+-- 63b9ce0f-ae00-4741-9cb5-d759314027dc
 
 -- Scale set:
 -- scales_2021_03_02
@@ -497,9 +497,9 @@ calc_tbpt_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         pt1 => mu_bx_0_pt_vector,
         pt2 => mu_bx_0_pt_vector,
         cos_phi_integer1 => mu_bx_0_cos_phi,
-        cos_phi_integer2 => mu_bx_0_conv_cos_phi,
+        cos_phi_integer2 => mu_bx_0_cos_phi,
         sin_phi_integer1 => mu_bx_0_sin_phi,
-        sin_phi_integer2 => mu_bx_0_conv_sin_phi,
+        sin_phi_integer2 => mu_bx_0_sin_phi,
         tbpt => mu_mu_bx_0_bx_0_tbpt
     );
 
