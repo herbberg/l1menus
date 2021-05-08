@@ -1,0 +1,89 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_test_all_condition_types_v7.html" }%
+
+---+!! !L1Menu_test_all_condition_types_v7
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_test_all_condition_types_v7 | 0.8 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_test_all_condition_types_v7 |
+|Menu UUID: | ac925705-a39c-4317-b9ca-0ffb092e29ff |
+|Firmware UUID: | 17c7443b-70a4-450e-98ef-4b8850d9633e  |
+|Associated L1 scale DB key: | scales_2021_03_02 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 10 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Correlation algorithm triggers: | 8 |
+      | !Mass algorithm triggers: | 2 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Correlation algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_Eg10_20_DPHI_0_1 ][L1_Eg10_20_DPHI_0_1]]   | L1_Eg10_20_DPHI_0_1  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet10_DPHI_0_1_TBPT_min_20 ][L1_DoubleJet10_DPHI_0_1_TBPT_min_20]]   | L1_DoubleJet10_DPHI_0_1_TBPT_min_20  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Tau10_Etm50_DPHI_0_1_TBPT_min_20 ][L1_Tau10_Etm50_DPHI_0_1_TBPT_min_20]]   | L1_Tau10_Etm50_DPHI_0_1_TBPT_min_20  | 3 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Jet10_Mu10_DETA_MAX_1p6 ][L1_Jet10_Mu10_DETA_MAX_1p6]]   | L1_Jet10_Mu10_DETA_MAX_1p6  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Jet10_Mu10_DPHI_0_1_TBPT_min_20 ][L1_Jet10_Mu10_DPHI_0_1_TBPT_min_20]]   | L1_Jet10_Mu10_DPHI_0_1_TBPT_min_20  | 5 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Mu20_Htm150_DPHI_0_1_TBPT_min_20 ][L1_Mu20_Htm150_DPHI_0_1_TBPT_min_20]]   | L1_Mu20_Htm150_DPHI_0_1_TBPT_min_20  | 7 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu30_DETA_MAX_1p5 ][L1_DoubleMu30_DETA_MAX_1p5]]   | L1_DoubleMu30_DETA_MAX_1p5  | 8 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu30_DPHI_0_1_TBPT_min_20 ][L1_DoubleMu30_DPHI_0_1_TBPT_min_20]]   | L1_DoubleMu30_DPHI_0_1_TBPT_min_20  | 9 |  |
+!Correlation algorithm triggers: 8 bits defined
+---++++ !Mass algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_Mu10_Htm100_MASS_min_150 ][L1_Mu10_Htm100_MASS_min_150]]   | L1_Mu10_Htm100_MASS_min_150  | 1 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Jet10_Mu20_MASS_MIN_40 ][L1_Jet10_Mu20_MASS_MIN_40]]   | L1_Jet10_Mu20_MASS_MIN_40  | 6 |  |
+!Mass algorithm triggers: 2 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_Eg10_20_DPHI_0_1 ][L1_Eg10_20_DPHI_0_1]]   |L1_Eg10_20_DPHI_0_1 |0 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_Mu10_Htm100_MASS_min_150 ][L1_Mu10_Htm100_MASS_min_150]]   |L1_Mu10_Htm100_MASS_min_150 |1 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet10_DPHI_0_1_TBPT_min_20 ][L1_DoubleJet10_DPHI_0_1_TBPT_min_20]]   |L1_DoubleJet10_DPHI_0_1_TBPT_min_20 |2 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_Tau10_Etm50_DPHI_0_1_TBPT_min_20 ][L1_Tau10_Etm50_DPHI_0_1_TBPT_min_20]]   |L1_Tau10_Etm50_DPHI_0_1_TBPT_min_20 |3 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_Jet10_Mu10_DETA_MAX_1p6 ][L1_Jet10_Mu10_DETA_MAX_1p6]]   |L1_Jet10_Mu10_DETA_MAX_1p6 |4 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_Jet10_Mu10_DPHI_0_1_TBPT_min_20 ][L1_Jet10_Mu10_DPHI_0_1_TBPT_min_20]]   |L1_Jet10_Mu10_DPHI_0_1_TBPT_min_20 |5 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_Jet10_Mu20_MASS_MIN_40 ][L1_Jet10_Mu20_MASS_MIN_40]]   |L1_Jet10_Mu20_MASS_MIN_40 |6 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_Mu20_Htm150_DPHI_0_1_TBPT_min_20 ][L1_Mu20_Htm150_DPHI_0_1_TBPT_min_20]]   |L1_Mu20_Htm150_DPHI_0_1_TBPT_min_20 |7 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu30_DETA_MAX_1p5 ][L1_DoubleMu30_DETA_MAX_1p5]]   |L1_DoubleMu30_DETA_MAX_1p5 |8 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu30_DPHI_0_1_TBPT_min_20 ][L1_DoubleMu30_DPHI_0_1_TBPT_min_20]]   |L1_DoubleMu30_DPHI_0_1_TBPT_min_20 |9 |2 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
