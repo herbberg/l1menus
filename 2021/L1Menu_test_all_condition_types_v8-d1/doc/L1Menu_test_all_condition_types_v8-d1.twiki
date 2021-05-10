@@ -1,0 +1,107 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_test_all_condition_types_v8.html" }%
+
+---+!! !L1Menu_test_all_condition_types_v8
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_test_all_condition_types_v8 | 0.8 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_test_all_condition_types_v8 |
+|Menu UUID: | 80b970ab-e353-4939-a077-e24cf9674d78 |
+|Firmware UUID: | 73cb375f-35f2-4f31-ab3b-91e5a3cc9947  |
+|Associated L1 scale DB key: | scales_2021_03_02 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 15 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Muon algorithm triggers: | 3 |
+      | !E/gamma algorithm triggers: | 4 |
+      | !Correlation algorithm triggers: | 3 |
+      | !Mass algorithm triggers: | 5 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Muon algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu10_TBPT_min_20_CHGCOR_os ][L1_DoubleMu10_TBPT_min_20_CHGCOR_os]]   | L1_DoubleMu10_TBPT_min_20_CHGCOR_os  | 1 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu10_CHGCOR_os ][L1_TripleMu10_CHGCOR_os]]   | L1_TripleMu10_CHGCOR_os  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_QuadMu10_CHGCOR_os ][L1_QuadMu10_CHGCOR_os]]   | L1_QuadMu10_CHGCOR_os  | 3 |  |
+!Muon algorithm triggers: 3 bits defined
+---++++ !E/gamma algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEg10_TBPT_min_20 ][L1_DoubleEg10_TBPT_min_20]]   | L1_DoubleEg10_TBPT_min_20  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEg10_ORMDETA_1 ][L1_DoubleEg10_ORMDETA_1]]   | L1_DoubleEg10_ORMDETA_1  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEg10_ORMDPHI_1 ][L1_DoubleEg10_ORMDPHI_1]]   | L1_DoubleEg10_ORMDPHI_1  | 5 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEg10_ORMDR_1 ][L1_DoubleEg10_ORMDR_1]]   | L1_DoubleEg10_ORMDR_1  | 6 |  |
+!E/gamma algorithm triggers: 4 bits defined
+---++++ !Correlation algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEg10_Jet10orm_DPHI_0_1_ORMDETA_1 ][L1_DoubleEg10_Jet10orm_DPHI_0_1_ORMDETA_1]]   | L1_DoubleEg10_Jet10orm_DPHI_0_1_ORMDETA_1  | 7 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEg10_Jet10orm_DETA_MAX_1p6_ORMDPHI_1 ][L1_DoubleEg10_Jet10orm_DETA_MAX_1p6_ORMDPHI_1]]   | L1_DoubleEg10_Jet10orm_DETA_MAX_1p6_ORMDPHI_1  | 8 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEg10_Jet10orm_DETA_MAX_1p6_ORMDR_1 ][L1_DoubleEg10_Jet10orm_DETA_MAX_1p6_ORMDR_1]]   | L1_DoubleEg10_Jet10orm_DETA_MAX_1p6_ORMDR_1  | 9 |  |
+!Correlation algorithm triggers: 3 bits defined
+---++++ !Mass algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEg10_Jet10orm_MASS_MIN_40_TBPT_min_20_ORMDR_1 ][L1_DoubleEg10_Jet10orm_MASS_MIN_40_TBPT_min_20_ORMDR_1]]   | L1_DoubleEg10_Jet10orm_MASS_MIN_40_TBPT_min_20_ORMDR_1  | 10 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleEg10_3Body_MASS_MIN_40 ][L1_TripleEg10_3Body_MASS_MIN_40]]   | L1_TripleEg10_3Body_MASS_MIN_40  | 11 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu10_3Body_MASS_MIN_40 ][L1_TripleMu10_3Body_MASS_MIN_40]]   | L1_TripleMu10_3Body_MASS_MIN_40  | 12 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet10_MASSDR_40 ][L1_DoubleJet10_MASSDR_40]]   | L1_DoubleJet10_MASSDR_40  | 13 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu10_MASSDR_40 ][L1_DoubleMu10_MASSDR_40]]   | L1_DoubleMu10_MASSDR_40  | 14 |  |
+!Mass algorithm triggers: 5 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEg10_TBPT_min_20 ][L1_DoubleEg10_TBPT_min_20]]   |L1_DoubleEg10_TBPT_min_20 |0 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu10_TBPT_min_20_CHGCOR_os ][L1_DoubleMu10_TBPT_min_20_CHGCOR_os]]   |L1_DoubleMu10_TBPT_min_20_CHGCOR_os |1 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu10_CHGCOR_os ][L1_TripleMu10_CHGCOR_os]]   |L1_TripleMu10_CHGCOR_os |2 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_QuadMu10_CHGCOR_os ][L1_QuadMu10_CHGCOR_os]]   |L1_QuadMu10_CHGCOR_os |3 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEg10_ORMDETA_1 ][L1_DoubleEg10_ORMDETA_1]]   |L1_DoubleEg10_ORMDETA_1 |4 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEg10_ORMDPHI_1 ][L1_DoubleEg10_ORMDPHI_1]]   |L1_DoubleEg10_ORMDPHI_1 |5 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEg10_ORMDR_1 ][L1_DoubleEg10_ORMDR_1]]   |L1_DoubleEg10_ORMDR_1 |6 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEg10_Jet10orm_DPHI_0_1_ORMDETA_1 ][L1_DoubleEg10_Jet10orm_DPHI_0_1_ORMDETA_1]]   |L1_DoubleEg10_Jet10orm_DPHI_0_1_ORMDETA_1 |7 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEg10_Jet10orm_DETA_MAX_1p6_ORMDPHI_1 ][L1_DoubleEg10_Jet10orm_DETA_MAX_1p6_ORMDPHI_1]]   |L1_DoubleEg10_Jet10orm_DETA_MAX_1p6_ORMDPHI_1 |8 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEg10_Jet10orm_DETA_MAX_1p6_ORMDR_1 ][L1_DoubleEg10_Jet10orm_DETA_MAX_1p6_ORMDR_1]]   |L1_DoubleEg10_Jet10orm_DETA_MAX_1p6_ORMDR_1 |9 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEg10_Jet10orm_MASS_MIN_40_TBPT_min_20_ORMDR_1 ][L1_DoubleEg10_Jet10orm_MASS_MIN_40_TBPT_min_20_ORMDR_1]]   |L1_DoubleEg10_Jet10orm_MASS_MIN_40_TBPT_min_20_ORMDR_1 |10 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_TripleEg10_3Body_MASS_MIN_40 ][L1_TripleEg10_3Body_MASS_MIN_40]]   |L1_TripleEg10_3Body_MASS_MIN_40 |11 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu10_3Body_MASS_MIN_40 ][L1_TripleMu10_3Body_MASS_MIN_40]]   |L1_TripleMu10_3Body_MASS_MIN_40 |12 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet10_MASSDR_40 ][L1_DoubleJet10_MASSDR_40]]   |L1_DoubleJet10_MASSDR_40 |13 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu10_MASSDR_40 ][L1_DoubleMu10_MASSDR_40]]   |L1_DoubleMu10_MASSDR_40 |14 |3 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
