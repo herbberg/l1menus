@@ -10,7 +10,7 @@
 -- 80b970ab-e353-4939-a077-e24cf9674d78
 
 -- Unique ID of firmware implementation:
--- 560e6173-b62a-4417-a613-1948c5d352d3
+-- 059725be-a58e-4867-bfe3-573476cf362c
 
 -- Scale set:
 -- scales_2021_03_02
@@ -57,6 +57,21 @@ calc_obj_parameter_jet_bx_0_i: entity work.obj_parameter
         sin_phi => jet_bx_0_sin_phi,
         conv_cos_phi => jet_bx_0_conv_cos_phi,
         conv_sin_phi => jet_bx_0_conv_sin_phi
+    );
+--
+calc_obj_parameter_mu_bx_0_i: entity work.obj_parameter
+    generic map(
+        nr_obj => NR_MU_OBJECTS,
+        type_obj => MU_TYPE
+    )
+    port map(
+        muon => mu_bx_0,
+        pt_vector => mu_bx_0_pt_vector,
+        upt_vector => mu_bx_0_upt_vector,
+        eta_integer => mu_bx_0_eta_integer,
+        phi_integer => mu_bx_0_phi_integer,
+        cos_phi => mu_bx_0_cos_phi,
+        sin_phi => mu_bx_0_sin_phi
     );
 --
 -- Instantiations of deta and dphi calculations for correlation conditions (used for DETA, DPHI)
