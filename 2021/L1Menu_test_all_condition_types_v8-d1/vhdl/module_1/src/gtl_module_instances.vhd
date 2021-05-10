@@ -10,7 +10,7 @@
 -- 80b970ab-e353-4939-a077-e24cf9674d78
 
 -- Unique ID of firmware implementation:
--- 059725be-a58e-4867-bfe3-573476cf362c
+-- 20305107-2a8e-44f7-9b56-f04cd6ab7e38
 
 -- Scale set:
 -- scales_2021_03_02
@@ -134,6 +134,26 @@ calc_deltaR_eg_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
 
 -- Instantiations of Invariant mass calculation
 
+calc_mass_inv_pt_eg_eg_bx_0_bx_0_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_EG_OBJECTS,
+        type_obj2 => EG_TYPE,
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
+        pt1_width => EG_PT_VECTOR_WIDTH,
+        pt2_width => EG_PT_VECTOR_WIDTH,
+        cosh_cos_width => CALO_CALO_COSH_COS_VECTOR_WIDTH
+    )
+    port map(
+        deta_integer => eg_eg_bx_0_bx_0_deta_integer,
+        dphi_integer => eg_eg_bx_0_bx_0_dphi_integer,
+        pt1 => eg_bx_0_pt_vector,
+        pt2 => eg_bx_0_pt_vector,
+        inv_mass_pt => eg_eg_bx_0_bx_0_mass_inv_pt
+    );
+
 -- Instantiations of Invariant mass divided DeltaR calculation
 
 -- Instantiations of Invariant mass unconstrained pt calculation
@@ -141,6 +161,26 @@ calc_deltaR_eg_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
 -- Instantiations of Transverse mass calculation
 
 -- Instantiations of Two-body pt calculation
+
+calc_tbpt_eg_eg_bx_0_bx_0_i: entity work.correlation_cuts_calculation
+    generic map(
+        nr_obj1 => NR_EG_OBJECTS,
+        nr_obj2 => NR_EG_OBJECTS,
+        tbpt_cut => true,
+        pt1_width => EG_PT_VECTOR_WIDTH,
+        pt2_width => EG_PT_VECTOR_WIDTH,
+        sin_cos_width => CALO_SIN_COS_VECTOR_WIDTH,
+        sin_cos_precision => CALO_SIN_COS_PRECISION
+    )
+    port map(
+        pt1 => eg_bx_0_pt_vector,
+        pt2 => eg_bx_0_pt_vector,
+        cos_phi_integer1 => eg_bx_0_cos_phi,
+        cos_phi_integer2 => eg_bx_0_cos_phi,
+        sin_phi_integer1 => eg_bx_0_sin_phi,
+        sin_phi_integer2 => eg_bx_0_sin_phi,
+        tbpt => eg_eg_bx_0_bx_0_tbpt
+    );
 
 calc_tbpt_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
