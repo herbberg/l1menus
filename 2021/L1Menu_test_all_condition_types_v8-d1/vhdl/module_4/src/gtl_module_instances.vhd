@@ -10,7 +10,7 @@
 -- 80b970ab-e353-4939-a077-e24cf9674d78
 
 -- Unique ID of firmware implementation:
--- 20305107-2a8e-44f7-9b56-f04cd6ab7e38
+-- 0d759fed-f14a-49aa-bf4d-c159a7f719fb
 
 -- Scale set:
 -- scales_2021_03_02
@@ -268,7 +268,7 @@ cond_invariant_mass3_i12_i: entity work.correlation_conditions
         slice_low_obj2 => 0,
         slice_high_obj2 => 7,
         slice_low_obj3 => 0,
-        slice_high_obj3 => 7,-- obj cuts
+        slice_high_obj3 => 7,
 -- obj cuts
         pt_threshold_obj1 => X"0015",
         pt_threshold_obj2 => X"0015",
