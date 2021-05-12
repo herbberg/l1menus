@@ -10,7 +10,7 @@
 -- 80b970ab-e353-4939-a077-e24cf9674d78
 
 -- Unique ID of firmware implementation:
--- 20305107-2a8e-44f7-9b56-f04cd6ab7e38
+-- 0d759fed-f14a-49aa-bf4d-c159a7f719fb
 
 -- Scale set:
 -- scales_2021_03_02
@@ -193,7 +193,7 @@ calc_mass_over_dr_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         type_obj2 => MU_TYPE,
         pt1_width => MU_PT_VECTOR_WIDTH,
         pt2_width => MU_PT_VECTOR_WIDTH,
-        cosh_cos_width => CALO_MUON_COSH_COS_VECTOR_WIDTH,
+        cosh_cos_width => MUON_MUON_COSH_COS_VECTOR_WIDTH,
         mass_over_dr_cut => true,
         rom_sel => MU_MU_ROM,
         deta_bins_width => MU_DETA_BINS_WIDTH_ROM,
@@ -309,7 +309,7 @@ cond_invariant_mass_delta_r_i14_i: entity work.correlation_conditions
         lhc_clk,
         muon_obj1 => mu_bx_0,
         muon_obj2 => mu_bx_0,
-        mass_div_dr => mu_mu_bx_0_bx_0_mass_div_dr,
+        mass_div_dr => mu_mu_bx_0_bx_0_mass_over_dr,
         condition_o => invariant_mass_delta_r_i14
     );
 

@@ -10,7 +10,7 @@
 -- 80b970ab-e353-4939-a077-e24cf9674d78
 
 -- Unique ID of firmware implementation:
--- 20305107-2a8e-44f7-9b56-f04cd6ab7e38
+-- 0d759fed-f14a-49aa-bf4d-c159a7f719fb
 
 -- Scale set:
 -- scales_2021_03_02
@@ -239,14 +239,13 @@ cond_double_eg_ov_rm_i6_i: entity work.comb_conditions
 cond_invariant_mass3_i11_i: entity work.correlation_conditions
     generic map(
 -- obj cuts
--- obj cuts
         pt_threshold_obj1 => X"0014",
         pt_threshold_obj2 => X"0014",
         pt_threshold_obj3 => X"0014",
 -- correlation cuts
         mass_upper_limit_vector => X"00041A6642C78140",
         mass_lower_limit_vector => X"0000000004C4B400",
-        mass_vector_width => EG_PT_VECTOR_WIDTH+EG_PT_VECTOR_WIDTH+EG_EG_COSH_COS_VECTOR_WIDTH,
+        mass_vector_width => EG_PT_VECTOR_WIDTH+EG_PT_VECTOR_WIDTH+CALO_CALO_COSH_COS_VECTOR_WIDTH,
         mass_3_obj => true,
 -- number of objects and type
         nr_obj1 => NR_EG_OBJECTS,

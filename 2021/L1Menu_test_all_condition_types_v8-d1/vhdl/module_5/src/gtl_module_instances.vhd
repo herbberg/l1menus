@@ -10,7 +10,7 @@
 -- 80b970ab-e353-4939-a077-e24cf9674d78
 
 -- Unique ID of firmware implementation:
--- 20305107-2a8e-44f7-9b56-f04cd6ab7e38
+-- 0d759fed-f14a-49aa-bf4d-c159a7f719fb
 
 -- Scale set:
 -- scales_2021_03_02
@@ -179,7 +179,7 @@ calc_mass_over_dr_jet_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         pt2_width => JET_PT_VECTOR_WIDTH,
         cosh_cos_width => CALO_CALO_COSH_COS_VECTOR_WIDTH,
         mass_over_dr_cut => true,
-        rom_sel => JET_JET_ROM,
+        rom_sel => CALO_CALO_ROM,
         deta_bins_width => CALO_DETA_BINS_WIDTH_ROM,
         dphi_bins_width => CALO_DPHI_BINS_WIDTH_ROM,
         inverted_dr_sq_width => CALO_CALO_INV_DR_SQ_VECTOR_WIDTH
@@ -218,7 +218,7 @@ cond_invariant_mass_delta_r_i13_i: entity work.correlation_conditions
 -- correlation cuts
         mass_cut => true,
         mass_type => INVARIANT_MASS_DIV_DR_TYPE,
-        mass_div_dr_vector_width => JET_JET_MASS_DIV_DR_VECTOR_WIDTH,
+        mass_div_dr_vector_width => CALO_CALO_MASS_DIV_DR_VECTOR_WIDTH,
         mass_div_dr_threshold => X"000000000000004C4B400",
 -- number of objects and type
         nr_obj1 => NR_JET_OBJECTS,
@@ -232,7 +232,7 @@ cond_invariant_mass_delta_r_i13_i: entity work.correlation_conditions
         lhc_clk,
         calo_obj1 => jet_bx_0,
         calo_obj2 => jet_bx_0,
-        mass_div_dr => jet_jet_bx_0_bx_0_mass_div_dr,
+        mass_div_dr => jet_jet_bx_0_bx_0_mass_over_dr,
         condition_o => invariant_mass_delta_r_i13
     );
 
