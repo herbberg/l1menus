@@ -10,7 +10,7 @@
 -- cadc73bf-3d1d-4365-8465-21eea7ccd0d8
 
 -- Unique ID of firmware implementation:
--- 406208fb-8717-4f5c-a1c3-b9d0e7481ba1
+-- 22aa00cd-d6a9-41c9-8676-1afb350b3904
 
 -- Scale set:
 -- scales_2021_03_02
@@ -21,6 +21,306 @@
 -- tmEventSetup version
 -- v0.8.1
 
+-- ========================================================
+-- Instantiations of conditions
+--
+cond_double_eg_i0_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+        slice_2_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0014", X"0014", X"0000", X"0000"),
+-- correlation cuts
+        tbpt_cut => true,
+        tbpt_vector_width => 2+EG_PT_VECTOR_WIDTH+EG_PT_VECTOR_WIDTH+(2*CALO_SIN_COS_VECTOR_WIDTH),
+        tbpt_threshold_vector => X"00000009502F9000",
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 2
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => eg_bx_0,
+        tbpt => eg_eg_bx_0_bx_0_tbpt,
+        condition_o => double_eg_i0
+    );
+
+cond_triple_jet_ov_rm_i4_i: entity work.comb_conditions
+    generic map(
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+        slice_2_high_obj1 => 11,
+        slice_3_high_obj1 => 11,
+        slice_high_obj2 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0014", X"0014", X"0014", X"0014"),
+        pt_threshold_obj2 => X"0014",
+-- correlation cuts orm
+        dphi_orm_cut => true,
+        dphi_orm_upper_limit_vector => X"000003E8",
+        dphi_orm_lower_limit_vector => X"00000000",
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_TAU_OBJECTS,
+        type_obj2 => TAU_TYPE,
+        nr_templates => 3
+    )
+    port map(
+        lhc_clk,
+        obj1_calo => jet_bx_0,
+        obj2 => tau_bx_0,
+        dphi_orm => jet_tau_bx_0_bx_0_dphi,
+        condition_o => triple_jet_ov_rm_i4
+    );
+
+cond_double_mu_i1_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0015", X"0015", X"0000", X"0000"),
+-- charge correlation cut
+        requested_charge_correlation => "os",
+-- correlation cuts
+        tbpt_cut => true,
+        tbpt_vector_width => 2+MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+(2*MUON_SIN_COS_VECTOR_WIDTH),
+        tbpt_threshold_vector => X"000003A352944000",
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 2
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        ls_charcorr_double => ls_charcorr_double_bx_0_bx_0,
+        os_charcorr_double => os_charcorr_double_bx_0_bx_0,
+        tbpt => mu_mu_bx_0_bx_0_tbpt,
+        condition_o => double_mu_i1
+    );
+
+cond_quad_mu_i14_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0015", X"0015", X"0015", X"0015"),
+        nr_phi_windows_obj1 => (2, 2, 2, 2),
+        phi_w1_upper_limits_obj1 => (X"00B6", X"00B6", X"00B6", X"00B6"),
+        phi_w1_lower_limits_obj1 => (X"005C", X"005C", X"005C", X"005C"),
+        phi_w2_upper_limits_obj1 => (X"01C9", X"01C9", X"01C9", X"01C9"),
+        phi_w2_lower_limits_obj1 => (X"016F", X"016F", X"016F", X"016F"),
+        iso_luts_obj1 => (X"1", X"1", X"1", X"1"),
+        requested_charges_obj1 => ("pos", "pos", "pos", "pos"),
+        qual_luts_obj1 => (X"0100", X"0100", X"0100", X"0100"),
+-- charge correlation cut
+        requested_charge_correlation => "os",
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 4
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => mu_bx_0,
+        ls_charcorr_quad => ls_charcorr_quad_bx_0_bx_0,
+        os_charcorr_quad => os_charcorr_quad_bx_0_bx_0,
+        condition_o => quad_mu_i14
+    );
+
+cond_invariant_mass_i7_i: entity work.correlation_conditions
+    generic map(
+-- obj cuts
+        pt_threshold_obj1 => X"0014",
+        pt_threshold_obj2 => X"0014",
+-- correlation cuts
+        dphi_cut => true,
+        dphi_upper_limit_vector => X"000003E8",
+        dphi_lower_limit_vector => X"00000000",
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
+        mass_vector_width => JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+CALO_CALO_COSH_COS_VECTOR_WIDTH,
+        mass_upper_limit_vector => X"00041A6642C78140",
+        mass_lower_limit_vector => X"0000000004C4B400",
+        tbpt_cut => true,
+        tbpt_vector_width => 2+JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+(2*CALO_SIN_COS_VECTOR_WIDTH),
+        tbpt_threshold_vector => X"00000009502F9000",
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_JET_OBJECTS,
+        type_obj2 => JET_TYPE,
+-- selector same/different bunch crossings
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        calo_obj1 => jet_bx_0,
+        calo_obj2 => jet_bx_0,
+        dphi => jet_jet_bx_0_bx_0_dphi,
+        mass_inv_pt => jet_jet_bx_0_bx_0_mass_inv_pt,
+        tbpt => jet_jet_bx_0_bx_0_tbpt,
+        condition_o => invariant_mass_i7
+    );
+
+cond_invariant_mass_i8_i: entity work.correlation_conditions
+    generic map(
+-- slices for muon
+        slice_low_obj2 => 0,
+        slice_high_obj2 => 7,
+-- obj cuts
+        pt_threshold_obj1 => X"0014",
+        pt_threshold_obj2 => X"0015",
+-- correlation cuts
+        dphi_cut => true,
+        dphi_upper_limit_vector => X"000003E8",
+        dphi_lower_limit_vector => X"00000000",
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
+        mass_vector_width => JET_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+CALO_MUON_COSH_COS_VECTOR_WIDTH,
+        mass_upper_limit_vector => X"002907FE9BCB0C80",
+        mass_lower_limit_vector => X"000000002FAF0800",
+        tbpt_cut => true,
+        tbpt_vector_width => 2+JET_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+(2*MUON_SIN_COS_VECTOR_WIDTH),
+        tbpt_threshold_vector => X"000003A352944000",
+-- number of objects and type
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
+-- selector same/different bunch crossings
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        calo_obj1 => jet_bx_0,
+        muon_obj2 => mu_bx_0,
+        dphi => jet_mu_bx_0_bx_0_dphi,
+        mass_inv_pt => jet_mu_bx_0_bx_0_mass_inv_pt,
+        tbpt => jet_mu_bx_0_bx_0_tbpt,
+        condition_o => invariant_mass_i8
+    );
+
+cond_invariant_mass_i10_i: entity work.correlation_conditions
+    generic map(
+-- slices for muon
+        slice_low_obj1 => 0,
+        slice_high_obj1 => 7,
+        slice_low_obj2 => 0,
+        slice_high_obj2 => 7,
+-- obj cuts
+        pt_threshold_obj1 => X"0015",
+        pt_threshold_obj2 => X"0015",
+-- charge correlation cut
+        requested_charge_correlation => "os",
+-- correlation cuts
+        dphi_cut => true,
+        dphi_upper_limit_vector => X"000003E8",
+        dphi_lower_limit_vector => X"00000000",
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
+        mass_vector_width => MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+CALO_MUON_COSH_COS_VECTOR_WIDTH,
+        mass_upper_limit_vector => X"002907FE9BCB0C80",
+        mass_lower_limit_vector => X"000000002FAF0800",
+        tbpt_cut => true,
+        tbpt_vector_width => 2+MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+(2*MUON_SIN_COS_VECTOR_WIDTH),
+        tbpt_threshold_vector => X"000003A352944000",
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
+-- selector same/different bunch crossings
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        muon_obj1 => mu_bx_0,
+        muon_obj2 => mu_bx_0,
+        ls_charcorr_double => ls_charcorr_double_bx_0_bx_0,
+        os_charcorr_double => os_charcorr_double_bx_0_bx_0,
+        dphi => mu_mu_bx_0_bx_0_dphi,
+        mass_inv_pt => mu_mu_bx_0_bx_0_mass_inv_pt,
+        tbpt => mu_mu_bx_0_bx_0_tbpt,
+        condition_o => invariant_mass_i10
+    );
+
+cond_invariant_mass_i17_i: entity work.correlation_conditions
+    generic map(
+-- slices for muon
+        slice_low_obj1 => 0,
+        slice_high_obj1 => 7,
+        slice_low_obj2 => 0,
+        slice_high_obj2 => 7,
+-- obj cuts
+        pt_threshold_obj1 => X"0015",
+        pt_threshold_obj2 => X"0015",
+-- correlation cuts
+        mass_cut => true,
+        mass_type => INVARIANT_MASS_TYPE,
+        mass_vector_width => MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+CALO_MUON_COSH_COS_VECTOR_WIDTH,
+        mass_upper_limit_vector => X"002907FE9BCB0C80",
+        mass_lower_limit_vector => X"000000002FAF0800",
+        tbpt_cut => true,
+        tbpt_vector_width => 2+MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+(2*MUON_SIN_COS_VECTOR_WIDTH),
+        tbpt_threshold_vector => X"000003A352944000",
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
+-- selector same/different bunch crossings
+        same_bx => true
+    )
+    port map(
+        lhc_clk,
+        muon_obj1 => mu_bx_0,
+        muon_obj2 => mu_bx_0,
+        mass_inv_pt => mu_mu_bx_0_bx_0_mass_inv_pt,
+        tbpt => mu_mu_bx_0_bx_0_tbpt,
+        condition_o => invariant_mass_i17
+    );
+
+-- External condition assignment
+
+
+-- ========================================================
+-- Instantiations of algorithms
+
+-- 0 L1_DoubleEg10_TBPT_min_20 : comb{EG10,EG10}[TBPT_min_20]
+l1_double_eg10_tbpt_min_20 <= double_eg_i0;
+algo(0) <= l1_double_eg10_tbpt_min_20;
+
+-- 1 L1_DoubleMu10_TBPT_min_20 : comb{MU10,MU10}[CHGCOR_os,TBPT_min_20]
+l1_double_mu10_tbpt_min_20 <= double_mu_i1;
+algo(1) <= l1_double_mu10_tbpt_min_20;
+
+-- 4 L1_TripleJet10_Tau10orm_ORMDPHI_1 : comb_orm{JET10,JET10,JET10,TAU10}[ORMDPHI_1]
+l1_triple_jet10_tau10orm_ormdphi_1 <= triple_jet_ov_rm_i4;
+algo(7) <= l1_triple_jet10_tau10orm_ormdphi_1;
+
+-- 7 L1_DoubleJet10_DPHI_0_1_MASS_MIN_40_TBPT_min_20 : mass_inv{JET10,JET10}[DPHI_0_1,MASS_MIN_40,TBPT_min_20]
+l1_double_jet10_dphi_0_1_mass_min_40_tbpt_min_20 <= invariant_mass_i7;
+algo(3) <= l1_double_jet10_dphi_0_1_mass_min_40_tbpt_min_20;
+
+-- 8 L1_Jet10_Mu10_DPHI_0_1_MASS_MIN_40_TBPT_min_20 : mass_inv{JET10,MU10}[DPHI_0_1,MASS_MIN_40,TBPT_min_20]
+l1_jet10_mu10_dphi_0_1_mass_min_40_tbpt_min_20 <= invariant_mass_i8;
+algo(2) <= l1_jet10_mu10_dphi_0_1_mass_min_40_tbpt_min_20;
+
+-- 10 L1_DoubleMu10_DPHI_0_1_MASS_MIN_40_TBPT_min_20_CHGCOR_os : mass_inv{MU10,MU10}[CHGCOR_os,DPHI_0_1,MASS_MIN_40,TBPT_min_20]
+l1_double_mu10_dphi_0_1_mass_min_40_tbpt_min_20_chgcor_os <= invariant_mass_i10;
+algo(4) <= l1_double_mu10_dphi_0_1_mass_min_40_tbpt_min_20_chgcor_os;
+
+-- 14 L1_QuadMu10_two_phi_chg_iso_qlty : comb{MU10[MU-CHG_pos,MU-ISO_non_iso,MU-PHI_1_2,MU-PHI_4_5,MU-QLTY_level8],MU10[MU-CHG_pos,MU-ISO_non_iso,MU-PHI_1_2,MU-PHI_4_5,MU-QLTY_level8],MU10[MU-CHG_pos,MU-ISO_non_iso,MU-PHI_1_2,MU-PHI_4_5,MU-QLTY_level8],MU10[MU-CHG_pos,MU-ISO_non_iso,MU-PHI_1_2,MU-PHI_4_5,MU-QLTY_level8]}[CHGCOR_os]
+l1_quad_mu10_two_phi_chg_iso_qlty <= quad_mu_i14;
+algo(6) <= l1_quad_mu10_two_phi_chg_iso_qlty;
+
+-- 17 L1_DoubleMu10_MASS_MIN_40_TBPT_min_20 : mass_inv{MU10,MU10}[MASS_MIN_40,TBPT_min_20]
+l1_double_mu10_mass_min_40_tbpt_min_20 <= invariant_mass_i17;
+algo(5) <= l1_double_mu10_mass_min_40_tbpt_min_20;
+
+-- ========================================================
 -- Instantiations of eta and phi conversion to muon scale for calo-muon and muon-esums correlation conditions (used for DETA, DPHI, DR and mass)
 
 conv_eta_phi_jet_bx_0_i: entity work.conv_eta_phi
@@ -391,307 +691,5 @@ calc_muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
         ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0,
         ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0);
 --
-
--- Instantiations of conditions
---
-cond_double_eg_i0_i: entity work.comb_conditions
-    generic map(
--- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
-        slice_1_high_obj1 => 11,
-        slice_2_high_obj1 => 11,
--- object cuts
-        pt_thresholds_obj1 => (X"0014", X"0014", X"0000", X"0000"),
--- correlation cuts
-        tbpt_cut => true,
-        tbpt_vector_width => 2+EG_PT_VECTOR_WIDTH+EG_PT_VECTOR_WIDTH+(2*CALO_SIN_COS_VECTOR_WIDTH),
-        tbpt_threshold_vector => X"00000009502F9000",
--- number of objects and type
-        nr_obj1 => NR_EG_OBJECTS,
-        type_obj1 => EG_TYPE,
-        nr_templates => 2
-    )
-    port map(
-        lhc_clk,
-        obj1_calo => eg_bx_0,
-        tbpt => eg_eg_bx_0_bx_0_tbpt,
-        condition_o => double_eg_i0
-    );
-
-cond_triple_jet_ov_rm_i4_i: entity work.comb_conditions
-    generic map(
-        slice_1_low_obj1 => 0,
-        slice_1_high_obj1 => 11,
-        slice_2_low_obj1 => 0,
-        slice_2_high_obj1 => 11,
-        slice_3_low_obj1 => 0,
-        slice_3_high_obj1 => 11,
-        slice_4_low_obj1 => 0,
-        slice_4_high_obj1 => 11,
--- object cuts
-        pt_thresholds_obj1 => (X"0014", X"0014", X"0014", X"0014"),
-        -- orm object cuts
-        pt_threshold_obj2 => X"0014",
--- correlation cuts orm
-        dphi_orm_cut => true,
-        dphi_orm_upper_limit_vector => X"000003E8",
-        dphi_orm_lower_limit_vector => X"00000000",
--- number of objects and type
-        nr_obj1 => NR_JET_OBJECTS,
-        type_obj1 => JET_TYPE,
-        nr_obj2 => NR_TAU_OBJECTS,
-        type_obj2 => TAU_TYPE,
-        nr_templates => 3
-    )
-    port map(
-        lhc_clk,
-        obj1_calo => jet_bx_0,
-        obj2 => tau_bx_0,
-        dphi_orm => jet_tau_bx_0_bx_0_dphi,
-        condition_o => triple_jet_ov_rm_i4
-    );
-
-cond_double_mu_i1_i: entity work.comb_conditions
-    generic map(
--- no slice requirements
--- object cuts
-        pt_thresholds_obj1 => (X"0015", X"0015", X"0000", X"0000"),
--- charge correlation cut
-        requested_charge_correlation => "os",
--- correlation cuts
-        tbpt_cut => true,
-        tbpt_vector_width => 2+MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+(2*MUON_SIN_COS_VECTOR_WIDTH),
-        tbpt_threshold_vector => X"000003A352944000",
--- number of objects and type
-        nr_obj1 => NR_MU_OBJECTS,
-        type_obj1 => MU_TYPE,
-        nr_templates => 2
-    )
-    port map(
-        lhc_clk,
-        obj1_muon => mu_bx_0,
-        ls_charcorr_double => ls_charcorr_double_bx_0_bx_0,
-        os_charcorr_double => os_charcorr_double_bx_0_bx_0,
-        tbpt => mu_mu_bx_0_bx_0_tbpt,
-        condition_o => double_mu_i1
-    );
-
-cond_quad_mu_i14_i: entity work.comb_conditions
-    generic map(
--- no slice requirements
--- object cuts
-        pt_thresholds_obj1 => (X"0015", X"0015", X"0015", X"0015"),
-        nr_phi_windows_obj1 => (2, 2, 2, 2),
-        phi_w1_upper_limits_obj1 => (X"00B6", X"00B6", X"00B6", X"00B6"),
-        phi_w1_lower_limits_obj1 => (X"005C", X"005C", X"005C", X"005C"),
-        phi_w2_upper_limits_obj1 => (X"01C9", X"01C9", X"01C9", X"01C9"),
-        phi_w2_lower_limits_obj1 => (X"016F", X"016F", X"016F", X"016F"),
-        iso_luts_obj1 => (X"1", X"1", X"1", X"1"),
-        requested_charges_obj1 => ("pos", "pos", "pos", "pos"),
-        qual_luts_obj1 => (X"0100", X"0100", X"0100", X"0100"),
--- charge correlation cut
-        requested_charge_correlation => "os",
--- number of objects and type
-        nr_obj1 => NR_MU_OBJECTS,
-        type_obj1 => MU_TYPE,
-        nr_templates => 4
-    )
-    port map(
-        lhc_clk,
-        obj1_muon => mu_bx_0,
-        ls_charcorr_quad => ls_charcorr_quad_bx_0_bx_0,
-        os_charcorr_quad => os_charcorr_quad_bx_0_bx_0,
-        condition_o => quad_mu_i14
-    );
-
-cond_invariant_mass_i7_i: entity work.correlation_conditions
-    generic map(
--- obj cuts
-        pt_threshold_obj1 => X"0014",
-        pt_threshold_obj2 => X"0014",
--- correlation cuts
-        dphi_cut => true,
-        dphi_upper_limit_vector => X"000003E8",
-        dphi_lower_limit_vector => X"00000000",
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
-        mass_vector_width => JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+CALO_CALO_COSH_COS_VECTOR_WIDTH,
-        mass_upper_limit_vector => X"00041A6642C78140",
-        mass_lower_limit_vector => X"0000000004C4B400",
-        tbpt_cut => true,
-        tbpt_vector_width => 2+JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+(2*CALO_SIN_COS_VECTOR_WIDTH),
-        tbpt_threshold_vector => X"00000009502F9000",
--- number of objects and type
-        nr_obj1 => NR_JET_OBJECTS,
-        type_obj1 => JET_TYPE,
-        nr_obj2 => NR_JET_OBJECTS,
-        type_obj2 => JET_TYPE,
--- selector same/different bunch crossings
-        same_bx => true
-    )
-    port map(
-        lhc_clk,
-        calo_obj1 => jet_bx_0,
-        calo_obj2 => jet_bx_0,
-        dphi => jet_jet_bx_0_bx_0_dphi,
-        mass_inv_pt => jet_jet_bx_0_bx_0_mass_inv_pt,
-        tbpt => jet_jet_bx_0_bx_0_tbpt,
-        condition_o => invariant_mass_i7
-    );
-
-cond_invariant_mass_i8_i: entity work.correlation_conditions
-    generic map(
--- slices for muon
-        slice_low_obj2 => 0,
-        slice_high_obj2 => 7,
--- obj cuts
-        pt_threshold_obj1 => X"0014",
-        pt_threshold_obj2 => X"0015",
--- correlation cuts
-        dphi_cut => true,
-        dphi_upper_limit_vector => X"000003E8",
-        dphi_lower_limit_vector => X"00000000",
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
-        mass_vector_width => JET_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+CALO_MUON_COSH_COS_VECTOR_WIDTH,
-        mass_upper_limit_vector => X"002907FE9BCB0C80",
-        mass_lower_limit_vector => X"000000002FAF0800",
-        tbpt_cut => true,
-        tbpt_vector_width => 2+JET_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+(2*MUON_SIN_COS_VECTOR_WIDTH),
-        tbpt_threshold_vector => X"000003A352944000",
--- number of objects and type
-        nr_obj1 => NR_JET_OBJECTS,
-        type_obj1 => JET_TYPE,
-        nr_obj2 => NR_MU_OBJECTS,
-        type_obj2 => MU_TYPE,
--- selector same/different bunch crossings
-        same_bx => true
-    )
-    port map(
-        lhc_clk,
-        calo_obj1 => jet_bx_0,
-        muon_obj2 => mu_bx_0,
-        dphi => jet_mu_bx_0_bx_0_dphi,
-        mass_inv_pt => jet_mu_bx_0_bx_0_mass_inv_pt,
-        tbpt => jet_mu_bx_0_bx_0_tbpt,
-        condition_o => invariant_mass_i8
-    );
-
-cond_invariant_mass_i10_i: entity work.correlation_conditions
-    generic map(
--- slices for muon
-        slice_low_obj1 => 0,
-        slice_high_obj1 => 7,
-        slice_low_obj2 => 0,
-        slice_high_obj2 => 7,
--- obj cuts
-        pt_threshold_obj1 => X"0015",
-        pt_threshold_obj2 => X"0015",
--- charge correlation cut
-        requested_charge_correlation => "os",
--- correlation cuts
-        dphi_cut => true,
-        dphi_upper_limit_vector => X"000003E8",
-        dphi_lower_limit_vector => X"00000000",
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
-        mass_vector_width => MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+CALO_MUON_COSH_COS_VECTOR_WIDTH,
-        mass_upper_limit_vector => X"002907FE9BCB0C80",
-        mass_lower_limit_vector => X"000000002FAF0800",
-        tbpt_cut => true,
-        tbpt_vector_width => 2+MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+(2*MUON_SIN_COS_VECTOR_WIDTH),
-        tbpt_threshold_vector => X"000003A352944000",
--- number of objects and type
-        nr_obj1 => NR_MU_OBJECTS,
-        type_obj1 => MU_TYPE,
-        nr_obj2 => NR_MU_OBJECTS,
-        type_obj2 => MU_TYPE,
--- selector same/different bunch crossings
-        same_bx => true
-    )
-    port map(
-        lhc_clk,
-        muon_obj1 => mu_bx_0,
-        muon_obj2 => mu_bx_0,
-        ls_charcorr_double => ls_charcorr_double_bx_0_bx_0,
-        os_charcorr_double => os_charcorr_double_bx_0_bx_0,
-        dphi => mu_mu_bx_0_bx_0_dphi,
-        mass_inv_pt => mu_mu_bx_0_bx_0_mass_inv_pt,
-        tbpt => mu_mu_bx_0_bx_0_tbpt,
-        condition_o => invariant_mass_i10
-    );
-
-cond_invariant_mass_i17_i: entity work.correlation_conditions
-    generic map(
--- slices for muon
-        slice_low_obj1 => 0,
-        slice_high_obj1 => 7,
-        slice_low_obj2 => 0,
-        slice_high_obj2 => 7,
--- obj cuts
-        pt_threshold_obj1 => X"0015",
-        pt_threshold_obj2 => X"0015",
--- correlation cuts
-        mass_cut => true,
-        mass_type => INVARIANT_MASS_TYPE,
-        mass_vector_width => MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+CALO_MUON_COSH_COS_VECTOR_WIDTH,
-        mass_upper_limit_vector => X"002907FE9BCB0C80",
-        mass_lower_limit_vector => X"000000002FAF0800",
-        tbpt_cut => true,
-        tbpt_vector_width => 2+MU_PT_VECTOR_WIDTH+MU_PT_VECTOR_WIDTH+(2*MUON_SIN_COS_VECTOR_WIDTH),
-        tbpt_threshold_vector => X"000003A352944000",
--- number of objects and type
-        nr_obj1 => NR_MU_OBJECTS,
-        type_obj1 => MU_TYPE,
-        nr_obj2 => NR_MU_OBJECTS,
-        type_obj2 => MU_TYPE,
--- selector same/different bunch crossings
-        same_bx => true
-    )
-    port map(
-        lhc_clk,
-        muon_obj1 => mu_bx_0,
-        muon_obj2 => mu_bx_0,
-        mass_inv_pt => mu_mu_bx_0_bx_0_mass_inv_pt,
-        tbpt => mu_mu_bx_0_bx_0_tbpt,
-        condition_o => invariant_mass_i17
-    );
-
--- External condition assignment
-
-
--- Instantiations of algorithms
-
--- 0 L1_DoubleEg10_TBPT_min_20 : comb{EG10,EG10}[TBPT_min_20]
-l1_double_eg10_tbpt_min_20 <= double_eg_i0;
-algo(0) <= l1_double_eg10_tbpt_min_20;
-
--- 1 L1_DoubleMu10_TBPT_min_20 : comb{MU10,MU10}[CHGCOR_os,TBPT_min_20]
-l1_double_mu10_tbpt_min_20 <= double_mu_i1;
-algo(1) <= l1_double_mu10_tbpt_min_20;
-
--- 4 L1_TripleJet10_Tau10orm_ORMDPHI_1 : comb_orm{JET10,JET10,JET10,TAU10}[ORMDPHI_1]
-l1_triple_jet10_tau10orm_ormdphi_1 <= triple_jet_ov_rm_i4;
-algo(7) <= l1_triple_jet10_tau10orm_ormdphi_1;
-
--- 7 L1_DoubleJet10_DPHI_0_1_MASS_MIN_40_TBPT_min_20 : mass_inv{JET10,JET10}[DPHI_0_1,MASS_MIN_40,TBPT_min_20]
-l1_double_jet10_dphi_0_1_mass_min_40_tbpt_min_20 <= invariant_mass_i7;
-algo(3) <= l1_double_jet10_dphi_0_1_mass_min_40_tbpt_min_20;
-
--- 8 L1_Jet10_Mu10_DPHI_0_1_MASS_MIN_40_TBPT_min_20 : mass_inv{JET10,MU10}[DPHI_0_1,MASS_MIN_40,TBPT_min_20]
-l1_jet10_mu10_dphi_0_1_mass_min_40_tbpt_min_20 <= invariant_mass_i8;
-algo(2) <= l1_jet10_mu10_dphi_0_1_mass_min_40_tbpt_min_20;
-
--- 10 L1_DoubleMu10_DPHI_0_1_MASS_MIN_40_TBPT_min_20_CHGCOR_os : mass_inv{MU10,MU10}[CHGCOR_os,DPHI_0_1,MASS_MIN_40,TBPT_min_20]
-l1_double_mu10_dphi_0_1_mass_min_40_tbpt_min_20_chgcor_os <= invariant_mass_i10;
-algo(4) <= l1_double_mu10_dphi_0_1_mass_min_40_tbpt_min_20_chgcor_os;
-
--- 14 L1_QuadMu10_two_phi_chg_iso_qlty : comb{MU10[MU-CHG_pos,MU-ISO_non_iso,MU-PHI_1_2,MU-PHI_4_5,MU-QLTY_level8],MU10[MU-CHG_pos,MU-ISO_non_iso,MU-PHI_1_2,MU-PHI_4_5,MU-QLTY_level8],MU10[MU-CHG_pos,MU-ISO_non_iso,MU-PHI_1_2,MU-PHI_4_5,MU-QLTY_level8],MU10[MU-CHG_pos,MU-ISO_non_iso,MU-PHI_1_2,MU-PHI_4_5,MU-QLTY_level8]}[CHGCOR_os]
-l1_quad_mu10_two_phi_chg_iso_qlty <= quad_mu_i14;
-algo(6) <= l1_quad_mu10_two_phi_chg_iso_qlty;
-
--- 17 L1_DoubleMu10_MASS_MIN_40_TBPT_min_20 : mass_inv{MU10,MU10}[MASS_MIN_40,TBPT_min_20]
-l1_double_mu10_mass_min_40_tbpt_min_20 <= invariant_mass_i17;
-algo(5) <= l1_double_mu10_mass_min_40_tbpt_min_20;
-
 
 -- ========================================================
