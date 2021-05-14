@@ -1,0 +1,26 @@
+{
+  "firmware_uuid" : "406208fb-8717-4f5c-a1c3-b9d0e7481ba1",
+  "menu_uuid"     : "cadc73bf-3d1d-4365-8465-21eea7ccd0d8",
+  "n_modules"     : 2,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_DoubleEg10_TBPT_min_20", 0, 1, 0],
+    ["L1_DoubleMu10_TBPT_min_20", 1, 1, 1],
+    ["L1_Doublejet10_Tau10orm_ORMDR_1_TBPT_min_20", 2, 0, 0],
+    ["L1_SingleJet10_Tau10orm_ORMDETA_1", 3, 0, 7],
+    ["L1_TripleJet10_Tau10orm_ORMDPHI_1", 4, 1, 7],
+    ["L1_QuadJet10_Tau10orm_ORMDR_1", 5, 0, 4],
+    ["L1_DoubleJet10_tau10orm_DETA_MAX_1p6_MASS_MIN_40_TBPT_min_20_ORMDR_1", 6, 0, 5],
+    ["L1_DoubleJet10_DPHI_0_1_MASS_MIN_40_TBPT_min_20", 7, 1, 3],
+    ["L1_Jet10_Mu10_DPHI_0_1_MASS_MIN_40_TBPT_min_20", 8, 1, 2],
+    ["L1_Jet10_Etm50_DPHI_0_1_MASS_MIN_40_TBPT_min_20", 9, 0, 8],
+    ["L1_DoubleMu10_DPHI_0_1_MASS_MIN_40_TBPT_min_20_CHGCOR_os", 10, 1, 4],
+    ["L1_Mu10_Htm50_DPHI_0_1_MASS_MIN_40_TBPT_min_20", 11, 0, 9],
+    ["L1_DoubleMuUpt10_CHGCOR_os_DPHI_0_1_MASSUPT_40_TBPT_min_20", 12, 0, 6],
+    ["L1_QuadEg_five_eta", 13, 0, 3],
+    ["L1_QuadMu10_two_phi_chg_iso_qlty", 14, 1, 6],
+    ["L1_DoubleJet10_MASS_MIN_40_TBPT_min_20", 15, 0, 2],
+    ["L1_Jet10_Mu10_MASS_MIN_40_TBPT_min_20", 16, 0, 1],
+    ["L1_DoubleMu10_MASS_MIN_40_TBPT_min_20", 17, 1, 5]
+  ]
+}
