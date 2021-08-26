@@ -1,23 +1,14 @@
 -- ========================================================
 -- Instantiations of conditions
 --
--- addr_lsb <= bx_data.eg(2)(0)(14 downto 9) & bx_data.eg(2)(0)(22 downto 17);
---
--- lut1_i : entity work.rom_lut_calo_inv_dr_sq_1
---     port map (
---         clka => lhc_clk,
---         addra => addr_lsb,
---         douta => dout
---     );
-
-calo_deta_bin(i,j)(CALO_DETA_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(eg_eg_bx_0_bx_0_deta_integer(i,j), CALO_DETA_BINS_WIDTH);
-calo_dphi_bin(i,j)(CALO_DPHI_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(eg_eg_bx_0_bx_0_dphi_integer(i,j), CALO_DPHI_BINS_WIDTH);
+calo_deta_bin(0,1)(CALO_DETA_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(eg_eg_bx_0_bx_0_deta_integer(0,1), CALO_DETA_BINS_WIDTH);
+calo_dphi_bin(0,1)(CALO_DPHI_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(eg_eg_bx_0_bx_0_dphi_integer(0,1), CALO_DPHI_BINS_WIDTH);
 
 lut_all_i : entity work.rom_lut_calo_inv_dr_sq_all is
     port map (
         clk => lhc_clk,
-        deta => lhc_clk,
-        dphi => lhc_clk,
+        deta => calo_deta_bin(0,1),
+        dphi => calo_dphi_bin(0,1),
         dout => dout
     );
 
