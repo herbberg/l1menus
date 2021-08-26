@@ -13,9 +13,7 @@ lut1_i : entity work.rom_lut_calo_inv_dr_sq_1
 -- ========================================================
 -- Instantiations of algorithms
 
-comp_i: if dout > 100000 generate
-    l1_dummy <= '1';
-end generate comp_i;
+l1_dummy <= '1' when dout > 100000 else ’0’;
 
 algo(0) <= l1_dummy;
 
