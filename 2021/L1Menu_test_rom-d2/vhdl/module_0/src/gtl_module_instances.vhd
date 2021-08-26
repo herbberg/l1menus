@@ -5,6 +5,10 @@ calo_deta_bin(0,1)(CALO_DETA_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(eg_
 calo_dphi_bin(0,1)(CALO_DPHI_BINS_WIDTH-1 downto 0) <= CONV_STD_LOGIC_VECTOR(eg_eg_bx_0_bx_0_dphi_integer(0,1), CALO_DPHI_BINS_WIDTH);
 
 lut_all_i : entity work.rom_lut_calo_inv_dr_sq_all
+    generic map(
+        deta_width => CALO_DETA_BINS_WIDTH,
+        deta_width => CALO_DPHI_BINS_WIDTH
+    )
     port map (
         clk => lhc_clk,
         deta => calo_deta_bin(0,1)(CALO_DETA_BINS_WIDTH-1 downto 0),
