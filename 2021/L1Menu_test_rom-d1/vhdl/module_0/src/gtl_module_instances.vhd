@@ -1,6 +1,8 @@
 -- ========================================================
 -- Instantiations of conditions
 --
+addr_lsb <= bx_data.eg(2)(0)(16 downto 9) & bx_data.eg(2)(0)(24 downto 17);
+
 lut1_i : entity work.rom_lut_calo_inv_dr_sq_1
     port map (
         clka => lhc_clk,
