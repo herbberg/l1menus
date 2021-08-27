@@ -54,7 +54,7 @@ calc_deta_dphi_integer_eg_eg_bx_0_bx_0_i: entity work.deta_dphi_calculations
 -- ========================================================
 -- Instantiations of algorithms
 
-l1_dummy <= '1' when dout(0,1) > 100000 else '0';
+l1_dummy <= '1' when dout > 100000 else '0';
 
 algo(0) <= l1_dummy;
 
