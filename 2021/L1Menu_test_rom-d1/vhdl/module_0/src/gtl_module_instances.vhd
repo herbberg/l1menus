@@ -17,22 +17,22 @@
 --     );
 
 corr_cuts_calc_i : entity work.correlation_cuts_calculation
-     generic(
-        nr_obj1 => NR_EG_OBJECTS;
-        type_obj1 => EG_TYPE;
-        nr_obj2 => NR_EG_OBJECTS;
-        type_obj2 => EG_TYPE;
-        mass_over_dr_cut => true;
-        rom_sel => CALO_CALO_ROM;
-        deta_bins_width  => CALO_DETA_BINS_WIDTH;
-        dphi_bins_width  => CALO_DPHI_BINS_WIDTH;
+     generic map(
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_obj2 => NR_EG_OBJECTS,
+        type_obj2 => EG_TYPE,
+        mass_over_dr_cut => true,
+        rom_sel => CALO_CALO_ROM,
+        deta_bins_width  => CALO_DETA_BINS_WIDTH,
+        dphi_bins_width  => CALO_DPHI_BINS_WIDTH,
         inverted_dr_sq_width => CALO_CALO_INV_DR_SQ_VECTOR_WIDTH
-    );
-    port(
-        lhc_clk => lhc_clk;
-        deta_integer => eg_eg_bx_0_bx_0_deta_integer;
-        dphi_integer => eg_eg_bx_0_bx_0_dphi_integer;
-        inverted_dr_sq_sim => dout;
+    )
+    port map(
+        lhc_clk => lhc_clk,
+        deta_integer => eg_eg_bx_0_bx_0_deta_integer,
+        dphi_integer => eg_eg_bx_0_bx_0_dphi_integer,
+        inverted_dr_sq_sim => dout
     );
 
 
