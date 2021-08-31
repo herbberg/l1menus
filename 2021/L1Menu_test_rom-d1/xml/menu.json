@@ -1,9 +1,0 @@
-{
-  "firmware_uuid" : "d66bc93b-48a3-435e-b3e4-0c899a7a0508",
-  "menu_uuid"     : "7c76f56b-5d18-47cf-9e67-e8d2abaddad1",
-  "n_modules"     : 1,
-  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
-  "algorithms"    : [
-    ["L1_dummy", 0, 0, 0]
-  ]
-}
