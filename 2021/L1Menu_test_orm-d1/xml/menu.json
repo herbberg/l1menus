@@ -1,0 +1,9 @@
+{
+  "firmware_uuid" : "d0109e5f-d8d0-4715-8a9c-0fd5e15f0dd5",
+  "menu_uuid"     : "6b3c4161-f14b-4d94-abd9-6ac0308248ac",
+  "n_modules"     : 1,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_DoubleJet35_Dphi_0_1_IsoTau45_RmOvlp", 0, 0, 0]
+  ]
+}
