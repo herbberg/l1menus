@@ -1,0 +1,67 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_test_orm_v2.html" }%
+
+---+!! !L1Menu_test_orm_v2
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_test_orm_v2 | 0.9 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_test_orm_v2 |
+|Menu UUID: | fc7317f7-50f3-44e3-a476-844329774ca5 |
+|Firmware UUID: | 242582e2-1420-4ef3-bbc3-20624f2dd736  |
+|Associated L1 scale DB key: | scales_2021_03_02 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 1 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Mass algorithm triggers: | 1 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Mass algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp]]   | L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp  | 363 |  |
+!Mass algorithm triggers: 1 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp]]   |L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp |363 |0 |
+
+
+<p style="page-break-before: always">&nbsp;</p>

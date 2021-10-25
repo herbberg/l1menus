@@ -1,0 +1,9 @@
+{
+  "firmware_uuid" : "242582e2-1420-4ef3-bbc3-20624f2dd736",
+  "menu_uuid"     : "fc7317f7-50f3-44e3-a476-844329774ca5",
+  "n_modules"     : 1,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp", 363, 0, 0]
+  ]
+}
