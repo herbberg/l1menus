@@ -30,8 +30,8 @@ A complete description of the algorithm and technical trigger implementation is 
 ---+++ L1 menu identification
 
 |Menu Name: | !L1Menu_test_orm_v2 |
-|Menu UUID: | fc7317f7-50f3-44e3-a476-844329774ca5 |
-|Firmware UUID: | 242582e2-1420-4ef3-bbc3-20624f2dd736  |
+|Menu UUID: | 53c03812-30e4-4733-bd53-ff55dbdd9d92 |
+|Firmware UUID: | 22ec9877-82f4-4a75-9dd7-13bad2195748  |
 |Associated L1 scale DB key: | scales_2021_03_02 |
 
 
@@ -51,7 +51,7 @@ Number of algorithm triggers per trigger group:
 <p style="page-break-before: always">&nbsp;</p>
 ---++++ !Mass algorithm triggers
 |  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
-|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp]]   | L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp  | 363 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp]]   | L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp  | 0 |  |
 !Mass algorithm triggers: 1 bits defined
 
 
@@ -61,7 +61,7 @@ Number of algorithm triggers per trigger group:
 ---+++ List of algorithm triggers sorted by bits
 
 | *Algorithm* | *Alias* | *Bit number* | *Module Id* |
-|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp]]   |L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp |363 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp]]   |L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp |0 |0 |
 
 
 <p style="page-break-before: always">&nbsp;</p>
