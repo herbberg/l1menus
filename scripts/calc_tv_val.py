@@ -9,6 +9,7 @@ import os
 import sys
 
 # step width
+hex_char='%08x'
 eta_bit_width=8
 phi_bins=144
 eta_step=0.087/2
@@ -47,4 +48,6 @@ if sys.argv[5] == 'jet':
 else:
     val=iso_sh|phi_sh|eta_sh|pt_idx
 
-print(hex(val))
+#print(hex(val))
+print(hex_char % val)
+
