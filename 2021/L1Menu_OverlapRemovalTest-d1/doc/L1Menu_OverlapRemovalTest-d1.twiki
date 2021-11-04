@@ -1,0 +1,89 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_OverlapRemovalTest.html" }%
+
+---+!! !L1Menu_OverlapRemovalTest
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_OverlapRemovalTest | 0.9 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_OverlapRemovalTest |
+|Menu UUID: | 27c7fed7-97c0-4c25-8fd7-a35de5e3ae49 |
+|Firmware UUID: | e26863d3-0694-4103-b9d8-2fae8f548846  |
+|Associated L1 scale DB key: | scales_2021_03_02 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 12 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Mass algorithm triggers: | 12 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Mass algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp]]   | L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min250_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min250_IsoTau45_RmOvlp]]   | L1_DoubleJet35_Mass_Min250_IsoTau45_RmOvlp  | 1 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min300_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min300_IsoTau45_RmOvlp]]   | L1_DoubleJet35_Mass_Min300_IsoTau45_RmOvlp  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min360_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min360_IsoTau45_RmOvlp]]   | L1_DoubleJet35_Mass_Min360_IsoTau45_RmOvlp  | 3 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min420_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min420_IsoTau45_RmOvlp]]   | L1_DoubleJet35_Mass_Min420_IsoTau45_RmOvlp  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min620_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min620_IsoTau45_RmOvlp]]   | L1_DoubleJet35_Mass_Min620_IsoTau45_RmOvlp  | 5 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp_noISO ][L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp_noISO]]   | L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp_noISO  | 6 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min250_IsoTau45_RmOvlp_noISO ][L1_DoubleJet35_Mass_Min250_IsoTau45_RmOvlp_noISO]]   | L1_DoubleJet35_Mass_Min250_IsoTau45_RmOvlp_noISO  | 7 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min300_IsoTau45_RmOvlp_noISO ][L1_DoubleJet35_Mass_Min300_IsoTau45_RmOvlp_noISO]]   | L1_DoubleJet35_Mass_Min300_IsoTau45_RmOvlp_noISO  | 8 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min360_IsoTau45_RmOvlp_noISO ][L1_DoubleJet35_Mass_Min360_IsoTau45_RmOvlp_noISO]]   | L1_DoubleJet35_Mass_Min360_IsoTau45_RmOvlp_noISO  | 9 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min420_IsoTau45_RmOvlp_noISO ][L1_DoubleJet35_Mass_Min420_IsoTau45_RmOvlp_noISO]]   | L1_DoubleJet35_Mass_Min420_IsoTau45_RmOvlp_noISO  | 10 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min620_IsoTau45_RmOvlp_noISO ][L1_DoubleJet35_Mass_Min620_IsoTau45_RmOvlp_noISO]]   | L1_DoubleJet35_Mass_Min620_IsoTau45_RmOvlp_noISO  | 11 |  |
+!Mass algorithm triggers: 12 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp]]   |L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp |0 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min250_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min250_IsoTau45_RmOvlp]]   |L1_DoubleJet35_Mass_Min250_IsoTau45_RmOvlp |1 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min300_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min300_IsoTau45_RmOvlp]]   |L1_DoubleJet35_Mass_Min300_IsoTau45_RmOvlp |2 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min360_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min360_IsoTau45_RmOvlp]]   |L1_DoubleJet35_Mass_Min360_IsoTau45_RmOvlp |3 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min420_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min420_IsoTau45_RmOvlp]]   |L1_DoubleJet35_Mass_Min420_IsoTau45_RmOvlp |4 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min620_IsoTau45_RmOvlp ][L1_DoubleJet35_Mass_Min620_IsoTau45_RmOvlp]]   |L1_DoubleJet35_Mass_Min620_IsoTau45_RmOvlp |5 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp_noISO ][L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp_noISO]]   |L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp_noISO |6 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min250_IsoTau45_RmOvlp_noISO ][L1_DoubleJet35_Mass_Min250_IsoTau45_RmOvlp_noISO]]   |L1_DoubleJet35_Mass_Min250_IsoTau45_RmOvlp_noISO |7 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min300_IsoTau45_RmOvlp_noISO ][L1_DoubleJet35_Mass_Min300_IsoTau45_RmOvlp_noISO]]   |L1_DoubleJet35_Mass_Min300_IsoTau45_RmOvlp_noISO |8 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min360_IsoTau45_RmOvlp_noISO ][L1_DoubleJet35_Mass_Min360_IsoTau45_RmOvlp_noISO]]   |L1_DoubleJet35_Mass_Min360_IsoTau45_RmOvlp_noISO |9 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min420_IsoTau45_RmOvlp_noISO ][L1_DoubleJet35_Mass_Min420_IsoTau45_RmOvlp_noISO]]   |L1_DoubleJet35_Mass_Min420_IsoTau45_RmOvlp_noISO |10 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet35_Mass_Min620_IsoTau45_RmOvlp_noISO ][L1_DoubleJet35_Mass_Min620_IsoTau45_RmOvlp_noISO]]   |L1_DoubleJet35_Mass_Min620_IsoTau45_RmOvlp_noISO |11 |5 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
