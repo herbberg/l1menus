@@ -1,0 +1,283 @@
+2021-11-17 18:53:59 INFO : distributing menu...
+2021-11-17 18:53:59 INFO : loading resource information from JSON: /home/bergauer/github/herbberg/tm-vhdlproducer/tmVhdlProducer/config/resource_default.json
+2021-11-17 18:53:59 INFO : :: listing resources...
+2021-11-17 18:53:59 INFO : thresholds:
+2021-11-17 18:53:59 INFO :  * floor: brams=41.36%, sliceLUTs=7.28%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * ceiling: brams=168.03%, sliceLUTs=90.00%, processors=100.00%
+2021-11-17 18:53:59 INFO : instances:
+2021-11-17 18:53:59 INFO :  * MuonCondition[ muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * MuonCondition[ muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.08%, processors=0.33%
+2021-11-17 18:53:59 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * MuonCondition[ muon, muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * MuonCondition[ muon, muon, muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * CaloCondition[ calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * CaloCondition[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.05%, processors=0.33%
+2021-11-17 18:53:59 INFO :  * CaloCondition[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * CaloCondition[ calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * CaloConditionOvRm[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.06%
+2021-11-17 18:53:59 INFO :  * CaloConditionOvRm[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.06%
+2021-11-17 18:53:59 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.05%, processors=0.33%
+2021-11-17 18:53:59 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.06%
+2021-11-17 18:53:59 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.06%
+2021-11-17 18:53:59 INFO :  * CorrelationCondition[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * CorrelationCondition[ calo, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * CorrelationCondition[ calo, esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * CorrelationCondition[ muon, esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * CorrelationCondition[ muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * massupt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * Correlation3Condition[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * Correlation3Condition[ muon, muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * CorrelationConditionOvRm[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * CorrelationConditionOvRm[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * EsumsCondition[ esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * MinBiasCondition[ bias ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * ExternalCondition[ ext ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * TowerCountCondition[ count ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO :  * SignalCondition[ signal ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2021-11-17 18:53:59 INFO : |---------------------------------------------------------------------------------------|
+2021-11-17 18:53:59 INFO : |                                                                                       |
+2021-11-17 18:53:59 INFO : | Algorithms sorted by payload (descending)                                             |
+2021-11-17 18:53:59 INFO : |                                                                                       |
+2021-11-17 18:53:59 INFO : |---------------------------------------------------------------------------------------|
+2021-11-17 18:53:59 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2021-11-17 18:53:59 INFO : | Index | BRAMs   | SliceLUTs | DSPs    | Name                                          |
+2021-11-17 18:53:59 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2021-11-17 18:53:59 INFO : |     5 |  0.000% |    0.011% |  0.000% | L1_DoubleMu_10_5_MassOverdR0p6                |
+2021-11-17 18:53:59 INFO : |    11 |  0.000% |    0.011% |  0.000% | L1_DoubleMu_10_5_MassOverdR10                 |
+2021-11-17 18:53:59 INFO : |     6 |  0.000% |    0.011% |  0.000% | L1_DoubleMu_10_5_MassOverdR1p0                |
+2021-11-17 18:53:59 INFO : |     7 |  0.000% |    0.011% |  0.000% | L1_DoubleMu_10_5_MassOverdR1p6                |
+2021-11-17 18:53:59 INFO : |    12 |  0.000% |    0.011% |  0.000% | L1_DoubleMu_10_5_MassOverdR20                 |
+2021-11-17 18:53:59 INFO : |     8 |  0.000% |    0.011% |  0.000% | L1_DoubleMu_10_5_MassOverdR2p0                |
+2021-11-17 18:53:59 INFO : |     9 |  0.000% |    0.011% |  0.000% | L1_DoubleMu_10_5_MassOverdR2p4                |
+2021-11-17 18:53:59 INFO : |    10 |  0.000% |    0.011% |  0.000% | L1_DoubleMu_10_5_MassOverdR4                  |
+2021-11-17 18:53:59 INFO : |    13 |  0.000% |    0.011% |  0.000% | L1_DoubleMu_10_5_MassOverdR40                 |
+2021-11-17 18:53:59 INFO : |    14 |  0.000% |    0.011% |  0.000% | L1_DoubleMu_10_5_MassOverdR70                 |
+2021-11-17 18:53:59 INFO : |     4 |  0.000% |    0.011% |  0.000% | L1_DoubleMu_12_3_MassOverdR2p4                |
+2021-11-17 18:53:59 INFO : |     0 |  0.000% |    0.011% |  0.000% | L1_DoubleMu_13_6_MassOverdR0p6                |
+2021-11-17 18:53:59 INFO : |     1 |  0.000% |    0.011% |  0.000% | L1_DoubleMu_15_10_MassOverdR1p0               |
+2021-11-17 18:53:59 INFO : |     2 |  0.000% |    0.011% |  0.000% | L1_DoubleMu_20_15_MassOverdR1p6               |
+2021-11-17 18:53:59 INFO : |     3 |  0.000% |    0.011% |  0.000% | L1_DoubleMu_30_20_MassOverdR2p0               |
+2021-11-17 18:53:59 INFO : |    16 |  0.000% |    0.017% |  0.000% | L1_DoubleEG_15_10_MassOverdR10                |
+2021-11-17 18:53:59 INFO : |    17 |  0.000% |    0.017% |  0.000% | L1_DoubleEG_15_10_MassOverdR20                |
+2021-11-17 18:53:59 INFO : |    15 |  0.000% |    0.017% |  0.000% | L1_DoubleEG_15_10_MassOverdR4                 |
+2021-11-17 18:53:59 INFO : |    19 |  0.000% |    0.017% |  0.000% | L1_DoubleJet_30_30_MassOverdR10               |
+2021-11-17 18:53:59 INFO : |    20 |  0.000% |    0.017% |  0.000% | L1_DoubleJet_30_30_MassOverdR20               |
+2021-11-17 18:53:59 INFO : |    18 |  0.000% |    0.017% |  0.000% | L1_DoubleJet_30_30_MassOverdR4                |
+2021-11-17 18:53:59 INFO : |    21 |  0.000% |    0.017% |  0.000% | L1_DoubleJet_30_30_MassOverdR40               |
+2021-11-17 18:53:59 INFO : |    24 |  0.000% |    0.017% |  0.000% | L1_DoubleTau_30_24_MassOverdR20               |
+2021-11-17 18:53:59 INFO : |    22 |  0.000% |    0.017% |  0.000% | L1_DoubleTau_30_24_MassOverdR40               |
+2021-11-17 18:53:59 INFO : |    23 |  0.000% |    0.017% |  0.000% | L1_DoubleTau_30_24_MassOverdR70               |
+2021-11-17 18:53:59 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2021-11-17 18:53:59 INFO : |---------------------------------------------------------------------------------------|
+2021-11-17 18:53:59 INFO : distributing algorithms, shadow ratio: 0.0
+2021-11-17 18:53:59 INFO : starting algorithm distribution for 25 algorithms on 6 modules using shadow ratio of 0.0
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleMu_10_5_MassOverdR0p6 (5) to module 0
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleMu_10_5_MassOverdR10 (11) to module 1
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleMu_10_5_MassOverdR1p0 (6) to module 2
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleMu_10_5_MassOverdR1p6 (7) to module 3
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleMu_10_5_MassOverdR20 (12) to module 4
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleMu_10_5_MassOverdR2p0 (8) to module 5
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleMu_10_5_MassOverdR2p4 (9) to module 0
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleMu_10_5_MassOverdR4 (10) to module 1
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleMu_10_5_MassOverdR40 (13) to module 2
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleMu_10_5_MassOverdR70 (14) to module 3
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleMu_12_3_MassOverdR2p4 (4) to module 4
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleMu_13_6_MassOverdR0p6 (0) to module 5
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleMu_15_10_MassOverdR1p0 (1) to module 0
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleMu_20_15_MassOverdR1p6 (2) to module 1
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleMu_30_20_MassOverdR2p0 (3) to module 2
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleEG_15_10_MassOverdR10 (16) to module 3
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleEG_15_10_MassOverdR20 (17) to module 4
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleEG_15_10_MassOverdR4 (15) to module 5
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleJet_30_30_MassOverdR10 (19) to module 0
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleJet_30_30_MassOverdR20 (20) to module 1
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleJet_30_30_MassOverdR4 (18) to module 2
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleJet_30_30_MassOverdR40 (21) to module 3
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleTau_30_24_MassOverdR20 (24) to module 4
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleTau_30_24_MassOverdR40 (22) to module 5
+2021-11-17 18:53:59 INFO :  . adding L1_DoubleTau_30_24_MassOverdR70 (23) to module 0
+2021-11-17 18:53:59 INFO : |-----------------------------------------------------------------------------|
+2021-11-17 18:53:59 INFO : |                                                                             |
+2021-11-17 18:53:59 INFO : | Detailed distribition on 6 modules, shadow ratio: 0.0                       |
+2021-11-17 18:53:59 INFO : |                                                                             |
+2021-11-17 18:53:59 INFO : |------------|----------------------------------------------------------------|
+2021-11-17 18:53:59 INFO : | Module     | Algorithm                                                      |
+2021-11-17 18:53:59 INFO : | ID | Index | Index | Name                                                   |
+2021-11-17 18:53:59 INFO : |----|-------|-------|--------------------------------------------------------|
+2021-11-17 18:53:59 INFO : |  0 |     0 |     5 | L1_DoubleMu_10_5_MassOverdR0p6                         |
+2021-11-17 18:53:59 INFO : |  0 |     1 |     9 | L1_DoubleMu_10_5_MassOverdR2p4                         |
+2021-11-17 18:53:59 INFO : |  0 |     2 |     1 | L1_DoubleMu_15_10_MassOverdR1p0                        |
+2021-11-17 18:53:59 INFO : |  0 |     3 |    19 | L1_DoubleJet_30_30_MassOverdR10                        |
+2021-11-17 18:53:59 INFO : |  0 |     4 |    23 | L1_DoubleTau_30_24_MassOverdR70                        |
+2021-11-17 18:53:59 INFO : |  1 |     0 |    11 | L1_DoubleMu_10_5_MassOverdR10                          |
+2021-11-17 18:53:59 INFO : |  1 |     1 |    10 | L1_DoubleMu_10_5_MassOverdR4                           |
+2021-11-17 18:53:59 INFO : |  1 |     2 |     2 | L1_DoubleMu_20_15_MassOverdR1p6                        |
+2021-11-17 18:53:59 INFO : |  1 |     3 |    20 | L1_DoubleJet_30_30_MassOverdR20                        |
+2021-11-17 18:53:59 INFO : |  2 |     0 |     6 | L1_DoubleMu_10_5_MassOverdR1p0                         |
+2021-11-17 18:53:59 INFO : |  2 |     1 |    13 | L1_DoubleMu_10_5_MassOverdR40                          |
+2021-11-17 18:53:59 INFO : |  2 |     2 |     3 | L1_DoubleMu_30_20_MassOverdR2p0                        |
+2021-11-17 18:53:59 INFO : |  2 |     3 |    18 | L1_DoubleJet_30_30_MassOverdR4                         |
+2021-11-17 18:53:59 INFO : |  3 |     0 |     7 | L1_DoubleMu_10_5_MassOverdR1p6                         |
+2021-11-17 18:53:59 INFO : |  3 |     1 |    14 | L1_DoubleMu_10_5_MassOverdR70                          |
+2021-11-17 18:53:59 INFO : |  3 |     2 |    16 | L1_DoubleEG_15_10_MassOverdR10                         |
+2021-11-17 18:53:59 INFO : |  3 |     3 |    21 | L1_DoubleJet_30_30_MassOverdR40                        |
+2021-11-17 18:53:59 INFO : |  4 |     0 |    12 | L1_DoubleMu_10_5_MassOverdR20                          |
+2021-11-17 18:53:59 INFO : |  4 |     1 |     4 | L1_DoubleMu_12_3_MassOverdR2p4                         |
+2021-11-17 18:53:59 INFO : |  4 |     2 |    17 | L1_DoubleEG_15_10_MassOverdR20                         |
+2021-11-17 18:53:59 INFO : |  4 |     3 |    24 | L1_DoubleTau_30_24_MassOverdR20                        |
+2021-11-17 18:53:59 INFO : |  5 |     0 |     8 | L1_DoubleMu_10_5_MassOverdR2p0                         |
+2021-11-17 18:53:59 INFO : |  5 |     1 |     0 | L1_DoubleMu_13_6_MassOverdR0p6                         |
+2021-11-17 18:53:59 INFO : |  5 |     2 |    15 | L1_DoubleEG_15_10_MassOverdR4                          |
+2021-11-17 18:53:59 INFO : |  5 |     3 |    22 | L1_DoubleTau_30_24_MassOverdR40                        |
+2021-11-17 18:53:59 INFO : |----|-------|-------|--------------------------------------------------------|
+2021-11-17 18:53:59 INFO : |-----------------------------------------------------------------------------|
+2021-11-17 18:53:59 INFO : |                                                                             |
+2021-11-17 18:53:59 INFO : | Condition distribution, sorted by weight (ascending)                        |
+2021-11-17 18:53:59 INFO : |                                                                             |
+2021-11-17 18:53:59 INFO : |-----------------------------------------------------------------------------|
+2021-11-17 18:53:59 INFO : | Name                                             | Modules                  |
+2021-11-17 18:53:59 INFO : |--------------------------------------------------|--------------------------|
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i0                           | 5                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i1                           | 0                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i10                          | 1                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i11                          | 1                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i12                          | 4                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i13                          | 2                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i14                          | 3                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i2                           | 1                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i3                           | 2                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i4                           | 4                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i5                           | 0                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i6                           | 2                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i7                           | 3                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i8                           | 5                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i9                           | 0                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i15                          | 5                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i16                          | 3                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i17                          | 4                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i18                          | 2                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i19                          | 0                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i20                          | 1                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i21                          | 3                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i22                          | 5                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i23                          | 0                        |
+2021-11-17 18:53:59 INFO : | InvariantMassDeltaR_i24                          | 4                        |
+2021-11-17 18:53:59 INFO : |--------------------------------------------------|--------------------------|
+2021-11-17 18:53:59 INFO : |--------------------------------------------------------------------------------------|
+2021-11-17 18:53:59 INFO : |                                                                                      |
+2021-11-17 18:53:59 INFO : | Summary for distribution on 6 modules, shadow ratio: 0.0                             |
+2021-11-17 18:53:59 INFO : |                                                                                      |
+2021-11-17 18:53:59 INFO : |-------------------------------------|------------------------------------------------|
+2021-11-17 18:53:59 INFO : |                                     |                    Payload                     |
+2021-11-17 18:53:59 INFO : |-------------------------------------|------------------------------------------------|
+2021-11-17 18:53:59 INFO : |              Module                 |   SliceLUTs    |     BRAMs     |     DSPs      |
+2021-11-17 18:53:59 INFO : |-------------------------------------|------------------------------------------------|
+2021-11-17 18:53:59 INFO : | ID | Algorithms | Conditions | Rel. | Value  |  [%]  | Value |  [%]  | Value |  [%]  |
+2021-11-17 18:53:59 INFO : |----|------------|------------|------|--------|-------|-------|-------|-------|-------|
+2021-11-17 18:53:59 INFO : |  0 |          5 |          5 | 1.00 | 124439 | 28.73 |  2208 | 150.20 |   960 | 26.67 |
+2021-11-17 18:53:59 INFO : |  1 |          4 |          4 | 1.00 |  86502 | 19.97 |  1548 | 105.31 |   564 | 15.67 |
+2021-11-17 18:53:59 INFO : |  2 |          4 |          4 | 1.00 |  86502 | 19.97 |  1548 | 105.31 |   564 | 15.67 |
+2021-11-17 18:53:59 INFO : |  3 |          4 |          4 | 1.00 | 124080 | 28.64 |  2208 | 150.20 |   960 | 26.67 |
+2021-11-17 18:53:59 INFO : |  4 |          4 |          4 | 1.00 | 124080 | 28.64 |  2208 | 150.20 |   960 | 26.67 |
+2021-11-17 18:53:59 INFO : |  5 |          4 |          4 | 1.00 | 124080 | 28.64 |  2208 | 150.20 |   960 | 26.67 |
+2021-11-17 18:53:59 INFO : |----|------------|------------|------|--------|-------|-------|-------|-------|-------|
+2021-11-17 18:53:59 INFO : writing VHDL modules...
+2021-11-17 18:54:00 INFO : writing 25 algorithms to 6 module(s)
+2021-11-17 18:54:00 INFO : writing output for module: 0
+2021-11-17 18:54:00 INFO : algo_index.vhd          : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_0/src/algo_index.vhd
+2021-11-17 18:54:00 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_0/src/gtl_module_signals.vhd
+2021-11-17 18:54:00 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_0/src/gtl_module_instances.vhd
+2021-11-17 18:54:00 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_0/src/ugt_constants.vhd
+2021-11-17 18:54:00 INFO : writing output for module: 1
+2021-11-17 18:54:00 INFO : algo_index.vhd          : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_1/src/algo_index.vhd
+2021-11-17 18:54:00 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_1/src/gtl_module_signals.vhd
+2021-11-17 18:54:00 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_1/src/gtl_module_instances.vhd
+2021-11-17 18:54:00 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_1/src/ugt_constants.vhd
+2021-11-17 18:54:00 INFO : writing output for module: 2
+2021-11-17 18:54:00 INFO : algo_index.vhd          : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_2/src/algo_index.vhd
+2021-11-17 18:54:00 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_2/src/gtl_module_signals.vhd
+2021-11-17 18:54:00 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_2/src/gtl_module_instances.vhd
+2021-11-17 18:54:00 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_2/src/ugt_constants.vhd
+2021-11-17 18:54:00 INFO : writing output for module: 3
+2021-11-17 18:54:00 INFO : algo_index.vhd          : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_3/src/algo_index.vhd
+2021-11-17 18:54:00 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_3/src/gtl_module_signals.vhd
+2021-11-17 18:54:00 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_3/src/gtl_module_instances.vhd
+2021-11-17 18:54:00 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_3/src/ugt_constants.vhd
+2021-11-17 18:54:00 INFO : writing output for module: 4
+2021-11-17 18:54:00 INFO : algo_index.vhd          : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_4/src/algo_index.vhd
+2021-11-17 18:54:00 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_4/src/gtl_module_signals.vhd
+2021-11-17 18:54:00 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_4/src/gtl_module_instances.vhd
+2021-11-17 18:54:00 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_4/src/ugt_constants.vhd
+2021-11-17 18:54:00 INFO : writing output for module: 5
+2021-11-17 18:54:00 INFO : algo_index.vhd          : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_5/src/algo_index.vhd
+2021-11-17 18:54:00 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_5/src/gtl_module_signals.vhd
+2021-11-17 18:54:00 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_5/src/gtl_module_instances.vhd
+2021-11-17 18:54:00 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_test_MassOverdR-d1/vhdl/module_5/src/ugt_constants.vhd
+2021-11-17 18:54:00 INFO : writing updated XML file /home/bergauer/Downloads/L1Menu_test_mass_over_dr_muon_calo_reduced_v5.xml
+2021-11-17 18:54:00 INFO : reading source XML menu file /home/bergauer/Downloads/L1Menu_test_mass_over_dr_muon_calo_reduced_v5.xml
+2021-11-17 18:54:00 INFO : processing menu "L1Menu_test_MassOverdR" ... 
+2021-11-17 18:54:00 INFO : updating menu information...
+2021-11-17 18:54:00 INFO : uuid_menu     : 54f59fe1-af7f-4a24-9724-86f1de3022e2
+2021-11-17 18:54:00 INFO : uuid_firmware : 1d231fae-c7f4-40b1-aab7-c8e904396354
+2021-11-17 18:54:00 INFO : n_modules     : 6
+2021-11-17 18:54:00 INFO : writing target XML menu file /home/bergauer/L1Menu_test_MassOverdR-d1/xml/L1Menu_test_MassOverdR-d1.xml
+2021-11-17 18:54:01 INFO : generating menu documentation...
+2021-11-17 18:54:01 INFO : writing HTML documentation /home/bergauer/L1Menu_test_MassOverdR-d1/xml/L1Menu_test_MassOverdR-d1.xml
+2021-11-17 18:54:03 INFO : writing TWIKI page template /home/bergauer/L1Menu_test_MassOverdR-d1/xml/L1Menu_test_MassOverdR-d1.xml
+2021-11-17 18:54:04 INFO : patching filenames...
+2021-11-17 18:54:04 INFO : /home/bergauer/L1Menu_test_MassOverdR-d1/doc/L1Menu_test_MassOverdR.twiki --> /home/bergauer/L1Menu_test_MassOverdR-d1/doc/L1Menu_test_MassOverdR-d1.twiki
+2021-11-17 18:54:04 INFO : /home/bergauer/L1Menu_test_MassOverdR-d1/doc/L1Menu_test_MassOverdR.html --> /home/bergauer/L1Menu_test_MassOverdR-d1/doc/L1Menu_test_MassOverdR-d1.html
+2021-11-17 18:54:04 INFO : done.
