@@ -1,0 +1,33 @@
+{
+  "firmware_uuid" : "f6d3d0f4-b1d0-4362-8a38-d9e4a47dc4d9",
+  "menu_uuid"     : "54f59fe1-af7f-4a24-9724-86f1de3022e2",
+  "n_modules"     : 6,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_DoubleMu_13_6_MassOverdR0p6", 0, 5, 1],
+    ["L1_DoubleMu_15_10_MassOverdR1p0", 1, 0, 2],
+    ["L1_DoubleMu_20_15_MassOverdR1p6", 2, 1, 2],
+    ["L1_DoubleMu_30_20_MassOverdR2p0", 3, 2, 2],
+    ["L1_DoubleMu_12_3_MassOverdR2p4", 4, 4, 1],
+    ["L1_DoubleMu_10_5_MassOverdR0p6", 5, 0, 0],
+    ["L1_DoubleMu_10_5_MassOverdR1p0", 6, 2, 0],
+    ["L1_DoubleMu_10_5_MassOverdR1p6", 7, 3, 0],
+    ["L1_DoubleMu_10_5_MassOverdR2p0", 8, 5, 0],
+    ["L1_DoubleMu_10_5_MassOverdR2p4", 9, 0, 1],
+    ["L1_DoubleMu_10_5_MassOverdR4", 10, 1, 1],
+    ["L1_DoubleMu_10_5_MassOverdR10", 11, 1, 0],
+    ["L1_DoubleMu_10_5_MassOverdR20", 12, 4, 0],
+    ["L1_DoubleMu_10_5_MassOverdR40", 13, 2, 1],
+    ["L1_DoubleMu_10_5_MassOverdR70", 14, 3, 1],
+    ["L1_DoubleEG_15_10_MassOverdR4", 15, 5, 2],
+    ["L1_DoubleEG_15_10_MassOverdR10", 16, 3, 2],
+    ["L1_DoubleEG_15_10_MassOverdR20", 17, 4, 2],
+    ["L1_DoubleJet_30_30_MassOverdR4", 18, 2, 3],
+    ["L1_DoubleJet_30_30_MassOverdR10", 19, 0, 3],
+    ["L1_DoubleJet_30_30_MassOverdR20", 20, 1, 3],
+    ["L1_DoubleJet_30_30_MassOverdR40", 21, 3, 3],
+    ["L1_DoubleTau_30_24_MassOverdR40", 22, 5, 3],
+    ["L1_DoubleTau_30_24_MassOverdR70", 23, 0, 4],
+    ["L1_DoubleTau_30_24_MassOverdR20", 24, 4, 3]
+  ]
+}

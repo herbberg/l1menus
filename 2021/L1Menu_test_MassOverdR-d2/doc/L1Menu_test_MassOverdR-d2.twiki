@@ -1,0 +1,115 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_test_MassOverdR.html" }%
+
+---+!! !L1Menu_test_MassOverdR
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_test_MassOverdR | 0.8 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_test_MassOverdR |
+|Menu UUID: | 54f59fe1-af7f-4a24-9724-86f1de3022e2 |
+|Firmware UUID: | f6d3d0f4-b1d0-4362-8a38-d9e4a47dc4d9  |
+|Associated L1 scale DB key: | scales_2021_03_02 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 25 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Mass algorithm triggers: | 25 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Mass algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_13_6_MassOverdR0p6 ][L1_DoubleMu_13_6_MassOverdR0p6]]   | L1_DoubleMu_13_6_MassOverdR0p6  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_15_10_MassOverdR1p0 ][L1_DoubleMu_15_10_MassOverdR1p0]]   | L1_DoubleMu_15_10_MassOverdR1p0  | 1 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_20_15_MassOverdR1p6 ][L1_DoubleMu_20_15_MassOverdR1p6]]   | L1_DoubleMu_20_15_MassOverdR1p6  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_30_20_MassOverdR2p0 ][L1_DoubleMu_30_20_MassOverdR2p0]]   | L1_DoubleMu_30_20_MassOverdR2p0  | 3 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_12_3_MassOverdR2p4 ][L1_DoubleMu_12_3_MassOverdR2p4]]   | L1_DoubleMu_12_3_MassOverdR2p4  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR0p6 ][L1_DoubleMu_10_5_MassOverdR0p6]]   | L1_DoubleMu_10_5_MassOverdR0p6  | 5 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR1p0 ][L1_DoubleMu_10_5_MassOverdR1p0]]   | L1_DoubleMu_10_5_MassOverdR1p0  | 6 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR1p6 ][L1_DoubleMu_10_5_MassOverdR1p6]]   | L1_DoubleMu_10_5_MassOverdR1p6  | 7 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR2p0 ][L1_DoubleMu_10_5_MassOverdR2p0]]   | L1_DoubleMu_10_5_MassOverdR2p0  | 8 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR2p4 ][L1_DoubleMu_10_5_MassOverdR2p4]]   | L1_DoubleMu_10_5_MassOverdR2p4  | 9 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR4 ][L1_DoubleMu_10_5_MassOverdR4]]   | L1_DoubleMu_10_5_MassOverdR4  | 10 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR10 ][L1_DoubleMu_10_5_MassOverdR10]]   | L1_DoubleMu_10_5_MassOverdR10  | 11 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR20 ][L1_DoubleMu_10_5_MassOverdR20]]   | L1_DoubleMu_10_5_MassOverdR20  | 12 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR40 ][L1_DoubleMu_10_5_MassOverdR40]]   | L1_DoubleMu_10_5_MassOverdR40  | 13 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR70 ][L1_DoubleMu_10_5_MassOverdR70]]   | L1_DoubleMu_10_5_MassOverdR70  | 14 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEG_15_10_MassOverdR4 ][L1_DoubleEG_15_10_MassOverdR4]]   | L1_DoubleEG_15_10_MassOverdR4  | 15 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEG_15_10_MassOverdR10 ][L1_DoubleEG_15_10_MassOverdR10]]   | L1_DoubleEG_15_10_MassOverdR10  | 16 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEG_15_10_MassOverdR20 ][L1_DoubleEG_15_10_MassOverdR20]]   | L1_DoubleEG_15_10_MassOverdR20  | 17 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet_30_30_MassOverdR4 ][L1_DoubleJet_30_30_MassOverdR4]]   | L1_DoubleJet_30_30_MassOverdR4  | 18 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet_30_30_MassOverdR10 ][L1_DoubleJet_30_30_MassOverdR10]]   | L1_DoubleJet_30_30_MassOverdR10  | 19 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet_30_30_MassOverdR20 ][L1_DoubleJet_30_30_MassOverdR20]]   | L1_DoubleJet_30_30_MassOverdR20  | 20 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet_30_30_MassOverdR40 ][L1_DoubleJet_30_30_MassOverdR40]]   | L1_DoubleJet_30_30_MassOverdR40  | 21 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleTau_30_24_MassOverdR40 ][L1_DoubleTau_30_24_MassOverdR40]]   | L1_DoubleTau_30_24_MassOverdR40  | 22 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleTau_30_24_MassOverdR70 ][L1_DoubleTau_30_24_MassOverdR70]]   | L1_DoubleTau_30_24_MassOverdR70  | 23 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleTau_30_24_MassOverdR20 ][L1_DoubleTau_30_24_MassOverdR20]]   | L1_DoubleTau_30_24_MassOverdR20  | 24 |  |
+!Mass algorithm triggers: 25 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_13_6_MassOverdR0p6 ][L1_DoubleMu_13_6_MassOverdR0p6]]   |L1_DoubleMu_13_6_MassOverdR0p6 |0 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_15_10_MassOverdR1p0 ][L1_DoubleMu_15_10_MassOverdR1p0]]   |L1_DoubleMu_15_10_MassOverdR1p0 |1 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_20_15_MassOverdR1p6 ][L1_DoubleMu_20_15_MassOverdR1p6]]   |L1_DoubleMu_20_15_MassOverdR1p6 |2 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_30_20_MassOverdR2p0 ][L1_DoubleMu_30_20_MassOverdR2p0]]   |L1_DoubleMu_30_20_MassOverdR2p0 |3 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_12_3_MassOverdR2p4 ][L1_DoubleMu_12_3_MassOverdR2p4]]   |L1_DoubleMu_12_3_MassOverdR2p4 |4 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR0p6 ][L1_DoubleMu_10_5_MassOverdR0p6]]   |L1_DoubleMu_10_5_MassOverdR0p6 |5 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR1p0 ][L1_DoubleMu_10_5_MassOverdR1p0]]   |L1_DoubleMu_10_5_MassOverdR1p0 |6 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR1p6 ][L1_DoubleMu_10_5_MassOverdR1p6]]   |L1_DoubleMu_10_5_MassOverdR1p6 |7 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR2p0 ][L1_DoubleMu_10_5_MassOverdR2p0]]   |L1_DoubleMu_10_5_MassOverdR2p0 |8 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR2p4 ][L1_DoubleMu_10_5_MassOverdR2p4]]   |L1_DoubleMu_10_5_MassOverdR2p4 |9 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR4 ][L1_DoubleMu_10_5_MassOverdR4]]   |L1_DoubleMu_10_5_MassOverdR4 |10 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR10 ][L1_DoubleMu_10_5_MassOverdR10]]   |L1_DoubleMu_10_5_MassOverdR10 |11 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR20 ][L1_DoubleMu_10_5_MassOverdR20]]   |L1_DoubleMu_10_5_MassOverdR20 |12 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR40 ][L1_DoubleMu_10_5_MassOverdR40]]   |L1_DoubleMu_10_5_MassOverdR40 |13 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu_10_5_MassOverdR70 ][L1_DoubleMu_10_5_MassOverdR70]]   |L1_DoubleMu_10_5_MassOverdR70 |14 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEG_15_10_MassOverdR4 ][L1_DoubleEG_15_10_MassOverdR4]]   |L1_DoubleEG_15_10_MassOverdR4 |15 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEG_15_10_MassOverdR10 ][L1_DoubleEG_15_10_MassOverdR10]]   |L1_DoubleEG_15_10_MassOverdR10 |16 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEG_15_10_MassOverdR20 ][L1_DoubleEG_15_10_MassOverdR20]]   |L1_DoubleEG_15_10_MassOverdR20 |17 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet_30_30_MassOverdR4 ][L1_DoubleJet_30_30_MassOverdR4]]   |L1_DoubleJet_30_30_MassOverdR4 |18 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet_30_30_MassOverdR10 ][L1_DoubleJet_30_30_MassOverdR10]]   |L1_DoubleJet_30_30_MassOverdR10 |19 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet_30_30_MassOverdR20 ][L1_DoubleJet_30_30_MassOverdR20]]   |L1_DoubleJet_30_30_MassOverdR20 |20 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleJet_30_30_MassOverdR40 ][L1_DoubleJet_30_30_MassOverdR40]]   |L1_DoubleJet_30_30_MassOverdR40 |21 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleTau_30_24_MassOverdR40 ][L1_DoubleTau_30_24_MassOverdR40]]   |L1_DoubleTau_30_24_MassOverdR40 |22 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleTau_30_24_MassOverdR70 ][L1_DoubleTau_30_24_MassOverdR70]]   |L1_DoubleTau_30_24_MassOverdR70 |23 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleTau_30_24_MassOverdR20 ][L1_DoubleTau_30_24_MassOverdR20]]   |L1_DoubleTau_30_24_MassOverdR20 |24 |4 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
