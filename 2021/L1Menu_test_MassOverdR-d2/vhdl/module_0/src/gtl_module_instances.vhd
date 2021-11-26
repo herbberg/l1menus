@@ -10,7 +10,7 @@
 -- 54f59fe1-af7f-4a24-9724-86f1de3022e2
 
 -- Unique ID of firmware implementation:
--- 68ad0e11-7f0f-4c7e-8e68-db468a7ac1a5
+-- ccbe692f-d5f9-4e64-8309-c0500d33d371
 
 -- Scale set:
 -- scales_2021_03_02
@@ -257,6 +257,7 @@ calc_obj_parameter_tau_bx_0_i: entity work.obj_parameter
 calc_deta_dphi_integer_mu_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
     generic map(
         phi_half_range => MUON_PHI_HALF_RANGE_BINS,
+        phi_h_r_half_range => MUON_PHI_HALF_RES_HALF_RANGE_BINS,
         nr_obj1 => NR_MU_OBJECTS,
         type_obj1 => MU_TYPE,
         nr_obj2 => NR_MU_OBJECTS,
