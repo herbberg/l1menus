@@ -10,7 +10,7 @@
 -- 54f59fe1-af7f-4a24-9724-86f1de3022e2
 
 -- Unique ID of firmware implementation:
--- f6d3d0f4-b1d0-4362-8a38-d9e4a47dc4d9
+-- 68ad0e11-7f0f-4c7e-8e68-db468a7ac1a5
 
 -- Scale set:
 -- scales_2021_03_02
@@ -182,6 +182,8 @@ calc_obj_parameter_mu_bx_0_i: entity work.obj_parameter
         upt_vector => mu_bx_0_upt_vector,
         eta_integer => mu_bx_0_eta_integer,
         phi_integer => mu_bx_0_phi_integer,
+        eta_integer_h_r => mu_bx_0_eta_integer_half_res,
+        phi_integer_h_r => mu_bx_0_phi_integer_half_res,
         cos_phi => mu_bx_0_cos_phi,
         sin_phi => mu_bx_0_sin_phi
     );
@@ -218,10 +220,14 @@ calc_deta_dphi_integer_mu_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
         phi_integer_obj1 => mu_bx_0_phi_integer,
         eta_integer_obj2 => mu_bx_0_eta_integer,
         phi_integer_obj2 => mu_bx_0_phi_integer,
-        deta_integer => mu_mu_bx_0_bx_0_deta_integer,
+        eta_integer_h_r_obj1 => mu_bx_0_eta_integer_half_res,
+        phi_integer_h_r_obj1 => mu_bx_0_phi_integer_half_res,
+        eta_integer_h_r_obj2 => mu_bx_0_eta_integer_half_res,
+        phi_integer_h_r_obj2 => mu_bx_0_phi_integer_half_res,
         deta_integer_half_res => mu_mu_bx_0_bx_0_deta_integer_half_res,
-        dphi_integer => mu_mu_bx_0_bx_0_dphi_integer,
-        dphi_integer_half_res => mu_mu_bx_0_bx_0_dphi_integer_half_res
+        dphi_integer_half_res => mu_mu_bx_0_bx_0_dphi_integer_half_res,
+        deta_integer => mu_mu_bx_0_bx_0_deta_integer,
+        dphi_integer => mu_mu_bx_0_bx_0_dphi_integer
     );
 --
 calc_deta_dphi_integer_jet_jet_bx_0_bx_0_i: entity work.deta_dphi_calculations
@@ -237,9 +243,7 @@ calc_deta_dphi_integer_jet_jet_bx_0_bx_0_i: entity work.deta_dphi_calculations
         eta_integer_obj2 => jet_bx_0_eta_integer,
         phi_integer_obj2 => jet_bx_0_phi_integer,
         deta_integer => jet_jet_bx_0_bx_0_deta_integer,
-        deta_integer_half_res => jet_jet_bx_0_bx_0_deta_integer_half_res,
-        dphi_integer => jet_jet_bx_0_bx_0_dphi_integer,
-        dphi_integer_half_res => jet_jet_bx_0_bx_0_dphi_integer_half_res
+        dphi_integer => jet_jet_bx_0_bx_0_dphi_integer
     );
 --
 -- eta, dphi, cosh deta and cos dphi LUTs for correlation conditions (used for DR and mass)
