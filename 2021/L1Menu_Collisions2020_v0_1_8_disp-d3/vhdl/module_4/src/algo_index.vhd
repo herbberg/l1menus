@@ -10,7 +10,7 @@
 -- a9cbea99-f53d-4889-9e6d-38172b34621e
 
 -- Unique ID of firmware implementation:
--- 9c506976-5929-4592-a6b6-32a017b44ee9
+-- 74e0e4bb-6110-485b-99b2-bc1598fc15bf
 
 -- Scale set:
 -- scales_2021_03_02
@@ -69,8 +69,8 @@ constant global_index: global_index_array := (
         181, -- module_index: 42, name: L1_SingleLooseIsoEG30er2p5
         199, -- module_index: 43, name: L1_IsoEG32er2p5_Mt48
          77, -- module_index: 44, name: L1_TripleMu_5_3p5_2p5
-         84, -- module_index: 45, name: L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_Mass_5to17
-         83, -- module_index: 46, name: L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_OS_Mass_5to17
+         83, -- module_index: 45, name: L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_OS_Mass_5to17
+         84, -- module_index: 46, name: L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_Mass_5to17
          89, -- module_index: 47, name: L1_QuadMu0
          88, -- module_index: 48, name: L1_QuadMu0_OQ
          69, -- module_index: 49, name: L1_QuadMu0_OQ_OS

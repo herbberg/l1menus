@@ -10,7 +10,7 @@
 -- a9cbea99-f53d-4889-9e6d-38172b34621e
 
 -- Unique ID of firmware implementation:
--- 9c506976-5929-4592-a6b6-32a017b44ee9
+-- 74e0e4bb-6110-485b-99b2-bc1598fc15bf
 
 -- Scale set:
 -- scales_2021_03_02
@@ -1266,7 +1266,7 @@ algo(39) <= l1_double_mu4p5_sq_os_d_r_max1p2;
 
 -- 99 L1_Mu20_EG10er2p5 : MU20[MU-QLTY_SNGL] AND EG10[EG-ETA_2p52]
 l1_mu20_eg10er2p5 <= single_mu_i18 and single_eg_i81;
-algo(10) <= l1_mu20_eg10er2p5;
+algo(11) <= l1_mu20_eg10er2p5;
 
 -- 125 L1_Mu3_Jet120er2p5_dR_Max0p8 : dist{MU3[MU-QLTY_SNGL],JET120[JET-ETA_2p52]}[DR_MAX_0p8]
 l1_mu3_jet120er2p5_d_r_max0p8 <= calo_muon_correlation_i101;
@@ -1286,7 +1286,7 @@ algo(16) <= l1_mu0upt20ip03;
 
 -- 160 L1_SingleEG10er2p5 : EG10[EG-ETA_2p52]
 l1_single_eg10er2p5 <= single_eg_i81;
-algo(11) <= l1_single_eg10er2p5;
+algo(10) <= l1_single_eg10er2p5;
 
 -- 188 L1_SingleIsoEG28_FWD2p5 : EG28[EG-ETA_FWD_2p52_POS,EG-ISO_0xA] OR EG28[EG-ETA_FWD_2p52_NEG,EG-ISO_0xA]
 l1_single_iso_eg28_fwd2p5 <= single_eg_i156 or single_eg_i157;

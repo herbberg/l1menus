@@ -10,7 +10,7 @@
 -- a9cbea99-f53d-4889-9e6d-38172b34621e
 
 -- Unique ID of firmware implementation:
--- 9c506976-5929-4592-a6b6-32a017b44ee9
+-- 74e0e4bb-6110-485b-99b2-bc1598fc15bf
 
 -- Scale set:
 -- scales_2021_03_02
@@ -34,8 +34,8 @@ constant global_index: global_index_array := (
         399, -- module_index: 7, name: L1_HTT160er
         406, -- module_index: 8, name: L1_HTT450er
          18, -- module_index: 9, name: L1_SingleMu20
-         99, -- module_index: 10, name: L1_Mu20_EG10er2p5
-        160, -- module_index: 11, name: L1_SingleEG10er2p5
+        160, -- module_index: 10, name: L1_SingleEG10er2p5
+         99, -- module_index: 11, name: L1_Mu20_EG10er2p5
         313, -- module_index: 12, name: L1_SingleJet180
         310, -- module_index: 13, name: L1_SingleJet60
         302, -- module_index: 14, name: L1_Mu0upt10
