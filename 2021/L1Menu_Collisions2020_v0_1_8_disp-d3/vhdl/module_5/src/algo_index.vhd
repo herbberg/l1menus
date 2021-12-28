@@ -10,7 +10,7 @@
 -- a9cbea99-f53d-4889-9e6d-38172b34621e
 
 -- Unique ID of firmware implementation:
--- 65cef5d4-7bc1-40f7-b6d6-a6c72c41ebe4
+-- 462e4478-bc5d-4931-8de5-7dcecc3cf0b4
 
 -- Scale set:
 -- scales_2021_03_02
@@ -36,8 +36,8 @@ constant global_index: global_index_array := (
          23, -- module_index: 9, name: L1_SingleMu25
         173, -- module_index: 10, name: L1_SingleEG50
         312, -- module_index: 11, name: L1_SingleJet120
-        360, -- module_index: 12, name: L1_DoubleJet_115_40_DoubleJet40_Mass_Min620_Jet60TT28
-        361, -- module_index: 13, name: L1_DoubleJet_120_45_DoubleJet45_Mass_Min620_Jet60TT28
+        361, -- module_index: 12, name: L1_DoubleJet_120_45_DoubleJet45_Mass_Min620_Jet60TT28
+        360, -- module_index: 13, name: L1_DoubleJet_115_40_DoubleJet40_Mass_Min620_Jet60TT28
         126, -- module_index: 14, name: L1_Mu3_Jet120er2p5_dR_Max0p4
         134, -- module_index: 15, name: L1_Mu10er2p3_Jet32er2p3_dR_Max0p4_DoubleJet32er2p3_dEta_Max1p6
         143, -- module_index: 16, name: L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8

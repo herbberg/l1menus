@@ -10,7 +10,7 @@
 -- a9cbea99-f53d-4889-9e6d-38172b34621e
 
 -- Unique ID of firmware implementation:
--- 65cef5d4-7bc1-40f7-b6d6-a6c72c41ebe4
+-- 462e4478-bc5d-4931-8de5-7dcecc3cf0b4
 
 -- Scale set:
 -- scales_2021_03_02
@@ -35,13 +35,13 @@ constant global_index: global_index_array := (
         405, -- module_index: 8, name: L1_HTT400er
          17, -- module_index: 9, name: L1_SingleMu18
          10, -- module_index: 10, name: L1_SingleMu5
-         97, -- module_index: 11, name: L1_Mu7_EG20er2p5
-         96, -- module_index: 12, name: L1_Mu5_EG23er2p5
-         98, -- module_index: 13, name: L1_Mu7_EG23er2p5
-        100, -- module_index: 14, name: L1_Mu5_LooseIsoEG20er2p5
-        101, -- module_index: 15, name: L1_Mu7_LooseIsoEG20er2p5
-        102, -- module_index: 16, name: L1_Mu7_LooseIsoEG23er2p5
-         12, -- module_index: 17, name: L1_SingleMu7
+         98, -- module_index: 11, name: L1_Mu7_EG23er2p5
+        100, -- module_index: 12, name: L1_Mu5_LooseIsoEG20er2p5
+        101, -- module_index: 13, name: L1_Mu7_LooseIsoEG20er2p5
+        102, -- module_index: 14, name: L1_Mu7_LooseIsoEG23er2p5
+         12, -- module_index: 15, name: L1_SingleMu7
+         97, -- module_index: 16, name: L1_Mu7_EG20er2p5
+         96, -- module_index: 17, name: L1_Mu5_EG23er2p5
          29, -- module_index: 18, name: L1_SingleMu10er1p5
          32, -- module_index: 19, name: L1_SingleMu16er1p5
          26, -- module_index: 20, name: L1_SingleMu7er1p5
@@ -68,8 +68,8 @@ constant global_index: global_index_array := (
         178, -- module_index: 41, name: L1_SingleLooseIsoEG28er2p5
         197, -- module_index: 42, name: L1_IsoEG32er2p5_Mt40
          76, -- module_index: 43, name: L1_TripleMu_5SQ_3SQ_0OQ
-         86, -- module_index: 44, name: L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9
-         85, -- module_index: 45, name: L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9
+         85, -- module_index: 44, name: L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9
+         86, -- module_index: 45, name: L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9
         364, -- module_index: 46, name: L1_DoubleJet_80_30_Mass_Min420_IsoTau40_RmOvlp
         124, -- module_index: 47, name: L1_Mu3_Jet80er2p5_dR_Max0p4
         357, -- module_index: 48, name: L1_DoubleJet_110_35_DoubleJet35_Mass_Min620

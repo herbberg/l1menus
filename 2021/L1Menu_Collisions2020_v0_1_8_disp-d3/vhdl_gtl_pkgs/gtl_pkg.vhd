@@ -1,7 +1,11 @@
-constant PHI_MIN : real := 0.0; -- phi min.: 0.0
-constant PHI_MAX : real := 6.283185307179586; -- phi max.: 2*PI
-constant ETA_MIN : real := -5.0; -- eta min.: -5.0
-constant ETA_MAX : real := 5.0; -- eta max.: +5.0
+constant PHI_MIN : real := 0.0;
+constant PHI_MAX : real := 6.283185307179586;
+constant ETA_MIN : real := -5.0;
+constant ETA_MAX : real := 5.0;
+
+constant MUON_ETA_STEP : real := 0.010875;
+constant CALO_PHI_BINS : positive := 144;
+constant MUON_PHI_BINS : positive := 576;
 
 -- MUON objects bits
 constant MUON_PHI_BITS : natural := 10;
@@ -114,15 +118,15 @@ constant CENT_UBITS_LOW : natural := 4;
 constant CENT_UBITS_HIGH: natural := 7;
 
 -- PRECISION
-constant DETA_DPHI_PRECISION_ALL: positive := 3; -- 3 digit after decimal point
-constant CALO_PT_PRECISION : positive := 1; -- 1 digit after decimal point
-constant MUON_PT_PRECISION : positive := 1; -- 1 digit after decimal point
-constant MUON_UPT_PRECISION : positive := 1; -- 1 digit after decimal point
-constant CALO_CALO_COSH_COS_PRECISION : positive := 3; -- 3 digit after decimal point
-constant CALO_MUON_COSH_COS_PRECISION : positive := 4; -- 4 digit after decimal point
-constant MUON_MUON_COSH_COS_PRECISION : positive := 4; -- 4 digits after decimal point
-constant CALO_SIN_COS_PRECISION : positive := 3; -- 3 digit after decimal point
-constant MUON_SIN_COS_PRECISION : positive := 4; -- 4 digit after decimal point
+constant DETA_DPHI_PRECISION_ALL: positive := 3;
+constant CALO_PT_PRECISION : positive := 1;
+constant MUON_PT_PRECISION : positive := 1;
+constant MUON_UPT_PRECISION : positive := 1;
+constant CALO_CALO_COSH_COS_PRECISION : positive := 3;
+constant CALO_MUON_COSH_COS_PRECISION : positive := 4;
+constant MUON_MUON_COSH_COS_PRECISION : positive := 4;
+constant CALO_SIN_COS_PRECISION : positive := 3;
+constant MUON_SIN_COS_PRECISION : positive := 4;
 
 -- VECTOR_WIDTHs
 constant CALO_CALO_COSH_COS_VECTOR_WIDTH: positive := log2c(10598282); -- max. value cosh_deta-cos_dphi => [10597282-(-1000)] - highest value in LUT
