@@ -10,7 +10,7 @@
 -- a9cbea99-f53d-4889-9e6d-38172b34621e
 
 -- Unique ID of firmware implementation:
--- 74e0e4bb-6110-485b-99b2-bc1598fc15bf
+-- 65cef5d4-7bc1-40f7-b6d6-a6c72c41ebe4
 
 -- Scale set:
 -- scales_2021_03_02
@@ -1590,15 +1590,15 @@ algo(44) <= l1_loose_iso_eg24er2p1_htt100er;
 
 -- 239 L1_LooseIsoEG26er2p1_HTT100er : EG26[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg26er2p1_htt100er <= single_eg_i191 and single_htt_i190;
-algo(43) <= l1_loose_iso_eg26er2p1_htt100er;
+algo(42) <= l1_loose_iso_eg26er2p1_htt100er;
 
 -- 240 L1_LooseIsoEG28er2p1_HTT100er : EG28[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg28er2p1_htt100er <= single_eg_i147 and single_htt_i190;
-algo(42) <= l1_loose_iso_eg28er2p1_htt100er;
+algo(45) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 241 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i192 and single_htt_i190;
-algo(45) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(43) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 263 L1_ETT70 : ETT70
 l1_ett70 <= single_ett_i402;
