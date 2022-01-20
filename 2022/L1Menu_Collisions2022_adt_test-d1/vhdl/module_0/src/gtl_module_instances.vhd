@@ -50,8 +50,8 @@
 -- l1_single_mu0 <= single_mu_i0;
 -- algo(0) <= l1_single_mu0;
 
--- 0 L1_SingleMu0 : MU0
-l1_adt <= '0';
+-- 0 dummy ADT (used EG bit 0 for test!)
+l1_adt <= bx_data.eg(2)(0);
 algo(0) <= l1_adt;
 
 -- ========================================================
