@@ -24,21 +24,21 @@
 -- ========================================================
 -- Instantiations of conditions
 --
-cond_single_mu_i0_i: entity work.comb_conditions
-    generic map(
--- no slice requirements
--- object cuts
-        pt_thresholds_obj1 => (X"0001", X"0000", X"0000", X"0000"),
--- number of objects and type
-        nr_obj1 => NR_MU_OBJECTS,
-        type_obj1 => MU_TYPE,
-        nr_templates => 1
-    )
-    port map(
-        lhc_clk,
-        obj1_muon =>bx_data. mu(2),
-        condition_o => single_mu_i0
-    );
+-- cond_single_mu_i0_i: entity work.comb_conditions
+--     generic map(
+-- -- no slice requirements
+-- -- object cuts
+--         pt_thresholds_obj1 => (X"0001", X"0000", X"0000", X"0000"),
+-- -- number of objects and type
+--         nr_obj1 => NR_MU_OBJECTS,
+--         type_obj1 => MU_TYPE,
+--         nr_templates => 1
+--     )
+--     port map(
+--         lhc_clk,
+--         obj1_muon =>bx_data. mu(2),
+--         condition_o => single_mu_i0
+--     );
 
 -- External condition assignment
 
@@ -46,9 +46,13 @@ cond_single_mu_i0_i: entity work.comb_conditions
 -- ========================================================
 -- Instantiations of algorithms
 
+-- -- 0 L1_SingleMu0 : MU0
+-- l1_single_mu0 <= single_mu_i0;
+-- algo(0) <= l1_single_mu0;
+
 -- 0 L1_SingleMu0 : MU0
-l1_single_mu0 <= single_mu_i0;
-algo(0) <= l1_single_mu0;
+l1_adt <= 0;
+algo(0) <= l1_adt;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.
