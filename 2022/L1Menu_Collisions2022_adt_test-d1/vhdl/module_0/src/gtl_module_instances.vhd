@@ -53,8 +53,8 @@
 adt_i0: entity work.adt_dummy
     port map(
         lhc_clk,
-        bx_data => bx_data,
-        condition_o => adt_sig
+        adt_in => bx_data,
+        adt_out => adt_sig
     );
 
 
