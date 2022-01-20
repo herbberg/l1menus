@@ -1,0 +1,9 @@
+{
+  "firmware_uuid" : "7030fdde-e8b8-46b7-897e-8f7eedadc4e3",
+  "menu_uuid"     : "1feee74e-526c-4716-b3da-166fc270dacd",
+  "n_modules"     : 6,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_SingleMuCosmics", 0, 0, 0]
+  ]
+}
