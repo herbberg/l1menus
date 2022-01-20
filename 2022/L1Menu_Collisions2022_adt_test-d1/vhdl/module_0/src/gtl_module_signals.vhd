@@ -33,6 +33,9 @@
 -- -- Signal definition for algorithms names
 --     signal l1_single_mu0 : std_logic;
 
+-- Signal definition for conditions names
+    signal adt_sig : std_logic;
+
 -- Signal definition for algorithms names
     signal l1_adt : std_logic;
 

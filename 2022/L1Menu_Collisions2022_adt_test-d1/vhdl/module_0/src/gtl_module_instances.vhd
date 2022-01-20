@@ -50,8 +50,16 @@
 -- l1_single_mu0 <= single_mu_i0;
 -- algo(0) <= l1_single_mu0;
 
+adt_i0: entity work.adt_dummy
+    port map(
+        lhc_clk,
+        bx_data => bx_data,
+        condition_o => adt_sig
+    );
+
+
 -- 0 dummy ADT (used EG bit 0 for test!)
-l1_adt <= bx_data.eg(2)(0)(0);
+l1_adt <= adt_sig;
 algo(0) <= l1_adt;
 
 -- ========================================================
