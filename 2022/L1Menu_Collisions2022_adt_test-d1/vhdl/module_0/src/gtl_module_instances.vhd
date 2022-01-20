@@ -7,10 +7,10 @@
 -- L1Menu_Collisions2022_adt_test
 
 -- Unique ID of L1 Trigger Menu:
--- 1feee74e-526c-4716-b3da-166fc270dacd
+-- 9f50db6e-c51d-40e2-8252-459006e512fc
 
 -- Unique ID of firmware implementation:
--- 7030fdde-e8b8-46b7-897e-8f7eedadc4e3
+-- 7d77f46e-1e11-4138-b324-80855db4e2e1
 
 -- Scale set:
 -- scales_2021_03_02
@@ -46,9 +46,9 @@ cond_single_mu_i0_i: entity work.comb_conditions
 -- ========================================================
 -- Instantiations of algorithms
 
--- 0 L1_SingleMuCosmics : MU0
-l1_single_mu_cosmics <= single_mu_i0;
-algo(0) <= l1_single_mu_cosmics;
+-- 0 L1_SingleMu0 : MU0
+l1_single_mu0 <= single_mu_i0;
+algo(0) <= l1_single_mu0;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.

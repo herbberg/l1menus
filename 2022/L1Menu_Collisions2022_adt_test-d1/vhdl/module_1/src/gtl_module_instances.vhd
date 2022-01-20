@@ -7,10 +7,10 @@
 -- L1Menu_Collisions2022_adt_test
 
 -- Unique ID of L1 Trigger Menu:
--- 1feee74e-526c-4716-b3da-166fc270dacd
+-- 9f50db6e-c51d-40e2-8252-459006e512fc
 
 -- Unique ID of firmware implementation:
--- 7030fdde-e8b8-46b7-897e-8f7eedadc4e3
+-- 7d77f46e-1e11-4138-b324-80855db4e2e1
 
 -- Scale set:
 -- scales_2021_03_02
@@ -24,11 +24,31 @@
 -- ========================================================
 -- Instantiations of conditions
 --
+cond_single_mu_i1_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0003", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_muon =>bx_data. mu(2),
+        condition_o => single_mu_i1
+    );
+
 -- External condition assignment
 
 
 -- ========================================================
 -- Instantiations of algorithms
+
+-- 1 L1_SingleMu1 : MU1
+l1_single_mu1 <= single_mu_i1;
+algo(0) <= l1_single_mu1;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.
