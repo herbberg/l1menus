@@ -27,12 +27,11 @@
 -- External condition assignment
 
 cond_adt_0_i: entity work.adt_dummy
-    port_map(
+    port map(
         lhc_clk,
         bx_data,
         single_ext_i5
     );
-
 
 -- ========================================================
 -- Instantiations of algorithms
