@@ -27,10 +27,16 @@
 
 -- Signal definition for muon charge correlations.
 
+-- -- Signal definition for conditions names
+--     signal single_mu_i0 : std_logic;
+--
+-- -- Signal definition for algorithms names
+--     signal l1_single_mu0 : std_logic;
+
 -- Signal definition for conditions names
-    signal single_mu_i0 : std_logic;
+    signal adt_sig : std_logic;
 
 -- Signal definition for algorithms names
-    signal l1_single_mu0 : std_logic;
+    signal l1_adt : std_logic;
 
 -- ========================================================
