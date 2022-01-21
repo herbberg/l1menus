@@ -10,7 +10,7 @@
 -- a0494794-5846-41a9-b875-ed3533a1c0e6
 
 -- Unique ID of firmware implementation:
--- 7a3356bb-eab8-496b-b8e6-feb807a90040
+-- 7ab2574c-9785-4829-ae89-51eacfc7daff
 
 -- Scale set:
 -- scales_2021_03_02
@@ -27,7 +27,7 @@
 -- External condition assignment
 
 cond_adt_0_i: entity work.adt_dummy
-port_map(lhc_clk, adt_in => bx_data, adt_out => single_ext_i5)
+    port_map(lhc_clk, adt_in => bx_data, adt_out => single_ext_i5);
 
 
 -- ========================================================
