@@ -28,16 +28,16 @@
 cond_adt_3_i: entity work.adt_3_dummy
     port map(
         lhc_clk,
-        bx_data(2).muon,
-        bx_data(2).eg,
-        bx_data(2).jet,
-        bx_data(2).tau,
-        bx_data(2).ett,
-        bx_data(2).htt,
-        bx_data(2).etm,
-        bx_data(2).htm,
-        bx_data(2).ettem,
-        bx_data(2).etmhf,
+        bx_data.muon(2),
+        bx_data.eg(2),
+        bx_data.jet(2),
+        bx_data.tau(2),
+        bx_data.ett(2),
+        bx_data.htt(2),
+        bx_data.etm(2),
+        bx_data.htm(2),
+        bx_data.ettem(2),
+        bx_data.etmhf(2),
         single_ext_i3
     );
 
