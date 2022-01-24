@@ -28,7 +28,7 @@
 cond_adt_4_i: entity work.adt_4_dummy
     port map(
         lhc_clk,
-        bx_data.muon(2),
+        bx_data.mu(2),
         bx_data.eg(2),
         bx_data.jet(2),
         bx_data.tau(2),
