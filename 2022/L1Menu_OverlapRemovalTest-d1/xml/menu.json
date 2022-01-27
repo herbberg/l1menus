@@ -1,0 +1,26 @@
+{
+  "firmware_uuid" : "9fabf0cc-4f66-4acf-a7cc-eb3b2c7920f6",
+  "menu_uuid"     : "1a1003db-e9bb-4505-8d79-ae35bc2aba0c",
+  "n_modules"     : 6,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp", 0, 4, 2],
+    ["L1_DoubleJet35_Mass_Min250_IsoTau45_RmOvlp", 1, 3, 1],
+    ["L1_DoubleJet35_Mass_Min300_IsoTau45_RmOvlp", 2, 1, 2],
+    ["L1_DoubleJet35_Mass_Min360_IsoTau45_RmOvlp", 3, 2, 2],
+    ["L1_DoubleJet35_Mass_Min420_IsoTau45_RmOvlp", 4, 3, 2],
+    ["L1_DoubleJet35_Mass_Min620_IsoTau45_RmOvlp", 5, 5, 2],
+    ["L1_DoubleJet35_Mass_Min250_Tau45_RmOvlp_noISO", 6, 0, 0],
+    ["L1_DoubleJet35_Mass_Min300_Tau45_RmOvlp_noISO", 7, 4, 0],
+    ["L1_DoubleJet35_Mass_Min360_Tau45_RmOvlp_noISO", 8, 5, 0],
+    ["L1_DoubleJet35_Mass_Min420_Tau45_RmOvlp_noISO", 9, 0, 1],
+    ["L1_DoubleJet35_Mass_Min450_Tau45_RmOvlp_noISO", 10, 1, 1],
+    ["L1_DoubleJet35_Mass_Min620_Tau45_RmOvlp_noISO", 11, 2, 1],
+    ["L1_DoubleJet35_Mass_Min300_IsoTau35_RmOvlp", 12, 0, 2],
+    ["L1_DoubleJet35_Mass_Min300_IsoTau30_RmOvlp", 13, 5, 1],
+    ["L1_DoubleJet35_Mass_Min300_IsoTau28_RmOvlp", 14, 4, 1],
+    ["L1_DoubleJet35_Mass_Min300_Tau35_RmOvlp_noIso", 15, 3, 0],
+    ["L1_DoubleJet35_Mass_Min300_Tau30_RmOvlp_noIso", 16, 2, 0],
+    ["L1_DoubleJet35_Mass_Min300_Tau28_RmOvlp_noIso", 17, 1, 0]
+  ]
+}
