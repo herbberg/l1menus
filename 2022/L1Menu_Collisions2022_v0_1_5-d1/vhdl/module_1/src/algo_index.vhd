@@ -10,7 +10,7 @@
 -- 79c936b8-fc88-4651-ae30-31e2067bc39a
 
 -- Unique ID of firmware implementation:
--- 6dc8eb4b-3010-4628-b40a-d1a44f4d24f7
+-- 4530fd53-21c0-4b74-b7a4-79849d80cb9c
 
 -- Scale set:
 -- scales_2021_03_02
@@ -35,13 +35,13 @@ constant global_index: global_index_array := (
         405, -- module_index: 8, name: L1_HTT400er
          17, -- module_index: 9, name: L1_SingleMu18
          10, -- module_index: 10, name: L1_SingleMu5
-         97, -- module_index: 11, name: L1_Mu7_EG20er2p5
-         96, -- module_index: 12, name: L1_Mu5_EG23er2p5
-         98, -- module_index: 13, name: L1_Mu7_EG23er2p5
-        101, -- module_index: 14, name: L1_Mu7_LooseIsoEG20er2p5
-        100, -- module_index: 15, name: L1_Mu5_LooseIsoEG20er2p5
-         12, -- module_index: 16, name: L1_SingleMu7
-        102, -- module_index: 17, name: L1_Mu7_LooseIsoEG23er2p5
+         12, -- module_index: 11, name: L1_SingleMu7
+        102, -- module_index: 12, name: L1_Mu7_LooseIsoEG23er2p5
+         97, -- module_index: 13, name: L1_Mu7_EG20er2p5
+         96, -- module_index: 14, name: L1_Mu5_EG23er2p5
+         98, -- module_index: 15, name: L1_Mu7_EG23er2p5
+        101, -- module_index: 16, name: L1_Mu7_LooseIsoEG20er2p5
+        100, -- module_index: 17, name: L1_Mu5_LooseIsoEG20er2p5
          41, -- module_index: 18, name: L1_DoubleMu0_SQ
         366, -- module_index: 19, name: L1_DoubleJet_80_30_Mass_Min420_DoubleMu0_SQ
         365, -- module_index: 20, name: L1_DoubleJet_80_30_Mass_Min420_Mu8

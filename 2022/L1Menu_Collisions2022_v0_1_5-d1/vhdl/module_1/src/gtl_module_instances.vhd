@@ -10,7 +10,7 @@
 -- 79c936b8-fc88-4651-ae30-31e2067bc39a
 
 -- Unique ID of firmware implementation:
--- 6dc8eb4b-3010-4628-b40a-d1a44f4d24f7
+-- 4530fd53-21c0-4b74-b7a4-79849d80cb9c
 
 -- Scale set:
 -- scales_2021_03_02
@@ -1372,7 +1372,7 @@ algo(10) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(16) <= l1_single_mu7;
+algo(11) <= l1_single_mu7;
 
 -- 17 L1_SingleMu18 : MU18[MU-QLTY_SNGL]
 l1_single_mu18 <= single_mu_i17;
@@ -1400,27 +1400,27 @@ algo(33) <= l1_double_mu4_sq_os_d_r_max1p2;
 
 -- 96 L1_Mu5_EG23er2p5 : MU5[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu5_eg23er2p5 <= single_mu_i10 and single_eg_i79;
-algo(12) <= l1_mu5_eg23er2p5;
+algo(14) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i12 and single_eg_i80;
-algo(11) <= l1_mu7_eg20er2p5;
+algo(13) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i12 and single_eg_i79;
-algo(13) <= l1_mu7_eg23er2p5;
+algo(15) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i10 and single_eg_i82;
-algo(15) <= l1_mu5_loose_iso_eg20er2p5;
+algo(17) <= l1_mu5_loose_iso_eg20er2p5;
 
 -- 101 L1_Mu7_LooseIsoEG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg20er2p5 <= single_mu_i12 and single_eg_i82;
-algo(14) <= l1_mu7_loose_iso_eg20er2p5;
+algo(16) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i12 and single_eg_i83;
-algo(17) <= l1_mu7_loose_iso_eg23er2p5;
+algo(12) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 112 L1_DoubleMu3_OS_DoubleEG7p5Upsilon : mass_inv{MU3[MU-QLTY_DBLE,MU-ETA_2p3],MU3[MU-QLTY_DBLE,MU-ETA_2p3]}[MASS_MASS_0to14,CHGCOR_OS] AND mass_inv{EG7p5[EG-ETA_2p13],EG7p5[EG-ETA_2p13]}[MASS_MASS_0to20]
 l1_double_mu3_os_double_eg7p5_upsilon <= invariant_mass_i92 and invariant_mass_i93;

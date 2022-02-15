@@ -10,7 +10,7 @@
 -- 79c936b8-fc88-4651-ae30-31e2067bc39a
 
 -- Unique ID of firmware implementation:
--- 6dc8eb4b-3010-4628-b40a-d1a44f4d24f7
+-- 4530fd53-21c0-4b74-b7a4-79849d80cb9c
 
 -- Scale set:
 -- scales_2021_03_02
@@ -845,11 +845,11 @@ algo(18) <= l1_double_jet_110_35_double_jet35_mass_min620;
 
 -- 360 L1_DoubleJet_115_40_DoubleJet40_Mass_Min620_Jet60TT28 : JET115 AND (mass_inv{JET40[JET-ETA_CEN_2p70],JET40[JET-ETA_CEN_2p70]}[MASS_MIN_620] OR mass_inv{JET60,JET60}[MASS_MIN_620] OR mass_inv{JET60,JET40[JET-ETA_FWD_3p00_NEG,JET-ETA_FWD_3p00_POS]}[MASS_MIN_620] OR mass_inv{JET60,JET40[JET-ETA_CEN_2p70]}[MASS_MIN_620] OR mass_inv{JET40[JET-ETA_FWD_3p00_NEG,JET-ETA_FWD_3p00_POS],JET40[JET-ETA_CEN_2p70]}[MASS_MIN_620] OR mass_inv{JET40[JET-ETA_FWD_3p00_NEG,JET-ETA_FWD_3p00_POS],JET40[JET-ETA_FWD_3p00_NEG,JET-ETA_FWD_3p00_POS]}[MASS_MIN_620])
 l1_double_jet_115_40_double_jet40_mass_min620_jet60_tt28 <= single_jet_i274 and ( invariant_mass_i275 or invariant_mass_i276 or invariant_mass_i277 or invariant_mass_i278 or invariant_mass_i279 or invariant_mass_i280 );
-algo(12) <= l1_double_jet_115_40_double_jet40_mass_min620_jet60_tt28;
+algo(13) <= l1_double_jet_115_40_double_jet40_mass_min620_jet60_tt28;
 
 -- 361 L1_DoubleJet_120_45_DoubleJet45_Mass_Min620_Jet60TT28 : JET120 AND (mass_inv{JET45[JET-ETA_CEN_2p70],JET45[JET-ETA_CEN_2p70]}[MASS_MIN_620] OR mass_inv{JET60,JET60}[MASS_MIN_620] OR mass_inv{JET60,JET45[JET-ETA_FWD_3p00_NEG,JET-ETA_FWD_3p00_POS]}[MASS_MIN_620] OR mass_inv{JET60,JET45[JET-ETA_CEN_2p70]}[MASS_MIN_620] OR mass_inv{JET45[JET-ETA_FWD_3p00_NEG,JET-ETA_FWD_3p00_POS],JET45[JET-ETA_CEN_2p70]}[MASS_MIN_620] OR mass_inv{JET45[JET-ETA_FWD_3p00_NEG,JET-ETA_FWD_3p00_POS],JET45[JET-ETA_FWD_3p00_NEG,JET-ETA_FWD_3p00_POS]}[MASS_MIN_620])
 l1_double_jet_120_45_double_jet45_mass_min620_jet60_tt28 <= single_jet_i233 and ( invariant_mass_i281 or invariant_mass_i276 or invariant_mass_i282 or invariant_mass_i283 or invariant_mass_i284 or invariant_mass_i285 );
-algo(13) <= l1_double_jet_120_45_double_jet45_mass_min620_jet60_tt28;
+algo(12) <= l1_double_jet_120_45_double_jet45_mass_min620_jet60_tt28;
 
 -- 404 L1_HTT360er : HTT360
 l1_htt360er <= single_htt_i308;

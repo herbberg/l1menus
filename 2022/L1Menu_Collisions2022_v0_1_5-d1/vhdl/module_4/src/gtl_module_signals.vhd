@@ -10,7 +10,7 @@
 -- 79c936b8-fc88-4651-ae30-31e2067bc39a
 
 -- Unique ID of firmware implementation:
--- 6dc8eb4b-3010-4628-b40a-d1a44f4d24f7
+-- 4530fd53-21c0-4b74-b7a4-79849d80cb9c
 
 -- Scale set:
 -- scales_2021_03_02
