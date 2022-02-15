@@ -10,7 +10,7 @@
 -- 79c936b8-fc88-4651-ae30-31e2067bc39a
 
 -- Unique ID of firmware implementation:
--- 4530fd53-21c0-4b74-b7a4-79849d80cb9c
+-- aec70730-9064-4d71-b307-065468ea7560
 
 -- Scale set:
 -- scales_2021_03_02
@@ -731,7 +731,7 @@ cond_double_tau_ov_rm_i400_i: entity work.comb_conditions
     port map(
         lhc_clk,
         obj1_calo => bx_data.tau(2),
-        obj2 => bx_data.jet(0),
+        obj2 => bx_data.jet(2),
         dr_orm => tau_jet_bx_0_bx_0_dr,
         condition_o => double_tau_ov_rm_i400
     );
@@ -1792,7 +1792,7 @@ single_ext_i340 <= bx_data.ext_cond(4)(4); -- EXT_ZeroBias_BPTX_AND_VME-2
 
 -- 4 L1_SingleMuOpen : MU0[MU-QLTY_OPEN]
 l1_single_mu_open <= single_mu_i4;
-algo(69) <= l1_single_mu_open;
+algo(68) <= l1_single_mu_open;
 
 -- 37 L1_DoubleMu3er2p0_SQ_OS_dR_Max1p4 : dist{MU3[MU-ETA_2p0,MU-QLTY_SNGL],MU3[MU-ETA_2p0,MU-QLTY_SNGL]}[CHGCOR_OS,DR_1p4]
 l1_double_mu3er2p0_sq_os_d_r_max1p4 <= muon_muon_correlation_i365;
@@ -1920,7 +1920,7 @@ algo(48) <= l1_double_mu3_sq_etmhf60_jet60er2p5;
 
 -- 150 L1_DoubleMu3_SQ_HTT220er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND HTT220
 l1_double_mu3_sq_htt220er <= double_mu_i119 and single_htt_i124;
-algo(23) <= l1_double_mu3_sq_htt220er;
+algo(22) <= l1_double_mu3_sq_htt220er;
 
 -- 151 L1_DoubleMu3_SQ_HTT240er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND HTT240
 l1_double_mu3_sq_htt240er <= double_mu_i119 and single_htt_i107;
@@ -1960,7 +1960,7 @@ algo(66) <= l1_double_eg8er2p5_htt280er;
 
 -- 249 L1_DoubleEG8er2p5_HTT300er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT300
 l1_double_eg8er2p5_htt300er <= double_eg_i193 and single_htt_i195;
-algo(71) <= l1_double_eg8er2p5_htt300er;
+algo(72) <= l1_double_eg8er2p5_htt300er;
 
 -- 250 L1_DoubleEG8er2p5_HTT320er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT320
 l1_double_eg8er2p5_htt320er <= double_eg_i193 and single_htt_i196;
@@ -1988,7 +1988,7 @@ algo(65) <= l1_etmhf90_single_jet80er2p5_etmhf90_dphi_min2p094;
 
 -- 263 L1_ETMHF90_SingleJet80er2p5_ETMHF90_DPHI_MIN2p618 : ETMHF90 AND dist{JET80[JET-ETA_2p52],ETMHF90}[DPHI_DPHI_MIN2p618_MAX3p142]
 l1_etmhf90_single_jet80er2p5_etmhf90_dphi_min2p618 <= single_etmhf_i225 and calo_esum_correlation_i398;
-algo(68) <= l1_etmhf90_single_jet80er2p5_etmhf90_dphi_min2p618;
+algo(69) <= l1_etmhf90_single_jet80er2p5_etmhf90_dphi_min2p618;
 
 -- 269 L1_DoubleIsoTau28er2p1 : comb{TAU28[TAU-ETA_2p13,TAU-ISO_0xE],TAU28[TAU-ETA_2p13,TAU-ISO_0xE]}
 l1_double_iso_tau28er2p1 <= double_tau_i204;
@@ -2016,15 +2016,15 @@ algo(19) <= l1_mu22er2p1_iso_tau32er2p1;
 
 -- 285 L1_Mu22er2p1_IsoTau34er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU34[TAU-ETA_2p13,TAU-ISO_0xE]
 l1_mu22er2p1_iso_tau34er2p1 <= single_mu_i216 and single_tau_i220;
-algo(22) <= l1_mu22er2p1_iso_tau34er2p1;
+algo(23) <= l1_mu22er2p1_iso_tau34er2p1;
 
 -- 286 L1_Mu22er2p1_IsoTau36er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU36[TAU-ETA_2p13,TAU-ISO_0xE]
 l1_mu22er2p1_iso_tau36er2p1 <= single_mu_i216 and single_tau_i221;
-algo(28) <= l1_mu22er2p1_iso_tau36er2p1;
+algo(29) <= l1_mu22er2p1_iso_tau36er2p1;
 
 -- 287 L1_Mu22er2p1_IsoTau40er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU40[TAU-ETA_2p13,TAU-ISO_0xE]
 l1_mu22er2p1_iso_tau40er2p1 <= single_mu_i216 and single_tau_i222;
-algo(35) <= l1_mu22er2p1_iso_tau40er2p1;
+algo(36) <= l1_mu22er2p1_iso_tau40er2p1;
 
 -- 289 L1_Mu22er2p1_Tau70er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU70[TAU-ETA_2p13]
 l1_mu22er2p1_tau70er2p1 <= single_mu_i216 and single_tau_i223;
@@ -2088,7 +2088,7 @@ algo(26) <= l1_htt320er_quad_jet_80_60_er2p1_50_45_er2p3;
 
 -- 402 L1_HTT280er : HTT280
 l1_htt280er <= single_htt_i194;
-algo(72) <= l1_htt280er;
+algo(74) <= l1_htt280er;
 
 -- 403 L1_HTT320er : HTT320
 l1_htt320er <= single_htt_i196;
@@ -2116,7 +2116,7 @@ algo(51) <= l1_etmhf90_htt60er;
 
 -- 429 L1_ETMHF100_HTT60er : ETMHF100 AND HTT60
 l1_etmhf100_htt60er <= single_etmhf_i226 and single_htt_i120;
-algo(74) <= l1_etmhf100_htt60er;
+algo(71) <= l1_etmhf100_htt60er;
 
 -- 430 L1_ETMHF110_HTT60er : ETMHF110 AND HTT60
 l1_etmhf110_htt60er <= single_etmhf_i227 and single_htt_i120;
@@ -2128,7 +2128,7 @@ algo(44) <= l1_etmhf120_htt60er;
 
 -- 432 L1_ETMHF130_HTT60er : ETMHF130 AND HTT60
 l1_etmhf130_htt60er <= single_etmhf_i317 and single_htt_i120;
-algo(29) <= l1_etmhf130_htt60er;
+algo(30) <= l1_etmhf130_htt60er;
 
 -- 443 L1_ETMHF120_NotSecondBunchInTrain : ETMHF120 AND ((EXT_BPTX_OR_VME-2) OR ( NOT EXT_ZeroBias_BPTX_AND_VME-1) OR ( NOT EXT_ZeroBias_BPTX_AND_VME) OR ( NOT EXT_ZeroBias_BPTX_AND_VME+1) OR ( NOT EXT_ZeroBias_BPTX_AND_VME+2))
 l1_etmhf120_not_second_bunch_in_train <= single_etmhf_i316 and ( ( single_ext_i320 ) or ( not single_ext_i321 ) or ( not single_ext_i322 ) or ( not single_ext_i323 ) or ( not single_ext_i324 ) );
@@ -2148,7 +2148,7 @@ algo(41) <= l1_single_mu_open_er1p4_not_bptx_or_3_bx;
 
 -- 448 L1_SingleMuOpen_er1p1_NotBptxOR_3BX : MU0[MU-QLTY_OPEN,MU-ETA_1p1] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
 l1_single_mu_open_er1p1_not_bptx_or_3_bx <= single_mu_i329 and ( not single_ext_i327 ) and ( not single_ext_i325 ) and ( not single_ext_i328 );
-algo(34) <= l1_single_mu_open_er1p1_not_bptx_or_3_bx;
+algo(35) <= l1_single_mu_open_er1p1_not_bptx_or_3_bx;
 
 -- 450 L1_SingleJet20er2p5_NotBptxOR : JET20[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME)
 l1_single_jet20er2p5_not_bptx_or <= single_jet_i330 and ( not single_ext_i325 );
@@ -2204,11 +2204,11 @@ algo(39) <= l1_first_bunch_in_train;
 
 -- 474 L1_SecondBunchInTrain : ( NOT EXT_BPTX_OR_VME-2) AND EXT_ZeroBias_BPTX_AND_VME-1 AND EXT_ZeroBias_BPTX_AND_VME AND EXT_ZeroBias_BPTX_AND_VME+1 AND EXT_ZeroBias_BPTX_AND_VME+2
 l1_second_bunch_in_train <= ( not single_ext_i320 ) and single_ext_i321 and single_ext_i322 and single_ext_i323 and single_ext_i324;
-algo(30) <= l1_second_bunch_in_train;
+algo(28) <= l1_second_bunch_in_train;
 
 -- 475 L1_SecondLastBunchInTrain : EXT_ZeroBias_BPTX_AND_VME-2 AND EXT_ZeroBias_BPTX_AND_VME-1 AND EXT_ZeroBias_BPTX_AND_VME AND EXT_ZeroBias_BPTX_AND_VME+1 AND ( NOT EXT_BPTX_OR_VME+2)
 l1_second_last_bunch_in_train <= single_ext_i340 and single_ext_i321 and single_ext_i322 and single_ext_i323 and ( not single_ext_i339 );
-algo(36) <= l1_second_last_bunch_in_train;
+algo(34) <= l1_second_last_bunch_in_train;
 
 -- 476 L1_LastBunchInTrain : EXT_ZeroBias_BPTX_AND_VME-2 AND EXT_ZeroBias_BPTX_AND_VME-1 AND EXT_ZeroBias_BPTX_AND_VME AND ( NOT EXT_BPTX_OR_VME+1) AND ( NOT EXT_BPTX_OR_VME+2)
 l1_last_bunch_in_train <= single_ext_i340 and single_ext_i321 and single_ext_i322 and ( not single_ext_i328 ) and ( not single_ext_i339 );
