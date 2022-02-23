@@ -10,7 +10,7 @@
 -- 786b195b-7fe4-4c23-a571-ac5068c6fa09
 
 -- Unique ID of firmware implementation:
--- 16aa0ff4-bb99-4e7c-93a6-91d053a5e21c
+-- fe714ed9-f891-4782-bcd1-e51835b3409a
 
 -- Scale set:
 -- scales_2021_03_02
@@ -171,11 +171,11 @@ algo(11) <= l1_single_jet120_fwd3p0;
 
 -- 111 L1_BptxXOR : (EXT_BPTX_B1_VME AND ( NOT EXT_BPTX_B2_VME)) OR (EXT_BPTX_B2_VME AND ( NOT EXT_BPTX_B1_VME))
 l1_bptx_xor <= ( single_ext_i66 and ( not single_ext_i67 ) ) or ( single_ext_i67 and ( not single_ext_i66 ) );
-algo(5) <= l1_bptx_xor;
+algo(6) <= l1_bptx_xor;
 
 -- 112 L1_BptxPlus : EXT_BPTX_B1_VME
 l1_bptx_plus <= single_ext_i66;
-algo(3) <= l1_bptx_plus;
+algo(4) <= l1_bptx_plus;
 
 -- 113 L1_BptxMinus : EXT_BPTX_B2_VME
 l1_bptx_minus <= single_ext_i67;
@@ -183,11 +183,11 @@ algo(2) <= l1_bptx_minus;
 
 -- 114 L1_BptxPlus_NotBptxMinus : EXT_BPTX_B1_VME AND  NOT EXT_BPTX_B2_VME
 l1_bptx_plus_not_bptx_minus <= single_ext_i66 and not single_ext_i67;
-algo(6) <= l1_bptx_plus_not_bptx_minus;
+algo(5) <= l1_bptx_plus_not_bptx_minus;
 
 -- 115 L1_BptxMinus_NotBptxPlus : EXT_BPTX_B2_VME AND  NOT EXT_BPTX_B1_VME
 l1_bptx_minus_not_bptx_plus <= single_ext_i67 and not single_ext_i66;
-algo(4) <= l1_bptx_minus_not_bptx_plus;
+algo(3) <= l1_bptx_minus_not_bptx_plus;
 
 -- 134 L1_BPTX_AND_Ref3_VME : EXT_BPTX_AND_Ref3_VME
 l1_bptx_and_ref3_vme <= single_ext_i91;
