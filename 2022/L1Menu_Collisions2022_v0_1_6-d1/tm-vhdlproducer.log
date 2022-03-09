@@ -1,0 +1,1855 @@
+2022-03-09 08:52:51 INFO : distributing menu...
+2022-03-09 08:52:51 INFO : loading resource information from JSON: /home/bergauer/github/herbberg/tm-vhdlproducer/tmVhdlProducer/config/resource_default.json
+2022-03-09 08:52:51 INFO : :: listing resources...
+2022-03-09 08:52:51 INFO : thresholds:
+2022-03-09 08:52:51 INFO :  * floor: brams=41.36%, sliceLUTs=7.28%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * ceiling: brams=100.00%, sliceLUTs=90.00%, processors=100.00%
+2022-03-09 08:52:51 INFO : instances:
+2022-03-09 08:52:51 INFO :  * MuonCondition[ muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * MuonCondition[ muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.08%, processors=0.33%
+2022-03-09 08:52:51 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * MuonCondition[ muon, muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * MuonCondition[ muon, muon, muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * CaloCondition[ calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * CaloCondition[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.05%, processors=0.33%
+2022-03-09 08:52:51 INFO :  * CaloCondition[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * CaloCondition[ calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * CaloConditionOvRm[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.06%
+2022-03-09 08:52:51 INFO :  * CaloConditionOvRm[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.06%
+2022-03-09 08:52:51 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.05%, processors=0.33%
+2022-03-09 08:52:51 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.06%
+2022-03-09 08:52:51 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.06%
+2022-03-09 08:52:51 INFO :  * CorrelationCondition[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * CorrelationCondition[ calo, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * CorrelationCondition[ calo, esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * CorrelationCondition[ muon, esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * CorrelationCondition[ muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * massupt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * Correlation3Condition[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * Correlation3Condition[ muon, muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * CorrelationConditionOvRm[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * CorrelationConditionOvRm[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * EsumsCondition[ esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * MinBiasCondition[ bias ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * ExternalCondition[ ext ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * TowerCountCondition[ count ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:51 INFO :  * SignalCondition[ signal ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2022-03-09 08:52:52 WARNING : no object cut entry for object type: bias
+2022-03-09 08:52:52 WARNING : no object cut entry for object type: bias
+2022-03-09 08:52:52 INFO : |---------------------------------------------------------------------------------------|
+2022-03-09 08:52:52 INFO : |                                                                                       |
+2022-03-09 08:52:52 INFO : | Algorithms sorted by payload (descending)                                             |
+2022-03-09 08:52:52 INFO : |                                                                                       |
+2022-03-09 08:52:52 INFO : |---------------------------------------------------------------------------------------|
+2022-03-09 08:52:52 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2022-03-09 08:52:52 INFO : | Index | BRAMs   | SliceLUTs | DSPs    | Name                                          |
+2022-03-09 08:52:52 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2022-03-09 08:52:52 INFO : |   458 |  0.000% |    0.000% |  0.000% | L1_AlwaysTrue                                 |
+2022-03-09 08:52:52 INFO : |   486 |  0.000% |    0.000% |  0.000% | L1_BPTX_AND_Ref1_VME                          |
+2022-03-09 08:52:52 INFO : |   487 |  0.000% |    0.000% |  0.000% | L1_BPTX_AND_Ref3_VME                          |
+2022-03-09 08:52:52 INFO : |   488 |  0.000% |    0.000% |  0.000% | L1_BPTX_AND_Ref4_VME                          |
+2022-03-09 08:52:52 INFO : |   491 |  0.000% |    0.000% |  0.000% | L1_BPTX_BeamGas_B1_VME                        |
+2022-03-09 08:52:52 INFO : |   492 |  0.000% |    0.000% |  0.000% | L1_BPTX_BeamGas_B2_VME                        |
+2022-03-09 08:52:52 INFO : |   489 |  0.000% |    0.000% |  0.000% | L1_BPTX_BeamGas_Ref1_VME                      |
+2022-03-09 08:52:52 INFO : |   490 |  0.000% |    0.000% |  0.000% | L1_BPTX_BeamGas_Ref2_VME                      |
+2022-03-09 08:52:52 INFO : |   482 |  0.000% |    0.000% |  0.000% | L1_BPTX_NotOR_VME                             |
+2022-03-09 08:52:52 INFO : |   483 |  0.000% |    0.000% |  0.000% | L1_BPTX_OR_Ref3_VME                           |
+2022-03-09 08:52:52 INFO : |   484 |  0.000% |    0.000% |  0.000% | L1_BPTX_OR_Ref4_VME                           |
+2022-03-09 08:52:52 INFO : |   485 |  0.000% |    0.000% |  0.000% | L1_BPTX_RefAND_VME                            |
+2022-03-09 08:52:52 INFO : |   467 |  0.000% |    0.000% |  0.000% | L1_BptxMinus                                  |
+2022-03-09 08:52:52 INFO : |   464 |  0.000% |    0.000% |  0.000% | L1_BptxOR                                     |
+2022-03-09 08:52:52 INFO : |   466 |  0.000% |    0.000% |  0.000% | L1_BptxPlus                                   |
+2022-03-09 08:52:52 INFO : |   465 |  0.000% |    0.000% |  0.000% | L1_BptxXOR                                    |
+2022-03-09 08:52:52 INFO : |   477 |  0.000% |    0.000% |  0.000% | L1_FirstBunchAfterTrain                       |
+2022-03-09 08:52:52 INFO : |   472 |  0.000% |    0.000% |  0.000% | L1_FirstBunchBeforeTrain                      |
+2022-03-09 08:52:52 INFO : |   473 |  0.000% |    0.000% |  0.000% | L1_FirstBunchInTrain                          |
+2022-03-09 08:52:52 INFO : |   480 |  0.000% |    0.000% |  0.000% | L1_FirstCollisionInOrbit                      |
+2022-03-09 08:52:52 INFO : |   479 |  0.000% |    0.000% |  0.000% | L1_FirstCollisionInTrain                      |
+2022-03-09 08:52:52 INFO : |   500 |  0.000% |    0.000% |  0.000% | L1_HCAL_LaserMon_Trig                         |
+2022-03-09 08:52:52 INFO : |   501 |  0.000% |    0.000% |  0.000% | L1_HCAL_LaserMon_Veto                         |
+2022-03-09 08:52:52 INFO : |   471 |  0.000% |    0.000% |  0.000% | L1_IsolatedBunch                              |
+2022-03-09 08:52:52 INFO : |   476 |  0.000% |    0.000% |  0.000% | L1_LastBunchInTrain                           |
+2022-03-09 08:52:52 INFO : |   478 |  0.000% |    0.000% |  0.000% | L1_LastCollisionInTrain                       |
+2022-03-09 08:52:52 INFO : |    69 |  0.000% |    0.000% |  0.000% | L1_MuShower_OneNominal                        |
+2022-03-09 08:52:52 INFO : |    70 |  0.000% |    0.000% |  0.000% | L1_MuShower_OneTight                          |
+2022-03-09 08:52:52 INFO : |   463 |  0.000% |    0.000% |  0.000% | L1_NotBptxOR                                  |
+2022-03-09 08:52:52 INFO : |   474 |  0.000% |    0.000% |  0.000% | L1_SecondBunchInTrain                         |
+2022-03-09 08:52:52 INFO : |   475 |  0.000% |    0.000% |  0.000% | L1_SecondLastBunchInTrain                     |
+2022-03-09 08:52:52 INFO : |   503 |  0.000% |    0.000% |  0.000% | L1_TOTEM_1                                    |
+2022-03-09 08:52:52 INFO : |   504 |  0.000% |    0.000% |  0.000% | L1_TOTEM_2                                    |
+2022-03-09 08:52:52 INFO : |   505 |  0.000% |    0.000% |  0.000% | L1_TOTEM_3                                    |
+2022-03-09 08:52:52 INFO : |   506 |  0.000% |    0.000% |  0.000% | L1_TOTEM_4                                    |
+2022-03-09 08:52:52 INFO : |   469 |  0.000% |    0.000% |  0.000% | L1_UnpairedBunchBptxMinus                     |
+2022-03-09 08:52:52 INFO : |   468 |  0.000% |    0.000% |  0.000% | L1_UnpairedBunchBptxPlus                      |
+2022-03-09 08:52:52 INFO : |   459 |  0.000% |    0.000% |  0.000% | L1_ZeroBias                                   |
+2022-03-09 08:52:52 INFO : |   460 |  0.000% |    0.000% |  0.000% | L1_ZeroBias_copy                              |
+2022-03-09 08:52:52 INFO : |   416 |  0.000% |    0.001% |  0.000% | L1_ETM120                                     |
+2022-03-09 08:52:52 INFO : |   417 |  0.000% |    0.001% |  0.000% | L1_ETM150                                     |
+2022-03-09 08:52:52 INFO : |   421 |  0.000% |    0.001% |  0.000% | L1_ETMHF100                                   |
+2022-03-09 08:52:52 INFO : |   422 |  0.000% |    0.001% |  0.000% | L1_ETMHF110                                   |
+2022-03-09 08:52:52 INFO : |   423 |  0.000% |    0.001% |  0.000% | L1_ETMHF120                                   |
+2022-03-09 08:52:52 INFO : |   443 |  0.000% |    0.001% |  0.000% | L1_ETMHF120_NotSecondBunchInTrain             |
+2022-03-09 08:52:52 INFO : |   424 |  0.000% |    0.001% |  0.000% | L1_ETMHF130                                   |
+2022-03-09 08:52:52 INFO : |   425 |  0.000% |    0.001% |  0.000% | L1_ETMHF140                                   |
+2022-03-09 08:52:52 INFO : |   426 |  0.000% |    0.001% |  0.000% | L1_ETMHF150                                   |
+2022-03-09 08:52:52 INFO : |   410 |  0.000% |    0.001% |  0.000% | L1_ETT1200                                    |
+2022-03-09 08:52:52 INFO : |   411 |  0.000% |    0.001% |  0.000% | L1_ETT1600                                    |
+2022-03-09 08:52:52 INFO : |   412 |  0.000% |    0.001% |  0.000% | L1_ETT2000                                    |
+2022-03-09 08:52:52 INFO : |   398 |  0.000% |    0.001% |  0.000% | L1_HTT120er                                   |
+2022-03-09 08:52:52 INFO : |   399 |  0.000% |    0.001% |  0.000% | L1_HTT160er                                   |
+2022-03-09 08:52:52 INFO : |   400 |  0.000% |    0.001% |  0.000% | L1_HTT200er                                   |
+2022-03-09 08:52:52 INFO : |   401 |  0.000% |    0.001% |  0.000% | L1_HTT255er                                   |
+2022-03-09 08:52:52 INFO : |   402 |  0.000% |    0.001% |  0.000% | L1_HTT280er                                   |
+2022-03-09 08:52:52 INFO : |   403 |  0.000% |    0.001% |  0.000% | L1_HTT320er                                   |
+2022-03-09 08:52:52 INFO : |   404 |  0.000% |    0.001% |  0.000% | L1_HTT360er                                   |
+2022-03-09 08:52:52 INFO : |   405 |  0.000% |    0.001% |  0.000% | L1_HTT400er                                   |
+2022-03-09 08:52:52 INFO : |   406 |  0.000% |    0.001% |  0.000% | L1_HTT450er                                   |
+2022-03-09 08:52:52 INFO : |   429 |  0.000% |    0.002% |  0.000% | L1_ETMHF100_HTT60er                           |
+2022-03-09 08:52:52 INFO : |   430 |  0.000% |    0.002% |  0.000% | L1_ETMHF110_HTT60er                           |
+2022-03-09 08:52:52 INFO : |   444 |  0.000% |    0.002% |  0.000% | L1_ETMHF110_HTT60er_NotSecondBunchInTrain     |
+2022-03-09 08:52:52 INFO : |   431 |  0.000% |    0.002% |  0.000% | L1_ETMHF120_HTT60er                           |
+2022-03-09 08:52:52 INFO : |   432 |  0.000% |    0.002% |  0.000% | L1_ETMHF130_HTT60er                           |
+2022-03-09 08:52:52 INFO : |   428 |  0.000% |    0.002% |  0.000% | L1_ETMHF90_HTT60er                            |
+2022-03-09 08:52:52 INFO : |   461 |  0.000% |    0.002% |  0.000% | L1_MinimumBiasHF0_AND_BptxAND                 |
+2022-03-09 08:52:52 INFO : |     0 |  0.000% |    0.006% |  0.000% | L1_SingleMuCosmics                            |
+2022-03-09 08:52:52 INFO : |     5 |  0.000% |    0.007% |  0.000% | L1_SingleMu0_DQ                               |
+2022-03-09 08:52:52 INFO : |    16 |  0.000% |    0.007% |  0.000% | L1_SingleMu15_DQ                              |
+2022-03-09 08:52:52 INFO : |    17 |  0.000% |    0.007% |  0.000% | L1_SingleMu18                                 |
+2022-03-09 08:52:52 INFO : |    18 |  0.000% |    0.007% |  0.000% | L1_SingleMu20                                 |
+2022-03-09 08:52:52 INFO : |    19 |  0.000% |    0.007% |  0.000% | L1_SingleMu22                                 |
+2022-03-09 08:52:52 INFO : |    23 |  0.000% |    0.007% |  0.000% | L1_SingleMu25                                 |
+2022-03-09 08:52:52 INFO : |     9 |  0.000% |    0.007% |  0.000% | L1_SingleMu3                                  |
+2022-03-09 08:52:52 INFO : |    10 |  0.000% |    0.007% |  0.000% | L1_SingleMu5                                  |
+2022-03-09 08:52:52 INFO : |    12 |  0.000% |    0.007% |  0.000% | L1_SingleMu7                                  |
+2022-03-09 08:52:52 INFO : |    11 |  0.000% |    0.007% |  0.000% | L1_SingleMu7_DQ                               |
+2022-03-09 08:52:52 INFO : |     4 |  0.000% |    0.007% |  0.000% | L1_SingleMuOpen                               |
+2022-03-09 08:52:52 INFO : |   446 |  0.000% |    0.007% |  0.000% | L1_SingleMuOpen_NotBptxOR                     |
+2022-03-09 08:52:52 INFO : |   131 |  0.000% |    0.008% |  0.000% | L1_Mu6_HTT240er                               |
+2022-03-09 08:52:52 INFO : |   132 |  0.000% |    0.008% |  0.000% | L1_Mu6_HTT250er                               |
+2022-03-09 08:52:52 INFO : |   173 |  0.000% |    0.008% |  0.000% | L1_SingleEG50                                 |
+2022-03-09 08:52:52 INFO : |   174 |  0.000% |    0.008% |  0.000% | L1_SingleEG60                                 |
+2022-03-09 08:52:52 INFO : |   312 |  0.000% |    0.008% |  0.000% | L1_SingleJet120                               |
+2022-03-09 08:52:52 INFO : |   313 |  0.000% |    0.008% |  0.000% | L1_SingleJet180                               |
+2022-03-09 08:52:52 INFO : |   314 |  0.000% |    0.008% |  0.000% | L1_SingleJet200                               |
+2022-03-09 08:52:52 INFO : |   309 |  0.000% |    0.008% |  0.000% | L1_SingleJet35                                |
+2022-03-09 08:52:52 INFO : |   310 |  0.000% |    0.008% |  0.000% | L1_SingleJet60                                |
+2022-03-09 08:52:52 INFO : |   311 |  0.000% |    0.008% |  0.000% | L1_SingleJet90                                |
+2022-03-09 08:52:52 INFO : |     1 |  0.000% |    0.011% |  0.000% | L1_SingleMuCosmics_BMTF                       |
+2022-03-09 08:52:52 INFO : |    24 |  0.000% |    0.012% |  0.000% | L1_HTT120_SingleLLPJet40                      |
+2022-03-09 08:52:52 INFO : |   154 |  0.000% |    0.012% |  0.000% | L1_HTT160_SingleLLPJet50                      |
+2022-03-09 08:52:52 INFO : |   153 |  0.000% |    0.012% |  0.000% | L1_HTT200_SingleLLPJet60                      |
+2022-03-09 08:52:52 INFO : |     6 |  0.000% |    0.013% |  0.000% | L1_SingleMu0_BMTF                             |
+2022-03-09 08:52:52 INFO : |    29 |  0.000% |    0.013% |  0.000% | L1_SingleMu10er1p5                            |
+2022-03-09 08:52:52 INFO : |    13 |  0.000% |    0.013% |  0.000% | L1_SingleMu12_DQ_BMTF                         |
+2022-03-09 08:52:52 INFO : |    30 |  0.000% |    0.013% |  0.000% | L1_SingleMu12er1p5                            |
+2022-03-09 08:52:52 INFO : |    31 |  0.000% |    0.013% |  0.000% | L1_SingleMu14er1p5                            |
+2022-03-09 08:52:52 INFO : |    32 |  0.000% |    0.013% |  0.000% | L1_SingleMu16er1p5                            |
+2022-03-09 08:52:52 INFO : |    33 |  0.000% |    0.013% |  0.000% | L1_SingleMu18er1p5                            |
+2022-03-09 08:52:52 INFO : |    20 |  0.000% |    0.013% |  0.000% | L1_SingleMu22_BMTF                            |
+2022-03-09 08:52:52 INFO : |    25 |  0.000% |    0.013% |  0.000% | L1_SingleMu6er1p5                             |
+2022-03-09 08:52:52 INFO : |    26 |  0.000% |    0.013% |  0.000% | L1_SingleMu7er1p5                             |
+2022-03-09 08:52:52 INFO : |    27 |  0.000% |    0.013% |  0.000% | L1_SingleMu8er1p5                             |
+2022-03-09 08:52:52 INFO : |    28 |  0.000% |    0.013% |  0.000% | L1_SingleMu9er1p5                             |
+2022-03-09 08:52:52 INFO : |   448 |  0.000% |    0.013% |  0.000% | L1_SingleMuOpen_er1p1_NotBptxOR_3BX           |
+2022-03-09 08:52:52 INFO : |   447 |  0.000% |    0.013% |  0.000% | L1_SingleMuOpen_er1p4_NotBptxOR_3BX           |
+2022-03-09 08:52:52 INFO : |    40 |  0.000% |    0.015% |  0.000% | L1_DoubleMu0                                  |
+2022-03-09 08:52:52 INFO : |    39 |  0.000% |    0.015% |  0.000% | L1_DoubleMu0_OQ                               |
+2022-03-09 08:52:52 INFO : |    41 |  0.000% |    0.015% |  0.000% | L1_DoubleMu0_SQ                               |
+2022-03-09 08:52:52 INFO : |    44 |  0.000% |    0.015% |  0.000% | L1_DoubleMu8_SQ                               |
+2022-03-09 08:52:52 INFO : |    45 |  0.000% |    0.015% |  0.000% | L1_DoubleMu9_SQ                               |
+2022-03-09 08:52:52 INFO : |    46 |  0.000% |    0.015% |  0.000% | L1_DoubleMu_12_5                              |
+2022-03-09 08:52:52 INFO : |    47 |  0.000% |    0.015% |  0.000% | L1_DoubleMu_15_5_SQ                           |
+2022-03-09 08:52:52 INFO : |    48 |  0.000% |    0.015% |  0.000% | L1_DoubleMu_15_7                              |
+2022-03-09 08:52:52 INFO : |    49 |  0.000% |    0.015% |  0.000% | L1_DoubleMu_15_7_SQ                           |
+2022-03-09 08:52:52 INFO : |    42 |  0.000% |    0.015% |  0.000% | L1_DoubleMu0_SQ_OS                            |
+2022-03-09 08:52:52 INFO : |    60 |  0.000% |    0.015% |  0.000% | L1_DoubleMu4_SQ_OS                            |
+2022-03-09 08:52:52 INFO : |    62 |  0.000% |    0.015% |  0.000% | L1_DoubleMu4p5_SQ_OS                          |
+2022-03-09 08:52:52 INFO : |   150 |  0.000% |    0.016% |  0.000% | L1_DoubleMu3_SQ_HTT220er                      |
+2022-03-09 08:52:52 INFO : |   151 |  0.000% |    0.016% |  0.000% | L1_DoubleMu3_SQ_HTT240er                      |
+2022-03-09 08:52:52 INFO : |   152 |  0.000% |    0.016% |  0.000% | L1_DoubleMu3_SQ_HTT260er                      |
+2022-03-09 08:52:52 INFO : |   145 |  0.000% |    0.017% |  0.000% | L1_DoubleMu3_SQ_ETMHF50_HTT60er               |
+2022-03-09 08:52:52 INFO : |   160 |  0.000% |    0.017% |  0.000% | L1_SingleEG10er2p5                            |
+2022-03-09 08:52:52 INFO : |   161 |  0.000% |    0.017% |  0.000% | L1_SingleEG15er2p5                            |
+2022-03-09 08:52:52 INFO : |   162 |  0.000% |    0.017% |  0.000% | L1_SingleEG26er2p5                            |
+2022-03-09 08:52:52 INFO : |   166 |  0.000% |    0.017% |  0.000% | L1_SingleEG28er1p5                            |
+2022-03-09 08:52:52 INFO : |   165 |  0.000% |    0.017% |  0.000% | L1_SingleEG28er2p1                            |
+2022-03-09 08:52:52 INFO : |   164 |  0.000% |    0.017% |  0.000% | L1_SingleEG28er2p5                            |
+2022-03-09 08:52:52 INFO : |   167 |  0.000% |    0.017% |  0.000% | L1_SingleEG34er2p5                            |
+2022-03-09 08:52:52 INFO : |   168 |  0.000% |    0.017% |  0.000% | L1_SingleEG36er2p5                            |
+2022-03-09 08:52:52 INFO : |   169 |  0.000% |    0.017% |  0.000% | L1_SingleEG38er2p5                            |
+2022-03-09 08:52:52 INFO : |   170 |  0.000% |    0.017% |  0.000% | L1_SingleEG40er2p5                            |
+2022-03-09 08:52:52 INFO : |   171 |  0.000% |    0.017% |  0.000% | L1_SingleEG42er2p5                            |
+2022-03-09 08:52:52 INFO : |   172 |  0.000% |    0.017% |  0.000% | L1_SingleEG45er2p5                            |
+2022-03-09 08:52:52 INFO : |   159 |  0.000% |    0.017% |  0.000% | L1_SingleEG8er2p5                             |
+2022-03-09 08:52:52 INFO : |   319 |  0.000% |    0.017% |  0.000% | L1_SingleJet120er2p5                          |
+2022-03-09 08:52:52 INFO : |   320 |  0.000% |    0.017% |  0.000% | L1_SingleJet140er2p5                          |
+2022-03-09 08:52:52 INFO : |   321 |  0.000% |    0.017% |  0.000% | L1_SingleJet160er2p5                          |
+2022-03-09 08:52:52 INFO : |   322 |  0.000% |    0.017% |  0.000% | L1_SingleJet180er2p5                          |
+2022-03-09 08:52:52 INFO : |   450 |  0.000% |    0.017% |  0.000% | L1_SingleJet20er2p5_NotBptxOR                 |
+2022-03-09 08:52:52 INFO : |   451 |  0.000% |    0.017% |  0.000% | L1_SingleJet20er2p5_NotBptxOR_3BX             |
+2022-03-09 08:52:52 INFO : |   316 |  0.000% |    0.017% |  0.000% | L1_SingleJet35er2p5                           |
+2022-03-09 08:52:52 INFO : |   452 |  0.000% |    0.017% |  0.000% | L1_SingleJet43er2p5_NotBptxOR_3BX             |
+2022-03-09 08:52:52 INFO : |   453 |  0.000% |    0.017% |  0.000% | L1_SingleJet46er2p5_NotBptxOR_3BX             |
+2022-03-09 08:52:52 INFO : |   317 |  0.000% |    0.017% |  0.000% | L1_SingleJet60er2p5                           |
+2022-03-09 08:52:52 INFO : |   318 |  0.000% |    0.017% |  0.000% | L1_SingleJet90er2p5                           |
+2022-03-09 08:52:52 INFO : |     3 |  0.000% |    0.017% |  0.000% | L1_SingleMuCosmics_EMTF                       |
+2022-03-09 08:52:52 INFO : |     2 |  0.000% |    0.017% |  0.000% | L1_SingleMuCosmics_OMTF                       |
+2022-03-09 08:52:52 INFO : |   264 |  0.000% |    0.017% |  0.000% | L1_SingleTau120er2p1                          |
+2022-03-09 08:52:52 INFO : |   265 |  0.000% |    0.017% |  0.000% | L1_SingleTau130er2p1                          |
+2022-03-09 08:52:52 INFO : |   332 |  0.000% |    0.018% |  0.000% | L1_SingleJet140er2p5_ETMHF70                  |
+2022-03-09 08:52:52 INFO : |   333 |  0.000% |    0.018% |  0.000% | L1_SingleJet140er2p5_ETMHF80                  |
+2022-03-09 08:52:52 INFO : |   334 |  0.000% |    0.018% |  0.000% | L1_SingleJet140er2p5_ETMHF90                  |
+2022-03-09 08:52:52 INFO : |   260 |  0.000% |    0.018% |  0.000% | L1_ETMHF90_SingleJet60er2p5_ETMHF90_DP...     |
+2022-03-09 08:52:52 INFO : |   261 |  0.000% |    0.018% |  0.000% | L1_ETMHF90_SingleJet60er2p5_ETMHF90_DP...     |
+2022-03-09 08:52:52 INFO : |   262 |  0.000% |    0.018% |  0.000% | L1_ETMHF90_SingleJet80er2p5_ETMHF90_DP...     |
+2022-03-09 08:52:52 INFO : |   263 |  0.000% |    0.018% |  0.000% | L1_ETMHF90_SingleJet80er2p5_ETMHF90_DP...     |
+2022-03-09 08:52:52 INFO : |     8 |  0.000% |    0.018% |  0.000% | L1_SingleMu0_EMTF                             |
+2022-03-09 08:52:52 INFO : |     7 |  0.000% |    0.018% |  0.000% | L1_SingleMu0_OMTF                             |
+2022-03-09 08:52:52 INFO : |    15 |  0.000% |    0.018% |  0.000% | L1_SingleMu12_DQ_EMTF                         |
+2022-03-09 08:52:52 INFO : |    14 |  0.000% |    0.018% |  0.000% | L1_SingleMu12_DQ_OMTF                         |
+2022-03-09 08:52:52 INFO : |    22 |  0.000% |    0.018% |  0.000% | L1_SingleMu22_EMTF                            |
+2022-03-09 08:52:52 INFO : |    21 |  0.000% |    0.018% |  0.000% | L1_SingleMu22_OMTF                            |
+2022-03-09 08:52:52 INFO : |   184 |  0.000% |    0.019% |  0.000% | L1_SingleIsoEG24er1p5                         |
+2022-03-09 08:52:52 INFO : |   183 |  0.000% |    0.019% |  0.000% | L1_SingleIsoEG24er2p1                         |
+2022-03-09 08:52:52 INFO : |   187 |  0.000% |    0.019% |  0.000% | L1_SingleIsoEG26er1p5                         |
+2022-03-09 08:52:52 INFO : |   186 |  0.000% |    0.019% |  0.000% | L1_SingleIsoEG26er2p1                         |
+2022-03-09 08:52:52 INFO : |   185 |  0.000% |    0.019% |  0.000% | L1_SingleIsoEG26er2p5                         |
+2022-03-09 08:52:52 INFO : |   191 |  0.000% |    0.019% |  0.000% | L1_SingleIsoEG28er1p5                         |
+2022-03-09 08:52:52 INFO : |   190 |  0.000% |    0.019% |  0.000% | L1_SingleIsoEG28er2p1                         |
+2022-03-09 08:52:52 INFO : |   189 |  0.000% |    0.019% |  0.000% | L1_SingleIsoEG28er2p5                         |
+2022-03-09 08:52:52 INFO : |   193 |  0.000% |    0.019% |  0.000% | L1_SingleIsoEG30er2p1                         |
+2022-03-09 08:52:52 INFO : |   192 |  0.000% |    0.019% |  0.000% | L1_SingleIsoEG30er2p5                         |
+2022-03-09 08:52:52 INFO : |   195 |  0.000% |    0.019% |  0.000% | L1_SingleIsoEG32er2p1                         |
+2022-03-09 08:52:52 INFO : |   194 |  0.000% |    0.019% |  0.000% | L1_SingleIsoEG32er2p5                         |
+2022-03-09 08:52:52 INFO : |   196 |  0.000% |    0.019% |  0.000% | L1_SingleIsoEG34er2p5                         |
+2022-03-09 08:52:52 INFO : |   137 |  0.000% |    0.019% |  0.000% | L1_SingleIsoTau30er2p1                        |
+2022-03-09 08:52:52 INFO : |   138 |  0.000% |    0.019% |  0.000% | L1_SingleIsoTau32er2p1                        |
+2022-03-09 08:52:52 INFO : |   139 |  0.000% |    0.019% |  0.000% | L1_SingleIsoTau36er2p1                        |
+2022-03-09 08:52:52 INFO : |   176 |  0.000% |    0.019% |  0.000% | L1_SingleLooseIsoEG26er1p5                    |
+2022-03-09 08:52:52 INFO : |   175 |  0.000% |    0.019% |  0.000% | L1_SingleLooseIsoEG26er2p5                    |
+2022-03-09 08:52:52 INFO : |   180 |  0.000% |    0.019% |  0.000% | L1_SingleLooseIsoEG28er1p5                    |
+2022-03-09 08:52:52 INFO : |   179 |  0.000% |    0.019% |  0.000% | L1_SingleLooseIsoEG28er2p1                    |
+2022-03-09 08:52:52 INFO : |   178 |  0.000% |    0.019% |  0.000% | L1_SingleLooseIsoEG28er2p5                    |
+2022-03-09 08:52:52 INFO : |   182 |  0.000% |    0.019% |  0.000% | L1_SingleLooseIsoEG30er1p5                    |
+2022-03-09 08:52:52 INFO : |   181 |  0.000% |    0.019% |  0.000% | L1_SingleLooseIsoEG30er2p5                    |
+2022-03-09 08:52:52 INFO : |   197 |  0.000% |    0.020% |  0.000% | L1_IsoEG32er2p5_Mt40                          |
+2022-03-09 08:52:52 INFO : |   198 |  0.000% |    0.020% |  0.000% | L1_IsoEG32er2p5_Mt44                          |
+2022-03-09 08:52:52 INFO : |   199 |  0.000% |    0.020% |  0.000% | L1_IsoEG32er2p5_Mt48                          |
+2022-03-09 08:52:52 INFO : |   293 |  0.000% |    0.020% |  0.000% | L1_IsoTau40er2p1_ETMHF100                     |
+2022-03-09 08:52:52 INFO : |   294 |  0.000% |    0.020% |  0.000% | L1_IsoTau40er2p1_ETMHF110                     |
+2022-03-09 08:52:52 INFO : |   291 |  0.000% |    0.020% |  0.000% | L1_IsoTau40er2p1_ETMHF80                      |
+2022-03-09 08:52:52 INFO : |   292 |  0.000% |    0.020% |  0.000% | L1_IsoTau40er2p1_ETMHF90                      |
+2022-03-09 08:52:52 INFO : |   238 |  0.000% |    0.020% |  0.000% | L1_LooseIsoEG24er2p1_HTT100er                 |
+2022-03-09 08:52:52 INFO : |   239 |  0.000% |    0.020% |  0.000% | L1_LooseIsoEG26er2p1_HTT100er                 |
+2022-03-09 08:52:52 INFO : |   240 |  0.000% |    0.020% |  0.000% | L1_LooseIsoEG28er2p1_HTT100er                 |
+2022-03-09 08:52:52 INFO : |   241 |  0.000% |    0.020% |  0.000% | L1_LooseIsoEG30er2p1_HTT100er                 |
+2022-03-09 08:52:52 INFO : |    72 |  0.000% |    0.022% |  0.000% | L1_TripleMu0                                  |
+2022-03-09 08:52:52 INFO : |    71 |  0.000% |    0.022% |  0.000% | L1_TripleMu0_OQ                               |
+2022-03-09 08:52:52 INFO : |    73 |  0.000% |    0.022% |  0.000% | L1_TripleMu0_SQ                               |
+2022-03-09 08:52:52 INFO : |    74 |  0.000% |    0.022% |  0.000% | L1_TripleMu3                                  |
+2022-03-09 08:52:52 INFO : |    75 |  0.000% |    0.022% |  0.000% | L1_TripleMu3_SQ                               |
+2022-03-09 08:52:52 INFO : |    68 |  0.000% |    0.022% |  0.000% | L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max_15         |
+2022-03-09 08:52:52 INFO : |    67 |  0.000% |    0.022% |  0.000% | L1_TripleMu_2_1p5_0OQ_Mass_Max_15             |
+2022-03-09 08:52:52 INFO : |    76 |  0.000% |    0.022% |  0.000% | L1_TripleMu_5SQ_3SQ_0OQ                       |
+2022-03-09 08:52:52 INFO : |    78 |  0.000% |    0.022% |  0.000% | L1_TripleMu_5_3_3                             |
+2022-03-09 08:52:52 INFO : |    79 |  0.000% |    0.022% |  0.000% | L1_TripleMu_5_3_3_SQ                          |
+2022-03-09 08:52:52 INFO : |    77 |  0.000% |    0.022% |  0.000% | L1_TripleMu_5_3p5_2p5                         |
+2022-03-09 08:52:52 INFO : |    80 |  0.000% |    0.022% |  0.000% | L1_TripleMu_5_5_3                             |
+2022-03-09 08:52:52 INFO : |    99 |  0.000% |    0.024% |  0.000% | L1_Mu20_EG10er2p5                             |
+2022-03-09 08:52:52 INFO : |   119 |  0.000% |    0.024% |  0.000% | L1_Mu3_Jet30er2p5                             |
+2022-03-09 08:52:52 INFO : |    96 |  0.000% |    0.024% |  0.000% | L1_Mu5_EG23er2p5                              |
+2022-03-09 08:52:52 INFO : |    97 |  0.000% |    0.024% |  0.000% | L1_Mu7_EG20er2p5                              |
+2022-03-09 08:52:52 INFO : |    98 |  0.000% |    0.024% |  0.000% | L1_Mu7_EG23er2p5                              |
+2022-03-09 08:52:52 INFO : |   330 |  0.000% |    0.025% |  0.000% | L1_SingleJet10erHE                            |
+2022-03-09 08:52:52 INFO : |   331 |  0.000% |    0.025% |  0.000% | L1_SingleJet12erHE                            |
+2022-03-09 08:52:52 INFO : |   329 |  0.000% |    0.025% |  0.000% | L1_SingleJet8erHE                             |
+2022-03-09 08:52:52 INFO : |    55 |  0.000% |    0.026% |  0.000% | L1_DoubleMu0er1p5_SQ                          |
+2022-03-09 08:52:52 INFO : |    35 |  0.000% |    0.026% |  0.000% | L1_DoubleMu0er2p0_SQ_OS_dEta_Max1p5           |
+2022-03-09 08:52:52 INFO : |    34 |  0.000% |    0.026% |  0.000% | L1_DoubleMu0er2p0_SQ_OS_dEta_Max1p6           |
+2022-03-09 08:52:52 INFO : |    52 |  0.000% |    0.026% |  0.000% | L1_DoubleMu18er2p1                            |
+2022-03-09 08:52:52 INFO : |    51 |  0.000% |    0.026% |  0.000% | L1_DoubleMu18er2p1_SQ                         |
+2022-03-09 08:52:52 INFO : |    36 |  0.000% |    0.026% |  0.000% | L1_DoubleMuOpen_er1p4_OS_dEta_Max1p6          |
+2022-03-09 08:52:52 INFO : |    56 |  0.000% |    0.026% |  0.000% | L1_DoubleMu0er1p5_SQ_OS                       |
+2022-03-09 08:52:52 INFO : |    64 |  0.000% |    0.026% |  0.000% | L1_DoubleMu4p5er2p0_SQ_OS                     |
+2022-03-09 08:52:52 INFO : |   100 |  0.000% |    0.027% |  0.000% | L1_Mu5_LooseIsoEG20er2p5                      |
+2022-03-09 08:52:52 INFO : |   101 |  0.000% |    0.027% |  0.000% | L1_Mu7_LooseIsoEG20er2p5                      |
+2022-03-09 08:52:52 INFO : |   102 |  0.000% |    0.027% |  0.000% | L1_Mu7_LooseIsoEG23er2p5                      |
+2022-03-09 08:52:52 INFO : |   363 |  0.000% |    0.028% |  0.000% | L1_DoubleJet35_Mass_Min450_IsoTau45_Rm...     |
+2022-03-09 08:52:52 INFO : |   364 |  0.000% |    0.028% |  0.000% | L1_DoubleJet_80_30_Mass_Min420_IsoTau4...     |
+2022-03-09 08:52:52 INFO : |   279 |  0.000% |    0.030% |  0.000% | L1_Mu18er2p1_Tau24er2p1                       |
+2022-03-09 08:52:52 INFO : |   280 |  0.000% |    0.030% |  0.000% | L1_Mu18er2p1_Tau26er2p1                       |
+2022-03-09 08:52:52 INFO : |   289 |  0.000% |    0.030% |  0.000% | L1_Mu22er2p1_Tau70er2p1                       |
+2022-03-09 08:52:52 INFO : |    89 |  0.000% |    0.030% |  0.000% | L1_QuadMu0                                    |
+2022-03-09 08:52:52 INFO : |    88 |  0.000% |    0.030% |  0.000% | L1_QuadMu0_OQ                                 |
+2022-03-09 08:52:52 INFO : |    90 |  0.000% |    0.030% |  0.000% | L1_QuadMu0_SQ                                 |
+2022-03-09 08:52:52 INFO : |   128 |  0.000% |    0.030% |  0.000% | L1_Mu3er1p5_Jet100er2p5_ETMHF40               |
+2022-03-09 08:52:52 INFO : |   129 |  0.000% |    0.030% |  0.000% | L1_Mu3er1p5_Jet100er2p5_ETMHF50               |
+2022-03-09 08:52:52 INFO : |   109 |  0.000% |    0.031% |  0.000% | L1_DoubleMu4_SQ_EG9er2p5                      |
+2022-03-09 08:52:52 INFO : |   110 |  0.000% |    0.031% |  0.000% | L1_DoubleMu5_SQ_EG9er2p5                      |
+2022-03-09 08:52:52 INFO : |   147 |  0.000% |    0.032% |  0.000% | L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5            |
+2022-03-09 08:52:52 INFO : |   148 |  0.000% |    0.032% |  0.000% | L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5            |
+2022-03-09 08:52:52 INFO : |   282 |  0.000% |    0.032% |  0.000% | L1_Mu22er2p1_IsoTau28er2p1                    |
+2022-03-09 08:52:52 INFO : |   283 |  0.000% |    0.032% |  0.000% | L1_Mu22er2p1_IsoTau30er2p1                    |
+2022-03-09 08:52:52 INFO : |   284 |  0.000% |    0.032% |  0.000% | L1_Mu22er2p1_IsoTau32er2p1                    |
+2022-03-09 08:52:52 INFO : |   285 |  0.000% |    0.032% |  0.000% | L1_Mu22er2p1_IsoTau34er2p1                    |
+2022-03-09 08:52:52 INFO : |   286 |  0.000% |    0.032% |  0.000% | L1_Mu22er2p1_IsoTau36er2p1                    |
+2022-03-09 08:52:52 INFO : |   287 |  0.000% |    0.032% |  0.000% | L1_Mu22er2p1_IsoTau40er2p1                    |
+2022-03-09 08:52:52 INFO : |   205 |  0.000% |    0.033% |  0.000% | L1_DoubleEG_15_10_er2p5                       |
+2022-03-09 08:52:52 INFO : |   206 |  0.000% |    0.033% |  0.000% | L1_DoubleEG_20_10_er2p5                       |
+2022-03-09 08:52:52 INFO : |   207 |  0.000% |    0.033% |  0.000% | L1_DoubleEG_22_10_er2p5                       |
+2022-03-09 08:52:52 INFO : |   208 |  0.000% |    0.033% |  0.000% | L1_DoubleEG_25_12_er2p5                       |
+2022-03-09 08:52:52 INFO : |   209 |  0.000% |    0.033% |  0.000% | L1_DoubleEG_25_14_er2p5                       |
+2022-03-09 08:52:52 INFO : |   210 |  0.000% |    0.033% |  0.000% | L1_DoubleEG_27_14_er2p5                       |
+2022-03-09 08:52:52 INFO : |   341 |  0.000% |    0.033% |  0.000% | L1_DoubleJet100er2p5                          |
+2022-03-09 08:52:52 INFO : |   342 |  0.000% |    0.033% |  0.000% | L1_DoubleJet120er2p5                          |
+2022-03-09 08:52:52 INFO : |   343 |  0.000% |    0.033% |  0.000% | L1_DoubleJet150er2p5                          |
+2022-03-09 08:52:52 INFO : |   340 |  0.000% |    0.033% |  0.000% | L1_DoubleJet40er2p5                           |
+2022-03-09 08:52:52 INFO : |   267 |  0.000% |    0.033% |  0.000% | L1_DoubleTau70er2p1                           |
+2022-03-09 08:52:52 INFO : |   163 |  0.000% |    0.033% |  0.000% | L1_SingleEG28_FWD2p5                          |
+2022-03-09 08:52:52 INFO : |   327 |  0.000% |    0.033% |  0.000% | L1_SingleJet120_FWD3p0                        |
+2022-03-09 08:52:52 INFO : |   324 |  0.000% |    0.033% |  0.000% | L1_SingleJet35_FWD3p0                         |
+2022-03-09 08:52:52 INFO : |   325 |  0.000% |    0.033% |  0.000% | L1_SingleJet60_FWD3p0                         |
+2022-03-09 08:52:52 INFO : |   326 |  0.000% |    0.033% |  0.000% | L1_SingleJet90_FWD3p0                         |
+2022-03-09 08:52:52 INFO : |   247 |  0.000% |    0.034% |  0.000% | L1_DoubleEG8er2p5_HTT260er                    |
+2022-03-09 08:52:52 INFO : |   248 |  0.000% |    0.034% |  0.000% | L1_DoubleEG8er2p5_HTT280er                    |
+2022-03-09 08:52:52 INFO : |   249 |  0.000% |    0.034% |  0.000% | L1_DoubleEG8er2p5_HTT300er                    |
+2022-03-09 08:52:52 INFO : |   250 |  0.000% |    0.034% |  0.000% | L1_DoubleEG8er2p5_HTT320er                    |
+2022-03-09 08:52:52 INFO : |   251 |  0.000% |    0.034% |  0.000% | L1_DoubleEG8er2p5_HTT340er                    |
+2022-03-09 08:52:52 INFO : |   212 |  0.000% |    0.036% |  0.000% | L1_DoubleEG_LooseIso20_10_er2p5               |
+2022-03-09 08:52:52 INFO : |   213 |  0.000% |    0.036% |  0.000% | L1_DoubleEG_LooseIso22_10_er2p5               |
+2022-03-09 08:52:52 INFO : |   214 |  0.000% |    0.036% |  0.000% | L1_DoubleEG_LooseIso22_12_er2p5               |
+2022-03-09 08:52:52 INFO : |   215 |  0.000% |    0.036% |  0.000% | L1_DoubleEG_LooseIso25_12_er2p5               |
+2022-03-09 08:52:52 INFO : |   118 |  0.000% |    0.036% |  0.000% | L1_DoubleJet35_Mass_Min450_IsoTau45er2...     |
+2022-03-09 08:52:52 INFO : |   494 |  0.000% |    0.037% |  0.000% | L1_CDC_SingleMu_3_er1p2_TOP120_DPHI2p6...     |
+2022-03-09 08:52:52 INFO : |    91 |  0.000% |    0.039% |  0.000% | L1_DoubleEG_LooseIso16_LooseIso12_er1p5       |
+2022-03-09 08:52:52 INFO : |    92 |  0.000% |    0.039% |  0.000% | L1_DoubleEG_LooseIso18_LooseIso12_er1p5       |
+2022-03-09 08:52:52 INFO : |    93 |  0.000% |    0.039% |  0.000% | L1_DoubleEG_LooseIso20_LooseIso12_er1p5       |
+2022-03-09 08:52:52 INFO : |    94 |  0.000% |    0.039% |  0.000% | L1_DoubleEG_LooseIso22_LooseIso12_er1p5       |
+2022-03-09 08:52:52 INFO : |    95 |  0.000% |    0.039% |  0.000% | L1_DoubleEG_LooseIso25_LooseIso12_er1p5       |
+2022-03-09 08:52:52 INFO : |   269 |  0.000% |    0.039% |  0.000% | L1_DoubleIsoTau28er2p1                        |
+2022-03-09 08:52:52 INFO : |   270 |  0.000% |    0.039% |  0.000% | L1_DoubleIsoTau30er2p1                        |
+2022-03-09 08:52:52 INFO : |   271 |  0.000% |    0.039% |  0.000% | L1_DoubleIsoTau32er2p1                        |
+2022-03-09 08:52:52 INFO : |   272 |  0.000% |    0.039% |  0.000% | L1_DoubleIsoTau34er2p1                        |
+2022-03-09 08:52:52 INFO : |   116 |  0.000% |    0.039% |  0.000% | L1_DoubleIsoTau35er2p1                        |
+2022-03-09 08:52:52 INFO : |   273 |  0.000% |    0.039% |  0.000% | L1_DoubleIsoTau36er2p1                        |
+2022-03-09 08:52:52 INFO : |   217 |  0.000% |    0.039% |  0.000% | L1_DoubleLooseIsoEG22er2p1                    |
+2022-03-09 08:52:52 INFO : |   218 |  0.000% |    0.039% |  0.000% | L1_DoubleLooseIsoEG24er2p1                    |
+2022-03-09 08:52:52 INFO : |   188 |  0.000% |    0.039% |  0.000% | L1_SingleIsoEG28_FWD2p5                       |
+2022-03-09 08:52:52 INFO : |   177 |  0.000% |    0.039% |  0.000% | L1_SingleLooseIsoEG28_FWD2p5                  |
+2022-03-09 08:52:52 INFO : |   104 |  0.000% |    0.041% |  0.000% | L1_Mu6_DoubleEG10er2p5                        |
+2022-03-09 08:52:52 INFO : |   105 |  0.000% |    0.041% |  0.000% | L1_Mu6_DoubleEG12er2p5                        |
+2022-03-09 08:52:52 INFO : |   106 |  0.000% |    0.041% |  0.000% | L1_Mu6_DoubleEG15er2p5                        |
+2022-03-09 08:52:52 INFO : |   107 |  0.000% |    0.041% |  0.000% | L1_Mu6_DoubleEG17er2p5                        |
+2022-03-09 08:52:52 INFO : |   117 |  0.000% |    0.047% |  8.000% | L1_DoubleIsoTau26er2p1_Jet55_OvRm_dR0p5       |
+2022-03-09 08:52:52 INFO : |   228 |  0.000% |    0.050% |  0.000% | L1_TripleEG16er2p5                            |
+2022-03-09 08:52:52 INFO : |   224 |  0.000% |    0.050% |  0.000% | L1_TripleEG_16_12_8_er2p5                     |
+2022-03-09 08:52:52 INFO : |   225 |  0.000% |    0.050% |  0.000% | L1_TripleEG_16_15_8_er2p5                     |
+2022-03-09 08:52:52 INFO : |   226 |  0.000% |    0.050% |  0.000% | L1_TripleEG_18_17_8_er2p5                     |
+2022-03-09 08:52:52 INFO : |   227 |  0.000% |    0.050% |  0.000% | L1_TripleEG_18_18_12_er2p5                    |
+2022-03-09 08:52:52 INFO : |   373 |  0.000% |    0.058% |  0.000% | L1_TripleJet_100_80_70_DoubleJet_80_70...     |
+2022-03-09 08:52:52 INFO : |   374 |  0.000% |    0.058% |  0.000% | L1_TripleJet_105_85_75_DoubleJet_85_75...     |
+2022-03-09 08:52:52 INFO : |   372 |  0.000% |    0.058% |  0.000% | L1_TripleJet_95_75_65_DoubleJet_75_65_...     |
+2022-03-09 08:52:52 INFO : |   146 |  0.000% |    0.066% |  0.000% | L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_...     |
+2022-03-09 08:52:52 INFO : |   382 |  0.000% |    0.066% |  0.000% | L1_QuadJet60er2p5                             |
+2022-03-09 08:52:52 INFO : |   384 |  0.000% |    0.067% |  0.000% | L1_HTT280er_QuadJet_70_55_40_35_er2p4         |
+2022-03-09 08:52:52 INFO : |   385 |  0.000% |    0.067% |  0.000% | L1_HTT320er_QuadJet_70_55_40_40_er2p4         |
+2022-03-09 08:52:52 INFO : |   386 |  0.000% |    0.067% |  0.000% | L1_HTT320er_QuadJet_80_60_er2p1_45_40_...     |
+2022-03-09 08:52:52 INFO : |   387 |  0.000% |    0.067% |  0.000% | L1_HTT320er_QuadJet_80_60_er2p1_50_45_...     |
+2022-03-09 08:52:52 INFO : |   298 |  0.000% |    0.086% |  0.000% | L1_QuadJet36er2p5_IsoTau52er2p1               |
+2022-03-09 08:52:52 INFO : |   345 |  0.000% |    0.094% |  0.000% | L1_DoubleJet100er2p3_dEta_Max1p6              |
+2022-03-09 08:52:52 INFO : |   346 |  0.000% |    0.094% |  0.000% | L1_DoubleJet112er2p3_dEta_Max1p6              |
+2022-03-09 08:52:52 INFO : |   376 |  0.000% |    0.100% |  0.000% | L1_QuadJet_95_75_65_20_DoubleJet_75_65...     |
+2022-03-09 08:52:52 INFO : |   114 |  0.000% |    0.155% |  0.000% | L1_DoubleMu0_upt15_upt7                       |
+2022-03-09 08:52:52 INFO : |   115 |  0.000% |    0.163% |  0.000% | L1_DoubleMu0_upt6ip123_upt4                   |
+2022-03-09 08:52:52 INFO : |    61 |  0.000% |    0.202% |  0.000% | L1_DoubleMu4_SQ_OS_dR_Max1p2                  |
+2022-03-09 08:52:52 INFO : |    63 |  0.000% |    0.202% |  0.000% | L1_DoubleMu4p5_SQ_OS_dR_Max1p2                |
+2022-03-09 08:52:52 INFO : |    59 |  0.000% |    0.213% |  0.000% | L1_DoubleMu0er1p4_SQ_OS_dR_Max1p4             |
+2022-03-09 08:52:52 INFO : |    58 |  0.000% |    0.213% |  0.000% | L1_DoubleMu0er1p5_SQ_OS_dR_Max1p4             |
+2022-03-09 08:52:52 INFO : |    57 |  0.000% |    0.213% |  0.000% | L1_DoubleMu0er1p5_SQ_dR_Max1p4                |
+2022-03-09 08:52:52 INFO : |    54 |  0.000% |    0.213% |  0.000% | L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4             |
+2022-03-09 08:52:52 INFO : |    53 |  0.000% |    0.213% |  0.000% | L1_DoubleMu0er2p0_SQ_dR_Max1p4                |
+2022-03-09 08:52:52 INFO : |    37 |  0.000% |    0.213% |  0.000% | L1_DoubleMu3er2p0_SQ_OS_dR_Max1p4             |
+2022-03-09 08:52:52 INFO : |    43 |  0.000% |    0.315% |  0.000% | L1_DoubleMu0_Mass_Min1                        |
+2022-03-09 08:52:52 INFO : |    50 |  0.000% |    0.315% |  0.000% | L1_DoubleMu_15_7_Mass_Min1                    |
+2022-03-09 08:52:52 INFO : |    66 |  0.000% |    0.330% |  0.000% | L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18           |
+2022-03-09 08:52:52 INFO : |    65 |  0.000% |    0.330% |  0.000% | L1_DoubleMu4p5er2p0_SQ_OS_Mass_Min7           |
+2022-03-09 08:52:52 INFO : |    85 |  0.000% |    0.341% |  0.000% | L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_S...     |
+2022-03-09 08:52:52 INFO : |    86 |  0.000% |    0.341% |  0.000% | L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_...     |
+2022-03-09 08:52:52 INFO : |    83 |  0.000% |    0.341% |  0.000% | L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_O...     |
+2022-03-09 08:52:52 INFO : |    82 |  0.000% |    0.341% |  0.000% | L1_TripleMu_5_3p5_2p5_OQ_DoubleMu_5_2p...     |
+2022-03-09 08:52:52 INFO : |    84 |  0.000% |    0.341% |  0.000% | L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_...     |
+2022-03-09 08:52:52 INFO : |   201 |  0.000% |    0.475% |  0.000% | L1_DoubleEG10er1p22_dR_0p6                    |
+2022-03-09 08:52:52 INFO : |   200 |  0.000% |    0.475% |  0.000% | L1_DoubleEG10p5er1p22_dR_0p6                  |
+2022-03-09 08:52:52 INFO : |   223 |  0.000% |    0.475% |  0.000% | L1_DoubleEG5er1p22_dR_0p9                     |
+2022-03-09 08:52:52 INFO : |   222 |  0.000% |    0.475% |  0.000% | L1_DoubleEG5p5er1p22_dR_0p8                   |
+2022-03-09 08:52:52 INFO : |   221 |  0.000% |    0.475% |  0.000% | L1_DoubleEG6er1p22_dR_0p8                     |
+2022-03-09 08:52:52 INFO : |   220 |  0.000% |    0.475% |  0.000% | L1_DoubleEG6p5er1p22_dR_0p8                   |
+2022-03-09 08:52:52 INFO : |   219 |  0.000% |    0.475% |  0.000% | L1_DoubleEG7er1p22_dR_0p8                     |
+2022-03-09 08:52:52 INFO : |   216 |  0.000% |    0.475% |  0.000% | L1_DoubleEG7p5er1p22_dR_0p7                   |
+2022-03-09 08:52:52 INFO : |   211 |  0.000% |    0.475% |  0.000% | L1_DoubleEG8er1p22_dR_0p7                     |
+2022-03-09 08:52:52 INFO : |   204 |  0.000% |    0.475% |  0.000% | L1_DoubleEG8p5er1p22_dR_0p7                   |
+2022-03-09 08:52:52 INFO : |   203 |  0.000% |    0.475% |  0.000% | L1_DoubleEG9er1p22_dR_0p7                     |
+2022-03-09 08:52:52 INFO : |   202 |  0.000% |    0.475% |  0.000% | L1_DoubleEG9p5er1p22_dR_0p6                   |
+2022-03-09 08:52:52 INFO : |   126 |  0.000% |    0.667% |  0.000% | L1_Mu3_Jet120er2p5_dR_Max0p4                  |
+2022-03-09 08:52:52 INFO : |   125 |  0.000% |    0.667% |  0.000% | L1_Mu3_Jet120er2p5_dR_Max0p8                  |
+2022-03-09 08:52:52 INFO : |   121 |  0.000% |    0.667% |  0.000% | L1_Mu3_Jet16er2p5_dR_Max0p4                   |
+2022-03-09 08:52:52 INFO : |   122 |  0.000% |    0.667% |  0.000% | L1_Mu3_Jet35er2p5_dR_Max0p4                   |
+2022-03-09 08:52:52 INFO : |   123 |  0.000% |    0.667% |  0.000% | L1_Mu3_Jet60er2p5_dR_Max0p4                   |
+2022-03-09 08:52:52 INFO : |   124 |  0.000% |    0.667% |  0.000% | L1_Mu3_Jet80er2p5_dR_Max0p4                   |
+2022-03-09 08:52:52 INFO : |   134 |  0.000% |    0.766% |  0.000% | L1_Mu10er2p3_Jet32er2p3_dR_Max0p4_Doub...     |
+2022-03-09 08:52:52 INFO : |   136 |  0.000% |    0.766% |  0.000% | L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_Doub...     |
+2022-03-09 08:52:52 INFO : |   135 |  0.000% |    0.766% |  0.000% | L1_Mu12er2p3_Jet40er2p3_dR_Max0p4_Doub...     |
+2022-03-09 08:52:52 INFO : |   365 |  0.000% |    0.862% |  0.000% | L1_DoubleJet_80_30_Mass_Min420_Mu8            |
+2022-03-09 08:52:52 INFO : |   142 |  0.000% |    0.869% |  0.000% | L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_M...     |
+2022-03-09 08:52:52 INFO : |   143 |  0.000% |    0.869% |  0.000% | L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_M...     |
+2022-03-09 08:52:52 INFO : |   366 |  0.000% |    0.869% |  0.000% | L1_DoubleJet_80_30_Mass_Min420_DoubleM...     |
+2022-03-09 08:52:52 INFO : |   356 |  0.000% |    0.871% |  0.000% | L1_DoubleJet_100_30_DoubleJet30_Mass_M...     |
+2022-03-09 08:52:52 INFO : |   357 |  0.000% |    0.871% |  0.000% | L1_DoubleJet_110_35_DoubleJet35_Mass_M...     |
+2022-03-09 08:52:52 INFO : |   358 |  0.000% |    0.871% |  0.000% | L1_DoubleJet_115_40_DoubleJet40_Mass_M...     |
+2022-03-09 08:52:52 INFO : |   359 |  0.000% |    0.871% |  0.000% | L1_DoubleJet_120_45_DoubleJet45_Mass_M...     |
+2022-03-09 08:52:52 INFO : |   355 |  0.000% |    0.871% |  0.000% | L1_DoubleJet_90_30_DoubleJet30_Mass_Mi...     |
+2022-03-09 08:52:52 INFO : |   275 |  0.000% |    0.877% |  0.000% | L1_DoubleIsoTau28er2p1_Mass_Max80             |
+2022-03-09 08:52:52 INFO : |   274 |  0.000% |    0.877% |  0.000% | L1_DoubleIsoTau28er2p1_Mass_Max90             |
+2022-03-09 08:52:52 INFO : |   277 |  0.000% |    0.877% |  0.000% | L1_DoubleIsoTau30er2p1_Mass_Max80             |
+2022-03-09 08:52:52 INFO : |   276 |  0.000% |    0.877% |  0.000% | L1_DoubleIsoTau30er2p1_Mass_Max90             |
+2022-03-09 08:52:52 INFO : |   348 |  0.000% |    0.932% |  0.000% | L1_DoubleJet30er2p5_Mass_Min150_dEta_M...     |
+2022-03-09 08:52:52 INFO : |   349 |  0.000% |    0.932% |  0.000% | L1_DoubleJet30er2p5_Mass_Min200_dEta_M...     |
+2022-03-09 08:52:52 INFO : |   350 |  0.000% |    0.932% |  0.000% | L1_DoubleJet30er2p5_Mass_Min250_dEta_M...     |
+2022-03-09 08:52:52 INFO : |   351 |  0.000% |    0.932% |  0.000% | L1_DoubleJet30er2p5_Mass_Min300_dEta_M...     |
+2022-03-09 08:52:52 INFO : |   352 |  0.000% |    0.932% |  0.000% | L1_DoubleJet30er2p5_Mass_Min330_dEta_M...     |
+2022-03-09 08:52:52 INFO : |   353 |  0.000% |    0.932% |  0.000% | L1_DoubleJet30er2p5_Mass_Min360_dEta_M...     |
+2022-03-09 08:52:52 INFO : |   259 |  0.000% |    1.000% |  0.000% | L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3     |
+2022-03-09 08:52:52 INFO : |   234 |  0.000% |    1.000% |  0.000% | L1_LooseIsoEG26er2p1_Jet34er2p5_dR_Min0p3     |
+2022-03-09 08:52:52 INFO : |   235 |  0.000% |    1.000% |  0.000% | L1_LooseIsoEG28er2p1_Jet34er2p5_dR_Min0p3     |
+2022-03-09 08:52:52 INFO : |   236 |  0.000% |    1.000% |  0.000% | L1_LooseIsoEG30er2p1_Jet34er2p5_dR_Min0p3     |
+2022-03-09 08:52:52 INFO : |   257 |  0.000% |    1.003% |  0.000% | L1_LooseIsoEG22er2p1_IsoTau26er2p1_dR_...     |
+2022-03-09 08:52:52 INFO : |   258 |  0.000% |    1.003% |  0.000% | L1_LooseIsoEG24er2p1_IsoTau27er2p1_dR_...     |
+2022-03-09 08:52:52 INFO : |   112 |  0.000% |    1.201% |  0.000% | L1_DoubleMu3_OS_DoubleEG7p5Upsilon            |
+2022-03-09 08:52:52 INFO : |   113 |  0.000% |    1.201% |  0.000% | L1_DoubleMu5Upsilon_OS_DoubleEG3              |
+2022-03-09 08:52:52 INFO : |   360 |  0.000% |    5.235% |  0.000% | L1_DoubleJet_115_40_DoubleJet40_Mass_M...     |
+2022-03-09 08:52:52 INFO : |   361 |  0.000% |    5.235% |  0.000% | L1_DoubleJet_120_45_DoubleJet45_Mass_M...     |
+2022-03-09 08:52:52 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2022-03-09 08:52:52 INFO : |---------------------------------------------------------------------------------------|
+2022-03-09 08:52:52 INFO : distributing algorithms, shadow ratio: 0.0
+2022-03-09 08:52:52 INFO : starting algorithm distribution for 384 algorithms on 6 modules using shadow ratio of 0.0
+2022-03-09 08:52:52 INFO :  . adding L1_AlwaysTrue (458) to module 0
+2022-03-09 08:52:52 INFO :  +-- L1_FirstBunchInTrain shadowed ratio 20.0 %
+2022-03-09 08:52:52 INFO :  +--- L1_SingleJet46er2p5_NotBptxOR_3BX shadowed ratio 12.5 %
+2022-03-09 08:52:52 INFO :  +---- L1_ETMHF110_HTT60er_NotSecondBunchInTrain shadowed ratio 36.4 %
+2022-03-09 08:52:52 INFO :  +----- L1_ETMHF100_HTT60er shadowed ratio 8.3 %
+2022-03-09 08:52:52 INFO :  +------ L1_ETMHF100 shadowed ratio 8.3 %
+2022-03-09 08:52:52 INFO :  +------- L1_ETMHF110 shadowed ratio 8.3 %
+2022-03-09 08:52:52 INFO :  +-------- L1_ETMHF110_HTT60er shadowed ratio 16.7 %
+2022-03-09 08:52:52 INFO :  +--------- L1_ETMHF130_HTT60er shadowed ratio 7.7 %
+2022-03-09 08:52:52 INFO :  +---------- L1_ETMHF130 shadowed ratio 7.7 %
+2022-03-09 08:52:52 INFO :  +----------- L1_ETMHF120_HTT60er shadowed ratio 7.1 %
+2022-03-09 08:52:52 INFO :  +------------ L1_ETMHF120 shadowed ratio 7.1 %
+2022-03-09 08:52:52 INFO :  +------------- L1_ETMHF90_HTT60er shadowed ratio 6.7 %
+2022-03-09 08:52:52 INFO :  +-------------- L1_ETMHF120_NotSecondBunchInTrain shadowed ratio 40.0 %
+2022-03-09 08:52:52 INFO :  +--------------- L1_ETMHF90_SingleJet60er2p5_ETMHF90_DPHI_MIN2p094 shadowed ratio 6.2 %
+2022-03-09 08:52:52 INFO :  +---------------- L1_ETMHF90_SingleJet60er2p5_ETMHF90_DPHI_MIN2p618 shadowed ratio 5.9 %
+2022-03-09 08:52:52 INFO :  +----------------- L1_ETMHF90_SingleJet80er2p5_ETMHF90_DPHI_MIN2p094 shadowed ratio 5.6 %
+2022-03-09 08:52:52 INFO :  +------------------ L1_ETMHF90_SingleJet80er2p5_ETMHF90_DPHI_MIN2p618 shadowed ratio 5.3 %
+2022-03-09 08:52:52 INFO :  +------------------- L1_FirstBunchAfterTrain shadowed ratio 14.3 %
+2022-03-09 08:52:52 INFO :  +-------------------- L1_FirstBunchBeforeTrain shadowed ratio 23.8 %
+2022-03-09 08:52:52 INFO :  +--------------------- L1_DoubleMu3_SQ_ETMHF50_HTT60er shadowed ratio 4.3 %
+2022-03-09 08:52:52 INFO :  +---------------------- L1_DoubleMu3_SQ_HTT220er shadowed ratio 4.2 %
+2022-03-09 08:52:52 INFO :  +----------------------- L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5 shadowed ratio 8.0 %
+2022-03-09 08:52:52 INFO :  +------------------------ L1_SingleJet60er2p5 shadowed ratio 4.0 %
+2022-03-09 08:52:52 INFO :  +------------------------- L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5 shadowed ratio 11.5 %
+2022-03-09 08:52:52 INFO :  +-------------------------- L1_DoubleJet40er2p5 shadowed ratio 3.8 %
+2022-03-09 08:52:52 INFO :  +--------------------------- L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5 shadowed ratio 7.4 %
+2022-03-09 08:52:52 INFO :  +---------------------------- L1_DoubleMu3_SQ_HTT240er shadowed ratio 3.6 %
+2022-03-09 08:52:52 INFO :  +----------------------------- L1_DoubleMu3_SQ_HTT260er shadowed ratio 3.4 %
+2022-03-09 08:52:52 INFO :  +------------------------------ L1_SingleJet140er2p5_ETMHF90 shadowed ratio 3.3 %
+2022-03-09 08:52:52 INFO :  +------------------------------- L1_SingleJet140er2p5_ETMHF70 shadowed ratio 3.2 %
+2022-03-09 08:52:52 INFO :  +-------------------------------- L1_SingleJet140er2p5 shadowed ratio 3.2 %
+2022-03-09 08:52:52 INFO :  +--------------------------------- L1_SingleJet140er2p5_ETMHF80 shadowed ratio 3.1 %
+2022-03-09 08:52:52 INFO :  +---------------------------------- L1_SingleJet20er2p5_NotBptxOR shadowed ratio 3.0 %
+2022-03-09 08:52:52 INFO :  +----------------------------------- L1_SingleJet20er2p5_NotBptxOR_3BX shadowed ratio 12.1 %
+2022-03-09 08:52:52 INFO :  +------------------------------------ L1_SingleJet43er2p5_NotBptxOR_3BX shadowed ratio 8.8 %
+2022-03-09 08:52:52 INFO :  +------------------------------------- L1_MinimumBiasHF0_AND_BptxAND shadowed ratio 2.8 %
+2022-03-09 08:52:52 INFO :  +-------------------------------------- L1_Mu3er1p5_Jet100er2p5_ETMHF50 shadowed ratio 2.6 %
+2022-03-09 08:52:52 INFO :  +--------------------------------------- L1_Mu3er1p5_Jet100er2p5_ETMHF40 shadowed ratio 5.1 %
+2022-03-09 08:52:52 INFO :  +---------------------------------------- L1_Mu6_HTT240er shadowed ratio 2.5 %
+2022-03-09 08:52:52 INFO :  +----------------------------------------- L1_Mu6_DoubleEG10er2p5 shadowed ratio 2.4 %
+2022-03-09 08:52:52 INFO :  +------------------------------------------ L1_Mu6_DoubleEG12er2p5 shadowed ratio 2.4 %
+2022-03-09 08:52:52 INFO :  +------------------------------------------- L1_Mu6_DoubleEG15er2p5 shadowed ratio 2.3 %
+2022-03-09 08:52:52 INFO :  +-------------------------------------------- L1_Mu6_DoubleEG17er2p5 shadowed ratio 2.3 %
+2022-03-09 08:52:52 INFO :  +--------------------------------------------- L1_DoubleEG8er2p5_HTT260er shadowed ratio 2.2 %
+2022-03-09 08:52:52 INFO :  +---------------------------------------------- L1_Mu6_HTT250er shadowed ratio 2.2 %
+2022-03-09 08:52:52 INFO :  +----------------------------------------------- L1_NotBptxOR shadowed ratio 2.2 %
+2022-03-09 08:52:52 INFO :  +------------------------------------------------ L1_DoubleEG8er2p5_HTT280er shadowed ratio 2.1 %
+2022-03-09 08:52:52 INFO :  +------------------------------------------------- L1_DoubleEG8er2p5_HTT300er shadowed ratio 2.1 %
+2022-03-09 08:52:52 INFO :  +-------------------------------------------------- L1_DoubleEG8er2p5_HTT320er shadowed ratio 2.0 %
+2022-03-09 08:52:52 INFO :  +--------------------------------------------------- L1_DoubleEG8er2p5_HTT340er shadowed ratio 2.0 %
+2022-03-09 08:52:52 INFO :  +---------------------------------------------------- L1_HTT280er shadowed ratio 2.0 %
+2022-03-09 08:52:52 INFO :  +----------------------------------------------------- L1_HTT280er_QuadJet_70_55_40_35_er2p4 shadowed ratio 2.0 %
+2022-03-09 08:52:52 INFO :  +------------------------------------------------------ L1_HTT320er shadowed ratio 2.0 %
+2022-03-09 08:52:52 INFO :  +------------------------------------------------------- L1_HTT320er_QuadJet_70_55_40_40_er2p4 shadowed ratio 1.9 %
+2022-03-09 08:52:52 INFO :  +-------------------------------------------------------- L1_ZeroBias shadowed ratio 1.9 %
+2022-03-09 08:52:52 INFO :  +--------------------------------------------------------- L1_ZeroBias_copy shadowed ratio 1.9 %
+2022-03-09 08:52:52 INFO :  +---------------------------------------------------------- L1_SingleMuOpen_NotBptxOR shadowed ratio 1.9 %
+2022-03-09 08:52:52 INFO :  +----------------------------------------------------------- L1_SingleMuOpen shadowed ratio 1.9 %
+2022-03-09 08:52:52 INFO :  +------------------------------------------------------------ L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3 shadowed ratio 1.9 %
+2022-03-09 08:52:52 INFO :  +------------------------------------------------------------- L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3 shadowed ratio 1.8 %
+2022-03-09 08:52:52 INFO :  +-------------------------------------------------------------- L1_SecondBunchInTrain shadowed ratio 9.1 %
+2022-03-09 08:52:52 INFO :  +--------------------------------------------------------------- L1_SecondLastBunchInTrain shadowed ratio 9.1 %
+2022-03-09 08:52:52 INFO :  +---------------------------------------------------------------- L1_SingleMuOpen_er1p1_NotBptxOR_3BX shadowed ratio 5.4 %
+2022-03-09 08:52:52 INFO :  +----------------------------------------------------------------- L1_SingleMuOpen_er1p4_NotBptxOR_3BX shadowed ratio 5.3 %
+2022-03-09 08:52:52 INFO :  +------------------------------------------------------------------ L1_IsoTau40er2p1_ETMHF100 shadowed ratio 1.7 %
+2022-03-09 08:52:52 INFO :  +------------------------------------------------------------------- L1_Mu22er2p1_IsoTau40er2p1 shadowed ratio 1.7 %
+2022-03-09 08:52:52 INFO :  +-------------------------------------------------------------------- L1_Mu22er2p1_IsoTau28er2p1 shadowed ratio 1.7 %
+2022-03-09 08:52:52 INFO :  +--------------------------------------------------------------------- L1_Mu22er2p1_IsoTau30er2p1 shadowed ratio 1.6 %
+2022-03-09 08:52:52 INFO :  +---------------------------------------------------------------------- L1_SingleIsoTau30er2p1 shadowed ratio 1.6 %
+2022-03-09 08:52:52 INFO :  +----------------------------------------------------------------------- L1_Mu22er2p1_IsoTau32er2p1 shadowed ratio 1.6 %
+2022-03-09 08:52:52 INFO :  +------------------------------------------------------------------------ L1_SingleIsoTau32er2p1 shadowed ratio 1.6 %
+2022-03-09 08:52:52 INFO :  +------------------------------------------------------------------------- L1_Mu22er2p1_IsoTau34er2p1 shadowed ratio 1.6 %
+2022-03-09 08:52:52 INFO :  +-------------------------------------------------------------------------- L1_Mu22er2p1_IsoTau36er2p1 shadowed ratio 1.6 %
+2022-03-09 08:52:52 INFO :  +--------------------------------------------------------------------------- L1_SingleIsoTau36er2p1 shadowed ratio 1.6 %
+2022-03-09 08:52:52 INFO :  +---------------------------------------------------------------------------- L1_Mu22er2p1_Tau70er2p1 shadowed ratio 1.5 %
+2022-03-09 08:52:52 INFO :  +----------------------------------------------------------------------------- L1_IsoTau40er2p1_ETMHF110 shadowed ratio 3.1 %
+2022-03-09 08:52:52 INFO :  +------------------------------------------------------------------------------ L1_IsoTau40er2p1_ETMHF80 shadowed ratio 3.1 %
+2022-03-09 08:52:52 INFO :  +------------------------------------------------------------------------------- L1_IsoTau40er2p1_ETMHF90 shadowed ratio 3.1 %
+2022-03-09 08:52:52 INFO :  +-------------------------------------------------------------------------------- L1_BptxOR shadowed ratio 1.5 %
+2022-03-09 08:52:52 INFO :  +--------------------------------------------------------------------------------- L1_LastBunchInTrain shadowed ratio 7.7 %
+2022-03-09 08:52:52 INFO :  +---------------------------------------------------------------------------------- L1_IsolatedBunch shadowed ratio 7.7 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ETMHF110_HTT60er_NotSecondBunchInTrain 444 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5 148 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleEG8er2p5_HTT260er 247 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SecondLastBunchInTrain 475 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleMuOpen_er1p1_NotBptxOR_3BX 448 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ETMHF90_HTT60er 428 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu6_HTT250er 132 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleJet140er2p5_ETMHF70 332 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu22er2p1_IsoTau40er2p1 287 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleMu3_SQ_HTT240er 151 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleMuOpen_er1p4_NotBptxOR_3BX 447 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu22er2p1_Tau70er2p1 289 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ETMHF120_NotSecondBunchInTrain 443 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleMu3_SQ_HTT260er 152 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleJet140er2p5 320 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SecondBunchInTrain 474 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleJet46er2p5_NotBptxOR_3BX 453 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_IsoTau40er2p1_ETMHF100 293 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleJet60er2p5 317 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ETMHF90_SingleJet60er2p5_ETMHF90_DPHI_MIN2p094 260 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3 387 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleJet140er2p5_ETMHF80 333 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ETMHF90_SingleJet60er2p5_ETMHF90_DPHI_MIN2p618 261 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleJet140er2p5_ETMHF90 334 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleJet43er2p5_NotBptxOR_3BX 452 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ETMHF90_SingleJet80er2p5_ETMHF90_DPHI_MIN2p094 262 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_MinimumBiasHF0_AND_BptxAND 461 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ETMHF90_SingleJet80er2p5_ETMHF90_DPHI_MIN2p618 263 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleEG8er2p5_HTT280er 248 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_NotBptxOR 463 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_IsoTau40er2p1_ETMHF110 294 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ETMHF100_HTT60er 429 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleEG8er2p5_HTT300er 249 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ETMHF100 421 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_IsoTau40er2p1_ETMHF80 291 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleEG8er2p5_HTT320er 250 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu3er1p5_Jet100er2p5_ETMHF40 128 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5 146 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_IsoTau40er2p1_ETMHF90 292 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleEG8er2p5_HTT340er 251 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu3er1p5_Jet100er2p5_ETMHF50 129 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_HTT280er 402 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ETMHF110 422 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_BptxOR 464 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ETMHF110_HTT60er 430 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_HTT280er_QuadJet_70_55_40_35_er2p4 384 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleIsoTau30er2p1 137 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleJet20er2p5_NotBptxOR 450 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ETMHF120 423 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_HTT320er 403 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleIsoTau32er2p1 138 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu6_DoubleEG10er2p5 104 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleMuOpen 4 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu22er2p1_IsoTau28er2p1 282 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_LastBunchInTrain 476 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_HTT320er_QuadJet_70_55_40_40_er2p4 385 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleIsoTau36er2p1 139 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu6_DoubleEG12er2p5 105 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu6_HTT240er 131 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleMu3_SQ_HTT220er 150 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ZeroBias 459 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu22er2p1_IsoTau30er2p1 283 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ETMHF130 424 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleMu3_SQ_ETMHF50_HTT60er 145 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu22er2p1_IsoTau36er2p1 286 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_IsolatedBunch 471 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleJet20er2p5_NotBptxOR_3BX 451 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ETMHF130_HTT60er 432 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu6_DoubleEG15er2p5 106 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3 386 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ZeroBias_copy 460 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_FirstBunchAfterTrain 477 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleMuOpen_NotBptxOR 446 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu22er2p1_IsoTau34er2p1 285 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_FirstBunchBeforeTrain 472 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu22er2p1_IsoTau32er2p1 284 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleJet40er2p5 340 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5 147 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_FirstBunchInTrain 473 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu6_DoubleEG17er2p5 107 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_ETMHF120_HTT60er 431 to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_BPTX_AND_Ref1_VME (486) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_BPTX_AND_Ref3_VME (487) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_BPTX_AND_Ref4_VME (488) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_BPTX_BeamGas_B1_VME (491) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_BPTX_BeamGas_B2_VME (492) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_BPTX_BeamGas_Ref1_VME (489) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_BPTX_BeamGas_Ref2_VME (490) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_BPTX_NotOR_VME (482) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_BPTX_OR_Ref3_VME (483) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_BPTX_OR_Ref4_VME (484) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_BPTX_RefAND_VME (485) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_BptxMinus (467) to module 2
+2022-03-09 08:52:52 INFO :  +-- L1_BptxXOR shadowed ratio 50.0 %
+2022-03-09 08:52:52 INFO :  +--- L1_BptxPlus shadowed ratio 50.0 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_BptxPlus 466 to module 2
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_BptxXOR 465 to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_FirstCollisionInOrbit (480) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_FirstCollisionInTrain (479) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_HCAL_LaserMon_Trig (500) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_HCAL_LaserMon_Veto (501) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_LastCollisionInTrain (478) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_MuShower_OneNominal (69) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_MuShower_OneTight (70) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_TOTEM_1 (503) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_TOTEM_2 (504) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_TOTEM_3 (505) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_TOTEM_4 (506) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_UnpairedBunchBptxMinus (469) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_UnpairedBunchBptxPlus (468) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_ETM120 (416) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_ETM150 (417) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_ETMHF140 (425) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_ETMHF150 (426) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_ETT1200 (410) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_ETT1600 (411) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_ETT2000 (412) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_HTT120er (398) to module 5
+2022-03-09 08:52:52 INFO :  +-- L1_HTT120_SingleLLPJet40 shadowed ratio 50.0 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_HTT120_SingleLLPJet40 24 to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_HTT160er (399) to module 1
+2022-03-09 08:52:52 INFO :  +-- L1_HTT160_SingleLLPJet50 shadowed ratio 50.0 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_HTT160_SingleLLPJet50 154 to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_HTT200er (400) to module 2
+2022-03-09 08:52:52 INFO :  +-- L1_HTT200_SingleLLPJet60 shadowed ratio 50.0 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_HTT200_SingleLLPJet60 153 to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_HTT255er (401) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_HTT360er (404) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_HTT400er (405) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_HTT450er (406) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMuCosmics (0) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu0_DQ (5) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu15_DQ (16) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu18 (17) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu20 (18) to module 2
+2022-03-09 08:52:52 INFO :  +-- L1_Mu20_EG10er2p5 shadowed ratio 50.0 %
+2022-03-09 08:52:52 INFO :  +--- L1_SingleEG10er2p5 shadowed ratio 50.0 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu20_EG10er2p5 99 to module 2
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleEG10er2p5 160 to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu22 (19) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu25 (23) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu3 (9) to module 4
+2022-03-09 08:52:52 INFO :  +-- L1_Mu3_Jet30er2p5 shadowed ratio 50.0 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu3_Jet30er2p5 119 to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu5 (10) to module 1
+2022-03-09 08:52:52 INFO :  +-- L1_Mu5_EG23er2p5 shadowed ratio 50.0 %
+2022-03-09 08:52:52 INFO :  +--- L1_Mu5_LooseIsoEG20er2p5 shadowed ratio 33.3 %
+2022-03-09 08:52:52 INFO :  +---- L1_Mu7_EG23er2p5 shadowed ratio 25.0 %
+2022-03-09 08:52:52 INFO :  +----- L1_Mu7_EG20er2p5 shadowed ratio 20.0 %
+2022-03-09 08:52:52 INFO :  +------ L1_Mu7_LooseIsoEG20er2p5 shadowed ratio 40.0 %
+2022-03-09 08:52:52 INFO :  +------- L1_SingleMu7 shadowed ratio 20.0 %
+2022-03-09 08:52:52 INFO :  +-------- L1_Mu7_LooseIsoEG23er2p5 shadowed ratio 16.7 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_SingleMu7 12 to module 1
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu7_LooseIsoEG23er2p5 102 to module 1
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu7_EG20er2p5 97 to module 1
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu5_EG23er2p5 96 to module 1
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu7_EG23er2p5 98 to module 1
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu5_LooseIsoEG20er2p5 100 to module 1
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu7_LooseIsoEG20er2p5 101 to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu7_DQ (11) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleEG50 (173) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_SingleEG60 (174) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet120 (312) to module 3
+2022-03-09 08:52:52 INFO :  +-- L1_DoubleJet_120_45_DoubleJet45_Mass_Min620_Jet60TT28 shadowed ratio 14.3 %
+2022-03-09 08:52:52 INFO :  +--- L1_DoubleJet_115_40_DoubleJet40_Mass_Min620_Jet60TT28 shadowed ratio 7.7 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleJet_120_45_DoubleJet45_Mass_Min620_Jet60TT28 361 to module 3
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleJet_115_40_DoubleJet40_Mass_Min620_Jet60TT28 360 to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet180 (313) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet200 (314) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet35 (309) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet60 (310) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet90 (311) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMuCosmics_BMTF (1) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu0_BMTF (6) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu10er1p5 (29) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu12_DQ_BMTF (13) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu12er1p5 (30) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu14er1p5 (31) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu16er1p5 (32) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu18er1p5 (33) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu22_BMTF (20) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu6er1p5 (25) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu7er1p5 (26) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu8er1p5 (27) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu9er1p5 (28) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0 (40) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0_OQ (39) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0_SQ (41) to module 1
+2022-03-09 08:52:52 INFO :  +-- L1_DoubleJet_80_30_Mass_Min420_DoubleMu0_SQ shadowed ratio 50.0 %
+2022-03-09 08:52:52 INFO :  +--- L1_DoubleJet_80_30_Mass_Min420_Mu8 shadowed ratio 33.3 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleJet_80_30_Mass_Min420_Mu8 365 to module 1
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleJet_80_30_Mass_Min420_DoubleMu0_SQ 366 to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu8_SQ (44) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu9_SQ (45) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu_12_5 (46) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu_15_5_SQ (47) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu_15_7 (48) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu_15_7_SQ (49) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0_SQ_OS (42) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu4_SQ_OS (60) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu4p5_SQ_OS (62) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleEG15er2p5 (161) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleEG26er2p5 (162) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleEG28er1p5 (166) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleEG28er2p1 (165) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleEG28er2p5 (164) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleEG34er2p5 (167) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleEG36er2p5 (168) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleEG38er2p5 (169) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleEG40er2p5 (170) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleEG42er2p5 (171) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleEG45er2p5 (172) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleEG8er2p5 (159) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet120er2p5 (319) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet160er2p5 (321) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet180er2p5 (322) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet35er2p5 (316) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet90er2p5 (318) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMuCosmics_EMTF (3) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMuCosmics_OMTF (2) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleTau120er2p1 (264) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleTau130er2p1 (265) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu0_EMTF (8) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu0_OMTF (7) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu12_DQ_EMTF (15) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu12_DQ_OMTF (14) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu22_EMTF (22) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleMu22_OMTF (21) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleIsoEG24er1p5 (184) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleIsoEG24er2p1 (183) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleIsoEG26er1p5 (187) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleIsoEG26er2p1 (186) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleIsoEG26er2p5 (185) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleIsoEG28er1p5 (191) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleIsoEG28er2p1 (190) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleIsoEG28er2p5 (189) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleIsoEG30er2p1 (193) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleIsoEG30er2p5 (192) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleIsoEG32er2p1 (195) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleIsoEG32er2p5 (194) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleIsoEG34er2p5 (196) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleLooseIsoEG26er1p5 (176) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleLooseIsoEG26er2p5 (175) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleLooseIsoEG28er1p5 (180) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleLooseIsoEG28er2p1 (179) to module 4
+2022-03-09 08:52:52 INFO :  +-- L1_LooseIsoEG28er2p1_HTT100er shadowed ratio 50.0 %
+2022-03-09 08:52:52 INFO :  +--- L1_LooseIsoEG30er2p1_HTT100er shadowed ratio 33.3 %
+2022-03-09 08:52:52 INFO :  +---- L1_LooseIsoEG26er2p1_HTT100er shadowed ratio 25.0 %
+2022-03-09 08:52:52 INFO :  +----- L1_LooseIsoEG24er2p1_HTT100er shadowed ratio 20.0 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_LooseIsoEG24er2p1_HTT100er 238 to module 4
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_LooseIsoEG30er2p1_HTT100er 241 to module 4
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_LooseIsoEG26er2p1_HTT100er 239 to module 4
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_LooseIsoEG28er2p1_HTT100er 240 to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_SingleLooseIsoEG28er2p5 (178) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleLooseIsoEG30er1p5 (182) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleLooseIsoEG30er2p5 (181) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_IsoEG32er2p5_Mt40 (197) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_IsoEG32er2p5_Mt44 (198) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_IsoEG32er2p5_Mt48 (199) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_TripleMu0 (72) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_TripleMu0_OQ (71) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_TripleMu0_SQ (73) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_TripleMu3 (74) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_TripleMu3_SQ (75) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max_15 (68) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_TripleMu_2_1p5_0OQ_Mass_Max_15 (67) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_TripleMu_5SQ_3SQ_0OQ (76) to module 4
+2022-03-09 08:52:52 INFO :  +-- L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9 shadowed ratio 50.0 %
+2022-03-09 08:52:52 INFO :  +--- L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9 shadowed ratio 33.3 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9 85 to module 4
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9 86 to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_TripleMu_5_3_3 (78) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_TripleMu_5_3_3_SQ (79) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_TripleMu_5_3p5_2p5 (77) to module 0
+2022-03-09 08:52:52 INFO :  +-- L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_OS_Mass_5to17 shadowed ratio 50.0 %
+2022-03-09 08:52:52 INFO :  +--- L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_Mass_5to17 shadowed ratio 33.3 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_Mass_5to17 84 to module 0
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_OS_Mass_5to17 83 to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_TripleMu_5_5_3 (80) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet10erHE (330) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet12erHE (331) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet8erHE (329) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0er1p5_SQ (55) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0er2p0_SQ_OS_dEta_Max1p5 (35) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0er2p0_SQ_OS_dEta_Max1p6 (34) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu18er2p1 (52) to module 5
+2022-03-09 08:52:52 INFO :  +-- L1_DoubleMu18er2p1_SQ shadowed ratio 100.0 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleMu18er2p1_SQ 51 to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMuOpen_er1p4_OS_dEta_Max1p6 (36) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0er1p5_SQ_OS (56) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu4p5er2p0_SQ_OS (64) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp (363) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet_80_30_Mass_Min420_IsoTau40_RmOvlp (364) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_Mu18er2p1_Tau24er2p1 (279) to module 2
+2022-03-09 08:52:52 INFO :  +-- L1_Mu18er2p1_Tau26er2p1 shadowed ratio 33.3 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_Mu18er2p1_Tau26er2p1 280 to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_QuadMu0 (89) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_QuadMu0_OQ (88) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_QuadMu0_SQ (90) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu4_SQ_EG9er2p5 (109) to module 2
+2022-03-09 08:52:52 INFO :  +-- L1_DoubleMu5_SQ_EG9er2p5 shadowed ratio 33.3 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleMu5_SQ_EG9er2p5 110 to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG_15_10_er2p5 (205) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG_20_10_er2p5 (206) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG_22_10_er2p5 (207) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG_25_12_er2p5 (208) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG_25_14_er2p5 (209) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG_27_14_er2p5 (210) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet100er2p5 (341) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet120er2p5 (342) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet150er2p5 (343) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleTau70er2p1 (267) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_SingleEG28_FWD2p5 (163) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet120_FWD3p0 (327) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet35_FWD3p0 (324) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet60_FWD3p0 (325) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_SingleJet90_FWD3p0 (326) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG_LooseIso20_10_er2p5 (212) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG_LooseIso22_10_er2p5 (213) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG_LooseIso22_12_er2p5 (214) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG_LooseIso25_12_er2p5 (215) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet35_Mass_Min450_IsoTau45er2p1_RmOvlp_dR0p5 (118) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_CDC_SingleMu_3_er1p2_TOP120_DPHI2p618_3p142 (494) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG_LooseIso16_LooseIso12_er1p5 (91) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG_LooseIso18_LooseIso12_er1p5 (92) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG_LooseIso20_LooseIso12_er1p5 (93) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG_LooseIso22_LooseIso12_er1p5 (94) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG_LooseIso25_LooseIso12_er1p5 (95) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleIsoTau28er2p1 (269) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleIsoTau30er2p1 (270) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleIsoTau32er2p1 (271) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleIsoTau34er2p1 (272) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleIsoTau35er2p1 (116) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleIsoTau36er2p1 (273) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleLooseIsoEG22er2p1 (217) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleLooseIsoEG24er2p1 (218) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_SingleIsoEG28_FWD2p5 (188) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_SingleLooseIsoEG28_FWD2p5 (177) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleIsoTau26er2p1_Jet55_OvRm_dR0p5 (117) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_TripleEG16er2p5 (228) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_TripleEG_16_12_8_er2p5 (224) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_TripleEG_16_15_8_er2p5 (225) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_TripleEG_18_17_8_er2p5 (226) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_TripleEG_18_18_12_er2p5 (227) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_TripleJet_100_80_70_DoubleJet_80_70_er2p5 (373) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_TripleJet_105_85_75_DoubleJet_85_75_er2p5 (374) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_TripleJet_95_75_65_DoubleJet_75_65_er2p5 (372) to module 2
+2022-03-09 08:52:52 INFO :  +-- L1_QuadJet_95_75_65_20_DoubleJet_75_65_er2p5_Jet20_FWD3p0 shadowed ratio 20.0 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_QuadJet_95_75_65_20_DoubleJet_75_65_er2p5_Jet20_FWD3p0 376 to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_QuadJet60er2p5 (382) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_QuadJet36er2p5_IsoTau52er2p1 (298) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet100er2p3_dEta_Max1p6 (345) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet112er2p3_dEta_Max1p6 (346) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0_upt15_upt7 (114) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0_upt6ip123_upt4 (115) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu4_SQ_OS_dR_Max1p2 (61) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu4p5_SQ_OS_dR_Max1p2 (63) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0er1p4_SQ_OS_dR_Max1p4 (59) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0er1p5_SQ_OS_dR_Max1p4 (58) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0er1p5_SQ_dR_Max1p4 (57) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4 (54) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0er2p0_SQ_dR_Max1p4 (53) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu3er2p0_SQ_OS_dR_Max1p4 (37) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0_Mass_Min1 (43) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu_15_7_Mass_Min1 (50) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18 (66) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu4p5er2p0_SQ_OS_Mass_Min7 (65) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_TripleMu_5_3p5_2p5_OQ_DoubleMu_5_2p5_OQ_OS_Mass_5to17 (82) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG10er1p22_dR_0p6 (201) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG10p5er1p22_dR_0p6 (200) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG5er1p22_dR_0p9 (223) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG5p5er1p22_dR_0p8 (222) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG6er1p22_dR_0p8 (221) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG6p5er1p22_dR_0p8 (220) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG7er1p22_dR_0p8 (219) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG7p5er1p22_dR_0p7 (216) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG8er1p22_dR_0p7 (211) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG8p5er1p22_dR_0p7 (204) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG9er1p22_dR_0p7 (203) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleEG9p5er1p22_dR_0p6 (202) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_Mu3_Jet120er2p5_dR_Max0p4 (126) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_Mu3_Jet120er2p5_dR_Max0p8 (125) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_Mu3_Jet16er2p5_dR_Max0p4 (121) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_Mu3_Jet35er2p5_dR_Max0p4 (122) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_Mu3_Jet60er2p5_dR_Max0p4 (123) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_Mu3_Jet80er2p5_dR_Max0p4 (124) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_Mu10er2p3_Jet32er2p3_dR_Max0p4_DoubleJet32er2p3_dEta_Max1p6 (134) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er2p1_dEta_Max1p6 (136) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_Mu12er2p3_Jet40er2p3_dR_Max0p4_DoubleJet40er2p3_dEta_Max1p6 (135) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8 (142) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8 (143) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet_100_30_DoubleJet30_Mass_Min620 (356) to module 5
+2022-03-09 08:52:52 INFO :  +-- L1_DoubleJet_90_30_DoubleJet30_Mass_Min620 shadowed ratio 33.3 %
+2022-03-09 08:52:52 INFO :  ... adding shadowed L1_DoubleJet_90_30_DoubleJet30_Mass_Min620 355 to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet_110_35_DoubleJet35_Mass_Min620 (357) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet_115_40_DoubleJet40_Mass_Min620 (358) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet_120_45_DoubleJet45_Mass_Min620 (359) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleIsoTau28er2p1_Mass_Max80 (275) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleIsoTau28er2p1_Mass_Max90 (274) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleIsoTau30er2p1_Mass_Max80 (277) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleIsoTau30er2p1_Mass_Max90 (276) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5 (348) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet30er2p5_Mass_Min200_dEta_Max1p5 (349) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet30er2p5_Mass_Min250_dEta_Max1p5 (350) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet30er2p5_Mass_Min300_dEta_Max1p5 (351) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet30er2p5_Mass_Min330_dEta_Max1p5 (352) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleJet30er2p5_Mass_Min360_dEta_Max1p5 (353) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3 (259) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_LooseIsoEG26er2p1_Jet34er2p5_dR_Min0p3 (234) to module 2
+2022-03-09 08:52:52 INFO :  . adding L1_LooseIsoEG28er2p1_Jet34er2p5_dR_Min0p3 (235) to module 4
+2022-03-09 08:52:52 INFO :  . adding L1_LooseIsoEG30er2p1_Jet34er2p5_dR_Min0p3 (236) to module 5
+2022-03-09 08:52:52 INFO :  . adding L1_LooseIsoEG22er2p1_IsoTau26er2p1_dR_Min0p3 (257) to module 3
+2022-03-09 08:52:52 INFO :  . adding L1_LooseIsoEG24er2p1_IsoTau27er2p1_dR_Min0p3 (258) to module 0
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu3_OS_DoubleEG7p5Upsilon (112) to module 1
+2022-03-09 08:52:52 INFO :  . adding L1_DoubleMu5Upsilon_OS_DoubleEG3 (113) to module 2
+2022-03-09 08:52:52 INFO : |-----------------------------------------------------------------------------|
+2022-03-09 08:52:52 INFO : |                                                                             |
+2022-03-09 08:52:52 INFO : | Detailed distribition on 6 modules, shadow ratio: 0.0                       |
+2022-03-09 08:52:52 INFO : |                                                                             |
+2022-03-09 08:52:52 INFO : |------------|----------------------------------------------------------------|
+2022-03-09 08:52:52 INFO : | Module     | Algorithm                                                      |
+2022-03-09 08:52:52 INFO : | ID | Index | Index | Name                                                   |
+2022-03-09 08:52:52 INFO : |----|-------|-------|--------------------------------------------------------|
+2022-03-09 08:52:52 INFO : |  0 |     0 |   458 | L1_AlwaysTrue                                          |
+2022-03-09 08:52:52 INFO : |  0 |     1 |   444 | L1_ETMHF110_HTT60er_NotSecondBunchInTrain              |
+2022-03-09 08:52:52 INFO : |  0 |     2 |   148 | L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5                     |
+2022-03-09 08:52:52 INFO : |  0 |     3 |   247 | L1_DoubleEG8er2p5_HTT260er                             |
+2022-03-09 08:52:52 INFO : |  0 |     4 |   475 | L1_SecondLastBunchInTrain                              |
+2022-03-09 08:52:52 INFO : |  0 |     5 |   448 | L1_SingleMuOpen_er1p1_NotBptxOR_3BX                    |
+2022-03-09 08:52:52 INFO : |  0 |     6 |   428 | L1_ETMHF90_HTT60er                                     |
+2022-03-09 08:52:52 INFO : |  0 |     7 |   132 | L1_Mu6_HTT250er                                        |
+2022-03-09 08:52:52 INFO : |  0 |     8 |   332 | L1_SingleJet140er2p5_ETMHF70                           |
+2022-03-09 08:52:52 INFO : |  0 |     9 |   287 | L1_Mu22er2p1_IsoTau40er2p1                             |
+2022-03-09 08:52:52 INFO : |  0 |    10 |   151 | L1_DoubleMu3_SQ_HTT240er                               |
+2022-03-09 08:52:52 INFO : |  0 |    11 |   447 | L1_SingleMuOpen_er1p4_NotBptxOR_3BX                    |
+2022-03-09 08:52:52 INFO : |  0 |    12 |   289 | L1_Mu22er2p1_Tau70er2p1                                |
+2022-03-09 08:52:52 INFO : |  0 |    13 |   443 | L1_ETMHF120_NotSecondBunchInTrain                      |
+2022-03-09 08:52:52 INFO : |  0 |    14 |   152 | L1_DoubleMu3_SQ_HTT260er                               |
+2022-03-09 08:52:52 INFO : |  0 |    15 |   320 | L1_SingleJet140er2p5                                   |
+2022-03-09 08:52:52 INFO : |  0 |    16 |   474 | L1_SecondBunchInTrain                                  |
+2022-03-09 08:52:52 INFO : |  0 |    17 |   453 | L1_SingleJet46er2p5_NotBptxOR_3BX                      |
+2022-03-09 08:52:52 INFO : |  0 |    18 |   293 | L1_IsoTau40er2p1_ETMHF100                              |
+2022-03-09 08:52:52 INFO : |  0 |    19 |   317 | L1_SingleJet60er2p5                                    |
+2022-03-09 08:52:52 INFO : |  0 |    20 |   260 | L1_ETMHF90_SingleJet60er2p5_ETMHF90_DPHI_MIN2p094      |
+2022-03-09 08:52:52 INFO : |  0 |    21 |   387 | L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3            |
+2022-03-09 08:52:52 INFO : |  0 |    22 |   333 | L1_SingleJet140er2p5_ETMHF80                           |
+2022-03-09 08:52:52 INFO : |  0 |    23 |   261 | L1_ETMHF90_SingleJet60er2p5_ETMHF90_DPHI_MIN2p618      |
+2022-03-09 08:52:52 INFO : |  0 |    24 |   334 | L1_SingleJet140er2p5_ETMHF90                           |
+2022-03-09 08:52:52 INFO : |  0 |    25 |   452 | L1_SingleJet43er2p5_NotBptxOR_3BX                      |
+2022-03-09 08:52:52 INFO : |  0 |    26 |   262 | L1_ETMHF90_SingleJet80er2p5_ETMHF90_DPHI_MIN2p094      |
+2022-03-09 08:52:52 INFO : |  0 |    27 |   461 | L1_MinimumBiasHF0_AND_BptxAND                          |
+2022-03-09 08:52:52 INFO : |  0 |    28 |   263 | L1_ETMHF90_SingleJet80er2p5_ETMHF90_DPHI_MIN2p618      |
+2022-03-09 08:52:52 INFO : |  0 |    29 |   248 | L1_DoubleEG8er2p5_HTT280er                             |
+2022-03-09 08:52:52 INFO : |  0 |    30 |   463 | L1_NotBptxOR                                           |
+2022-03-09 08:52:52 INFO : |  0 |    31 |   294 | L1_IsoTau40er2p1_ETMHF110                              |
+2022-03-09 08:52:52 INFO : |  0 |    32 |   429 | L1_ETMHF100_HTT60er                                    |
+2022-03-09 08:52:52 INFO : |  0 |    33 |   249 | L1_DoubleEG8er2p5_HTT300er                             |
+2022-03-09 08:52:52 INFO : |  0 |    34 |   421 | L1_ETMHF100                                            |
+2022-03-09 08:52:52 INFO : |  0 |    35 |   291 | L1_IsoTau40er2p1_ETMHF80                               |
+2022-03-09 08:52:52 INFO : |  0 |    36 |   250 | L1_DoubleEG8er2p5_HTT320er                             |
+2022-03-09 08:52:52 INFO : |  0 |    37 |   128 | L1_Mu3er1p5_Jet100er2p5_ETMHF40                        |
+2022-03-09 08:52:52 INFO : |  0 |    38 |   146 | L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet...     |
+2022-03-09 08:52:52 INFO : |  0 |    39 |   292 | L1_IsoTau40er2p1_ETMHF90                               |
+2022-03-09 08:52:52 INFO : |  0 |    40 |   251 | L1_DoubleEG8er2p5_HTT340er                             |
+2022-03-09 08:52:52 INFO : |  0 |    41 |   129 | L1_Mu3er1p5_Jet100er2p5_ETMHF50                        |
+2022-03-09 08:52:52 INFO : |  0 |    42 |   402 | L1_HTT280er                                            |
+2022-03-09 08:52:52 INFO : |  0 |    43 |   422 | L1_ETMHF110                                            |
+2022-03-09 08:52:52 INFO : |  0 |    44 |   464 | L1_BptxOR                                              |
+2022-03-09 08:52:52 INFO : |  0 |    45 |   430 | L1_ETMHF110_HTT60er                                    |
+2022-03-09 08:52:52 INFO : |  0 |    46 |   384 | L1_HTT280er_QuadJet_70_55_40_35_er2p4                  |
+2022-03-09 08:52:52 INFO : |  0 |    47 |   137 | L1_SingleIsoTau30er2p1                                 |
+2022-03-09 08:52:52 INFO : |  0 |    48 |   450 | L1_SingleJet20er2p5_NotBptxOR                          |
+2022-03-09 08:52:52 INFO : |  0 |    49 |   423 | L1_ETMHF120                                            |
+2022-03-09 08:52:52 INFO : |  0 |    50 |   403 | L1_HTT320er                                            |
+2022-03-09 08:52:52 INFO : |  0 |    51 |   138 | L1_SingleIsoTau32er2p1                                 |
+2022-03-09 08:52:52 INFO : |  0 |    52 |   104 | L1_Mu6_DoubleEG10er2p5                                 |
+2022-03-09 08:52:52 INFO : |  0 |    53 |     4 | L1_SingleMuOpen                                        |
+2022-03-09 08:52:52 INFO : |  0 |    54 |   282 | L1_Mu22er2p1_IsoTau28er2p1                             |
+2022-03-09 08:52:52 INFO : |  0 |    55 |   476 | L1_LastBunchInTrain                                    |
+2022-03-09 08:52:52 INFO : |  0 |    56 |   385 | L1_HTT320er_QuadJet_70_55_40_40_er2p4                  |
+2022-03-09 08:52:52 INFO : |  0 |    57 |   139 | L1_SingleIsoTau36er2p1                                 |
+2022-03-09 08:52:52 INFO : |  0 |    58 |   105 | L1_Mu6_DoubleEG12er2p5                                 |
+2022-03-09 08:52:52 INFO : |  0 |    59 |   131 | L1_Mu6_HTT240er                                        |
+2022-03-09 08:52:52 INFO : |  0 |    60 |   150 | L1_DoubleMu3_SQ_HTT220er                               |
+2022-03-09 08:52:52 INFO : |  0 |    61 |   459 | L1_ZeroBias                                            |
+2022-03-09 08:52:52 INFO : |  0 |    62 |   283 | L1_Mu22er2p1_IsoTau30er2p1                             |
+2022-03-09 08:52:52 INFO : |  0 |    63 |   424 | L1_ETMHF130                                            |
+2022-03-09 08:52:52 INFO : |  0 |    64 |   145 | L1_DoubleMu3_SQ_ETMHF50_HTT60er                        |
+2022-03-09 08:52:52 INFO : |  0 |    65 |   286 | L1_Mu22er2p1_IsoTau36er2p1                             |
+2022-03-09 08:52:52 INFO : |  0 |    66 |   471 | L1_IsolatedBunch                                       |
+2022-03-09 08:52:52 INFO : |  0 |    67 |   451 | L1_SingleJet20er2p5_NotBptxOR_3BX                      |
+2022-03-09 08:52:52 INFO : |  0 |    68 |   432 | L1_ETMHF130_HTT60er                                    |
+2022-03-09 08:52:52 INFO : |  0 |    69 |   106 | L1_Mu6_DoubleEG15er2p5                                 |
+2022-03-09 08:52:52 INFO : |  0 |    70 |   386 | L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3            |
+2022-03-09 08:52:52 INFO : |  0 |    71 |   460 | L1_ZeroBias_copy                                       |
+2022-03-09 08:52:52 INFO : |  0 |    72 |   477 | L1_FirstBunchAfterTrain                                |
+2022-03-09 08:52:52 INFO : |  0 |    73 |   446 | L1_SingleMuOpen_NotBptxOR                              |
+2022-03-09 08:52:52 INFO : |  0 |    74 |   285 | L1_Mu22er2p1_IsoTau34er2p1                             |
+2022-03-09 08:52:52 INFO : |  0 |    75 |   472 | L1_FirstBunchBeforeTrain                               |
+2022-03-09 08:52:52 INFO : |  0 |    76 |   284 | L1_Mu22er2p1_IsoTau32er2p1                             |
+2022-03-09 08:52:52 INFO : |  0 |    77 |   340 | L1_DoubleJet40er2p5                                    |
+2022-03-09 08:52:52 INFO : |  0 |    78 |   147 | L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5                     |
+2022-03-09 08:52:52 INFO : |  0 |    79 |   473 | L1_FirstBunchInTrain                                   |
+2022-03-09 08:52:52 INFO : |  0 |    80 |   107 | L1_Mu6_DoubleEG17er2p5                                 |
+2022-03-09 08:52:52 INFO : |  0 |    81 |   431 | L1_ETMHF120_HTT60er                                    |
+2022-03-09 08:52:52 INFO : |  0 |    82 |    78 | L1_TripleMu_5_3_3                                      |
+2022-03-09 08:52:52 INFO : |  0 |    83 |    79 | L1_TripleMu_5_3_3_SQ                                   |
+2022-03-09 08:52:52 INFO : |  0 |    84 |    77 | L1_TripleMu_5_3p5_2p5                                  |
+2022-03-09 08:52:52 INFO : |  0 |    85 |    84 | L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_Mass_5to17       |
+2022-03-09 08:52:52 INFO : |  0 |    86 |    83 | L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_OS_Mass_5to17     |
+2022-03-09 08:52:52 INFO : |  0 |    87 |    91 | L1_DoubleEG_LooseIso16_LooseIso12_er1p5                |
+2022-03-09 08:52:52 INFO : |  0 |    88 |    92 | L1_DoubleEG_LooseIso18_LooseIso12_er1p5                |
+2022-03-09 08:52:52 INFO : |  0 |    89 |    94 | L1_DoubleEG_LooseIso22_LooseIso12_er1p5                |
+2022-03-09 08:52:52 INFO : |  0 |    90 |   269 | L1_DoubleIsoTau28er2p1                                 |
+2022-03-09 08:52:52 INFO : |  0 |    91 |   271 | L1_DoubleIsoTau32er2p1                                 |
+2022-03-09 08:52:52 INFO : |  0 |    92 |   116 | L1_DoubleIsoTau35er2p1                                 |
+2022-03-09 08:52:52 INFO : |  0 |    93 |   217 | L1_DoubleLooseIsoEG22er2p1                             |
+2022-03-09 08:52:52 INFO : |  0 |    94 |   188 | L1_SingleIsoEG28_FWD2p5                                |
+2022-03-09 08:52:52 INFO : |  0 |    95 |   117 | L1_DoubleIsoTau26er2p1_Jet55_OvRm_dR0p5                |
+2022-03-09 08:52:52 INFO : |  0 |    96 |    57 | L1_DoubleMu0er1p5_SQ_dR_Max1p4                         |
+2022-03-09 08:52:52 INFO : |  0 |    97 |    37 | L1_DoubleMu3er2p0_SQ_OS_dR_Max1p4                      |
+2022-03-09 08:52:52 INFO : |  0 |    98 |    66 | L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18                    |
+2022-03-09 08:52:52 INFO : |  0 |    99 |    82 | L1_TripleMu_5_3p5_2p5_OQ_DoubleMu_5_2p5_OQ_OS_M...     |
+2022-03-09 08:52:52 INFO : |  0 |   100 |   200 | L1_DoubleEG10p5er1p22_dR_0p6                           |
+2022-03-09 08:52:52 INFO : |  0 |   101 |   216 | L1_DoubleEG7p5er1p22_dR_0p7                            |
+2022-03-09 08:52:52 INFO : |  0 |   102 |   204 | L1_DoubleEG8p5er1p22_dR_0p7                            |
+2022-03-09 08:52:52 INFO : |  0 |   103 |   126 | L1_Mu3_Jet120er2p5_dR_Max0p4                           |
+2022-03-09 08:52:52 INFO : |  0 |   104 |   134 | L1_Mu10er2p3_Jet32er2p3_dR_Max0p4_DoubleJet32er...     |
+2022-03-09 08:52:52 INFO : |  0 |   105 |   276 | L1_DoubleIsoTau30er2p1_Mass_Max90                      |
+2022-03-09 08:52:52 INFO : |  0 |   106 |   258 | L1_LooseIsoEG24er2p1_IsoTau27er2p1_dR_Min0p3           |
+2022-03-09 08:52:52 INFO : |  1 |     0 |   486 | L1_BPTX_AND_Ref1_VME                                   |
+2022-03-09 08:52:52 INFO : |  1 |     1 |   489 | L1_BPTX_BeamGas_Ref1_VME                               |
+2022-03-09 08:52:52 INFO : |  1 |     2 |   485 | L1_BPTX_RefAND_VME                                     |
+2022-03-09 08:52:52 INFO : |  1 |     3 |   501 | L1_HCAL_LaserMon_Veto                                  |
+2022-03-09 08:52:52 INFO : |  1 |     4 |   503 | L1_TOTEM_1                                             |
+2022-03-09 08:52:52 INFO : |  1 |     5 |   469 | L1_UnpairedBunchBptxMinus                              |
+2022-03-09 08:52:52 INFO : |  1 |     6 |   426 | L1_ETMHF150                                            |
+2022-03-09 08:52:52 INFO : |  1 |     7 |   399 | L1_HTT160er                                            |
+2022-03-09 08:52:52 INFO : |  1 |     8 |   154 | L1_HTT160_SingleLLPJet50                               |
+2022-03-09 08:52:52 INFO : |  1 |     9 |    17 | L1_SingleMu18                                          |
+2022-03-09 08:52:52 INFO : |  1 |    10 |    10 | L1_SingleMu5                                           |
+2022-03-09 08:52:52 INFO : |  1 |    11 |    12 | L1_SingleMu7                                           |
+2022-03-09 08:52:52 INFO : |  1 |    12 |   102 | L1_Mu7_LooseIsoEG23er2p5                               |
+2022-03-09 08:52:52 INFO : |  1 |    13 |    97 | L1_Mu7_EG20er2p5                                       |
+2022-03-09 08:52:52 INFO : |  1 |    14 |    96 | L1_Mu5_EG23er2p5                                       |
+2022-03-09 08:52:52 INFO : |  1 |    15 |    98 | L1_Mu7_EG23er2p5                                       |
+2022-03-09 08:52:52 INFO : |  1 |    16 |   100 | L1_Mu5_LooseIsoEG20er2p5                               |
+2022-03-09 08:52:52 INFO : |  1 |    17 |   101 | L1_Mu7_LooseIsoEG20er2p5                               |
+2022-03-09 08:52:52 INFO : |  1 |    18 |    41 | L1_DoubleMu0_SQ                                        |
+2022-03-09 08:52:52 INFO : |  1 |    19 |   365 | L1_DoubleJet_80_30_Mass_Min420_Mu8                     |
+2022-03-09 08:52:52 INFO : |  1 |    20 |   366 | L1_DoubleJet_80_30_Mass_Min420_DoubleMu0_SQ            |
+2022-03-09 08:52:52 INFO : |  1 |    21 |   208 | L1_DoubleEG_25_12_er2p5                                |
+2022-03-09 08:52:52 INFO : |  1 |    22 |   210 | L1_DoubleEG_27_14_er2p5                                |
+2022-03-09 08:52:52 INFO : |  1 |    23 |   342 | L1_DoubleJet120er2p5                                   |
+2022-03-09 08:52:52 INFO : |  1 |    24 |   267 | L1_DoubleTau70er2p1                                    |
+2022-03-09 08:52:52 INFO : |  1 |    25 |   327 | L1_SingleJet120_FWD3p0                                 |
+2022-03-09 08:52:52 INFO : |  1 |    26 |   325 | L1_SingleJet60_FWD3p0                                  |
+2022-03-09 08:52:52 INFO : |  1 |    27 |   212 | L1_DoubleEG_LooseIso20_10_er2p5                        |
+2022-03-09 08:52:52 INFO : |  1 |    28 |   214 | L1_DoubleEG_LooseIso22_12_er2p5                        |
+2022-03-09 08:52:52 INFO : |  1 |    29 |   118 | L1_DoubleJet35_Mass_Min450_IsoTau45er2p1_RmOvlp...     |
+2022-03-09 08:52:52 INFO : |  1 |    30 |   346 | L1_DoubleJet112er2p3_dEta_Max1p6                       |
+2022-03-09 08:52:52 INFO : |  1 |    31 |   114 | L1_DoubleMu0_upt15_upt7                                |
+2022-03-09 08:52:52 INFO : |  1 |    32 |   115 | L1_DoubleMu0_upt6ip123_upt4                            |
+2022-03-09 08:52:52 INFO : |  1 |    33 |    61 | L1_DoubleMu4_SQ_OS_dR_Max1p2                           |
+2022-03-09 08:52:52 INFO : |  1 |    34 |    59 | L1_DoubleMu0er1p4_SQ_OS_dR_Max1p4                      |
+2022-03-09 08:52:52 INFO : |  1 |    35 |    54 | L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4                      |
+2022-03-09 08:52:52 INFO : |  1 |    36 |    43 | L1_DoubleMu0_Mass_Min1                                 |
+2022-03-09 08:52:52 INFO : |  1 |    37 |   222 | L1_DoubleEG5p5er1p22_dR_0p8                            |
+2022-03-09 08:52:52 INFO : |  1 |    38 |   122 | L1_Mu3_Jet35er2p5_dR_Max0p4                            |
+2022-03-09 08:52:52 INFO : |  1 |    39 |   142 | L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8            |
+2022-03-09 08:52:52 INFO : |  1 |    40 |   359 | L1_DoubleJet_120_45_DoubleJet45_Mass_Min620            |
+2022-03-09 08:52:52 INFO : |  1 |    41 |   348 | L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5            |
+2022-03-09 08:52:52 INFO : |  1 |    42 |   349 | L1_DoubleJet30er2p5_Mass_Min200_dEta_Max1p5            |
+2022-03-09 08:52:52 INFO : |  1 |    43 |   350 | L1_DoubleJet30er2p5_Mass_Min250_dEta_Max1p5            |
+2022-03-09 08:52:52 INFO : |  1 |    44 |   351 | L1_DoubleJet30er2p5_Mass_Min300_dEta_Max1p5            |
+2022-03-09 08:52:52 INFO : |  1 |    45 |   352 | L1_DoubleJet30er2p5_Mass_Min330_dEta_Max1p5            |
+2022-03-09 08:52:52 INFO : |  1 |    46 |   259 | L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3              |
+2022-03-09 08:52:52 INFO : |  1 |    47 |   112 | L1_DoubleMu3_OS_DoubleEG7p5Upsilon                     |
+2022-03-09 08:52:52 INFO : |  2 |     0 |   487 | L1_BPTX_AND_Ref3_VME                                   |
+2022-03-09 08:52:52 INFO : |  2 |     1 |   490 | L1_BPTX_BeamGas_Ref2_VME                               |
+2022-03-09 08:52:52 INFO : |  2 |     2 |   467 | L1_BptxMinus                                           |
+2022-03-09 08:52:52 INFO : |  2 |     3 |   466 | L1_BptxPlus                                            |
+2022-03-09 08:52:52 INFO : |  2 |     4 |   465 | L1_BptxXOR                                             |
+2022-03-09 08:52:52 INFO : |  2 |     5 |   468 | L1_UnpairedBunchBptxPlus                               |
+2022-03-09 08:52:52 INFO : |  2 |     6 |   410 | L1_ETT1200                                             |
+2022-03-09 08:52:52 INFO : |  2 |     7 |   400 | L1_HTT200er                                            |
+2022-03-09 08:52:52 INFO : |  2 |     8 |   153 | L1_HTT200_SingleLLPJet60                               |
+2022-03-09 08:52:52 INFO : |  2 |     9 |    18 | L1_SingleMu20                                          |
+2022-03-09 08:52:52 INFO : |  2 |    10 |    99 | L1_Mu20_EG10er2p5                                      |
+2022-03-09 08:52:52 INFO : |  2 |    11 |   160 | L1_SingleEG10er2p5                                     |
+2022-03-09 08:52:52 INFO : |  2 |    12 |   314 | L1_SingleJet200                                        |
+2022-03-09 08:52:52 INFO : |  2 |    13 |   311 | L1_SingleJet90                                         |
+2022-03-09 08:52:52 INFO : |  2 |    14 |    29 | L1_SingleMu10er1p5                                     |
+2022-03-09 08:52:52 INFO : |  2 |    15 |    31 | L1_SingleMu14er1p5                                     |
+2022-03-09 08:52:52 INFO : |  2 |    16 |    20 | L1_SingleMu22_BMTF                                     |
+2022-03-09 08:52:52 INFO : |  2 |    17 |    27 | L1_SingleMu8er1p5                                      |
+2022-03-09 08:52:52 INFO : |  2 |    18 |    39 | L1_DoubleMu0_OQ                                        |
+2022-03-09 08:52:52 INFO : |  2 |    19 |    46 | L1_DoubleMu_12_5                                       |
+2022-03-09 08:52:52 INFO : |  2 |    20 |    49 | L1_DoubleMu_15_7_SQ                                    |
+2022-03-09 08:52:52 INFO : |  2 |    21 |    62 | L1_DoubleMu4p5_SQ_OS                                   |
+2022-03-09 08:52:52 INFO : |  2 |    22 |   166 | L1_SingleEG28er1p5                                     |
+2022-03-09 08:52:52 INFO : |  2 |    23 |   167 | L1_SingleEG34er2p5                                     |
+2022-03-09 08:52:52 INFO : |  2 |    24 |   170 | L1_SingleEG40er2p5                                     |
+2022-03-09 08:52:52 INFO : |  2 |    25 |   159 | L1_SingleEG8er2p5                                      |
+2022-03-09 08:52:52 INFO : |  2 |    26 |   322 | L1_SingleJet180er2p5                                   |
+2022-03-09 08:52:52 INFO : |  2 |    27 |     3 | L1_SingleMuCosmics_EMTF                                |
+2022-03-09 08:52:52 INFO : |  2 |    28 |   265 | L1_SingleTau130er2p1                                   |
+2022-03-09 08:52:52 INFO : |  2 |    29 |    15 | L1_SingleMu12_DQ_EMTF                                  |
+2022-03-09 08:52:52 INFO : |  2 |    30 |    21 | L1_SingleMu22_OMTF                                     |
+2022-03-09 08:52:52 INFO : |  2 |    31 |   187 | L1_SingleIsoEG26er1p5                                  |
+2022-03-09 08:52:52 INFO : |  2 |    32 |   191 | L1_SingleIsoEG28er1p5                                  |
+2022-03-09 08:52:52 INFO : |  2 |    33 |   193 | L1_SingleIsoEG30er2p1                                  |
+2022-03-09 08:52:52 INFO : |  2 |    34 |   194 | L1_SingleIsoEG32er2p5                                  |
+2022-03-09 08:52:52 INFO : |  2 |    35 |   175 | L1_SingleLooseIsoEG26er2p5                             |
+2022-03-09 08:52:52 INFO : |  2 |    36 |   178 | L1_SingleLooseIsoEG28er2p5                             |
+2022-03-09 08:52:52 INFO : |  2 |    37 |   181 | L1_SingleLooseIsoEG30er2p5                             |
+2022-03-09 08:52:52 INFO : |  2 |    38 |   198 | L1_IsoEG32er2p5_Mt44                                   |
+2022-03-09 08:52:52 INFO : |  2 |    39 |    71 | L1_TripleMu0_OQ                                        |
+2022-03-09 08:52:52 INFO : |  2 |    40 |    74 | L1_TripleMu3                                           |
+2022-03-09 08:52:52 INFO : |  2 |    41 |    68 | L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max_15                  |
+2022-03-09 08:52:52 INFO : |  2 |    42 |    80 | L1_TripleMu_5_5_3                                      |
+2022-03-09 08:52:52 INFO : |  2 |    43 |   331 | L1_SingleJet12erHE                                     |
+2022-03-09 08:52:52 INFO : |  2 |    44 |    55 | L1_DoubleMu0er1p5_SQ                                   |
+2022-03-09 08:52:52 INFO : |  2 |    45 |    34 | L1_DoubleMu0er2p0_SQ_OS_dEta_Max1p6                    |
+2022-03-09 08:52:52 INFO : |  2 |    46 |    36 | L1_DoubleMuOpen_er1p4_OS_dEta_Max1p6                   |
+2022-03-09 08:52:52 INFO : |  2 |    47 |    64 | L1_DoubleMu4p5er2p0_SQ_OS                              |
+2022-03-09 08:52:52 INFO : |  2 |    48 |   279 | L1_Mu18er2p1_Tau24er2p1                                |
+2022-03-09 08:52:52 INFO : |  2 |    49 |   280 | L1_Mu18er2p1_Tau26er2p1                                |
+2022-03-09 08:52:52 INFO : |  2 |    50 |    89 | L1_QuadMu0                                             |
+2022-03-09 08:52:52 INFO : |  2 |    51 |    88 | L1_QuadMu0_OQ                                          |
+2022-03-09 08:52:52 INFO : |  2 |    52 |    90 | L1_QuadMu0_SQ                                          |
+2022-03-09 08:52:52 INFO : |  2 |    53 |   109 | L1_DoubleMu4_SQ_EG9er2p5                               |
+2022-03-09 08:52:52 INFO : |  2 |    54 |   110 | L1_DoubleMu5_SQ_EG9er2p5                               |
+2022-03-09 08:52:52 INFO : |  2 |    55 |   205 | L1_DoubleEG_15_10_er2p5                                |
+2022-03-09 08:52:52 INFO : |  2 |    56 |   206 | L1_DoubleEG_20_10_er2p5                                |
+2022-03-09 08:52:52 INFO : |  2 |    57 |   207 | L1_DoubleEG_22_10_er2p5                                |
+2022-03-09 08:52:52 INFO : |  2 |    58 |   209 | L1_DoubleEG_25_14_er2p5                                |
+2022-03-09 08:52:52 INFO : |  2 |    59 |   341 | L1_DoubleJet100er2p5                                   |
+2022-03-09 08:52:52 INFO : |  2 |    60 |   343 | L1_DoubleJet150er2p5                                   |
+2022-03-09 08:52:52 INFO : |  2 |    61 |   163 | L1_SingleEG28_FWD2p5                                   |
+2022-03-09 08:52:52 INFO : |  2 |    62 |   324 | L1_SingleJet35_FWD3p0                                  |
+2022-03-09 08:52:52 INFO : |  2 |    63 |   326 | L1_SingleJet90_FWD3p0                                  |
+2022-03-09 08:52:52 INFO : |  2 |    64 |   213 | L1_DoubleEG_LooseIso22_10_er2p5                        |
+2022-03-09 08:52:52 INFO : |  2 |    65 |   215 | L1_DoubleEG_LooseIso25_12_er2p5                        |
+2022-03-09 08:52:52 INFO : |  2 |    66 |   494 | L1_CDC_SingleMu_3_er1p2_TOP120_DPHI2p618_3p142         |
+2022-03-09 08:52:52 INFO : |  2 |    67 |    93 | L1_DoubleEG_LooseIso20_LooseIso12_er1p5                |
+2022-03-09 08:52:52 INFO : |  2 |    68 |    95 | L1_DoubleEG_LooseIso25_LooseIso12_er1p5                |
+2022-03-09 08:52:52 INFO : |  2 |    69 |   270 | L1_DoubleIsoTau30er2p1                                 |
+2022-03-09 08:52:52 INFO : |  2 |    70 |   272 | L1_DoubleIsoTau34er2p1                                 |
+2022-03-09 08:52:52 INFO : |  2 |    71 |   273 | L1_DoubleIsoTau36er2p1                                 |
+2022-03-09 08:52:52 INFO : |  2 |    72 |   218 | L1_DoubleLooseIsoEG24er2p1                             |
+2022-03-09 08:52:52 INFO : |  2 |    73 |   177 | L1_SingleLooseIsoEG28_FWD2p5                           |
+2022-03-09 08:52:52 INFO : |  2 |    74 |   228 | L1_TripleEG16er2p5                                     |
+2022-03-09 08:52:52 INFO : |  2 |    75 |   224 | L1_TripleEG_16_12_8_er2p5                              |
+2022-03-09 08:52:52 INFO : |  2 |    76 |   225 | L1_TripleEG_16_15_8_er2p5                              |
+2022-03-09 08:52:52 INFO : |  2 |    77 |   226 | L1_TripleEG_18_17_8_er2p5                              |
+2022-03-09 08:52:52 INFO : |  2 |    78 |   227 | L1_TripleEG_18_18_12_er2p5                             |
+2022-03-09 08:52:52 INFO : |  2 |    79 |   373 | L1_TripleJet_100_80_70_DoubleJet_80_70_er2p5           |
+2022-03-09 08:52:52 INFO : |  2 |    80 |   374 | L1_TripleJet_105_85_75_DoubleJet_85_75_er2p5           |
+2022-03-09 08:52:52 INFO : |  2 |    81 |   372 | L1_TripleJet_95_75_65_DoubleJet_75_65_er2p5            |
+2022-03-09 08:52:52 INFO : |  2 |    82 |   376 | L1_QuadJet_95_75_65_20_DoubleJet_75_65_er2p5_Je...     |
+2022-03-09 08:52:52 INFO : |  2 |    83 |   382 | L1_QuadJet60er2p5                                      |
+2022-03-09 08:52:52 INFO : |  2 |    84 |   298 | L1_QuadJet36er2p5_IsoTau52er2p1                        |
+2022-03-09 08:52:52 INFO : |  2 |    85 |   345 | L1_DoubleJet100er2p3_dEta_Max1p6                       |
+2022-03-09 08:52:52 INFO : |  2 |    86 |    63 | L1_DoubleMu4p5_SQ_OS_dR_Max1p2                         |
+2022-03-09 08:52:52 INFO : |  2 |    87 |    58 | L1_DoubleMu0er1p5_SQ_OS_dR_Max1p4                      |
+2022-03-09 08:52:52 INFO : |  2 |    88 |    53 | L1_DoubleMu0er2p0_SQ_dR_Max1p4                         |
+2022-03-09 08:52:52 INFO : |  2 |    89 |    50 | L1_DoubleMu_15_7_Mass_Min1                             |
+2022-03-09 08:52:52 INFO : |  2 |    90 |    65 | L1_DoubleMu4p5er2p0_SQ_OS_Mass_Min7                    |
+2022-03-09 08:52:52 INFO : |  2 |    91 |   201 | L1_DoubleEG10er1p22_dR_0p6                             |
+2022-03-09 08:52:52 INFO : |  2 |    92 |   219 | L1_DoubleEG7er1p22_dR_0p8                              |
+2022-03-09 08:52:52 INFO : |  2 |    93 |   211 | L1_DoubleEG8er1p22_dR_0p7                              |
+2022-03-09 08:52:52 INFO : |  2 |    94 |   202 | L1_DoubleEG9p5er1p22_dR_0p6                            |
+2022-03-09 08:52:52 INFO : |  2 |    95 |   121 | L1_Mu3_Jet16er2p5_dR_Max0p4                            |
+2022-03-09 08:52:52 INFO : |  2 |    96 |   135 | L1_Mu12er2p3_Jet40er2p3_dR_Max0p4_DoubleJet40er...     |
+2022-03-09 08:52:52 INFO : |  2 |    97 |   358 | L1_DoubleJet_115_40_DoubleJet40_Mass_Min620            |
+2022-03-09 08:52:52 INFO : |  2 |    98 |   353 | L1_DoubleJet30er2p5_Mass_Min360_dEta_Max1p5            |
+2022-03-09 08:52:52 INFO : |  2 |    99 |   234 | L1_LooseIsoEG26er2p1_Jet34er2p5_dR_Min0p3              |
+2022-03-09 08:52:52 INFO : |  2 |   100 |   113 | L1_DoubleMu5Upsilon_OS_DoubleEG3                       |
+2022-03-09 08:52:52 INFO : |  3 |     0 |   488 | L1_BPTX_AND_Ref4_VME                                   |
+2022-03-09 08:52:52 INFO : |  3 |     1 |   482 | L1_BPTX_NotOR_VME                                      |
+2022-03-09 08:52:52 INFO : |  3 |     2 |   480 | L1_FirstCollisionInOrbit                               |
+2022-03-09 08:52:52 INFO : |  3 |     3 |   478 | L1_LastCollisionInTrain                                |
+2022-03-09 08:52:52 INFO : |  3 |     4 |   504 | L1_TOTEM_2                                             |
+2022-03-09 08:52:52 INFO : |  3 |     5 |   416 | L1_ETM120                                              |
+2022-03-09 08:52:52 INFO : |  3 |     6 |   411 | L1_ETT1600                                             |
+2022-03-09 08:52:52 INFO : |  3 |     7 |   401 | L1_HTT255er                                            |
+2022-03-09 08:52:52 INFO : |  3 |     8 |   405 | L1_HTT400er                                            |
+2022-03-09 08:52:52 INFO : |  3 |     9 |     5 | L1_SingleMu0_DQ                                        |
+2022-03-09 08:52:52 INFO : |  3 |    10 |    23 | L1_SingleMu25                                          |
+2022-03-09 08:52:52 INFO : |  3 |    11 |   173 | L1_SingleEG50                                          |
+2022-03-09 08:52:52 INFO : |  3 |    12 |   312 | L1_SingleJet120                                        |
+2022-03-09 08:52:52 INFO : |  3 |    13 |   361 | L1_DoubleJet_120_45_DoubleJet45_Mass_Min620_Jet...     |
+2022-03-09 08:52:52 INFO : |  3 |    14 |   360 | L1_DoubleJet_115_40_DoubleJet40_Mass_Min620_Jet...     |
+2022-03-09 08:52:52 INFO : |  3 |    15 |   223 | L1_DoubleEG5er1p22_dR_0p9                              |
+2022-03-09 08:52:52 INFO : |  3 |    16 |   203 | L1_DoubleEG9er1p22_dR_0p7                              |
+2022-03-09 08:52:52 INFO : |  3 |    17 |   125 | L1_Mu3_Jet120er2p5_dR_Max0p8                           |
+2022-03-09 08:52:52 INFO : |  3 |    18 |   136 | L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er...     |
+2022-03-09 08:52:52 INFO : |  3 |    19 |   357 | L1_DoubleJet_110_35_DoubleJet35_Mass_Min620            |
+2022-03-09 08:52:52 INFO : |  3 |    20 |   277 | L1_DoubleIsoTau30er2p1_Mass_Max80                      |
+2022-03-09 08:52:52 INFO : |  3 |    21 |   257 | L1_LooseIsoEG22er2p1_IsoTau26er2p1_dR_Min0p3           |
+2022-03-09 08:52:52 INFO : |  4 |     0 |   491 | L1_BPTX_BeamGas_B1_VME                                 |
+2022-03-09 08:52:52 INFO : |  4 |     1 |   483 | L1_BPTX_OR_Ref3_VME                                    |
+2022-03-09 08:52:52 INFO : |  4 |     2 |   479 | L1_FirstCollisionInTrain                               |
+2022-03-09 08:52:52 INFO : |  4 |     3 |    69 | L1_MuShower_OneNominal                                 |
+2022-03-09 08:52:52 INFO : |  4 |     4 |   505 | L1_TOTEM_3                                             |
+2022-03-09 08:52:52 INFO : |  4 |     5 |   417 | L1_ETM150                                              |
+2022-03-09 08:52:52 INFO : |  4 |     6 |   412 | L1_ETT2000                                             |
+2022-03-09 08:52:52 INFO : |  4 |     7 |   404 | L1_HTT360er                                            |
+2022-03-09 08:52:52 INFO : |  4 |     8 |   406 | L1_HTT450er                                            |
+2022-03-09 08:52:52 INFO : |  4 |     9 |    16 | L1_SingleMu15_DQ                                       |
+2022-03-09 08:52:52 INFO : |  4 |    10 |     9 | L1_SingleMu3                                           |
+2022-03-09 08:52:52 INFO : |  4 |    11 |   119 | L1_Mu3_Jet30er2p5                                      |
+2022-03-09 08:52:52 INFO : |  4 |    12 |   313 | L1_SingleJet180                                        |
+2022-03-09 08:52:52 INFO : |  4 |    13 |   310 | L1_SingleJet60                                         |
+2022-03-09 08:52:52 INFO : |  4 |    14 |     6 | L1_SingleMu0_BMTF                                      |
+2022-03-09 08:52:52 INFO : |  4 |    15 |    30 | L1_SingleMu12er1p5                                     |
+2022-03-09 08:52:52 INFO : |  4 |    16 |    33 | L1_SingleMu18er1p5                                     |
+2022-03-09 08:52:52 INFO : |  4 |    17 |    26 | L1_SingleMu7er1p5                                      |
+2022-03-09 08:52:52 INFO : |  4 |    18 |    40 | L1_DoubleMu0                                           |
+2022-03-09 08:52:52 INFO : |  4 |    19 |    45 | L1_DoubleMu9_SQ                                        |
+2022-03-09 08:52:52 INFO : |  4 |    20 |    48 | L1_DoubleMu_15_7                                       |
+2022-03-09 08:52:52 INFO : |  4 |    21 |    60 | L1_DoubleMu4_SQ_OS                                     |
+2022-03-09 08:52:52 INFO : |  4 |    22 |   162 | L1_SingleEG26er2p5                                     |
+2022-03-09 08:52:52 INFO : |  4 |    23 |   164 | L1_SingleEG28er2p5                                     |
+2022-03-09 08:52:52 INFO : |  4 |    24 |   169 | L1_SingleEG38er2p5                                     |
+2022-03-09 08:52:52 INFO : |  4 |    25 |   172 | L1_SingleEG45er2p5                                     |
+2022-03-09 08:52:52 INFO : |  4 |    26 |   321 | L1_SingleJet160er2p5                                   |
+2022-03-09 08:52:52 INFO : |  4 |    27 |   318 | L1_SingleJet90er2p5                                    |
+2022-03-09 08:52:52 INFO : |  4 |    28 |   264 | L1_SingleTau120er2p1                                   |
+2022-03-09 08:52:52 INFO : |  4 |    29 |     7 | L1_SingleMu0_OMTF                                      |
+2022-03-09 08:52:52 INFO : |  4 |    30 |    22 | L1_SingleMu22_EMTF                                     |
+2022-03-09 08:52:52 INFO : |  4 |    31 |   183 | L1_SingleIsoEG24er2p1                                  |
+2022-03-09 08:52:52 INFO : |  4 |    32 |   185 | L1_SingleIsoEG26er2p5                                  |
+2022-03-09 08:52:52 INFO : |  4 |    33 |   189 | L1_SingleIsoEG28er2p5                                  |
+2022-03-09 08:52:52 INFO : |  4 |    34 |   195 | L1_SingleIsoEG32er2p1                                  |
+2022-03-09 08:52:52 INFO : |  4 |    35 |   176 | L1_SingleLooseIsoEG26er1p5                             |
+2022-03-09 08:52:52 INFO : |  4 |    36 |   179 | L1_SingleLooseIsoEG28er2p1                             |
+2022-03-09 08:52:52 INFO : |  4 |    37 |   238 | L1_LooseIsoEG24er2p1_HTT100er                          |
+2022-03-09 08:52:52 INFO : |  4 |    38 |   241 | L1_LooseIsoEG30er2p1_HTT100er                          |
+2022-03-09 08:52:52 INFO : |  4 |    39 |   239 | L1_LooseIsoEG26er2p1_HTT100er                          |
+2022-03-09 08:52:52 INFO : |  4 |    40 |   240 | L1_LooseIsoEG28er2p1_HTT100er                          |
+2022-03-09 08:52:52 INFO : |  4 |    41 |   199 | L1_IsoEG32er2p5_Mt48                                   |
+2022-03-09 08:52:52 INFO : |  4 |    42 |    76 | L1_TripleMu_5SQ_3SQ_0OQ                                |
+2022-03-09 08:52:52 INFO : |  4 |    43 |    85 | L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass...     |
+2022-03-09 08:52:52 INFO : |  4 |    44 |    86 | L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9     |
+2022-03-09 08:52:52 INFO : |  4 |    45 |   363 | L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp             |
+2022-03-09 08:52:52 INFO : |  4 |    46 |   221 | L1_DoubleEG6er1p22_dR_0p8                              |
+2022-03-09 08:52:52 INFO : |  4 |    47 |   123 | L1_Mu3_Jet60er2p5_dR_Max0p4                            |
+2022-03-09 08:52:52 INFO : |  4 |    48 |   143 | L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8            |
+2022-03-09 08:52:52 INFO : |  4 |    49 |   275 | L1_DoubleIsoTau28er2p1_Mass_Max80                      |
+2022-03-09 08:52:52 INFO : |  4 |    50 |   235 | L1_LooseIsoEG28er2p1_Jet34er2p5_dR_Min0p3              |
+2022-03-09 08:52:52 INFO : |  5 |     0 |   492 | L1_BPTX_BeamGas_B2_VME                                 |
+2022-03-09 08:52:52 INFO : |  5 |     1 |   484 | L1_BPTX_OR_Ref4_VME                                    |
+2022-03-09 08:52:52 INFO : |  5 |     2 |   500 | L1_HCAL_LaserMon_Trig                                  |
+2022-03-09 08:52:52 INFO : |  5 |     3 |    70 | L1_MuShower_OneTight                                   |
+2022-03-09 08:52:52 INFO : |  5 |     4 |   506 | L1_TOTEM_4                                             |
+2022-03-09 08:52:52 INFO : |  5 |     5 |   425 | L1_ETMHF140                                            |
+2022-03-09 08:52:52 INFO : |  5 |     6 |   398 | L1_HTT120er                                            |
+2022-03-09 08:52:52 INFO : |  5 |     7 |    24 | L1_HTT120_SingleLLPJet40                               |
+2022-03-09 08:52:52 INFO : |  5 |     8 |     0 | L1_SingleMuCosmics                                     |
+2022-03-09 08:52:52 INFO : |  5 |     9 |    19 | L1_SingleMu22                                          |
+2022-03-09 08:52:52 INFO : |  5 |    10 |    11 | L1_SingleMu7_DQ                                        |
+2022-03-09 08:52:52 INFO : |  5 |    11 |   174 | L1_SingleEG60                                          |
+2022-03-09 08:52:52 INFO : |  5 |    12 |   309 | L1_SingleJet35                                         |
+2022-03-09 08:52:52 INFO : |  5 |    13 |     1 | L1_SingleMuCosmics_BMTF                                |
+2022-03-09 08:52:52 INFO : |  5 |    14 |    13 | L1_SingleMu12_DQ_BMTF                                  |
+2022-03-09 08:52:52 INFO : |  5 |    15 |    32 | L1_SingleMu16er1p5                                     |
+2022-03-09 08:52:52 INFO : |  5 |    16 |    25 | L1_SingleMu6er1p5                                      |
+2022-03-09 08:52:52 INFO : |  5 |    17 |    28 | L1_SingleMu9er1p5                                      |
+2022-03-09 08:52:52 INFO : |  5 |    18 |    44 | L1_DoubleMu8_SQ                                        |
+2022-03-09 08:52:52 INFO : |  5 |    19 |    47 | L1_DoubleMu_15_5_SQ                                    |
+2022-03-09 08:52:52 INFO : |  5 |    20 |    42 | L1_DoubleMu0_SQ_OS                                     |
+2022-03-09 08:52:52 INFO : |  5 |    21 |   161 | L1_SingleEG15er2p5                                     |
+2022-03-09 08:52:52 INFO : |  5 |    22 |   165 | L1_SingleEG28er2p1                                     |
+2022-03-09 08:52:52 INFO : |  5 |    23 |   168 | L1_SingleEG36er2p5                                     |
+2022-03-09 08:52:52 INFO : |  5 |    24 |   171 | L1_SingleEG42er2p5                                     |
+2022-03-09 08:52:52 INFO : |  5 |    25 |   319 | L1_SingleJet120er2p5                                   |
+2022-03-09 08:52:52 INFO : |  5 |    26 |   316 | L1_SingleJet35er2p5                                    |
+2022-03-09 08:52:52 INFO : |  5 |    27 |     2 | L1_SingleMuCosmics_OMTF                                |
+2022-03-09 08:52:52 INFO : |  5 |    28 |     8 | L1_SingleMu0_EMTF                                      |
+2022-03-09 08:52:52 INFO : |  5 |    29 |    14 | L1_SingleMu12_DQ_OMTF                                  |
+2022-03-09 08:52:52 INFO : |  5 |    30 |   184 | L1_SingleIsoEG24er1p5                                  |
+2022-03-09 08:52:52 INFO : |  5 |    31 |   186 | L1_SingleIsoEG26er2p1                                  |
+2022-03-09 08:52:52 INFO : |  5 |    32 |   190 | L1_SingleIsoEG28er2p1                                  |
+2022-03-09 08:52:52 INFO : |  5 |    33 |   192 | L1_SingleIsoEG30er2p5                                  |
+2022-03-09 08:52:52 INFO : |  5 |    34 |   196 | L1_SingleIsoEG34er2p5                                  |
+2022-03-09 08:52:52 INFO : |  5 |    35 |   180 | L1_SingleLooseIsoEG28er1p5                             |
+2022-03-09 08:52:52 INFO : |  5 |    36 |   182 | L1_SingleLooseIsoEG30er1p5                             |
+2022-03-09 08:52:52 INFO : |  5 |    37 |   197 | L1_IsoEG32er2p5_Mt40                                   |
+2022-03-09 08:52:52 INFO : |  5 |    38 |    72 | L1_TripleMu0                                           |
+2022-03-09 08:52:52 INFO : |  5 |    39 |    73 | L1_TripleMu0_SQ                                        |
+2022-03-09 08:52:52 INFO : |  5 |    40 |    75 | L1_TripleMu3_SQ                                        |
+2022-03-09 08:52:52 INFO : |  5 |    41 |    67 | L1_TripleMu_2_1p5_0OQ_Mass_Max_15                      |
+2022-03-09 08:52:52 INFO : |  5 |    42 |   330 | L1_SingleJet10erHE                                     |
+2022-03-09 08:52:52 INFO : |  5 |    43 |   329 | L1_SingleJet8erHE                                      |
+2022-03-09 08:52:52 INFO : |  5 |    44 |    35 | L1_DoubleMu0er2p0_SQ_OS_dEta_Max1p5                    |
+2022-03-09 08:52:52 INFO : |  5 |    45 |    52 | L1_DoubleMu18er2p1                                     |
+2022-03-09 08:52:52 INFO : |  5 |    46 |    51 | L1_DoubleMu18er2p1_SQ                                  |
+2022-03-09 08:52:52 INFO : |  5 |    47 |    56 | L1_DoubleMu0er1p5_SQ_OS                                |
+2022-03-09 08:52:52 INFO : |  5 |    48 |   364 | L1_DoubleJet_80_30_Mass_Min420_IsoTau40_RmOvlp         |
+2022-03-09 08:52:52 INFO : |  5 |    49 |   220 | L1_DoubleEG6p5er1p22_dR_0p8                            |
+2022-03-09 08:52:52 INFO : |  5 |    50 |   124 | L1_Mu3_Jet80er2p5_dR_Max0p4                            |
+2022-03-09 08:52:52 INFO : |  5 |    51 |   356 | L1_DoubleJet_100_30_DoubleJet30_Mass_Min620            |
+2022-03-09 08:52:52 INFO : |  5 |    52 |   355 | L1_DoubleJet_90_30_DoubleJet30_Mass_Min620             |
+2022-03-09 08:52:52 INFO : |  5 |    53 |   274 | L1_DoubleIsoTau28er2p1_Mass_Max90                      |
+2022-03-09 08:52:52 INFO : |  5 |    54 |   236 | L1_LooseIsoEG30er2p1_Jet34er2p5_dR_Min0p3              |
+2022-03-09 08:52:52 INFO : |----|-------|-------|--------------------------------------------------------|
+2022-03-09 08:52:52 INFO : |-----------------------------------------------------------------------------|
+2022-03-09 08:52:52 INFO : |                                                                             |
+2022-03-09 08:52:52 INFO : | Condition distribution, sorted by weight (ascending)                        |
+2022-03-09 08:52:52 INFO : |                                                                             |
+2022-03-09 08:52:52 INFO : |-----------------------------------------------------------------------------|
+2022-03-09 08:52:52 INFO : | Name                                             | Modules                  |
+2022-03-09 08:52:52 INFO : |--------------------------------------------------|--------------------------|
+2022-03-09 08:52:52 INFO : | MuonShower0_i380                                 | 4                        |
+2022-03-09 08:52:52 INFO : | MuonShower1_i381                                 | 5                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i320                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i321                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i322                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i323                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i324                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i325                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i327                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i328                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i335                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i336                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i337                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i338                                   | 1                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i339                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i340                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i341                                   | 3                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i342                                   | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i343                                   | 3                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i344                                   | 3                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i345                                   | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i346                                   | 5                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i347                                   | 1                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i348                                   | 1                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i349                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i350                                   | 3                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i351                                   | 1                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i352                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i353                                   | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i354                                   | 5                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i356                                   | 5                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i357                                   | 1                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i358                                   | 1                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i359                                   | 3                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i360                                   | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEXT_i361                                   | 5                        |
+2022-03-09 08:52:52 INFO : | SingleETMHF_i105                                 | 0                        |
+2022-03-09 08:52:52 INFO : | SingleETMHF_i106                                 | 0                        |
+2022-03-09 08:52:52 INFO : | SingleETMHF_i123                                 | 0                        |
+2022-03-09 08:52:52 INFO : | SingleETMHF_i224                                 | 0                        |
+2022-03-09 08:52:52 INFO : | SingleETMHF_i225                                 | 0                        |
+2022-03-09 08:52:52 INFO : | SingleETMHF_i226                                 | 0                        |
+2022-03-09 08:52:52 INFO : | SingleETMHF_i227                                 | 0                        |
+2022-03-09 08:52:52 INFO : | SingleETMHF_i253                                 | 0                        |
+2022-03-09 08:52:52 INFO : | SingleETMHF_i316                                 | 0                        |
+2022-03-09 08:52:52 INFO : | SingleETMHF_i317                                 | 0                        |
+2022-03-09 08:52:52 INFO : | SingleETMHF_i318                                 | 5                        |
+2022-03-09 08:52:52 INFO : | SingleETMHF_i319                                 | 1                        |
+2022-03-09 08:52:52 INFO : | SingleETM_i314                                   | 3                        |
+2022-03-09 08:52:52 INFO : | SingleETM_i315                                   | 4                        |
+2022-03-09 08:52:52 INFO : | SingleETT_i311                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleETT_i312                                   | 3                        |
+2022-03-09 08:52:52 INFO : | SingleETT_i313                                   | 4                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i107                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i108                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i120                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i124                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i125                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i190                                   | 4                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i194                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i195                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i196                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i197                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i304                                   | 5                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i305                                   | 1                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i306                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i307                                   | 3                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i308                                   | 4                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i309                                   | 3                        |
+2022-03-09 08:52:52 INFO : | SingleHTT_i310                                   | 4                        |
+2022-03-09 08:52:52 INFO : | SingleMBT0HFM_i334                               | 0                        |
+2022-03-09 08:52:52 INFO : | SingleMBT0HFP_i333                               | 0                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i0                                      | 5                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i10                                     | 1                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i11                                     | 5                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i12                                     | 1                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i16                                     | 4                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i17                                     | 1                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i18                                     | 2                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i19                                     | 5                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i23                                     | 3                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i289                                    | 1                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i4                                      | 0                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i5                                      | 3                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i84                                     | 0                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i9                                      | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i140                                    | 3                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i141                                    | 5                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i230                                   | 5                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i231                                   | 4                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i232                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i233                                   | 3                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i234                                   | 4                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i235                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i274                                   | 3                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i402                                   | 5                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i403                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i404                                   | 1                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i1                                      | 5                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i103                                    | 0                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i13                                     | 5                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i20                                     | 2                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i213                                    | 2                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i216                                    | 0                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i24                                     | 5                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i25                                     | 4                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i26                                     | 2                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i27                                     | 5                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i28                                     | 2                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i29                                     | 4                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i30                                     | 2                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i31                                     | 5                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i32                                     | 4                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i326                                    | 0                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i329                                    | 0                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i6                                      | 4                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i119                                    | 0                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i33                                     | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i34                                     | 4                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i35                                     | 1                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i38                                     | 5                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i39                                     | 4                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i40                                     | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i41                                     | 5                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i42                                     | 4                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i43                                     | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i89                                     | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i91                                     | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i36                                     | 5                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i53                                     | 4                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i55                                     | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleJET_i265                                   | 5                        |
+2022-03-09 08:52:52 INFO : | DoubleJET_i267                                   | 5                        |
+2022-03-09 08:52:52 INFO : | DoubleJET_i268                                   | 3                        |
+2022-03-09 08:52:52 INFO : | DoubleJET_i270                                   | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleJET_i272                                   | 1                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i126                                    | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i127                                    | 5                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i128                                    | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i129                                    | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i130                                    | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i131                                    | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i132                                    | 5                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i133                                    | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i134                                    | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i135                                    | 5                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i136                                    | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i137                                    | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i138                                    | 5                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i139                                    | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i79                                     | 1                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i80                                     | 1                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i81                                     | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i90                                     | 2                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i104                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i121                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i236                                   | 5                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i237                                   | 4                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i238                                   | 5                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i239                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i240                                   | 4                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i241                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i242                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i243                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i244                                   | 1                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i245                                   | 1                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i246                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i247                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i248                                   | 1                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i249                                   | 1                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i297                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i298                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i330                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i331                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i332                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i96                                    | 4                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i2                                      | 5                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i3                                      | 2                        |
+2022-03-09 08:52:52 INFO : | SingleTAU_i201                                   | 4                        |
+2022-03-09 08:52:52 INFO : | SingleTAU_i202                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleTAU_i214                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleTAU_i215                                   | 2                        |
+2022-03-09 08:52:52 INFO : | SingleTAU_i223                                   | 0                        |
+2022-03-09 08:52:52 INFO : | CaloEsumCorrelation_i395                         | 0                        |
+2022-03-09 08:52:52 INFO : | CaloEsumCorrelation_i396                         | 0                        |
+2022-03-09 08:52:52 INFO : | CaloEsumCorrelation_i397                         | 0                        |
+2022-03-09 08:52:52 INFO : | CaloEsumCorrelation_i398                         | 0                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i14                                     | 5                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i15                                     | 2                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i21                                     | 2                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i22                                     | 4                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i7                                      | 4                        |
+2022-03-09 08:52:52 INFO : | SingleMU_i8                                      | 5                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i142                                    | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i143                                    | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i144                                    | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i145                                    | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i146                                    | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i147                                    | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i148                                    | 5                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i149                                    | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i150                                    | 5                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i151                                    | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i152                                    | 5                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i153                                    | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i154                                    | 5                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i155                                    | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i156                                    | 0                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i157                                    | 0                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i158                                    | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i159                                    | 5                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i160                                    | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i161                                    | 5                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i162                                    | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i163                                    | 2                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i164                                    | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i165                                    | 5                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i189                                    | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i191                                    | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i192                                    | 4                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i82                                     | 1                        |
+2022-03-09 08:52:52 INFO : | SingleEG_i83                                     | 1                        |
+2022-03-09 08:52:52 INFO : | SingleTAU_i217                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleTAU_i218                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleTAU_i219                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleTAU_i220                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleTAU_i221                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleTAU_i222                                   | 0                        |
+2022-03-09 08:52:52 INFO : | SingleTAU_i229                                   | 2                        |
+2022-03-09 08:52:52 INFO : | TransverseMass_i166                              | 5                        |
+2022-03-09 08:52:52 INFO : | TransverseMass_i167                              | 2                        |
+2022-03-09 08:52:52 INFO : | TransverseMass_i168                              | 4                        |
+2022-03-09 08:52:52 INFO : | InvariantMass3_i378                              | 2                        |
+2022-03-09 08:52:52 INFO : | InvariantMass3_i379                              | 5                        |
+2022-03-09 08:52:52 INFO : | TripleMU_i60                                     | 2                        |
+2022-03-09 08:52:52 INFO : | TripleMU_i61                                     | 5                        |
+2022-03-09 08:52:52 INFO : | TripleMU_i62                                     | 5                        |
+2022-03-09 08:52:52 INFO : | TripleMU_i63                                     | 2                        |
+2022-03-09 08:52:52 INFO : | TripleMU_i64                                     | 5                        |
+2022-03-09 08:52:52 INFO : | TripleMU_i65                                     | 4                        |
+2022-03-09 08:52:52 INFO : | TripleMU_i66                                     | 0                        |
+2022-03-09 08:52:52 INFO : | TripleMU_i67                                     | 0                        |
+2022-03-09 08:52:52 INFO : | TripleMU_i68                                     | 0                        |
+2022-03-09 08:52:52 INFO : | TripleMU_i69                                     | 2                        |
+2022-03-09 08:52:52 INFO : | TripleMU_i70                                     | 0                        |
+2022-03-09 08:52:52 INFO : | TripleMU_i73                                     | 0                        |
+2022-03-09 08:52:52 INFO : | TripleMU_i75                                     | 4                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i250                                   | 5                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i251                                   | 5                        |
+2022-03-09 08:52:52 INFO : | SingleJET_i252                                   | 2                        |
+2022-03-09 08:52:52 INFO : | TripleJET_i290                                   | 2                        |
+2022-03-09 08:52:52 INFO : | TripleJET_i292                                   | 2                        |
+2022-03-09 08:52:52 INFO : | TripleJET_i294                                   | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i45                                     | 5                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i48                                     | 2                        |
+2022-03-09 08:52:52 INFO : | MuonMuonCorrelation_i362                         | 2                        |
+2022-03-09 08:52:52 INFO : | MuonMuonCorrelation_i363                         | 5                        |
+2022-03-09 08:52:52 INFO : | MuonMuonCorrelation_i364                         | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i49                                     | 5                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i57                                     | 2                        |
+2022-03-09 08:52:52 INFO : | InvariantMassOvRm_i286                           | 4                        |
+2022-03-09 08:52:52 INFO : | InvariantMassOvRm_i287                           | 5                        |
+2022-03-09 08:52:52 INFO : | QuadMU_i76                                       | 2                        |
+2022-03-09 08:52:52 INFO : | QuadMU_i77                                       | 2                        |
+2022-03-09 08:52:52 INFO : | QuadMU_i78                                       | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i169                                    | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i170                                    | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i171                                    | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i172                                    | 1                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i173                                    | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i174                                    | 1                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i193                                    | 0                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i85                                     | 0                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i86                                     | 0                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i87                                     | 0                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i88                                     | 0                        |
+2022-03-09 08:52:52 INFO : | DoubleJET_i122                                   | 0                        |
+2022-03-09 08:52:52 INFO : | DoubleJET_i254                                   | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleJET_i255                                   | 1                        |
+2022-03-09 08:52:52 INFO : | DoubleJET_i256                                   | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleJET_i291                                   | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleJET_i293                                   | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleJET_i295                                   | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i387                                    | 1                        |
+2022-03-09 08:52:52 INFO : | DoubleTAU_i203                                   | 1                        |
+2022-03-09 08:52:52 INFO : | QuadJET_i296                                     | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i391                                    | 1                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i175                                    | 1                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i176                                    | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i177                                    | 1                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i178                                    | 2                        |
+2022-03-09 08:52:52 INFO : | InvariantMassOvRm_i401                           | 1                        |
+2022-03-09 08:52:52 INFO : | MuonMuonCorrelation_i355                         | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i179                                    | 0                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i180                                    | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i382                                    | 0                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i383                                    | 0                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i384                                    | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i385                                    | 0                        |
+2022-03-09 08:52:52 INFO : | DoubleEG_i386                                    | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i388                                    | 1                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i390                                    | 1                        |
+2022-03-09 08:52:52 INFO : | DoubleTAU_i204                                   | 0                        |
+2022-03-09 08:52:52 INFO : | DoubleTAU_i205                                   | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleTAU_i206                                   | 0                        |
+2022-03-09 08:52:52 INFO : | DoubleTAU_i207                                   | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleTAU_i208                                   | 2                        |
+2022-03-09 08:52:52 INFO : | DoubleTAU_i399                                   | 0                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i392                                    | 1                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i394                                    | 1                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i389                                    | 1                        |
+2022-03-09 08:52:52 INFO : | DoubleMU_i393                                    | 1                        |
+2022-03-09 08:52:52 INFO : | DoubleTauOvRm_i400                               | 0                        |
+2022-03-09 08:52:52 INFO : | TripleEG_i181                                    | 2                        |
+2022-03-09 08:52:52 INFO : | TripleEG_i182                                    | 2                        |
+2022-03-09 08:52:52 INFO : | TripleEG_i183                                    | 2                        |
+2022-03-09 08:52:52 INFO : | TripleEG_i184                                    | 2                        |
+2022-03-09 08:52:52 INFO : | TripleEG_i185                                    | 2                        |
+2022-03-09 08:52:52 INFO : | QuadJET_i228                                     | 2                        |
+2022-03-09 08:52:52 INFO : | QuadJET_i299                                     | 2                        |
+2022-03-09 08:52:52 INFO : | QuadJET_i300                                     | 0                        |
+2022-03-09 08:52:52 INFO : | QuadJET_i301                                     | 0                        |
+2022-03-09 08:52:52 INFO : | QuadJET_i302                                     | 0                        |
+2022-03-09 08:52:52 INFO : | QuadJET_i303                                     | 0                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i110                         | 0                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i112                         | 2                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i114                         | 3                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i257                         | 2                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i258                         | 1                        |
+2022-03-09 08:52:52 INFO : | MuonMuonCorrelation_i115                         | 1                        |
+2022-03-09 08:52:52 INFO : | MuonMuonCorrelation_i117                         | 4                        |
+2022-03-09 08:52:52 INFO : | MuonMuonCorrelation_i54                          | 1                        |
+2022-03-09 08:52:52 INFO : | MuonMuonCorrelation_i56                          | 2                        |
+2022-03-09 08:52:52 INFO : | MuonMuonCorrelation_i365                         | 0                        |
+2022-03-09 08:52:52 INFO : | MuonMuonCorrelation_i46                          | 2                        |
+2022-03-09 08:52:52 INFO : | MuonMuonCorrelation_i47                          | 1                        |
+2022-03-09 08:52:52 INFO : | MuonMuonCorrelation_i50                          | 0                        |
+2022-03-09 08:52:52 INFO : | MuonMuonCorrelation_i51                          | 2                        |
+2022-03-09 08:52:52 INFO : | MuonMuonCorrelation_i52                          | 1                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i37                                | 1                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i44                                | 2                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i71                                | 0                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i72                                | 0                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i74                                | 4                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i58                                | 2                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i59                                | 0                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i92                                | 1                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i94                                | 2                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i366                         | 0                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i367                         | 2                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i368                         | 2                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i369                         | 3                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i370                         | 0                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i371                         | 2                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i372                         | 0                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i373                         | 2                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i374                         | 5                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i375                         | 4                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i376                         | 1                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i377                         | 3                        |
+2022-03-09 08:52:52 INFO : | CaloMuonCorrelation_i100                         | 5                        |
+2022-03-09 08:52:52 INFO : | CaloMuonCorrelation_i101                         | 3                        |
+2022-03-09 08:52:52 INFO : | CaloMuonCorrelation_i102                         | 0                        |
+2022-03-09 08:52:52 INFO : | CaloMuonCorrelation_i116                         | 1                        |
+2022-03-09 08:52:52 INFO : | CaloMuonCorrelation_i118                         | 4                        |
+2022-03-09 08:52:52 INFO : | CaloMuonCorrelation_i97                          | 2                        |
+2022-03-09 08:52:52 INFO : | CaloMuonCorrelation_i98                          | 1                        |
+2022-03-09 08:52:52 INFO : | CaloMuonCorrelation_i99                          | 4                        |
+2022-03-09 08:52:52 INFO : | CaloMuonCorrelation_i109                         | 0                        |
+2022-03-09 08:52:52 INFO : | CaloMuonCorrelation_i111                         | 2                        |
+2022-03-09 08:52:52 INFO : | CaloMuonCorrelation_i113                         | 3                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i266                               | 5                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i269                               | 3                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i271                               | 2                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i273                               | 1                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i276                               | 3                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i288                               | 1                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i278                               | 3                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i283                               | 3                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i275                               | 3                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i277                               | 3                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i281                               | 3                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i282                               | 3                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i93                                | 1                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i95                                | 2                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i209                               | 5                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i210                               | 4                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i211                               | 0                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i212                               | 3                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i279                               | 3                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i284                               | 3                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i280                               | 3                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i285                               | 3                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i259                               | 1                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i260                               | 1                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i261                               | 1                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i262                               | 1                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i263                               | 1                        |
+2022-03-09 08:52:52 INFO : | InvariantMass_i264                               | 2                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i186                         | 2                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i187                         | 4                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i188                         | 5                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i200                         | 1                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i198                         | 3                        |
+2022-03-09 08:52:52 INFO : | CaloCaloCorrelation_i199                         | 0                        |
+2022-03-09 08:52:52 INFO : |--------------------------------------------------|--------------------------|
+2022-03-09 08:52:52 INFO : |--------------------------------------------------------------------------------------|
+2022-03-09 08:52:52 INFO : |                                                                                      |
+2022-03-09 08:52:52 INFO : | Summary for distribution on 6 modules, shadow ratio: 0.0                             |
+2022-03-09 08:52:52 INFO : |                                                                                      |
+2022-03-09 08:52:52 INFO : |-------------------------------------|------------------------------------------------|
+2022-03-09 08:52:52 INFO : |                                     |                    Payload                     |
+2022-03-09 08:52:52 INFO : |-------------------------------------|------------------------------------------------|
+2022-03-09 08:52:52 INFO : |              Module                 |   SliceLUTs    |     BRAMs     |     DSPs      |
+2022-03-09 08:52:52 INFO : |-------------------------------------|------------------------------------------------|
+2022-03-09 08:52:52 INFO : | ID | Algorithms | Conditions | Rel. | Value  |  [%]  | Value |  [%]  | Value |  [%]  |
+2022-03-09 08:52:52 INFO : |----|------------|------------|------|--------|-------|-------|-------|-------|-------|
+2022-03-09 08:52:52 INFO : |  0 |        107 |         93 | 0.87 | 190549 | 43.99 |   608 | 41.36 |   570 | 15.83 |
+2022-03-09 08:52:52 INFO : |  1 |         48 |         57 | 1.19 | 207102 | 47.81 |   608 | 41.36 |   480 | 13.33 |
+2022-03-09 08:52:52 INFO : |  2 |        101 |        114 | 1.13 | 210521 | 48.60 |   608 | 41.36 |   516 | 14.33 |
+2022-03-09 08:52:52 INFO : |  3 |         22 |         34 | 1.55 | 189550 | 43.76 |   608 | 41.36 |   396 | 11.00 |
+2022-03-09 08:52:52 INFO : |  4 |         51 |         52 | 1.02 | 186886 | 43.14 |   608 | 41.36 |   516 | 14.33 |
+2022-03-09 08:52:52 INFO : |  5 |         55 |         55 | 1.00 | 187381 | 43.26 |   608 | 41.36 |   516 | 14.33 |
+2022-03-09 08:52:52 INFO : |----|------------|------------|------|--------|-------|-------|-------|-------|-------|
+2022-03-09 08:52:52 INFO : writing VHDL modules...
+2022-03-09 08:52:52 INFO : writing 384 algorithms to 6 module(s)
+2022-03-09 08:52:52 INFO : writing output for module: 0
+2022-03-09 08:52:52 INFO : algo_index.vhd          : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_0/src/algo_index.vhd
+2022-03-09 08:52:52 INFO : gtl_module_signals.vhd  : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_0/src/gtl_module_signals.vhd
+2022-03-09 08:52:53 INFO : gtl_module_instances.vhd: /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_0/src/gtl_module_instances.vhd
+2022-03-09 08:52:53 INFO : ugt_constants.vhd       : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_0/src/ugt_constants.vhd
+2022-03-09 08:52:53 INFO : writing output for module: 1
+2022-03-09 08:52:53 INFO : algo_index.vhd          : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_1/src/algo_index.vhd
+2022-03-09 08:52:53 INFO : gtl_module_signals.vhd  : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_1/src/gtl_module_signals.vhd
+2022-03-09 08:52:53 INFO : gtl_module_instances.vhd: /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_1/src/gtl_module_instances.vhd
+2022-03-09 08:52:53 INFO : ugt_constants.vhd       : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_1/src/ugt_constants.vhd
+2022-03-09 08:52:53 INFO : writing output for module: 2
+2022-03-09 08:52:53 INFO : algo_index.vhd          : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_2/src/algo_index.vhd
+2022-03-09 08:52:53 INFO : gtl_module_signals.vhd  : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_2/src/gtl_module_signals.vhd
+2022-03-09 08:52:53 INFO : gtl_module_instances.vhd: /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_2/src/gtl_module_instances.vhd
+2022-03-09 08:52:53 INFO : ugt_constants.vhd       : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_2/src/ugt_constants.vhd
+2022-03-09 08:52:53 INFO : writing output for module: 3
+2022-03-09 08:52:53 INFO : algo_index.vhd          : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_3/src/algo_index.vhd
+2022-03-09 08:52:53 INFO : gtl_module_signals.vhd  : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_3/src/gtl_module_signals.vhd
+2022-03-09 08:52:53 INFO : gtl_module_instances.vhd: /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_3/src/gtl_module_instances.vhd
+2022-03-09 08:52:53 INFO : ugt_constants.vhd       : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_3/src/ugt_constants.vhd
+2022-03-09 08:52:53 INFO : writing output for module: 4
+2022-03-09 08:52:53 INFO : algo_index.vhd          : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_4/src/algo_index.vhd
+2022-03-09 08:52:53 INFO : gtl_module_signals.vhd  : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_4/src/gtl_module_signals.vhd
+2022-03-09 08:52:53 INFO : gtl_module_instances.vhd: /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_4/src/gtl_module_instances.vhd
+2022-03-09 08:52:53 INFO : ugt_constants.vhd       : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_4/src/ugt_constants.vhd
+2022-03-09 08:52:53 INFO : writing output for module: 5
+2022-03-09 08:52:53 INFO : algo_index.vhd          : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_5/src/algo_index.vhd
+2022-03-09 08:52:53 INFO : gtl_module_signals.vhd  : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_5/src/gtl_module_signals.vhd
+2022-03-09 08:52:53 INFO : gtl_module_instances.vhd: /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_5/src/gtl_module_instances.vhd
+2022-03-09 08:52:53 INFO : ugt_constants.vhd       : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/vhdl/module_5/src/ugt_constants.vhd
+2022-03-09 08:52:53 INFO : writing updated XML file /home/bergauer/L1Menu_Collisions2022_v0_1_6.xml
+2022-03-09 08:52:53 INFO : reading source XML menu file /home/bergauer/L1Menu_Collisions2022_v0_1_6.xml
+2022-03-09 08:52:54 INFO : processing menu "L1Menu_Collisions2022_v0_1_6" ... 
+2022-03-09 08:52:54 INFO : updating menu information...
+2022-03-09 08:52:54 INFO : uuid_menu     : 5aa2a00b-5e9a-4ad0-af7f-bfece32e71a9
+2022-03-09 08:52:54 INFO : uuid_firmware : f0d8803a-315e-4fc0-8df0-124913e27dee
+2022-03-09 08:52:54 INFO : n_modules     : 6
+2022-03-09 08:52:54 INFO : writing target XML menu file /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/xml/L1Menu_Collisions2022_v0_1_6-d1.xml
+2022-03-09 08:52:54 INFO : generating menu documentation...
+2022-03-09 08:52:54 INFO : writing HTML documentation /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/xml/L1Menu_Collisions2022_v0_1_6-d1.xml
+2022-03-09 08:52:56 INFO : writing TWIKI page template /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/xml/L1Menu_Collisions2022_v0_1_6-d1.xml
+2022-03-09 08:52:58 INFO : patching filenames...
+2022-03-09 08:52:58 INFO : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/doc/L1Menu_Collisions2022_v0_1_6.html --> /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/doc/L1Menu_Collisions2022_v0_1_6-d1.html
+2022-03-09 08:52:58 INFO : /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/doc/L1Menu_Collisions2022_v0_1_6.twiki --> /home/bergauer/github/herbberg/l1menus/2022/L1Menu_Collisions2022_v0_1_6-d1/doc/L1Menu_Collisions2022_v0_1_6-d1.twiki
+2022-03-09 08:52:58 INFO : done.
