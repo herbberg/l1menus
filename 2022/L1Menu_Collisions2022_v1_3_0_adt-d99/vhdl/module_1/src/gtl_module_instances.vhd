@@ -1342,7 +1342,8 @@ cond_ext_adt_2_i: entity work.anomaly_detection
         bx_data.tau(2)(0),bx_data.tau(2)(1),bx_data.tau(2)(2),bx_data.tau(2)(3),
         bx_data.tau(2)(4),bx_data.tau(2)(5),bx_data.tau(2)(6),bx_data.tau(2)(7),
         bx_data.tau(2)(8),bx_data.tau(2)(9),bx_data.tau(2)(10),bx_data.tau(2)(11),
-        bx_data.ett(2),bx_data.htt(2),bx_data.etm(2),bx_data.etmhf(2),"00000000",
+        bx_data.ett(2)(MAX_ESUMS_BITS-1 downto 0),bx_data.htt(2)(MAX_ESUMS_BITS-1 downto 0),
+        bx_data.etm(2)(MAX_ESUMS_BITS-1 downto 0),bx_data.etmhf(2)(MAX_ESUMS_BITS-1 downto 0),X"00000",
         open,
         single_ext_i424
     );
