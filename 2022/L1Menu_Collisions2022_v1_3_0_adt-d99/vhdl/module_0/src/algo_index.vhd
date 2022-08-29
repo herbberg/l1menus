@@ -10,7 +10,7 @@
 -- 1afadf88-7a56-4173-af4b-0c33146e634d
 
 -- Unique ID of firmware implementation:
--- 1955ac15-44b4-4fef-8e66-9d5dd15caae5
+-- ae9c3126-3e81-433f-91c5-7f34ee6edb55
 
 -- Scale set:
 -- scales_2021_03_02
@@ -47,9 +47,9 @@ constant global_index: global_index_array := (
         342, -- module_index: 20, name: L1_DoubleJet120er2p5
         327, -- module_index: 21, name: L1_SingleJet120_FWD3p0
         285, -- module_index: 22, name: L1_Mu22er2p1_IsoTau28er2p1
-        291, -- module_index: 23, name: L1_Mu22er2p1_Tau70er2p1
-        288, -- module_index: 24, name: L1_Mu22er2p1_IsoTau34er2p1
-        289, -- module_index: 25, name: L1_Mu22er2p1_IsoTau36er2p1
+        288, -- module_index: 23, name: L1_Mu22er2p1_IsoTau34er2p1
+        289, -- module_index: 24, name: L1_Mu22er2p1_IsoTau36er2p1
+        291, -- module_index: 25, name: L1_Mu22er2p1_Tau70er2p1
         262, -- module_index: 26, name: L1_SingleIsoTau32er2p1
         290, -- module_index: 27, name: L1_Mu22er2p1_IsoTau40er2p1
         286, -- module_index: 28, name: L1_Mu22er2p1_IsoTau30er2p1

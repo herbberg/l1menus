@@ -10,7 +10,7 @@
 -- 1afadf88-7a56-4173-af4b-0c33146e634d
 
 -- Unique ID of firmware implementation:
--- 1955ac15-44b4-4fef-8e66-9d5dd15caae5
+-- ae9c3126-3e81-433f-91c5-7f34ee6edb55
 
 -- Scale set:
 -- scales_2021_03_02
@@ -1738,7 +1738,7 @@ single_ext_i349 <= bx_data.ext_cond(2)(42); -- EXT_TOTEM_3
 
 -- 4 L1_SingleMuOpen : MU0[MU-QLTY_OPEN]
 l1_single_mu_open <= single_mu_i4;
-algo(61) <= l1_single_mu_open;
+algo(21) <= l1_single_mu_open;
 
 -- 5 L1_SingleMu0_DQ : MU0[MU-QLTY_DBLE]
 l1_single_mu0_dq <= single_mu_i5;
@@ -1794,11 +1794,11 @@ algo(19) <= l1_mu6_double_eg10er2p5;
 
 -- 105 L1_Mu6_DoubleEG12er2p5 : MU6[MU-QLTY_SNGL] AND comb{EG12[EG-ETA_2p52],EG12[EG-ETA_2p52]}
 l1_mu6_double_eg12er2p5 <= single_mu_i83 and double_eg_i85;
-algo(24) <= l1_mu6_double_eg12er2p5;
+algo(26) <= l1_mu6_double_eg12er2p5;
 
 -- 106 L1_Mu6_DoubleEG15er2p5 : MU6[MU-QLTY_SNGL] AND comb{EG15[EG-ETA_2p52],EG15[EG-ETA_2p52]}
 l1_mu6_double_eg15er2p5 <= single_mu_i83 and double_eg_i86;
-algo(32) <= l1_mu6_double_eg15er2p5;
+algo(33) <= l1_mu6_double_eg15er2p5;
 
 -- 107 L1_Mu6_DoubleEG17er2p5 : MU6[MU-QLTY_SNGL] AND comb{EG17[EG-ETA_2p52],EG17[EG-ETA_2p52]}
 l1_mu6_double_eg17er2p5 <= single_mu_i83 and double_eg_i87;
@@ -1814,19 +1814,19 @@ algo(81) <= l1_mu3er1p5_jet100er2p5_etmhf30;
 
 -- 128 L1_Mu3er1p5_Jet100er2p5_ETMHF40 : MU3[MU-QLTY_SNGL,MU-ETA_1p5] AND JET100[JET-ETA_2p52] AND ETMHF40
 l1_mu3er1p5_jet100er2p5_etmhf40 <= single_mu_i98 and single_jet_i99 and single_etmhf_i100;
-algo(86) <= l1_mu3er1p5_jet100er2p5_etmhf40;
+algo(64) <= l1_mu3er1p5_jet100er2p5_etmhf40;
 
 -- 129 L1_Mu3er1p5_Jet100er2p5_ETMHF50 : MU3[MU-QLTY_SNGL,MU-ETA_1p5] AND JET100[JET-ETA_2p52] AND ETMHF50
 l1_mu3er1p5_jet100er2p5_etmhf50 <= single_mu_i98 and single_jet_i99 and single_etmhf_i101;
-algo(66) <= l1_mu3er1p5_jet100er2p5_etmhf50;
+algo(67) <= l1_mu3er1p5_jet100er2p5_etmhf50;
 
 -- 131 L1_Mu6_HTT240er : MU6[MU-QLTY_SNGL] AND HTT240
 l1_mu6_htt240er <= single_mu_i83 and single_htt_i102;
-algo(42) <= l1_mu6_htt240er;
+algo(43) <= l1_mu6_htt240er;
 
 -- 132 L1_Mu6_HTT250er : MU6[MU-QLTY_SNGL] AND HTT250
 l1_mu6_htt250er <= single_mu_i83 and single_htt_i103;
-algo(48) <= l1_mu6_htt250er;
+algo(50) <= l1_mu6_htt250er;
 
 -- 138 L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8 : dist{MU0[MU-QLTY_DBLE],MU0[MU-QLTY_DBLE]}[DR_MAX_1p6] AND dist{MU0[MU-QLTY_DBLE],JET90[JET-ETA_2p52]}[DR_MAX_0p8]
 l1_double_mu0_d_r_max1p6_jet90er2p5_d_r_max0p8 <= muon_muon_correlation_i110 and calo_muon_correlation_i111;
@@ -1834,11 +1834,11 @@ algo(5) <= l1_double_mu0_d_r_max1p6_jet90er2p5_d_r_max0p8;
 
 -- 141 L1_DoubleMu3_SQ_ETMHF30_HTT60er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF30 AND HTT60
 l1_double_mu3_sq_etmhf30_htt60er <= double_mu_i114 and single_etmhf_i420 and single_htt_i115;
-algo(58) <= l1_double_mu3_sq_etmhf30_htt60er;
+algo(60) <= l1_double_mu3_sq_etmhf30_htt60er;
 
 -- 142 L1_DoubleMu3_SQ_ETMHF40_HTT60er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF40 AND HTT60
 l1_double_mu3_sq_etmhf40_htt60er <= double_mu_i114 and single_etmhf_i100 and single_htt_i115;
-algo(68) <= l1_double_mu3_sq_etmhf40_htt60er;
+algo(69) <= l1_double_mu3_sq_etmhf40_htt60er;
 
 -- 143 L1_DoubleMu3_SQ_ETMHF50_HTT60er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF50 AND HTT60
 l1_double_mu3_sq_etmhf50_htt60er <= double_mu_i114 and single_etmhf_i101 and single_htt_i115;
@@ -1850,7 +1850,7 @@ algo(65) <= l1_double_mu3_sq_etmhf30_jet60er2p5_or_double_jet40er2p5;
 
 -- 145 L1_DoubleMu3_SQ_ETMHF40_Jet60er2p5_OR_DoubleJet40er2p5 : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF40 AND (JET60[JET-ETA_2p52] OR comb{JET40[JET-ETA_2p52],JET40[JET-ETA_2p52]})
 l1_double_mu3_sq_etmhf40_jet60er2p5_or_double_jet40er2p5 <= double_mu_i114 and single_etmhf_i100 and ( single_jet_i116 or double_jet_i117 );
-algo(73) <= l1_double_mu3_sq_etmhf40_jet60er2p5_or_double_jet40er2p5;
+algo(75) <= l1_double_mu3_sq_etmhf40_jet60er2p5_or_double_jet40er2p5;
 
 -- 146 L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5 : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF50 AND (JET60[JET-ETA_2p52] OR comb{JET40[JET-ETA_2p52],JET40[JET-ETA_2p52]})
 l1_double_mu3_sq_etmhf50_jet60er2p5_or_double_jet40er2p5 <= double_mu_i114 and single_etmhf_i101 and ( single_jet_i116 or double_jet_i117 );
@@ -1858,7 +1858,7 @@ algo(87) <= l1_double_mu3_sq_etmhf50_jet60er2p5_or_double_jet40er2p5;
 
 -- 147 L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5 : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF50 AND JET60[JET-ETA_2p52]
 l1_double_mu3_sq_etmhf50_jet60er2p5 <= double_mu_i114 and single_etmhf_i101 and single_jet_i116;
-algo(79) <= l1_double_mu3_sq_etmhf50_jet60er2p5;
+algo(78) <= l1_double_mu3_sq_etmhf50_jet60er2p5;
 
 -- 148 L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5 : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF60 AND JET60[JET-ETA_2p52]
 l1_double_mu3_sq_etmhf60_jet60er2p5 <= double_mu_i114 and single_etmhf_i118 and single_jet_i116;
@@ -1866,7 +1866,7 @@ algo(89) <= l1_double_mu3_sq_etmhf60_jet60er2p5;
 
 -- 150 L1_DoubleMu3_SQ_HTT220er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND HTT220
 l1_double_mu3_sq_htt220er <= double_mu_i114 and single_htt_i119;
-algo(56) <= l1_double_mu3_sq_htt220er;
+algo(58) <= l1_double_mu3_sq_htt220er;
 
 -- 151 L1_DoubleMu3_SQ_HTT240er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND HTT240
 l1_double_mu3_sq_htt240er <= double_mu_i114 and single_htt_i102;
@@ -1910,15 +1910,15 @@ algo(34) <= l1_double_eg8er2p5_htt260er;
 
 -- 248 L1_DoubleEG8er2p5_HTT280er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT280
 l1_double_eg8er2p5_htt280er <= double_eg_i186 and single_htt_i187;
-algo(80) <= l1_double_eg8er2p5_htt280er;
+algo(79) <= l1_double_eg8er2p5_htt280er;
 
 -- 249 L1_DoubleEG8er2p5_HTT300er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT300
 l1_double_eg8er2p5_htt300er <= double_eg_i186 and single_htt_i188;
-algo(63) <= l1_double_eg8er2p5_htt300er;
+algo(86) <= l1_double_eg8er2p5_htt300er;
 
 -- 250 L1_DoubleEG8er2p5_HTT320er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT320
 l1_double_eg8er2p5_htt320er <= double_eg_i186 and single_htt_i189;
-algo(78) <= l1_double_eg8er2p5_htt320er;
+algo(88) <= l1_double_eg8er2p5_htt320er;
 
 -- 251 L1_DoubleEG8er2p5_HTT340er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT340
 l1_double_eg8er2p5_htt340er <= double_eg_i186 and single_htt_i190;
@@ -1942,7 +1942,7 @@ algo(104) <= l1_single_jet90er2p5;
 
 -- 320 L1_SingleJet140er2p5 : JET140[JET-ETA_2p52]
 l1_single_jet140er2p5 <= single_jet_i226;
-algo(23) <= l1_single_jet140er2p5;
+algo(24) <= l1_single_jet140er2p5;
 
 -- 328 L1_SingleJet8erHE : JET8[JET-ETA_1p392_2p958_NEG,JET-ETA_1p392_2p958_POS]
 l1_single_jet8er_he <= single_jet_i237;
@@ -1954,27 +1954,27 @@ algo(16) <= l1_single_jet140er2p5_etmhf70;
 
 -- 332 L1_SingleJet140er2p5_ETMHF80 : JET140[JET-ETA_2p52] AND ETMHF80
 l1_single_jet140er2p5_etmhf80 <= single_jet_i226 and single_etmhf_i241;
-algo(40) <= l1_single_jet140er2p5_etmhf80;
+algo(39) <= l1_single_jet140er2p5_etmhf80;
 
 -- 333 L1_SingleJet140er2p5_ETMHF90 : JET140[JET-ETA_2p52] AND ETMHF90
 l1_single_jet140er2p5_etmhf90 <= single_jet_i226 and single_etmhf_i242;
-algo(45) <= l1_single_jet140er2p5_etmhf90;
+algo(47) <= l1_single_jet140er2p5_etmhf90;
 
 -- 334 L1_ETMHF80_SingleJet55er2p5_dPhi_Min2p1 : ETMHF80 AND dist{JET55[JET-ETA_2p52],ETMHF80}[DPHI_DPHI_MIN2p094_MAX3p142]
 l1_etmhf80_single_jet55er2p5_d_phi_min2p1 <= single_etmhf_i241 and calo_esum_correlation_i421;
-algo(46) <= l1_etmhf80_single_jet55er2p5_d_phi_min2p1;
+algo(44) <= l1_etmhf80_single_jet55er2p5_d_phi_min2p1;
 
 -- 335 L1_ETMHF80_SingleJet55er2p5_dPhi_Min2p6 : ETMHF80 AND dist{JET55[JET-ETA_2p52],ETMHF80}[DPHI_DPHI_MIN2p618_MAX3p142]
 l1_etmhf80_single_jet55er2p5_d_phi_min2p6 <= single_etmhf_i241 and calo_esum_correlation_i422;
-algo(50) <= l1_etmhf80_single_jet55er2p5_d_phi_min2p6;
+algo(51) <= l1_etmhf80_single_jet55er2p5_d_phi_min2p6;
 
 -- 336 L1_ETMHF90_SingleJet60er2p5_dPhi_Min2p1 : ETMHF90 AND dist{JET60[JET-ETA_2p52],ETMHF90}[DPHI_DPHI_MIN2p094_MAX3p142]
 l1_etmhf90_single_jet60er2p5_d_phi_min2p1 <= single_etmhf_i242 and calo_esum_correlation_i382;
-algo(60) <= l1_etmhf90_single_jet60er2p5_d_phi_min2p1;
+algo(62) <= l1_etmhf90_single_jet60er2p5_d_phi_min2p1;
 
 -- 337 L1_ETMHF90_SingleJet60er2p5_dPhi_Min2p6 : ETMHF90 AND dist{JET60[JET-ETA_2p52],ETMHF90}[DPHI_DPHI_MIN2p618_MAX3p142]
 l1_etmhf90_single_jet60er2p5_d_phi_min2p6 <= single_etmhf_i242 and calo_esum_correlation_i383;
-algo(67) <= l1_etmhf90_single_jet60er2p5_d_phi_min2p6;
+algo(66) <= l1_etmhf90_single_jet60er2p5_d_phi_min2p6;
 
 -- 338 L1_ETMHF90_SingleJet80er2p5_dPhi_Min2p1 : ETMHF90 AND dist{JET80[JET-ETA_2p52],ETMHF90}[DPHI_DPHI_MIN2p094_MAX3p142]
 l1_etmhf90_single_jet80er2p5_d_phi_min2p1 <= single_etmhf_i242 and calo_esum_correlation_i384;
@@ -1982,11 +1982,11 @@ algo(71) <= l1_etmhf90_single_jet80er2p5_d_phi_min2p1;
 
 -- 339 L1_ETMHF90_SingleJet80er2p5_dPhi_Min2p6 : ETMHF90 AND dist{JET80[JET-ETA_2p52],ETMHF90}[DPHI_DPHI_MIN2p618_MAX3p142]
 l1_etmhf90_single_jet80er2p5_d_phi_min2p6 <= single_etmhf_i242 and calo_esum_correlation_i385;
-algo(75) <= l1_etmhf90_single_jet80er2p5_d_phi_min2p6;
+algo(76) <= l1_etmhf90_single_jet80er2p5_d_phi_min2p6;
 
 -- 340 L1_DoubleJet40er2p5 : comb{JET40[JET-ETA_2p52],JET40[JET-ETA_2p52]}
 l1_double_jet40er2p5 <= double_jet_i117;
-algo(52) <= l1_double_jet40er2p5;
+algo(54) <= l1_double_jet40er2p5;
 
 -- 350 L1_DoubleJet30er2p5_Mass_Min250_dEta_Max1p5 : mass_inv{JET30[JET-ETA_2p52],JET30[JET-ETA_2p52]}[MASS_MIN_250,DETA_MAX_1p5]
 l1_double_jet30er2p5_mass_min250_d_eta_max1p5 <= invariant_mass_i250;
@@ -2010,7 +2010,7 @@ algo(109) <= l1_htt200_single_llp_jet60;
 
 -- 387 L1_HTT240_SingleLLPJet70 : JET70[JET-DISP_LLP] AND HTT240
 l1_htt240_single_llp_jet70 <= single_jet_i412 and single_htt_i102;
-algo(82) <= l1_htt240_single_llp_jet70;
+algo(80) <= l1_htt240_single_llp_jet70;
 
 -- 388 L1_HTT280er_QuadJet_70_55_40_35_er2p5 : HTT280 AND comb{JET70[JET-ETA_2p4],JET55[JET-ETA_2p4],JET40[JET-ETA_2p4],JET35[JET-ETA_2p4]}
 l1_htt280er_quad_jet_70_55_40_35_er2p5 <= single_htt_i187 and quad_jet_i388;
@@ -2022,11 +2022,11 @@ algo(28) <= l1_htt320er_quad_jet_70_55_40_40_er2p5;
 
 -- 390 L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3 : HTT320 AND comb{JET80[JET-ETA_2p13],JET60[JET-ETA_2p13],JET45[JET-ETA_2p3],JET40[JET-ETA_2p3]}
 l1_htt320er_quad_jet_80_60_er2p1_45_40_er2p3 <= single_htt_i189 and quad_jet_i289;
-algo(39) <= l1_htt320er_quad_jet_80_60_er2p1_45_40_er2p3;
+algo(40) <= l1_htt320er_quad_jet_80_60_er2p1_45_40_er2p3;
 
 -- 391 L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3 : HTT320 AND comb{JET80[JET-ETA_2p13],JET60[JET-ETA_2p13],JET50[JET-ETA_2p3],JET45[JET-ETA_2p3]}
 l1_htt320er_quad_jet_80_60_er2p1_50_45_er2p3 <= single_htt_i189 and quad_jet_i290;
-algo(43) <= l1_htt320er_quad_jet_80_60_er2p1_50_45_er2p3;
+algo(48) <= l1_htt320er_quad_jet_80_60_er2p1_50_45_er2p3;
 
 -- 400 L1_HTT200er : HTT200
 l1_htt200er <= single_htt_i293;
@@ -2034,7 +2034,7 @@ algo(110) <= l1_htt200er;
 
 -- 402 L1_HTT280er : HTT280
 l1_htt280er <= single_htt_i187;
-algo(10) <= l1_htt280er;
+algo(9) <= l1_htt280er;
 
 -- 403 L1_HTT320er : HTT320
 l1_htt320er <= single_htt_i189;
@@ -2050,11 +2050,11 @@ algo(14) <= l1_etmhf70;
 
 -- 419 L1_ETMHF80 : ETMHF80
 l1_etmhf80 <= single_etmhf_i241;
-algo(26) <= l1_etmhf80;
+algo(25) <= l1_etmhf80;
 
 -- 420 L1_ETMHF90 : ETMHF90
 l1_etmhf90 <= single_etmhf_i242;
-algo(51) <= l1_etmhf90;
+algo(52) <= l1_etmhf90;
 
 -- 421 L1_ETMHF100 : ETMHF100
 l1_etmhf100 <= single_etmhf_i303;
@@ -2062,15 +2062,15 @@ algo(49) <= l1_etmhf100;
 
 -- 422 L1_ETMHF110 : ETMHF110
 l1_etmhf110 <= single_etmhf_i304;
-algo(55) <= l1_etmhf110;
+algo(56) <= l1_etmhf110;
 
 -- 423 L1_ETMHF120 : ETMHF120
 l1_etmhf120 <= single_etmhf_i305;
-algo(62) <= l1_etmhf120;
+algo(63) <= l1_etmhf120;
 
 -- 424 L1_ETMHF130 : ETMHF130
 l1_etmhf130 <= single_etmhf_i306;
-algo(72) <= l1_etmhf130;
+algo(73) <= l1_etmhf130;
 
 -- 426 L1_ETMHF150 : ETMHF150
 l1_etmhf150 <= single_etmhf_i308;
@@ -2078,27 +2078,27 @@ algo(113) <= l1_etmhf150;
 
 -- 427 L1_ETMHF70_HTT60er : ETMHF70 AND HTT60
 l1_etmhf70_htt60er <= single_etmhf_i240 and single_htt_i115;
-algo(18) <= l1_etmhf70_htt60er;
+algo(17) <= l1_etmhf70_htt60er;
 
 -- 428 L1_ETMHF80_HTT60er : ETMHF80 AND HTT60
 l1_etmhf80_htt60er <= single_etmhf_i241 and single_htt_i115;
-algo(35) <= l1_etmhf80_htt60er;
+algo(32) <= l1_etmhf80_htt60er;
 
 -- 429 L1_ETMHF90_HTT60er : ETMHF90 AND HTT60
 l1_etmhf90_htt60er <= single_etmhf_i242 and single_htt_i115;
-algo(54) <= l1_etmhf90_htt60er;
+algo(55) <= l1_etmhf90_htt60er;
 
 -- 430 L1_ETMHF100_HTT60er : ETMHF100 AND HTT60
 l1_etmhf100_htt60er <= single_etmhf_i303 and single_htt_i115;
-algo(47) <= l1_etmhf100_htt60er;
+algo(46) <= l1_etmhf100_htt60er;
 
 -- 431 L1_ETMHF110_HTT60er : ETMHF110 AND HTT60
 l1_etmhf110_htt60er <= single_etmhf_i304 and single_htt_i115;
-algo(57) <= l1_etmhf110_htt60er;
+algo(59) <= l1_etmhf110_htt60er;
 
 -- 432 L1_ETMHF120_HTT60er : ETMHF120 AND HTT60
 l1_etmhf120_htt60er <= single_etmhf_i305 and single_htt_i115;
-algo(83) <= l1_etmhf120_htt60er;
+algo(82) <= l1_etmhf120_htt60er;
 
 -- 433 L1_ETMHF130_HTT60er : ETMHF130 AND HTT60
 l1_etmhf130_htt60er <= single_etmhf_i306 and single_htt_i115;
@@ -2110,11 +2110,11 @@ algo(11) <= l1_etmhf120_not_second_bunch_in_train;
 
 -- 444 L1_ETMHF110_HTT60er_NotSecondBunchInTrain : ETMHF110 AND HTT60 AND ((EXT_BPTX_OR_VME-2) OR ( NOT EXT_ZeroBias_BPTX_AND_VME-1) OR ( NOT EXT_ZeroBias_BPTX_AND_VME) OR ( NOT EXT_ZeroBias_BPTX_AND_VME+1) OR ( NOT EXT_ZeroBias_BPTX_AND_VME+2))
 l1_etmhf110_htt60er_not_second_bunch_in_train <= single_etmhf_i304 and single_htt_i115 and ( ( single_ext_i309 ) or ( not single_ext_i310 ) or ( not single_ext_i311 ) or ( not single_ext_i312 ) or ( not single_ext_i313 ) );
-algo(21) <= l1_etmhf110_htt60er_not_second_bunch_in_train;
+algo(70) <= l1_etmhf110_htt60er_not_second_bunch_in_train;
 
 -- 446 L1_SingleMuOpen_NotBptxOR : MU0[MU-QLTY_OPEN] AND ( NOT EXT_BPTX_OR_VME)
 l1_single_mu_open_not_bptx_or <= single_mu_i4 and ( not single_ext_i314 );
-algo(9) <= l1_single_mu_open_not_bptx_or;
+algo(10) <= l1_single_mu_open_not_bptx_or;
 
 -- 447 L1_SingleMuOpen_er1p4_NotBptxOR_3BX : MU0[MU-QLTY_OPEN,MU-ETA_1p4] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
 l1_single_mu_open_er1p4_not_bptx_or_3_bx <= single_mu_i315 and ( not single_ext_i316 ) and ( not single_ext_i314 ) and ( not single_ext_i317 );
@@ -2122,11 +2122,11 @@ algo(30) <= l1_single_mu_open_er1p4_not_bptx_or_3_bx;
 
 -- 448 L1_SingleMuOpen_er1p1_NotBptxOR_3BX : MU0[MU-QLTY_OPEN,MU-ETA_1p1] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
 l1_single_mu_open_er1p1_not_bptx_or_3_bx <= single_mu_i318 and ( not single_ext_i316 ) and ( not single_ext_i314 ) and ( not single_ext_i317 );
-algo(22) <= l1_single_mu_open_er1p1_not_bptx_or_3_bx;
+algo(23) <= l1_single_mu_open_er1p1_not_bptx_or_3_bx;
 
 -- 451 L1_SingleJet20er2p5_NotBptxOR : JET20[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME)
 l1_single_jet20er2p5_not_bptx_or <= single_jet_i319 and ( not single_ext_i314 );
-algo(70) <= l1_single_jet20er2p5_not_bptx_or;
+algo(72) <= l1_single_jet20er2p5_not_bptx_or;
 
 -- 452 L1_SingleJet20er2p5_NotBptxOR_3BX : JET20[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
 l1_single_jet20er2p5_not_bptx_or_3_bx <= single_jet_i319 and ( not single_ext_i316 ) and ( not single_ext_i314 ) and ( not single_ext_i317 );
@@ -2134,7 +2134,7 @@ algo(84) <= l1_single_jet20er2p5_not_bptx_or_3_bx;
 
 -- 453 L1_SingleJet43er2p5_NotBptxOR_3BX : JET43[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
 l1_single_jet43er2p5_not_bptx_or_3_bx <= single_jet_i320 and ( not single_ext_i316 ) and ( not single_ext_i314 ) and ( not single_ext_i317 );
-algo(88) <= l1_single_jet43er2p5_not_bptx_or_3_bx;
+algo(57) <= l1_single_jet43er2p5_not_bptx_or_3_bx;
 
 -- 454 L1_SingleJet46er2p5_NotBptxOR_3BX : JET46[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
 l1_single_jet46er2p5_not_bptx_or_3_bx <= single_jet_i321 and ( not single_ext_i316 ) and ( not single_ext_i314 ) and ( not single_ext_i317 );
@@ -2142,7 +2142,7 @@ algo(27) <= l1_single_jet46er2p5_not_bptx_or_3_bx;
 
 -- 458 L1_AlwaysTrue : EXT_ZeroBias_BPTX_AND_VME OR ( NOT EXT_ZeroBias_BPTX_AND_VME)
 l1_always_true <= single_ext_i311 or ( not single_ext_i311 );
-algo(33) <= l1_always_true;
+algo(35) <= l1_always_true;
 
 -- 459 L1_ZeroBias : EXT_ZeroBias_BPTX_AND_VME
 l1_zero_bias <= single_ext_i311;
@@ -2154,7 +2154,7 @@ algo(37) <= l1_zero_bias_copy;
 
 -- 461 L1_MinimumBiasHF0_AND_BptxAND : (MBT0HFP1 AND MBT0HFM1) AND EXT_ZeroBias_BPTX_AND_VME
 l1_minimum_bias_hf0_and_bptx_and <= ( single_mbt0_hfp_i322 and single_mbt0_hfm_i323 ) and single_ext_i311;
-algo(59) <= l1_minimum_bias_hf0_and_bptx_and;
+algo(61) <= l1_minimum_bias_hf0_and_bptx_and;
 
 -- 462 L1_MinimumBiasHF0 : MBT0HFP1 AND MBT0HFM1
 l1_minimum_bias_hf0 <= single_mbt0_hfp_i322 and single_mbt0_hfm_i323;
@@ -2162,7 +2162,7 @@ algo(53) <= l1_minimum_bias_hf0;
 
 -- 463 L1_NotBptxOR :  NOT EXT_BPTX_OR_VME
 l1_not_bptx_or <= not single_ext_i314;
-algo(69) <= l1_not_bptx_or;
+algo(68) <= l1_not_bptx_or;
 
 -- 464 L1_BptxOR : EXT_BPTX_OR_VME
 l1_bptx_or <= single_ext_i314;
@@ -2170,7 +2170,7 @@ algo(85) <= l1_bptx_or;
 
 -- 471 L1_IsolatedBunch : ( NOT EXT_BPTX_OR_VME-2) AND ( NOT EXT_BPTX_OR_VME-1) AND EXT_ZeroBias_BPTX_AND_VME AND ( NOT EXT_BPTX_OR_VME+1) AND ( NOT EXT_BPTX_OR_VME+2)
 l1_isolated_bunch <= ( not single_ext_i309 ) and ( not single_ext_i316 ) and single_ext_i311 and ( not single_ext_i317 ) and ( not single_ext_i328 );
-algo(76) <= l1_isolated_bunch;
+algo(42) <= l1_isolated_bunch;
 
 -- 472 L1_FirstBunchBeforeTrain : ( NOT EXT_BPTX_OR_VME-2) AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND EXT_ZeroBias_BPTX_AND_VME+1 AND EXT_ZeroBias_BPTX_AND_VME+2
 l1_first_bunch_before_train <= ( not single_ext_i309 ) and ( not single_ext_i316 ) and ( not single_ext_i314 ) and single_ext_i312 and single_ext_i313;
@@ -2178,19 +2178,19 @@ algo(41) <= l1_first_bunch_before_train;
 
 -- 473 L1_FirstBunchInTrain : ( NOT EXT_BPTX_OR_VME-2) AND ( NOT EXT_BPTX_OR_VME-1) AND EXT_ZeroBias_BPTX_AND_VME AND EXT_ZeroBias_BPTX_AND_VME+1 AND EXT_ZeroBias_BPTX_AND_VME+2
 l1_first_bunch_in_train <= ( not single_ext_i309 ) and ( not single_ext_i316 ) and single_ext_i311 and single_ext_i312 and single_ext_i313;
-algo(44) <= l1_first_bunch_in_train;
+algo(45) <= l1_first_bunch_in_train;
 
 -- 474 L1_SecondBunchInTrain : ( NOT EXT_BPTX_OR_VME-2) AND EXT_ZeroBias_BPTX_AND_VME-1 AND EXT_ZeroBias_BPTX_AND_VME AND EXT_ZeroBias_BPTX_AND_VME+1 AND EXT_ZeroBias_BPTX_AND_VME+2
 l1_second_bunch_in_train <= ( not single_ext_i309 ) and single_ext_i310 and single_ext_i311 and single_ext_i312 and single_ext_i313;
-algo(17) <= l1_second_bunch_in_train;
+algo(18) <= l1_second_bunch_in_train;
 
 -- 475 L1_SecondLastBunchInTrain : EXT_ZeroBias_BPTX_AND_VME-2 AND EXT_ZeroBias_BPTX_AND_VME-1 AND EXT_ZeroBias_BPTX_AND_VME AND EXT_ZeroBias_BPTX_AND_VME+1 AND ( NOT EXT_BPTX_OR_VME+2)
 l1_second_last_bunch_in_train <= single_ext_i329 and single_ext_i310 and single_ext_i311 and single_ext_i312 and ( not single_ext_i328 );
-algo(25) <= l1_second_last_bunch_in_train;
+algo(22) <= l1_second_last_bunch_in_train;
 
 -- 476 L1_LastBunchInTrain : EXT_ZeroBias_BPTX_AND_VME-2 AND EXT_ZeroBias_BPTX_AND_VME-1 AND EXT_ZeroBias_BPTX_AND_VME AND ( NOT EXT_BPTX_OR_VME+1) AND ( NOT EXT_BPTX_OR_VME+2)
 l1_last_bunch_in_train <= single_ext_i329 and single_ext_i310 and single_ext_i311 and ( not single_ext_i317 ) and ( not single_ext_i328 );
-algo(64) <= l1_last_bunch_in_train;
+algo(83) <= l1_last_bunch_in_train;
 
 -- 477 L1_FirstBunchAfterTrain : EXT_ZeroBias_BPTX_AND_VME-2 AND EXT_ZeroBias_BPTX_AND_VME-1 AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1) AND ( NOT EXT_BPTX_OR_VME+2)
 l1_first_bunch_after_train <= single_ext_i329 and single_ext_i310 and ( not single_ext_i314 ) and ( not single_ext_i317 ) and ( not single_ext_i328 );

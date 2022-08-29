@@ -10,7 +10,7 @@
 -- 1afadf88-7a56-4173-af4b-0c33146e634d
 
 -- Unique ID of firmware implementation:
--- 1955ac15-44b4-4fef-8e66-9d5dd15caae5
+-- ae9c3126-3e81-433f-91c5-7f34ee6edb55
 
 -- Scale set:
 -- scales_2021_03_02
@@ -1326,25 +1326,19 @@ single_ext_i325 <= bx_data.ext_cond(2)(6); -- EXT_BPTX_B2_VME
 single_ext_i337 <= bx_data.ext_cond(2)(8); -- EXT_BPTX_AND_Ref1_VME
 -- External condition assignment
 single_ext_i340 <= bx_data.ext_cond(2)(0); -- EXT_BPTX_BeamGas_Ref1_VME
-cond_ext_adt_2_i: entity work.anomaly_detection
+-- Anomaly detection instantiation
+cond_ext_adt_2_i: entity work.adt_wrapper
     port map(
-        open, open,
-        lhc_clk, '0', '1',
-        open, open, open,
-        bx_data.mu(2)(0),bx_data.mu(2)(1),bx_data.mu(2)(2),bx_data.mu(2)(3),
-        bx_data.mu(2)(4),bx_data.mu(2)(5),bx_data.mu(2)(6),bx_data.mu(2)(7),
-        bx_data.jet(2)(0),bx_data.jet(2)(1),bx_data.jet(2)(2),bx_data.jet(2)(3),
-        bx_data.jet(2)(4),bx_data.jet(2)(5),bx_data.jet(2)(6),bx_data.jet(2)(7),
-        bx_data.jet(2)(8),bx_data.jet(2)(9),bx_data.jet(2)(10),bx_data.jet(2)(11),
-        bx_data.eg(2)(0),bx_data.eg(2)(1),bx_data.eg(2)(2),bx_data.eg(2)(3),
-        bx_data.eg(2)(4),bx_data.eg(2)(5),bx_data.eg(2)(6),bx_data.eg(2)(7),
-        bx_data.eg(2)(8),bx_data.eg(2)(9),bx_data.eg(2)(10),bx_data.eg(2)(11),
-        bx_data.tau(2)(0),bx_data.tau(2)(1),bx_data.tau(2)(2),bx_data.tau(2)(3),
-        bx_data.tau(2)(4),bx_data.tau(2)(5),bx_data.tau(2)(6),bx_data.tau(2)(7),
-        bx_data.tau(2)(8),bx_data.tau(2)(9),bx_data.tau(2)(10),bx_data.tau(2)(11),
-        bx_data.ett(2)(MAX_ESUMS_BITS-1 downto 0),bx_data.htt(2)(MAX_ESUMS_BITS-1 downto 0),
-        bx_data.etm(2)(MAX_ESUMS_BITS-1 downto 0),bx_data.etmhf(2)(MAX_ESUMS_BITS-1 downto 0),X"00000",
-        open,
+        lhc_clk,
+        bx_data.mu(2),
+        bx_data.jet(2),
+        bx_data.eg(2),
+        bx_data.tau(2),
+        bx_data.ett(2),
+        bx_data.htt(2),
+        bx_data.etm(2),
+        bx_data.htm(2),
+        bx_data.etmhf(2),
         single_ext_i424
     );
 
@@ -1457,7 +1451,7 @@ algo(29) <= l1_single_eg34er2p5;
 
 -- 179 L1_SingleLooseIsoEG28er2p1 : EG28[EG-ETA_2p13,EG-ISO_0xC]
 l1_single_loose_iso_eg28er2p1 <= single_eg_i142;
-algo(24) <= l1_single_loose_iso_eg28er2p1;
+algo(25) <= l1_single_loose_iso_eg28er2p1;
 
 -- 202 L1_DoubleEG5_er1p2_dR_Max0p9 : dist{EG5[EG-ETA_1p22],EG5[EG-ETA_1p22]}[DR_0p9]
 l1_double_eg5_er1p2_d_r_max0p9 <= calo_calo_correlation_i390;
@@ -1493,7 +1487,7 @@ algo(26) <= l1_loose_iso_eg28er2p1_htt100er;
 
 -- 244 L1_LooseIsoEG30er2p1_HTT100er : EG30[EG-ETA_2p13,EG-ISO_0xC] AND HTT100
 l1_loose_iso_eg30er2p1_htt100er <= single_eg_i185 and single_htt_i183;
-algo(25) <= l1_loose_iso_eg30er2p1_htt100er;
+algo(24) <= l1_loose_iso_eg30er2p1_htt100er;
 
 -- 313 L1_SingleJet180 : JET180
 l1_single_jet180 <= single_jet_i221;

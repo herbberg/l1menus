@@ -10,7 +10,7 @@
 -- 1afadf88-7a56-4173-af4b-0c33146e634d
 
 -- Unique ID of firmware implementation:
--- 1955ac15-44b4-4fef-8e66-9d5dd15caae5
+-- ae9c3126-3e81-433f-91c5-7f34ee6edb55
 
 -- Scale set:
 -- scales_2021_03_02
@@ -48,8 +48,8 @@ constant global_index: global_index_array := (
         494, -- module_index: 21, name: L1_CDC_SingleMu_3_er1p2_TOP120_DPHI2p618_3p142
          76, -- module_index: 22, name: L1_TripleMu3_SQ
         241, -- module_index: 23, name: L1_LooseIsoEG24er2p1_HTT100er
-        179, -- module_index: 24, name: L1_SingleLooseIsoEG28er2p1
-        244, -- module_index: 25, name: L1_LooseIsoEG30er2p1_HTT100er
+        244, -- module_index: 24, name: L1_LooseIsoEG30er2p1_HTT100er
+        179, -- module_index: 25, name: L1_SingleLooseIsoEG28er2p1
         243, -- module_index: 26, name: L1_LooseIsoEG28er2p1_HTT100er
         242, -- module_index: 27, name: L1_LooseIsoEG26er2p1_HTT100er
          23, -- module_index: 28, name: L1_SingleMu22_OMTF
