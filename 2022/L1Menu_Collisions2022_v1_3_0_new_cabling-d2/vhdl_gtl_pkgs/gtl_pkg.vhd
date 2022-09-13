@@ -17,6 +17,7 @@ constant MUON_CHARGE_BITS : natural := 2;
 constant MUON_IDX_BITS : natural := 7;
 constant MUON_PHI_RAW_BITS : natural := 10;
 constant MUON_UPT_BITS : natural := 8;
+constant MUON_SPARE_BITS : natural := 1;
 constant MUON_IP_BITS : natural := 2;
 
 -- EG objects bits
