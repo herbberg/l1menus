@@ -10,7 +10,7 @@
 -- b2c859f7-273e-4ef1-95f6-e8e6a9fa1d50
 
 -- Unique ID of firmware implementation:
--- fc7fd3e6-13dd-43fb-bc96-d41e2bb4b7fd
+-- 11323fb1-860c-416a-8c16-04039826e338
 
 -- Scale set:
 -- scales_2021_03_02
@@ -920,7 +920,7 @@ algo(11) <= l1_double_mu3er2p0_sq_os_d_r_max1p4;
 
 -- 78 L1_TripleMu_5_3p5_2p5 : comb{MU5[MU-QLTY_DBLE],MU3p5[MU-QLTY_DBLE],MU2p5[MU-QLTY_DBLE]}
 l1_triple_mu_5_3p5_2p5 <= triple_mu_i65;
-algo(9) <= l1_triple_mu_5_3p5_2p5;
+algo(10) <= l1_triple_mu_5_3p5_2p5;
 
 -- 85 L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_OS_Mass_5to17 : comb{MU5[MU-QLTY_DBLE],MU3p5[MU-QLTY_DBLE],MU2p5[MU-QLTY_DBLE]} AND mass_inv{MU5[MU-QLTY_DBLE],MU2p5[MU-QLTY_DBLE]}[MASS_MASS_5to17,CHGCOR_OS]
 l1_triple_mu_5_3p5_2p5_double_mu_5_2p5_os_mass_5to17 <= triple_mu_i65 and invariant_mass_i71;
@@ -928,7 +928,7 @@ algo(8) <= l1_triple_mu_5_3p5_2p5_double_mu_5_2p5_os_mass_5to17;
 
 -- 86 L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_Mass_5to17 : comb{MU5[MU-QLTY_DBLE],MU4[MU-QLTY_DBLE],MU2p5[MU-QLTY_DBLE]} AND mass_inv{MU5[MU-QLTY_DBLE],MU2p5[MU-QLTY_DBLE]}[MASS_MASS_5to17,CHGCOR_OS]
 l1_triple_mu_5_4_2p5_double_mu_5_2p5_os_mass_5to17 <= triple_mu_i72 and invariant_mass_i71;
-algo(10) <= l1_triple_mu_5_4_2p5_double_mu_5_2p5_os_mass_5to17;
+algo(9) <= l1_triple_mu_5_4_2p5_double_mu_5_2p5_os_mass_5to17;
 
 -- 93 L1_SingleMuShower_Tight : MUS1
 l1_single_mu_shower_tight <= muon_shower1_i376;

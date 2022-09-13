@@ -10,7 +10,7 @@
 -- b2c859f7-273e-4ef1-95f6-e8e6a9fa1d50
 
 -- Unique ID of firmware implementation:
--- fc7fd3e6-13dd-43fb-bc96-d41e2bb4b7fd
+-- 11323fb1-860c-416a-8c16-04039826e338
 
 -- Scale set:
 -- scales_2021_03_02
@@ -67,20 +67,20 @@ constant global_index: global_index_array := (
         230, -- module_index: 40, name: L1_DoubleLooseIsoEG22er2p1
         281, -- module_index: 41, name: L1_Mu18er2p1_Tau26er2p1_Jet55
         280, -- module_index: 42, name: L1_Mu18er2p1_Tau26er2p1
-        279, -- module_index: 43, name: L1_Mu18er2p1_Tau24er2p1
-        282, -- module_index: 44, name: L1_Mu18er2p1_Tau26er2p1_Jet70
+        282, -- module_index: 43, name: L1_Mu18er2p1_Tau26er2p1_Jet70
+        279, -- module_index: 44, name: L1_Mu18er2p1_Tau24er2p1
         220, -- module_index: 45, name: L1_DoubleEG_27_14_er2p5
         267, -- module_index: 46, name: L1_DoubleTau70er2p1
         325, -- module_index: 47, name: L1_SingleJet60_FWD3p0
          90, -- module_index: 48, name: L1_QuadMu0
         100, -- module_index: 49, name: L1_Mu5_LooseIsoEG20er2p5
-        101, -- module_index: 50, name: L1_Mu7_LooseIsoEG20er2p5
-        102, -- module_index: 51, name: L1_Mu7_LooseIsoEG23er2p5
-         96, -- module_index: 52, name: L1_Mu5_EG23er2p5
-         97, -- module_index: 53, name: L1_Mu7_EG20er2p5
-         12, -- module_index: 54, name: L1_SingleMu7
-         10, -- module_index: 55, name: L1_SingleMu5
-         98, -- module_index: 56, name: L1_Mu7_EG23er2p5
+        102, -- module_index: 50, name: L1_Mu7_LooseIsoEG23er2p5
+         96, -- module_index: 51, name: L1_Mu5_EG23er2p5
+         97, -- module_index: 52, name: L1_Mu7_EG20er2p5
+         12, -- module_index: 53, name: L1_SingleMu7
+         10, -- module_index: 54, name: L1_SingleMu5
+         98, -- module_index: 55, name: L1_Mu7_EG23er2p5
+        101, -- module_index: 56, name: L1_Mu7_LooseIsoEG20er2p5
         184, -- module_index: 57, name: L1_SingleIsoEG24er1p5
         185, -- module_index: 58, name: L1_SingleIsoEG26er2p5
         193, -- module_index: 59, name: L1_SingleIsoEG30er2p1

@@ -17,8 +17,15 @@ constant MUON_CHARGE_BITS : natural := 2;
 constant MUON_IDX_BITS : natural := 7;
 constant MUON_PHI_RAW_BITS : natural := 10;
 constant MUON_UPT_BITS : natural := 8;
-constant MUON_SPARE_BITS : natural := 1;
 constant MUON_IP_BITS : natural := 2;
+
+-- Hadronic shower trigger bits (muon shower [mus])
+constant MUS_BIT : natural := 61;
+constant NR_MUS_BITS: natural := 4;
+constant MUON_OBJ_MUS0 : natural := 0;
+constant MUON_OBJ_MUS1 : natural := 2;
+constant MUON_OBJ_MUSOOT0 : natural := 4;
+constant MUON_OBJ_MUSOOT1 : natural := 6;
 
 -- EG objects bits
 constant EG_ET_BITS : natural := 9;
@@ -76,14 +83,6 @@ constant TOWERCOUNT_IN_HTT_LOW : natural := 12;
 constant TOWERCOUNT_IN_HTT_HIGH : natural := 24;
 constant TOWERCOUNT_COUNT_LOW : natural := 0;
 constant TOWERCOUNT_COUNT_HIGH : natural := 12;
-
--- Hadronic shower trigger bits (muon shower [mus]) - preliminary definition
-constant MUS_BIT : natural := 61;
-constant NR_MUS_BITS: natural := 4;
-constant MUON_OBJ_MUS0 : natural := 0;
-constant MUON_OBJ_MUS1 : natural := 2;
-constant MUON_OBJ_MUSOOT0 : natural := 4;
-constant MUON_OBJ_MUSOOT1 : natural := 6;
 
 -- MINIMUM BIAS TRIGGER objects
 constant MBT0HFP_IN_ETT_LOW : natural := 28;

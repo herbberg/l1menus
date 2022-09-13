@@ -10,7 +10,7 @@
 -- b2c859f7-273e-4ef1-95f6-e8e6a9fa1d50
 
 -- Unique ID of firmware implementation:
--- fc7fd3e6-13dd-43fb-bc96-d41e2bb4b7fd
+-- 11323fb1-860c-416a-8c16-04039826e338
 
 -- Scale set:
 -- scales_2021_03_02
@@ -2288,11 +2288,11 @@ algo(72) <= l1_single_mu0_dq;
 
 -- 10 L1_SingleMu5 : MU5[MU-QLTY_SNGL]
 l1_single_mu5 <= single_mu_i10;
-algo(55) <= l1_single_mu5;
+algo(54) <= l1_single_mu5;
 
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i12;
-algo(54) <= l1_single_mu7;
+algo(53) <= l1_single_mu7;
 
 -- 13 L1_SingleMu12_DQ_BMTF : MU12[MU-QLTY_DBLE,MU-ETA_BMTF]
 l1_single_mu12_dq_bmtf <= single_mu_i13;
@@ -2388,15 +2388,15 @@ algo(48) <= l1_quad_mu0;
 
 -- 96 L1_Mu5_EG23er2p5 : MU5[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu5_eg23er2p5 <= single_mu_i10 and single_eg_i78;
-algo(52) <= l1_mu5_eg23er2p5;
+algo(51) <= l1_mu5_eg23er2p5;
 
 -- 97 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i12 and single_eg_i79;
-algo(53) <= l1_mu7_eg20er2p5;
+algo(52) <= l1_mu7_eg20er2p5;
 
 -- 98 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i12 and single_eg_i78;
-algo(56) <= l1_mu7_eg23er2p5;
+algo(55) <= l1_mu7_eg23er2p5;
 
 -- 100 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i10 and single_eg_i81;
@@ -2404,11 +2404,11 @@ algo(49) <= l1_mu5_loose_iso_eg20er2p5;
 
 -- 101 L1_Mu7_LooseIsoEG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg20er2p5 <= single_mu_i12 and single_eg_i81;
-algo(50) <= l1_mu7_loose_iso_eg20er2p5;
+algo(56) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i12 and single_eg_i82;
-algo(51) <= l1_mu7_loose_iso_eg23er2p5;
+algo(50) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 112 L1_DoubleMu3_OS_er2p3_Mass_Max14_DoubleEG7p5_er2p1_Mass_Max20 : mass_inv{MU3[MU-QLTY_DBLE,MU-ETA_2p3],MU3[MU-QLTY_DBLE,MU-ETA_2p3]}[MASS_MASS_0to14,CHGCOR_OS] AND mass_inv{EG7p5[EG-ETA_2p13],EG7p5[EG-ETA_2p13]}[MASS_MASS_0to20]
 l1_double_mu3_os_er2p3_mass_max14_double_eg7p5_er2p1_mass_max20 <= invariant_mass_i377 and invariant_mass_i378;
@@ -2512,7 +2512,7 @@ algo(39) <= l1_double_iso_tau32er2p1;
 
 -- 279 L1_Mu18er2p1_Tau24er2p1 : MU18[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU24[TAU-ETA_2p13]
 l1_mu18er2p1_tau24er2p1 <= single_mu_i206 and single_tau_i207;
-algo(43) <= l1_mu18er2p1_tau24er2p1;
+algo(44) <= l1_mu18er2p1_tau24er2p1;
 
 -- 280 L1_Mu18er2p1_Tau26er2p1 : MU18[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU26[TAU-ETA_2p13]
 l1_mu18er2p1_tau26er2p1 <= single_mu_i206 and single_tau_i208;
@@ -2524,7 +2524,7 @@ algo(41) <= l1_mu18er2p1_tau26er2p1_jet55;
 
 -- 282 L1_Mu18er2p1_Tau26er2p1_Jet70 : MU18[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU26[TAU-ETA_2p13] AND JET70
 l1_mu18er2p1_tau26er2p1_jet70 <= single_mu_i206 and single_tau_i208 and single_jet_i410;
-algo(44) <= l1_mu18er2p1_tau26er2p1_jet70;
+algo(43) <= l1_mu18er2p1_tau26er2p1_jet70;
 
 -- 318 L1_SingleJet90er2p5 : JET90[JET-ETA_2p52]
 l1_single_jet90er2p5 <= single_jet_i224;

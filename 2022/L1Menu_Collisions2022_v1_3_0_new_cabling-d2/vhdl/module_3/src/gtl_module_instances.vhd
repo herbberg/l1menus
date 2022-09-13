@@ -10,7 +10,7 @@
 -- b2c859f7-273e-4ef1-95f6-e8e6a9fa1d50
 
 -- Unique ID of firmware implementation:
--- fc7fd3e6-13dd-43fb-bc96-d41e2bb4b7fd
+-- 11323fb1-860c-416a-8c16-04039826e338
 
 -- Scale set:
 -- scales_2021_03_02
@@ -1702,11 +1702,11 @@ algo(1) <= l1_loose_iso_eg26er2p1_jet34er2p5_d_r_min0p3;
 
 -- 262 L1_SingleIsoTau32er2p1 : TAU32[TAU-ETA_2p13,TAU-ISO_0xE]
 l1_single_iso_tau32er2p1 <= single_tau_i212;
-algo(31) <= l1_single_iso_tau32er2p1;
+algo(37) <= l1_single_iso_tau32er2p1;
 
 -- 263 L1_SingleTau70er2p1 : TAU70[TAU-ETA_2p13]
 l1_single_tau70er2p1 <= single_tau_i216;
-algo(35) <= l1_single_tau70er2p1;
+algo(32) <= l1_single_tau70er2p1;
 
 -- 265 L1_SingleTau130er2p1 : TAU130[TAU-ETA_2p13]
 l1_single_tau130er2p1 <= single_tau_i195;
@@ -1730,27 +1730,27 @@ algo(30) <= l1_mu22er2p1_iso_tau28er2p1;
 
 -- 286 L1_Mu22er2p1_IsoTau30er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU30[TAU-ETA_2p13,TAU-ISO_0xE]
 l1_mu22er2p1_iso_tau30er2p1 <= single_mu_i209 and single_tau_i211;
-algo(33) <= l1_mu22er2p1_iso_tau30er2p1;
+algo(31) <= l1_mu22er2p1_iso_tau30er2p1;
 
 -- 287 L1_Mu22er2p1_IsoTau32er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU32[TAU-ETA_2p13,TAU-ISO_0xE]
 l1_mu22er2p1_iso_tau32er2p1 <= single_mu_i209 and single_tau_i212;
-algo(36) <= l1_mu22er2p1_iso_tau32er2p1;
+algo(34) <= l1_mu22er2p1_iso_tau32er2p1;
 
 -- 288 L1_Mu22er2p1_IsoTau34er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU34[TAU-ETA_2p13,TAU-ISO_0xE]
 l1_mu22er2p1_iso_tau34er2p1 <= single_mu_i209 and single_tau_i213;
-algo(37) <= l1_mu22er2p1_iso_tau34er2p1;
+algo(35) <= l1_mu22er2p1_iso_tau34er2p1;
 
 -- 289 L1_Mu22er2p1_IsoTau36er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU36[TAU-ETA_2p13,TAU-ISO_0xE]
 l1_mu22er2p1_iso_tau36er2p1 <= single_mu_i209 and single_tau_i214;
-algo(38) <= l1_mu22er2p1_iso_tau36er2p1;
+algo(36) <= l1_mu22er2p1_iso_tau36er2p1;
 
 -- 290 L1_Mu22er2p1_IsoTau40er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU40[TAU-ETA_2p13,TAU-ISO_0xE]
 l1_mu22er2p1_iso_tau40er2p1 <= single_mu_i209 and single_tau_i215;
-algo(32) <= l1_mu22er2p1_iso_tau40er2p1;
+algo(38) <= l1_mu22er2p1_iso_tau40er2p1;
 
 -- 291 L1_Mu22er2p1_Tau70er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU70[TAU-ETA_2p13]
 l1_mu22er2p1_tau70er2p1 <= single_mu_i209 and single_tau_i216;
-algo(34) <= l1_mu22er2p1_tau70er2p1;
+algo(33) <= l1_mu22er2p1_tau70er2p1;
 
 -- 298 L1_IsoTau52er2p1_QuadJet36er2p5 : comb{JET36[JET-ETA_2p52],JET36[JET-ETA_2p52],JET36[JET-ETA_2p52],JET36[JET-ETA_2p52]} AND TAU52[TAU-ETA_2p13,TAU-ISO_0xE]
 l1_iso_tau52er2p1_quad_jet36er2p5 <= quad_jet_i386 and single_tau_i387;
