@@ -1,0 +1,89 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_TripleMu_test_forElisa.html" }%
+
+---+!! !L1Menu_TripleMu_test_forElisa
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_TripleMu_test_forElisa | 0.10 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_TripleMu_test_forElisa |
+|Menu UUID: | a0d7a498-d338-4ebd-b020-e429acf0a085 |
+|Firmware UUID: | ffaa6004-5c60-4e72-858f-be19296d127c  |
+|Associated L1 scale DB key: | scales_2021_03_02 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 12 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Mass algorithm triggers: | 12 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Mass algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max12 ][L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max12]]   | L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max12  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_3SQ_2p5SQ_0OQ_Mass_Max12 ][L1_TripleMu_3SQ_2p5SQ_0OQ_Mass_Max12]]   | L1_TripleMu_3SQ_2p5SQ_0OQ_Mass_Max12  | 1 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max12 ][L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max12]]   | L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max12  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_3SQ_2p5SQ_0OQ_OS_Mass_Max12 ][L1_TripleMu_3SQ_2p5SQ_0OQ_OS_Mass_Max12]]   | L1_TripleMu_3SQ_2p5SQ_0OQ_OS_Mass_Max12  | 3 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max50 ][L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max50]]   | L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max50  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max50 ][L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max50]]   | L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max50  | 5 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max100 ][L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max100]]   | L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max100  | 6 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max100 ][L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max100]]   | L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max100  | 7 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_50SQ_50SQ_0OQ_Mass_Max100 ][L1_TripleMu_50SQ_50SQ_0OQ_Mass_Max100]]   | L1_TripleMu_50SQ_50SQ_0OQ_Mass_Max100  | 8 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_50SQ_50SQ_0OQ_OS_Mass_Max100 ][L1_TripleMu_50SQ_50SQ_0OQ_OS_Mass_Max100]]   | L1_TripleMu_50SQ_50SQ_0OQ_OS_Mass_Max100  | 9 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_50SQ_50SQ_0OQ_Mass_Max200 ][L1_TripleMu_50SQ_50SQ_0OQ_Mass_Max200]]   | L1_TripleMu_50SQ_50SQ_0OQ_Mass_Max200  | 10 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_50SQ_50SQ_0OQ_OS_Mass_Max200 ][L1_TripleMu_50SQ_50SQ_0OQ_OS_Mass_Max200]]   | L1_TripleMu_50SQ_50SQ_0OQ_OS_Mass_Max200  | 11 |  |
+!Mass algorithm triggers: 12 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max12 ][L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max12]]   |L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max12 |0 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_3SQ_2p5SQ_0OQ_Mass_Max12 ][L1_TripleMu_3SQ_2p5SQ_0OQ_Mass_Max12]]   |L1_TripleMu_3SQ_2p5SQ_0OQ_Mass_Max12 |1 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max12 ][L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max12]]   |L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max12 |2 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_3SQ_2p5SQ_0OQ_OS_Mass_Max12 ][L1_TripleMu_3SQ_2p5SQ_0OQ_OS_Mass_Max12]]   |L1_TripleMu_3SQ_2p5SQ_0OQ_OS_Mass_Max12 |3 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max50 ][L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max50]]   |L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max50 |4 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max50 ][L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max50]]   |L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max50 |5 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max100 ][L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max100]]   |L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max100 |6 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max100 ][L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max100]]   |L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max100 |7 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_50SQ_50SQ_0OQ_Mass_Max100 ][L1_TripleMu_50SQ_50SQ_0OQ_Mass_Max100]]   |L1_TripleMu_50SQ_50SQ_0OQ_Mass_Max100 |8 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_50SQ_50SQ_0OQ_OS_Mass_Max100 ][L1_TripleMu_50SQ_50SQ_0OQ_OS_Mass_Max100]]   |L1_TripleMu_50SQ_50SQ_0OQ_OS_Mass_Max100 |9 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_50SQ_50SQ_0OQ_Mass_Max200 ][L1_TripleMu_50SQ_50SQ_0OQ_Mass_Max200]]   |L1_TripleMu_50SQ_50SQ_0OQ_Mass_Max200 |10 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_TripleMu_50SQ_50SQ_0OQ_OS_Mass_Max200 ][L1_TripleMu_50SQ_50SQ_0OQ_OS_Mass_Max200]]   |L1_TripleMu_50SQ_50SQ_0OQ_OS_Mass_Max200 |11 |5 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
