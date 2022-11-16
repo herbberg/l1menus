@@ -1,0 +1,20 @@
+{
+  "firmware_uuid" : "8f1a9045-57b0-4d24-b792-afdf347f84f6",
+  "menu_uuid"     : "a0d7a498-d338-4ebd-b020-e429acf0a085",
+  "n_modules"     : 6,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max12", 0, 1, 0],
+    ["L1_TripleMu_3SQ_2p5SQ_0OQ_Mass_Max12", 1, 0, 1],
+    ["L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max12", 2, 4, 0],
+    ["L1_TripleMu_3SQ_2p5SQ_0OQ_OS_Mass_Max12", 3, 1, 1],
+    ["L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max50", 4, 2, 0],
+    ["L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max50", 5, 5, 0],
+    ["L1_TripleMu_2SQ_1p5SQ_0OQ_Mass_Max100", 6, 0, 0],
+    ["L1_TripleMu_2SQ_1p5SQ_0OQ_OS_Mass_Max100", 7, 3, 0],
+    ["L1_TripleMu_50SQ_50SQ_0OQ_Mass_Max100", 8, 2, 1],
+    ["L1_TripleMu_50SQ_50SQ_0OQ_OS_Mass_Max100", 9, 4, 1],
+    ["L1_TripleMu_50SQ_50SQ_0OQ_Mass_Max200", 10, 3, 1],
+    ["L1_TripleMu_50SQ_50SQ_0OQ_OS_Mass_Max200", 11, 5, 1]
+  ]
+}
