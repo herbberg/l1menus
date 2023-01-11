@@ -1,0 +1,209 @@
+2023-01-11 11:39:19 INFO : distributing menu...
+2023-01-11 11:39:19 INFO : loading resource information from JSON: /home/bergauer/github/herbberg/tm-vhdlproducer/tmVhdlProducer/config/resource_default.json
+2023-01-11 11:39:19 INFO : :: listing resources...
+2023-01-11 11:39:19 INFO : thresholds:
+2023-01-11 11:39:19 INFO :  * floor: brams=12.79%, sliceLUTs=9.02%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * ceiling: brams=100.00%, sliceLUTs=90.00%, processors=100.00%
+2023-01-11 11:39:19 INFO : instances:
+2023-01-11 11:39:19 INFO :  * MuonCondition[ muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * MuonCondition[ muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.08%, processors=0.33%
+2023-01-11 11:39:19 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * MuonCondition[ muon, muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * MuonCondition[ muon, muon, muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * CaloCondition[ calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * CaloCondition[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.05%, processors=0.33%
+2023-01-11 11:39:19 INFO :  * CaloCondition[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * CaloCondition[ calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.39%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * CaloConditionOvRm[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * CaloConditionOvRm[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.13%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.05%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * CorrelationCondition[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * CorrelationCondition[ calo, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * CorrelationCondition[ calo, esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * CorrelationCondition[ muon, esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * CorrelationCondition[ muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * massupt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * Correlation3Condition[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * Correlation3Condition[ muon, muon, muon ]: brams=0.00%, sliceLUTs=0.19%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.06%
+2023-01-11 11:39:19 INFO :  * CorrelationConditionOvRm[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * CorrelationConditionOvRm[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.15%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * EsumsCondition[ esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * MinBiasCondition[ bias ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * ExternalCondition[ ext ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * ExternalCondition[ adt ]: brams=1.02%, sliceLUTs=12.93%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * TowerCountCondition[ count ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO :  * SignalCondition[ signal ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-01-11 11:39:19 INFO : |---------------------------------------------------------------------------------------|
+2023-01-11 11:39:19 INFO : |                                                                                       |
+2023-01-11 11:39:19 INFO : | Algorithms sorted by payload (descending)                                             |
+2023-01-11 11:39:19 INFO : |                                                                                       |
+2023-01-11 11:39:19 INFO : |---------------------------------------------------------------------------------------|
+2023-01-11 11:39:19 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2023-01-11 11:39:19 INFO : | Index | BRAMs   | SliceLUTs | DSPs    | Name                                          |
+2023-01-11 11:39:19 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2023-01-11 11:39:19 INFO : |     0 |  1.020% |   12.928% |  0.000% | L1_ADT_10                                     |
+2023-01-11 11:39:19 INFO : |     2 |  1.020% |   12.928% |  0.000% | L1_ADT_100                                    |
+2023-01-11 11:39:19 INFO : |     3 |  1.020% |   12.928% |  0.000% | L1_ADT_1000                                   |
+2023-01-11 11:39:19 INFO : |     4 |  1.020% |   12.928% |  0.000% | L1_ADT_40                                     |
+2023-01-11 11:39:19 INFO : |     5 |  1.020% |   12.928% |  0.000% | L1_ADT_41                                     |
+2023-01-11 11:39:19 INFO : |     1 |  1.020% |   12.928% |  0.000% | L1_ADT_42                                     |
+2023-01-11 11:39:19 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2023-01-11 11:39:19 INFO : |---------------------------------------------------------------------------------------|
+2023-01-11 11:39:19 INFO : distributing algorithms, shadow ratio: 0.0
+2023-01-11 11:39:19 INFO : starting algorithm distribution for 6 algorithms on 6 modules using shadow ratio of 0.0
+2023-01-11 11:39:19 INFO :  . adding L1_ADT_10 (0) to module 0
+2023-01-11 11:39:19 INFO :  . adding L1_ADT_100 (2) to module 1
+2023-01-11 11:39:19 INFO :  . adding L1_ADT_1000 (3) to module 2
+2023-01-11 11:39:19 INFO :  . adding L1_ADT_40 (4) to module 3
+2023-01-11 11:39:19 INFO :  . adding L1_ADT_41 (5) to module 4
+2023-01-11 11:39:19 INFO :  . adding L1_ADT_42 (1) to module 5
+2023-01-11 11:39:19 INFO : |-----------------------------------------------------------------------------|
+2023-01-11 11:39:19 INFO : |                                                                             |
+2023-01-11 11:39:19 INFO : | Detailed distribition on 6 modules, shadow ratio: 0.0                       |
+2023-01-11 11:39:19 INFO : |                                                                             |
+2023-01-11 11:39:19 INFO : |------------|----------------------------------------------------------------|
+2023-01-11 11:39:19 INFO : | Module     | Algorithm                                                      |
+2023-01-11 11:39:19 INFO : | ID | Index | Index | Name                                                   |
+2023-01-11 11:39:19 INFO : |----|-------|-------|--------------------------------------------------------|
+2023-01-11 11:39:19 INFO : |  0 |     0 |     0 | L1_ADT_10                                              |
+2023-01-11 11:39:19 INFO : |  1 |     0 |     2 | L1_ADT_100                                             |
+2023-01-11 11:39:19 INFO : |  2 |     0 |     3 | L1_ADT_1000                                            |
+2023-01-11 11:39:19 INFO : |  3 |     0 |     4 | L1_ADT_40                                              |
+2023-01-11 11:39:19 INFO : |  4 |     0 |     5 | L1_ADT_41                                              |
+2023-01-11 11:39:19 INFO : |  5 |     0 |     1 | L1_ADT_42                                              |
+2023-01-11 11:39:19 INFO : |----|-------|-------|--------------------------------------------------------|
+2023-01-11 11:39:19 INFO : |-----------------------------------------------------------------------------|
+2023-01-11 11:39:19 INFO : |                                                                             |
+2023-01-11 11:39:19 INFO : | Condition distribution, sorted by weight (descending)                       |
+2023-01-11 11:39:19 INFO : |                                                                             |
+2023-01-11 11:39:19 INFO : |-----------------------------------------------------------------------------|
+2023-01-11 11:39:19 INFO : |-----------------------------------------------------------------------------------|
+2023-01-11 11:39:19 INFO : | Name                                             | Modules | sLUTs | DSPs | BRAMs |
+2023-01-11 11:39:19 INFO : |--------------------------------------------------|---------|-------|------|-------|
+2023-01-11 11:39:19 INFO : | SingleEXT_i0                                     | 0       | 56003 | 0    | 15    |
+2023-01-11 11:39:19 INFO : | SingleEXT_i1                                     | 5       | 56003 | 0    | 15    |
+2023-01-11 11:39:19 INFO : | SingleEXT_i2                                     | 1       | 56003 | 0    | 15    |
+2023-01-11 11:39:19 INFO : | SingleEXT_i3                                     | 2       | 56003 | 0    | 15    |
+2023-01-11 11:39:19 INFO : | SingleEXT_i4                                     | 3       | 56003 | 0    | 15    |
+2023-01-11 11:39:19 INFO : | SingleEXT_i5                                     | 4       | 56003 | 0    | 15    |
+2023-01-11 11:39:19 INFO : |--------------------------------------------------|---------|-------|------|-------|
+2023-01-11 11:39:19 INFO : |--------------------------------------------------------------------------------------|
+2023-01-11 11:39:19 INFO : |                                                                                      |
+2023-01-11 11:39:19 INFO : | Summary for distribution on 6 modules, shadow ratio: 0.0                             |
+2023-01-11 11:39:19 INFO : |                                                                                      |
+2023-01-11 11:39:19 INFO : |-------------------------------------|------------------------------------------------|
+2023-01-11 11:39:19 INFO : |                                     |                    Payload                     |
+2023-01-11 11:39:19 INFO : |-------------------------------------|------------------------------------------------|
+2023-01-11 11:39:19 INFO : |              Module                 |   SliceLUTs    |     BRAMs     |     DSPs      |
+2023-01-11 11:39:19 INFO : |-------------------------------------|------------------------------------------------|
+2023-01-11 11:39:19 INFO : | ID | Algorithms | Conditions | Rel. | Value  |  [%]  | Value |  [%]  | Value |  [%]  |
+2023-01-11 11:39:19 INFO : |----|------------|------------|------|--------|-------|-------|-------|-------|-------|
+2023-01-11 11:39:19 INFO : |  0 |          1 |          1 | 1.00 | 122868 | 28.36 |   623 | 42.38 |     0 |  0.00 |
+2023-01-11 11:39:19 INFO : |  1 |          1 |          1 | 1.00 | 122868 | 28.36 |   623 | 42.38 |     0 |  0.00 |
+2023-01-11 11:39:19 INFO : |  2 |          1 |          1 | 1.00 | 122868 | 28.36 |   623 | 42.38 |     0 |  0.00 |
+2023-01-11 11:39:19 INFO : |  3 |          1 |          1 | 1.00 | 122868 | 28.36 |   623 | 42.38 |     0 |  0.00 |
+2023-01-11 11:39:19 INFO : |  4 |          1 |          1 | 1.00 | 122868 | 28.36 |   623 | 42.38 |     0 |  0.00 |
+2023-01-11 11:39:19 INFO : |  5 |          1 |          1 | 1.00 | 122868 | 28.36 |   623 | 42.38 |     0 |  0.00 |
+2023-01-11 11:39:19 INFO : |----|------------|------------|------|--------|-------|-------|-------|-------|-------|
+2023-01-11 11:39:19 INFO : writing VHDL modules...
+2023-01-11 11:39:19 INFO : writing 6 algorithms to 6 module(s)
+2023-01-11 11:39:19 INFO : writing output for module: 0
+2023-01-11 11:39:19 INFO : algo_index.vhd          : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_0/src/algo_index.vhd
+2023-01-11 11:39:19 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_0/src/gtl_module_signals.vhd
+2023-01-11 11:39:19 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_0/src/gtl_module_instances.vhd
+2023-01-11 11:39:19 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_0/src/ugt_constants.vhd
+2023-01-11 11:39:19 INFO : writing output for module: 1
+2023-01-11 11:39:19 INFO : algo_index.vhd          : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_1/src/algo_index.vhd
+2023-01-11 11:39:19 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_1/src/gtl_module_signals.vhd
+2023-01-11 11:39:19 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_1/src/gtl_module_instances.vhd
+2023-01-11 11:39:19 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_1/src/ugt_constants.vhd
+2023-01-11 11:39:19 INFO : writing output for module: 2
+2023-01-11 11:39:19 INFO : algo_index.vhd          : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_2/src/algo_index.vhd
+2023-01-11 11:39:19 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_2/src/gtl_module_signals.vhd
+2023-01-11 11:39:19 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_2/src/gtl_module_instances.vhd
+2023-01-11 11:39:19 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_2/src/ugt_constants.vhd
+2023-01-11 11:39:19 INFO : writing output for module: 3
+2023-01-11 11:39:19 INFO : algo_index.vhd          : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_3/src/algo_index.vhd
+2023-01-11 11:39:19 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_3/src/gtl_module_signals.vhd
+2023-01-11 11:39:19 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_3/src/gtl_module_instances.vhd
+2023-01-11 11:39:19 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_3/src/ugt_constants.vhd
+2023-01-11 11:39:19 INFO : writing output for module: 4
+2023-01-11 11:39:19 INFO : algo_index.vhd          : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_4/src/algo_index.vhd
+2023-01-11 11:39:19 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_4/src/gtl_module_signals.vhd
+2023-01-11 11:39:19 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_4/src/gtl_module_instances.vhd
+2023-01-11 11:39:19 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_4/src/ugt_constants.vhd
+2023-01-11 11:39:19 INFO : writing output for module: 5
+2023-01-11 11:39:19 INFO : algo_index.vhd          : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_5/src/algo_index.vhd
+2023-01-11 11:39:19 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_5/src/gtl_module_signals.vhd
+2023-01-11 11:39:19 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_5/src/gtl_module_instances.vhd
+2023-01-11 11:39:19 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_adt_v4-d1/vhdl/module_5/src/ugt_constants.vhd
+2023-01-11 11:39:19 INFO : writing updated XML file /home/bergauer/L1Menu_adt_v4.xml
+2023-01-11 11:39:19 INFO : reading source XML menu file /home/bergauer/L1Menu_adt_v4.xml
+2023-01-11 11:39:19 INFO : processing menu "L1Menu_adt_v4" ... 
+2023-01-11 11:39:19 INFO : updating menu information...
+2023-01-11 11:39:19 INFO : uuid_menu     : 3ad635ba-a02d-467b-84ef-1022d6178c50
+2023-01-11 11:39:19 INFO : uuid_firmware : 842acd21-8068-4f00-a4d1-de71a487fb64
+2023-01-11 11:39:19 INFO : n_modules     : 6
+2023-01-11 11:39:19 INFO : writing target XML menu file /home/bergauer/L1Menu_adt_v4-d1/xml/L1Menu_adt_v4-d1.xml
+2023-01-11 11:39:20 INFO : generating menu documentation...
+2023-01-11 11:39:20 INFO : writing HTML documentation /home/bergauer/L1Menu_adt_v4-d1/xml/L1Menu_adt_v4-d1.xml
+2023-01-11 11:39:21 INFO : writing TWIKI page template /home/bergauer/L1Menu_adt_v4-d1/xml/L1Menu_adt_v4-d1.xml
+2023-01-11 11:39:21 INFO : patching filenames...
+2023-01-11 11:39:21 INFO : /home/bergauer/L1Menu_adt_v4-d1/doc/L1Menu_adt_v4.html --> /home/bergauer/L1Menu_adt_v4-d1/doc/L1Menu_adt_v4-d1.html
+2023-01-11 11:39:21 INFO : /home/bergauer/L1Menu_adt_v4-d1/doc/L1Menu_adt_v4.twiki --> /home/bergauer/L1Menu_adt_v4-d1/doc/L1Menu_adt_v4-d1.twiki
+2023-01-11 11:39:21 INFO : done.
