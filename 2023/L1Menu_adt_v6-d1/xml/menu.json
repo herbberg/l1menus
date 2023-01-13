@@ -1,0 +1,14 @@
+{
+  "firmware_uuid" : "650d621a-0abe-4280-9b34-5f75d23321aa",
+  "menu_uuid"     : "f91c4212-b199-4c73-a521-37070035039a",
+  "n_modules"     : 6,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_ADT_20000", 0, 0, 0],
+    ["L1_ADT_4000", 1, 2, 0],
+    ["L1_ADT_400", 2, 1, 0],
+    ["L1_ADT_80", 3, 3, 0],
+    ["L1_dummy_1", 4, 4, 0],
+    ["L1_dummy_2", 5, 5, 0]
+  ]
+}
