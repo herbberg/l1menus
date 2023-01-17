@@ -1,0 +1,77 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_adt_v6.html" }%
+
+---+!! !L1Menu_adt_v6
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_adt_v6 | 0.10 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_adt_v6 |
+|Menu UUID: | f91c4212-b199-4c73-a521-37070035039a |
+|Firmware UUID: | 2c140004-e9ed-4c08-bbc4-854ed4f7e78d  |
+|Associated L1 scale DB key: | scales_2021_03_02 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 6 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !External algorithm triggers: | 6 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !External algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_20000 ][L1_ADT_20000]]   | L1_ADT_20000  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_4000 ][L1_ADT_4000]]   | L1_ADT_4000  | 1 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_400 ][L1_ADT_400]]   | L1_ADT_400  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_80 ][L1_ADT_80]]   | L1_ADT_80  | 3 |  |
+|[[%GET{"REPORTER_URL"}%#L1_dummy_1 ][L1_dummy_1]]   | L1_dummy_1  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_dummy_2 ][L1_dummy_2]]   | L1_dummy_2  | 5 |  |
+!External algorithm triggers: 6 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_20000 ][L1_ADT_20000]]   |L1_ADT_20000 |0 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_4000 ][L1_ADT_4000]]   |L1_ADT_4000 |1 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_400 ][L1_ADT_400]]   |L1_ADT_400 |2 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_80 ][L1_ADT_80]]   |L1_ADT_80 |3 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_dummy_1 ][L1_dummy_1]]   |L1_dummy_1 |4 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_dummy_2 ][L1_dummy_2]]   |L1_dummy_2 |5 |5 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
