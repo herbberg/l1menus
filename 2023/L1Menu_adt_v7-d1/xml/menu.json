@@ -1,0 +1,16 @@
+{
+  "firmware_uuid" : "ff999d54-d3e2-4483-8c05-b631978b815b",
+  "menu_uuid"     : "63d8f700-507a-4a7b-bde4-58b4c3437959",
+  "n_modules"     : 6,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_ADT_20000", 0, 0, 0],
+    ["L1_ADT_4000", 1, 2, 0],
+    ["L1_ADT_400", 2, 1, 0],
+    ["L1_ADT_80", 3, 3, 0],
+    ["L1_SingleMu3", 4, 5, 1],
+    ["L1_SingleMu20", 5, 4, 1],
+    ["L1_SingleEG50", 6, 4, 0],
+    ["L1_SingleEG60", 7, 5, 0]
+  ]
+}
