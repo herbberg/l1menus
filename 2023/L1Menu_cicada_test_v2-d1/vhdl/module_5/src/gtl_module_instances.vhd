@@ -39,15 +39,15 @@ cond_single_bjet_i5_i: entity work.comb_conditions
         nr_obj1 => NR_BJET_OBJECTS,
         type_obj1 => BJET_TYPE,
         ad_requ  => true,
-        ad_dec_thr => "0010000",
-        ad_int_thr => "000010",
+        ad_dec_thr => "00010000",
+        ad_int_thr => "00000010",
         nr_templates => 1
     )
     port map(
         lhc_clk,
         obj1_calo => bx_data.bjet(2),
-        ad_dec_i => bx_data.ad(2)(AD_DEC_HIGH downto AD_DEC_LOW),
-        ad_int_i => bx_data.ad(2)(AD_INT_HIGH downto AD_INT_LOW),
+        ad_dec_i => bx_data.cicada_ad(2)(AD_DEC_HIGH downto AD_DEC_LOW),
+        ad_int_i => bx_data.cicada_ad(2)(AD_INT_HIGH downto AD_INT_LOW),
         condition_o => single_bjet_i5
     );
 
