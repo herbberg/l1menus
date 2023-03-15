@@ -1,0 +1,89 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_utm_0_11_test.html" }%
+
+---+!! !L1Menu_utm_0_11_test
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_utm_0_11_test | 0.11 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_utm_0_11_test |
+|Menu UUID: | 36a2b4c9-da1a-4698-be00-93a32f4e85dc |
+|Firmware UUID: | d6d7d469-f972-4239-8cb5-0fb4c6b13751  |
+|Associated L1 scale DB key: | scales_2023_02_16 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 8 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Muon algorithm triggers: | 1 |
+      | !Tower Count algorithm triggers: | 2 |
+      | !Signal algorithm triggers: | 5 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Muon algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_4_8 ][L1_SingleMu_index_4_8]]   | L1_SingleMu_index_4_8  | 4 |  |
+!Muon algorithm triggers: 1 bits defined
+---++++ !Tower Count algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_ZdcPlus_128 ][L1_ZdcPlus_128]]   | L1_ZdcPlus_128  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ZdcMinus_60 ][L1_ZdcMinus_60]]   | L1_ZdcMinus_60  | 4 |  |
+!Tower Count algorithm triggers: 2 bits defined
+---++++ !Signal algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_Adt_20000 ][L1_Adt_20000]]   | L1_Adt_20000  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Adt_4000 ][L1_Adt_4000]]   | L1_Adt_4000  | 1 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Adt_400 ][L1_Adt_400]]   | L1_Adt_400  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Adt_80 ][L1_Adt_80]]   | L1_Adt_80  | 3 |  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMuShower_TwoLoose ][L1_SingleMuShower_TwoLoose]]   | L1_SingleMuShower_TwoLoose  | 5 |  |
+!Signal algorithm triggers: 5 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_Adt_20000 ][L1_Adt_20000]]   |L1_Adt_20000 |0 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_Adt_4000 ][L1_Adt_4000]]   |L1_Adt_4000 |1 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_Adt_400 ][L1_Adt_400]]   |L1_Adt_400 |2 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_Adt_80 ][L1_Adt_80]]   |L1_Adt_80 |3 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_4_8 ][L1_SingleMu_index_4_8]]   |L1_SingleMu_index_4_8 |4 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_ZdcMinus_60 ][L1_ZdcMinus_60]]   |L1_ZdcMinus_60 |4 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_ZdcPlus_128 ][L1_ZdcPlus_128]]   |L1_ZdcPlus_128 |4 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMuShower_TwoLoose ][L1_SingleMuShower_TwoLoose]]   |L1_SingleMuShower_TwoLoose |5 |5 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
