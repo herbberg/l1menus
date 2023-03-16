@@ -10,7 +10,7 @@
 -- 36a2b4c9-da1a-4698-be00-93a32f4e85dc
 
 -- Unique ID of firmware implementation:
--- d6d7d469-f972-4239-8cb5-0fb4c6b13751
+-- e7cccf2f-9e82-4496-b7e6-fc4db209b1ff
 
 -- Scale set:
 -- scales_2023_02_16
@@ -57,13 +57,13 @@ cond_zdc_minus_i7_i: entity work.zdc_condition
 -- ========================================================
 -- Instantiations of algorithms
 
--- 4 L1_ZdcMinus_60 : ZDCM60
-l1_zdc_minus_60 <= zdc_minus_i7;
-algo(0) <= l1_zdc_minus_60;
-
 -- 4 L1_SingleMu_index_4_8 : MU0[MU-INDEX_4_8]
 l1_single_mu_index_4_8 <= single_mu_i4;
 algo(1) <= l1_single_mu_index_4_8;
+
+-- 7 L1_ZdcMinus_60 : ZDCM60
+l1_zdc_minus_60 <= zdc_minus_i7;
+algo(0) <= l1_zdc_minus_60;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.

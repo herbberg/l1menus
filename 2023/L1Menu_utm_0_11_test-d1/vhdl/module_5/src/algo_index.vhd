@@ -10,7 +10,7 @@
 -- 36a2b4c9-da1a-4698-be00-93a32f4e85dc
 
 -- Unique ID of firmware implementation:
--- d6d7d469-f972-4239-8cb5-0fb4c6b13751
+-- e7cccf2f-9e82-4496-b7e6-fc4db209b1ff
 
 -- Scale set:
 -- scales_2023_02_16
@@ -24,7 +24,7 @@
 -- HB 2016-09-16: constants for algo_mapping_rop.
 type global_index_array is array (0 to NR_ALGOS-1) of integer;
 constant global_index: global_index_array := (
-          4, -- module_index: 0, name: L1_ZdcPlus_128
+          6, -- module_index: 0, name: L1_ZdcPlus_128
           5, -- module_index: 1, name: L1_SingleMuShower_TwoLoose
     others => 0
 );

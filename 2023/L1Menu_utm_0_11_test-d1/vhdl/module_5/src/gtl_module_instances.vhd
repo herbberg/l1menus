@@ -10,7 +10,7 @@
 -- 36a2b4c9-da1a-4698-be00-93a32f4e85dc
 
 -- Unique ID of firmware implementation:
--- d6d7d469-f972-4239-8cb5-0fb4c6b13751
+-- e7cccf2f-9e82-4496-b7e6-fc4db209b1ff
 
 -- Scale set:
 -- scales_2023_02_16
@@ -41,13 +41,13 @@ muon_shower2_i5 <= bx_data.mus2(2);
 -- ========================================================
 -- Instantiations of algorithms
 
--- 4 L1_ZdcPlus_128 : ZDCP128
-l1_zdc_plus_128 <= zdc_plus_i6;
-algo(0) <= l1_zdc_plus_128;
-
 -- 5 L1_SingleMuShower_TwoLoose : MUS2
 l1_single_mu_shower_two_loose <= muon_shower2_i5;
 algo(1) <= l1_single_mu_shower_two_loose;
+
+-- 6 L1_ZdcPlus_128 : ZDCP128
+l1_zdc_plus_128 <= zdc_plus_i6;
+algo(0) <= l1_zdc_plus_128;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.

@@ -31,7 +31,7 @@ A complete description of the algorithm and technical trigger implementation is 
 
 |Menu Name: | !L1Menu_utm_0_11_test |
 |Menu UUID: | 36a2b4c9-da1a-4698-be00-93a32f4e85dc |
-|Firmware UUID: | d6d7d469-f972-4239-8cb5-0fb4c6b13751  |
+|Firmware UUID: | e7cccf2f-9e82-4496-b7e6-fc4db209b1ff  |
 |Associated L1 scale DB key: | scales_2023_02_16 |
 
 
@@ -57,8 +57,8 @@ Number of algorithm triggers per trigger group:
 !Muon algorithm triggers: 1 bits defined
 ---++++ !Tower Count algorithm triggers
 |  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
-|[[%GET{"REPORTER_URL"}%#L1_ZdcPlus_128 ][L1_ZdcPlus_128]]   | L1_ZdcPlus_128  | 4 |  |
-|[[%GET{"REPORTER_URL"}%#L1_ZdcMinus_60 ][L1_ZdcMinus_60]]   | L1_ZdcMinus_60  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ZdcPlus_128 ][L1_ZdcPlus_128]]   | L1_ZdcPlus_128  | 6 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ZdcMinus_60 ][L1_ZdcMinus_60]]   | L1_ZdcMinus_60  | 7 |  |
 !Tower Count algorithm triggers: 2 bits defined
 ---++++ !Signal algorithm triggers
 |  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
@@ -81,9 +81,9 @@ Number of algorithm triggers per trigger group:
 |[[%GET{"REPORTER_URL"}%#L1_Adt_400 ][L1_Adt_400]]   |L1_Adt_400 |2 |1 |
 |[[%GET{"REPORTER_URL"}%#L1_Adt_80 ][L1_Adt_80]]   |L1_Adt_80 |3 |3 |
 |[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_4_8 ][L1_SingleMu_index_4_8]]   |L1_SingleMu_index_4_8 |4 |4 |
-|[[%GET{"REPORTER_URL"}%#L1_ZdcMinus_60 ][L1_ZdcMinus_60]]   |L1_ZdcMinus_60 |4 |4 |
-|[[%GET{"REPORTER_URL"}%#L1_ZdcPlus_128 ][L1_ZdcPlus_128]]   |L1_ZdcPlus_128 |4 |5 |
 |[[%GET{"REPORTER_URL"}%#L1_SingleMuShower_TwoLoose ][L1_SingleMuShower_TwoLoose]]   |L1_SingleMuShower_TwoLoose |5 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_ZdcPlus_128 ][L1_ZdcPlus_128]]   |L1_ZdcPlus_128 |6 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_ZdcMinus_60 ][L1_ZdcMinus_60]]   |L1_ZdcMinus_60 |7 |4 |
 
 
 <p style="page-break-before: always">&nbsp;</p>
