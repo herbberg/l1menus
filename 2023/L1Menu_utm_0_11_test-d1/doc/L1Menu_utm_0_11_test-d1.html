@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>L1Menu_utm_0_11_test</title>
   <meta name="description" content="Test for utm 0.11.0 features. Scale set reference, for grammar version 0.11, added MU-INDEX and ZDC scales">
-  <meta name="generator" content="tm-reporter 2.11.1">
+  <meta name="generator" content="tm-reporter 2.11.2">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
   <!-- style customizations -->
@@ -105,11 +105,11 @@
 
     <ul class="list-group">
       <li class="list-group-item"><strong>Comment:</strong> Test for utm 0.11.0 features. Scale set reference, for grammar version 0.11, added MU-INDEX and ZDC scales</li>
-      <li class="list-group-item"><strong>Firmware UUID:</strong> e7cccf2f-9e82-4496-b7e6-fc4db209b1ff</li>
+      <li class="list-group-item"><strong>Firmware UUID:</strong> 2829c986-2134-4a61-aaa5-4beffb5827dd</li>
       <li class="list-group-item"><strong>Menu UUID:</strong> 36a2b4c9-da1a-4698-be00-93a32f4e85dc</li>
       <li class="list-group-item"><strong>Grammar Version:</strong> 0.11</li>
       <li class="list-group-item"><strong>Scale Set:</strong> scales_2023_02_16</li>
-      <li class="list-group-item"><strong>External Signals Set:</strong> L1ExternalConditionsCabling_20180319</li>
+      <li class="list-group-item"><strong>External Signals Set:</strong> L1ExternalConditionsCabling_20230321</li>
       <li class="list-group-item"><strong>Labels:</strong> </li>
     </ul>
     <hr />
@@ -127,13 +127,13 @@
         <th>Labels</th>
       </tr>
       <tr>
-        <td><a href=#L1_Adt_20000>0</a></td>
-        <td><a href=#L1_Adt_20000>L1_Adt_20000</a></td>
+        <td><a href=#L1_Adt_19999>0</a></td>
+        <td><a href=#L1_Adt_19999>L1_Adt_19999</a></td>
         <td></td>
       </tr>
       <tr>
-        <td><a href=#L1_Adt_4000>1</a></td>
-        <td><a href=#L1_Adt_4000>L1_Adt_4000</a></td>
+        <td><a href=#L1_Adt_3999>1</a></td>
+        <td><a href=#L1_Adt_3999>L1_Adt_3999</a></td>
         <td></td>
       </tr>
       <tr>
@@ -166,30 +166,45 @@
         <td><a href=#L1_ZdcMinus_60>L1_ZdcMinus_60</a></td>
         <td></td>
       </tr>
+      <tr>
+        <td><a href=#L1_ADT_20000>8</a></td>
+        <td><a href=#L1_ADT_20000>L1_ADT_20000</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ADT_4000>9</a></td>
+        <td><a href=#L1_ADT_4000>L1_ADT_4000</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_TOTEM_1>10</a></td>
+        <td><a href=#L1_TOTEM_1>L1_TOTEM_1</a></td>
+        <td></td>
+      </tr>
     </table>
     <hr />
-    <a class="anchor" name="L1_Adt_20000"></a>
+    <a class="anchor" name="L1_Adt_19999"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>0 L1_Adt_20000 <span class="informative">(Module 0)</span></h3>
+        <h3>0 L1_Adt_19999 <span class="informative">(Module 2)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
-        <p><pre class="expression">ADT[ADT-ASCORE_20000]</pre></p>
+        <p><pre class="expression">ADT[ADT-ASCORE_19999]</pre></p>
 
         <p><strong>VHDL Expression</strong></p>
-        <p><pre class="vhdl"><span class="vhdlsig">l1_adt_20000</span> <span class="vhdlop"><=</span> <span class="vhdlsig">anomaly_detection_trigger_i0</span></pre></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_adt_19999</span> <span class="vhdlop"><=</span> <span class="vhdlsig">anomaly_detection_trigger_i3</span></pre></p>
 
         <p><strong>Conditions</strong></p>
         <ul>
-        <li><strong>ADT[ADT-ASCORE_20000]</strong> : <code>anomaly_detection_trigger_i0</code>
+        <li><strong>ADT[ADT-ASCORE_19999]</strong> : <code>anomaly_detection_trigger_i3</code>
           <ul>
             <li>Object: ADT
               <ul>
                 <li>
                   
-                    AnomalyScore: <a href="#ADT-ASCORE_20000">ADT-ASCORE_20000</a> 20000
-                    : <code>0x4e20</code>
+                    AnomalyScore: <a href="#ADT-ASCORE_19999">ADT-ASCORE_19999</a> 19999
+                    : <code>0x4e1f</code>
                   
                 </li>
       
@@ -203,28 +218,28 @@
       </div>
     </div>
     <hr />
-    <a class="anchor" name="L1_Adt_4000"></a>
+    <a class="anchor" name="L1_Adt_3999"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>1 L1_Adt_4000 <span class="informative">(Module 2)</span></h3>
+        <h3>1 L1_Adt_3999 <span class="informative">(Module 3)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
-        <p><pre class="expression">ADT[ADT-ASCORE_4000]</pre></p>
+        <p><pre class="expression">ADT[ADT-ASCORE_3999]</pre></p>
 
         <p><strong>VHDL Expression</strong></p>
-        <p><pre class="vhdl"><span class="vhdlsig">l1_adt_4000</span> <span class="vhdlop"><=</span> <span class="vhdlsig">anomaly_detection_trigger_i1</span></pre></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_adt_3999</span> <span class="vhdlop"><=</span> <span class="vhdlsig">anomaly_detection_trigger_i4</span></pre></p>
 
         <p><strong>Conditions</strong></p>
         <ul>
-        <li><strong>ADT[ADT-ASCORE_4000]</strong> : <code>anomaly_detection_trigger_i1</code>
+        <li><strong>ADT[ADT-ASCORE_3999]</strong> : <code>anomaly_detection_trigger_i4</code>
           <ul>
             <li>Object: ADT
               <ul>
                 <li>
                   
-                    AnomalyScore: <a href="#ADT-ASCORE_4000">ADT-ASCORE_4000</a> 4000
-                    : <code>0xfa0</code>
+                    AnomalyScore: <a href="#ADT-ASCORE_3999">ADT-ASCORE_3999</a> 3999
+                    : <code>0xf9f</code>
                   
                 </li>
       
@@ -241,18 +256,18 @@
     <a class="anchor" name="L1_Adt_400"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>2 L1_Adt_400 <span class="informative">(Module 1)</span></h3>
+        <h3>2 L1_Adt_400 <span class="informative">(Module 4)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
         <p><pre class="expression">ADT[ADT-ASCORE_400]</pre></p>
 
         <p><strong>VHDL Expression</strong></p>
-        <p><pre class="vhdl"><span class="vhdlsig">l1_adt_400</span> <span class="vhdlop"><=</span> <span class="vhdlsig">anomaly_detection_trigger_i2</span></pre></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_adt_400</span> <span class="vhdlop"><=</span> <span class="vhdlsig">anomaly_detection_trigger_i5</span></pre></p>
 
         <p><strong>Conditions</strong></p>
         <ul>
-        <li><strong>ADT[ADT-ASCORE_400]</strong> : <code>anomaly_detection_trigger_i2</code>
+        <li><strong>ADT[ADT-ASCORE_400]</strong> : <code>anomaly_detection_trigger_i5</code>
           <ul>
             <li>Object: ADT
               <ul>
@@ -276,18 +291,18 @@
     <a class="anchor" name="L1_Adt_80"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>3 L1_Adt_80 <span class="informative">(Module 3)</span></h3>
+        <h3>3 L1_Adt_80 <span class="informative">(Module 5)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
         <p><pre class="expression">ADT[ADT-ASCORE_80]</pre></p>
 
         <p><strong>VHDL Expression</strong></p>
-        <p><pre class="vhdl"><span class="vhdlsig">l1_adt_80</span> <span class="vhdlop"><=</span> <span class="vhdlsig">anomaly_detection_trigger_i3</span></pre></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_adt_80</span> <span class="vhdlop"><=</span> <span class="vhdlsig">anomaly_detection_trigger_i6</span></pre></p>
 
         <p><strong>Conditions</strong></p>
         <ul>
-        <li><strong>ADT[ADT-ASCORE_80]</strong> : <code>anomaly_detection_trigger_i3</code>
+        <li><strong>ADT[ADT-ASCORE_80]</strong> : <code>anomaly_detection_trigger_i6</code>
           <ul>
             <li>Object: ADT
               <ul>
@@ -311,18 +326,18 @@
     <a class="anchor" name="L1_SingleMu_index_4_8"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>4 L1_SingleMu_index_4_8 <span class="informative">(Module 4)</span></h3>
+        <h3>4 L1_SingleMu_index_4_8 <span class="informative">(Module 0)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
         <p><pre class="expression">MU0[MU-INDEX_4_8]</pre></p>
 
         <p><strong>VHDL Expression</strong></p>
-        <p><pre class="vhdl"><span class="vhdlsig">l1_single_mu_index_4_8</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_mu_i4</span></pre></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_single_mu_index_4_8</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_mu_i7</span></pre></p>
 
         <p><strong>Conditions</strong></p>
         <ul>
-        <li><strong>MU0[MU-INDEX_4_8]</strong> : <code>single_mu_i4</code>
+        <li><strong>MU0[MU-INDEX_4_8]</strong> : <code>single_mu_i7</code>
           <ul>
             <li>Object: MU0
               <ul>
@@ -353,18 +368,18 @@
     <a class="anchor" name="L1_SingleMuShower_TwoLoose"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>5 L1_SingleMuShower_TwoLoose <span class="informative">(Module 5)</span></h3>
+        <h3>5 L1_SingleMuShower_TwoLoose <span class="informative">(Module 3)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
         <p><pre class="expression">MUS2</pre></p>
 
         <p><strong>VHDL Expression</strong></p>
-        <p><pre class="vhdl"><span class="vhdlsig">l1_single_mu_shower_two_loose</span> <span class="vhdlop"><=</span> <span class="vhdlsig">muon_shower2_i5</span></pre></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_single_mu_shower_two_loose</span> <span class="vhdlop"><=</span> <span class="vhdlsig">muon_shower2_i8</span></pre></p>
 
         <p><strong>Conditions</strong></p>
         <ul>
-        <li><strong>MUS2</strong> : <code>muon_shower2_i5</code>
+        <li><strong>MUS2</strong> : <code>muon_shower2_i8</code>
           <ul>
             <li>Object: MUS2
               <ul>
@@ -381,18 +396,18 @@
     <a class="anchor" name="L1_ZdcPlus_128"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>6 L1_ZdcPlus_128 <span class="informative">(Module 5)</span></h3>
+        <h3>6 L1_ZdcPlus_128 <span class="informative">(Module 2)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
         <p><pre class="expression">ZDCP128</pre></p>
 
         <p><strong>VHDL Expression</strong></p>
-        <p><pre class="vhdl"><span class="vhdlsig">l1_zdc_plus_128</span> <span class="vhdlop"><=</span> <span class="vhdlsig">zdc_plus_i6</span></pre></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_zdc_plus_128</span> <span class="vhdlop"><=</span> <span class="vhdlsig">zdc_plus_i9</span></pre></p>
 
         <p><strong>Conditions</strong></p>
         <ul>
-        <li><strong>ZDCP128</strong> : <code>zdc_plus_i6</code>
+        <li><strong>ZDCP128</strong> : <code>zdc_plus_i9</code>
           <ul>
             <li>Object: ZDCP128
               <ul>
@@ -416,18 +431,18 @@
     <a class="anchor" name="L1_ZdcMinus_60"></a>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>7 L1_ZdcMinus_60 <span class="informative">(Module 4)</span></h3>
+        <h3>7 L1_ZdcMinus_60 <span class="informative">(Module 1)</span></h3>
       </div>
       <div class="panel-body">
         <p><strong>Logical Expression</strong></p>
         <p><pre class="expression">ZDCM60</pre></p>
 
         <p><strong>VHDL Expression</strong></p>
-        <p><pre class="vhdl"><span class="vhdlsig">l1_zdc_minus_60</span> <span class="vhdlop"><=</span> <span class="vhdlsig">zdc_minus_i7</span></pre></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_zdc_minus_60</span> <span class="vhdlop"><=</span> <span class="vhdlsig">zdc_minus_i10</span></pre></p>
 
         <p><strong>Conditions</strong></p>
         <ul>
-        <li><strong>ZDCM60</strong> : <code>zdc_minus_i7</code>
+        <li><strong>ZDCM60</strong> : <code>zdc_minus_i10</code>
           <ul>
             <li>Object: ZDCM60
               <ul>
@@ -438,6 +453,93 @@
                   
                 </li>
       
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ADT_20000"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>8 L1_ADT_20000 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">EXT_ADT_20000</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_adt_20000</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_ext_i1</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>EXT_ADT_20000</strong> : <code>single_ext_i1</code>
+          <ul>
+            <li>Object: EXT_ADT_20000
+              <ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ADT_4000"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>9 L1_ADT_4000 <span class="informative">(Module 1)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">EXT_ADT_4000</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_adt_4000</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_ext_i2</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>EXT_ADT_4000</strong> : <code>single_ext_i2</code>
+          <ul>
+            <li>Object: EXT_ADT_4000
+              <ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_TOTEM_1"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>10 L1_TOTEM_1 <span class="informative">(Module 4)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">EXT_TOTEM_1</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_totem_1</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_ext_i0</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p>L1 Menu (2018 v1): TOTEM Trigger Bits<br />https://its.cern.ch/jira/browse/CMSLITDPG-512</p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>EXT_TOTEM_1</strong> : <code>single_ext_i0</code>
+          <ul>
+            <li>Object: EXT_TOTEM_1
+              <ul>
               </ul>
             </li>
           </ul>
@@ -488,18 +590,18 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="anchor" name="ADT-ASCORE_20000"></a> ADT-ASCORE_20000</td>
-        <td>20000.0</td>
+        <td><a class="anchor" name="ADT-ASCORE_19999"></a> ADT-ASCORE_19999</td>
+        <td>19999.0</td>
         <td></td>
-        <td><code>20000.0</code></td>
+        <td><code>19999.0</code></td>
         <td></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="anchor" name="ADT-ASCORE_4000"></a> ADT-ASCORE_4000</td>
-        <td>4000.0</td>
+        <td><a class="anchor" name="ADT-ASCORE_3999"></a> ADT-ASCORE_3999</td>
+        <td>3999.0</td>
         <td></td>
-        <td><code>4000.0</code></td>
+        <td><code>3999.0</code></td>
         <td></td>
         <td></td>
       </tr>
@@ -522,7 +624,7 @@
     </table>
 
     <footer class="footer">
-      <p>Generated by tm-reporter v2.11.1 on 2023-03-16 11:52:41.</p>
+      <p>Generated by tm-reporter v2.11.2 on 2023-03-22 10:27:04.</p>
     </fooer>
 
   </main><!-- /container -->

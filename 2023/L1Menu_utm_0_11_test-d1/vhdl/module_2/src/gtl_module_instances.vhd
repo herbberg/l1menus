@@ -10,7 +10,7 @@
 -- 36a2b4c9-da1a-4698-be00-93a32f4e85dc
 
 -- Unique ID of firmware implementation:
--- e7cccf2f-9e82-4496-b7e6-fc4db209b1ff
+-- 2829c986-2134-4a61-aaa5-4beffb5827dd
 
 -- Scale set:
 -- scales_2023_02_16
@@ -19,15 +19,23 @@
 -- v2.14.0
 
 -- tmEventSetup version
--- v0.11.0
+-- v0.11.1
 
 -- ========================================================
 -- Instantiations of conditions
 --
--- Anomaly detection instantiation
+cond_zdc_plus_i9_i: entity work.zdc_condition
+    generic map(
+        count_threshold => X"0080"
+    )
+    port map(
+        lhc_clk,
+        bx_data.zdcp(2),
+        condition_o => zdc_plus_i9
+    );
 
-cond_anomaly_detection_trigger_i1_i: entity work.adt_wrapper
-    generic map(false, 4000)
+cond_anomaly_detection_trigger_i3_i: entity work.adt_wrapper
+    generic map(false, 19999)
     port map(
         lhc_clk,
         bx_data.mu(2),
@@ -39,16 +47,20 @@ cond_anomaly_detection_trigger_i1_i: entity work.adt_wrapper
         bx_data.etm(2),
         bx_data.htm(2),
         bx_data.etmhf(2),
-        anomaly_detection_trigger_i1
+        anomaly_detection_trigger_i3
     );
 
 
 -- ========================================================
 -- Instantiations of algorithms
 
--- 1 L1_Adt_4000 : ADT[ADT-ASCORE_4000]
-l1_adt_4000 <= anomaly_detection_trigger_i1;
-algo(0) <= l1_adt_4000;
+-- 0 L1_Adt_19999 : ADT[ADT-ASCORE_19999]
+l1_adt_19999 <= anomaly_detection_trigger_i3;
+algo(0) <= l1_adt_19999;
+
+-- 6 L1_ZdcPlus_128 : ZDCP128
+l1_zdc_plus_128 <= zdc_plus_i9;
+algo(1) <= l1_zdc_plus_128;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.
