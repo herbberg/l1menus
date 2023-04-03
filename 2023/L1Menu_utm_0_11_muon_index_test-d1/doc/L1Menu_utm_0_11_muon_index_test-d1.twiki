@@ -1,0 +1,77 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_utm_0_11_muon_index_test.html" }%
+
+---+!! !L1Menu_utm_0_11_muon_index_test
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_utm_0_11_muon_index_test | 0.11 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_utm_0_11_muon_index_test |
+|Menu UUID: | 817de68e-8d4f-4782-a9de-48a105220eb7 |
+|Firmware UUID: | 84679211-9c26-43a6-a39b-6a3e7808b958  |
+|Associated L1 scale DB key: | scales_2023_02_16 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 6 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Muon algorithm triggers: | 6 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Muon algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_4_8 ][L1_SingleMu_index_4_8]]   | L1_SingleMu_index_4_8  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_18_25 ][L1_SingleMu_index_18_25]]   | L1_SingleMu_index_18_25  | 1 |  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_38_43 ][L1_SingleMu_index_38_43]]   | L1_SingleMu_index_38_43  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_61_66 ][L1_SingleMu_index_61_66]]   | L1_SingleMu_index_61_66  | 3 |  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_80_85 ][L1_SingleMu_index_80_85]]   | L1_SingleMu_index_80_85  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_100_107 ][L1_SingleMu_index_100_107]]   | L1_SingleMu_index_100_107  | 5 |  |
+!Muon algorithm triggers: 6 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_4_8 ][L1_SingleMu_index_4_8]]   |L1_SingleMu_index_4_8 |0 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_18_25 ][L1_SingleMu_index_18_25]]   |L1_SingleMu_index_18_25 |1 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_38_43 ][L1_SingleMu_index_38_43]]   |L1_SingleMu_index_38_43 |2 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_61_66 ][L1_SingleMu_index_61_66]]   |L1_SingleMu_index_61_66 |3 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_80_85 ][L1_SingleMu_index_80_85]]   |L1_SingleMu_index_80_85 |4 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_100_107 ][L1_SingleMu_index_100_107]]   |L1_SingleMu_index_100_107 |5 |0 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
