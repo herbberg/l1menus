@@ -1,0 +1,83 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_adt_topo_test.html" }%
+
+---+!! !L1Menu_adt_topo_test
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_adt_topo_test | 0.11 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_adt_topo_test |
+|Menu UUID: | 9ef0538d-0129-4466-8747-72b708553369 |
+|Firmware UUID: | faa46c83-257e-493e-8140-08d3433cd861  |
+|Associated L1 scale DB key: | scales_2023_02_16 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 9 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !External algorithm triggers: | 9 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !External algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_25 ][L1_TOPO_25]]   | L1_TOPO_25  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_154 ][L1_TOPO_154]]   | L1_TOPO_154  | 1 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_904 ][L1_TOPO_904]]   | L1_TOPO_904  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_1007 ][L1_TOPO_1007]]   | L1_TOPO_1007  | 3 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_1023 ][L1_TOPO_1023]]   | L1_TOPO_1023  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_20000 ][L1_ADT_20000]]   | L1_ADT_20000  | 94 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_4000 ][L1_ADT_4000]]   | L1_ADT_4000  | 95 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_400 ][L1_ADT_400]]   | L1_ADT_400  | 103 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_80 ][L1_ADT_80]]   | L1_ADT_80  | 108 |  |
+!External algorithm triggers: 9 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_25 ][L1_TOPO_25]]   |L1_TOPO_25 |0 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_154 ][L1_TOPO_154]]   |L1_TOPO_154 |1 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_904 ][L1_TOPO_904]]   |L1_TOPO_904 |2 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_1007 ][L1_TOPO_1007]]   |L1_TOPO_1007 |3 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_1023 ][L1_TOPO_1023]]   |L1_TOPO_1023 |4 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_20000 ][L1_ADT_20000]]   |L1_ADT_20000 |94 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_4000 ][L1_ADT_4000]]   |L1_ADT_4000 |95 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_400 ][L1_ADT_400]]   |L1_ADT_400 |103 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_80 ][L1_ADT_80]]   |L1_ADT_80 |108 |3 |
+
+
+<p style="page-break-before: always">&nbsp;</p>

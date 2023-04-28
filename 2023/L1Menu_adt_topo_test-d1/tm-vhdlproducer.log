@@ -1,0 +1,225 @@
+2023-04-28 09:25:42 INFO : distributing menu...
+2023-04-28 09:25:42 INFO : loading resource information from JSON: /home/bergauer/github/herbberg/tm-vhdlproducer/tmVhdlProducer/config/resource_default.json
+2023-04-28 09:25:42 INFO : :: listing resources...
+2023-04-28 09:25:42 INFO : thresholds:
+2023-04-28 09:25:42 INFO :  * floor: brams=12.79%, sliceLUTs=9.03%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * ceiling: brams=100.00%, sliceLUTs=90.00%, processors=100.00%
+2023-04-28 09:25:42 INFO : instances:
+2023-04-28 09:25:42 INFO :  * MuonCondition[ muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * MuonCondition[ muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.08%, processors=0.33%
+2023-04-28 09:25:42 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * MuonCondition[ muon, muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * MuonCondition[ muon, muon, muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * CaloCondition[ calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * CaloCondition[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.05%, processors=0.33%
+2023-04-28 09:25:42 INFO :  * CaloCondition[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * CaloCondition[ calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.39%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * CaloConditionOvRm[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * CaloConditionOvRm[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.13%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.05%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * CorrelationCondition[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * CorrelationCondition[ calo, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * CorrelationCondition[ calo, esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * CorrelationCondition[ muon, esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * CorrelationCondition[ muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * massupt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * Correlation3Condition[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * Correlation3Condition[ muon, muon, muon ]: brams=0.00%, sliceLUTs=0.19%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.06%
+2023-04-28 09:25:42 INFO :  * CorrelationConditionOvRm[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * CorrelationConditionOvRm[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.15%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * EsumsCondition[ esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * MinBiasCondition[ bias ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * ExternalCondition[ ext ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * ExternalCondition[ adt ]: brams=0.00%, sliceLUTs=1.95%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * ExternalCondition[ topo ]: brams=0.00%, sliceLUTs=1.15%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * TowerCountCondition[ count ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * AnomalyDetectionTrigger[ adt ]: brams=0.00%, sliceLUTs=1.95%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * ZDCPlus[ count ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * ZDCMinus[ count ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO :  * SignalCondition[ signal ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2023-04-28 09:25:42 INFO : |---------------------------------------------------------------------------------------|
+2023-04-28 09:25:42 INFO : |                                                                                       |
+2023-04-28 09:25:42 INFO : | Algorithms sorted by payload (descending)                                             |
+2023-04-28 09:25:42 INFO : |                                                                                       |
+2023-04-28 09:25:42 INFO : |---------------------------------------------------------------------------------------|
+2023-04-28 09:25:42 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2023-04-28 09:25:42 INFO : | Index | BRAMs   | SliceLUTs | DSPs    | Name                                          |
+2023-04-28 09:25:42 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2023-04-28 09:25:42 INFO : |     3 |  0.000% |    1.154% |  0.000% | L1_TOPO_1007                                  |
+2023-04-28 09:25:42 INFO : |     4 |  0.000% |    1.154% |  0.000% | L1_TOPO_1023                                  |
+2023-04-28 09:25:42 INFO : |     1 |  0.000% |    1.154% |  0.000% | L1_TOPO_154                                   |
+2023-04-28 09:25:42 INFO : |     0 |  0.000% |    1.154% |  0.000% | L1_TOPO_25                                    |
+2023-04-28 09:25:42 INFO : |     2 |  0.000% |    1.154% |  0.000% | L1_TOPO_904                                   |
+2023-04-28 09:25:42 INFO : |    94 |  0.000% |    1.948% |  0.000% | L1_ADT_20000                                  |
+2023-04-28 09:25:42 INFO : |   103 |  0.000% |    1.948% |  0.000% | L1_ADT_400                                    |
+2023-04-28 09:25:42 INFO : |    95 |  0.000% |    1.948% |  0.000% | L1_ADT_4000                                   |
+2023-04-28 09:25:42 INFO : |   108 |  0.000% |    1.948% |  0.000% | L1_ADT_80                                     |
+2023-04-28 09:25:42 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2023-04-28 09:25:42 INFO : |---------------------------------------------------------------------------------------|
+2023-04-28 09:25:42 INFO : distributing algorithms, shadow ratio: 0.0
+2023-04-28 09:25:42 INFO : starting algorithm distribution for 9 algorithms on 6 modules using shadow ratio of 0.0
+2023-04-28 09:25:42 INFO :  . adding L1_ADT_20000 (94) to module 0
+2023-04-28 09:25:42 INFO :  . adding L1_ADT_400 (103) to module 1
+2023-04-28 09:25:42 INFO :  . adding L1_ADT_4000 (95) to module 2
+2023-04-28 09:25:42 INFO :  . adding L1_ADT_80 (108) to module 3
+2023-04-28 09:25:42 INFO :  . adding L1_TOPO_1007 (3) to module 4
+2023-04-28 09:25:42 INFO :  . adding L1_TOPO_1023 (4) to module 5
+2023-04-28 09:25:42 INFO :  . adding L1_TOPO_154 (1) to module 4
+2023-04-28 09:25:42 INFO :  . adding L1_TOPO_25 (0) to module 5
+2023-04-28 09:25:42 INFO :  . adding L1_TOPO_904 (2) to module 0
+2023-04-28 09:25:42 INFO : |-----------------------------------------------------------------------------|
+2023-04-28 09:25:42 INFO : |                                                                             |
+2023-04-28 09:25:42 INFO : | Detailed distribition on 6 modules, shadow ratio: 0.0                       |
+2023-04-28 09:25:42 INFO : |                                                                             |
+2023-04-28 09:25:42 INFO : |------------|----------------------------------------------------------------|
+2023-04-28 09:25:42 INFO : | Module     | Algorithm                                                      |
+2023-04-28 09:25:42 INFO : | ID | Index | Index | Name                                                   |
+2023-04-28 09:25:42 INFO : |----|-------|-------|--------------------------------------------------------|
+2023-04-28 09:25:42 INFO : |  0 |     0 |    94 | L1_ADT_20000                                           |
+2023-04-28 09:25:42 INFO : |  0 |     1 |     2 | L1_TOPO_904                                            |
+2023-04-28 09:25:42 INFO : |  1 |     0 |   103 | L1_ADT_400                                             |
+2023-04-28 09:25:42 INFO : |  2 |     0 |    95 | L1_ADT_4000                                            |
+2023-04-28 09:25:42 INFO : |  3 |     0 |   108 | L1_ADT_80                                              |
+2023-04-28 09:25:42 INFO : |  4 |     0 |     3 | L1_TOPO_1007                                           |
+2023-04-28 09:25:42 INFO : |  4 |     1 |     1 | L1_TOPO_154                                            |
+2023-04-28 09:25:42 INFO : |  5 |     0 |     4 | L1_TOPO_1023                                           |
+2023-04-28 09:25:42 INFO : |  5 |     1 |     0 | L1_TOPO_25                                             |
+2023-04-28 09:25:42 INFO : |----|-------|-------|--------------------------------------------------------|
+2023-04-28 09:25:42 INFO : |-----------------------------------------------------------------------------|
+2023-04-28 09:25:42 INFO : |                                                                             |
+2023-04-28 09:25:42 INFO : | Condition distribution, sorted by weight (descending)                       |
+2023-04-28 09:25:42 INFO : |                                                                             |
+2023-04-28 09:25:42 INFO : |-----------------------------------------------------------------------------|
+2023-04-28 09:25:42 INFO : |-----------------------------------------------------------------------------------|
+2023-04-28 09:25:42 INFO : | Name                                             | Modules | sLUTs | DSPs | BRAMs |
+2023-04-28 09:25:42 INFO : |--------------------------------------------------|---------|-------|------|-------|
+2023-04-28 09:25:42 INFO : | SingleEXT_i0                                     | 0       | 8440  | 0    | 0     |
+2023-04-28 09:25:42 INFO : | SingleEXT_i1                                     | 2       | 8440  | 0    | 0     |
+2023-04-28 09:25:42 INFO : | SingleEXT_i2                                     | 1       | 8440  | 0    | 0     |
+2023-04-28 09:25:42 INFO : | SingleEXT_i3                                     | 3       | 8440  | 0    | 0     |
+2023-04-28 09:25:42 INFO : | SingleEXT_i4                                     | 5       | 5000  | 0    | 0     |
+2023-04-28 09:25:42 INFO : | SingleEXT_i5                                     | 4       | 5000  | 0    | 0     |
+2023-04-28 09:25:42 INFO : | SingleEXT_i6                                     | 0       | 5000  | 0    | 0     |
+2023-04-28 09:25:42 INFO : | SingleEXT_i7                                     | 4       | 5000  | 0    | 0     |
+2023-04-28 09:25:42 INFO : | SingleEXT_i8                                     | 5       | 5000  | 0    | 0     |
+2023-04-28 09:25:42 INFO : |--------------------------------------------------|---------|-------|------|-------|
+2023-04-28 09:25:42 INFO : |--------------------------------------------------------------------------------------|
+2023-04-28 09:25:42 INFO : |                                                                                      |
+2023-04-28 09:25:42 INFO : | Summary for distribution on 6 modules, shadow ratio: 0.0                             |
+2023-04-28 09:25:42 INFO : |                                                                                      |
+2023-04-28 09:25:42 INFO : |-------------------------------------|------------------------------------------------|
+2023-04-28 09:25:42 INFO : |                                     |                    Payload                     |
+2023-04-28 09:25:42 INFO : |-------------------------------------|------------------------------------------------|
+2023-04-28 09:25:42 INFO : |              Module                 |   SliceLUTs    |     BRAMs     |     DSPs      |
+2023-04-28 09:25:42 INFO : |-------------------------------------|------------------------------------------------|
+2023-04-28 09:25:42 INFO : | ID | Algorithms | Conditions | Rel. | Value  |  [%]  | Value |  [%]  | Value |  [%]  |
+2023-04-28 09:25:42 INFO : |----|------------|------------|------|--------|-------|-------|-------|-------|-------|
+2023-04-28 09:25:42 INFO : |  0 |          2 |          2 | 1.00 |  74183 | 17.12 |   608 | 41.36 |     0 |  0.00 |
+2023-04-28 09:25:42 INFO : |  1 |          1 |          1 | 1.00 |  68872 | 15.90 |   608 | 41.36 |     0 |  0.00 |
+2023-04-28 09:25:42 INFO : |  2 |          1 |          1 | 1.00 |  68872 | 15.90 |   608 | 41.36 |     0 |  0.00 |
+2023-04-28 09:25:42 INFO : |  3 |          1 |          1 | 1.00 |  68872 | 15.90 |   608 | 41.36 |     0 |  0.00 |
+2023-04-28 09:25:42 INFO : |  4 |          2 |          2 | 1.00 |  70743 | 16.33 |   608 | 41.36 |     0 |  0.00 |
+2023-04-28 09:25:42 INFO : |  5 |          2 |          2 | 1.00 |  70743 | 16.33 |   608 | 41.36 |     0 |  0.00 |
+2023-04-28 09:25:42 INFO : |----|------------|------------|------|--------|-------|-------|-------|-------|-------|
+2023-04-28 09:25:42 INFO : writing VHDL modules...
+2023-04-28 09:25:42 INFO : writing 9 algorithms to 6 module(s)
+2023-04-28 09:25:42 INFO : writing output for module: 0
+2023-04-28 09:25:42 INFO : algo_index.vhd          : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_0/src/algo_index.vhd
+2023-04-28 09:25:42 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_0/src/gtl_module_signals.vhd
+2023-04-28 09:25:43 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_0/src/gtl_module_instances.vhd
+2023-04-28 09:25:43 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_0/src/ugt_constants.vhd
+2023-04-28 09:25:43 INFO : writing output for module: 1
+2023-04-28 09:25:43 INFO : algo_index.vhd          : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_1/src/algo_index.vhd
+2023-04-28 09:25:43 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_1/src/gtl_module_signals.vhd
+2023-04-28 09:25:43 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_1/src/gtl_module_instances.vhd
+2023-04-28 09:25:43 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_1/src/ugt_constants.vhd
+2023-04-28 09:25:43 INFO : writing output for module: 2
+2023-04-28 09:25:43 INFO : algo_index.vhd          : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_2/src/algo_index.vhd
+2023-04-28 09:25:43 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_2/src/gtl_module_signals.vhd
+2023-04-28 09:25:43 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_2/src/gtl_module_instances.vhd
+2023-04-28 09:25:43 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_2/src/ugt_constants.vhd
+2023-04-28 09:25:43 INFO : writing output for module: 3
+2023-04-28 09:25:43 INFO : algo_index.vhd          : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_3/src/algo_index.vhd
+2023-04-28 09:25:43 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_3/src/gtl_module_signals.vhd
+2023-04-28 09:25:43 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_3/src/gtl_module_instances.vhd
+2023-04-28 09:25:43 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_3/src/ugt_constants.vhd
+2023-04-28 09:25:43 INFO : writing output for module: 4
+2023-04-28 09:25:43 INFO : algo_index.vhd          : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_4/src/algo_index.vhd
+2023-04-28 09:25:43 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_4/src/gtl_module_signals.vhd
+2023-04-28 09:25:43 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_4/src/gtl_module_instances.vhd
+2023-04-28 09:25:43 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_4/src/ugt_constants.vhd
+2023-04-28 09:25:43 INFO : writing output for module: 5
+2023-04-28 09:25:43 INFO : algo_index.vhd          : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_5/src/algo_index.vhd
+2023-04-28 09:25:43 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_5/src/gtl_module_signals.vhd
+2023-04-28 09:25:43 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_5/src/gtl_module_instances.vhd
+2023-04-28 09:25:43 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_adt_topo_test-d1/vhdl/module_5/src/ugt_constants.vhd
+2023-04-28 09:25:43 INFO : writing updated XML file /home/bergauer/L1Menu_adt_topo_test.xml
+2023-04-28 09:25:43 INFO : reading source XML menu file /home/bergauer/L1Menu_adt_topo_test.xml
+2023-04-28 09:25:43 INFO : processing menu "L1Menu_adt_topo_test" ... 
+2023-04-28 09:25:43 INFO : updating menu information...
+2023-04-28 09:25:43 INFO : uuid_menu     : 9ef0538d-0129-4466-8747-72b708553369
+2023-04-28 09:25:43 INFO : uuid_firmware : faa46c83-257e-493e-8140-08d3433cd861
+2023-04-28 09:25:43 INFO : n_modules     : 6
+2023-04-28 09:25:43 INFO : writing target XML menu file /home/bergauer/L1Menu_adt_topo_test-d1/xml/L1Menu_adt_topo_test-d1.xml
+2023-04-28 09:25:44 INFO : generating menu documentation...
+2023-04-28 09:25:44 INFO : writing HTML documentation /home/bergauer/L1Menu_adt_topo_test-d1/xml/L1Menu_adt_topo_test-d1.xml
+2023-04-28 09:25:44 INFO : writing TWIKI page template /home/bergauer/L1Menu_adt_topo_test-d1/xml/L1Menu_adt_topo_test-d1.xml
+2023-04-28 09:25:45 INFO : patching filenames...
+2023-04-28 09:25:45 INFO : /home/bergauer/L1Menu_adt_topo_test-d1/doc/L1Menu_adt_topo_test.html --> /home/bergauer/L1Menu_adt_topo_test-d1/doc/L1Menu_adt_topo_test-d1.html
+2023-04-28 09:25:45 INFO : /home/bergauer/L1Menu_adt_topo_test-d1/doc/L1Menu_adt_topo_test.twiki --> /home/bergauer/L1Menu_adt_topo_test-d1/doc/L1Menu_adt_topo_test-d1.twiki
+2023-04-28 09:25:45 INFO : done.
