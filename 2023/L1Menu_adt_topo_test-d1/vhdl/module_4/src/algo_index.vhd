@@ -1,0 +1,32 @@
+-- ========================================================
+-- from VHDL producer:
+
+-- Module ID: 4
+
+-- Name of L1 Trigger Menu:
+-- L1Menu_adt_topo_test
+
+-- Unique ID of L1 Trigger Menu:
+-- 9ef0538d-0129-4466-8747-72b708553369
+
+-- Unique ID of firmware implementation:
+-- faa46c83-257e-493e-8140-08d3433cd861
+
+-- Scale set:
+-- scales_2023_02_16
+
+-- VHDL producer version
+-- v2.14.0
+
+-- tmEventSetup version
+-- v0.11.2
+
+-- HB 2016-09-16: constants for algo_mapping_rop.
+type global_index_array is array (0 to NR_ALGOS-1) of integer;
+constant global_index: global_index_array := (
+          3, -- module_index: 0, name: L1_TOPO_1007
+          1, -- module_index: 1, name: L1_TOPO_154
+    others => 0
+);
+
+-- ========================================================

@@ -1,0 +1,17 @@
+{
+  "firmware_uuid" : "bbf60740-f204-4bf5-92f4-ff465dd75c46",
+  "menu_uuid"     : "a5d36be9-441a-4f48-9ebe-00a5e048f051",
+  "n_modules"     : 6,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_TOPO_25", 0, 5, 1],
+    ["L1_TOPO_154", 1, 4, 1],
+    ["L1_TOPO_904", 2, 0, 1],
+    ["L1_TOPO_1007", 3, 4, 0],
+    ["L1_TOPO_1023", 4, 5, 0],
+    ["L1_ADT_20000", 94, 0, 0],
+    ["L1_ADT_4000", 95, 2, 0],
+    ["L1_ADT_400", 103, 1, 0],
+    ["L1_ADT_80", 108, 3, 0]
+  ]
+}

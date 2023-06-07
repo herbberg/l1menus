@@ -1,0 +1,21 @@
+{
+  "firmware_uuid" : "d3f20e01-a22f-46d2-b314-c95247e5ac55",
+  "menu_uuid"     : "36a2b4c9-da1a-4698-be00-93a32f4e85dc",
+  "n_modules"     : 6,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_ADT_20000_ext", 0, 1, 0],
+    ["L1_ADT_4000_ext", 1, 4, 0],
+    ["L1_ADT_400_ext", 2, 5, 0],
+    ["L1_ADT_80_ext", 3, 1, 1],
+    ["L1_ADT_20000", 4, 0, 0],
+    ["L1_ADT_4000", 5, 3, 0],
+    ["L1_ADT_400", 6, 2, 0],
+    ["L1_ADT_80", 7, 0, 1],
+    ["L1_SingleMuShower_TwoLoose", 8, 5, 1],
+    ["L1_ZdcPlus_128", 9, 4, 1],
+    ["L1_ZdcMinus_60", 10, 3, 1],
+    ["L1_TOTEM_1", 11, 5, 2],
+    ["L1_SingleMu_index_4_8", 12, 2, 1]
+  ]
+}

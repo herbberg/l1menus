@@ -10,7 +10,7 @@
 -- 36a2b4c9-da1a-4698-be00-93a32f4e85dc
 
 -- Unique ID of firmware implementation:
--- e7cccf2f-9e82-4496-b7e6-fc4db209b1ff
+-- 2829c986-2134-4a61-aaa5-4beffb5827dd
 
 -- Scale set:
 -- scales_2023_02_16
@@ -19,15 +19,24 @@
 -- v2.14.0
 
 -- tmEventSetup version
--- v0.11.0
+-- v0.11.1
 
 -- ========================================================
 -- Instantiations of conditions
 --
--- Anomaly detection instantiation
+cond_zdc_minus_i10_i: entity work.zdc_condition
+    generic map(
+        count_threshold => X"003C"
+    )
+    port map(
+        lhc_clk,
+        bx_data.zdcm(2),
+        condition_o => zdc_minus_i10
+    );
 
-cond_anomaly_detection_trigger_i2_i: entity work.adt_wrapper
-    generic map(false, 400)
+-- EXT_ADT_4000
+cond_single_ext_i2_i: entity work.adt_wrapper
+    generic map(false, 4000)
     port map(
         lhc_clk,
         bx_data.mu(2),
@@ -39,16 +48,19 @@ cond_anomaly_detection_trigger_i2_i: entity work.adt_wrapper
         bx_data.etm(2),
         bx_data.htm(2),
         bx_data.etmhf(2),
-        anomaly_detection_trigger_i2
+        single_ext_i2
     );
-
 
 -- ========================================================
 -- Instantiations of algorithms
 
--- 2 L1_Adt_400 : ADT[ADT-ASCORE_400]
-l1_adt_400 <= anomaly_detection_trigger_i2;
-algo(0) <= l1_adt_400;
+-- 7 L1_ZdcMinus_60 : ZDCM60
+l1_zdc_minus_60 <= zdc_minus_i10;
+algo(1) <= l1_zdc_minus_60;
+
+-- 9 L1_ADT_4000 : EXT_ADT_4000
+l1_adt_4000 <= single_ext_i2;
+algo(0) <= l1_adt_4000;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.

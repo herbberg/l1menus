@@ -10,7 +10,7 @@
 -- 36a2b4c9-da1a-4698-be00-93a32f4e85dc
 
 -- Unique ID of firmware implementation:
--- e7cccf2f-9e82-4496-b7e6-fc4db209b1ff
+-- 2829c986-2134-4a61-aaa5-4beffb5827dd
 
 -- Scale set:
 -- scales_2023_02_16
@@ -19,51 +19,40 @@
 -- v2.14.0
 
 -- tmEventSetup version
--- v0.11.0
+-- v0.11.1
 
 -- ========================================================
 -- Instantiations of conditions
 --
-cond_single_mu_i4_i: entity work.comb_conditions
-    generic map(
--- no slice requirements
--- object cuts
-        pt_thresholds_obj1 => (X"0001", X"0000", X"0000", X"0000"),
-        nr_idx_windows_obj1 => (1, 0, 0, 0),
-        idx_w1_upper_limits_obj1 => (X"0008", X"0000", X"0000", X"0000"),
-        idx_w1_lower_limits_obj1 => (X"0004", X"0000", X"0000", X"0000"),
--- number of objects and type
-        nr_obj1 => NR_MU_OBJECTS,
-        type_obj1 => MU_TYPE,
-        nr_templates => 1
-    )
+cond_anomaly_detection_trigger_i5_i: entity work.adt_wrapper
+    generic map(false, 400)
     port map(
         lhc_clk,
-        obj1_muon => bx_data. mu(2),
-        condition_o => single_mu_i4
+        bx_data.mu(2),
+        bx_data.eg(2),
+        bx_data.jet(2),
+        bx_data.tau(2),
+        bx_data.ett(2),
+        bx_data.htt(2),
+        bx_data.etm(2),
+        bx_data.htm(2),
+        bx_data.etmhf(2),
+        anomaly_detection_trigger_i5
     );
 
-cond_zdc_minus_i7_i: entity work.zdc_condition
-    generic map(
-        count_threshold => X"003C"
-    )
-    port map(
-        lhc_clk,
-        bx_data.zdcm(2),
-        condition_o => zdc_minus_i7
-    );
-
+-- External condition assignment
+single_ext_i0 <= bx_data.ext_cond(2)(40); -- EXT_TOTEM_1
 
 -- ========================================================
 -- Instantiations of algorithms
 
--- 4 L1_SingleMu_index_4_8 : MU0[MU-INDEX_4_8]
-l1_single_mu_index_4_8 <= single_mu_i4;
-algo(1) <= l1_single_mu_index_4_8;
+-- 2 L1_Adt_400 : ADT[ADT-ASCORE_400]
+l1_adt_400 <= anomaly_detection_trigger_i5;
+algo(0) <= l1_adt_400;
 
--- 7 L1_ZdcMinus_60 : ZDCM60
-l1_zdc_minus_60 <= zdc_minus_i7;
-algo(0) <= l1_zdc_minus_60;
+-- 10 L1_TOTEM_1 : EXT_TOTEM_1
+l1_totem_1 <= single_ext_i0;
+algo(1) <= l1_totem_1;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.

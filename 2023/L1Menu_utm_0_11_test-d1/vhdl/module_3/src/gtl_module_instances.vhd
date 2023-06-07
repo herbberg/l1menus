@@ -10,7 +10,7 @@
 -- 36a2b4c9-da1a-4698-be00-93a32f4e85dc
 
 -- Unique ID of firmware implementation:
--- e7cccf2f-9e82-4496-b7e6-fc4db209b1ff
+-- 2829c986-2134-4a61-aaa5-4beffb5827dd
 
 -- Scale set:
 -- scales_2023_02_16
@@ -19,15 +19,13 @@
 -- v2.14.0
 
 -- tmEventSetup version
--- v0.11.0
+-- v0.11.1
 
 -- ========================================================
 -- Instantiations of conditions
 --
--- Anomaly detection instantiation
-
-cond_anomaly_detection_trigger_i3_i: entity work.adt_wrapper
-    generic map(false, 80)
+cond_anomaly_detection_trigger_i4_i: entity work.adt_wrapper
+    generic map(false, 3999)
     port map(
         lhc_clk,
         bx_data.mu(2),
@@ -39,16 +37,22 @@ cond_anomaly_detection_trigger_i3_i: entity work.adt_wrapper
         bx_data.etm(2),
         bx_data.htm(2),
         bx_data.etmhf(2),
-        anomaly_detection_trigger_i3
+        anomaly_detection_trigger_i4
     );
+
+muon_shower2_i8 <= bx_data.mus2(2);
 
 
 -- ========================================================
 -- Instantiations of algorithms
 
--- 3 L1_Adt_80 : ADT[ADT-ASCORE_80]
-l1_adt_80 <= anomaly_detection_trigger_i3;
-algo(0) <= l1_adt_80;
+-- 1 L1_Adt_3999 : ADT[ADT-ASCORE_3999]
+l1_adt_3999 <= anomaly_detection_trigger_i4;
+algo(0) <= l1_adt_3999;
+
+-- 5 L1_SingleMuShower_TwoLoose : MUS2
+l1_single_mu_shower_two_loose <= muon_shower2_i8;
+algo(1) <= l1_single_mu_shower_two_loose;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.

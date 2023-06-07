@@ -1,0 +1,103 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_utm_0_11_test_v3.html" }%
+
+---+!! !L1Menu_utm_0_11_test_v3
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_utm_0_11_test_v3 | 0.11 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_utm_0_11_test_v3 |
+|Menu UUID: | 36a2b4c9-da1a-4698-be00-93a32f4e85dc |
+|Firmware UUID: | d3f20e01-a22f-46d2-b314-c95247e5ac55  |
+|Associated L1 scale DB key: | scales_2023_02_16 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 13 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Muon algorithm triggers: | 1 |
+      | !Tower Count algorithm triggers: | 2 |
+      | !External algorithm triggers: | 5 |
+      | !Signal algorithm triggers: | 5 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Muon algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_4_8 ][L1_SingleMu_index_4_8]]   | L1_SingleMu_index_4_8  | 12 |  |
+!Muon algorithm triggers: 1 bits defined
+---++++ !Tower Count algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_ZdcPlus_128 ][L1_ZdcPlus_128]]   | L1_ZdcPlus_128  | 9 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ZdcMinus_60 ][L1_ZdcMinus_60]]   | L1_ZdcMinus_60  | 10 |  |
+!Tower Count algorithm triggers: 2 bits defined
+---++++ !External algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_20000_ext ][L1_ADT_20000_ext]]   | L1_ADT_20000_ext  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_4000_ext ][L1_ADT_4000_ext]]   | L1_ADT_4000_ext  | 1 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_400_ext ][L1_ADT_400_ext]]   | L1_ADT_400_ext  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_80_ext ][L1_ADT_80_ext]]   | L1_ADT_80_ext  | 3 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TOTEM_1 ][L1_TOTEM_1]]   | L1_TOTEM_1  | 11 |  |
+!External algorithm triggers: 5 bits defined
+---++++ !Signal algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_20000 ][L1_ADT_20000]]   | L1_ADT_20000  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_4000 ][L1_ADT_4000]]   | L1_ADT_4000  | 5 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_400 ][L1_ADT_400]]   | L1_ADT_400  | 6 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_80 ][L1_ADT_80]]   | L1_ADT_80  | 7 |  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMuShower_TwoLoose ][L1_SingleMuShower_TwoLoose]]   | L1_SingleMuShower_TwoLoose  | 8 |  |
+!Signal algorithm triggers: 5 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_20000_ext ][L1_ADT_20000_ext]]   |L1_ADT_20000_ext |0 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_4000_ext ][L1_ADT_4000_ext]]   |L1_ADT_4000_ext |1 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_400_ext ][L1_ADT_400_ext]]   |L1_ADT_400_ext |2 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_80_ext ][L1_ADT_80_ext]]   |L1_ADT_80_ext |3 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_20000 ][L1_ADT_20000]]   |L1_ADT_20000 |4 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_4000 ][L1_ADT_4000]]   |L1_ADT_4000 |5 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_400 ][L1_ADT_400]]   |L1_ADT_400 |6 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_80 ][L1_ADT_80]]   |L1_ADT_80 |7 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMuShower_TwoLoose ][L1_SingleMuShower_TwoLoose]]   |L1_SingleMuShower_TwoLoose |8 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_ZdcPlus_128 ][L1_ZdcPlus_128]]   |L1_ZdcPlus_128 |9 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_ZdcMinus_60 ][L1_ZdcMinus_60]]   |L1_ZdcMinus_60 |10 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_TOTEM_1 ][L1_TOTEM_1]]   |L1_TOTEM_1 |11 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu_index_4_8 ][L1_SingleMu_index_4_8]]   |L1_SingleMu_index_4_8 |12 |2 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
