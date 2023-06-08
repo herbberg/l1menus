@@ -7,10 +7,10 @@
 -- L1Menu_CollisionsHeavyIons2022_v1_1_0_utm_0_11_zdc
 
 -- Unique ID of L1 Trigger Menu:
--- c1d5a598-16e4-45bf-8da2-398033004599
+-- e3e2c317-bee5-4ffa-8bd7-765abf589aa1
 
 -- Unique ID of firmware implementation:
--- 57c2bcc2-8b13-46b5-b0fc-8673f5867e06
+-- b54ce0e7-99c8-4d78-ace7-3e12ebd64fc5
 
 -- Scale set:
 -- scales_2023_02_16
@@ -158,19 +158,19 @@ algo(8) <= l1_bptx_minus;
 
 -- 13 L1_BptxMinus_NotBptxPlus : EXT_BPTX_B2_VME AND  NOT EXT_BPTX_B1_VME
 l1_bptx_minus_not_bptx_plus <= single_ext_i12 and not single_ext_i13;
-algo(11) <= l1_bptx_minus_not_bptx_plus;
+algo(10) <= l1_bptx_minus_not_bptx_plus;
 
 -- 15 L1_BptxPlus : EXT_BPTX_B1_VME
 l1_bptx_plus <= single_ext_i13;
-algo(9) <= l1_bptx_plus;
+algo(11) <= l1_bptx_plus;
 
 -- 16 L1_BptxPlus_NotBptxMinus : EXT_BPTX_B1_VME AND  NOT EXT_BPTX_B2_VME
 l1_bptx_plus_not_bptx_minus <= single_ext_i13 and not single_ext_i12;
-algo(10) <= l1_bptx_plus_not_bptx_minus;
+algo(12) <= l1_bptx_plus_not_bptx_minus;
 
 -- 17 L1_BptxXOR : (EXT_BPTX_B1_VME AND ( NOT EXT_BPTX_B2_VME)) OR (EXT_BPTX_B2_VME AND ( NOT EXT_BPTX_B1_VME))
 l1_bptx_xor <= ( single_ext_i13 and ( not single_ext_i12 ) ) or ( single_ext_i12 and ( not single_ext_i13 ) );
-algo(12) <= l1_bptx_xor;
+algo(9) <= l1_bptx_xor;
 
 -- 33 L1_HTT120er : HTT120
 l1_htt120er <= single_htt_i35;

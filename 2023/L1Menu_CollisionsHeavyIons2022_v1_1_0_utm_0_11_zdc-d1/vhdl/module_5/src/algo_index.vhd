@@ -7,10 +7,10 @@
 -- L1Menu_CollisionsHeavyIons2022_v1_1_0_utm_0_11_zdc
 
 -- Unique ID of L1 Trigger Menu:
--- c1d5a598-16e4-45bf-8da2-398033004599
+-- e3e2c317-bee5-4ffa-8bd7-765abf589aa1
 
 -- Unique ID of firmware implementation:
--- 57c2bcc2-8b13-46b5-b0fc-8673f5867e06
+-- b54ce0e7-99c8-4d78-ace7-3e12ebd64fc5
 
 -- Scale set:
 -- scales_2023_02_16
@@ -33,10 +33,10 @@ constant global_index: global_index_array := (
           2, -- module_index: 6, name: L1_BPTX_AND_Ref3_VME
           7, -- module_index: 7, name: L1_BPTX_BeamGas_Ref2_VME
          12, -- module_index: 8, name: L1_BptxMinus
-         15, -- module_index: 9, name: L1_BptxPlus
-         16, -- module_index: 10, name: L1_BptxPlus_NotBptxMinus
-         13, -- module_index: 11, name: L1_BptxMinus_NotBptxPlus
-         17, -- module_index: 12, name: L1_BptxXOR
+         17, -- module_index: 9, name: L1_BptxXOR
+         13, -- module_index: 10, name: L1_BptxMinus_NotBptxPlus
+         15, -- module_index: 11, name: L1_BptxPlus
+         16, -- module_index: 12, name: L1_BptxPlus_NotBptxMinus
     others => 0
 );
 

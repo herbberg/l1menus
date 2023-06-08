@@ -7,10 +7,10 @@
 -- L1Menu_CollisionsHeavyIons2022_v1_1_0_utm_0_11_zdc
 
 -- Unique ID of L1 Trigger Menu:
--- c1d5a598-16e4-45bf-8da2-398033004599
+-- e3e2c317-bee5-4ffa-8bd7-765abf589aa1
 
 -- Unique ID of firmware implementation:
--- 57c2bcc2-8b13-46b5-b0fc-8673f5867e06
+-- b54ce0e7-99c8-4d78-ace7-3e12ebd64fc5
 
 -- Scale set:
 -- scales_2023_02_16
