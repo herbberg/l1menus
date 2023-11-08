@@ -41,6 +41,18 @@ cond_single_eg_i0_i: entity work.comb_conditions
         condition_o => single_eg_i0
     );
 
+cond_cicada_ad_i0_i: entity work.cicada_ad_hi_condition
+    generic map(
+        ad_requ => true,
+        ad_dec_thr => X"0123",
+        ad_int_thr => X"000a"
+    )
+    port map(
+        lhc_clk => lhc_clk,
+        ad_dec_i => bx_data.cicada_ad_dec(2),
+        ad_int_i => bx_data.cicada_ad_int(2),
+        ad_comp_o => cicada_ad_i0
+    );
 
 -- ========================================================
 -- Instantiations of algorithms
