@@ -1,0 +1,14 @@
+{
+  "firmware_uuid" : "bdd2a2ac-dd4c-4029-a458-4a077c9988b5",
+  "menu_uuid"     : "0cf00a60-7768-4152-bb84-6876899645a2",
+  "n_modules"     : 6,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_SingleEG3", 0, 0, 0],
+    ["L1_SingleEG5", 1, 1, 0],
+    ["L1_SingleJet35", 2, 2, 0],
+    ["L1_SingleJet60", 3, 3, 0],
+    ["L1_SingleMuOpen", 4, 5, 0],
+    ["L1_SingleMu3", 5, 4, 0]
+  ]
+}
