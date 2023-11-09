@@ -7,10 +7,10 @@
 -- L1Menu_Cidada_test_v1
 
 -- Unique ID of L1 Trigger Menu:
--- 0cf00a60-7768-4152-bb84-6876899645a2
+-- 2937c8c9-e811-45c5-aa8a-a5a99a51b269
 
 -- Unique ID of firmware implementation:
--- bdd2a2ac-dd4c-4029-a458-4a077c9988b5
+-- 98f090ae-286c-479f-880a-dab4fcfa691c
 
 -- Scale set:
 -- scales_2023_02_16
@@ -24,12 +24,12 @@
 -- ========================================================
 -- Instantiations of conditions
 --
-cond_single_jet_i3_i: entity work.comb_conditions
+cond_single_jet_i2_i: entity work.comb_conditions
     generic map(
 -- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
         slice_1_high_obj1 => 11,
 -- object cuts
-        pt_thresholds_obj1 => (X"0078", X"0000", X"0000", X"0000"),
+        pt_thresholds_obj1 => (X"0046", X"0000", X"0000", X"0000"),
 -- number of objects and type
         nr_obj1 => NR_JET_OBJECTS,
         type_obj1 => JET_TYPE,
@@ -38,16 +38,16 @@ cond_single_jet_i3_i: entity work.comb_conditions
     port map(
         lhc_clk,
         obj1_calo => bx_data.jet(2),
-        condition_o => single_jet_i3
+        condition_o => single_jet_i2
     );
 
 
 -- ========================================================
 -- Instantiations of algorithms
 
--- 3 L1_SingleJet60 : JET60
-l1_single_jet60 <= single_jet_i3;
-algo(0) <= l1_single_jet60;
+-- 2 L1_SingleJet35 : JET35
+l1_single_jet35 <= single_jet_i2;
+algo(0) <= l1_single_jet35;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.

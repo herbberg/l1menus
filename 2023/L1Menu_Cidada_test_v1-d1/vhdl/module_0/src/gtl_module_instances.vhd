@@ -7,10 +7,10 @@
 -- L1Menu_Cidada_test_v1
 
 -- Unique ID of L1 Trigger Menu:
--- 0cf00a60-7768-4152-bb84-6876899645a2
+-- 2937c8c9-e811-45c5-aa8a-a5a99a51b269
 
 -- Unique ID of firmware implementation:
--- bdd2a2ac-dd4c-4029-a458-4a077c9988b5
+-- 98f090ae-286c-479f-880a-dab4fcfa691c
 
 -- Scale set:
 -- scales_2023_02_16
@@ -24,28 +24,11 @@
 -- ========================================================
 -- Instantiations of conditions
 --
-cond_single_eg_i0_i: entity work.comb_conditions
-    generic map(
--- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
-        slice_1_high_obj1 => 11,
--- object cuts
-        pt_thresholds_obj1 => (X"0006", X"0000", X"0000", X"0000"),
--- number of objects and type
-        nr_obj1 => NR_EG_OBJECTS,
-        type_obj1 => EG_TYPE,
-        nr_templates => 1
-    )
-    port map(
-        lhc_clk,
-        obj1_calo => bx_data.eg(2),
-        condition_o => single_eg_i0
-    );
-
 cond_cicada_ad_i0_i: entity work.cicada_ad_hi_condition
     generic map(
         ad_requ => true,
-        ad_dec_thr => X"0123",
-        ad_int_thr => X"000a"
+        ad_dec_thr => X"0005",
+        ad_int_thr => X"0003"
     )
     port map(
         lhc_clk => lhc_clk,
@@ -57,12 +40,9 @@ cond_cicada_ad_i0_i: entity work.cicada_ad_hi_condition
 -- ========================================================
 -- Instantiations of algorithms
 
--- 0 L1_SingleEG3 : EG3
-l1_single_eg3 <= single_eg_i0;
-algo(0) <= l1_single_eg3;
--- 1 CICADA test
-l1_cicada_ad <= cicada_ad_i0;
-algo(1) <= l1_cicada_ad;
+-- 6 L1_Cicada_3p5
+l1_cicada_3p5 <= cicada_ad_i0;
+algo(0) <= l1_cicada_3p5;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.

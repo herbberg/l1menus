@@ -7,10 +7,10 @@
 -- L1Menu_Cidada_test_v1
 
 -- Unique ID of L1 Trigger Menu:
--- 0cf00a60-7768-4152-bb84-6876899645a2
+-- 2937c8c9-e811-45c5-aa8a-a5a99a51b269
 
 -- Unique ID of firmware implementation:
--- bdd2a2ac-dd4c-4029-a458-4a077c9988b5
+-- 98f090ae-286c-479f-880a-dab4fcfa691c
 
 -- Scale set:
 -- scales_2023_02_16
@@ -41,13 +41,34 @@ cond_single_mu_i4_i: entity work.comb_conditions
         condition_o => single_mu_i4
     );
 
+cond_single_mu_i5_i: entity work.comb_conditions
+    generic map(
+-- no slice requirements
+-- object cuts
+        pt_thresholds_obj1 => (X"0007", X"0000", X"0000", X"0000"),
+        qual_luts_obj1 => (X"F000", X"FFFF", X"FFFF", X"FFFF"),
+-- number of objects and type
+        nr_obj1 => NR_MU_OBJECTS,
+        type_obj1 => MU_TYPE,
+        nr_templates => 1
+    )
+    port map(
+        lhc_clk,
+        obj1_muon => bx_data. mu(2),
+        condition_o => single_mu_i5
+    );
+
 
 -- ========================================================
 -- Instantiations of algorithms
 
 -- 4 L1_SingleMuOpen : MU0[MU-QLTY_OPEN]
 l1_single_mu_open <= single_mu_i4;
-algo(0) <= l1_single_mu_open;
+algo(1) <= l1_single_mu_open;
+
+-- 5 L1_SingleMu3 : MU3[MU-QLTY_SNGL]
+l1_single_mu3 <= single_mu_i5;
+algo(0) <= l1_single_mu3;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.

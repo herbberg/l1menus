@@ -30,14 +30,14 @@ A complete description of the algorithm and technical trigger implementation is 
 ---+++ L1 menu identification
 
 |Menu Name: | !L1Menu_Cidada_test_v1 |
-|Menu UUID: | 0cf00a60-7768-4152-bb84-6876899645a2 |
-|Firmware UUID: | bdd2a2ac-dd4c-4029-a458-4a077c9988b5  |
+|Menu UUID: | 2937c8c9-e811-45c5-aa8a-a5a99a51b269 |
+|Firmware UUID: | 98f090ae-286c-479f-880a-dab4fcfa691c  |
 |Associated L1 scale DB key: | scales_2023_02_16 |
 
 
 ---+++ Summary
 
-   * Number of algorithm triggers: 6 defined.
+   * Number of algorithm triggers: 7 defined.
 
 Number of algorithm triggers per trigger group:
 
@@ -45,6 +45,7 @@ Number of algorithm triggers per trigger group:
       | !Muon algorithm triggers: | 2 |
       | !E/gamma algorithm triggers: | 2 |
       | !Jet algorithm triggers: | 2 |
+      | !Tau algorithm triggers: | 1 |
 
 <p style="page-break-before: always">&nbsp;</p>
 
@@ -66,6 +67,10 @@ Number of algorithm triggers per trigger group:
 |[[%GET{"REPORTER_URL"}%#L1_SingleJet35 ][L1_SingleJet35]]   | L1_SingleJet35  | 2 |  |
 |[[%GET{"REPORTER_URL"}%#L1_SingleJet60 ][L1_SingleJet60]]   | L1_SingleJet60  | 3 |  |
 !Jet algorithm triggers: 2 bits defined
+---++++ !Tau algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_Cicada_3p5 ][L1_Cicada_3p5]]   | L1_Cicada_3p5  | 6 |  |
+!Tau algorithm triggers: 1 bits defined
 
 
 
@@ -74,12 +79,13 @@ Number of algorithm triggers per trigger group:
 ---+++ List of algorithm triggers sorted by bits
 
 | *Algorithm* | *Alias* | *Bit number* | *Module Id* |
-|[[%GET{"REPORTER_URL"}%#L1_SingleEG3 ][L1_SingleEG3]]   |L1_SingleEG3 |0 |0 |
-|[[%GET{"REPORTER_URL"}%#L1_SingleEG5 ][L1_SingleEG5]]   |L1_SingleEG5 |1 |1 |
-|[[%GET{"REPORTER_URL"}%#L1_SingleJet35 ][L1_SingleJet35]]   |L1_SingleJet35 |2 |2 |
-|[[%GET{"REPORTER_URL"}%#L1_SingleJet60 ][L1_SingleJet60]]   |L1_SingleJet60 |3 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG3 ][L1_SingleEG3]]   |L1_SingleEG3 |0 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG5 ][L1_SingleEG5]]   |L1_SingleEG5 |1 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleJet35 ][L1_SingleJet35]]   |L1_SingleJet35 |2 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleJet60 ][L1_SingleJet60]]   |L1_SingleJet60 |3 |4 |
 |[[%GET{"REPORTER_URL"}%#L1_SingleMuOpen ][L1_SingleMuOpen]]   |L1_SingleMuOpen |4 |5 |
-|[[%GET{"REPORTER_URL"}%#L1_SingleMu3 ][L1_SingleMu3]]   |L1_SingleMu3 |5 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu3 ][L1_SingleMu3]]   |L1_SingleMu3 |5 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_Cicada_3p5 ][L1_Cicada_3p5]]   |L1_Cicada_3p5 |6 |0 |
 
 
 <p style="page-break-before: always">&nbsp;</p>

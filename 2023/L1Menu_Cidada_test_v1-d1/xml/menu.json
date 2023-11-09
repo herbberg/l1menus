@@ -1,14 +1,15 @@
 {
-  "firmware_uuid" : "bdd2a2ac-dd4c-4029-a458-4a077c9988b5",
-  "menu_uuid"     : "0cf00a60-7768-4152-bb84-6876899645a2",
+  "firmware_uuid" : "98f090ae-286c-479f-880a-dab4fcfa691c",
+  "menu_uuid"     : "2937c8c9-e811-45c5-aa8a-a5a99a51b269",
   "n_modules"     : 6,
   "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
   "algorithms"    : [
-    ["L1_SingleEG3", 0, 0, 0],
-    ["L1_SingleEG5", 1, 1, 0],
-    ["L1_SingleJet35", 2, 2, 0],
-    ["L1_SingleJet60", 3, 3, 0],
-    ["L1_SingleMuOpen", 4, 5, 0],
-    ["L1_SingleMu3", 5, 4, 0]
+    ["L1_SingleEG3", 0, 1, 0],
+    ["L1_SingleEG5", 1, 2, 0],
+    ["L1_SingleJet35", 2, 3, 0],
+    ["L1_SingleJet60", 3, 4, 0],
+    ["L1_SingleMuOpen", 4, 5, 1],
+    ["L1_SingleMu3", 5, 5, 0],
+    ["L1_Cicada_3p5", 6, 0, 0]
   ]
 }

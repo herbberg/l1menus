@@ -7,10 +7,10 @@
 -- L1Menu_Cidada_test_v1
 
 -- Unique ID of L1 Trigger Menu:
--- 0cf00a60-7768-4152-bb84-6876899645a2
+-- 2937c8c9-e811-45c5-aa8a-a5a99a51b269
 
 -- Unique ID of firmware implementation:
--- bdd2a2ac-dd4c-4029-a458-4a077c9988b5
+-- 98f090ae-286c-479f-880a-dab4fcfa691c
 
 -- Scale set:
 -- scales_2023_02_16
@@ -28,9 +28,9 @@
 -- Signal definition for muon charge correlations.
 
 -- Signal definition for conditions names
-    signal single_eg_i1 : std_logic;
+    signal single_eg_i0 : std_logic;
 
 -- Signal definition for algorithms names
-    signal l1_single_eg5 : std_logic;
+    signal l1_single_eg3 : std_logic;
 
 -- ========================================================
