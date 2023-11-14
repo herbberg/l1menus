@@ -27,7 +27,7 @@
 cond_cicada_ad_i0_i: entity work.cicada_ad_hi_condition
     generic map(
         ad_requ => true,
-        ad_dec_thr => X"0005",
+        ad_dec_thr => X"007f", -- = 0.500
         ad_int_thr => X"0003"
     )
     port map(
