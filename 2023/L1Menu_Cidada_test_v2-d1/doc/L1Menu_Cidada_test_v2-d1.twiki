@@ -1,0 +1,93 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_Cidada_test_v2.html" }%
+
+---+!! !L1Menu_Cidada_test_v2
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_Cidada_test_v2 | 0.11 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_Cidada_test_v2 |
+|Menu UUID: | ded9c4b7-1624-4694-93ed-c9e7bf41a550 |
+|Firmware UUID: | a6af76db-ec42-4888-8409-d2323ca95556  |
+|Associated L1 scale DB key: | scales_2023_02_16 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 8 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Muon algorithm triggers: | 2 |
+      | !E/gamma algorithm triggers: | 2 |
+      | !Jet algorithm triggers: | 2 |
+      | !Tau algorithm triggers: | 2 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Muon algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMuOpen ][L1_SingleMuOpen]]   | L1_SingleMuOpen  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu3 ][L1_SingleMu3]]   | L1_SingleMu3  | 5 |  |
+!Muon algorithm triggers: 2 bits defined
+---++++ !E/gamma algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG3 ][L1_SingleEG3]]   | L1_SingleEG3  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG5 ][L1_SingleEG5]]   | L1_SingleEG5  | 1 |  |
+!E/gamma algorithm triggers: 2 bits defined
+---++++ !Jet algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleJet35 ][L1_SingleJet35]]   | L1_SingleJet35  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleJet60 ][L1_SingleJet60]]   | L1_SingleJet60  | 3 |  |
+!Jet algorithm triggers: 2 bits defined
+---++++ !Tau algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_Cicada_3p5 ][L1_Cicada_3p5]]   | L1_Cicada_3p5  | 6 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Cicada_21p640625 ][L1_Cicada_21p640625]]   | L1_Cicada_21p640625  | 7 |  |
+!Tau algorithm triggers: 2 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG3 ][L1_SingleEG3]]   |L1_SingleEG3 |0 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG5 ][L1_SingleEG5]]   |L1_SingleEG5 |1 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleJet35 ][L1_SingleJet35]]   |L1_SingleJet35 |2 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleJet60 ][L1_SingleJet60]]   |L1_SingleJet60 |3 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMuOpen ][L1_SingleMuOpen]]   |L1_SingleMuOpen |4 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMu3 ][L1_SingleMu3]]   |L1_SingleMu3 |5 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_Cicada_3p5 ][L1_Cicada_3p5]]   |L1_Cicada_3p5 |6 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_Cicada_21p640625 ][L1_Cicada_21p640625]]   |L1_Cicada_21p640625 |7 |0 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
