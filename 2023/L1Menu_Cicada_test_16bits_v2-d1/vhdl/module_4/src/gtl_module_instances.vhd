@@ -10,7 +10,7 @@
 -- e50b8093-a248-4fd5-baf6-5b197178654a
 
 -- Unique ID of firmware implementation:
--- 165f7e18-0791-4886-aa3a-50e33e17f377
+-- 62d16def-def4-49df-a36a-08b0f2187b5f
 
 -- Scale set:
 -- scales_2023_12_14
@@ -26,7 +26,7 @@
 --
 cond_cicada_trigger_i3_i: entity work.cicada_condition
     generic map(
-        cscore => X"8E46",
+        cscore => X"8E46"
     )
     port map(
         lhc_clk => lhc_clk,
