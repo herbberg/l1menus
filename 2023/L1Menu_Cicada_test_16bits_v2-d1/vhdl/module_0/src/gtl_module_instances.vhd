@@ -10,7 +10,7 @@
 -- e50b8093-a248-4fd5-baf6-5b197178654a
 
 -- Unique ID of firmware implementation:
--- 62d16def-def4-49df-a36a-08b0f2187b5f
+-- 135454b6-48e3-4969-80de-8a65069838df
 
 -- Scale set:
 -- scales_2023_12_14
@@ -44,7 +44,7 @@ cond_anomaly_detection_trigger_i5_i: entity work.adt_wrapper
 -- ========================================================
 -- Instantiations of algorithms
 
--- 94 L1_Adt_20000 : ADT[ADT-ASCORE_20000]
+-- 4 L1_Adt_20000 : ADT[ADT-ASCORE_20000]
 l1_adt_20000 <= anomaly_detection_trigger_i5;
 algo(0) <= l1_adt_20000;
 

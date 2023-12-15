@@ -10,7 +10,7 @@
 -- e50b8093-a248-4fd5-baf6-5b197178654a
 
 -- Unique ID of firmware implementation:
--- 62d16def-def4-49df-a36a-08b0f2187b5f
+-- 135454b6-48e3-4969-80de-8a65069838df
 
 -- Scale set:
 -- scales_2023_12_14
@@ -48,7 +48,7 @@ cond_single_eg_i6_i: entity work.comb_conditions
 -- ========================================================
 -- Instantiations of algorithms
 
--- 159 L1_SingleEG8er2p5 : EG8[EG-ETA_2p52]
+-- 5 L1_SingleEG8er2p5 : EG8[EG-ETA_2p52]
 l1_single_eg8er2p5 <= single_eg_i6;
 algo(0) <= l1_single_eg8er2p5;
 
