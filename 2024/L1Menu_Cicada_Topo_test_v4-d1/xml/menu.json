@@ -1,0 +1,18 @@
+{
+  "firmware_uuid" : "2ef72758-9c33-49db-9fb0-950dec446556",
+  "menu_uuid"     : "e50b8093-a248-4fd5-baf6-5b197178654a",
+  "n_modules"     : 6,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_CICADA_4p273_and_3p0", 0, 5, 1],
+    ["L1_CICADA_5p273", 1, 5, 4],
+    ["L1_CICADA_142p273", 2, 5, 3],
+    ["L1_CICADA_10p023", 3, 5, 2],
+    ["L1_Adt_91", 4, 0, 0],
+    ["L1_SingleEG8er2p5", 5, 5, 0],
+    ["L1_TOPO_25", 6, 4, 0],
+    ["L1_TOPO_1006", 7, 2, 0],
+    ["L1_TOPO_1007", 8, 3, 0],
+    ["L1_Adt_92", 9, 1, 0]
+  ]
+}
