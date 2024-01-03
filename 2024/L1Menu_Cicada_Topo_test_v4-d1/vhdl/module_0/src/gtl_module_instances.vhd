@@ -10,7 +10,7 @@
 -- e50b8093-a248-4fd5-baf6-5b197178654a
 
 -- Unique ID of firmware implementation:
--- 2ef72758-9c33-49db-9fb0-950dec446556
+-- 77aeb023-0ba8-4f76-920d-188621641271
 
 -- Scale set:
 -- scales_2023_12_14
@@ -25,7 +25,7 @@
 -- Instantiations of conditions
 --
 cond_anomaly_detection_trigger_i5_i: entity work.adt_wrapper
-    generic map(false, 91)
+    generic map(false, 173)
     port map(
         lhc_clk,
         bx_data.mu(2),
@@ -44,9 +44,9 @@ cond_anomaly_detection_trigger_i5_i: entity work.adt_wrapper
 -- ========================================================
 -- Instantiations of algorithms
 
--- 4 L1_Adt_91 : ADT[ADT-ASCORE_91]
-l1_adt_91 <= anomaly_detection_trigger_i5;
-algo(0) <= l1_adt_91;
+-- 4 L1_Adt_173 : ADT[ADT-ASCORE_173]
+l1_adt_173 <= anomaly_detection_trigger_i5;
+algo(0) <= l1_adt_173;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.

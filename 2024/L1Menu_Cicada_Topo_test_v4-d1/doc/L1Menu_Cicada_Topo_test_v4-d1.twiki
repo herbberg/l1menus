@@ -31,7 +31,7 @@ A complete description of the algorithm and technical trigger implementation is 
 
 |Menu Name: | !L1Menu_Cicada_Topo_test_v4 |
 |Menu UUID: | e50b8093-a248-4fd5-baf6-5b197178654a |
-|Firmware UUID: | 2ef72758-9c33-49db-9fb0-950dec446556  |
+|Firmware UUID: | 77aeb023-0ba8-4f76-920d-188621641271  |
 |Associated L1 scale DB key: | scales_2023_12_14 |
 
 
@@ -64,11 +64,11 @@ Number of algorithm triggers per trigger group:
 |[[%GET{"REPORTER_URL"}%#L1_CICADA_5p273 ][L1_CICADA_5p273]]   | L1_CICADA_5p273  | 1 |  |
 |[[%GET{"REPORTER_URL"}%#L1_CICADA_142p273 ][L1_CICADA_142p273]]   | L1_CICADA_142p273  | 2 |  |
 |[[%GET{"REPORTER_URL"}%#L1_CICADA_10p023 ][L1_CICADA_10p023]]   | L1_CICADA_10p023  | 3 |  |
-|[[%GET{"REPORTER_URL"}%#L1_Adt_91 ][L1_Adt_91]]   | L1_Adt_91  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Adt_173 ][L1_Adt_173]]   | L1_Adt_173  | 4 |  |
 |[[%GET{"REPORTER_URL"}%#L1_TOPO_25 ][L1_TOPO_25]]   | L1_TOPO_25  | 6 |  |
 |[[%GET{"REPORTER_URL"}%#L1_TOPO_1006 ][L1_TOPO_1006]]   | L1_TOPO_1006  | 7 |  |
 |[[%GET{"REPORTER_URL"}%#L1_TOPO_1007 ][L1_TOPO_1007]]   | L1_TOPO_1007  | 8 |  |
-|[[%GET{"REPORTER_URL"}%#L1_Adt_92 ][L1_Adt_92]]   | L1_Adt_92  | 9 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Adt_174 ][L1_Adt_174]]   | L1_Adt_174  | 9 |  |
 !Signal algorithm triggers: 8 bits defined
 
 
@@ -82,12 +82,12 @@ Number of algorithm triggers per trigger group:
 |[[%GET{"REPORTER_URL"}%#L1_CICADA_5p273 ][L1_CICADA_5p273]]   |L1_CICADA_5p273 |1 |5 |
 |[[%GET{"REPORTER_URL"}%#L1_CICADA_142p273 ][L1_CICADA_142p273]]   |L1_CICADA_142p273 |2 |5 |
 |[[%GET{"REPORTER_URL"}%#L1_CICADA_10p023 ][L1_CICADA_10p023]]   |L1_CICADA_10p023 |3 |5 |
-|[[%GET{"REPORTER_URL"}%#L1_Adt_91 ][L1_Adt_91]]   |L1_Adt_91 |4 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_Adt_173 ][L1_Adt_173]]   |L1_Adt_173 |4 |0 |
 |[[%GET{"REPORTER_URL"}%#L1_SingleEG8er2p5 ][L1_SingleEG8er2p5]]   |L1_SingleEG8er2p5 |5 |5 |
 |[[%GET{"REPORTER_URL"}%#L1_TOPO_25 ][L1_TOPO_25]]   |L1_TOPO_25 |6 |4 |
 |[[%GET{"REPORTER_URL"}%#L1_TOPO_1006 ][L1_TOPO_1006]]   |L1_TOPO_1006 |7 |2 |
 |[[%GET{"REPORTER_URL"}%#L1_TOPO_1007 ][L1_TOPO_1007]]   |L1_TOPO_1007 |8 |3 |
-|[[%GET{"REPORTER_URL"}%#L1_Adt_92 ][L1_Adt_92]]   |L1_Adt_92 |9 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_Adt_174 ][L1_Adt_174]]   |L1_Adt_174 |9 |1 |
 
 
 <p style="page-break-before: always">&nbsp;</p>
