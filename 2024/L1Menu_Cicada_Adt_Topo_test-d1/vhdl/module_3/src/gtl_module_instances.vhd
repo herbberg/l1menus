@@ -10,7 +10,7 @@
 -- e50b8093-a248-4fd5-baf6-5b197178654a
 
 -- Unique ID of firmware implementation:
--- 72278536-c2be-4912-b0e7-132adedc2404
+-- 7fe6a178-b7c7-4223-a477-aecdf8df542c
 
 -- Scale set:
 -- scales_2024_01_04
@@ -24,28 +24,28 @@
 -- ========================================================
 -- Instantiations of conditions
 --
-cond_cicada_trigger_i0_i: entity work.cicada_condition
+cond_single_eg_i6_i: entity work.comb_conditions
     generic map(
-        cscore => X"0446"
+-- setting slice high value(s) instead of default value(s) ("NR_MU_OBJECTS-1" => 7)
+        slice_1_high_obj1 => 11,
+-- object cuts
+        pt_thresholds_obj1 => (X"0010", X"0000", X"0000", X"0000"),
+        nr_eta_windows_obj1 => (1, 0, 0, 0),
+        eta_w1_upper_limits_obj1 => (X"0039", X"0000", X"0000", X"0000"),
+        eta_w1_lower_limits_obj1 => (X"00C6", X"0000", X"0000", X"0000"),
+-- number of objects and type
+        nr_obj1 => NR_EG_OBJECTS,
+        type_obj1 => EG_TYPE,
+        nr_templates => 1
     )
     port map(
-        lhc_clk => lhc_clk,
-        cicada_i => bx_data.cicada(2),
-        c_comp_o => cicada_trigger_i0
+        lhc_clk,
+        obj1_calo => bx_data.eg(2),
+        condition_o => single_eg_i6
     );
 
-cond_cicada_trigger_i1_i: entity work.cicada_condition
-    generic map(
-        cscore => X"0300"
-    )
-    port map(
-        lhc_clk => lhc_clk,
-        cicada_i => bx_data.cicada(2),
-        c_comp_o => cicada_trigger_i1
-    );
-
-cond_topological_trigger_i9_i: entity work.topo_wrapper
-    generic map(1006)
+cond_anomaly_detection_trigger_i10_i: entity work.adt_wrapper
+    generic map(false, 174)
     port map(
         lhc_clk,
         bx_data.mu(2),
@@ -57,20 +57,20 @@ cond_topological_trigger_i9_i: entity work.topo_wrapper
         bx_data.etm(2),
         bx_data.htm(2),
         bx_data.etmhf(2),
-        topological_trigger_i9
+        anomaly_detection_trigger_i10
     );
 
 
 -- ========================================================
 -- Instantiations of algorithms
 
--- 0 L1_CICADA_4p273_and_3p0 : CICADA[CICADA-CSCORE_4p273] AND       CICADA[CICADA-CSCORE_3p0]
-l1_cicada_4p273_and_3p0 <= cicada_trigger_i0 and cicada_trigger_i1;
-algo(1) <= l1_cicada_4p273_and_3p0;
+-- 5 L1_SingleEG8er2p5 : EG8[EG-ETA_2p52]
+l1_single_eg8er2p5 <= single_eg_i6;
+algo(1) <= l1_single_eg8er2p5;
 
--- 7 L1_TOPO_1006 : TOPO[TOPO-TSCORE_1006]
-l1_topo_1006 <= topological_trigger_i9;
-algo(0) <= l1_topo_1006;
+-- 9 L1_Adt_174 : ADT[ADT-ASCORE_174]
+l1_adt_174 <= anomaly_detection_trigger_i10;
+algo(0) <= l1_adt_174;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.

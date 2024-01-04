@@ -10,7 +10,7 @@
 -- e50b8093-a248-4fd5-baf6-5b197178654a
 
 -- Unique ID of firmware implementation:
--- 72278536-c2be-4912-b0e7-132adedc2404
+-- 7fe6a178-b7c7-4223-a477-aecdf8df542c
 
 -- Scale set:
 -- scales_2024_01_04
@@ -29,10 +29,12 @@
 
 -- Signal definition for conditions names
     signal cicada_trigger_i3 : std_logic;
-    signal topological_trigger_i10 : std_logic;
+    signal cicada_trigger_i4 : std_logic;
+    signal single_ext_i11 : std_logic;
 
 -- Signal definition for algorithms names
     signal l1_cicada_142p273 : std_logic;
-    signal l1_topo_1007 : std_logic;
+    signal l1_cicada_10p023 : std_logic;
+    signal l1_topo_1006_ext : std_logic;
 
 -- ========================================================

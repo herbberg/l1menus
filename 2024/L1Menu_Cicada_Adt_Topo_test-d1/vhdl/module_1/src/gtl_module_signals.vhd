@@ -10,7 +10,7 @@
 -- e50b8093-a248-4fd5-baf6-5b197178654a
 
 -- Unique ID of firmware implementation:
--- 72278536-c2be-4912-b0e7-132adedc2404
+-- 7fe6a178-b7c7-4223-a477-aecdf8df542c
 
 -- Scale set:
 -- scales_2024_01_04
@@ -28,11 +28,11 @@
 -- Signal definition for muon charge correlations.
 
 -- Signal definition for conditions names
-    signal anomaly_detection_trigger_i5 : std_logic;
-    signal topological_trigger_i8 : std_logic;
+    signal single_ext_i12 : std_logic;
+    signal single_ext_i14 : std_logic;
 
 -- Signal definition for algorithms names
-    signal l1_adt_173 : std_logic;
-    signal l1_topo_25 : std_logic;
+    signal l1_topo_1007_ext : std_logic;
+    signal l1_adt_174_ext : std_logic;
 
 -- ========================================================

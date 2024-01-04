@@ -10,7 +10,7 @@
 -- e50b8093-a248-4fd5-baf6-5b197178654a
 
 -- Unique ID of firmware implementation:
--- 72278536-c2be-4912-b0e7-132adedc2404
+-- 7fe6a178-b7c7-4223-a477-aecdf8df542c
 
 -- Scale set:
 -- scales_2024_01_04
@@ -24,8 +24,9 @@
 -- ========================================================
 -- Instantiations of conditions
 --
-cond_anomaly_detection_trigger_i5_i: entity work.adt_wrapper
-    generic map(false, 173)
+-- EXT_TOPO_1007
+cond_single_ext_i12_i: entity work.topo_wrapper
+    generic map(1007)
     port map(
         lhc_clk,
         bx_data.mu(2),
@@ -37,11 +38,11 @@ cond_anomaly_detection_trigger_i5_i: entity work.adt_wrapper
         bx_data.etm(2),
         bx_data.htm(2),
         bx_data.etmhf(2),
-        anomaly_detection_trigger_i5
+        single_ext_i12
     );
-
-cond_topological_trigger_i8_i: entity work.topo_wrapper
-    generic map(25)
+-- EXT_ADT_174
+cond_single_ext_i14_i: entity work.adt_wrapper
+    generic map(false, 174)
     port map(
         lhc_clk,
         bx_data.mu(2),
@@ -53,20 +54,19 @@ cond_topological_trigger_i8_i: entity work.topo_wrapper
         bx_data.etm(2),
         bx_data.htm(2),
         bx_data.etmhf(2),
-        topological_trigger_i8
+        single_ext_i14
     );
-
 
 -- ========================================================
 -- Instantiations of algorithms
 
--- 4 L1_Adt_173 : ADT[ADT-ASCORE_173]
-l1_adt_173 <= anomaly_detection_trigger_i5;
-algo(0) <= l1_adt_173;
+-- 11 L1_TOPO_1007_ext : EXT_TOPO_1007
+l1_topo_1007_ext <= single_ext_i12;
+algo(1) <= l1_topo_1007_ext;
 
--- 6 L1_TOPO_25 : TOPO[TOPO-TSCORE_25]
-l1_topo_25 <= topological_trigger_i8;
-algo(1) <= l1_topo_25;
+-- 13 L1_ADT_174_ext : EXT_ADT_174
+l1_adt_174_ext <= single_ext_i14;
+algo(0) <= l1_adt_174_ext;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.

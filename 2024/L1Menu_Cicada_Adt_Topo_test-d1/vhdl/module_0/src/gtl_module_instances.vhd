@@ -10,7 +10,7 @@
 -- e50b8093-a248-4fd5-baf6-5b197178654a
 
 -- Unique ID of firmware implementation:
--- 72278536-c2be-4912-b0e7-132adedc2404
+-- 7fe6a178-b7c7-4223-a477-aecdf8df542c
 
 -- Scale set:
 -- scales_2024_01_04
@@ -24,8 +24,7 @@
 -- ========================================================
 -- Instantiations of conditions
 --
--- EXT_TOPO_1007
-cond_single_ext_i12_i: entity work.topo_wrapper
+cond_topological_trigger_i9_i: entity work.topo_wrapper
     generic map(1007)
     port map(
         lhc_clk,
@@ -38,11 +37,12 @@ cond_single_ext_i12_i: entity work.topo_wrapper
         bx_data.etm(2),
         bx_data.htm(2),
         bx_data.etmhf(2),
-        single_ext_i12
+        topological_trigger_i9
     );
--- EXT_ADT_80
+
+-- EXT_ADT_173
 cond_single_ext_i13_i: entity work.adt_wrapper
-    generic map(false, 80)
+    generic map(false, 173)
     port map(
         lhc_clk,
         bx_data.mu(2),
@@ -60,13 +60,13 @@ cond_single_ext_i13_i: entity work.adt_wrapper
 -- ========================================================
 -- Instantiations of algorithms
 
--- 10 L1_TOPO_1007_ext : EXT_TOPO_1007
-l1_topo_1007_ext <= single_ext_i12;
-algo(1) <= l1_topo_1007_ext;
+-- 8 L1_TOPO_1007 : TOPO[TOPO-TSCORE_1007]
+l1_topo_1007 <= topological_trigger_i9;
+algo(1) <= l1_topo_1007;
 
--- 11 L1_ADT_80_ext : EXT_ADT_80
-l1_adt_80_ext <= single_ext_i13;
-algo(0) <= l1_adt_80_ext;
+-- 12 L1_ADT_173_ext : EXT_ADT_173
+l1_adt_173_ext <= single_ext_i13;
+algo(0) <= l1_adt_173_ext;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.

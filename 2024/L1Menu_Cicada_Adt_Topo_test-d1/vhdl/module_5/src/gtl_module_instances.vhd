@@ -10,7 +10,7 @@
 -- e50b8093-a248-4fd5-baf6-5b197178654a
 
 -- Unique ID of firmware implementation:
--- 72278536-c2be-4912-b0e7-132adedc2404
+-- 7fe6a178-b7c7-4223-a477-aecdf8df542c
 
 -- Scale set:
 -- scales_2024_01_04
@@ -34,8 +34,19 @@ cond_cicada_trigger_i3_i: entity work.cicada_condition
         c_comp_o => cicada_trigger_i3
     );
 
-cond_topological_trigger_i10_i: entity work.topo_wrapper
-    generic map(1007)
+cond_cicada_trigger_i4_i: entity work.cicada_condition
+    generic map(
+        cscore => X"0A06"
+    )
+    port map(
+        lhc_clk => lhc_clk,
+        cicada_i => bx_data.cicada(2),
+        c_comp_o => cicada_trigger_i4
+    );
+
+-- EXT_TOPO_1006
+cond_single_ext_i11_i: entity work.topo_wrapper
+    generic map(1006)
     port map(
         lhc_clk,
         bx_data.mu(2),
@@ -47,20 +58,23 @@ cond_topological_trigger_i10_i: entity work.topo_wrapper
         bx_data.etm(2),
         bx_data.htm(2),
         bx_data.etmhf(2),
-        topological_trigger_i10
+        single_ext_i11
     );
-
 
 -- ========================================================
 -- Instantiations of algorithms
 
 -- 2 L1_CICADA_142p273 : CICADA[CICADA-CSCORE_142p273]
 l1_cicada_142p273 <= cicada_trigger_i3;
-algo(1) <= l1_cicada_142p273;
+algo(2) <= l1_cicada_142p273;
 
--- 8 L1_TOPO_1007 : TOPO[TOPO-TSCORE_1007]
-l1_topo_1007 <= topological_trigger_i10;
-algo(0) <= l1_topo_1007;
+-- 3 L1_CICADA_10p023 : CICADA[CICADA-CSCORE_10p023]
+l1_cicada_10p023 <= cicada_trigger_i4;
+algo(1) <= l1_cicada_10p023;
+
+-- 10 L1_TOPO_1006_ext : EXT_TOPO_1006
+l1_topo_1006_ext <= single_ext_i11;
+algo(0) <= l1_topo_1006_ext;
 
 -- ========================================================
 -- Instantiations conversions, calculations, etc.
