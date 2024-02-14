@@ -1,0 +1,244 @@
+2024-02-14 11:11:53 INFO : distributing menu...
+2024-02-14 11:11:53 INFO : loading resource information from JSON: /home/bergauer/utm_0.12.0_axo_topo_model/tm-vhdlproducer/tmVhdlProducer/config/resource_default.json
+2024-02-14 11:11:53 INFO : :: listing resources...
+2024-02-14 11:11:53 INFO : thresholds:
+2024-02-14 11:11:53 INFO :  * floor: brams=14.69%, sliceLUTs=9.03%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * ceiling: brams=100.00%, sliceLUTs=90.00%, processors=100.00%
+2024-02-14 11:11:53 INFO : instances:
+2024-02-14 11:11:53 INFO :  * MuonCondition[ muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * MuonCondition[ muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.08%, processors=0.33%
+2024-02-14 11:11:53 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * MuonCondition[ muon, muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * MuonCondition[ muon, muon, muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * CaloCondition[ calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * CaloCondition[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.05%, processors=0.33%
+2024-02-14 11:11:53 INFO :  * CaloCondition[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * CaloCondition[ calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.39%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * CaloConditionOvRm[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * CaloConditionOvRm[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.13%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.05%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * CorrelationCondition[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * CorrelationCondition[ calo, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * CorrelationCondition[ calo, esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * CorrelationCondition[ muon, esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * CorrelationCondition[ muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * massupt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * Correlation3Condition[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * Correlation3Condition[ muon, muon, muon ]: brams=0.00%, sliceLUTs=0.19%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.06%
+2024-02-14 11:11:53 INFO :  * CorrelationConditionOvRm[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * CorrelationConditionOvRm[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.15%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * EsumsCondition[ esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * MinBiasCondition[ bias ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * ExternalCondition[ ext ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * TowerCountCondition[ count ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * AnomalyDetectionTrigger[ adt ]: brams=0.00%, sliceLUTs=1.79%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * AxoTrigger[ axo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * TopologicalTrigger[ topo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * ZDCPlus[ count ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * ZDCMinus[ count ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * CicadaTrigger[ cicada ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 INFO :  * SignalCondition[ signal ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-02-14 11:11:53 WARNING : no object cut entry for object type: adt
+2024-02-14 11:11:53 INFO : |---------------------------------------------------------------------------------------|
+2024-02-14 11:11:53 INFO : |                                                                                       |
+2024-02-14 11:11:53 INFO : | Algorithms sorted by payload (descending)                                             |
+2024-02-14 11:11:53 INFO : |                                                                                       |
+2024-02-14 11:11:53 INFO : |---------------------------------------------------------------------------------------|
+2024-02-14 11:11:53 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2024-02-14 11:11:53 INFO : | Index | BRAMs   | SliceLUTs | DSPs    | Name                                          |
+2024-02-14 11:11:53 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2024-02-14 11:11:53 INFO : |     3 |  0.000% |    0.001% |  0.000% | L1_CICADA_10p023                              |
+2024-02-14 11:11:53 INFO : |     2 |  0.000% |    0.001% |  0.000% | L1_CICADA_142p273                             |
+2024-02-14 11:11:53 INFO : |    14 |  0.000% |    0.001% |  0.000% | L1_CICADA_45p801                              |
+2024-02-14 11:11:53 INFO : |     1 |  0.000% |    0.001% |  0.000% | L1_CICADA_5p273                               |
+2024-02-14 11:11:53 INFO : |     0 |  0.000% |    0.002% |  0.000% | L1_CICADA_4p273_and_3p0                       |
+2024-02-14 11:11:53 INFO : |     5 |  0.000% |    0.017% |  0.000% | L1_SingleEG8er2p5                             |
+2024-02-14 11:11:53 INFO : |     6 |  0.000% |    0.134% |  0.000% | L1_TOPO_1009_had                              |
+2024-02-14 11:11:53 INFO : |     7 |  0.000% |    0.134% |  0.000% | L1_TOPO_100_hh_mu_v1                          |
+2024-02-14 11:11:53 INFO : |     8 |  0.000% |    0.134% |  0.000% | L1_TOPO_200_hh_ele_v1                         |
+2024-02-14 11:11:53 INFO : |     9 |  0.000% |    0.134% |  0.000% | L1_TOPO_300_hh_had_v1                         |
+2024-02-14 11:11:53 INFO : |    10 |  0.000% |    0.378% |  0.000% | L1_AXO_2000_v1                                |
+2024-02-14 11:11:53 INFO : |    11 |  0.000% |    1.786% |  0.000% | L1_ADT_1000                                   |
+2024-02-14 11:11:53 INFO : |     4 |  0.000% |    1.786% |  0.000% | L1_AXO_1009_version3                          |
+2024-02-14 11:11:53 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2024-02-14 11:11:53 INFO : |---------------------------------------------------------------------------------------|
+2024-02-14 11:11:53 INFO : distributing algorithms, shadow ratio: 0.0
+2024-02-14 11:11:53 INFO : starting algorithm distribution for 13 algorithms on 6 modules using shadow ratio of 0.0
+2024-02-14 11:11:53 INFO :  . adding L1_ADT_1000 (11) to module 0
+2024-02-14 11:11:53 INFO :  . adding L1_AXO_1009_version3 (4) to module 1
+2024-02-14 11:11:53 INFO :  . adding L1_AXO_2000_v1 (10) to module 2
+2024-02-14 11:11:53 INFO :  . adding L1_TOPO_1009_had (6) to module 3
+2024-02-14 11:11:53 INFO :  . adding L1_TOPO_100_hh_mu_v1 (7) to module 4
+2024-02-14 11:11:53 INFO :  . adding L1_TOPO_200_hh_ele_v1 (8) to module 5
+2024-02-14 11:11:53 INFO :  . adding L1_TOPO_300_hh_had_v1 (9) to module 3
+2024-02-14 11:11:53 INFO :  . adding L1_SingleEG8er2p5 (5) to module 4
+2024-02-14 11:11:53 INFO :  . adding L1_CICADA_4p273_and_3p0 (0) to module 5
+2024-02-14 11:11:53 INFO :  . adding L1_CICADA_10p023 (3) to module 5
+2024-02-14 11:11:53 INFO :  . adding L1_CICADA_142p273 (2) to module 4
+2024-02-14 11:11:53 INFO :  . adding L1_CICADA_45p801 (14) to module 5
+2024-02-14 11:11:53 INFO :  . adding L1_CICADA_5p273 (1) to module 4
+2024-02-14 11:11:53 INFO : |-----------------------------------------------------------------------------|
+2024-02-14 11:11:53 INFO : |                                                                             |
+2024-02-14 11:11:53 INFO : | Detailed distribition on 6 modules, shadow ratio: 0.0                       |
+2024-02-14 11:11:53 INFO : |                                                                             |
+2024-02-14 11:11:53 INFO : |------------|----------------------------------------------------------------|
+2024-02-14 11:11:53 INFO : | Module     | Algorithm                                                      |
+2024-02-14 11:11:53 INFO : | ID | Index | Index | Name                                                   |
+2024-02-14 11:11:53 INFO : |----|-------|-------|--------------------------------------------------------|
+2024-02-14 11:11:53 INFO : |  0 |     0 |    11 | L1_ADT_1000                                            |
+2024-02-14 11:11:53 INFO : |  1 |     0 |     4 | L1_AXO_1009_version3                                   |
+2024-02-14 11:11:53 INFO : |  2 |     0 |    10 | L1_AXO_2000_v1                                         |
+2024-02-14 11:11:53 INFO : |  3 |     0 |     6 | L1_TOPO_1009_had                                       |
+2024-02-14 11:11:53 INFO : |  3 |     1 |     9 | L1_TOPO_300_hh_had_v1                                  |
+2024-02-14 11:11:53 INFO : |  4 |     0 |     7 | L1_TOPO_100_hh_mu_v1                                   |
+2024-02-14 11:11:53 INFO : |  4 |     1 |     5 | L1_SingleEG8er2p5                                      |
+2024-02-14 11:11:53 INFO : |  4 |     2 |     2 | L1_CICADA_142p273                                      |
+2024-02-14 11:11:53 INFO : |  4 |     3 |     1 | L1_CICADA_5p273                                        |
+2024-02-14 11:11:53 INFO : |  5 |     0 |     8 | L1_TOPO_200_hh_ele_v1                                  |
+2024-02-14 11:11:53 INFO : |  5 |     1 |     0 | L1_CICADA_4p273_and_3p0                                |
+2024-02-14 11:11:53 INFO : |  5 |     2 |     3 | L1_CICADA_10p023                                       |
+2024-02-14 11:11:53 INFO : |  5 |     3 |    14 | L1_CICADA_45p801                                       |
+2024-02-14 11:11:53 INFO : |----|-------|-------|--------------------------------------------------------|
+2024-02-14 11:11:53 INFO : |-----------------------------------------------------------------------------|
+2024-02-14 11:11:53 INFO : |                                                                             |
+2024-02-14 11:11:53 INFO : | Condition distribution, sorted by weight (descending)                       |
+2024-02-14 11:11:53 INFO : |                                                                             |
+2024-02-14 11:11:53 INFO : |-----------------------------------------------------------------------------|
+2024-02-14 11:11:53 INFO : |-----------------------------------------------------------------------------------|
+2024-02-14 11:11:53 INFO : | Name                                             | Modules | sLUTs | DSPs | BRAMs |
+2024-02-14 11:11:53 INFO : |--------------------------------------------------|---------|-------|------|-------|
+2024-02-14 11:11:53 INFO : | AnomalyDetectionTrigger_i13                      | 0       | 7736  | 0    | 0     |
+2024-02-14 11:11:53 INFO : | AxoTrigger_i8                                    | 1       | 7736  | 0    | 0     |
+2024-02-14 11:11:53 INFO : | AxoTrigger_i12                                   | 2       | 1639  | 0    | 0     |
+2024-02-14 11:11:53 INFO : | TopologicalTrigger_i10                           | 5       | 581   | 0    | 0     |
+2024-02-14 11:11:53 INFO : | TopologicalTrigger_i11                           | 3       | 581   | 0    | 0     |
+2024-02-14 11:11:53 INFO : | TopologicalTrigger_i7                            | 3       | 581   | 0    | 0     |
+2024-02-14 11:11:53 INFO : | TopologicalTrigger_i9                            | 4       | 581   | 0    | 0     |
+2024-02-14 11:11:53 INFO : | SingleEG_i5                                      | 4       | 72    | 0    | 0     |
+2024-02-14 11:11:53 INFO : | CicadaTrigger_i0                                 | 5       | 4     | 0    | 0     |
+2024-02-14 11:11:53 INFO : | CicadaTrigger_i1                                 | 5       | 4     | 0    | 0     |
+2024-02-14 11:11:53 INFO : | CicadaTrigger_i2                                 | 4       | 4     | 0    | 0     |
+2024-02-14 11:11:53 INFO : | CicadaTrigger_i3                                 | 4       | 4     | 0    | 0     |
+2024-02-14 11:11:53 INFO : | CicadaTrigger_i4                                 | 5       | 4     | 0    | 0     |
+2024-02-14 11:11:53 INFO : | CicadaTrigger_i6                                 | 5       | 4     | 0    | 0     |
+2024-02-14 11:11:53 INFO : |--------------------------------------------------|---------|-------|------|-------|
+2024-02-14 11:11:53 INFO : |--------------------------------------------------------------------------------------|
+2024-02-14 11:11:53 INFO : |                                                                                      |
+2024-02-14 11:11:53 INFO : | Summary for distribution on 6 modules, shadow ratio: 0.0                             |
+2024-02-14 11:11:53 INFO : |                                                                                      |
+2024-02-14 11:11:53 INFO : |-------------------------------------|------------------------------------------------|
+2024-02-14 11:11:53 INFO : |                                     |                    Payload                     |
+2024-02-14 11:11:53 INFO : |-------------------------------------|------------------------------------------------|
+2024-02-14 11:11:53 INFO : |              Module                 |   SliceLUTs    |     BRAMs     |     DSPs      |
+2024-02-14 11:11:53 INFO : |-------------------------------------|------------------------------------------------|
+2024-02-14 11:11:53 INFO : | ID | Algorithms | Conditions | Rel. | Value  |  [%]  | Value |  [%]  | Value |  [%]  |
+2024-02-14 11:11:53 INFO : |----|------------|------------|------|--------|-------|-------|-------|-------|-------|
+2024-02-14 11:11:53 INFO : |  0 |          1 |          1 | 1.00 |  68168 | 15.74 |   636 | 43.27 |     0 |  0.00 |
+2024-02-14 11:11:53 INFO : |  1 |          1 |          1 | 1.00 |  68168 | 15.74 |   636 | 43.27 |     0 |  0.00 |
+2024-02-14 11:11:53 INFO : |  2 |          1 |          1 | 1.00 |  62071 | 14.33 |   636 | 43.27 |     0 |  0.00 |
+2024-02-14 11:11:53 INFO : |  3 |          2 |          2 | 1.00 |  61905 | 14.29 |   636 | 43.27 |     0 |  0.00 |
+2024-02-14 11:11:53 INFO : |  4 |          4 |          4 | 1.00 |  62026 | 14.32 |   636 | 43.27 |     0 |  0.00 |
+2024-02-14 11:11:53 INFO : |  5 |          4 |          5 | 1.25 |  61962 | 14.30 |   636 | 43.27 |     0 |  0.00 |
+2024-02-14 11:11:53 INFO : |----|------------|------------|------|--------|-------|-------|-------|-------|-------|
+2024-02-14 11:11:53 INFO : writing VHDL modules...
+2024-02-14 11:11:53 INFO : writing 13 algorithms to 6 module(s)
+2024-02-14 11:11:53 INFO : writing output for module: 0
+2024-02-14 11:11:53 INFO : algo_index.vhd          : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_0/src/algo_index.vhd
+2024-02-14 11:11:53 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_0/src/gtl_module_signals.vhd
+2024-02-14 11:11:53 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_0/src/gtl_module_instances.vhd
+2024-02-14 11:11:53 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_0/src/ugt_constants.vhd
+2024-02-14 11:11:53 INFO : writing output for module: 1
+2024-02-14 11:11:53 INFO : algo_index.vhd          : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_1/src/algo_index.vhd
+2024-02-14 11:11:53 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_1/src/gtl_module_signals.vhd
+2024-02-14 11:11:53 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_1/src/gtl_module_instances.vhd
+2024-02-14 11:11:53 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_1/src/ugt_constants.vhd
+2024-02-14 11:11:53 INFO : writing output for module: 2
+2024-02-14 11:11:53 INFO : algo_index.vhd          : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_2/src/algo_index.vhd
+2024-02-14 11:11:53 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_2/src/gtl_module_signals.vhd
+2024-02-14 11:11:53 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_2/src/gtl_module_instances.vhd
+2024-02-14 11:11:53 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_2/src/ugt_constants.vhd
+2024-02-14 11:11:53 INFO : writing output for module: 3
+2024-02-14 11:11:53 INFO : algo_index.vhd          : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_3/src/algo_index.vhd
+2024-02-14 11:11:53 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_3/src/gtl_module_signals.vhd
+2024-02-14 11:11:53 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_3/src/gtl_module_instances.vhd
+2024-02-14 11:11:53 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_3/src/ugt_constants.vhd
+2024-02-14 11:11:53 INFO : writing output for module: 4
+2024-02-14 11:11:53 INFO : algo_index.vhd          : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_4/src/algo_index.vhd
+2024-02-14 11:11:53 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_4/src/gtl_module_signals.vhd
+2024-02-14 11:11:53 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_4/src/gtl_module_instances.vhd
+2024-02-14 11:11:53 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_4/src/ugt_constants.vhd
+2024-02-14 11:11:53 INFO : writing output for module: 5
+2024-02-14 11:11:53 INFO : algo_index.vhd          : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_5/src/algo_index.vhd
+2024-02-14 11:11:53 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_5/src/gtl_module_signals.vhd
+2024-02-14 11:11:53 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_5/src/gtl_module_instances.vhd
+2024-02-14 11:11:53 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/vhdl/module_5/src/ugt_constants.vhd
+2024-02-14 11:11:53 INFO : writing updated XML file /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8.xml
+2024-02-14 11:11:53 INFO : reading source XML menu file /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8.xml
+2024-02-14 11:11:53 INFO : processing menu "L1Menu_Axo_Cicada_Topo_model_cut_test_v8" ... 
+2024-02-14 11:11:53 INFO : updating menu information...
+2024-02-14 11:11:53 INFO : uuid_menu     : 3479792f-e4e8-405f-a23d-3b16ddd47644
+2024-02-14 11:11:53 INFO : uuid_firmware : 06f23f78-466d-4072-95db-fd74e7b788cf
+2024-02-14 11:11:53 INFO : n_modules     : 6
+2024-02-14 11:11:53 INFO : writing target XML menu file /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/xml/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1.xml
+2024-02-14 11:11:54 INFO : generating menu documentation...
+2024-02-14 11:11:54 INFO : writing HTML documentation /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/xml/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1.xml
+2024-02-14 11:11:54 INFO : writing TWIKI page template /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/xml/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1.xml
+2024-02-14 11:11:55 INFO : patching filenames...
+2024-02-14 11:11:55 INFO : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/doc/L1Menu_Axo_Cicada_Topo_model_cut_test_v8.twiki --> /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/doc/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1.twiki
+2024-02-14 11:11:55 INFO : /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/doc/L1Menu_Axo_Cicada_Topo_model_cut_test_v8.html --> /home/bergauer/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1/doc/L1Menu_Axo_Cicada_Topo_model_cut_test_v8-d1.html
+2024-02-14 11:11:55 INFO : done.

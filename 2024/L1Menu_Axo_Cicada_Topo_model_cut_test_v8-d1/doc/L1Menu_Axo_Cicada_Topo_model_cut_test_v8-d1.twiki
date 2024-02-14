@@ -1,0 +1,99 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_Axo_Cicada_Topo_model_cut_test_v8.html" }%
+
+---+!! !L1Menu_Axo_Cicada_Topo_model_cut_test_v8
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_Axo_Cicada_Topo_model_cut_test_v8 | 0.12 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_Axo_Cicada_Topo_model_cut_test_v8 |
+|Menu UUID: | 3479792f-e4e8-405f-a23d-3b16ddd47644 |
+|Firmware UUID: | 06f23f78-466d-4072-95db-fd74e7b788cf  |
+|Associated L1 scale DB key: | scales_2024_01_04 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 13 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !E/gamma algorithm triggers: | 1 |
+      | !Cross algorithm triggers: | 1 |
+      | !Signal algorithm triggers: | 11 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !E/gamma algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG8er2p5 ][L1_SingleEG8er2p5]]   | L1_SingleEG8er2p5  | 5 |  |
+!E/gamma algorithm triggers: 1 bits defined
+---++++ !Cross algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_CICADA_4p273_and_3p0 ][L1_CICADA_4p273_and_3p0]]   | L1_CICADA_4p273_and_3p0  | 0 |  |
+!Cross algorithm triggers: 1 bits defined
+---++++ !Signal algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_CICADA_5p273 ][L1_CICADA_5p273]]   | L1_CICADA_5p273  | 1 |  |
+|[[%GET{"REPORTER_URL"}%#L1_CICADA_142p273 ][L1_CICADA_142p273]]   | L1_CICADA_142p273  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_CICADA_10p023 ][L1_CICADA_10p023]]   | L1_CICADA_10p023  | 3 |  |
+|[[%GET{"REPORTER_URL"}%#L1_AXO_1009_version3 ][L1_AXO_1009_version3]]   | L1_AXO_1009_version3  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_1009_had ][L1_TOPO_1009_had]]   | L1_TOPO_1009_had  | 6 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_100_hh_mu_v1 ][L1_TOPO_100_hh_mu_v1]]   | L1_TOPO_100_hh_mu_v1  | 7 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_200_hh_ele_v1 ][L1_TOPO_200_hh_ele_v1]]   | L1_TOPO_200_hh_ele_v1  | 8 |  |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_300_hh_had_v1 ][L1_TOPO_300_hh_had_v1]]   | L1_TOPO_300_hh_had_v1  | 9 |  |
+|[[%GET{"REPORTER_URL"}%#L1_AXO_2000_v1 ][L1_AXO_2000_v1]]   | L1_AXO_2000_v1  | 10 |  |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_1000 ][L1_ADT_1000]]   | L1_ADT_1000  | 11 |  |
+|[[%GET{"REPORTER_URL"}%#L1_CICADA_45p801 ][L1_CICADA_45p801]]   | L1_CICADA_45p801  | 14 |  |
+!Signal algorithm triggers: 11 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_CICADA_4p273_and_3p0 ][L1_CICADA_4p273_and_3p0]]   |L1_CICADA_4p273_and_3p0 |0 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_CICADA_5p273 ][L1_CICADA_5p273]]   |L1_CICADA_5p273 |1 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_CICADA_142p273 ][L1_CICADA_142p273]]   |L1_CICADA_142p273 |2 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_CICADA_10p023 ][L1_CICADA_10p023]]   |L1_CICADA_10p023 |3 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_AXO_1009_version3 ][L1_AXO_1009_version3]]   |L1_AXO_1009_version3 |4 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG8er2p5 ][L1_SingleEG8er2p5]]   |L1_SingleEG8er2p5 |5 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_1009_had ][L1_TOPO_1009_had]]   |L1_TOPO_1009_had |6 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_100_hh_mu_v1 ][L1_TOPO_100_hh_mu_v1]]   |L1_TOPO_100_hh_mu_v1 |7 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_200_hh_ele_v1 ][L1_TOPO_200_hh_ele_v1]]   |L1_TOPO_200_hh_ele_v1 |8 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_TOPO_300_hh_had_v1 ][L1_TOPO_300_hh_had_v1]]   |L1_TOPO_300_hh_had_v1 |9 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_AXO_2000_v1 ][L1_AXO_2000_v1]]   |L1_AXO_2000_v1 |10 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_ADT_1000 ][L1_ADT_1000]]   |L1_ADT_1000 |11 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_CICADA_45p801 ][L1_CICADA_45p801]]   |L1_CICADA_45p801 |14 |5 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
