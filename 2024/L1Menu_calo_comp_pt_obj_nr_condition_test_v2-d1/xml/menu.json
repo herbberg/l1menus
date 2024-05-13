@@ -1,0 +1,15 @@
+{
+  "firmware_uuid" : "ffa7fad4-8dd6-4707-a137-cceafccc2fe0",
+  "menu_uuid"     : "f9f63b7d-bf5d-4d02-a79c-e1a228890ebe",
+  "n_modules"     : 6,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_SixJets_23", 0, 0, 0],
+    ["L1_SingleEG8er2p5", 1, 2, 1],
+    ["L1_SingleEG10er2p5", 2, 2, 0],
+    ["L1_SingleEG15er2p5", 3, 3, 0],
+    ["L1_SingleEG26er2p5", 4, 4, 0],
+    ["L1_SingleEG28er2p5", 5, 5, 0],
+    ["L1_NineJets_15", 6, 1, 0]
+  ]
+}

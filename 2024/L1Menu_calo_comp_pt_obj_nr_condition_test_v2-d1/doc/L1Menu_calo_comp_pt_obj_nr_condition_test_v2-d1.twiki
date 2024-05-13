@@ -1,0 +1,83 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_calo_comp_pt_obj_nr_condition_test_v2.html" }%
+
+---+!! !L1Menu_calo_comp_pt_obj_nr_condition_test_v2
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_calo_comp_pt_obj_nr_condition_test_v2 | 0.12 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_calo_comp_pt_obj_nr_condition_test_v2 |
+|Menu UUID: | f9f63b7d-bf5d-4d02-a79c-e1a228890ebe |
+|Firmware UUID: | ffa7fad4-8dd6-4707-a137-cceafccc2fe0  |
+|Associated L1 scale DB key: | scales_2024_02_14 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 7 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !E/gamma algorithm triggers: | 5 |
+      | !Jet algorithm triggers: | 2 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !E/gamma algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG8er2p5 ][L1_SingleEG8er2p5]]   | L1_SingleEG8er2p5  | 1 |  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG10er2p5 ][L1_SingleEG10er2p5]]   | L1_SingleEG10er2p5  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG15er2p5 ][L1_SingleEG15er2p5]]   | L1_SingleEG15er2p5  | 3 |  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG26er2p5 ][L1_SingleEG26er2p5]]   | L1_SingleEG26er2p5  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG28er2p5 ][L1_SingleEG28er2p5]]   | L1_SingleEG28er2p5  | 5 |  |
+!E/gamma algorithm triggers: 5 bits defined
+---++++ !Jet algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_SixJets_23 ][L1_SixJets_23]]   | L1_SixJets_23  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_NineJets_15 ][L1_NineJets_15]]   | L1_NineJets_15  | 6 |  |
+!Jet algorithm triggers: 2 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_SixJets_23 ][L1_SixJets_23]]   |L1_SixJets_23 |0 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG8er2p5 ][L1_SingleEG8er2p5]]   |L1_SingleEG8er2p5 |1 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG10er2p5 ][L1_SingleEG10er2p5]]   |L1_SingleEG10er2p5 |2 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG15er2p5 ][L1_SingleEG15er2p5]]   |L1_SingleEG15er2p5 |3 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG26er2p5 ][L1_SingleEG26er2p5]]   |L1_SingleEG26er2p5 |4 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG28er2p5 ][L1_SingleEG28er2p5]]   |L1_SingleEG28er2p5 |5 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_NineJets_15 ][L1_NineJets_15]]   |L1_NineJets_15 |6 |1 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
