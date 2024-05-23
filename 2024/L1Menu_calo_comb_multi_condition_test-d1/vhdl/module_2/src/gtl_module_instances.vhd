@@ -10,14 +10,14 @@
 -- d38c9eb4-8930-4a58-aa25-63e2d0d789dc
 
 -- Unique ID of firmware implementation:
--- a65fa144-f863-458e-995b-a374418aca3a
+-- 764d424d-c74b-4499-90d1-a6f6f4217aa4
 
 -- Scale set:
 -- scales_2024_05_15
 
 -- VHDL producer
 -- version: 2.19.0
--- hash value: ef851e63e076eb1c3deed01bc2f78829385103b9ba8c5b36cec9304ddfb74ab7
+-- hash value: e1720fd0e528d6773212af3e043637ab4d278b8755badeb64bdff915c1049948
 
 -- tmEventSetup
 -- version: 0.13.0
@@ -26,13 +26,8 @@
 -- Instantiations of conditions
 --
 cond_multi_jet_i1_i: entity work.calo_comb_multi_condition
-    generic map(
-        obj_nr => 6, 
-        pt_width => JET_ET_BITS, 
-        pt_threshold => X"002E"
-    )
+    generic map(6, JET_ET_BITS, X"002E")
     port map(lhc_clk, bx_data.jet(2), multi_jet_i1);
-
 
 
 -- ========================================================
