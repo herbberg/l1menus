@@ -4,33 +4,25 @@
 -- Module ID: 3
 
 -- Name of L1 Trigger Menu:
--- L1Menu_Collisions2024_v1_0_0_test
+-- L1Menu_Collisions2024_v1_0_0_test_corr
 
 -- Unique ID of L1 Trigger Menu:
--- c5cee6f4-eb04-4725-a069-ee56de02b001
+-- 89191836-2324-439d-a92f-95d4660b3d7d
 
 -- Unique ID of firmware implementation:
--- e9f45239-328c-4dbd-b9d2-70a06b8f4931
+-- 8749562a-e1bd-4c80-b7a5-4f96cd569bff
 
 -- Scale set:
 -- scales_2023_02_16
 
--- VHDL producer version
--- v2.15.0
+-- VHDL producer
+-- version: 2.18.0
+-- hash value: 1c5712f4e1570ec4dd437d604d3d1604f5a84fd8a70cb4ddfc66cba619604f7a
 
--- tmEventSetup version
--- v0.11.2
+-- tmEventSetup
+-- version: 0.12.0
 
 -- Signal definition of pt, eta and phi for correlation conditions.
-    signal jet_bx_0_pt_vector: diff_inputs_array(0 to NR_JET_OBJECTS-1) := (others => (others => '0'));
-    signal jet_bx_0_eta_integer: integer_array(0 to NR_JET_OBJECTS-1) := (others => 0);
-    signal jet_bx_0_phi_integer: integer_array(0 to NR_JET_OBJECTS-1) := (others => 0);
-    signal jet_bx_0_cos_phi: integer_array(0 to NR_JET_OBJECTS-1) := (others => 0);
-    signal jet_bx_0_sin_phi: integer_array(0 to NR_JET_OBJECTS-1) := (others => 0);
-    signal jet_bx_0_conv_cos_phi: integer_array(0 to NR_JET_OBJECTS-1) := (others => 0);
-    signal jet_bx_0_conv_sin_phi: integer_array(0 to NR_JET_OBJECTS-1) := (others => 0);
-    signal jet_bx_0_eta_conv_2_muon_eta_integer: integer_array(0 to NR_JET_OBJECTS-1) := (others => 0);
-    signal jet_bx_0_phi_conv_2_muon_phi_integer: integer_array(0 to NR_JET_OBJECTS-1) := (others => 0);
     signal eg_bx_0_pt_vector: diff_inputs_array(0 to NR_EG_OBJECTS-1) := (others => (others => '0'));
     signal eg_bx_0_eta_integer: integer_array(0 to NR_EG_OBJECTS-1) := (others => 0);
     signal eg_bx_0_phi_integer: integer_array(0 to NR_EG_OBJECTS-1) := (others => 0);
@@ -40,6 +32,15 @@
     signal eg_bx_0_conv_sin_phi: integer_array(0 to NR_EG_OBJECTS-1) := (others => 0);
     signal eg_bx_0_eta_conv_2_muon_eta_integer: integer_array(0 to NR_EG_OBJECTS-1) := (others => 0);
     signal eg_bx_0_phi_conv_2_muon_phi_integer: integer_array(0 to NR_EG_OBJECTS-1) := (others => 0);
+    signal jet_bx_0_pt_vector: diff_inputs_array(0 to NR_JET_OBJECTS-1) := (others => (others => '0'));
+    signal jet_bx_0_eta_integer: integer_array(0 to NR_JET_OBJECTS-1) := (others => 0);
+    signal jet_bx_0_phi_integer: integer_array(0 to NR_JET_OBJECTS-1) := (others => 0);
+    signal jet_bx_0_cos_phi: integer_array(0 to NR_JET_OBJECTS-1) := (others => 0);
+    signal jet_bx_0_sin_phi: integer_array(0 to NR_JET_OBJECTS-1) := (others => 0);
+    signal jet_bx_0_conv_cos_phi: integer_array(0 to NR_JET_OBJECTS-1) := (others => 0);
+    signal jet_bx_0_conv_sin_phi: integer_array(0 to NR_JET_OBJECTS-1) := (others => 0);
+    signal jet_bx_0_eta_conv_2_muon_eta_integer: integer_array(0 to NR_JET_OBJECTS-1) := (others => 0);
+    signal jet_bx_0_phi_conv_2_muon_phi_integer: integer_array(0 to NR_JET_OBJECTS-1) := (others => 0);
     signal mu_bx_0_pt_vector: diff_inputs_array(0 to NR_MU_OBJECTS-1) := (others => (others => '0'));
     signal mu_bx_0_upt_vector: diff_inputs_array(0 to NR_MU_OBJECTS-1) := (others => (others => '0'));
     signal mu_bx_0_eta_integer: integer_array(0 to NR_MU_OBJECTS-1) := (others => 0);
@@ -48,16 +49,32 @@
     signal mu_bx_0_phi_integer_half_res: integer_array(0 to NR_MU_OBJECTS-1) := (others => 0);
     signal mu_bx_0_cos_phi: integer_array(0 to NR_MU_OBJECTS-1) := (others => 0);
     signal mu_bx_0_sin_phi: integer_array(0 to NR_MU_OBJECTS-1) := (others => 0);
+    signal mu_bx_m1_pt_vector: diff_inputs_array(0 to NR_MU_OBJECTS-1) := (others => (others => '0'));
+    signal mu_bx_m1_upt_vector: diff_inputs_array(0 to NR_MU_OBJECTS-1) := (others => (others => '0'));
+    signal mu_bx_m1_eta_integer: integer_array(0 to NR_MU_OBJECTS-1) := (others => 0);
+    signal mu_bx_m1_phi_integer: integer_array(0 to NR_MU_OBJECTS-1) := (others => 0);
+    signal mu_bx_m1_eta_integer_half_res: integer_array(0 to NR_MU_OBJECTS-1) := (others => 0);
+    signal mu_bx_m1_phi_integer_half_res: integer_array(0 to NR_MU_OBJECTS-1) := (others => 0);
+    signal mu_bx_m1_cos_phi: integer_array(0 to NR_MU_OBJECTS-1) := (others => 0);
+    signal mu_bx_m1_sin_phi: integer_array(0 to NR_MU_OBJECTS-1) := (others => 0);
+    signal etm_bx_0_pt_vector: diff_inputs_array(0 to NR_ETM_OBJECTS-1) := (others => (others => '0'));
+    signal etm_bx_0_phi_integer: integer_array(0 to NR_ETM_OBJECTS-1) := (others => 0);
+    signal etm_bx_0_cos_phi: integer_array(0 to NR_ETM_OBJECTS-1) := (others => 0);
+    signal etm_bx_0_sin_phi: integer_array(0 to NR_ETM_OBJECTS-1) := (others => 0);
+    signal etm_bx_0_conv_cos_phi: integer_array(0 to NR_ETM_OBJECTS-1) := (others => 0);
+    signal etm_bx_0_conv_sin_phi: integer_array(0 to NR_ETM_OBJECTS-1) := (others => 0);
+    signal etm_bx_0_phi_conv_2_muon_phi_integer: integer_array(0 to NR_ETM_OBJECTS-1) := (others => 0);
+    signal tau_bx_0_pt_vector: diff_inputs_array(0 to NR_TAU_OBJECTS-1) := (others => (others => '0'));
+    signal tau_bx_0_eta_integer: integer_array(0 to NR_TAU_OBJECTS-1) := (others => 0);
+    signal tau_bx_0_phi_integer: integer_array(0 to NR_TAU_OBJECTS-1) := (others => 0);
+    signal tau_bx_0_cos_phi: integer_array(0 to NR_TAU_OBJECTS-1) := (others => 0);
+    signal tau_bx_0_sin_phi: integer_array(0 to NR_TAU_OBJECTS-1) := (others => 0);
+    signal tau_bx_0_conv_cos_phi: integer_array(0 to NR_TAU_OBJECTS-1) := (others => 0);
+    signal tau_bx_0_conv_sin_phi: integer_array(0 to NR_TAU_OBJECTS-1) := (others => 0);
+    signal tau_bx_0_eta_conv_2_muon_eta_integer: integer_array(0 to NR_TAU_OBJECTS-1) := (others => 0);
+    signal tau_bx_0_phi_conv_2_muon_phi_integer: integer_array(0 to NR_TAU_OBJECTS-1) := (others => 0);
 
 -- Signal definition for cuts of correlation conditions.
-    signal jet_jet_bx_0_bx_0_deta_integer: dim2_max_eta_range_array(0 to NR_JET_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => 0));
-    signal jet_jet_bx_0_bx_0_deta: deta_dphi_vector_array(0 to NR_JET_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => (others => '0')));
-    signal jet_jet_bx_0_bx_0_dphi_integer: dim2_max_phi_range_array(0 to NR_JET_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => 0));
-    signal jet_jet_bx_0_bx_0_dphi: deta_dphi_vector_array(0 to NR_JET_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => (others => '0')));
-    signal eg_eg_bx_0_bx_0_deta_integer: dim2_max_eta_range_array(0 to NR_EG_OBJECTS-1, 0 to NR_EG_OBJECTS-1) := (others => (others => 0));
-    signal eg_eg_bx_0_bx_0_deta: deta_dphi_vector_array(0 to NR_EG_OBJECTS-1, 0 to NR_EG_OBJECTS-1) := (others => (others => (others => '0')));
-    signal eg_eg_bx_0_bx_0_dphi_integer: dim2_max_phi_range_array(0 to NR_EG_OBJECTS-1, 0 to NR_EG_OBJECTS-1) := (others => (others => 0));
-    signal eg_eg_bx_0_bx_0_dphi: deta_dphi_vector_array(0 to NR_EG_OBJECTS-1, 0 to NR_EG_OBJECTS-1) := (others => (others => (others => '0')));
     signal eg_jet_bx_0_bx_0_deta_integer: dim2_max_eta_range_array(0 to NR_EG_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => 0));
     signal eg_jet_bx_0_bx_0_deta: deta_dphi_vector_array(0 to NR_EG_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => (others => '0')));
     signal eg_jet_bx_0_bx_0_dphi_integer: dim2_max_phi_range_array(0 to NR_EG_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => 0));
@@ -68,168 +85,161 @@
     signal jet_mu_bx_0_bx_0_dphi: deta_dphi_vector_array(0 to NR_JET_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => (others => '0')));
     signal jet_mu_bx_0_bx_0_deta_integer_half_res: dim2_max_eta_range_array(0 to NR_JET_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => 0));
     signal jet_mu_bx_0_bx_0_dphi_integer_half_res: dim2_max_phi_range_array(0 to NR_JET_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => 0));
+    signal jet_jet_bx_0_bx_0_deta_integer: dim2_max_eta_range_array(0 to NR_JET_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => 0));
+    signal jet_jet_bx_0_bx_0_deta: deta_dphi_vector_array(0 to NR_JET_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => (others => '0')));
+    signal jet_jet_bx_0_bx_0_dphi_integer: dim2_max_phi_range_array(0 to NR_JET_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => 0));
+    signal jet_jet_bx_0_bx_0_dphi: deta_dphi_vector_array(0 to NR_JET_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => (others => '0')));
     signal mu_mu_bx_0_bx_0_deta_integer: dim2_max_eta_range_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => 0));
     signal mu_mu_bx_0_bx_0_deta: deta_dphi_vector_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => (others => '0')));
     signal mu_mu_bx_0_bx_0_dphi_integer: dim2_max_phi_range_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => 0));
     signal mu_mu_bx_0_bx_0_dphi: deta_dphi_vector_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => (others => '0')));
     signal mu_mu_bx_0_bx_0_deta_integer_half_res: dim2_max_eta_range_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => 0));
     signal mu_mu_bx_0_bx_0_dphi_integer_half_res: dim2_max_phi_range_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => 0));
-    signal jet_eg_bx_0_bx_0_deta_integer: dim2_max_eta_range_array(0 to NR_JET_OBJECTS-1, 0 to NR_EG_OBJECTS-1) := (others => (others => 0));
-    signal jet_eg_bx_0_bx_0_deta: deta_dphi_vector_array(0 to NR_JET_OBJECTS-1, 0 to NR_EG_OBJECTS-1) := (others => (others => (others => '0')));
-    signal jet_eg_bx_0_bx_0_dphi_integer: dim2_max_phi_range_array(0 to NR_JET_OBJECTS-1, 0 to NR_EG_OBJECTS-1) := (others => (others => 0));
-    signal jet_eg_bx_0_bx_0_dphi: deta_dphi_vector_array(0 to NR_JET_OBJECTS-1, 0 to NR_EG_OBJECTS-1) := (others => (others => (others => '0')));
-    signal eg_eg_bx_0_bx_0_dr : dr_dim2_array(0 to NR_EG_OBJECTS-1, 0 to NR_EG_OBJECTS-1) := (others => (others => (others => '0')));
+    signal mu_mu_bx_m1_bx_0_deta_integer: dim2_max_eta_range_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => 0));
+    signal mu_mu_bx_m1_bx_0_deta: deta_dphi_vector_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => (others => '0')));
+    signal mu_mu_bx_m1_bx_0_dphi_integer: dim2_max_phi_range_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => 0));
+    signal mu_mu_bx_m1_bx_0_dphi: deta_dphi_vector_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => (others => '0')));
+    signal mu_mu_bx_m1_bx_0_deta_integer_half_res: dim2_max_eta_range_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => 0));
+    signal mu_mu_bx_m1_bx_0_dphi_integer_half_res: dim2_max_phi_range_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => 0));
+    signal eg_etm_bx_0_bx_0_dphi_integer: dim2_max_phi_range_array(0 to NR_EG_OBJECTS-1, 0 to NR_ETM_OBJECTS-1) := (others => (others => 0));
+    signal eg_etm_bx_0_bx_0_dphi: deta_dphi_vector_array(0 to NR_EG_OBJECTS-1, 0 to NR_ETM_OBJECTS-1) := (others => (others => (others => '0')));
+    signal jet_tau_bx_0_bx_0_deta_integer: dim2_max_eta_range_array(0 to NR_JET_OBJECTS-1, 0 to NR_TAU_OBJECTS-1) := (others => (others => 0));
+    signal jet_tau_bx_0_bx_0_deta: deta_dphi_vector_array(0 to NR_JET_OBJECTS-1, 0 to NR_TAU_OBJECTS-1) := (others => (others => (others => '0')));
+    signal jet_tau_bx_0_bx_0_dphi_integer: dim2_max_phi_range_array(0 to NR_JET_OBJECTS-1, 0 to NR_TAU_OBJECTS-1) := (others => (others => 0));
+    signal jet_tau_bx_0_bx_0_dphi: deta_dphi_vector_array(0 to NR_JET_OBJECTS-1, 0 to NR_TAU_OBJECTS-1) := (others => (others => (others => '0')));
     signal eg_jet_bx_0_bx_0_dr : dr_dim2_array(0 to NR_EG_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => (others => '0')));
     signal jet_mu_bx_0_bx_0_dr : dr_dim2_array(0 to NR_JET_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => (others => '0')));
-    signal jet_eg_bx_0_bx_0_dr : dr_dim2_array(0 to NR_JET_OBJECTS-1, 0 to NR_EG_OBJECTS-1) := (others => (others => (others => '0')));
+    signal mu_mu_bx_0_bx_0_dr : dr_dim2_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => (others => '0')));
+    signal jet_tau_bx_0_bx_0_dr : dr_dim2_array(0 to NR_JET_OBJECTS-1, 0 to NR_TAU_OBJECTS-1) := (others => (others => (others => '0')));
     signal jet_jet_bx_0_bx_0_mass_inv_pt : mass_dim2_array(0 to NR_JET_OBJECTS-1, 0 to NR_JET_OBJECTS-1) := (others => (others => (others => '0')));
     signal mu_mu_bx_0_bx_0_mass_inv_pt : mass_dim2_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1) := (others => (others => (others => '0')));
+    signal eg_etm_bx_0_bx_0_mass_trans : mass_dim2_array(0 to NR_EG_OBJECTS-1, 0 to NR_ETM_OBJECTS-1) := (others => (others => (others => '0')));
 
 -- Signal definition for muon charge correlations.
     signal ls_charcorr_double_bx_0_bx_0, os_charcorr_double_bx_0_bx_0 : std_logic_2dim_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1);
     signal ls_charcorr_triple_bx_0_bx_0, os_charcorr_triple_bx_0_bx_0 : std_logic_3dim_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1);
     signal ls_charcorr_quad_bx_0_bx_0, os_charcorr_quad_bx_0_bx_0 : std_logic_4dim_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1);
+    signal ls_charcorr_double_bx_m1_bx_0, os_charcorr_double_bx_m1_bx_0 : std_logic_2dim_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1);
+    signal ls_charcorr_triple_bx_m1_bx_0, os_charcorr_triple_bx_m1_bx_0 : std_logic_3dim_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1);
+    signal ls_charcorr_quad_bx_m1_bx_0, os_charcorr_quad_bx_m1_bx_0 : std_logic_4dim_array(0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1, 0 to NR_MU_OBJECTS-1);
 
 -- Signal definition for conditions names
-    signal anomaly_detection_trigger_i419 : std_logic;
-    signal single_ext_i341 : std_logic;
-    signal single_ext_i343 : std_logic;
-    signal single_ext_i349 : std_logic;
-    signal single_ext_i351 : std_logic;
-    signal single_ext_i356 : std_logic;
-    signal muon_shower1_i85 : std_logic;
-    signal single_ett_i305 : std_logic;
-    signal single_htt_i398 : std_logic;
-    signal calo_calo_correlation_i124 : std_logic;
-    signal calo_calo_correlation_i179 : std_logic;
-    signal calo_calo_correlation_i199 : std_logic;
-    signal calo_muon_correlation_i106 : std_logic;
-    signal calo_muon_correlation_i108 : std_logic;
-    signal calo_muon_correlation_i109 : std_logic;
-    signal calo_muon_correlation_i123 : std_logic;
-    signal invariant_mass_i277 : std_logic;
-    signal muon_muon_correlation_i54 : std_logic;
-    signal invariant_mass3_i76 : std_logic;
-    signal invariant_mass_ov_rm_i402 : std_logic;
-    signal double_eg_i189 : std_logic;
-    signal double_eg_i191 : std_logic;
-    signal double_eg_i194 : std_logic;
-    signal double_jet_i105 : std_logic;
-    signal double_jet_i107 : std_logic;
-    signal double_jet_i110 : std_logic;
-    signal double_mu_i31 : std_logic;
-    signal double_mu_i32 : std_logic;
-    signal double_mu_i38 : std_logic;
-    signal double_mu_i407 : std_logic;
-    signal double_mu_i408 : std_logic;
-    signal double_mu_i409 : std_logic;
-    signal double_mu_i410 : std_logic;
-    signal double_mu_i411 : std_logic;
-    signal double_mu_i412 : std_logic;
-    signal double_mu_i428 : std_logic;
-    signal double_mu_i436 : std_logic;
-    signal double_mu_i437 : std_logic;
-    signal double_tau_i218 : std_logic;
-    signal double_tau_i221 : std_logic;
-    signal single_eg_i142 : std_logic;
-    signal single_eg_i150 : std_logic;
-    signal single_eg_i157 : std_logic;
-    signal single_eg_i164 : std_logic;
-    signal single_eg_i172 : std_logic;
-    signal single_eg_i173 : std_logic;
-    signal single_eg_i86 : std_logic;
-    signal single_eg_i87 : std_logic;
-    signal single_eg_i89 : std_logic;
-    signal single_eg_i90 : std_logic;
-    signal single_jet_i226 : std_logic;
-    signal single_jet_i227 : std_logic;
-    signal single_jet_i237 : std_logic;
-    signal single_jet_i243 : std_logic;
-    signal single_jet_i251 : std_logic;
-    signal single_jet_i252 : std_logic;
-    signal single_jet_i253 : std_logic;
-    signal single_jet_i254 : std_logic;
-    signal single_mu_i0 : std_logic;
-    signal single_mu_i13 : std_logic;
-    signal single_mu_i15 : std_logic;
-    signal single_mu_i17 : std_logic;
-    signal single_mu_i223 : std_logic;
-    signal single_mu_i24 : std_logic;
-    signal single_mu_i359 : std_logic;
-    signal single_mu_i397 : std_logic;
-    signal single_mu_i405 : std_logic;
-    signal single_mu_i427 : std_logic;
-    signal single_mu_i5 : std_logic;
-    signal single_tau_i224 : std_logic;
-    signal single_tau_i225 : std_logic;
-    signal triple_eg_i196 : std_logic;
-    signal triple_eg_i197 : std_logic;
+    signal anomaly_detection_trigger_i422 : std_logic;
+    signal single_ext_i326 : std_logic;
+    signal single_ext_i327 : std_logic;
+    signal single_ext_i329 : std_logic;
+    signal single_ext_i344 : std_logic;
+    signal single_ext_i347 : std_logic;
+    signal single_etm_i307 : std_logic;
+    signal single_htt_i292 : std_logic;
+    signal single_htt_i300 : std_logic;
+    signal calo_calo_correlation_i198 : std_logic;
+    signal calo_muon_correlation_i132 : std_logic;
+    signal invariant_mass_i276 : std_logic;
+    signal invariant_mass_i77 : std_logic;
+    signal muon_muon_correlation_i131 : std_logic;
+    signal muon_muon_correlation_i350 : std_logic;
+    signal muon_muon_correlation_i433 : std_logic;
+    signal muon_muon_correlation_i57 : std_logic;
+    signal muon_muon_correlation_i59 : std_logic;
+    signal transverse_mass_i178 : std_logic;
+    signal invariant_mass3_i432 : std_logic;
+    signal invariant_mass_ov_rm_i400 : std_logic;
+    signal double_eg_i182 : std_logic;
+    signal double_jet_i270 : std_logic;
+    signal double_jet_i279 : std_logic;
+    signal double_mu_i35 : std_logic;
+    signal double_mu_i429 : std_logic;
+    signal double_mu_i58 : std_logic;
+    signal quad_jet_i284 : std_logic;
+    signal quad_jet_i287 : std_logic;
+    signal single_eg_i146 : std_logic;
+    signal single_eg_i152 : std_logic;
+    signal single_eg_i156 : std_logic;
+    signal single_eg_i165 : std_logic;
+    signal single_eg_i171 : std_logic;
+    signal single_eg_i176 : std_logic;
+    signal single_jet_i240 : std_logic;
+    signal single_jet_i246 : std_logic;
+    signal single_jet_i257 : std_logic;
+    signal single_jet_i258 : std_logic;
+    signal single_jet_i285 : std_logic;
+    signal single_jet_i286 : std_logic;
+    signal single_jet_i291 : std_logic;
+    signal single_mu_i11 : std_logic;
+    signal single_mu_i2 : std_logic;
+    signal single_mu_i22 : std_logic;
+    signal single_mu_i230 : std_logic;
+    signal single_mu_i26 : std_logic;
+    signal single_mu_i366 : std_logic;
+    signal single_mu_i8 : std_logic;
+    signal single_mu_i9 : std_logic;
+    signal single_tau_i212 : std_logic;
+    signal single_tau_i213 : std_logic;
+    signal single_tau_i231 : std_logic;
+    signal single_tau_i232 : std_logic;
+    signal single_tau_i233 : std_logic;
+    signal triple_jet_i278 : std_logic;
+    signal triple_mu_i72 : std_logic;
+    signal triple_mu_i73 : std_logic;
+    signal triple_mu_i78 : std_logic;
 
 -- Signal definition for algorithms names
-    signal l1_single_mu_cosmics : std_logic;
-    signal l1_single_mu_open_bmtf : std_logic;
-    signal l1_single_mu0_sq15_bmtf : std_logic;
-    signal l1_single_mu0_upt10_bmtf : std_logic;
-    signal l1_single_mu5 : std_logic;
-    signal l1_single_mu7 : std_logic;
-    signal l1_single_mu12_dq_omtf : std_logic;
-    signal l1_single_mu22 : std_logic;
-    signal l1_double_mu0_sq : std_logic;
-    signal l1_double_mu0_sq_os : std_logic;
-    signal l1_double_mu_15_7 : std_logic;
-    signal l1_double_mu0_upt6_sq_er2p0 : std_logic;
-    signal l1_double_mu6_upt6_sq_er2p0 : std_logic;
-    signal l1_double_mu0er1p4_sq_os_d_eta_max1p2 : std_logic;
-    signal l1_triple_mu_4_sq_2p5_sq_0_os_mass_max12 : std_logic;
-    signal l1_single_mu_shower_tight : std_logic;
-    signal l1_mu5_eg23er2p5 : std_logic;
-    signal l1_mu7_eg20er2p5 : std_logic;
-    signal l1_mu7_eg23er2p5 : std_logic;
-    signal l1_mu5_loose_iso_eg20er2p5 : std_logic;
-    signal l1_mu7_loose_iso_eg20er2p5 : std_logic;
-    signal l1_mu7_loose_iso_eg23er2p5 : std_logic;
-    signal l1_double_jet16er2p5_mu3_d_r_max0p4 : std_logic;
-    signal l1_double_jet35er2p5_mu3_d_r_max0p4 : std_logic;
-    signal l1_mu3_jet60er2p5_d_r_max0p4 : std_logic;
-    signal l1_double_jet60er2p5_mu3_d_r_max0p4 : std_logic;
-    signal l1_mu12_htt150er : std_logic;
-    signal l1_mu14_htt150er : std_logic;
-    signal l1_mu10er2p3_jet32er2p3_d_r_max0p4_double_jet32er2p3_d_eta_max1p6 : std_logic;
-    signal l1_single_eg26er2p5 : std_logic;
-    signal l1_single_eg38er2p5 : std_logic;
-    signal l1_single_loose_iso_eg26er1p5 : std_logic;
-    signal l1_single_loose_iso_eg30er1p5 : std_logic;
-    signal l1_single_iso_eg28er1p5 : std_logic;
-    signal l1_single_iso_eg30er2p5 : std_logic;
-    signal l1_double_eg11_er1p2_d_r_max0p6 : std_logic;
-    signal l1_double_eg_loose_iso18_loose_iso12_er1p5 : std_logic;
-    signal l1_double_eg_loose_iso22_loose_iso12_er1p5 : std_logic;
-    signal l1_double_loose_iso_eg24er2p1 : std_logic;
-    signal l1_triple_eg_18_18_12_er2p5 : std_logic;
-    signal l1_triple_eg16er2p5 : std_logic;
-    signal l1_loose_iso_eg28er2p1_jet34er2p5_d_r_min0p3 : std_logic;
-    signal l1_double_iso_tau30er2p1 : std_logic;
-    signal l1_double_iso_tau35er2p1 : std_logic;
-    signal l1_mu18er2p1_tau24er2p1 : std_logic;
-    signal l1_mu18er2p1_tau26er2p1 : std_logic;
-    signal l1_mu18er2p1_tau26er2p1_jet55 : std_logic;
-    signal l1_mu18er2p1_tau26er2p1_jet70 : std_logic;
-    signal l1_single_jet60 : std_logic;
-    signal l1_single_jet120er2p5 : std_logic;
-    signal l1_single_jet90_fwd2p5 : std_logic;
-    signal l1_single_jet120_fwd2p5 : std_logic;
-    signal l1_double_jet30er2p5_mass_min330_d_eta_max1p5 : std_logic;
-    signal l1_double_jet45_mass_min600_loose_iso_eg20er2p1_rm_ovlp_d_r0p2 : std_logic;
-    signal l1_ett2000 : std_logic;
-    signal l1_axo_v_loose : std_logic;
-    signal l1_bptx_or_ref4_vme : std_logic;
-    signal l1_bptx_and_ref1_vme : std_logic;
-    signal l1_bptx_beam_gas_b2_vme : std_logic;
-    signal l1_hcal_laser_mon_trig : std_logic;
-    signal l1_totem_4 : std_logic;
-    signal l1_double_mu6_upt6_sq_er2p0_part1 : std_logic;
-    signal l1_double_mu6_upt6_sq_er2p0_part2 : std_logic;
-    signal l1_double_mu6_upt6_sq_er2p0_part3 : std_logic;
-    signal l1_double_mu6_upt6_sq_er2p0_v2 : std_logic;
+    signal l1_single_mu_cosmics_omtf : std_logic;
+    signal l1_single_mu0_dq : std_logic;
+    signal l1_single_mu0_bmtf : std_logic;
+    signal l1_single_mu0_emtf : std_logic;
+    signal l1_single_mu11_sq14_bmtf : std_logic;
+    signal l1_single_mu22_oq : std_logic;
+    signal l1_single_mu22_omtf : std_logic;
+    signal l1_double_mu9_sq : std_logic;
+    signal l1_double_mu0_upt7_sq_er2p0 : std_logic;
+    signal l1_double_mu0er1p5_sq_os_d_r_max1p4 : std_logic;
+    signal l1_double_mu4er2p0_sq_os_d_r_max1p6 : std_logic;
+    signal l1_double_mu4p5_sq_os : std_logic;
+    signal l1_double_mu4p5_sq_os_d_r_max1p2 : std_logic;
+    signal l1_triple_mu_5_3p5_2p5 : std_logic;
+    signal l1_triple_mu_5_3_3 : std_logic;
+    signal l1_triple_mu_3_sq_2p5_sq_0_os_mass_max12 : std_logic;
+    signal l1_triple_mu_5_3p5_2p5_double_mu_5_2p5_os_mass_5to17 : std_logic;
+    signal l1_triple_mu_5_4_2p5_double_mu_5_2p5_os_mass_5to17 : std_logic;
+    signal l1_double_mu3_d_r_max1p6_jet90er2p5_d_r_max0p8 : std_logic;
+    signal l1_single_eg28er2p1 : std_logic;
+    signal l1_single_eg42er2p5 : std_logic;
+    signal l1_single_loose_iso_eg26er2p5 : std_logic;
+    signal l1_single_iso_eg24er2p1 : std_logic;
+    signal l1_single_iso_eg28er2p1 : std_logic;
+    signal l1_single_iso_eg32er2p1 : std_logic;
+    signal l1_iso_eg32er2p5_mt40 : std_logic;
+    signal l1_double_eg_22_10_er2p5 : std_logic;
+    signal l1_loose_iso_eg26er2p1_jet34er2p5_d_r_min0p3 : std_logic;
+    signal l1_single_iso_tau32er2p1 : std_logic;
+    signal l1_single_tau70er2p1 : std_logic;
+    signal l1_mu22er2p1_iso_tau30er2p1 : std_logic;
+    signal l1_mu22er2p1_iso_tau32er2p1 : std_logic;
+    signal l1_mu22er2p1_iso_tau34er2p1 : std_logic;
+    signal l1_mu22er2p1_iso_tau40er2p1 : std_logic;
+    signal l1_mu22er2p1_tau70er2p1 : std_logic;
+    signal l1_single_jet180 : std_logic;
+    signal l1_single_jet180er2p5 : std_logic;
+    signal l1_single_jet120_fwd3p0 : std_logic;
+    signal l1_double_jet100er2p5 : std_logic;
+    signal l1_double_jet30er2p5_mass_min300_d_eta_max1p5 : std_logic;
+    signal l1_double_jet45_mass_min600_iso_tau45er2p1_rm_ovlp_d_r0p5 : std_logic;
+    signal l1_triple_jet_95_75_65_double_jet_75_65_er2p5 : std_logic;
+    signal l1_quad_jet_95_75_65_20_double_jet_75_65_er2p5_jet20_fwd3p0 : std_logic;
+    signal l1_quad_jet60er2p5 : std_logic;
+    signal l1_htt160_single_llp_jet50 : std_logic;
+    signal l1_htt160er : std_logic;
+    signal l1_htt255er : std_logic;
+    signal l1_etm150 : std_logic;
+    signal l1_axo_tight : std_logic;
+    signal l1_bptx_xor : std_logic;
+    signal l1_bptx_plus : std_logic;
+    signal l1_bptx_minus : std_logic;
+    signal l1_unpaired_bunch_bptx_minus : std_logic;
+    signal l1_bptx_and_ref3_vme : std_logic;
+    signal l1_bptx_beam_gas_ref2_vme : std_logic;
+    signal l1_cdc_single_mu_3_er1p2_top120_dphi2p618_3p142 : std_logic;
 
 -- ========================================================
