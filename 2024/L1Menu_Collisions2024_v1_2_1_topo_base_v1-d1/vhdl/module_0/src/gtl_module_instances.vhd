@@ -2322,7 +2322,7 @@ cond_single_mbt0_hfp_i314_i: entity work.min_bias_hf_conditions
         condition_o => single_mbt0_hfp_i314
     );
 
-cond_topological_trigger_i443: entity work.topo_trigger_base_v1_wrapper
+cond_topological_trigger_i443: entity work.topo_base_v1_wrapper
     generic map(1000)
     port map(
         lhc_clk,
