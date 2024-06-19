@@ -1,2 +1,0 @@
-- Created this menu without TME and VHDL Producer for tests.
-- XML file, doc files and tm-vhdlproducer.log do not represent manually created VHDL files
