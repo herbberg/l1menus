@@ -1723,35 +1723,35 @@ cond_muon_muon_correlation_i52_i: entity work.correlation_conditions
         condition_o => muon_muon_correlation_i52
     );
 
-cond_axol1tl_trigger_i428: entity work.axol1tl_v3_comparison
+cond_axol1tl_trigger_i428: entity work.ml_comparison
     generic map(15717, AXO_SCORE_WIDTH)
     port map(
         axol1tl_v3_score,
         axol1tl_trigger_i428
     );
 
-cond_axol1tl_trigger_i429: entity work.axol1tl_v3_comparison
+cond_axol1tl_trigger_i429: entity work.ml_comparison
     generic map(17596, AXO_SCORE_WIDTH)
     port map(
         axol1tl_v3_score,
         axol1tl_trigger_i429
     );
 
-cond_axol1tl_trigger_i430: entity work.axol1tl_v3_comparison
+cond_axol1tl_trigger_i430: entity work.ml_comparison
     generic map(18580, AXO_SCORE_WIDTH)
     port map(
         axol1tl_v3_score,
         axol1tl_trigger_i430
     );
 
-cond_axol1tl_trigger_i431: entity work.axol1tl_v3_comparison
+cond_axol1tl_trigger_i431: entity work.ml_comparison
     generic map(20486, AXO_SCORE_WIDTH)
     port map(
         axol1tl_v3_score,
         axol1tl_trigger_i431
     );
 
-cond_axol1tl_trigger_i432: entity work.axol1tl_v3_comparison
+cond_axol1tl_trigger_i432: entity work.ml_comparison
     generic map(30161, AXO_SCORE_WIDTH)
     port map(
         axol1tl_v3_score,
