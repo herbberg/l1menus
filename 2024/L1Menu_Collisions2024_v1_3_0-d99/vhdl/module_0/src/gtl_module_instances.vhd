@@ -2342,7 +2342,8 @@ calc_muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
 
 -- calculation instance for ML
 
-calc_axo_v3_i: entity work.axol1tl_v3_instance
+calc_axo_v3_i: entity work.ml_calculation_instances
+    generic map(AXO_SEL, AXO_MODEL_V3, AXO_SCORE_WIDTH)
     port map(
         lhc_clk,
         bx_data.mu(2),
