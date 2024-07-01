@@ -2355,6 +2355,7 @@ calc_axo_v3_i: entity work.ml_calculation_instances
         bx_data.etm(2),
         bx_data.htm(2),
         bx_data.etmhf(2),
+        bx_data.htmhf(2),
         axol1tl_v3_score
     );
 -- ========================================================
