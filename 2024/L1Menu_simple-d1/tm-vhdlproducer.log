@@ -1,0 +1,222 @@
+2024-08-28 08:54:33 INFO : distributing menu...
+2024-08-28 08:54:33 INFO : loading resource information from JSON: /home/bergauer/github/cms-l1-globaltrigger/tm-vhdlproducer/env_2.20.1/lib/python3.10/site-packages/tmVhdlProducer/config/resource_default.json
+2024-08-28 08:54:33 INFO : :: listing resources...
+2024-08-28 08:54:33 INFO : thresholds:
+2024-08-28 08:54:33 INFO :  * floor: brams=14.69%, sliceLUTs=9.03%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * ceiling: brams=100.00%, sliceLUTs=90.00%, processors=100.00%
+2024-08-28 08:54:33 INFO : instances:
+2024-08-28 08:54:33 INFO :  * MuonCondition[ muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * MuonCondition[ muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.08%, processors=0.33%
+2024-08-28 08:54:33 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * MuonCondition[ muon, muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * MuonCondition[ muon, muon, muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CaloCondition[ calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CaloCondition[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.05%, processors=0.33%
+2024-08-28 08:54:33 INFO :  * CaloCondition[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CaloCondition[ calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.39%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CaloCondition[ calo, calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CaloCondition[ calo, calo, calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CaloCondition[ calo, calo, calo, calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CaloCondition[ calo, calo, calo, calo, calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CaloCondition[ calo, calo, calo, calo, calo, calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CaloCondition[ calo, calo, calo, calo, calo, calo, calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CaloCondition[ calo, calo, calo, calo, calo, calo, calo, calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CaloCondition[ calo, calo, calo, calo, calo, calo, calo, calo, calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CaloConditionOvRm[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CaloConditionOvRm[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.13%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.05%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CorrelationCondition[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CorrelationCondition[ calo, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CorrelationCondition[ calo, esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CorrelationCondition[ muon, esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CorrelationCondition[ muon, muon ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dr: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * massupt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * massdr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * chgcor: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * Correlation3Condition[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * Correlation3Condition[ muon, muon, muon ]: brams=0.00%, sliceLUTs=0.19%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * mass: brams=0.00%, sliceLUTs=0.00%, processors=0.06%
+2024-08-28 08:54:33 INFO :  * CorrelationConditionOvRm[ calo, calo ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CorrelationConditionOvRm[ calo, calo, calo ]: brams=0.00%, sliceLUTs=0.15%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * deta: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dphi: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * dr: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * tbpt: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :    * mass: brams=0.00%, sliceLUTs=0.01%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * EsumsCondition[ esum ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * MinBiasCondition[ bias ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * ExternalCondition[ ext ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * TowerCountCondition[ count ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * AnomalyDetectionTrigger[ adt ]: brams=0.00%, sliceLUTs=1.79%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * Axol1tlTrigger[ axol1tl ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * TopologicalTrigger[ topological ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * ZDCPlus[ count ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * ZDCMinus[ count ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * CicadaTrigger[ cicada ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO :  * SignalCondition[ signal ]: brams=0.00%, sliceLUTs=0.00%, processors=0.00%
+2024-08-28 08:54:33 INFO : |---------------------------------------------------------------------------------------|
+2024-08-28 08:54:33 INFO : |                                                                                       |
+2024-08-28 08:54:33 INFO : | Algorithms sorted by payload (descending)                                             |
+2024-08-28 08:54:33 INFO : |                                                                                       |
+2024-08-28 08:54:33 INFO : |---------------------------------------------------------------------------------------|
+2024-08-28 08:54:33 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2024-08-28 08:54:33 INFO : | Index | BRAMs   | SliceLUTs | DSPs    | Name                                          |
+2024-08-28 08:54:33 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2024-08-28 08:54:33 INFO : |   412 |  0.000% |    0.001% |  0.000% | L1_ETT2000                                    |
+2024-08-28 08:54:33 INFO : |   402 |  0.000% |    0.001% |  0.000% | L1_HTT120er                                   |
+2024-08-28 08:54:33 INFO : |    19 |  0.000% |    0.007% |  0.000% | L1_SingleMu3                                  |
+2024-08-28 08:54:33 INFO : |   305 |  0.000% |    0.008% |  0.000% | L1_SingleJet35                                |
+2024-08-28 08:54:33 INFO : |    46 |  0.000% |    0.015% |  0.000% | L1_DoubleMu0                                  |
+2024-08-28 08:54:33 INFO : |   159 |  0.000% |    0.017% |  0.000% | L1_SingleEG8er2p5                             |
+2024-08-28 08:54:33 INFO : |-------|---------|-----------|---------|-----------------------------------------------|
+2024-08-28 08:54:33 INFO : |---------------------------------------------------------------------------------------|
+2024-08-28 08:54:33 INFO : distributing algorithms, shadow ratio: 0.0
+2024-08-28 08:54:33 INFO : starting algorithm distribution for 6 algorithms on 6 modules using shadow ratio of 0.0
+2024-08-28 08:54:33 INFO :  . adding L1_SingleEG8er2p5 (159) to module 0
+2024-08-28 08:54:33 INFO :  . adding L1_DoubleMu0 (46) to module 1
+2024-08-28 08:54:33 INFO :  . adding L1_SingleJet35 (305) to module 2
+2024-08-28 08:54:33 INFO :  . adding L1_SingleMu3 (19) to module 3
+2024-08-28 08:54:33 INFO :  . adding L1_ETT2000 (412) to module 4
+2024-08-28 08:54:33 INFO :  . adding L1_HTT120er (402) to module 5
+2024-08-28 08:54:33 INFO : |-----------------------------------------------------------------------------|
+2024-08-28 08:54:33 INFO : |                                                                             |
+2024-08-28 08:54:33 INFO : | Detailed distribition on 6 modules, shadow ratio: 0.0                       |
+2024-08-28 08:54:33 INFO : |                                                                             |
+2024-08-28 08:54:33 INFO : |------------|----------------------------------------------------------------|
+2024-08-28 08:54:33 INFO : | Module     | Algorithm                                                      |
+2024-08-28 08:54:33 INFO : | ID | Index | Index | Name                                                   |
+2024-08-28 08:54:33 INFO : |----|-------|-------|--------------------------------------------------------|
+2024-08-28 08:54:33 INFO : |  0 |     0 |   159 | L1_SingleEG8er2p5                                      |
+2024-08-28 08:54:33 INFO : |  1 |     0 |    46 | L1_DoubleMu0                                           |
+2024-08-28 08:54:33 INFO : |  2 |     0 |   305 | L1_SingleJet35                                         |
+2024-08-28 08:54:33 INFO : |  3 |     0 |    19 | L1_SingleMu3                                           |
+2024-08-28 08:54:33 INFO : |  4 |     0 |   412 | L1_ETT2000                                             |
+2024-08-28 08:54:33 INFO : |  5 |     0 |   402 | L1_HTT120er                                            |
+2024-08-28 08:54:33 INFO : |----|-------|-------|--------------------------------------------------------|
+2024-08-28 08:54:33 INFO : |-----------------------------------------------------------------------------|
+2024-08-28 08:54:33 INFO : |                                                                             |
+2024-08-28 08:54:33 INFO : | Condition distribution, sorted by weight (descending)                       |
+2024-08-28 08:54:33 INFO : |                                                                             |
+2024-08-28 08:54:33 INFO : |-----------------------------------------------------------------------------|
+2024-08-28 08:54:33 INFO : |-----------------------------------------------------------------------------------|
+2024-08-28 08:54:33 INFO : | Name                                             | Modules | sLUTs | DSPs | BRAMs |
+2024-08-28 08:54:33 INFO : |--------------------------------------------------|---------|-------|------|-------|
+2024-08-28 08:54:33 INFO : | SingleEG_i2                                      | 0       | 72    | 0    | 0     |
+2024-08-28 08:54:33 INFO : | DoubleMU_i1                                      | 1       | 64    | 0    | 0     |
+2024-08-28 08:54:33 INFO : | SingleJET_i3                                     | 2       | 36    | 0    | 0     |
+2024-08-28 08:54:33 INFO : | SingleMU_i0                                      | 3       | 32    | 0    | 0     |
+2024-08-28 08:54:33 INFO : | SingleETT_i5                                     | 4       | 4     | 0    | 0     |
+2024-08-28 08:54:33 INFO : | SingleHTT_i4                                     | 5       | 4     | 0    | 0     |
+2024-08-28 08:54:33 INFO : |--------------------------------------------------|---------|-------|------|-------|
+2024-08-28 08:54:33 INFO : |--------------------------------------------------------------------------------------|
+2024-08-28 08:54:33 INFO : |                                                                                      |
+2024-08-28 08:54:33 INFO : | Summary for distribution on 6 modules, shadow ratio: 0.0                             |
+2024-08-28 08:54:33 INFO : |                                                                                      |
+2024-08-28 08:54:33 INFO : |-------------------------------------|------------------------------------------------|
+2024-08-28 08:54:33 INFO : |                                     |                    Payload                     |
+2024-08-28 08:54:33 INFO : |-------------------------------------|------------------------------------------------|
+2024-08-28 08:54:33 INFO : |              Module                 |   SliceLUTs    |     BRAMs     |     DSPs      |
+2024-08-28 08:54:33 INFO : |-------------------------------------|------------------------------------------------|
+2024-08-28 08:54:33 INFO : | ID | Algorithms | Conditions | Rel. | Value  |  [%]  | Value |  [%]  | Value |  [%]  |
+2024-08-28 08:54:33 INFO : |----|------------|------------|------|--------|-------|-------|-------|-------|-------|
+2024-08-28 08:54:33 INFO : |  0 |          1 |          1 | 1.00 |  60504 | 13.97 |   636 | 43.27 |     0 |  0.00 |
+2024-08-28 08:54:33 INFO : |  1 |          1 |          1 | 1.00 |  60496 | 13.96 |   636 | 43.27 |     0 |  0.00 |
+2024-08-28 08:54:33 INFO : |  2 |          1 |          1 | 1.00 |  60468 | 13.96 |   636 | 43.27 |     0 |  0.00 |
+2024-08-28 08:54:33 INFO : |  3 |          1 |          1 | 1.00 |  60464 | 13.96 |   636 | 43.27 |     0 |  0.00 |
+2024-08-28 08:54:33 INFO : |  4 |          1 |          1 | 1.00 |  60436 | 13.95 |   636 | 43.27 |     0 |  0.00 |
+2024-08-28 08:54:33 INFO : |  5 |          1 |          1 | 1.00 |  60436 | 13.95 |   636 | 43.27 |     0 |  0.00 |
+2024-08-28 08:54:33 INFO : |----|------------|------------|------|--------|-------|-------|-------|-------|-------|
+2024-08-28 08:54:33 INFO : writing VHDL modules...
+2024-08-28 08:54:33 INFO : writing 6 algorithms to 6 module(s)
+2024-08-28 08:54:33 INFO : writing output for module: 0
+2024-08-28 08:54:33 INFO : algo_index.vhd          : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_0/src/algo_index.vhd
+2024-08-28 08:54:33 INFO : gtl_module_signals.vhd  : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_0/src/gtl_module_signals.vhd
+2024-08-28 08:54:33 INFO : gtl_module_instances.vhd: /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_0/src/gtl_module_instances.vhd
+2024-08-28 08:54:33 INFO : ugt_constants.vhd       : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_0/src/ugt_constants.vhd
+2024-08-28 08:54:33 INFO : writing output for module: 1
+2024-08-28 08:54:33 INFO : algo_index.vhd          : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_1/src/algo_index.vhd
+2024-08-28 08:54:33 INFO : gtl_module_signals.vhd  : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_1/src/gtl_module_signals.vhd
+2024-08-28 08:54:33 INFO : gtl_module_instances.vhd: /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_1/src/gtl_module_instances.vhd
+2024-08-28 08:54:33 INFO : ugt_constants.vhd       : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_1/src/ugt_constants.vhd
+2024-08-28 08:54:33 INFO : writing output for module: 2
+2024-08-28 08:54:33 INFO : algo_index.vhd          : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_2/src/algo_index.vhd
+2024-08-28 08:54:33 INFO : gtl_module_signals.vhd  : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_2/src/gtl_module_signals.vhd
+2024-08-28 08:54:33 INFO : gtl_module_instances.vhd: /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_2/src/gtl_module_instances.vhd
+2024-08-28 08:54:33 INFO : ugt_constants.vhd       : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_2/src/ugt_constants.vhd
+2024-08-28 08:54:33 INFO : writing output for module: 3
+2024-08-28 08:54:33 INFO : algo_index.vhd          : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_3/src/algo_index.vhd
+2024-08-28 08:54:33 INFO : gtl_module_signals.vhd  : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_3/src/gtl_module_signals.vhd
+2024-08-28 08:54:33 INFO : gtl_module_instances.vhd: /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_3/src/gtl_module_instances.vhd
+2024-08-28 08:54:33 INFO : ugt_constants.vhd       : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_3/src/ugt_constants.vhd
+2024-08-28 08:54:33 INFO : writing output for module: 4
+2024-08-28 08:54:33 INFO : algo_index.vhd          : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_4/src/algo_index.vhd
+2024-08-28 08:54:33 INFO : gtl_module_signals.vhd  : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_4/src/gtl_module_signals.vhd
+2024-08-28 08:54:33 INFO : gtl_module_instances.vhd: /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_4/src/gtl_module_instances.vhd
+2024-08-28 08:54:33 INFO : ugt_constants.vhd       : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_4/src/ugt_constants.vhd
+2024-08-28 08:54:33 INFO : writing output for module: 5
+2024-08-28 08:54:33 INFO : algo_index.vhd          : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_5/src/algo_index.vhd
+2024-08-28 08:54:33 INFO : gtl_module_signals.vhd  : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_5/src/gtl_module_signals.vhd
+2024-08-28 08:54:33 INFO : gtl_module_instances.vhd: /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_5/src/gtl_module_instances.vhd
+2024-08-28 08:54:33 INFO : ugt_constants.vhd       : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/vhdl/module_5/src/ugt_constants.vhd
+2024-08-28 08:54:33 INFO : writing updated XML file /home/bergauer/L1Menu_simple.xml
+2024-08-28 08:54:33 INFO : reading source XML menu file /home/bergauer/L1Menu_simple.xml
+2024-08-28 08:54:33 INFO : processing menu "L1Menu_simple" ... 
+2024-08-28 08:54:33 INFO : updating menu information...
+2024-08-28 08:54:33 INFO : uuid_menu     : 5109c77a-5230-4d41-bd3b-046606535fc9
+2024-08-28 08:54:33 INFO : uuid_firmware : ad96f1d9-2103-460b-a63d-4a542607da89
+2024-08-28 08:54:33 INFO : n_modules     : 6
+2024-08-28 08:54:33 INFO : writing target XML menu file /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/xml/L1Menu_simple-d1.xml
+2024-08-28 08:54:34 INFO : generating menu documentation...
+2024-08-28 08:54:34 INFO : writing HTML documentation /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/xml/L1Menu_simple-d1.xml
+2024-08-28 08:54:34 INFO : writing TWIKI page template /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/xml/L1Menu_simple-d1.xml
+2024-08-28 08:54:35 INFO : patching filenames...
+2024-08-28 08:54:35 INFO : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/doc/L1Menu_simple.html --> /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/doc/L1Menu_simple-d1.html
+2024-08-28 08:54:35 INFO : /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/doc/L1Menu_simple.twiki --> /home/bergauer/github/herbberg/l1menus/2024/L1Menu_simple-d1/doc/L1Menu_simple-d1.twiki
+2024-08-28 08:54:35 INFO : done.
