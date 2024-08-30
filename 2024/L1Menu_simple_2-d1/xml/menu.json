@@ -1,0 +1,14 @@
+{
+  "firmware_uuid" : "421b4fa7-8031-4747-b5fd-957f5dc307db",
+  "menu_uuid"     : "4e10b5b5-9c10-4dbb-830e-c81310be9f45",
+  "n_modules"     : 6,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_Unnamed", 0, 2, 0],
+    ["L1_SingleMu3", 19, 3, 0],
+    ["L1_DoubleMu0", 46, 1, 0],
+    ["L1_SingleEG8er2p5", 159, 0, 0],
+    ["L1_HTT120er", 402, 5, 0],
+    ["L1_ETT2000", 412, 4, 0]
+  ]
+}
