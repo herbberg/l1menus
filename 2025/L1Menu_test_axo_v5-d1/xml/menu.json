@@ -1,0 +1,14 @@
+{
+  "firmware_uuid" : "97f4d343-2e23-4259-a8c5-f9a288a33e94",
+  "menu_uuid"     : "f4dee21e-cd03-4fcb-ad17-f1cc47f1b00d",
+  "n_modules"     : 6,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_SingleMuCosmics", 0, 5, 0],
+    ["L1_AXO_VLoose", 439, 3, 0],
+    ["L1_AXO_Loose", 440, 0, 0],
+    ["L1_AXO_Nominal", 441, 1, 0],
+    ["L1_AXO_Tight", 442, 2, 0],
+    ["L1_AXO_VTight", 443, 4, 0]
+  ]
+}

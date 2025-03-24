@@ -1,0 +1,81 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_test_axo_v5.html" }%
+
+---+!! !L1Menu_test_axo_v5
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_test_axo_v5 | 0.13 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_test_axo_v5 |
+|Menu UUID: | f4dee21e-cd03-4fcb-ad17-f1cc47f1b00d |
+|Firmware UUID: | 97f4d343-2e23-4259-a8c5-f9a288a33e94  |
+|Associated L1 scale DB key: | scales_2024_05_15 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 6 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Muon algorithm triggers: | 1 |
+      | !Signal algorithm triggers: | 5 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Muon algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMuCosmics ][L1_SingleMuCosmics]]   | L1_SingleMuCosmics  | 0 |  |
+!Muon algorithm triggers: 1 bits defined
+---++++ !Signal algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_AXO_VLoose ][L1_AXO_VLoose]]   | L1_AXO_VLoose  | 439 |  |
+|[[%GET{"REPORTER_URL"}%#L1_AXO_Loose ][L1_AXO_Loose]]   | L1_AXO_Loose  | 440 |  |
+|[[%GET{"REPORTER_URL"}%#L1_AXO_Nominal ][L1_AXO_Nominal]]   | L1_AXO_Nominal  | 441 |  |
+|[[%GET{"REPORTER_URL"}%#L1_AXO_Tight ][L1_AXO_Tight]]   | L1_AXO_Tight  | 442 |  |
+|[[%GET{"REPORTER_URL"}%#L1_AXO_VTight ][L1_AXO_VTight]]   | L1_AXO_VTight  | 443 |  |
+!Signal algorithm triggers: 5 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_SingleMuCosmics ][L1_SingleMuCosmics]]   |L1_SingleMuCosmics |0 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_AXO_VLoose ][L1_AXO_VLoose]]   |L1_AXO_VLoose |439 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_AXO_Loose ][L1_AXO_Loose]]   |L1_AXO_Loose |440 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_AXO_Nominal ][L1_AXO_Nominal]]   |L1_AXO_Nominal |441 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_AXO_Tight ][L1_AXO_Tight]]   |L1_AXO_Tight |442 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_AXO_VTight ][L1_AXO_VTight]]   |L1_AXO_VTight |443 |4 |
+
+
+<p style="page-break-before: always">&nbsp;</p>

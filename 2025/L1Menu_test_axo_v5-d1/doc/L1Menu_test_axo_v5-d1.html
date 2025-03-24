@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="text/html" charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>L1Menu_test_axo_v5</title>
+  <meta name="description" content="Test with AXOL1TL model v5 algos only">
+  <meta name="generator" content="tm-reporter 2.13.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- style customizations -->
+  <style>
+    /* Fixing anchor offset for fixed top navbar */
+    h1:before,
+    h2:before {
+        height: 38px;
+        content: "";
+        display:block;
+    }
+    a.anchor {
+      visibility:hidden;
+      position:relative;
+      top:-68px;
+    }
+    .panel-heading h3 {
+        margin-top: .1em;
+        margin-bottom: .1em;
+    }
+    .panel-heading a.top {
+        float: right;
+    }
+    pre .curl {
+        font-weight: bold;
+    }
+    pre .cut {
+        color: darkmagenta;
+    }
+    pre .function {
+        font-weight: bold;
+        color: darkblue;
+    }
+    pre .keyword {
+        font-weight: bold;
+        color: blue;
+    }
+    pre .vhdlop {
+        font-weight: bold;
+        color: darkmagenta;
+    }
+    pre .vhdlsig {
+        color: brown;
+    }
+    .vhdl,
+    .expression {
+        white-space: normal;
+        word-wrap: normal;
+        word-break: keep-all;
+    }
+    .informative {
+        font-size: .9em;
+        color: darkgray;
+    }
+    h3 .informative {
+        font-size: .6em;
+    }
+    .footer {
+        float: right;
+        font-size: .9em;
+        color: darkgray;
+    }
+  </style>
+</head>
+<body role="document">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class=""><a href="#top"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Top</span></a></li>
+          <li class=""><a href="#algorithms"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Algorithms</span></a></li>
+          <li class=""><a href="#cuts"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> Cuts</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <a name="top"></a>
+
+    <header class="page-header">
+      <h1>L1Menu_test_axo_v5</h1>
+    </header>
+
+
+
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Comment:</strong> Test with AXOL1TL model v5 algos only</li>
+      <li class="list-group-item"><strong>Firmware UUID:</strong> 97f4d343-2e23-4259-a8c5-f9a288a33e94</li>
+      <li class="list-group-item"><strong>Menu UUID:</strong> f4dee21e-cd03-4fcb-ad17-f1cc47f1b00d</li>
+      <li class="list-group-item"><strong>Grammar Version:</strong> 0.13</li>
+      <li class="list-group-item"><strong>Scale Set:</strong> scales_2024_05_15</li>
+      <li class="list-group-item"><strong>External Signals Set:</strong> L1ExternalConditionsCabling_20240328</li>
+      <li class="list-group-item"><strong>Labels:</strong> Run3 (2024)</li>
+    </ul>
+    <hr />
+
+    <a name="algorithms"></a>
+
+    <header class="page-header">
+      <h2>Algorithms</h2>
+    </header>
+
+    <table class="table">
+      <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Labels</th>
+      </tr>
+      <tr>
+        <td><a href=#L1_SingleMuCosmics>0</a></td>
+        <td><a href=#L1_SingleMuCosmics>L1_SingleMuCosmics</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_AXO_VLoose>439</a></td>
+        <td><a href=#L1_AXO_VLoose>L1_AXO_VLoose</a></td>
+        <td>Run3 (2024)</td>
+      </tr>
+      <tr>
+        <td><a href=#L1_AXO_Loose>440</a></td>
+        <td><a href=#L1_AXO_Loose>L1_AXO_Loose</a></td>
+        <td>Run3 (2024)</td>
+      </tr>
+      <tr>
+        <td><a href=#L1_AXO_Nominal>441</a></td>
+        <td><a href=#L1_AXO_Nominal>L1_AXO_Nominal</a></td>
+        <td>Run3 (2024)</td>
+      </tr>
+      <tr>
+        <td><a href=#L1_AXO_Tight>442</a></td>
+        <td><a href=#L1_AXO_Tight>L1_AXO_Tight</a></td>
+        <td>Run3 (2024)</td>
+      </tr>
+      <tr>
+        <td><a href=#L1_AXO_VTight>443</a></td>
+        <td><a href=#L1_AXO_VTight>L1_AXO_VTight</a></td>
+        <td>Run3 (2024)</td>
+      </tr>
+    </table>
+    <hr />
+    <a class="anchor" name="L1_SingleMuCosmics"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>0 L1_SingleMuCosmics <span class="informative">(Module 5)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">MU0</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_single_mu_cosmics</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_mu_i0</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>MU0</strong> : <code>single_mu_i0</code>
+          <ul>
+            <li>Object: MU0
+              <ul>
+                <li>
+                  
+                    Threshold: 0.0 GeV
+                    : <code>0x1</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_AXO_VLoose"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>439 L1_AXO_VLoose <span class="informative">(Module 3)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">AXO[AXO-MODEL_v5, AXO-SCORE_VLoose]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_axo_v_loose</span> <span class="vhdlop"><=</span> <span class="vhdlsig">axol1tl_trigger_i1</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p>L1 Menu (July 2024): AXOL1TL seeds<br />https://its.cern.ch/jira/browse/CMSLITDPG-1296</p>
+  
+        <p><strong>Labels</strong></p>
+        <ul>
+          <li>Run3 (2024)</li>
+        </ul>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>AXO[AXO-MODEL_v5, AXO-SCORE_VLoose]</strong> : <code>axol1tl_trigger_i1</code>
+          <ul>
+            <li>Object: AXO
+              <ul>
+                <li>
+                  
+                    Model: <a href="#AXO-MODEL_v5">AXO-MODEL_v5</a>
+                    : <code>"v5"</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Score: <a href="#AXO-SCORE_VLoose">AXO-SCORE_VLoose</a> 346
+                    : <code>0x15a</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_AXO_Loose"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>440 L1_AXO_Loose <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">AXO[AXO-MODEL_v5, AXO-SCORE_Loose]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_axo_loose</span> <span class="vhdlop"><=</span> <span class="vhdlsig">axol1tl_trigger_i2</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p>L1 Menu (July 2024): AXOL1TL seeds<br />https://its.cern.ch/jira/browse/CMSLITDPG-1296</p>
+  
+        <p><strong>Labels</strong></p>
+        <ul>
+          <li>Run3 (2024)</li>
+        </ul>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>AXO[AXO-MODEL_v5, AXO-SCORE_Loose]</strong> : <code>axol1tl_trigger_i2</code>
+          <ul>
+            <li>Object: AXO
+              <ul>
+                <li>
+                  
+                    Model: <a href="#AXO-MODEL_v5">AXO-MODEL_v5</a>
+                    : <code>"v5"</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Score: <a href="#AXO-SCORE_Loose">AXO-SCORE_Loose</a> 389
+                    : <code>0x185</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_AXO_Nominal"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>441 L1_AXO_Nominal <span class="informative">(Module 1)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">AXO[AXO-MODEL_v5, AXO-SCORE_Nominal]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_axo_nominal</span> <span class="vhdlop"><=</span> <span class="vhdlsig">axol1tl_trigger_i3</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p>L1 Menu (July 2024): AXOL1TL seeds<br />https://its.cern.ch/jira/browse/CMSLITDPG-1296</p>
+  
+        <p><strong>Labels</strong></p>
+        <ul>
+          <li>Run3 (2024)</li>
+        </ul>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>AXO[AXO-MODEL_v5, AXO-SCORE_Nominal]</strong> : <code>axol1tl_trigger_i3</code>
+          <ul>
+            <li>Object: AXO
+              <ul>
+                <li>
+                  
+                    Model: <a href="#AXO-MODEL_v5">AXO-MODEL_v5</a>
+                    : <code>"v5"</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Score: <a href="#AXO-SCORE_Nominal">AXO-SCORE_Nominal</a> 415
+                    : <code>0x19f</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_AXO_Tight"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>442 L1_AXO_Tight <span class="informative">(Module 2)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">AXO[AXO-MODEL_v5, AXO-SCORE_Tight]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_axo_tight</span> <span class="vhdlop"><=</span> <span class="vhdlsig">axol1tl_trigger_i4</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p>L1 Menu (July 2024): AXOL1TL seeds<br />https://its.cern.ch/jira/browse/CMSLITDPG-1296</p>
+  
+        <p><strong>Labels</strong></p>
+        <ul>
+          <li>Run3 (2024)</li>
+        </ul>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>AXO[AXO-MODEL_v5, AXO-SCORE_Tight]</strong> : <code>axol1tl_trigger_i4</code>
+          <ul>
+            <li>Object: AXO
+              <ul>
+                <li>
+                  
+                    Model: <a href="#AXO-MODEL_v5">AXO-MODEL_v5</a>
+                    : <code>"v5"</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Score: <a href="#AXO-SCORE_Tight">AXO-SCORE_Tight</a> 456
+                    : <code>0x1c8</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_AXO_VTight"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>443 L1_AXO_VTight <span class="informative">(Module 4)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">AXO[AXO-MODEL_v5, AXO-SCORE_VTight]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_axo_v_tight</span> <span class="vhdlop"><=</span> <span class="vhdlsig">axol1tl_trigger_i5</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p>L1 Menu (July 2024): AXOL1TL seeds<br />https://its.cern.ch/jira/browse/CMSLITDPG-1296</p>
+  
+        <p><strong>Labels</strong></p>
+        <ul>
+          <li>Run3 (2024)</li>
+        </ul>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>AXO[AXO-MODEL_v5, AXO-SCORE_VTight]</strong> : <code>axol1tl_trigger_i5</code>
+          <ul>
+            <li>Object: AXO
+              <ul>
+                <li>
+                  
+                    Model: <a href="#AXO-MODEL_v5">AXO-MODEL_v5</a>
+                    : <code>"v5"</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Score: <a href="#AXO-SCORE_VTight">AXO-SCORE_VTight</a> 557
+                    : <code>0x22d</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+
+    <a name="cuts"></a>
+
+    <header class="page-header">
+      <h2>Cuts</h2>
+    </header>
+
+    <table class="table">
+      <tr>
+        <th>Name</th>
+        <th>Minimum</th>
+        <th>Maximum</th>
+        <th>Minimum (hw/emu)</th>
+        <th>Maximum (hw/emu)</th>
+        <th>Data (hw/emu)</th>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="AXO-SCORE_VLoose"></a> AXO-SCORE_VLoose</td>
+        <td>346.0</td>
+        <td>0.0</td>
+        <td><code>346.0</code></td>
+        <td><code>0.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="AXO-SCORE_Loose"></a> AXO-SCORE_Loose</td>
+        <td>389.0</td>
+        <td>0.0</td>
+        <td><code>389.0</code></td>
+        <td><code>0.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="AXO-SCORE_Nominal"></a> AXO-SCORE_Nominal</td>
+        <td>415.0</td>
+        <td>0.0</td>
+        <td><code>415.0</code></td>
+        <td><code>0.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="AXO-SCORE_Tight"></a> AXO-SCORE_Tight</td>
+        <td>456.0</td>
+        <td>0.0</td>
+        <td><code>456.0</code></td>
+        <td><code>0.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="AXO-SCORE_VTight"></a> AXO-SCORE_VTight</td>
+        <td>557.0</td>
+        <td>0.0</td>
+        <td><code>557.0</code></td>
+        <td><code>0.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="AXO-MODEL_v5"></a> AXO-MODEL_v5</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><code>"v5"</code></td>
+      </tr>
+    </table>
+
+    <footer class="footer">
+      <p>Generated by tm-reporter v2.13.0 on 2025-03-24 09:41:26.</p>
+    </fooer>
+
+  </main><!-- /container -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+</html>
