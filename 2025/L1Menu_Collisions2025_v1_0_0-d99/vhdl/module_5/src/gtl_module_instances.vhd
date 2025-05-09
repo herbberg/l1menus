@@ -10,14 +10,14 @@
 -- 4e44cb6d-b18e-4568-9e7b-b347191dd76b
 
 -- Unique ID of firmware implementation:
--- e4e71976-2278-4c2f-b488-6d7409d6b9bc
+-- e937e605-d799-4ad3-9520-740de5a6545a
 
 -- Scale set:
 -- scales_2024_05_15
 
 -- VHDL producer
 -- version: 2.21.0
--- hash value: e8f110c55f0a006167483a0b1ece290d9005aa7ccc9cb44837b2588ee7189f3e
+-- hash value: b6ac8d8955399d307bd159854edd4e1e475b5c0efc7b7bd80253f75f246ea851
 
 -- tmEventSetup
 -- version: 0.13.0
@@ -1145,7 +1145,7 @@ cond_single_mbt0_hfp_i303_i: entity work.min_bias_hf_conditions
         condition_o => single_mbt0_hfp_i303
     );
 
-cond_axol1tl_trigger_i418: entity work.axol1tl_v5_comparison
+cond_axol1tl_trigger_i418: entity work.ml_comparison
     generic map(4762, AXO_SCORE_WIDTH)
     port map(
         axol1tl_v5_score,
