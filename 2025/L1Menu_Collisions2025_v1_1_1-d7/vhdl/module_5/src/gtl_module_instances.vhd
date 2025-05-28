@@ -10,14 +10,14 @@
 -- 2db5153c-349d-4b74-928f-dc8b2e7b240b
 
 -- Unique ID of firmware implementation:
--- 8fb7fd3f-03fb-4500-ae13-1f6ba8b714e2
+-- 614ad94a-3bee-4f74-9889-d3963ef26950
 
 -- Scale set:
 -- scales_2024_05_15
 
 -- VHDL producer
 -- version: 2.23.0
--- hash value: 5beca97ceefa04597829951e795870797fb3d99b14c00c8d24bdccadc9fac27e
+-- hash value: 4e70d9ce83189f685a15a51660fb1ebd9ecebb0187d99a27c8012968870d380d
 
 -- tmEventSetup
 -- version: 0.13.0
@@ -1697,11 +1697,11 @@ algo(31) <= l1_mu3er1p5_jet100er2p5_etmhf30;
 
 -- 147 L1_Mu3er1p5_Jet100er2p5_ETMHF40 : MU3[MU-QLTY_SNGL,MU-ETA_1p5] AND JET100[JET-ETA_2p52] AND ETMHF40
 l1_mu3er1p5_jet100er2p5_etmhf40 <= single_mu_i115 and single_jet_i116 and single_etmhf_i118;
-algo(35) <= l1_mu3er1p5_jet100er2p5_etmhf40;
+algo(34) <= l1_mu3er1p5_jet100er2p5_etmhf40;
 
 -- 148 L1_Mu3er1p5_Jet100er2p5_ETMHF50 : MU3[MU-QLTY_SNGL,MU-ETA_1p5] AND JET100[JET-ETA_2p52] AND ETMHF50
 l1_mu3er1p5_jet100er2p5_etmhf50 <= single_mu_i115 and single_jet_i116 and single_etmhf_i119;
-algo(40) <= l1_mu3er1p5_jet100er2p5_etmhf50;
+algo(39) <= l1_mu3er1p5_jet100er2p5_etmhf50;
 
 -- 156 L1_DoubleMu3_SQ_ETMHF30_HTT60er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF30 AND HTT60
 l1_double_mu3_sq_etmhf30_htt60er <= double_mu_i128 and single_etmhf_i117 and single_htt_i129;
@@ -1733,11 +1733,11 @@ algo(29) <= l1_double_mu3_sq_etmhf50_jet60er2p5;
 
 -- 163 L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5 : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF60 AND JET60[JET-ETA_2p52]
 l1_double_mu3_sq_etmhf60_jet60er2p5 <= double_mu_i128 and single_etmhf_i132 and single_jet_i130;
-algo(34) <= l1_double_mu3_sq_etmhf60_jet60er2p5;
+algo(35) <= l1_double_mu3_sq_etmhf60_jet60er2p5;
 
 -- 164 L1_DoubleMu3_SQ_HTT220er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND HTT220
 l1_double_mu3_sq_htt220er <= double_mu_i128 and single_htt_i133;
-algo(39) <= l1_double_mu3_sq_htt220er;
+algo(40) <= l1_double_mu3_sq_htt220er;
 
 -- 183 L1_SingleEG28er1p5 : EG28[EG-ETA_1p52_HASHFIX]
 l1_single_eg28er1p5 <= single_eg_i141;
@@ -2155,18 +2155,22 @@ calc_deta_dphi_integer_jet_etmhf_bx_0_bx_0_i: entity work.deta_dphi_calculations
         dphi_integer => jet_etmhf_bx_0_bx_0_dphi_integer
     );
 --
-calc_deta_dphi_integer_mu_jet_bx_0_bx_0_i: entity work.deta_dphi_calculations
+calc_deta_dphi_integer_jet_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
     generic map(
         phi_half_range => MUON_PHI_HALF_RANGE_BINS,
         phi_h_r_half_range => MUON_PHI_HALF_RES_HALF_RANGE_BINS,
-        nr_obj1 => NR_MU_OBJECTS,
-        type_obj1 => MU_TYPE,
-        nr_obj2 => NR_JET_OBJECTS,
-        type_obj2 => JET_TYPE
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
     )
     port map(
-        deta_integer => mu_jet_bx_0_bx_0_deta_integer,
-        dphi_integer => mu_jet_bx_0_bx_0_dphi_integer
+        eta_integer_obj1 => jet_bx_0_eta_conv_2_muon_eta_integer,
+        phi_integer_obj1 => jet_bx_0_phi_conv_2_muon_phi_integer,
+        eta_integer_obj2 => mu_bx_0_eta_integer,
+        phi_integer_obj2 => mu_bx_0_phi_integer,
+        deta_integer => jet_mu_bx_0_bx_0_deta_integer,
+        dphi_integer => jet_mu_bx_0_bx_0_dphi_integer
     );
 --
 calc_deta_dphi_integer_mu_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
@@ -2193,20 +2197,20 @@ calc_deta_dphi_integer_mu_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
         dphi_integer => mu_mu_bx_0_bx_0_dphi_integer
     );
 --
-calc_deta_dphi_integer_tau_jet_bx_0_bx_0_i: entity work.deta_dphi_calculations
+calc_deta_dphi_integer_jet_tau_bx_0_bx_0_i: entity work.deta_dphi_calculations
     generic map(
-        nr_obj1 => NR_TAU_OBJECTS,
-        type_obj1 => TAU_TYPE,
-        nr_obj2 => NR_JET_OBJECTS,
-        type_obj2 => JET_TYPE
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_TAU_OBJECTS,
+        type_obj2 => TAU_TYPE
     )
     port map(
-        eta_integer_obj1 => tau_bx_0_eta_integer,
-        phi_integer_obj1 => tau_bx_0_phi_integer,
-        eta_integer_obj2 => jet_bx_0_eta_integer,
-        phi_integer_obj2 => jet_bx_0_phi_integer,
-        deta_integer => tau_jet_bx_0_bx_0_deta_integer,
-        dphi_integer => tau_jet_bx_0_bx_0_dphi_integer
+        eta_integer_obj1 => jet_bx_0_eta_integer,
+        phi_integer_obj1 => jet_bx_0_phi_integer,
+        eta_integer_obj2 => tau_bx_0_eta_integer,
+        phi_integer_obj2 => tau_bx_0_phi_integer,
+        deta_integer => jet_tau_bx_0_bx_0_deta_integer,
+        dphi_integer => jet_tau_bx_0_bx_0_dphi_integer
     );
 --
 -- eta, dphi, cosh deta and cos dphi LUTs for correlation conditions (used for DR and mass)
@@ -2273,18 +2277,18 @@ calc_cut_deltaR_eg_eg_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         dr => eg_eg_bx_0_bx_0_dr
     );
 
-calc_cut_deltaR_mu_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
+calc_cut_deltaR_jet_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
-        nr_obj1 => NR_MU_OBJECTS,
-        type_obj1 => MU_TYPE,
-        nr_obj2 => NR_JET_OBJECTS,
-        type_obj2 => JET_TYPE,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
         dr_cut => true
     )
     port map(
-        deta_integer => mu_jet_bx_0_bx_0_deta_integer,
-        dphi_integer => mu_jet_bx_0_bx_0_dphi_integer,
-        dr => mu_jet_bx_0_bx_0_dr
+        deta_integer => jet_mu_bx_0_bx_0_deta_integer,
+        dphi_integer => jet_mu_bx_0_bx_0_dphi_integer,
+        dr => jet_mu_bx_0_bx_0_dr
     );
 
 calc_cut_deltaR_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
@@ -2301,18 +2305,18 @@ calc_cut_deltaR_mu_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         dr => mu_mu_bx_0_bx_0_dr
     );
 
-calc_cut_deltaR_tau_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
+calc_cut_deltaR_jet_tau_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
-        nr_obj1 => NR_TAU_OBJECTS,
-        type_obj1 => TAU_TYPE,
-        nr_obj2 => NR_JET_OBJECTS,
-        type_obj2 => JET_TYPE,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_TAU_OBJECTS,
+        type_obj2 => TAU_TYPE,
         dr_cut => true
     )
     port map(
-        deta_integer => tau_jet_bx_0_bx_0_deta_integer,
-        dphi_integer => tau_jet_bx_0_bx_0_dphi_integer,
-        dr => tau_jet_bx_0_bx_0_dr
+        deta_integer => jet_tau_bx_0_bx_0_deta_integer,
+        dphi_integer => jet_tau_bx_0_bx_0_dphi_integer,
+        dr => jet_tau_bx_0_bx_0_dr
     );
 
 -- Instantiations of Invariant mass calculation

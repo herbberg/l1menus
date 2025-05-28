@@ -10,14 +10,14 @@
 -- 2db5153c-349d-4b74-928f-dc8b2e7b240b
 
 -- Unique ID of firmware implementation:
--- 8fb7fd3f-03fb-4500-ae13-1f6ba8b714e2
+-- 614ad94a-3bee-4f74-9889-d3963ef26950
 
 -- Scale set:
 -- scales_2024_05_15
 
 -- VHDL producer
 -- version: 2.23.0
--- hash value: 5beca97ceefa04597829951e795870797fb3d99b14c00c8d24bdccadc9fac27e
+-- hash value: 4e70d9ce83189f685a15a51660fb1ebd9ecebb0187d99a27c8012968870d380d
 
 -- tmEventSetup
 -- version: 0.13.0
@@ -30,14 +30,14 @@ constant global_index: global_index_array := (
         142, -- module_index: 2, name: L1_DoubleJet60er2p5_Mu3_dR_Max0p4
         141, -- module_index: 3, name: L1_Mu3_Jet60er2p5_dR_Max0p4
         384, -- module_index: 4, name: L1_HTT280er_QuadJet_70_55_40_35_er2p5
-        387, -- module_index: 5, name: L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3
-        393, -- module_index: 6, name: L1_HTT320er
-        248, -- module_index: 7, name: L1_DoubleEG8er2p5_HTT280er
-        385, -- module_index: 8, name: L1_HTT320er_QuadJet_70_55_40_40_er2p5
-        249, -- module_index: 9, name: L1_DoubleEG8er2p5_HTT300er
-        392, -- module_index: 10, name: L1_HTT280er
-        386, -- module_index: 11, name: L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3
-        250, -- module_index: 12, name: L1_DoubleEG8er2p5_HTT320er
+        386, -- module_index: 5, name: L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3
+        250, -- module_index: 6, name: L1_DoubleEG8er2p5_HTT320er
+        387, -- module_index: 7, name: L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3
+        393, -- module_index: 8, name: L1_HTT320er
+        248, -- module_index: 9, name: L1_DoubleEG8er2p5_HTT280er
+        385, -- module_index: 10, name: L1_HTT320er_QuadJet_70_55_40_40_er2p5
+        249, -- module_index: 11, name: L1_DoubleEG8er2p5_HTT300er
+        392, -- module_index: 12, name: L1_HTT280er
          84, -- module_index: 13, name: L1_DoubleMu0er1p4_SQ_OS_dR_Max1p4
         111, -- module_index: 14, name: L1_TripleMu_4SQ_2p5SQ_0_OS_Mass_Max12
         505, -- module_index: 15, name: L1_CDC_SingleMu_3_er1p2_TOP120_DPHI2p618_3p142
@@ -47,17 +47,17 @@ constant global_index: global_index_array := (
         270, -- module_index: 19, name: L1_DoubleIsoTau34er2p1
         272, -- module_index: 20, name: L1_DoubleIsoTau36er2p1
         207, -- module_index: 21, name: L1_SingleIsoEG28er1p3to2p5
-        194, -- module_index: 22, name: L1_SingleLooseIsoEG28er1p3
-        198, -- module_index: 23, name: L1_SingleLooseIsoEG28er2p5
-        208, -- module_index: 24, name: L1_SingleIsoEG28er2p5to3p0
-        179, -- module_index: 25, name: L1_SingleEG28er2p5to3p0
-        195, -- module_index: 26, name: L1_SingleLooseIsoEG28er1p3to2p5
-        196, -- module_index: 27, name: L1_SingleLooseIsoEG28er2p5to3p0
-        177, -- module_index: 28, name: L1_SingleEG28er1p3
-        181, -- module_index: 29, name: L1_SingleEG28er2p5
-        206, -- module_index: 30, name: L1_SingleIsoEG28er1p3
-        210, -- module_index: 31, name: L1_SingleIsoEG28er2p5
-        178, -- module_index: 32, name: L1_SingleEG28er1p3to2p5
+        178, -- module_index: 22, name: L1_SingleEG28er1p3to2p5
+        210, -- module_index: 23, name: L1_SingleIsoEG28er2p5
+        194, -- module_index: 24, name: L1_SingleLooseIsoEG28er1p3
+        198, -- module_index: 25, name: L1_SingleLooseIsoEG28er2p5
+        208, -- module_index: 26, name: L1_SingleIsoEG28er2p5to3p0
+        179, -- module_index: 27, name: L1_SingleEG28er2p5to3p0
+        195, -- module_index: 28, name: L1_SingleLooseIsoEG28er1p3to2p5
+        196, -- module_index: 29, name: L1_SingleLooseIsoEG28er2p5to3p0
+        177, -- module_index: 30, name: L1_SingleEG28er1p3
+        181, -- module_index: 31, name: L1_SingleEG28er2p5
+        206, -- module_index: 32, name: L1_SingleIsoEG28er1p3
         180, -- module_index: 33, name: L1_SingleEG28_FWD2p5
         317, -- module_index: 34, name: L1_SingleJet35_FWD3p0
         133, -- module_index: 35, name: L1_DoubleMu4_SQ_EG9er2p5

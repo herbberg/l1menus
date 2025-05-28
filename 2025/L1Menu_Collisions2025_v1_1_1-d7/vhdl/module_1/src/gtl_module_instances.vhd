@@ -10,14 +10,14 @@
 -- 2db5153c-349d-4b74-928f-dc8b2e7b240b
 
 -- Unique ID of firmware implementation:
--- 8fb7fd3f-03fb-4500-ae13-1f6ba8b714e2
+-- 614ad94a-3bee-4f74-9889-d3963ef26950
 
 -- Scale set:
 -- scales_2024_05_15
 
 -- VHDL producer
 -- version: 2.23.0
--- hash value: 5beca97ceefa04597829951e795870797fb3d99b14c00c8d24bdccadc9fac27e
+-- hash value: 4e70d9ce83189f685a15a51660fb1ebd9ecebb0187d99a27c8012968870d380d
 
 -- tmEventSetup
 -- version: 0.13.0
@@ -1869,11 +1869,11 @@ algo(10) <= l1_double_tau_iso34_iso23_er2p1_jet70_rm_ovlp_d_r0p5;
 
 -- 279 L1_Mu18er2p1_Tau24er2p1 : MU18[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU24[TAU-ETA_2p13]
 l1_mu18er2p1_tau24er2p1 <= single_mu_i204 and single_tau_i205;
-algo(16) <= l1_mu18er2p1_tau24er2p1;
+algo(15) <= l1_mu18er2p1_tau24er2p1;
 
 -- 280 L1_Mu18er2p1_Tau26er2p1 : MU18[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU26[TAU-ETA_2p13]
 l1_mu18er2p1_tau26er2p1 <= single_mu_i204 and single_tau_i206;
-algo(17) <= l1_mu18er2p1_tau26er2p1;
+algo(16) <= l1_mu18er2p1_tau26er2p1;
 
 -- 281 L1_Mu18er2p1_Tau26er2p1_Jet55 : MU18[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU26[TAU-ETA_2p13] AND JET55
 l1_mu18er2p1_tau26er2p1_jet55 <= single_mu_i204 and single_tau_i206 and single_jet_i207;
@@ -1881,7 +1881,7 @@ algo(14) <= l1_mu18er2p1_tau26er2p1_jet55;
 
 -- 282 L1_Mu18er2p1_Tau26er2p1_Jet70 : MU18[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU26[TAU-ETA_2p13] AND JET70
 l1_mu18er2p1_tau26er2p1_jet70 <= single_mu_i204 and single_tau_i206 and single_jet_i208;
-algo(15) <= l1_mu18er2p1_tau26er2p1_jet70;
+algo(17) <= l1_mu18er2p1_tau26er2p1_jet70;
 
 -- 305 L1_SingleJet200 : JET200
 l1_single_jet200 <= single_jet_i222;
@@ -2078,18 +2078,22 @@ calc_deta_dphi_integer_eg_eg_bx_0_bx_0_i: entity work.deta_dphi_calculations
         dphi_integer => eg_eg_bx_0_bx_0_dphi_integer
     );
 --
-calc_deta_dphi_integer_mu_jet_bx_0_bx_0_i: entity work.deta_dphi_calculations
+calc_deta_dphi_integer_jet_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
     generic map(
         phi_half_range => MUON_PHI_HALF_RANGE_BINS,
         phi_h_r_half_range => MUON_PHI_HALF_RES_HALF_RANGE_BINS,
-        nr_obj1 => NR_MU_OBJECTS,
-        type_obj1 => MU_TYPE,
-        nr_obj2 => NR_JET_OBJECTS,
-        type_obj2 => JET_TYPE
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE
     )
     port map(
-        deta_integer => mu_jet_bx_0_bx_0_deta_integer,
-        dphi_integer => mu_jet_bx_0_bx_0_dphi_integer
+        eta_integer_obj1 => jet_bx_0_eta_conv_2_muon_eta_integer,
+        phi_integer_obj1 => jet_bx_0_phi_conv_2_muon_phi_integer,
+        eta_integer_obj2 => mu_bx_0_eta_integer,
+        phi_integer_obj2 => mu_bx_0_phi_integer,
+        deta_integer => jet_mu_bx_0_bx_0_deta_integer,
+        dphi_integer => jet_mu_bx_0_bx_0_dphi_integer
     );
 --
 calc_deta_dphi_integer_mu_mu_bx_0_bx_0_i: entity work.deta_dphi_calculations
@@ -2132,20 +2136,20 @@ calc_deta_dphi_integer_eg_jet_bx_0_bx_0_i: entity work.deta_dphi_calculations
         dphi_integer => eg_jet_bx_0_bx_0_dphi_integer
     );
 --
-calc_deta_dphi_integer_tau_jet_bx_0_bx_0_i: entity work.deta_dphi_calculations
+calc_deta_dphi_integer_jet_tau_bx_0_bx_0_i: entity work.deta_dphi_calculations
     generic map(
-        nr_obj1 => NR_TAU_OBJECTS,
-        type_obj1 => TAU_TYPE,
-        nr_obj2 => NR_JET_OBJECTS,
-        type_obj2 => JET_TYPE
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_TAU_OBJECTS,
+        type_obj2 => TAU_TYPE
     )
     port map(
-        eta_integer_obj1 => tau_bx_0_eta_integer,
-        phi_integer_obj1 => tau_bx_0_phi_integer,
-        eta_integer_obj2 => jet_bx_0_eta_integer,
-        phi_integer_obj2 => jet_bx_0_phi_integer,
-        deta_integer => tau_jet_bx_0_bx_0_deta_integer,
-        dphi_integer => tau_jet_bx_0_bx_0_dphi_integer
+        eta_integer_obj1 => jet_bx_0_eta_integer,
+        phi_integer_obj1 => jet_bx_0_phi_integer,
+        eta_integer_obj2 => tau_bx_0_eta_integer,
+        phi_integer_obj2 => tau_bx_0_phi_integer,
+        deta_integer => jet_tau_bx_0_bx_0_deta_integer,
+        dphi_integer => jet_tau_bx_0_bx_0_dphi_integer
     );
 --
 -- eta, dphi, cosh deta and cos dphi LUTs for correlation conditions (used for DR and mass)
@@ -2224,18 +2228,18 @@ calc_cut_deltaR_eg_eg_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         dr => eg_eg_bx_0_bx_0_dr
     );
 
-calc_cut_deltaR_mu_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
+calc_cut_deltaR_jet_mu_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
-        nr_obj1 => NR_MU_OBJECTS,
-        type_obj1 => MU_TYPE,
-        nr_obj2 => NR_JET_OBJECTS,
-        type_obj2 => JET_TYPE,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_MU_OBJECTS,
+        type_obj2 => MU_TYPE,
         dr_cut => true
     )
     port map(
-        deta_integer => mu_jet_bx_0_bx_0_deta_integer,
-        dphi_integer => mu_jet_bx_0_bx_0_dphi_integer,
-        dr => mu_jet_bx_0_bx_0_dr
+        deta_integer => jet_mu_bx_0_bx_0_deta_integer,
+        dphi_integer => jet_mu_bx_0_bx_0_dphi_integer,
+        dr => jet_mu_bx_0_bx_0_dr
     );
 
 calc_cut_deltaR_eg_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
@@ -2252,18 +2256,18 @@ calc_cut_deltaR_eg_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
         dr => eg_jet_bx_0_bx_0_dr
     );
 
-calc_cut_deltaR_tau_jet_bx_0_bx_0_i: entity work.correlation_cuts_calculation
+calc_cut_deltaR_jet_tau_bx_0_bx_0_i: entity work.correlation_cuts_calculation
     generic map(
-        nr_obj1 => NR_TAU_OBJECTS,
-        type_obj1 => TAU_TYPE,
-        nr_obj2 => NR_JET_OBJECTS,
-        type_obj2 => JET_TYPE,
+        nr_obj1 => NR_JET_OBJECTS,
+        type_obj1 => JET_TYPE,
+        nr_obj2 => NR_TAU_OBJECTS,
+        type_obj2 => TAU_TYPE,
         dr_cut => true
     )
     port map(
-        deta_integer => tau_jet_bx_0_bx_0_deta_integer,
-        dphi_integer => tau_jet_bx_0_bx_0_dphi_integer,
-        dr => tau_jet_bx_0_bx_0_dr
+        deta_integer => jet_tau_bx_0_bx_0_deta_integer,
+        dphi_integer => jet_tau_bx_0_bx_0_dphi_integer,
+        dr => jet_tau_bx_0_bx_0_dr
     );
 
 -- Instantiations of Invariant mass calculation

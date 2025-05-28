@@ -10,14 +10,14 @@
 -- 2db5153c-349d-4b74-928f-dc8b2e7b240b
 
 -- Unique ID of firmware implementation:
--- 8fb7fd3f-03fb-4500-ae13-1f6ba8b714e2
+-- 614ad94a-3bee-4f74-9889-d3963ef26950
 
 -- Scale set:
 -- scales_2024_05_15
 
 -- VHDL producer
 -- version: 2.23.0
--- hash value: 5beca97ceefa04597829951e795870797fb3d99b14c00c8d24bdccadc9fac27e
+-- hash value: 4e70d9ce83189f685a15a51660fb1ebd9ecebb0187d99a27c8012968870d380d
 
 -- tmEventSetup
 -- version: 0.13.0
@@ -59,13 +59,13 @@ constant global_index: global_index_array := (
         146, -- module_index: 31, name: L1_Mu3er1p5_Jet100er2p5_ETMHF30
         161, -- module_index: 32, name: L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5
         400, -- module_index: 33, name: L1_ETMHF70
-        163, -- module_index: 34, name: L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5
-        147, -- module_index: 35, name: L1_Mu3er1p5_Jet100er2p5_ETMHF40
+        147, -- module_index: 34, name: L1_Mu3er1p5_Jet100er2p5_ETMHF40
+        163, -- module_index: 35, name: L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5
         409, -- module_index: 36, name: L1_ETMHF70_HTT60er
         403, -- module_index: 37, name: L1_ETMHF100
         412, -- module_index: 38, name: L1_ETMHF100_HTT60er
-        164, -- module_index: 39, name: L1_DoubleMu3_SQ_HTT220er
-        148, -- module_index: 40, name: L1_Mu3er1p5_Jet100er2p5_ETMHF50
+        148, -- module_index: 39, name: L1_Mu3er1p5_Jet100er2p5_ETMHF50
+        164, -- module_index: 40, name: L1_DoubleMu3_SQ_HTT220er
         401, -- module_index: 41, name: L1_ETMHF80
         410, -- module_index: 42, name: L1_ETMHF80_HTT60er
         266, -- module_index: 43, name: L1_DoubleTau70er2p1

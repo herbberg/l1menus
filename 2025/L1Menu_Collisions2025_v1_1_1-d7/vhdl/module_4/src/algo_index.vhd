@@ -10,14 +10,14 @@
 -- 2db5153c-349d-4b74-928f-dc8b2e7b240b
 
 -- Unique ID of firmware implementation:
--- 8fb7fd3f-03fb-4500-ae13-1f6ba8b714e2
+-- 614ad94a-3bee-4f74-9889-d3963ef26950
 
 -- Scale set:
 -- scales_2024_05_15
 
 -- VHDL producer
 -- version: 2.23.0
--- hash value: 5beca97ceefa04597829951e795870797fb3d99b14c00c8d24bdccadc9fac27e
+-- hash value: 4e70d9ce83189f685a15a51660fb1ebd9ecebb0187d99a27c8012968870d380d
 
 -- tmEventSetup
 -- version: 0.13.0
@@ -53,13 +53,13 @@ constant global_index: global_index_array := (
         315, -- module_index: 25, name: L1_SingleJet90_FWD2p5
         116, -- module_index: 26, name: L1_QuadMu0_OQ
         126, -- module_index: 27, name: L1_Mu5_LooseIsoEG20er2p5
-        123, -- module_index: 28, name: L1_Mu7_EG20er2p5
-        124, -- module_index: 29, name: L1_Mu7_EG23er2p5
-        127, -- module_index: 30, name: L1_Mu7_LooseIsoEG20er2p5
+        128, -- module_index: 28, name: L1_Mu7_LooseIsoEG23er2p5
+        123, -- module_index: 29, name: L1_Mu7_EG20er2p5
+        124, -- module_index: 30, name: L1_Mu7_EG23er2p5
          20, -- module_index: 31, name: L1_SingleMu5
-        122, -- module_index: 32, name: L1_Mu5_EG23er2p5
-         22, -- module_index: 33, name: L1_SingleMu7
-        128, -- module_index: 34, name: L1_Mu7_LooseIsoEG23er2p5
+        127, -- module_index: 32, name: L1_Mu7_LooseIsoEG20er2p5
+        122, -- module_index: 33, name: L1_Mu5_EG23er2p5
+         22, -- module_index: 34, name: L1_SingleMu7
         102, -- module_index: 35, name: L1_TripleMu3_SQ
         109, -- module_index: 36, name: L1_TripleMu_5_5_3
         204, -- module_index: 37, name: L1_SingleIsoEG26er2p5
@@ -97,8 +97,8 @@ constant global_index: global_index_array := (
         503, -- module_index: 69, name: L1_BPTX_BeamGas_B1_VME
         494, -- module_index: 70, name: L1_BPTX_NotOR_VME
         481, -- module_index: 71, name: L1_BptxMinus
-        479, -- module_index: 72, name: L1_BptxXOR
-        480, -- module_index: 73, name: L1_BptxPlus
+        480, -- module_index: 72, name: L1_BptxPlus
+        479, -- module_index: 73, name: L1_BptxXOR
         510, -- module_index: 74, name: L1_TOTEM_3
         482, -- module_index: 75, name: L1_UnpairedBunchBptxPlus
     others => 0
