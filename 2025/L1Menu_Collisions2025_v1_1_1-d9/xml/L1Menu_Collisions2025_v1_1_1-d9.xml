@@ -3,7 +3,7 @@
   <ancestor_id>0</ancestor_id>
   <name>L1Menu_Collisions2025_v1_1_1</name>
   <uuid_menu>2db5153c-349d-4b74-928f-dc8b2e7b240b</uuid_menu>
-  <uuid_firmware>9cf49942-8d5c-468b-9b1d-f13c9d35dbac</uuid_firmware>
+  <uuid_firmware>ea9e8e8e-44a6-4fde-9546-67e5eb95c7da</uuid_firmware>
   <global_tag/>
   <grammar_version>0.13</grammar_version>
   <n_modules>6</n_modules>
@@ -115,7 +115,7 @@
     <expression>MU0[MU-QLTY_OPEN]</expression>
     <index>4</index>
     <module_id>0</module_id>
-    <module_index>56</module_index>
+    <module_index>62</module_index>
     <cut>
       <name>MU-QLTY_OPEN</name>
       <object>MU</object>
@@ -402,7 +402,7 @@
     <expression>MU5[MU-QLTY_SNGL]</expression>
     <index>20</index>
     <module_id>4</module_id>
-    <module_index>30</module_index>
+    <module_index>29</module_index>
     <cut>
       <name>MU-QLTY_SNGL</name>
       <object>MU</object>
@@ -446,7 +446,7 @@
     <expression>MU7[MU-QLTY_SNGL]</expression>
     <index>22</index>
     <module_id>4</module_id>
-    <module_index>32</module_index>
+    <module_index>34</module_index>
     <cut>
       <name>MU-QLTY_SNGL</name>
       <object>MU</object>
@@ -621,7 +621,7 @@
     <expression>MU20[MU-QLTY_SNGL]</expression>
     <index>39</index>
     <module_id>2</module_id>
-    <module_index>41</module_index>
+    <module_index>42</module_index>
     <cut>
       <name>MU-QLTY_SNGL</name>
       <object>MU</object>
@@ -2832,7 +2832,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-953</comment>
     <expression>MU5[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]</expression>
     <index>122</index>
     <module_id>4</module_id>
-    <module_index>31</module_index>
+    <module_index>33</module_index>
     <comment>L1 Menu (2018 v1): Seeds for MuonEG PD
 https://its.cern.ch/jira/browse/CMSLITDPG-492
 https://its.cern.ch/jira/browse/CMSLITDPG-506
@@ -2874,7 +2874,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-76</comment>
     <expression>MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]</expression>
     <index>123</index>
     <module_id>4</module_id>
-    <module_index>34</module_index>
+    <module_index>30</module_index>
     <comment>L1 Menu (2018 v2): Seeds for MuonEG PD
 https://its.cern.ch/jira/browse/CMSLITDPG-625
 https://its.cern.ch/jira/browse/CMSLITDPG-492
@@ -2917,7 +2917,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-76</comment>
     <expression>MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]</expression>
     <index>124</index>
     <module_id>4</module_id>
-    <module_index>28</module_index>
+    <module_index>31</module_index>
     <comment>L1 Menu (2018 v1): Seeds for MuonEG PD
 https://its.cern.ch/jira/browse/CMSLITDPG-492
 https://its.cern.ch/jira/browse/CMSLITDPG-506
@@ -3051,7 +3051,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-76</comment>
     <expression>MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]</expression>
     <index>127</index>
     <module_id>4</module_id>
-    <module_index>29</module_index>
+    <module_index>32</module_index>
     <comment>L1 Menu (2018 v1): Seeds for MuonEG PD
 https://its.cern.ch/jira/browse/CMSLITDPG-492
 https://its.cern.ch/jira/browse/CMSLITDPG-506
@@ -3101,7 +3101,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-76</comment>
     <expression>MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]</expression>
     <index>128</index>
     <module_id>4</module_id>
-    <module_index>33</module_index>
+    <module_index>28</module_index>
     <comment>L1 Menu (2018 v1): Seeds for MuonEG PD
 https://its.cern.ch/jira/browse/CMSLITDPG-492
 https://its.cern.ch/jira/browse/CMSLITDPG-506
@@ -3193,7 +3193,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-81</comment>
     <expression>MU6[MU-QLTY_SNGL] AND comb{EG12[EG-ETA_2p52],EG12[EG-ETA_2p52]}</expression>
     <index>130</index>
     <module_id>0</module_id>
-    <module_index>29</module_index>
+    <module_index>32</module_index>
     <comment>L1 Menu (2018 v1): Seeds for MuonEG PD
 https://its.cern.ch/jira/browse/CMSLITDPG-492
 https://its.cern.ch/jira/browse/CMSLITDPG-506
@@ -3235,7 +3235,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-81</comment>
     <expression>MU6[MU-QLTY_SNGL] AND comb{EG15[EG-ETA_2p52],EG15[EG-ETA_2p52]}</expression>
     <index>131</index>
     <module_id>0</module_id>
-    <module_index>31</module_index>
+    <module_index>28</module_index>
     <comment>L1 Menu (2018 v1): Seeds for MuonEG PD
 https://its.cern.ch/jira/browse/CMSLITDPG-492
 https://its.cern.ch/jira/browse/CMSLITDPG-506
@@ -3277,7 +3277,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-81</comment>
     <expression>MU6[MU-QLTY_SNGL] AND comb{EG17[EG-ETA_2p52],EG17[EG-ETA_2p52]}</expression>
     <index>132</index>
     <module_id>0</module_id>
-    <module_index>33</module_index>
+    <module_index>30</module_index>
     <comment>L1 Menu (2018 v1): Seeds for MuonEG PD
 https://its.cern.ch/jira/browse/CMSLITDPG-492
 https://its.cern.ch/jira/browse/CMSLITDPG-506
@@ -3967,7 +3967,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-488</comment>
     <expression>MU3[MU-QLTY_SNGL,MU-ETA_1p5] AND JET100[JET-ETA_2p52] AND ETMHF30</expression>
     <index>146</index>
     <module_id>5</module_id>
-    <module_index>29</module_index>
+    <module_index>31</module_index>
     <comment>L1 Menu (2022 July): Seeds with lower MET thresholds
 https://its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <labels>Run3 (2022)</labels>
@@ -4022,7 +4022,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <expression>MU3[MU-QLTY_SNGL,MU-ETA_1p5] AND JET100[JET-ETA_2p52] AND ETMHF40</expression>
     <index>147</index>
     <module_id>5</module_id>
-    <module_index>33</module_index>
+    <module_index>35</module_index>
     <comment>L1 Menu (2018 v1): Seeds for SUSY
 https://its.cern.ch/jira/browse/CMSLITDPG-509</comment>
     <cut>
@@ -4076,7 +4076,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-509</comment>
     <expression>MU3[MU-QLTY_SNGL,MU-ETA_1p5] AND JET100[JET-ETA_2p52] AND ETMHF50</expression>
     <index>148</index>
     <module_id>5</module_id>
-    <module_index>37</module_index>
+    <module_index>40</module_index>
     <comment>L1 Menu (2018 v1): Seeds for SUSY
 https://its.cern.ch/jira/browse/CMSLITDPG-509</comment>
     <cut>
@@ -4130,7 +4130,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-509</comment>
     <expression>MU6[MU-QLTY_SNGL] AND HTT240</expression>
     <index>149</index>
     <module_id>0</module_id>
-    <module_index>28</module_index>
+    <module_index>31</module_index>
     <comment>SUSY: https://indico.cern.ch/event/623066/contributions/2513193/attachments/1426266/2189134/L1shoppinglist.pdf</comment>
     <cut>
       <name>MU-QLTY_SNGL</name>
@@ -4160,7 +4160,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-509</comment>
     <expression>MU6[MU-QLTY_SNGL] AND HTT250</expression>
     <index>150</index>
     <module_id>0</module_id>
-    <module_index>30</module_index>
+    <module_index>33</module_index>
     <comment>SUSY</comment>
     <cut>
       <name>MU-QLTY_SNGL</name>
@@ -4371,7 +4371,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-78</comment>
     <expression>comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF30 AND HTT60</expression>
     <index>156</index>
     <module_id>5</module_id>
-    <module_index>14</module_index>
+    <module_index>15</module_index>
     <comment>L1 Menu (July 2022): Lower MET thresholds
 https://its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <labels>Run3 (2022)</labels>
@@ -4410,7 +4410,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <expression>comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF40 AND HTT60</expression>
     <index>157</index>
     <module_id>5</module_id>
-    <module_index>19</module_index>
+    <module_index>21</module_index>
     <comment>L1 Menu (July 2022): Lower MET thresholds
 https://its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <labels>Run3 (2022)</labels>
@@ -4449,7 +4449,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <expression>comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF50 AND HTT60</expression>
     <index>158</index>
     <module_id>5</module_id>
-    <module_index>25</module_index>
+    <module_index>27</module_index>
     <comment>L1 Menu (2018 v1): Seeds for SUSY
 https://its.cern.ch/jira/browse/CMSLITDPG-509
 https://its.cern.ch/jira/browse/CMSLITDPG-491</comment>
@@ -4542,7 +4542,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <expression>comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF40 AND (JET60[JET-ETA_2p52] OR comb{JET40[JET-ETA_2p52],JET40[JET-ETA_2p52]})</expression>
     <index>160</index>
     <module_id>5</module_id>
-    <module_index>22</module_index>
+    <module_index>24</module_index>
     <comment>L1 Menu (2022 July): Seeds with lower MET thresholds:
 https://its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <labels>Run3 (2022)</labels>
@@ -4596,7 +4596,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <expression>comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF50 AND (JET60[JET-ETA_2p52] OR comb{JET40[JET-ETA_2p52],JET40[JET-ETA_2p52]})</expression>
     <index>161</index>
     <module_id>5</module_id>
-    <module_index>30</module_index>
+    <module_index>32</module_index>
     <comment>L1 Menu (2018 v1): Seeds for SUSY
 https://its.cern.ch/jira/browse/CMSLITDPG-509
 https://its.cern.ch/jira/browse/CMSLITDPG-491</comment>
@@ -4650,7 +4650,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-491</comment>
     <expression>comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF50 AND JET60[JET-ETA_2p52]</expression>
     <index>162</index>
     <module_id>5</module_id>
-    <module_index>27</module_index>
+    <module_index>29</module_index>
     <comment>L1 Menu (2018 v1): Seeds for SUSY
 https://its.cern.ch/jira/browse/CMSLITDPG-509
 https://its.cern.ch/jira/browse/CMSLITDPG-491</comment>
@@ -4697,7 +4697,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-491</comment>
     <expression>comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF60 AND JET60[JET-ETA_2p52]</expression>
     <index>163</index>
     <module_id>5</module_id>
-    <module_index>32</module_index>
+    <module_index>34</module_index>
     <comment>L1 Menu (2018 v1): Seeds for SUSY
 https://its.cern.ch/jira/browse/CMSLITDPG-509
 https://its.cern.ch/jira/browse/CMSLITDPG-491</comment>
@@ -4744,7 +4744,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-491</comment>
     <expression>comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND HTT220</expression>
     <index>164</index>
     <module_id>5</module_id>
-    <module_index>38</module_index>
+    <module_index>39</module_index>
     <comment>Added by L1DPG</comment>
     <cut>
       <name>MU-QLTY_SNGL</name>
@@ -4798,7 +4798,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-476</comment>
     <expression>EG10[EG-ETA_2p52]</expression>
     <index>174</index>
     <module_id>2</module_id>
-    <module_index>42</module_index>
+    <module_index>41</module_index>
     <comment>L1 Menu (2018 v1): Seeds for SingleElectron and SinglePhoton PDs
 https://its.cern.ch/jira/browse/CMSLITDPG-476</comment>
     <cut>
@@ -4903,7 +4903,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-476</comment>
     <expression>EG28[EG-ETA_2p52]</expression>
     <index>181</index>
     <module_id>2</module_id>
-    <module_index>26</module_index>
+    <module_index>30</module_index>
     <comment>L1 Menu (2018 v2): Seeds for SingleElectron and SinglePhoton PDs
 https://its.cern.ch/jira/browse/CMSLITDPG-625
 https://its.cern.ch/jira/browse/CMSLITDPG-476</comment>
@@ -5274,7 +5274,7 @@ Note: HASHFIX suffix serves as a temporary fix to an issue with duplicate hashes
     <expression>EG28[EG-ETA_2p52,EG-ISO_0xC]</expression>
     <index>198</index>
     <module_id>2</module_id>
-    <module_index>23</module_index>
+    <module_index>24</module_index>
     <comment>L1 Menu (2018 v2): Seeds for SingleElectron and SinglePhoton PDs
 https://its.cern.ch/jira/browse/CMSLITDPG-625
 https://its.cern.ch/jira/browse/CMSLITDPG-476
@@ -6436,7 +6436,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-956</comment>
     <expression>comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT280</expression>
     <index>248</index>
     <module_id>2</module_id>
-    <module_index>6</module_index>
+    <module_index>9</module_index>
     <comment>L1 Menu (2018 v1): Seeds for SUSY
 https://its.cern.ch/jira/browse/CMSLITDPG-509
 https://its.cern.ch/jira/browse/CMSLITDPG-477</comment>
@@ -6468,7 +6468,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-477</comment>
     <expression>comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT300</expression>
     <index>249</index>
     <module_id>2</module_id>
-    <module_index>8</module_index>
+    <module_index>11</module_index>
     <comment>L1 Menu (2018 v1): Seeds for SUSY
 https://its.cern.ch/jira/browse/CMSLITDPG-509
 https://its.cern.ch/jira/browse/CMSLITDPG-477</comment>
@@ -6500,7 +6500,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-477</comment>
     <expression>comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT320</expression>
     <index>250</index>
     <module_id>2</module_id>
-    <module_index>11</module_index>
+    <module_index>6</module_index>
     <comment>L1 Menu (2018 v1): Seeds for SUSY
 https://its.cern.ch/jira/browse/CMSLITDPG-509
 https://its.cern.ch/jira/browse/CMSLITDPG-477</comment>
@@ -6967,7 +6967,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-458</comment>
     <expression>MU18[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU24[TAU-ETA_2p13]</expression>
     <index>279</index>
     <module_id>1</module_id>
-    <module_index>16</module_index>
+    <module_index>15</module_index>
     <comment>https://its.cern.ch/jira/browse/CMSLITDPG-82</comment>
     <cut>
       <name>TAU-ETA_2p13</name>
@@ -7013,7 +7013,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-458</comment>
     <expression>MU18[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU26[TAU-ETA_2p13]</expression>
     <index>280</index>
     <module_id>1</module_id>
-    <module_index>17</module_index>
+    <module_index>16</module_index>
     <comment>L1 Menu (2018 v1): Seeds for Tau PD
 https://its.cern.ch/jira/browse/CMSLITDPG-449
 https://its.cern.ch/jira/browse/CMSLITDPG-458
@@ -7117,7 +7117,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-82</comment>
     <expression>MU18[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU26[TAU-ETA_2p13] AND JET70</expression>
     <index>282</index>
     <module_id>1</module_id>
-    <module_index>15</module_index>
+    <module_index>17</module_index>
     <comment>L1 Menu (April 2022): https://its.cern.ch/jira/browse/CMSLITDPG-961
 </comment>
     <labels>Run3 (2022)</labels>
@@ -7226,7 +7226,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-82</comment>
     <expression>MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU32[TAU-ETA_2p13,TAU-ISO_0xE]</expression>
     <index>287</index>
     <module_id>5</module_id>
-    <module_index>46</module_index>
+    <module_index>49</module_index>
     <comment>https://its.cern.ch/jira/browse/CMSLITDPG-103  sync: L1_DoubleIsoTau32er</comment>
     <cut>
       <name>TAU-ISO_0xE</name>
@@ -7280,7 +7280,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-82</comment>
     <expression>MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU34[TAU-ETA_2p13,TAU-ISO_0xE]</expression>
     <index>288</index>
     <module_id>5</module_id>
-    <module_index>47</module_index>
+    <module_index>46</module_index>
     <comment>https://its.cern.ch/jira/browse/CMSLITDPG-103  sync: L1_DoubleIsoTau34er</comment>
     <cut>
       <name>TAU-ISO_0xE</name>
@@ -7334,7 +7334,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-82</comment>
     <expression>MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU40[TAU-ETA_2p13,TAU-ISO_0xE]</expression>
     <index>290</index>
     <module_id>5</module_id>
-    <module_index>48</module_index>
+    <module_index>47</module_index>
     <comment>tau + MET: https://its.cern.ch/jira/browse/CMSLITDPG-48  monitoring: must be unprescaled</comment>
     <cut>
       <name>TAU-ISO_0xE</name>
@@ -7388,7 +7388,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-82</comment>
     <expression>MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU70[TAU-ETA_2p13]</expression>
     <index>291</index>
     <module_id>5</module_id>
-    <module_index>49</module_index>
+    <module_index>48</module_index>
     <comment>https://its.cern.ch/jira/browse/CMSLITDPG-103  sync: L1_DoubleTau70er</comment>
     <cut>
       <name>TAU-ETA_2p13</name>
@@ -7499,7 +7499,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-48 https://its.cern.ch/jira/browse/CMS
     <expression>JET60</expression>
     <index>301</index>
     <module_id>5</module_id>
-    <module_index>16</module_index>
+    <module_index>18</module_index>
     <comment>JetMET POG: https://its.cern.ch/jira/browse/CMSLITDPG-46</comment>
     <object_requirement>
       <name>JET60</name>
@@ -7972,7 +7972,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-48 https://its.cern.ch/jira/browse/CMS
     <expression>ETMHF80 AND dist{JET55[JET-ETA_2p52],ETMHF80}[DPHI_DPHI_MIN2p094_MAX3p142]</expression>
     <index>328</index>
     <module_id>5</module_id>
-    <module_index>42</module_index>
+    <module_index>9</module_index>
     <comment>L1 Menu (2022 July): Seeds with lower MET thresholds 
 its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <labels>Run3 (2022)</labels>
@@ -8012,7 +8012,7 @@ its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <expression>ETMHF80 AND dist{JET55[JET-ETA_2p52],ETMHF80}[DPHI_DPHI_MIN2p618_MAX3p142]</expression>
     <index>329</index>
     <module_id>5</module_id>
-    <module_index>8</module_index>
+    <module_index>10</module_index>
     <comment>L1 Menu (2022 July): Seeds with lower MET thresholds 
 its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <labels>Run3 (2022)</labels>
@@ -8053,7 +8053,7 @@ its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <expression>ETMHF90 AND dist{JET60[JET-ETA_2p52],ETMHF90}[DPHI_DPHI_MIN2p094_MAX3p142]</expression>
     <index>330</index>
     <module_id>5</module_id>
-    <module_index>13</module_index>
+    <module_index>16</module_index>
     <comment>L1 Menu (November 2021): MET (ETMHF + recoiling Jet) seeds for EXO + SUSY</comment>
     <labels>Run3 (2022)</labels>
     <cut>
@@ -8092,7 +8092,7 @@ its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <expression>ETMHF90 AND dist{JET60[JET-ETA_2p52],ETMHF90}[DPHI_DPHI_MIN2p618_MAX3p142]</expression>
     <index>331</index>
     <module_id>5</module_id>
-    <module_index>17</module_index>
+    <module_index>19</module_index>
     <comment>L1 Menu (November 2021): MET (ETMHF + recoiling Jet) seeds for EXO + SUSY</comment>
     <labels>Run3 (2022)</labels>
     <cut>
@@ -8132,7 +8132,7 @@ its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <expression>comb{JET40[JET-ETA_2p52],JET40[JET-ETA_2p52]}</expression>
     <index>336</index>
     <module_id>5</module_id>
-    <module_index>36</module_index>
+    <module_index>8</module_index>
     <comment>L1 Menu (2018 v1): Seeds for BTagCSV PD
 https://its.cern.ch/jira/browse/CMSLITDPG-462
 https://its.cern.ch/jira/browse/CMSLITDPG-499
@@ -8804,7 +8804,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-963</comment>
     <expression>JET70[JET-DISP_LLP] AND HTT240</expression>
     <index>383</index>
     <module_id>0</module_id>
-    <module_index>32</module_index>
+    <module_index>29</module_index>
     <comment>https://its.cern.ch/jira/browse/CMSLITDPG-963</comment>
     <labels>Run3 (2022)</labels>
     <cut>
@@ -8891,7 +8891,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-84</comment>
     <expression>HTT320 AND comb{JET70[JET-ETA_2p4],JET55[JET-ETA_2p4],JET40[JET-ETA_2p4],JET40[JET-ETA_2p4]}</expression>
     <index>385</index>
     <module_id>2</module_id>
-    <module_index>7</module_index>
+    <module_index>10</module_index>
     <comment>L1 Menu (2018 v1): Seeds for TOP/BTagCSV PD
 https://its.cern.ch/jira/browse/CMSLITDPG-462
 https://its.cern.ch/jira/browse/CMSLITDPG-506
@@ -8940,7 +8940,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-159</comment>
     <expression>HTT320 AND comb{JET80[JET-ETA_2p13],JET60[JET-ETA_2p13],JET45[JET-ETA_2p3],JET40[JET-ETA_2p3]}</expression>
     <index>386</index>
     <module_id>2</module_id>
-    <module_index>10</module_index>
+    <module_index>5</module_index>
     <comment>L1 Menu (2018 v1): Seeds for TOP/BTagCSV PD
 https://its.cern.ch/jira/browse/CMSLITDPG-462
 https://its.cern.ch/jira/browse/CMSLITDPG-506
@@ -9004,7 +9004,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-159</comment>
     <expression>HTT320 AND comb{JET80[JET-ETA_2p13],JET60[JET-ETA_2p13],JET50[JET-ETA_2p3],JET45[JET-ETA_2p3]}</expression>
     <index>387</index>
     <module_id>2</module_id>
-    <module_index>12</module_index>
+    <module_index>7</module_index>
     <comment>L1 Menu (2018 v1): Seeds for TOP/BTagCSV PD
 https://its.cern.ch/jira/browse/CMSLITDPG-462
 https://its.cern.ch/jira/browse/CMSLITDPG-506
@@ -9128,7 +9128,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-159</comment>
     <expression>HTT280</expression>
     <index>392</index>
     <module_id>2</module_id>
-    <module_index>9</module_index>
+    <module_index>12</module_index>
     <comment>L1 Menu (2018 v1): Seeds for Scouting PDs
 https://its.cern.ch/jira/browse/CMSLITDPG-472
 https://its.cern.ch/jira/browse/CMSLITDPG-499</comment>
@@ -9145,7 +9145,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-499</comment>
     <expression>HTT320</expression>
     <index>393</index>
     <module_id>2</module_id>
-    <module_index>5</module_index>
+    <module_index>8</module_index>
     <comment>L1 Menu (2018 v1): Seeds for Scouting PDs
 https://its.cern.ch/jira/browse/CMSLITDPG-472
 https://its.cern.ch/jira/browse/CMSLITDPG-499</comment>
@@ -9255,7 +9255,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-499</comment>
     <expression>ETMHF70</expression>
     <index>400</index>
     <module_id>5</module_id>
-    <module_index>31</module_index>
+    <module_index>33</module_index>
     <comment>Menu v1_2 - JIRA:https://its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <labels>Run3 (2022)</labels>
     <object_requirement>
@@ -9271,7 +9271,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-499</comment>
     <expression>ETMHF80</expression>
     <index>401</index>
     <module_id>5</module_id>
-    <module_index>39</module_index>
+    <module_index>41</module_index>
     <comment>Menu v1_2 - JIRA:https://its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <labels>Run3 (2022)</labels>
     <object_requirement>
@@ -9287,7 +9287,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-499</comment>
     <expression>ETMHF90</expression>
     <index>402</index>
     <module_id>5</module_id>
-    <module_index>9</module_index>
+    <module_index>11</module_index>
     <comment>Menu v1_2 - JIRA:https://its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <labels>Run3 (2022)</labels>
     <object_requirement>
@@ -9303,7 +9303,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-499</comment>
     <expression>ETMHF100</expression>
     <index>403</index>
     <module_id>5</module_id>
-    <module_index>41</module_index>
+    <module_index>37</module_index>
     <comment>SUSY</comment>
     <object_requirement>
       <name>ETMHF100</name>
@@ -9318,7 +9318,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-499</comment>
     <expression>ETMHF110</expression>
     <index>404</index>
     <module_id>5</module_id>
-    <module_index>10</module_index>
+    <module_index>12</module_index>
     <comment>SUSY</comment>
     <object_requirement>
       <name>ETMHF110</name>
@@ -9333,7 +9333,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-499</comment>
     <expression>ETMHF120</expression>
     <index>405</index>
     <module_id>5</module_id>
-    <module_index>15</module_index>
+    <module_index>17</module_index>
     <comment>SUSY</comment>
     <object_requirement>
       <name>ETMHF120</name>
@@ -9348,7 +9348,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-499</comment>
     <expression>ETMHF130</expression>
     <index>406</index>
     <module_id>5</module_id>
-    <module_index>21</module_index>
+    <module_index>23</module_index>
     <comment>L1 Menu (2018 v1): Seeds for SUSY
 https://its.cern.ch/jira/browse/CMSLITDPG-509
 https://its.cern.ch/jira/browse/CMSLITDPG-499
@@ -9402,7 +9402,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-472</comment>
     <expression>ETMHF70 AND HTT60</expression>
     <index>409</index>
     <module_id>5</module_id>
-    <module_index>34</module_index>
+    <module_index>36</module_index>
     <comment>Menu v1_2 - JIRA:https://its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <labels>Run3 (2022)</labels>
     <object_requirement>
@@ -9425,7 +9425,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-472</comment>
     <expression>ETMHF80 AND HTT60</expression>
     <index>410</index>
     <module_id>5</module_id>
-    <module_index>40</module_index>
+    <module_index>42</module_index>
     <comment>Menu v1_2 - JIRA:https://its.cern.ch/jira/browse/CMSLITDPG-995</comment>
     <labels>Run3 (2022)</labels>
     <object_requirement>
@@ -9448,7 +9448,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-472</comment>
     <expression>ETMHF90 AND HTT60</expression>
     <index>411</index>
     <module_id>5</module_id>
-    <module_index>11</module_index>
+    <module_index>13</module_index>
     <comment>https://its.cern.ch/jira/browse/CMSLITDPG-134 https://its.cern.ch/jira/browse/CMSHLT-1541</comment>
     <object_requirement>
       <name>ETMHF90</name>
@@ -9470,7 +9470,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-472</comment>
     <expression>ETMHF100 AND HTT60</expression>
     <index>412</index>
     <module_id>5</module_id>
-    <module_index>35</module_index>
+    <module_index>38</module_index>
     <comment>https://its.cern.ch/jira/browse/CMSLITDPG-134</comment>
     <object_requirement>
       <name>ETMHF100</name>
@@ -9492,7 +9492,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-472</comment>
     <expression>ETMHF110 AND HTT60</expression>
     <index>413</index>
     <module_id>5</module_id>
-    <module_index>12</module_index>
+    <module_index>14</module_index>
     <comment>https://its.cern.ch/jira/browse/CMSLITDPG-134</comment>
     <object_requirement>
       <name>HTT60</name>
@@ -9514,7 +9514,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-472</comment>
     <expression>ETMHF120 AND HTT60</expression>
     <index>414</index>
     <module_id>5</module_id>
-    <module_index>18</module_index>
+    <module_index>20</module_index>
     <comment>https://its.cern.ch/jira/browse/CMSLITDPG-134</comment>
     <object_requirement>
       <name>ETMHF120</name>
@@ -9536,7 +9536,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-472</comment>
     <expression>ETMHF130 AND HTT60</expression>
     <index>415</index>
     <module_id>5</module_id>
-    <module_index>24</module_index>
+    <module_index>25</module_index>
     <comment>L1 Menu (2018 v1): Seeds for SUSY
 https://its.cern.ch/jira/browse/CMSLITDPG-509
 https://its.cern.ch/jira/browse/CMSLITDPG-499
@@ -9565,7 +9565,7 @@ Added by L1 Menu Team (L1T-DPG)</comment>
     <expression>MU0[MU-QLTY_OPEN] AND ( NOT EXT_BPTX_OR_VME)</expression>
     <index>436</index>
     <module_id>0</module_id>
-    <module_index>71</module_index>
+    <module_index>74</module_index>
     <comment>EXO: https://its.cern.ch/jira/browse/CMSLITDPG-66  PS&gt;=20 rate=300Hz</comment>
     <cut>
       <name>MU-QLTY_OPEN</name>
@@ -9592,7 +9592,7 @@ Added by L1 Menu Team (L1T-DPG)</comment>
     <expression>MU0[MU-QLTY_OPEN,MU-ETA_1p4] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)</expression>
     <index>437</index>
     <module_id>0</module_id>
-    <module_index>68</module_index>
+    <module_index>41</module_index>
     <comment>L1 Menu (2018 v1): Seeds for NoBPTX PD
 https://its.cern.ch/jira/browse/CMSLITDPG-469
 
@@ -9638,7 +9638,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-66</comment>
     <expression>MU0[MU-QLTY_OPEN,MU-ETA_1p1] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)</expression>
     <index>438</index>
     <module_id>0</module_id>
-    <module_index>76</module_index>
+    <module_index>80</module_index>
     <comment>L1 Menu (2018 v1): Seeds for NoBPTX PD
 https://its.cern.ch/jira/browse/CMSLITDPG-469
 
@@ -9684,7 +9684,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-66</comment>
     <expression>JET20[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME)</expression>
     <index>439</index>
     <module_id>0</module_id>
-    <module_index>52</module_index>
+    <module_index>58</module_index>
     <comment>L1 Menu (2018 v1): Seeds for NoBPTX PD
 https://its.cern.ch/jira/browse/CMSLITDPG-469
 
@@ -9715,7 +9715,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-281</comment>
     <expression>JET20[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)</expression>
     <index>440</index>
     <module_id>0</module_id>
-    <module_index>58</module_index>
+    <module_index>63</module_index>
     <comment>L1 Menu (2018 v1): Seeds for NoBPTX PD
 https://its.cern.ch/jira/browse/CMSLITDPG-469
 
@@ -9754,7 +9754,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-281</comment>
     <expression>JET43[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)</expression>
     <index>441</index>
     <module_id>0</module_id>
-    <module_index>82</module_index>
+    <module_index>43</module_index>
     <comment>L1 Menu (2018 v1): Seeds for NoBPTX PD
 https://its.cern.ch/jira/browse/CMSLITDPG-469
 
@@ -9793,7 +9793,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-281</comment>
     <expression>JET46[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)</expression>
     <index>442</index>
     <module_id>0</module_id>
-    <module_index>41</module_index>
+    <module_index>46</module_index>
     <comment>L1 Menu (2018 v1): Seeds for NoBPTX PD
 https://its.cern.ch/jira/browse/CMSLITDPG-469
 
@@ -9832,7 +9832,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-281</comment>
     <expression>EXT_ZeroBias_BPTX_AND_VME OR ( NOT EXT_ZeroBias_BPTX_AND_VME)</expression>
     <index>472</index>
     <module_id>0</module_id>
-    <module_index>69</module_index>
+    <module_index>76</module_index>
     <external_requirement>
       <name>EXT_ZeroBias_BPTX_AND_VME</name>
       <bx_offset>0</bx_offset>
@@ -9843,7 +9843,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-281</comment>
     <expression>EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>473</index>
     <module_id>0</module_id>
-    <module_index>48</module_index>
+    <module_index>53</module_index>
     <comment>BRIL: bit04 ref: https://twiki.cern.ch/twiki/bin/view/CMS/AndreyPozdnyakovBPTXCableNames</comment>
     <external_requirement>
       <name>EXT_ZeroBias_BPTX_AND_VME</name>
@@ -9855,7 +9855,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-281</comment>
     <expression>EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>474</index>
     <module_id>0</module_id>
-    <module_index>51</module_index>
+    <module_index>55</module_index>
     <comment>BRIL: bit04 - to be used for BX mask if needed</comment>
     <external_requirement>
       <name>EXT_ZeroBias_BPTX_AND_VME</name>
@@ -9867,7 +9867,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-281</comment>
     <expression>(MBT0HFP1 AND MBT0HFM1) AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>475</index>
     <module_id>0</module_id>
-    <module_index>47</module_index>
+    <module_index>51</module_index>
     <object_requirement>
       <name>MBT0HFM1</name>
       <type>MBT0HFM</type>
@@ -9892,7 +9892,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-281</comment>
     <expression>MBT0HFP1 AND MBT0HFM1</expression>
     <index>476</index>
     <module_id>0</module_id>
-    <module_index>44</module_index>
+    <module_index>48</module_index>
     <comment>Prefiring monitoring seed, May, 2022
 https://its.cern.ch/jira/browse/CMSLITDPG-991</comment>
     <labels>Run3 (2022),monitoring</labels>
@@ -9916,7 +9916,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-991</comment>
     <expression> NOT EXT_BPTX_OR_VME</expression>
     <index>477</index>
     <module_id>0</module_id>
-    <module_index>73</module_index>
+    <module_index>75</module_index>
     <comment>BRIL: NOT bit07</comment>
     <external_requirement>
       <name>EXT_BPTX_OR_VME</name>
@@ -9928,7 +9928,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-991</comment>
     <expression>EXT_BPTX_OR_VME</expression>
     <index>478</index>
     <module_id>0</module_id>
-    <module_index>67</module_index>
+    <module_index>70</module_index>
     <comment>BRIL: bit07 ref: https://twiki.cern.ch/twiki/bin/view/CMS/AndreyPozdnyakovBPTXCableNames</comment>
     <external_requirement>
       <name>EXT_BPTX_OR_VME</name>
@@ -10004,7 +10004,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-991</comment>
     <expression>( NOT EXT_BPTX_OR_VME-2) AND ( NOT EXT_BPTX_OR_VME-1) AND EXT_ZeroBias_BPTX_AND_VME AND ( NOT EXT_BPTX_OR_VME+1) AND ( NOT EXT_BPTX_OR_VME+2)</expression>
     <index>484</index>
     <module_id>0</module_id>
-    <module_index>64</module_index>
+    <module_index>68</module_index>
     <external_requirement>
       <name>EXT_BPTX_OR_VME-2</name>
       <bx_offset>-2</bx_offset>
@@ -10031,7 +10031,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-991</comment>
     <expression>( NOT EXT_BPTX_OR_VME-2) AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND EXT_ZeroBias_BPTX_AND_VME+1 AND EXT_ZeroBias_BPTX_AND_VME+2</expression>
     <index>485</index>
     <module_id>0</module_id>
-    <module_index>57</module_index>
+    <module_index>61</module_index>
     <comment>L1 Menu (2018 v1): Seeds for Monitoring the BX Position
 https://its.cern.ch/jira/browse/CMSLITDPG-515</comment>
     <external_requirement>
@@ -10060,7 +10060,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-515</comment>
     <expression>( NOT EXT_BPTX_OR_VME-2) AND ( NOT EXT_BPTX_OR_VME-1) AND EXT_ZeroBias_BPTX_AND_VME AND EXT_ZeroBias_BPTX_AND_VME+1 AND EXT_ZeroBias_BPTX_AND_VME+2</expression>
     <index>486</index>
     <module_id>0</module_id>
-    <module_index>60</module_index>
+    <module_index>64</module_index>
     <external_requirement>
       <name>EXT_ZeroBias_BPTX_AND_VME+1</name>
       <bx_offset>1</bx_offset>
@@ -10087,7 +10087,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-515</comment>
     <expression>( NOT EXT_BPTX_OR_VME-2) AND EXT_ZeroBias_BPTX_AND_VME-1 AND EXT_ZeroBias_BPTX_AND_VME AND EXT_ZeroBias_BPTX_AND_VME+1 AND EXT_ZeroBias_BPTX_AND_VME+2</expression>
     <index>487</index>
     <module_id>0</module_id>
-    <module_index>39</module_index>
+    <module_index>44</module_index>
     <comment>L1 Menu (2018 v1): Seeds for Monitoring the BX Position
 https://its.cern.ch/jira/browse/CMSLITDPG-515</comment>
     <external_requirement>
@@ -10116,7 +10116,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-515</comment>
     <expression>EXT_ZeroBias_BPTX_AND_VME-2 AND EXT_ZeroBias_BPTX_AND_VME-1 AND EXT_ZeroBias_BPTX_AND_VME AND EXT_ZeroBias_BPTX_AND_VME+1 AND ( NOT EXT_BPTX_OR_VME+2)</expression>
     <index>488</index>
     <module_id>0</module_id>
-    <module_index>42</module_index>
+    <module_index>47</module_index>
     <comment>L1 Menu (2018 v1): Seeds for Monitoring the BX Position
 https://its.cern.ch/jira/browse/CMSLITDPG-515</comment>
     <external_requirement>
@@ -10145,7 +10145,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-515</comment>
     <expression>EXT_ZeroBias_BPTX_AND_VME-2 AND EXT_ZeroBias_BPTX_AND_VME-1 AND EXT_ZeroBias_BPTX_AND_VME AND ( NOT EXT_BPTX_OR_VME+1) AND ( NOT EXT_BPTX_OR_VME+2)</expression>
     <index>489</index>
     <module_id>0</module_id>
-    <module_index>70</module_index>
+    <module_index>73</module_index>
     <comment>L1 Menu (2018 v1): Seeds for Monitoring the BX Position
 https://its.cern.ch/jira/browse/CMSLITDPG-515</comment>
     <external_requirement>
@@ -10174,7 +10174,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-515</comment>
     <expression>EXT_ZeroBias_BPTX_AND_VME-2 AND EXT_ZeroBias_BPTX_AND_VME-1 AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1) AND ( NOT EXT_BPTX_OR_VME+2)</expression>
     <index>490</index>
     <module_id>0</module_id>
-    <module_index>53</module_index>
+    <module_index>57</module_index>
     <external_requirement>
       <name>EXT_BPTX_OR_VME+1</name>
       <bx_offset>1</bx_offset>
@@ -14169,7 +14169,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1337</comment>
     <expression>JET8 AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>444</index>
     <module_id>0</module_id>
-    <module_index>72</module_index>
+    <module_index>77</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14190,7 +14190,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>JET12 AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>445</index>
     <module_id>0</module_id>
-    <module_index>62</module_index>
+    <module_index>66</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14211,7 +14211,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>JET16 AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>446</index>
     <module_id>0</module_id>
-    <module_index>81</module_index>
+    <module_index>40</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14232,7 +14232,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>JET20 AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>447</index>
     <module_id>0</module_id>
-    <module_index>45</module_index>
+    <module_index>50</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14253,7 +14253,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>JET24 AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>448</index>
     <module_id>0</module_id>
-    <module_index>59</module_index>
+    <module_index>65</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14274,7 +14274,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>JET8[JET-ETA_1p3] AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>449</index>
     <module_id>0</module_id>
-    <module_index>78</module_index>
+    <module_index>81</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14303,7 +14303,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>JET12[JET-ETA_1p3] AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>450</index>
     <module_id>0</module_id>
-    <module_index>65</module_index>
+    <module_index>71</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14332,7 +14332,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>JET16[JET-ETA_1p3] AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>451</index>
     <module_id>0</module_id>
-    <module_index>38</module_index>
+    <module_index>42</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14361,7 +14361,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>JET20[JET-ETA_1p3] AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>452</index>
     <module_id>0</module_id>
-    <module_index>49</module_index>
+    <module_index>54</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14390,7 +14390,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>JET24[JET-ETA_1p3] AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>453</index>
     <module_id>0</module_id>
-    <module_index>63</module_index>
+    <module_index>69</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14419,7 +14419,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>JET8</expression>
     <index>454</index>
     <module_id>0</module_id>
-    <module_index>66</module_index>
+    <module_index>72</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14436,7 +14436,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>JET8[JET-ETA_1p3]</expression>
     <index>455</index>
     <module_id>0</module_id>
-    <module_index>75</module_index>
+    <module_index>79</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14486,7 +14486,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>EG5 AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>457</index>
     <module_id>0</module_id>
-    <module_index>61</module_index>
+    <module_index>67</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14507,7 +14507,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>EG7 AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>458</index>
     <module_id>0</module_id>
-    <module_index>77</module_index>
+    <module_index>38</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14528,7 +14528,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>EG5</expression>
     <index>459</index>
     <module_id>0</module_id>
-    <module_index>54</module_index>
+    <module_index>60</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14545,7 +14545,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>EG7</expression>
     <index>460</index>
     <module_id>0</module_id>
-    <module_index>74</module_index>
+    <module_index>78</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14614,7 +14614,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>comb{EG2,EG2} AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>463</index>
     <module_id>0</module_id>
-    <module_index>79</module_index>
+    <module_index>39</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14635,7 +14635,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>comb{EG2[EG-ETA_2p13],EG2[EG-ETA_2p13]} AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>464</index>
     <module_id>0</module_id>
-    <module_index>40</module_index>
+    <module_index>45</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14664,7 +14664,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>comb{EG3,EG3} AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>465</index>
     <module_id>0</module_id>
-    <module_index>43</module_index>
+    <module_index>49</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14685,7 +14685,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>comb{EG4,EG4} AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>467</index>
     <module_id>0</module_id>
-    <module_index>50</module_index>
+    <module_index>56</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14706,7 +14706,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>comb{EG2,EG2}</expression>
     <index>469</index>
     <module_id>0</module_id>
-    <module_index>80</module_index>
+    <module_index>82</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14723,7 +14723,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>comb{EG3[EG-ETA_2p13],EG3[EG-ETA_2p13]} AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>466</index>
     <module_id>0</module_id>
-    <module_index>46</module_index>
+    <module_index>52</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14752,7 +14752,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>comb{EG4[EG-ETA_2p13],EG4[EG-ETA_2p13]} AND EXT_ZeroBias_BPTX_AND_VME</expression>
     <index>468</index>
     <module_id>0</module_id>
-    <module_index>55</module_index>
+    <module_index>59</module_index>
     <comment>L1 Menu v1.0 (March 2025): Monitoring seeds for HI 
 https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <labels>Run3 (2025),monitoring</labels>
@@ -14806,7 +14806,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1352</comment>
     <expression>JET60[JET-ETA_1p3]</expression>
     <index>297</index>
     <module_id>5</module_id>
-    <module_index>20</module_index>
+    <module_index>22</module_index>
     <comment>L1 Menu v1.0 (March 2025): New calo monitoring seeds
 https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <labels>Run3 (2025)</labels>
@@ -14831,7 +14831,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <expression>JET60[JET-ETA_2p52] AND  NOT JET60[JET-ETA_1p3]</expression>
     <index>298</index>
     <module_id>5</module_id>
-    <module_index>23</module_index>
+    <module_index>26</module_index>
     <comment>L1 Menu v1.0 (March 2025): New calo monitoring seeds
 https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <labels>Run3 (2025)</labels>
@@ -14864,7 +14864,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <expression>JET60[JET-ETA_3p0] AND  NOT JET60[JET-ETA_2p52]</expression>
     <index>299</index>
     <module_id>5</module_id>
-    <module_index>26</module_index>
+    <module_index>28</module_index>
     <comment>L1 Menu v1.0 (March 2025): New calo monitoring seeds
 https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <labels>Run3 (2025)</labels>
@@ -14897,7 +14897,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <expression>JET60 AND  NOT JET60[JET-ETA_3p0]</expression>
     <index>300</index>
     <module_id>5</module_id>
-    <module_index>28</module_index>
+    <module_index>30</module_index>
     <comment>L1 Menu v1.0 (March 2025): New calo monitoring seeds
 https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <labels>Run3 (2025)</labels>
@@ -14922,7 +14922,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <expression>EG28[EG-ETA_1p3,EG-ISO_0xC]</expression>
     <index>194</index>
     <module_id>2</module_id>
-    <module_index>31</module_index>
+    <module_index>22</module_index>
     <comment>L1 Menu v1.0 (March 2025): New calo monitoring seeds
 https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <labels>Run3 (2025)</labels>
@@ -14955,7 +14955,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <expression>EG28[EG-ETA_2p52,EG-ISO_0xC] AND  NOT EG28[EG-ETA_1p3,EG-ISO_0xC]</expression>
     <index>195</index>
     <module_id>2</module_id>
-    <module_index>22</module_index>
+    <module_index>26</module_index>
     <comment>L1 Menu v1.0 (March 2025): New calo monitoring seeds
 https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <labels>Run3 (2025)</labels>
@@ -14996,7 +14996,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <expression>EG28 AND  NOT EG28[EG-ETA_2p52,EG-ISO_0xC]</expression>
     <index>196</index>
     <module_id>2</module_id>
-    <module_index>24</module_index>
+    <module_index>27</module_index>
     <comment>L1 Menu v1.0 (March 2025): New calo monitoring seeds
 https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <labels>Run3 (2025)</labels>
@@ -15029,7 +15029,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <expression>EG28[EG-ETA_1p3,EG-ISO_0xA]</expression>
     <index>206</index>
     <module_id>2</module_id>
-    <module_index>27</module_index>
+    <module_index>31</module_index>
     <comment>L1 Menu v1.0 (March 2025): New calo monitoring seeds
 https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <labels>Run3 (2025)</labels>
@@ -15103,7 +15103,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <expression>EG28 AND  NOT EG28[EG-ETA_2p52,EG-ISO_0xA]</expression>
     <index>208</index>
     <module_id>2</module_id>
-    <module_index>32</module_index>
+    <module_index>23</module_index>
     <comment>L1 Menu v1.0 (March 2025): New calo monitoring seeds
 https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <labels>Run3 (2025)</labels>
@@ -15136,7 +15136,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <expression>EG28[EG-ETA_1p3]</expression>
     <index>177</index>
     <module_id>2</module_id>
-    <module_index>25</module_index>
+    <module_index>29</module_index>
     <comment>L1 Menu v1.0 (March 2025): New calo monitoring seeds
 https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <labels>Run3 (2025)</labels>
@@ -15161,7 +15161,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <expression>EG28[EG-ETA_2p52] AND  NOT EG28[EG-ETA_1p3]</expression>
     <index>178</index>
     <module_id>2</module_id>
-    <module_index>29</module_index>
+    <module_index>32</module_index>
     <comment>L1 Menu v1.0 (March 2025): New calo monitoring seeds
 https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <labels>Run3 (2025)</labels>
@@ -15194,7 +15194,7 @@ https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <expression>EG28 AND  NOT EG28[EG-ETA_2p52]</expression>
     <index>179</index>
     <module_id>2</module_id>
-    <module_index>30</module_index>
+    <module_index>25</module_index>
     <comment>L1 Menu v1.0 (March 2025): New calo monitoring seeds
 https://its.cern.ch/jira/browse/CMSLITDPG-1345</comment>
     <labels>Run3 (2025)</labels>

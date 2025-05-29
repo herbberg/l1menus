@@ -10,14 +10,14 @@
 -- 2db5153c-349d-4b74-928f-dc8b2e7b240b
 
 -- Unique ID of firmware implementation:
--- 9cf49942-8d5c-468b-9b1d-f13c9d35dbac
+-- ea9e8e8e-44a6-4fde-9546-67e5eb95c7da
 
 -- Scale set:
 -- scales_2024_05_15
 
 -- VHDL producer
 -- version: 2.23.0
--- hash value: 3d957520513e77d0e3bb6e28dab2af8eb6a28e5e654c3325a16c6e3cd714f2b2
+-- hash value: 0c72a7a94b8a843f84598ad5d8691549a34dde4e60faf706cb3f02fa533b3e54
 
 -- tmEventSetup
 -- version: 0.13.0
@@ -53,13 +53,13 @@ constant global_index: global_index_array := (
         315, -- module_index: 25, name: L1_SingleJet90_FWD2p5
         116, -- module_index: 26, name: L1_QuadMu0_OQ
         126, -- module_index: 27, name: L1_Mu5_LooseIsoEG20er2p5
-        124, -- module_index: 28, name: L1_Mu7_EG23er2p5
-        127, -- module_index: 29, name: L1_Mu7_LooseIsoEG20er2p5
-         20, -- module_index: 30, name: L1_SingleMu5
-        122, -- module_index: 31, name: L1_Mu5_EG23er2p5
-         22, -- module_index: 32, name: L1_SingleMu7
-        128, -- module_index: 33, name: L1_Mu7_LooseIsoEG23er2p5
-        123, -- module_index: 34, name: L1_Mu7_EG20er2p5
+        128, -- module_index: 28, name: L1_Mu7_LooseIsoEG23er2p5
+         20, -- module_index: 29, name: L1_SingleMu5
+        123, -- module_index: 30, name: L1_Mu7_EG20er2p5
+        124, -- module_index: 31, name: L1_Mu7_EG23er2p5
+        127, -- module_index: 32, name: L1_Mu7_LooseIsoEG20er2p5
+        122, -- module_index: 33, name: L1_Mu5_EG23er2p5
+         22, -- module_index: 34, name: L1_SingleMu7
         102, -- module_index: 35, name: L1_TripleMu3_SQ
         109, -- module_index: 36, name: L1_TripleMu_5_5_3
         204, -- module_index: 37, name: L1_SingleIsoEG26er2p5

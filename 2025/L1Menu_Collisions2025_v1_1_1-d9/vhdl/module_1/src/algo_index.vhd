@@ -10,14 +10,14 @@
 -- 2db5153c-349d-4b74-928f-dc8b2e7b240b
 
 -- Unique ID of firmware implementation:
--- 9cf49942-8d5c-468b-9b1d-f13c9d35dbac
+-- ea9e8e8e-44a6-4fde-9546-67e5eb95c7da
 
 -- Scale set:
 -- scales_2024_05_15
 
 -- VHDL producer
 -- version: 2.23.0
--- hash value: 3d957520513e77d0e3bb6e28dab2af8eb6a28e5e654c3325a16c6e3cd714f2b2
+-- hash value: 0c72a7a94b8a843f84598ad5d8691549a34dde4e60faf706cb3f02fa533b3e54
 
 -- tmEventSetup
 -- version: 0.13.0
@@ -40,9 +40,9 @@ constant global_index: global_index_array := (
          87, -- module_index: 12, name: L1_DoubleMu0er2p0_SQ_OS_dEta_Max0p3_dPhi_0p8to1p2
         240, -- module_index: 13, name: L1_DoubleLooseIsoEG24er2p1
         281, -- module_index: 14, name: L1_Mu18er2p1_Tau26er2p1_Jet55
-        282, -- module_index: 15, name: L1_Mu18er2p1_Tau26er2p1_Jet70
-        279, -- module_index: 16, name: L1_Mu18er2p1_Tau24er2p1
-        280, -- module_index: 17, name: L1_Mu18er2p1_Tau26er2p1
+        279, -- module_index: 15, name: L1_Mu18er2p1_Tau24er2p1
+        280, -- module_index: 16, name: L1_Mu18er2p1_Tau26er2p1
+        282, -- module_index: 17, name: L1_Mu18er2p1_Tau26er2p1_Jet70
         227, -- module_index: 18, name: L1_DoubleEG_20_10_er2p5
         229, -- module_index: 19, name: L1_DoubleEG_25_12_er2p5
         231, -- module_index: 20, name: L1_DoubleEG_27_14_er2p5

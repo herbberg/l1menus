@@ -10,14 +10,14 @@
 -- 2db5153c-349d-4b74-928f-dc8b2e7b240b
 
 -- Unique ID of firmware implementation:
--- 9cf49942-8d5c-468b-9b1d-f13c9d35dbac
+-- ea9e8e8e-44a6-4fde-9546-67e5eb95c7da
 
 -- Scale set:
 -- scales_2024_05_15
 
 -- VHDL producer
 -- version: 2.23.0
--- hash value: 3d957520513e77d0e3bb6e28dab2af8eb6a28e5e654c3325a16c6e3cd714f2b2
+-- hash value: 0c72a7a94b8a843f84598ad5d8691549a34dde4e60faf706cb3f02fa533b3e54
 
 -- tmEventSetup
 -- version: 0.13.0
@@ -1693,27 +1693,27 @@ algo(2) <= l1_double_jet35er2p5_mu3_d_r_max0p4;
 
 -- 146 L1_Mu3er1p5_Jet100er2p5_ETMHF30 : MU3[MU-QLTY_SNGL,MU-ETA_1p5] AND JET100[JET-ETA_2p52] AND ETMHF30
 l1_mu3er1p5_jet100er2p5_etmhf30 <= single_mu_i115 and single_jet_i116 and single_etmhf_i117;
-algo(29) <= l1_mu3er1p5_jet100er2p5_etmhf30;
+algo(31) <= l1_mu3er1p5_jet100er2p5_etmhf30;
 
 -- 147 L1_Mu3er1p5_Jet100er2p5_ETMHF40 : MU3[MU-QLTY_SNGL,MU-ETA_1p5] AND JET100[JET-ETA_2p52] AND ETMHF40
 l1_mu3er1p5_jet100er2p5_etmhf40 <= single_mu_i115 and single_jet_i116 and single_etmhf_i118;
-algo(33) <= l1_mu3er1p5_jet100er2p5_etmhf40;
+algo(35) <= l1_mu3er1p5_jet100er2p5_etmhf40;
 
 -- 148 L1_Mu3er1p5_Jet100er2p5_ETMHF50 : MU3[MU-QLTY_SNGL,MU-ETA_1p5] AND JET100[JET-ETA_2p52] AND ETMHF50
 l1_mu3er1p5_jet100er2p5_etmhf50 <= single_mu_i115 and single_jet_i116 and single_etmhf_i119;
-algo(37) <= l1_mu3er1p5_jet100er2p5_etmhf50;
+algo(40) <= l1_mu3er1p5_jet100er2p5_etmhf50;
 
 -- 156 L1_DoubleMu3_SQ_ETMHF30_HTT60er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF30 AND HTT60
 l1_double_mu3_sq_etmhf30_htt60er <= double_mu_i128 and single_etmhf_i117 and single_htt_i129;
-algo(14) <= l1_double_mu3_sq_etmhf30_htt60er;
+algo(15) <= l1_double_mu3_sq_etmhf30_htt60er;
 
 -- 157 L1_DoubleMu3_SQ_ETMHF40_HTT60er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF40 AND HTT60
 l1_double_mu3_sq_etmhf40_htt60er <= double_mu_i128 and single_etmhf_i118 and single_htt_i129;
-algo(19) <= l1_double_mu3_sq_etmhf40_htt60er;
+algo(21) <= l1_double_mu3_sq_etmhf40_htt60er;
 
 -- 158 L1_DoubleMu3_SQ_ETMHF50_HTT60er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF50 AND HTT60
 l1_double_mu3_sq_etmhf50_htt60er <= double_mu_i128 and single_etmhf_i119 and single_htt_i129;
-algo(25) <= l1_double_mu3_sq_etmhf50_htt60er;
+algo(27) <= l1_double_mu3_sq_etmhf50_htt60er;
 
 -- 159 L1_DoubleMu3_SQ_ETMHF30_Jet60er2p5_OR_DoubleJet40er2p5 : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF30 AND (JET60[JET-ETA_2p52] OR comb{JET40[JET-ETA_2p52],JET40[JET-ETA_2p52]})
 l1_double_mu3_sq_etmhf30_jet60er2p5_or_double_jet40er2p5 <= double_mu_i128 and single_etmhf_i117 and ( single_jet_i130 or double_jet_i131 );
@@ -1721,23 +1721,23 @@ algo(7) <= l1_double_mu3_sq_etmhf30_jet60er2p5_or_double_jet40er2p5;
 
 -- 160 L1_DoubleMu3_SQ_ETMHF40_Jet60er2p5_OR_DoubleJet40er2p5 : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF40 AND (JET60[JET-ETA_2p52] OR comb{JET40[JET-ETA_2p52],JET40[JET-ETA_2p52]})
 l1_double_mu3_sq_etmhf40_jet60er2p5_or_double_jet40er2p5 <= double_mu_i128 and single_etmhf_i118 and ( single_jet_i130 or double_jet_i131 );
-algo(22) <= l1_double_mu3_sq_etmhf40_jet60er2p5_or_double_jet40er2p5;
+algo(24) <= l1_double_mu3_sq_etmhf40_jet60er2p5_or_double_jet40er2p5;
 
 -- 161 L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5 : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF50 AND (JET60[JET-ETA_2p52] OR comb{JET40[JET-ETA_2p52],JET40[JET-ETA_2p52]})
 l1_double_mu3_sq_etmhf50_jet60er2p5_or_double_jet40er2p5 <= double_mu_i128 and single_etmhf_i119 and ( single_jet_i130 or double_jet_i131 );
-algo(30) <= l1_double_mu3_sq_etmhf50_jet60er2p5_or_double_jet40er2p5;
+algo(32) <= l1_double_mu3_sq_etmhf50_jet60er2p5_or_double_jet40er2p5;
 
 -- 162 L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5 : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF50 AND JET60[JET-ETA_2p52]
 l1_double_mu3_sq_etmhf50_jet60er2p5 <= double_mu_i128 and single_etmhf_i119 and single_jet_i130;
-algo(27) <= l1_double_mu3_sq_etmhf50_jet60er2p5;
+algo(29) <= l1_double_mu3_sq_etmhf50_jet60er2p5;
 
 -- 163 L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5 : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF60 AND JET60[JET-ETA_2p52]
 l1_double_mu3_sq_etmhf60_jet60er2p5 <= double_mu_i128 and single_etmhf_i132 and single_jet_i130;
-algo(32) <= l1_double_mu3_sq_etmhf60_jet60er2p5;
+algo(34) <= l1_double_mu3_sq_etmhf60_jet60er2p5;
 
 -- 164 L1_DoubleMu3_SQ_HTT220er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND HTT220
 l1_double_mu3_sq_htt220er <= double_mu_i128 and single_htt_i133;
-algo(38) <= l1_double_mu3_sq_htt220er;
+algo(39) <= l1_double_mu3_sq_htt220er;
 
 -- 183 L1_SingleEG28er1p5 : EG28[EG-ETA_1p52_HASHFIX]
 l1_single_eg28er1p5 <= single_eg_i141;
@@ -1789,39 +1789,39 @@ algo(45) <= l1_mu22er2p1_iso_tau30er2p1;
 
 -- 287 L1_Mu22er2p1_IsoTau32er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU32[TAU-ETA_2p13,TAU-ISO_0xE]
 l1_mu22er2p1_iso_tau32er2p1 <= single_mu_i209 and single_tau_i211;
-algo(46) <= l1_mu22er2p1_iso_tau32er2p1;
+algo(49) <= l1_mu22er2p1_iso_tau32er2p1;
 
 -- 288 L1_Mu22er2p1_IsoTau34er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU34[TAU-ETA_2p13,TAU-ISO_0xE]
 l1_mu22er2p1_iso_tau34er2p1 <= single_mu_i209 and single_tau_i212;
-algo(47) <= l1_mu22er2p1_iso_tau34er2p1;
+algo(46) <= l1_mu22er2p1_iso_tau34er2p1;
 
 -- 290 L1_Mu22er2p1_IsoTau40er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU40[TAU-ETA_2p13,TAU-ISO_0xE]
 l1_mu22er2p1_iso_tau40er2p1 <= single_mu_i209 and single_tau_i213;
-algo(48) <= l1_mu22er2p1_iso_tau40er2p1;
+algo(47) <= l1_mu22er2p1_iso_tau40er2p1;
 
 -- 291 L1_Mu22er2p1_Tau70er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU70[TAU-ETA_2p13]
 l1_mu22er2p1_tau70er2p1 <= single_mu_i209 and single_tau_i214;
-algo(49) <= l1_mu22er2p1_tau70er2p1;
+algo(48) <= l1_mu22er2p1_tau70er2p1;
 
 -- 297 L1_SingleJet60er1p3 : JET60[JET-ETA_1p3]
 l1_single_jet60er1p3 <= single_jet_i468;
-algo(20) <= l1_single_jet60er1p3;
+algo(22) <= l1_single_jet60er1p3;
 
 -- 298 L1_SingleJet60er1p3to2p5 : JET60[JET-ETA_2p52] AND  NOT JET60[JET-ETA_1p3]
 l1_single_jet60er1p3to2p5 <= single_jet_i130 and not single_jet_i468;
-algo(23) <= l1_single_jet60er1p3to2p5;
+algo(26) <= l1_single_jet60er1p3to2p5;
 
 -- 299 L1_SingleJet60er2p5to3p0 : JET60[JET-ETA_3p0] AND  NOT JET60[JET-ETA_2p52]
 l1_single_jet60er2p5to3p0 <= single_jet_i469 and not single_jet_i130;
-algo(26) <= l1_single_jet60er2p5to3p0;
+algo(28) <= l1_single_jet60er2p5to3p0;
 
 -- 300 L1_SingleJet60er3p0to5p0 : JET60 AND  NOT JET60[JET-ETA_3p0]
 l1_single_jet60er3p0to5p0 <= single_jet_i218 and not single_jet_i469;
-algo(28) <= l1_single_jet60er3p0to5p0;
+algo(30) <= l1_single_jet60er3p0to5p0;
 
 -- 301 L1_SingleJet60 : JET60
 l1_single_jet60 <= single_jet_i218;
-algo(16) <= l1_single_jet60;
+algo(18) <= l1_single_jet60;
 
 -- 302 L1_SingleJet90 : JET90
 l1_single_jet90 <= single_jet_i219;
@@ -1845,23 +1845,23 @@ algo(50) <= l1_single_jet8er_he;
 
 -- 328 L1_ETMHF80_SingleJet55er2p5_dPhi_Min2p1 : ETMHF80 AND dist{JET55[JET-ETA_2p52],ETMHF80}[DPHI_DPHI_MIN2p094_MAX3p142]
 l1_etmhf80_single_jet55er2p5_d_phi_min2p1 <= single_etmhf_i243 and calo_esum_correlation_i244;
-algo(42) <= l1_etmhf80_single_jet55er2p5_d_phi_min2p1;
+algo(9) <= l1_etmhf80_single_jet55er2p5_d_phi_min2p1;
 
 -- 329 L1_ETMHF80_SingleJet55er2p5_dPhi_Min2p6 : ETMHF80 AND dist{JET55[JET-ETA_2p52],ETMHF80}[DPHI_DPHI_MIN2p618_MAX3p142]
 l1_etmhf80_single_jet55er2p5_d_phi_min2p6 <= single_etmhf_i243 and calo_esum_correlation_i245;
-algo(8) <= l1_etmhf80_single_jet55er2p5_d_phi_min2p6;
+algo(10) <= l1_etmhf80_single_jet55er2p5_d_phi_min2p6;
 
 -- 330 L1_ETMHF90_SingleJet60er2p5_dPhi_Min2p1 : ETMHF90 AND dist{JET60[JET-ETA_2p52],ETMHF90}[DPHI_DPHI_MIN2p094_MAX3p142]
 l1_etmhf90_single_jet60er2p5_d_phi_min2p1 <= single_etmhf_i246 and calo_esum_correlation_i247;
-algo(13) <= l1_etmhf90_single_jet60er2p5_d_phi_min2p1;
+algo(16) <= l1_etmhf90_single_jet60er2p5_d_phi_min2p1;
 
 -- 331 L1_ETMHF90_SingleJet60er2p5_dPhi_Min2p6 : ETMHF90 AND dist{JET60[JET-ETA_2p52],ETMHF90}[DPHI_DPHI_MIN2p618_MAX3p142]
 l1_etmhf90_single_jet60er2p5_d_phi_min2p6 <= single_etmhf_i246 and calo_esum_correlation_i248;
-algo(17) <= l1_etmhf90_single_jet60er2p5_d_phi_min2p6;
+algo(19) <= l1_etmhf90_single_jet60er2p5_d_phi_min2p6;
 
 -- 336 L1_DoubleJet40er2p5 : comb{JET40[JET-ETA_2p52],JET40[JET-ETA_2p52]}
 l1_double_jet40er2p5 <= double_jet_i131;
-algo(36) <= l1_double_jet40er2p5;
+algo(8) <= l1_double_jet40er2p5;
 
 -- 340 L1_DoubleJet100er2p3_dEta_Max1p6 : dist{JET100[JET-ETA_2p3],JET100[JET-ETA_2p3]}[DETA_MAX_1p6]
 l1_double_jet100er2p3_d_eta_max1p6 <= calo_calo_correlation_i251;
@@ -1889,31 +1889,31 @@ algo(87) <= l1_htt360er;
 
 -- 400 L1_ETMHF70 : ETMHF70
 l1_etmhf70 <= single_etmhf_i286;
-algo(31) <= l1_etmhf70;
+algo(33) <= l1_etmhf70;
 
 -- 401 L1_ETMHF80 : ETMHF80
 l1_etmhf80 <= single_etmhf_i243;
-algo(39) <= l1_etmhf80;
+algo(41) <= l1_etmhf80;
 
 -- 402 L1_ETMHF90 : ETMHF90
 l1_etmhf90 <= single_etmhf_i246;
-algo(9) <= l1_etmhf90;
+algo(11) <= l1_etmhf90;
 
 -- 403 L1_ETMHF100 : ETMHF100
 l1_etmhf100 <= single_etmhf_i287;
-algo(41) <= l1_etmhf100;
+algo(37) <= l1_etmhf100;
 
 -- 404 L1_ETMHF110 : ETMHF110
 l1_etmhf110 <= single_etmhf_i288;
-algo(10) <= l1_etmhf110;
+algo(12) <= l1_etmhf110;
 
 -- 405 L1_ETMHF120 : ETMHF120
 l1_etmhf120 <= single_etmhf_i289;
-algo(15) <= l1_etmhf120;
+algo(17) <= l1_etmhf120;
 
 -- 406 L1_ETMHF130 : ETMHF130
 l1_etmhf130 <= single_etmhf_i290;
-algo(21) <= l1_etmhf130;
+algo(23) <= l1_etmhf130;
 
 -- 408 L1_ETMHF150 : ETMHF150
 l1_etmhf150 <= single_etmhf_i292;
@@ -1921,31 +1921,31 @@ algo(85) <= l1_etmhf150;
 
 -- 409 L1_ETMHF70_HTT60er : ETMHF70 AND HTT60
 l1_etmhf70_htt60er <= single_etmhf_i286 and single_htt_i129;
-algo(34) <= l1_etmhf70_htt60er;
+algo(36) <= l1_etmhf70_htt60er;
 
 -- 410 L1_ETMHF80_HTT60er : ETMHF80 AND HTT60
 l1_etmhf80_htt60er <= single_etmhf_i243 and single_htt_i129;
-algo(40) <= l1_etmhf80_htt60er;
+algo(42) <= l1_etmhf80_htt60er;
 
 -- 411 L1_ETMHF90_HTT60er : ETMHF90 AND HTT60
 l1_etmhf90_htt60er <= single_etmhf_i246 and single_htt_i129;
-algo(11) <= l1_etmhf90_htt60er;
+algo(13) <= l1_etmhf90_htt60er;
 
 -- 412 L1_ETMHF100_HTT60er : ETMHF100 AND HTT60
 l1_etmhf100_htt60er <= single_etmhf_i287 and single_htt_i129;
-algo(35) <= l1_etmhf100_htt60er;
+algo(38) <= l1_etmhf100_htt60er;
 
 -- 413 L1_ETMHF110_HTT60er : ETMHF110 AND HTT60
 l1_etmhf110_htt60er <= single_etmhf_i288 and single_htt_i129;
-algo(12) <= l1_etmhf110_htt60er;
+algo(14) <= l1_etmhf110_htt60er;
 
 -- 414 L1_ETMHF120_HTT60er : ETMHF120 AND HTT60
 l1_etmhf120_htt60er <= single_etmhf_i289 and single_htt_i129;
-algo(18) <= l1_etmhf120_htt60er;
+algo(20) <= l1_etmhf120_htt60er;
 
 -- 415 L1_ETMHF130_HTT60er : ETMHF130 AND HTT60
 l1_etmhf130_htt60er <= single_etmhf_i290 and single_htt_i129;
-algo(24) <= l1_etmhf130_htt60er;
+algo(25) <= l1_etmhf130_htt60er;
 
 -- 418 L1_HTMHF125 : HTMHF125
 l1_htmhf125 <= single_htmhf_i405;

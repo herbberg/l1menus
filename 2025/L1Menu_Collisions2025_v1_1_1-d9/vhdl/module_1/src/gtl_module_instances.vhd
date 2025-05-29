@@ -10,14 +10,14 @@
 -- 2db5153c-349d-4b74-928f-dc8b2e7b240b
 
 -- Unique ID of firmware implementation:
--- 9cf49942-8d5c-468b-9b1d-f13c9d35dbac
+-- ea9e8e8e-44a6-4fde-9546-67e5eb95c7da
 
 -- Scale set:
 -- scales_2024_05_15
 
 -- VHDL producer
 -- version: 2.23.0
--- hash value: 3d957520513e77d0e3bb6e28dab2af8eb6a28e5e654c3325a16c6e3cd714f2b2
+-- hash value: 0c72a7a94b8a843f84598ad5d8691549a34dde4e60faf706cb3f02fa533b3e54
 
 -- tmEventSetup
 -- version: 0.13.0
@@ -714,7 +714,7 @@ cond_double_tau_ov_rm_i480_i: entity work.comb_conditions
     port map(
         lhc_clk,
         obj1_calo => bx_data.tau(2),
-        obj2 => bx_data.tau(2),
+        obj2 => bx_data.jet(2),
         dr_orm => jet_tau_bx_0_bx_0_dr,
         condition_o => double_tau_ov_rm_i480
     );
@@ -1869,11 +1869,11 @@ algo(10) <= l1_double_tau_iso34_iso23_er2p1_jet70_rm_ovlp_d_r0p5;
 
 -- 279 L1_Mu18er2p1_Tau24er2p1 : MU18[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU24[TAU-ETA_2p13]
 l1_mu18er2p1_tau24er2p1 <= single_mu_i204 and single_tau_i205;
-algo(16) <= l1_mu18er2p1_tau24er2p1;
+algo(15) <= l1_mu18er2p1_tau24er2p1;
 
 -- 280 L1_Mu18er2p1_Tau26er2p1 : MU18[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU26[TAU-ETA_2p13]
 l1_mu18er2p1_tau26er2p1 <= single_mu_i204 and single_tau_i206;
-algo(17) <= l1_mu18er2p1_tau26er2p1;
+algo(16) <= l1_mu18er2p1_tau26er2p1;
 
 -- 281 L1_Mu18er2p1_Tau26er2p1_Jet55 : MU18[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU26[TAU-ETA_2p13] AND JET55
 l1_mu18er2p1_tau26er2p1_jet55 <= single_mu_i204 and single_tau_i206 and single_jet_i207;
@@ -1881,7 +1881,7 @@ algo(14) <= l1_mu18er2p1_tau26er2p1_jet55;
 
 -- 282 L1_Mu18er2p1_Tau26er2p1_Jet70 : MU18[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU26[TAU-ETA_2p13] AND JET70
 l1_mu18er2p1_tau26er2p1_jet70 <= single_mu_i204 and single_tau_i206 and single_jet_i208;
-algo(15) <= l1_mu18er2p1_tau26er2p1_jet70;
+algo(17) <= l1_mu18er2p1_tau26er2p1_jet70;
 
 -- 305 L1_SingleJet200 : JET200
 l1_single_jet200 <= single_jet_i222;

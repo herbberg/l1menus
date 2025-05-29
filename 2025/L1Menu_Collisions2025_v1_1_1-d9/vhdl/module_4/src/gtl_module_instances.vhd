@@ -10,14 +10,14 @@
 -- 2db5153c-349d-4b74-928f-dc8b2e7b240b
 
 -- Unique ID of firmware implementation:
--- 9cf49942-8d5c-468b-9b1d-f13c9d35dbac
+-- ea9e8e8e-44a6-4fde-9546-67e5eb95c7da
 
 -- Scale set:
 -- scales_2024_05_15
 
 -- VHDL producer
 -- version: 2.23.0
--- hash value: 3d957520513e77d0e3bb6e28dab2af8eb6a28e5e654c3325a16c6e3cd714f2b2
+-- hash value: 0c72a7a94b8a843f84598ad5d8691549a34dde4e60faf706cb3f02fa533b3e54
 
 -- tmEventSetup
 -- version: 0.13.0
@@ -863,7 +863,7 @@ cond_double_tau_ov_rm_i444_i: entity work.comb_conditions
     port map(
         lhc_clk,
         obj1_calo => bx_data.tau(2),
-        obj2 => bx_data.tau(2),
+        obj2 => bx_data.jet(2),
         dr_orm => jet_tau_bx_0_bx_0_dr,
         condition_o => double_tau_ov_rm_i444
     );
@@ -1549,11 +1549,11 @@ algo(41) <= l1_single_mu0_emtf;
 
 -- 20 L1_SingleMu5 : MU5[MU-QLTY_SNGL]
 l1_single_mu5 <= single_mu_i13;
-algo(30) <= l1_single_mu5;
+algo(29) <= l1_single_mu5;
 
 -- 22 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
 l1_single_mu7 <= single_mu_i15;
-algo(32) <= l1_single_mu7;
+algo(34) <= l1_single_mu7;
 
 -- 26 L1_SingleMu6_SQ14_BMTF : MU6[MU-INDEX_BMTF,MU-QLTY_14]
 l1_single_mu6_sq14_bmtf <= single_mu_i399;
@@ -1621,15 +1621,15 @@ algo(26) <= l1_quad_mu0_oq;
 
 -- 122 L1_Mu5_EG23er2p5 : MU5[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu5_eg23er2p5 <= single_mu_i13 and single_eg_i85;
-algo(31) <= l1_mu5_eg23er2p5;
+algo(33) <= l1_mu5_eg23er2p5;
 
 -- 123 L1_Mu7_EG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52]
 l1_mu7_eg20er2p5 <= single_mu_i15 and single_eg_i86;
-algo(34) <= l1_mu7_eg20er2p5;
+algo(30) <= l1_mu7_eg20er2p5;
 
 -- 124 L1_Mu7_EG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52]
 l1_mu7_eg23er2p5 <= single_mu_i15 and single_eg_i85;
-algo(28) <= l1_mu7_eg23er2p5;
+algo(31) <= l1_mu7_eg23er2p5;
 
 -- 126 L1_Mu5_LooseIsoEG20er2p5 : MU5[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu5_loose_iso_eg20er2p5 <= single_mu_i13 and single_eg_i88;
@@ -1637,11 +1637,11 @@ algo(27) <= l1_mu5_loose_iso_eg20er2p5;
 
 -- 127 L1_Mu7_LooseIsoEG20er2p5 : MU7[MU-QLTY_SNGL] AND EG20[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg20er2p5 <= single_mu_i15 and single_eg_i88;
-algo(29) <= l1_mu7_loose_iso_eg20er2p5;
+algo(32) <= l1_mu7_loose_iso_eg20er2p5;
 
 -- 128 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
 l1_mu7_loose_iso_eg23er2p5 <= single_mu_i15 and single_eg_i89;
-algo(33) <= l1_mu7_loose_iso_eg23er2p5;
+algo(28) <= l1_mu7_loose_iso_eg23er2p5;
 
 -- 143 L1_DoubleJet80er2p5_Mu3_dR_Max0p4 : comb{JET80[JET-ETA_2p52],JET80[JET-ETA_2p52]} AND dist{MU3[MU-QLTY_SNGL],JET80[JET-ETA_2p52]}[DR_MAX_0p4]
 l1_double_jet80er2p5_mu3_d_r_max0p4 <= double_jet_i110 and calo_muon_correlation_i111;
